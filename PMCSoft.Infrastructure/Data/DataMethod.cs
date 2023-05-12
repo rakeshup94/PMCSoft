@@ -14,14 +14,14 @@ using System.Xml.Linq;
 /// <summary>
 /// Summary description for DataMathed
 /// </summary>
-namespace DAL
+namespace PMCSoft.Infrastructure.Data
 {
     public class DALL
     {
         public static string Conn = ConfigurationManager.AppSettings["SQL_CONNECTION_STRING"].ToString();
         public DALL()
         {
-            
+
         }
         private static SqlConnection OpenConn()
         {
@@ -42,7 +42,7 @@ namespace DAL
         {
             try
             {
-                if(Conn==string.Empty)
+                if (Conn == string.Empty)
                 {
                     Conn = ConfigurationManager.AppSettings["SQL_CONNECTION_STRING"].ToString();
                 }
@@ -136,7 +136,7 @@ namespace DAL
             SqlConnection.ClearAllPools();
             return DTable;
         }
-        public static int SPInsertInputOutPutPrm(string SPName, params SqlParameter[] commondParameter )
+        public static int SPInsertInputOutPutPrm(string SPName, params SqlParameter[] commondParameter)
         {
             SqlCommand CMD = new SqlCommand(SPName, OpenConn());
             CMD.CommandType = CommandType.StoredProcedure;
@@ -176,7 +176,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                throw(ex);
+                throw (ex);
             }
         }
         public static int SPInsertOUTINPUT(string SPName, params SqlParameter[] commondParameter)
@@ -192,6 +192,6 @@ namespace DAL
             SqlConnection.ClearAllPools();
             return RowEffected;
         }
-        
+
     }
 }

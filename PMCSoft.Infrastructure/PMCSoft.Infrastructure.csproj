@@ -7,8 +7,8 @@
     <ProjectGuid>{3982BD85-B93B-4F9B-BF7D-F09E6FC0BE73}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PMC.Infrastructure</RootNamespace>
-    <AssemblyName>PMC.Infrastructure</AssemblyName>
+    <RootNamespace>PMCSoft.Infrastructure</RootNamespace>
+    <AssemblyName>PMCSoft.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\ATCommon.cs" />
-    <Compile Include="Data\PMC.cs" />
+    <Compile Include="Data\BALPMC.cs" />
     <Compile Include="Data\BindData.cs" />
     <Compile Include="Data\DataMethod.cs" />
     <Compile Include="Data\ReturnOutPutValue.cs" />
