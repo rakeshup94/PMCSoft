@@ -1,0 +1,41 @@
+ALTER Proc [dbo].[GetAcctCount]    
+ALTER Proc [dbo].[GetAcctDetail]   
+ALTER proc [dbo].[GetAdminStock](@email_Id varchar(50)) 
+
+ALTER Proc [dbo].[GetAppPCBill]  
+
+ALTER Proc [dbo].[GetArrearRate]   
+
+ALTER Proc [dbo].[GetConSumableExpensesReportData]
+ALTER Proc [dbo].[GetConsumblesData](
+
+ALTER Proc [dbo].[GetDailyMorningR]  
+
+ALTER Proc [dbo].[GetDailyStaffAttendance]  
+
+ALTER Proc [dbo].[GetDirectExpData
+ALTER Proc [dbo].[GetDirectExpensesMaster]
+ALTER Proc [dbo].[GetDMR] 
+ALTER Proc [dbo].[GetDMRProjEmp]    
+ALTER Proc [dbo].[GetEC]    
+ALTER Proc [dbo].[GetECount]   
+ALTER Proc [dbo].[GetEmpProj]
+ALTER Proc [dbo].[GetEmpProjCount]  
+ALTER Proc [dbo].[GetEmpProject]  
+ALTER Proc [dbo].[GetEmpProjForSubAdmin]  
+ALTER Proc [dbo].[GetEmpProjMatrial]  
+ALTER Proc [dbo].[GetEXPENDITUREData]
+ALTER Proc [dbo].[GetFinYearDetail]
+ALTER Proc [dbo].[GetHireChargesData]
+ALTER Proc [dbo].[GetHireChargesMaster]
+ALTER Proc [dbo].[GetIncome]
+ALTER Proc [dbo].[GetIncomeData]
+ALTER Proc [dbo].[GetIndirectExpData]
+ALTER Proc [dbo].[GetInDirectExpensesMaster]
+ALTER Proc [dbo].[GetItemDescription]  
+ALTER Proc [dbo].[GetLastStoreOpeningDate]  
+ALTER Proc [dbo].[GetLastStoreOpeningDateSubAdmin]  
+ALTER Proc [dbo].[GetLogInformation]      
+ALTER Proc [dbo].[GetMonthlyPurchase]
+ALTER proc [dbo].[GetMonthlyWorkDoneReport]
+ALTER Procedure [dbo].[GetPCBillDeductionDetail]
