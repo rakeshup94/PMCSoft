@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMCSoft.Infrastructure", "PMCSoft.Infrastructure\PMCSoft.Infrastructure.csproj", "{3982BD85-B93B-4F9B-BF7D-F09E6FC0BE73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMCSoft.WebApp", "PMCSoft.WebApp\PMCSoft.WebApp.csproj", "{96074BEE-9B81-4416-8338-081973990060}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3982BD85-B93B-4F9B-BF7D-F09E6FC0BE73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3982BD85-B93B-4F9B-BF7D-F09E6FC0BE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3982BD85-B93B-4F9B-BF7D-F09E6FC0BE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3982BD85-B93B-4F9B-BF7D-F09E6FC0BE73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96074BEE-9B81-4416-8338-081973990060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96074BEE-9B81-4416-8338-081973990060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96074BEE-9B81-4416-8338-081973990060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96074BEE-9B81-4416-8338-081973990060}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {676C59C3-5A38-4D34-A4BB-1BA192649A14}
+	EndGlobalSection
+EndGlobal
