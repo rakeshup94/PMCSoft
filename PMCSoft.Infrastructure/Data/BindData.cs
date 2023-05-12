@@ -18,7 +18,7 @@ namespace PMCSoft.Infrastructure.Data
 {
     public class BindData
     {
-        public static string Conn = ConfigurationManager.AppSettings["SQL_CONNECTION_STRING"].ToString();
+        public static string Conn = ConfigurationManager.AppSettings["DBConnectionString"].ToString();
         public BindData()
         {
 
@@ -43,7 +43,7 @@ namespace PMCSoft.Infrastructure.Data
             {
                 if (Conn == string.Empty)
                 {
-                    Conn = ConfigurationManager.AppSettings["SQL_CONNECTION_STRING"].ToString();
+                    Conn = ConfigurationManager.AppSettings["DBConnectionString"].ToString();
                 }
                 return new SqlConnection(Conn);
             }
