@@ -30,7 +30,7 @@
 </head>
 <body>
     <div style="text-align: center; margin-top: 100px; font-size: 25px; color: White;">
-        Ahluwalia Contracts (India) Ltd.</div>
+        Demo Client (India) Ltd.</div>
     <div id="wrapper">
         <div class="user-icon">
         </div>
@@ -41,7 +41,7 @@
             <asp:Image ID="Image1" runat="server" ImageUrl="~/images/logo.png" Width="110px" />
         </div>
         <div style="color: Gray; margin-left: 62px; margin-top: -10px;">
-            <asp:Label ID="lblN" runat="server" Text="SITA PROJECT MANAGEMENT" Font-Size="12px"></asp:Label>
+            <asp:Label ID="lblN" runat="server" Text="Demo PROJECT MANAGEMENT" Font-Size="12px"></asp:Label>
         </div>
         <div class="content" style="margin-top: 10px;">
             <asp:TextBox ID="txtUserID" runat="server" CssClass="input username" onfocus="this.value=''"

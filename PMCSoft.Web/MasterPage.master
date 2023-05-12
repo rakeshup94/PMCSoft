@@ -37,7 +37,7 @@
         <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" OnClick="ImgImage_Click"
             Height="50px" />
         <div style="color: White; margin-left: 100px; margin-top: -24px; font-size: 20px;">
-            Ahluwalia Contracts (India) Ltd.
+           Demo Client (India) Ltd.
         </div>
         <div style="text-align: right; margin-right: 50px; vertical-align: top;">
             <asp:LinkButton ID="lnkLogout" runat="server" Text="Logout" OnClick="lnkLogout_Click"
