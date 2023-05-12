@@ -46,16 +46,25 @@
         <div class="content" style="margin-top: 10px;">
             <asp:TextBox ID="txtUserID" runat="server" CssClass="input username" onfocus="this.value=''"
                 placeholder="Username"></asp:TextBox>
+            
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtUserID"
+                    runat="server" ErrorMessage="*" ValidationGroup="Login"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="txtUserID"
+                    runat="server" ErrorMessage="*" ValidationGroup="Forget"></asp:RequiredFieldValidator>
+
             <asp:TextBox ID="txtPassword" runat="server" CssClass="input password" onfocus="this.value=''"
-                placeholder="Password" TextMode="Password"></asp:TextBox>
+                placeholder="Password" TextMode="Password"></asp:TextBox><asp:RequiredFieldValidator
+                    ID="RequiredFieldValidator2" ControlToValidate="txtPassword" 
+                runat="server" ErrorMessage="*" ValidationGroup="Login"></asp:RequiredFieldValidator>
         </div>
         <div class="footer">
-            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="button" OnClick="btnLogin_Click" />
+            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="button" ValidationGroup="Login" OnClick="btnLogin_Click" />
         </div>
         <div class="footer11">
-            <asp:LinkButton ID="lnkForgotPassword" runat="server" Text="Forgot Password?" Font-Size="11px"
-                OnClick="lnkForgotPassword_Click" Visible="false"></asp:LinkButton>
+            <asp:LinkButton ID="lnkForgotPassword" ValidationGroup="Forget" runat="server" Text="Forgot Password?" Font-Size="11px"
+                OnClick="lnkForgotPassword_Click" ></asp:LinkButton>
             <br />
+        
             <asp:Label ID="lblMsg" runat="server" Font-Size="11px" ForeColor="Red" BackColor="Silver"></asp:Label>
         </div>
         </form>

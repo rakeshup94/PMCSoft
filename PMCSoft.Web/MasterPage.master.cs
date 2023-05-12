@@ -11,7 +11,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Xml.Linq;
  
-using PMCSoft.Infrastructure.Data;
+
 using PMCSoft.Infrastructure.Data;
 
 namespace WebApp
@@ -34,7 +34,12 @@ namespace WebApp
                 {
                     Hashtable ht = new Hashtable();
                     ht.Add("@UserId", Session["UserId"]);
-                    DataTable dt = PMCApp.Get(ht, "PagePermission");
+                    //DataTable dt = PMCApp.Get(ht, "PagePermission");
+
+                    DataTable dt = PMCApp.Get(ht, "GetMenuHeaderAdmin");
+
+
+
                     if (dt.Rows.Count > 0)
                     {
                         for (int k = 0; k < dt.Rows.Count; k++)

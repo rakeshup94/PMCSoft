@@ -31,7 +31,10 @@ namespace WebApp
                 {
                     Hashtable ht = new Hashtable();
                     ht.Add("@UserId", Session["UserId"]);
+                   
                     DataTable dt = PMCApp.Get(ht, "PagePermission");
+                    
+                    
                     //DataTable dt = PMCApp.Get(ht, "GetMenuHeaderAdmin");
 
                     for (int k = 0; k < dt.Rows.Count; k++)

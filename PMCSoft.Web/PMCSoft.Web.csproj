@@ -128,6 +128,7 @@
     <Content Include="css\theme2.css" />
     <Content Include="css\theme3.css" />
     <Content Include="css\theme4.css" />
+    <Content Include="ForgetPassword.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\background.gif" />
     <Content Include="Images\bg.png" />
@@ -589,6 +590,13 @@
     </Compile>
     <Compile Include="Admin\ViewUser.aspx.designer.cs">
       <DependentUpon>ViewUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
