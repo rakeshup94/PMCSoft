@@ -229,6 +229,7 @@
     <Content Include="menu\hsep.png" />
     <Content Include="menu\mainbk.png" />
     <Content Include="menu\style.css" />
+    <Content Include="optimiseProc.txt" />
     <Content Include="PMCReports\AddNewActual.aspx" />
     <Content Include="PMCReports\AddNewPlan.aspx" />
     <Content Include="PMCReports\Copy of Copy of MonthlyWorkDone.aspx" />

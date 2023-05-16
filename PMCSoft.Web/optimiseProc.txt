@@ -1,3 +1,6 @@
+rakeshup94@gmail.com/abcd1234!
+
+
 ALTER Proc [dbo].[GetAcctCount]    
 ALTER Proc [dbo].[GetAcctDetail]   
 ALTER proc [dbo].[GetAdminStock](@email_Id varchar(50)) 
