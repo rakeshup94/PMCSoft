@@ -13,50 +13,19 @@ namespace PMCSoft.Web
 
     public partial class Login : System.Web.UI.Page
     {
-
-
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();
-        DataTable DA = new DataTable();
-        string AID = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-
             if (!IsPostBack)
             {
-                try
+                if (Session["LoginId"] != null)
                 {
-                    lblMsg.Text = "";
-                    string Value = Server.UrlDecode(Request.QueryString["Value"]);
-                    if (Value == "1")
-                    {
-                        PMC.InsertLogOut(Session["UserId"].ToString(), Session["CompID"].ToString(), Session["LoginId"].ToString(), Session["PRJID"].ToString());
-                        Session.Abandon();
-                        lblMsg.Text = "Logout Successfully";
-                    }
-                    if (Request.QueryString["Value"] == "2")
-                    {
-                        lblMsg.Text = "You are not an authorized user or you are already login.";
-                    }
-                    if (Session["UserId"] != null || Session["UserName"] != null || Session["CompID"] != null || Session["AName"] != null || Session["UserEmail"] != null || Session["AID"] != null || Session["PRJID"] != null)
-                    {
-                        if (Session["AID"].ToString() == "1")
-                        {
-                            Response.Redirect("~/Admin/Home.aspx");
-                        }
-                        else
-                        {
-                            //Response.Redirect("~/User/Home.aspx");
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    //string scripts = "alert('Some error occurs.');";
-                    //ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    var returnUrl = Session["AID"].ToString() == "1" ? "~/Admin/Home.aspx" : "~/User/Home.aspx";
+                    Response.Redirect(returnUrl);
                 }
             }
-            txtUserID.Focus();
+
         }
         protected void btnLogin_Click(object sender, EventArgs e)
         {
@@ -93,7 +62,7 @@ namespace PMCSoft.Web
                                     PMC.InsertLoginInformation(User.UserId, User.CompanyId, User.ProjectId);
                                     PMCApp.FindTransId("GetRecordId", User.ProjectId, User.UserId, out value);
                                     PMC.InsertDataForThreeString(User.UserId, User.CompanyId, value.ToString());
-                                    Session["LoginId"]  = value.ToString();
+                                    Session["LoginId"] = value.ToString();
                                 }
                                 Session["UserId"] = User.UserId;
                                 Session["UserName"] = User.UserName;
@@ -129,7 +98,7 @@ namespace PMCSoft.Web
             }
             catch (Exception ex)
             {
-                string scripts = "alert('Some error occurs.');";
+                string scripts = "alert('Some error occurs." + ex.Message.ToString() + ");";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
