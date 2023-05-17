@@ -12,156 +12,159 @@ using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
  
 using PMCSoft.Infrastructure.Data;
+namespace PMCSoft.Web.Admin
 
-public partial class Admin_AddItemGroupMaster : System.Web.UI.Page
 {
-    BALPMC PMC = new BALPMC();
-    DataTable DT = new DataTable();
-    string GroupID = "";
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class AddItemGroupMaster : System.Web.UI.Page
     {
-        try
+        BALPMC PMC = new BALPMC();
+        DataTable DT = new DataTable();
+        string GroupID = "";
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            try
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                if (!IsPostBack)
                 {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
-                }
-                else
-                {
-                    GetItemGroup();
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void GetItemGroup()
-    {
-        try
-        {
-            PMC.BindGetItemGroup(GVGroup);
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void btnCancel_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("~/Admin/Home.aspx");
-    }
-    protected void btnSubmit_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            if (txtName.Text != "")
-            {
-                if (txtCode.Text != "")
-                {
-                    DT = PMCApp.GetDataTableWithOneStringValue("GetGroupName", txtName.Text);
-                    if (DT.Rows.Count > 0)
+                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
                     {
-                        string scripts = "alert('Group name is already exists.');";
-                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                        Session.Clear();
+                        Session.Abandon();
+                        Session.RemoveAll();
+                        Response.Redirect("~/Login.aspx?Value=" + "2");
                     }
                     else
                     {
-                        DT = PMCApp.GetDataTableWithTwoStringValue("GetGroupCode", txtName.Text, txtCode.Text);
+                        GetItemGroup();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        public void GetItemGroup()
+        {
+            try
+            {
+                PMC.BindGetItemGroup(GVGroup);
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/Home.aspx");
+        }
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtName.Text != "")
+                {
+                    if (txtCode.Text != "")
+                    {
+                        DT = PMCApp.GetDataTableWithOneStringValue("GetGroupName", txtName.Text);
                         if (DT.Rows.Count > 0)
                         {
-                            string scripts = "alert('Group code is already exists.');";
+                            string scripts = "alert('Group name is already exists.');";
                             ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                         }
                         else
                         {
-                            PMC.GetMaxIDForItemGroupID(Session["CompID"].ToString(), out GroupID);
-                            PMC.InsertItemGroupMaster(Session["CompID"].ToString(), txtName.Text, txtCode.Text, Session["UserID"].ToString(), GroupID.ToString());
-                            txtName.Text = ""; txtCode.Text = "";
-                            GetItemGroup();
-                            string scripts = "alert('Insert Successfully.');";
-                            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                            DT = PMCApp.GetDataTableWithTwoStringValue("GetGroupCode", txtName.Text, txtCode.Text);
+                            if (DT.Rows.Count > 0)
+                            {
+                                string scripts = "alert('Group code is already exists.');";
+                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                            }
+                            else
+                            {
+                                PMC.GetMaxIDForItemGroupID(Session["CompID"].ToString(), out GroupID);
+                                PMC.InsertItemGroupMaster(Session["CompID"].ToString(), txtName.Text, txtCode.Text, Session["UserID"].ToString(), GroupID.ToString());
+                                txtName.Text = ""; txtCode.Text = "";
+                                GetItemGroup();
+                                string scripts = "alert('Insert Successfully.');";
+                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                            }
                         }
-                    }
-                }
-                else
-                {
-                    string scripts = "alert('Kindly fill group code.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
-            }
-            else
-            {
-                string scripts = "alert('Kindly fill group name.');";
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-            }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void GVGroup_RowUpdating(object sender, GridViewUpdateEventArgs e)
-    {
-        try
-        {
-            GridViewRow row = (GridViewRow)GVGroup.Rows[e.RowIndex];
-            TextBox txtGroupCode = (TextBox)row.FindControl("txtGroupCode");
-            TextBox txtGroupName = (TextBox)row.FindControl("txtGroupName");
-            HiddenField hdnTID = (HiddenField)row.FindControl("hdnTransID");
-
-            if (txtGroupName.Text != "")
-            {
-                if (txtGroupCode.Text != "")
-                {
-                    DT = PMCApp.GetDataTableWithTwoStringValue("GetUnitCode", txtGroupName.Text, txtGroupCode.Text);
-                    if (DT.Rows.Count > 0)
-                    {
-                        string scripts = "alert('Group code is already exists for this name.');";
-                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                     }
                     else
                     {
-                        PMC.UpdateUnit(txtGroupName.Text, txtGroupCode.Text, hdnTID.Value);
-                        GVGroup.EditIndex = -1;
-                        GetItemGroup();
+                        string scripts = "alert('Kindly fill group code.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                     }
                 }
                 else
                 {
-                    string scripts = "alert('Kindly fill group code.');";
+                    string scripts = "alert('Kindly fill group name.');";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly fill group name.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        protected void GVGroup_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            try
+            {
+                GridViewRow row = (GridViewRow)GVGroup.Rows[e.RowIndex];
+                TextBox txtGroupCode = (TextBox)row.FindControl("txtGroupCode");
+                TextBox txtGroupName = (TextBox)row.FindControl("txtGroupName");
+                HiddenField hdnTID = (HiddenField)row.FindControl("hdnTransID");
+
+                if (txtGroupName.Text != "")
+                {
+                    if (txtGroupCode.Text != "")
+                    {
+                        DT = PMCApp.GetDataTableWithTwoStringValue("GetUnitCode", txtGroupName.Text, txtGroupCode.Text);
+                        if (DT.Rows.Count > 0)
+                        {
+                            string scripts = "alert('Group code is already exists for this name.');";
+                            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                        }
+                        else
+                        {
+                            PMC.UpdateUnit(txtGroupName.Text, txtGroupCode.Text, hdnTID.Value);
+                            GVGroup.EditIndex = -1;
+                            GetItemGroup();
+                        }
+                    }
+                    else
+                    {
+                        string scripts = "alert('Kindly fill group code.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                }
+                else
+                {
+                    string scripts = "alert('Kindly fill group name.');";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
         }
-    }
-    protected void GVGroup_RowEditing(object sender, GridViewEditEventArgs e)
-    {
-        GVGroup.EditIndex = e.NewEditIndex;
-        GetItemGroup();
-    }
-    protected void GVGroup_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-    {
-        GVGroup.EditIndex = -1;
-        GetItemGroup();
+        protected void GVGroup_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            GVGroup.EditIndex = e.NewEditIndex;
+            GetItemGroup();
+        }
+        protected void GVGroup_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+            GVGroup.EditIndex = -1;
+            GetItemGroup();
+        }
     }
 }

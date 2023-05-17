@@ -17,132 +17,135 @@ using System.Security.Cryptography;
  
 using PMCSoft.Infrastructure.Data;
 
-public partial class User_ChangePassword : System.Web.UI.Page
+namespace PMCSoft.Web.User
 {
-    BALPMC PMC = new BALPMC();
-    DataTable DT = new DataTable();
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class ChangePassword : System.Web.UI.Page
     {
-        try
+        BALPMC PMC = new BALPMC();
+        DataTable DT = new DataTable();
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            try
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                if (!IsPostBack)
                 {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
-                }
-                else
-                {
-                    
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void btnSave_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            if (txtOldPassword.Text != "" && txtNewPassword.Text != "" && txtReType.Text != "")
-            {
-                if (txtNewPassword.Text == txtReType.Text)
-                {
-                    string OldPwd = CreateMD5Hash(txtOldPassword.Text);
-                    DT = PMCApp.GetDataTableWithThreeStringValue("EmpPassword", Session["CompID"].ToString(), Session["UserID"].ToString(), OldPwd.ToString());
-                    if (DT.Rows.Count > 0)
+                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
                     {
-                        ViewState["Pwd"] = "R";
+                        Session.Clear();
+                        Session.Abandon();
+                        Session.RemoveAll();
+                        Response.Redirect("~/Login.aspx?Value=" + "2");
                     }
                     else
                     {
-                        ViewState["Pwd"] = "W";
+
                     }
-                    if (ViewState["Pwd"].ToString() == "R")
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtOldPassword.Text != "" && txtNewPassword.Text != "" && txtReType.Text != "")
+                {
+                    if (txtNewPassword.Text == txtReType.Text)
                     {
-                        if (this.IsValidPassword(txtNewPassword.Text))
+                        string OldPwd = CreateMD5Hash(txtOldPassword.Text);
+                        DT = PMCApp.GetDataTableWithThreeStringValue("EmpPassword", Session["CompID"].ToString(), Session["UserID"].ToString(), OldPwd.ToString());
+                        if (DT.Rows.Count > 0)
                         {
-                            string Pwd = CreateMD5Hash(txtNewPassword.Text);
-                            PMCApp.UpdateThreeStringValue("UpdateEmpPassword", Pwd.ToString(), Session["CompID"].ToString(), Session["UserID"].ToString());
-
-                            txtOldPassword.Text = ""; txtNewPassword.Text = ""; txtReType.Text = "";
-
-                            string scripts = "alert('Your Password Change Successfully.');";
-                            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                            ViewState["Pwd"] = "R";
                         }
                         else
                         {
-                            string scripts = "alert('Kindly fill at least one digit, one character, one special characters, and 8-20 characters in length in password. ');";
+                            ViewState["Pwd"] = "W";
+                        }
+                        if (ViewState["Pwd"].ToString() == "R")
+                        {
+                            if (this.IsValidPassword(txtNewPassword.Text))
+                            {
+                                string Pwd = CreateMD5Hash(txtNewPassword.Text);
+                                PMCApp.UpdateThreeStringValue("UpdateEmpPassword", Pwd.ToString(), Session["CompID"].ToString(), Session["UserID"].ToString());
+
+                                txtOldPassword.Text = ""; txtNewPassword.Text = ""; txtReType.Text = "";
+
+                                string scripts = "alert('Your Password Change Successfully.');";
+                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                            }
+                            else
+                            {
+                                string scripts = "alert('Kindly fill at least one digit, one character, one special characters, and 8-20 characters in length in password. ');";
+                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                            }
+                        }
+                        else if (ViewState["Pwd"].ToString() == "W")
+                        {
+                            string scripts = "alert('Your Old Password is Incorrect.');";
                             ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                         }
                     }
-                    else if (ViewState["Pwd"].ToString() == "W")
+                    else
                     {
-                        string scripts = "alert('Your Old Password is Incorrect.');";
+                        string scripts = "alert('Kindly Fill Same Password.');";
                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                     }
                 }
                 else
                 {
-                    string scripts = "alert('Kindly Fill Same Password.');";
+                    string scripts = "alert('Kindly Fill All (*) Mandetory Fields.');";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly Fill All (*) Mandetory Fields.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        protected void btnCancel_Click(object sender, EventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            try
+            {
+                Response.Redirect("~/PL/Home.aspx");
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
         }
-    }
-    protected void btnCancel_Click(object sender, EventArgs e)
-    {
-        try
+        public string CreateMD5Hash(string input)
         {
-            Response.Redirect("~/PL/Home.aspx");
+            MD5 md5 = System.Security.Cryptography.MD5.Create();
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+            byte[] hashBytes = md5.ComputeHash(inputBytes);
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < hashBytes.Length; i++)
+            {
+                sb.Append(hashBytes[i].ToString("X2"));
+            }
+            return sb.ToString();
         }
-        catch (Exception ex)
+        private bool IsValidPassword(string sPassword)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public string CreateMD5Hash(string input)
-    {
-        MD5 md5 = System.Security.Cryptography.MD5.Create();
-        byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
-        byte[] hashBytes = md5.ComputeHash(inputBytes);
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < hashBytes.Length; i++)
-        {
-            sb.Append(hashBytes[i].ToString("X2"));
-        }
-        return sb.ToString();
-    }
-    private bool IsValidPassword(string sPassword)
-    {
-        if (sPassword.Length > 8 || sPassword.Length < 20)
-        {
-            string sPattern;
-            //sPattern = "(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,20})$";
-            sPattern = "[^a-zA-Z0-9\n\r\t ]";
-            Regex oReg = new Regex(sPattern, RegexOptions.IgnoreCase);
-            return oReg.IsMatch(sPassword);
-        }
-        else
-        {
-            return false;
+            if (sPassword.Length > 8 || sPassword.Length < 20)
+            {
+                string sPattern;
+                //sPattern = "(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,20})$";
+                sPattern = "[^a-zA-Z0-9\n\r\t ]";
+                Regex oReg = new Regex(sPattern, RegexOptions.IgnoreCase);
+                return oReg.IsMatch(sPassword);
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

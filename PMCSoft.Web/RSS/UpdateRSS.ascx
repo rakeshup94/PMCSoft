@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="RSS_UpdateRSS" Codebehind="UpdateRSS.ascx.cs" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="PMCSoft.Web.RSS.UpdateRSS" Codebehind="UpdateRSS.ascx.cs" %>
 <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="http://www.ndtv.com/convergence/ndtv/rssnat.asp"
     XPath="rss/channel/item [position()<=100]"></asp:XmlDataSource>
 <div style="padding-top: 0px; padding-bottom: 0px; height: 120px; background-color: #ECF5F8"

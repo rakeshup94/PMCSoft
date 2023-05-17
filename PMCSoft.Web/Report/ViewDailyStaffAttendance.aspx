@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="Report_ViewDailyStaffAttendance" Codebehind="ViewDailyStaffAttendance.aspx.cs" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="PMCSoft.Web.Report.ViewDailyStaffAttendance" Codebehind="ViewDailyStaffAttendance.aspx.cs" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">

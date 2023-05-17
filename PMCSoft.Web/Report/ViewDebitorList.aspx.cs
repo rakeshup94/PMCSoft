@@ -13,99 +13,102 @@ using System.Xml.Linq;
  
 using PMCSoft.Infrastructure.Data;
 
-public partial class Report_ViewDebitorList : System.Web.UI.Page
+namespace PMCSoft.Web.Report
 {
-    BALPMC PMC = new BALPMC();
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class ViewDebitorList : System.Web.UI.Page
     {
-        try
+        BALPMC PMC = new BALPMC();
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            try
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                if (!IsPostBack)
                 {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
+                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                    {
+                        Session.Clear();
+                        Session.Abandon();
+                        Session.RemoveAll();
+                        Response.Redirect("~/Login.aspx?Value=" + "2");
+                    }
+                    else
+                    {
+                        BindProj();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        public void BindProj()
+        {
+            try
+            {
+                PMC.BindGetEmpProj(ddlProject1, Session["UserID"].ToString());
+                GetSProj();
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        public void GetSProj()
+        {
+            try
+            {
+                PMC.BindGetDebtorList(GridView2, ddlProject1.SelectedValue.ToString(), ddlType.SelectedValue.ToString());
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void ddlProject1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                ddlType.SelectedValue = "-1";
+                GetSProj();
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void ddlType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ddlType.SelectedValue == "E")
+                {
+                    GetProj();
                 }
                 else
                 {
-                    BindProj();
+                    GetSProj();
                 }
             }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void BindProj()
-    {
-        try
-        {
-            PMC.BindGetEmpProj(ddlProject1, Session["UserID"].ToString());
-            GetSProj();
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void GetSProj()
-    {
-        try
-        {
-            PMC.BindGetDebtorList(GridView2, ddlProject1.SelectedValue.ToString(), ddlType.SelectedValue.ToString());
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void ddlProject1_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        try
-        {
-            ddlType.SelectedValue = "-1";
-            GetSProj();
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void ddlType_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        try
-        {
-            if (ddlType.SelectedValue == "E")
+            catch (Exception ex)
             {
-                GetProj();
-            }
-            else
-            {
-                GetSProj();
             }
         }
-        catch (Exception ex)
+        public void GetProj()
         {
-        }
-    }
-    public void GetProj()
-    {
-        try
-        {
-            PMC.BindGetDebitorsList(GridView2, ddlProject1.SelectedValue.ToString(), ddlType.SelectedValue.ToString());
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            try
+            {
+                PMC.BindGetDebitorsList(GridView2, ddlProject1.SelectedValue.ToString(), ddlType.SelectedValue.ToString());
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
         }
     }
 }

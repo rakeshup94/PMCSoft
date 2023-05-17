@@ -7,26 +7,29 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-
-public partial class RSS_UpdateRSS
+namespace PMCSoft.Web.RSS
 {
 
-    /// <summary>
-    /// XmlDataSource1 control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource1;
 
-    /// <summary>
-    /// DataList1 control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.DataList DataList1;
+    public partial class UpdateRSS
+    {
+
+        /// <summary>
+        /// XmlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource1;
+
+        /// <summary>
+        /// DataList1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataList DataList1;
+    }
 }

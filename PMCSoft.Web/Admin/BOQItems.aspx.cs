@@ -10,62 +10,65 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
- 
+
 using PMCSoft.Infrastructure.Data;
 
-public partial class Admin_BOQItems : System.Web.UI.Page
+namespace PMCSoft.Web.Admin
 {
-    BALPMC PMC = new BALPMC();
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class BOQItems : System.Web.UI.Page
     {
-        if (!IsPostBack)
+        BALPMC PMC = new BALPMC();
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+            if (!IsPostBack)
             {
-                Session.Clear();
-                Session.Abandon();
-                Session.RemoveAll();
-                Response.Redirect("~/Login.aspx?Value=" + "2");
-            }
-            else
-            {
-                GetUnit();
+                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                {
+                    Session.Clear();
+                    Session.Abandon();
+                    Session.RemoveAll();
+                    Response.Redirect("~/Login.aspx?Value=" + "2");
+                }
+                else
+                {
+                    GetUnit();
+                }
             }
         }
-    }
-    public void GetUnit()
-    {
-        try
+        public void GetUnit()
         {
-            PMC.BindUnitddl(ddlUnit);
-            PMC.BindUnitddl(ddlSubUnit);
-            PMC.BindUnitddl(ddlPartUnit);
+            try
+            {
+                PMC.BindUnitddl(ddlUnit);
+                PMC.BindUnitddl(ddlSubUnit);
+                PMC.BindUnitddl(ddlPartUnit);
+            }
+            catch (Exception ex)
+            { }
         }
-        catch (Exception ex)
-        { }
-    }
-    protected void btnSubmit_Click(object sender, EventArgs e)
-    {
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
 
-    }
-    protected void btnCancel_Click(object sender, EventArgs e)
-    {
+        }
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
 
-    }
-    protected void btnSubSubmit_Click(object sender, EventArgs e)
-    {
+        }
+        protected void btnSubSubmit_Click(object sender, EventArgs e)
+        {
 
-    }
-    protected void btnSubCancel_Click(object sender, EventArgs e)
-    {
+        }
+        protected void btnSubCancel_Click(object sender, EventArgs e)
+        {
 
-    }
-    protected void btnPartSubmit_Click(object sender, EventArgs e)
-    {
+        }
+        protected void btnPartSubmit_Click(object sender, EventArgs e)
+        {
 
-    }
-    protected void btnPartCancel_Click(object sender, EventArgs e)
-    {
+        }
+        protected void btnPartCancel_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

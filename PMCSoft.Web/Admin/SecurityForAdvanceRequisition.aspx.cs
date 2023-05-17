@@ -10,162 +10,165 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
- 
+
 using PMCSoft.Infrastructure.Data;
-public partial class Admin_SecurityForAdvanceRequisition : System.Web.UI.Page
+namespace PMCSoft.Web.Admin
 {
-    BALPMC PMC = new BALPMC();
-    DataTable DT = new DataTable();
-    string ItemID = "";
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class SecurityForAdvanceRequisition : System.Web.UI.Page
     {
-
-        try
+        BALPMC PMC = new BALPMC();
+        DataTable DT = new DataTable();
+        string ItemID = "";
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+
+            try
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                if (!IsPostBack)
                 {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
-                }
-                else
-                {
-                    GetSecurityGrid();
+                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                    {
+                        Session.Clear();
+                        Session.Abandon();
+                        Session.RemoveAll();
+                        Response.Redirect("~/Login.aspx?Value=" + "2");
+                    }
+                    else
+                    {
+                        GetSecurityGrid();
+                    }
                 }
             }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void GetSecurityGrid()
-    {
-        Hashtable ht = new Hashtable();
-        ht.Add("@CompanyID", Session["CompID"].ToString());
-        DataTable dt = PMCApp.Get(ht, "GetSecurityAdvanceRequisition");
-        GvAdvancePaymentSecurity.DataSource = dt;
-        GvAdvancePaymentSecurity.DataBind();
-
-    }
-    protected void btnSubmit_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            if (txtsecurityadvancereq.Text != "")
+            catch (Exception ex)
             {
-                Hashtable ht1 = new Hashtable();
-                ht1.Add("@PaymentSecurity ", txtsecurityadvancereq.Text);
-                DataTable DT = PMCApp.Get(ht1, "CheckSecurityAdvanceRequisition  ");
-                if (DT.Rows.Count > 0)
-                {
-                    string scripts = "alert('This Security already exists.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
-                else
-                {
-                    PMC.GetMaxIDForSecurityAdvanceRequisitionFunction(Session["CompID"].ToString(), out ItemID);
-                    Hashtable ht = new Hashtable();
-                    ht.Add("@SecurityID", ItemID.ToString());
-                    ht.Add("@CompanyID", Session["CompID"].ToString());
-                    ht.Add("@PaymentSecurity",txtsecurityadvancereq.Text);
-                    ht.Add("@CreatedBy", Session["UserId"].ToString());
-
-
-                    PMCApp.Get(ht, "InsertSecurityAdvanceRequisition");
-
-
-                    txtsecurityadvancereq.Text = "";
-                    GetSecurityGrid();
-                    string scripts = "alert('Insert Successfully.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
-            }
-            else
-            {
-                string scripts = "alert('Kindly fill Security Of Advance Requisition.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        public void GetSecurityGrid()
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            Hashtable ht = new Hashtable();
+            ht.Add("@CompanyID", Session["CompID"].ToString());
+            DataTable dt = PMCApp.Get(ht, "GetSecurityAdvanceRequisition");
+            GvAdvancePaymentSecurity.DataSource = dt;
+            GvAdvancePaymentSecurity.DataBind();
+
         }
-    }
-    protected void GvAdvancePaymentSecurity_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-    {
-        GvAdvancePaymentSecurity.EditIndex = -1;
-        GetSecurityGrid();
-    }
-    protected void GvAdvancePaymentSecurity_RowEditing(object sender, GridViewEditEventArgs e)
-    {
-        try
+        protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            GvAdvancePaymentSecurity.EditIndex = e.NewEditIndex;
+            try
+            {
+                if (txtsecurityadvancereq.Text != "")
+                {
+                    Hashtable ht1 = new Hashtable();
+                    ht1.Add("@PaymentSecurity ", txtsecurityadvancereq.Text);
+                    DataTable DT = PMCApp.Get(ht1, "CheckSecurityAdvanceRequisition  ");
+                    if (DT.Rows.Count > 0)
+                    {
+                        string scripts = "alert('This Security already exists.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                    else
+                    {
+                        PMC.GetMaxIDForSecurityAdvanceRequisitionFunction(Session["CompID"].ToString(), out ItemID);
+                        Hashtable ht = new Hashtable();
+                        ht.Add("@SecurityID", ItemID.ToString());
+                        ht.Add("@CompanyID", Session["CompID"].ToString());
+                        ht.Add("@PaymentSecurity", txtsecurityadvancereq.Text);
+                        ht.Add("@CreatedBy", Session["UserId"].ToString());
+
+
+                        PMCApp.Get(ht, "InsertSecurityAdvanceRequisition");
+
+
+                        txtsecurityadvancereq.Text = "";
+                        GetSecurityGrid();
+                        string scripts = "alert('Insert Successfully.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                }
+                else
+                {
+                    string scripts = "alert('Kindly fill Security Of Advance Requisition.');";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void GvAdvancePaymentSecurity_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+            GvAdvancePaymentSecurity.EditIndex = -1;
             GetSecurityGrid();
         }
-        catch (Exception ex)
+        protected void GvAdvancePaymentSecurity_RowEditing(object sender, GridViewEditEventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-
-    }
-    protected void GvAdvancePaymentSecurity_RowUpdating(object sender, GridViewUpdateEventArgs e)
-    {
-        try
-        {
-            GridViewRow row = (GridViewRow)GvAdvancePaymentSecurity.Rows[e.RowIndex];
-            TextBox txtPaymentSecurity = (TextBox)row.FindControl("txtPaymentSecurity");
-            Label lblTransid = (Label)row.FindControl("lblTransid");
-
-            HiddenField Hiddenfield1 = (HiddenField)row.FindControl("Hiddenfield1");
-
-            if (txtPaymentSecurity.Text != "")
+            try
             {
+                GvAdvancePaymentSecurity.EditIndex = e.NewEditIndex;
+                GetSecurityGrid();
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
 
-                Hashtable ht1 = new Hashtable();
-                ht1.Add("@PaymentSecurity ", txtPaymentSecurity.Text);
-                DataTable DT = PMCApp.Get(ht1, "CheckSecurityAdvanceRequisition  ");
-                if (DT.Rows.Count > 0)
+        }
+        protected void GvAdvancePaymentSecurity_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            try
+            {
+                GridViewRow row = (GridViewRow)GvAdvancePaymentSecurity.Rows[e.RowIndex];
+                TextBox txtPaymentSecurity = (TextBox)row.FindControl("txtPaymentSecurity");
+                Label lblTransid = (Label)row.FindControl("lblTransid");
+
+                HiddenField Hiddenfield1 = (HiddenField)row.FindControl("Hiddenfield1");
+
+                if (txtPaymentSecurity.Text != "")
                 {
-                    string scripts = "alert('This Security already exists.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+
+                    Hashtable ht1 = new Hashtable();
+                    ht1.Add("@PaymentSecurity ", txtPaymentSecurity.Text);
+                    DataTable DT = PMCApp.Get(ht1, "CheckSecurityAdvanceRequisition  ");
+                    if (DT.Rows.Count > 0)
+                    {
+                        string scripts = "alert('This Security already exists.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                    else
+                    {
+                        Hashtable ht = new Hashtable();
+                        ht.Add("@TransId", lblTransid.Text);
+                        ht.Add("@PaymentSecurity", txtPaymentSecurity.Text);
+                        ht.Add("@ModifiedBy", Session["UserId"].ToString());
+
+                        PMCApp.Get(ht, "UpdateSecurityAdvanceRequisition");
+                        GvAdvancePaymentSecurity.EditIndex = -1;
+                        string scripts = "alert('Update Successfully.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                        GetSecurityGrid();
+                    }
                 }
                 else
                 {
-                    Hashtable ht = new Hashtable();
-                    ht.Add("@TransId", lblTransid.Text);
-                    ht.Add("@PaymentSecurity", txtPaymentSecurity.Text);
-                    ht.Add("@ModifiedBy", Session["UserId"].ToString());
-
-                    PMCApp.Get(ht, "UpdateSecurityAdvanceRequisition");
-                    GvAdvancePaymentSecurity.EditIndex = -1;
-                    string scripts = "alert('Update Successfully.');";
+                    string scripts = "alert('Kindly fill Security.');";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                    GetSecurityGrid();
                 }
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly fill Security.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
 
-    }
-    protected void btnCancel_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("~/Admin/Home.aspx");
+        }
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/Home.aspx");
+        }
     }
 }

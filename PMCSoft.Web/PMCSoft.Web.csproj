@@ -231,7 +231,6 @@
     <Content Include="optimiseProc.txt" />
     <Content Include="PMCReports\AddNewActual.aspx" />
     <Content Include="PMCReports\AddNewPlan.aspx" />
-    <Content Include="PMCReports\Copy of Copy of MonthlyWorkDone.aspx" />
     <Content Include="PMCReports\EquipmentExpenses.aspx" />
     <Content Include="PMCReports\FinancialComparisionOfPlan.aspx" />
     <Content Include="PMCReports\HireChargesExpenses.aspx" />
@@ -649,13 +648,6 @@
     </Compile>
     <Compile Include="PMCReports\AddNewPlan.aspx.designer.cs">
       <DependentUpon>AddNewPlan.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="PMCReports\Copy of Copy of MonthlyWorkDone.aspx.cs">
-      <DependentUpon>Copy of Copy of MonthlyWorkDone.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PMCReports\Copy of Copy of MonthlyWorkDone.aspx.designer.cs">
-      <DependentUpon>Copy of Copy of MonthlyWorkDone.aspx</DependentUpon>
     </Compile>
     <Compile Include="PMCReports\EquipmentExpenses.aspx.cs">
       <DependentUpon>EquipmentExpenses.aspx</DependentUpon>

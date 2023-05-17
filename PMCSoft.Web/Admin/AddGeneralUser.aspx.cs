@@ -18,115 +18,116 @@ using System.Net;
 using System.Net.Mail;
 using System.IO;
 using PMCSoft.Infrastructure.Data;
- 
 
-public partial class Admin_AddGeneralUser : System.Web.UI.Page
+namespace PMCSoft.Web.Admin
 {
-    BALPMC PMC = new BALPMC();
-    DataTable DT = new DataTable();
-    string EmpID = "";
-    string DeptID = "";
-    string DesgID = "";
-  
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class AddGeneralUser : System.Web.UI.Page
     {
-        try
+        BALPMC PMC = new BALPMC();
+        DataTable DT = new DataTable();
+        string EmpID = "";
+        string DeptID = "";
+        string DesgID = "";
+
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            try
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                if (!IsPostBack)
                 {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
-                }
-                else
-                {
-                    BindProject();
-                    GetDept();
+                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                    {
+                        Session.Clear();
+                        Session.Abandon();
+                        Session.RemoveAll();
+                        Response.Redirect("~/Login.aspx?Value=" + "2");
+                    }
+                    else
+                    {
+                        BindProject();
+                        GetDept();
+                    }
                 }
             }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void GetDept()
-    {
-        try
-        {
-            PMC.BindDepartmentDDL(ddlDepartment);
-            ddlDesignation.Items.Insert(0, new ListItem("Select Designation", "-1"));
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void BindProject()
-    {
-        try
-        {
-            PMC.BindProject(GVProject);
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void btnReset_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("~/Admin/Home.aspx");
-    }
-    protected void ddlDepartment_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        try
-        {
-            PMC.BindDesignationDDL(ddlDesignation, ddlDepartment.SelectedValue.ToString());
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void ddlDesignation_SelectedIndexChanged(object sender, EventArgs e)
-    {
-
-    }
-    public bool isNumeric(string val, System.Globalization.NumberStyles NumberStyle)
-    {
-        if (val.Length > 0)
-        {
-            Double result;
-            return Double.TryParse(val, NumberStyle,
-                System.Globalization.CultureInfo.CurrentCulture, out result);
-        }
-        else
-        {
-            return true;
-        }
-    }
-    protected void btnSubmit_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            int r = 0;
-            string ch = string.Empty;
-            if (txtFName.Text != "")
+            catch (Exception ex)
             {
-                if (txtDateOfBirth.Text != "")
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        public void GetDept()
+        {
+            try
+            {
+                PMC.BindDepartmentDDL(ddlDepartment);
+                ddlDesignation.Items.Insert(0, new ListItem("Select Designation", "-1"));
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        public void BindProject()
+        {
+            try
+            {
+                PMC.BindProject(GVProject);
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/Home.aspx");
+        }
+        protected void ddlDepartment_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                PMC.BindDesignationDDL(ddlDesignation, ddlDepartment.SelectedValue.ToString());
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void ddlDesignation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        public bool isNumeric(string val, System.Globalization.NumberStyles NumberStyle)
+        {
+            if (val.Length > 0)
+            {
+                Double result;
+                return Double.TryParse(val, NumberStyle,
+                    System.Globalization.CultureInfo.CurrentCulture, out result);
+            }
+            else
+            {
+                return true;
+            }
+        }
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int r = 0;
+                string ch = string.Empty;
+                if (txtFName.Text != "")
                 {
-                    if (ddlDepartment.SelectedValue != "-1")
+                    if (txtDateOfBirth.Text != "")
                     {
-                        if (ddlDesignation.SelectedValue != "-1")
+                        if (ddlDepartment.SelectedValue != "-1")
                         {
-                           
+                            if (ddlDesignation.SelectedValue != "-1")
+                            {
+
                                 if (txtMobileNo.Text != "")
                                 {
                                     if (this.isNumeric(txtMobileNo.Text, System.Globalization.NumberStyles.Integer))
@@ -217,167 +218,168 @@ public partial class Admin_AddGeneralUser : System.Web.UI.Page
                                     string scripts = "alert('Kindly fill mobile number.');";
                                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                                 }
-                          
+
+                            }
+                            else
+                            {
+                                string scripts = "alert('Kindly select designation.');";
+                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                            }
                         }
                         else
                         {
-                            string scripts = "alert('Kindly select designation.');";
+                            string scripts = "alert('Kindly select department.');";
                             ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                         }
                     }
                     else
                     {
-                        string scripts = "alert('Kindly select department.');";
+                        string scripts = "alert('Kindly fill date of birth.');";
                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                     }
                 }
                 else
                 {
-                    string scripts = "alert('Kindly fill date of birth.');";
+                    string scripts = "alert('Kindly fill first name of user.');";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly fill first name of user.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        public void ClearData()
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void ClearData()
-    {
-        try
-        {
-            txtFName.Text = ""; txtLName.Text = ""; txtDateOfBirth.Text = ""; txtMobileNo.Text = ""; 
-            ddlDesignation.SelectedValue = "-1"; txtEmployeeID.Text = ""; txtDateOfBirth.Text = ""; txtDOJ.Text = "";
-
-            BindProject();
-            GetDept();
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-    {
-        GVProject.Visible = true;
-    }
-    protected void LnkAddNewDept_Click(object sender, EventArgs e)
-    {
-        ModalPopupExtender1.Show();
-    }
-    protected void BtnDeptSave_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            if (txtDepartment.Text != "")
+            try
             {
-                DT = PMCApp.GetDataTableWithOneStringValue("GetDept", txtDepartment.Text);
-                if (DT.Rows.Count > 0)
-                {
-                    string scripts = "alert('Department already exists.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
-                else
-                {
-                    PMC.GetMaxIDForDeptID(Session["CompID"].ToString(), out DeptID);
-                    PMC.InsertDepartment(DeptID, txtDepartment.Text, Session["UserID"].ToString(), Session["CompID"].ToString());
-                    txtDepartment.Text = "";
+                txtFName.Text = ""; txtLName.Text = ""; txtDateOfBirth.Text = ""; txtMobileNo.Text = "";
+                ddlDesignation.SelectedValue = "-1"; txtEmployeeID.Text = ""; txtDateOfBirth.Text = ""; txtDOJ.Text = "";
 
-                    string scripts = "alert('Department insert successfully.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
+                BindProject();
+                GetDept();
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly fill department.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                ModalPopupExtender1.Show();
             }
         }
-        catch (Exception ex)
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            GVProject.Visible = true;
         }
-    }
-    protected void btndepcancel_Click(object sender, EventArgs e)
-    {
-        ModalPopupExtender1.Hide();
-    }
-    protected void LnkAddNewDesignation_Click(object sender, EventArgs e)
-    {
-        ModalPopupExtender2.Show();
-        BindDepartmentDDL();
-    }
-    public void BindDepartmentDDL()
-    {
-        try
+        protected void LnkAddNewDept_Click(object sender, EventArgs e)
         {
-            PMC.BindDepartmentDDL(ddlNewDept);
-            ModalPopupExtender2.Show();
+            ModalPopupExtender1.Show();
         }
-        catch (Exception ex)
+        protected void BtnDeptSave_Click(object sender, EventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void BtnAddnewDesignation_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            if (ddlNewDept.SelectedValue != "-1")
+            try
             {
-                if (txtDesignation.Text != "")
+                if (txtDepartment.Text != "")
                 {
-                    DT = PMCApp.GetDataTableWithTwoStringValue("GetDesg", ddlNewDept.SelectedValue.ToString(), txtDesignation.Text);
+                    DT = PMCApp.GetDataTableWithOneStringValue("GetDept", txtDepartment.Text);
                     if (DT.Rows.Count > 0)
                     {
-                        string scripts = "alert('Designation already exists for this department.');";
+                        string scripts = "alert('Department already exists.');";
                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                     }
                     else
                     {
-                        PMC.GetMaxIDForDesgID(Session["CompID"].ToString(), out DesgID);
-                        PMC.InsertDesignation(Session["CompID"].ToString(), ddlNewDept.SelectedValue.ToString(), DesgID, txtDesignation.Text,
-                            Session["UserID"].ToString());
-                        txtDesignation.Text = ""; ddlNewDept.SelectedValue = "-1";
+                        PMC.GetMaxIDForDeptID(Session["CompID"].ToString(), out DeptID);
+                        PMC.InsertDepartment(DeptID, txtDepartment.Text, Session["UserID"].ToString(), Session["CompID"].ToString());
+                        txtDepartment.Text = "";
 
-                        string scripts = "alert('Designation insert successfully.');";
+                        string scripts = "alert('Department insert successfully.');";
                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                     }
                 }
                 else
                 {
-                    string scripts = "alert('Kindly fill designation.');";
+                    string scripts = "alert('Kindly fill department.');";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    ModalPopupExtender1.Show();
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void btndepcancel_Click(object sender, EventArgs e)
+        {
+            ModalPopupExtender1.Hide();
+        }
+        protected void LnkAddNewDesignation_Click(object sender, EventArgs e)
+        {
+            ModalPopupExtender2.Show();
+            BindDepartmentDDL();
+        }
+        public void BindDepartmentDDL()
+        {
+            try
+            {
+                PMC.BindDepartmentDDL(ddlNewDept);
+                ModalPopupExtender2.Show();
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void BtnAddnewDesignation_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ddlNewDept.SelectedValue != "-1")
+                {
+                    if (txtDesignation.Text != "")
+                    {
+                        DT = PMCApp.GetDataTableWithTwoStringValue("GetDesg", ddlNewDept.SelectedValue.ToString(), txtDesignation.Text);
+                        if (DT.Rows.Count > 0)
+                        {
+                            string scripts = "alert('Designation already exists for this department.');";
+                            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                        }
+                        else
+                        {
+                            PMC.GetMaxIDForDesgID(Session["CompID"].ToString(), out DesgID);
+                            PMC.InsertDesignation(Session["CompID"].ToString(), ddlNewDept.SelectedValue.ToString(), DesgID, txtDesignation.Text,
+                                Session["UserID"].ToString());
+                            txtDesignation.Text = ""; ddlNewDept.SelectedValue = "-1";
+
+                            string scripts = "alert('Designation insert successfully.');";
+                            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                        }
+                    }
+                    else
+                    {
+                        string scripts = "alert('Kindly fill designation.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                        ModalPopupExtender2.Show();
+                    }
+                }
+                else
+                {
+                    string scripts = "alert('Kindly select department.');";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                     ModalPopupExtender2.Show();
                 }
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly select department.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                ModalPopupExtender2.Show();
             }
         }
-        catch (Exception ex)
+        protected void btnAddNewDesignationCancel_Click(object sender, EventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            ModalPopupExtender2.Hide();
         }
-    }
-    protected void btnAddNewDesignationCancel_Click(object sender, EventArgs e)
-    {
-        ModalPopupExtender2.Hide();
-    }
 
+    }
 }

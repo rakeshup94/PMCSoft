@@ -12,133 +12,136 @@ using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
  
 using PMCSoft.Infrastructure.Data;
-public partial class Report_MaterialReciveByPONo : System.Web.UI.Page
+namespace PMCSoft.Web.Report
 {
-    BALPMC PMC = new BALPMC();
-    string AListID = string.Empty;
-
-    DataTable DT = new DataTable();
-    string ItemID = "";
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class MaterialReciveByPONo : System.Web.UI.Page
     {
-        if (!IsPostBack)
-        {
-            if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
-            {
-                Session.Clear();
-                Session.Abandon();
-                Session.RemoveAll();
-                Response.Redirect("~/Login.aspx?Value=" + "2");
-            }
-            else
-            {
-                BindProject();
-            }
-        }
-    }
-    public void BindProject()
-    {
-        try
-        {
-            PMC.BindGetEmpProj(ddlProject, Session["UserID"].ToString());
-            //BindGrid();
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
+        BALPMC PMC = new BALPMC();
+        string AListID = string.Empty;
 
-    protected void BtnReport_Click(object sender, EventArgs e)
-    {
-        try
+        DataTable DT = new DataTable();
+        string ItemID = "";
+        protected void Page_Load(object sender, EventArgs e)
         {
-            int CHECK = 0, check2 = 0, check3 = 0,check4=0;
-            if (ddlProject.SelectedValue == "-1")
+            if (!IsPostBack)
             {
-                CHECK = 1;
-            }
-
-            if (ddlVendor.SelectedValue == "-1")
-            {
-                check3 = 1;
-            }
-            if (ddlpono.SelectedValue == "-1")
-            {
-                check4 = 1;
-            }
-            if (txtDate.Text == "")
-            {
-                check2 = 1;
-            }
-
-            if (CHECK == 0)
-            {
-                if (check2 == 0)
+                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
                 {
-                    if (check3 == 0)
+                    Session.Clear();
+                    Session.Abandon();
+                    Session.RemoveAll();
+                    Response.Redirect("~/Login.aspx?Value=" + "2");
+                }
+                else
+                {
+                    BindProject();
+                }
+            }
+        }
+        public void BindProject()
+        {
+            try
+            {
+                PMC.BindGetEmpProj(ddlProject, Session["UserID"].ToString());
+                //BindGrid();
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+
+        protected void BtnReport_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int CHECK = 0, check2 = 0, check3 = 0, check4 = 0;
+                if (ddlProject.SelectedValue == "-1")
+                {
+                    CHECK = 1;
+                }
+
+                if (ddlVendor.SelectedValue == "-1")
+                {
+                    check3 = 1;
+                }
+                if (ddlpono.SelectedValue == "-1")
+                {
+                    check4 = 1;
+                }
+                if (txtDate.Text == "")
+                {
+                    check2 = 1;
+                }
+
+                if (CHECK == 0)
+                {
+                    if (check2 == 0)
                     {
-                        if (check4 == 0)
+                        if (check3 == 0)
                         {
-                            Hashtable ht = new Hashtable();
-                            ht.Add("@ProjectId", ddlProject.SelectedValue);
-                            ht.Add("@VendorId", ddlVendor.SelectedValue);
-                            ht.Add("@PO_No", ddlpono.SelectedItem.Text);
-                            ht.Add("@To_Date", txtDate.Text);
-                            ht.Add("@From_Date", Txtfrom.Text);
-                            DataTable dt = PMCApp.Get(ht, "GetMatrialRecivedByPoNo");
-                            GVMaterialReceive.DataSource = dt;
-                            GVMaterialReceive.DataBind();
-                            
+                            if (check4 == 0)
+                            {
+                                Hashtable ht = new Hashtable();
+                                ht.Add("@ProjectId", ddlProject.SelectedValue);
+                                ht.Add("@VendorId", ddlVendor.SelectedValue);
+                                ht.Add("@PO_No", ddlpono.SelectedItem.Text);
+                                ht.Add("@To_Date", txtDate.Text);
+                                ht.Add("@From_Date", Txtfrom.Text);
+                                DataTable dt = PMCApp.Get(ht, "GetMatrialRecivedByPoNo");
+                                GVMaterialReceive.DataSource = dt;
+                                GVMaterialReceive.DataBind();
+
+                            }
+                            else
+                            {
+                                string scripts = "alert('Kindly Select PO.NO. ');";
+                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                            }
                         }
                         else
                         {
-                            string scripts = "alert('Kindly Select PO.NO. ');";
+                            string scripts = "alert('Kindly Select Vendor. ');";
                             ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                         }
                     }
                     else
                     {
-                        string scripts = "alert('Kindly Select Vendor. ');";
+                        string scripts = "alert('Kindly Select Date. ');";
                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                     }
                 }
                 else
                 {
-                    string scripts = "alert('Kindly Select Date. ');";
+                    string scripts = "alert('Kindly Select Project. ');";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly Select Project. ');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        protected void ddlProject_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void ddlProject_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        try
-        {
-            PMC.BindGetVendorID(ddlVendor, ddlProject.SelectedValue.ToString());
+            try
+            {
+                PMC.BindGetVendorID(ddlVendor, ddlProject.SelectedValue.ToString());
 
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
         }
-        catch (Exception ex)
+        protected void ddlVendor_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            Hashtable ht = new Hashtable();
+            ht.Add("@Vendor_ID", ddlVendor.SelectedValue);
+            ATCommon.FillDrpDown(ddlpono, PMCApp.Get(ht, "GetPoNoByVendorid"), "Select", "PO_No", "TransId", "0");
         }
-    }
-    protected void ddlVendor_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        Hashtable ht = new Hashtable();
-        ht.Add("@Vendor_ID",ddlVendor.SelectedValue);
-        ATCommon.FillDrpDown(ddlpono, PMCApp.Get(ht, "GetPoNoByVendorid"), "Select", "PO_No", "TransId", "0");
     }
 }

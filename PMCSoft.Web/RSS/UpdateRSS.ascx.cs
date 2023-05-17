@@ -10,11 +10,13 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
-
-public partial class RSS_UpdateRSS : System.Web.UI.UserControl
+namespace PMCSoft.Web.RSS
+{ 
+public partial class UpdateRSS : System.Web.UI.UserControl
 {
     protected void Page_Load(object sender, EventArgs e)
     {
 
     }
+}
 }

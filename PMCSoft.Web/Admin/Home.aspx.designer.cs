@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PMCSoft.Web
+namespace PMCSoft.Web.Admin
 {
 
 

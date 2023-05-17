@@ -10,159 +10,162 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
- 
+
 using PMCSoft.Infrastructure.Data;
 
-public partial class Admin_AddUnit : System.Web.UI.Page
+namespace PMCSoft.Web.Admin
 {
-    BALPMC PMC = new BALPMC();
-    DataTable DT = new DataTable();
-    string UnitID = "";
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class AddUnit : System.Web.UI.Page
     {
-        try
+        BALPMC PMC = new BALPMC();
+        DataTable DT = new DataTable();
+        string UnitID = "";
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            try
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                if (!IsPostBack)
                 {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
-                }
-                else
-                {
-                    GetUnit();
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void GetUnit()
-    {
-        try
-        {
-            PMC.BindUnit(GVUnit);
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void btnCancel_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("~/Admin/Home.aspx");
-    }
-    protected void btnSubmit_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            if (txtName.Text != "")
-            {
-                if (txtCode.Text != "")
-                {
-                    DT = PMCApp.GetDataTableWithOneStringValue("GetUnitName", txtName.Text);
-                    if (DT.Rows.Count > 0)
+                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
                     {
-                        string scripts = "alert('Unit name is already exists.');";
-                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                        Session.Clear();
+                        Session.Abandon();
+                        Session.RemoveAll();
+                        Response.Redirect("~/Login.aspx?Value=" + "2");
                     }
                     else
                     {
-                        DT = PMCApp.GetDataTableWithTwoStringValue("GetUnitCode", txtName.Text, txtCode.Text);
+                        GetUnit();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        public void GetUnit()
+        {
+            try
+            {
+                PMC.BindUnit(GVUnit);
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/Home.aspx");
+        }
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtName.Text != "")
+                {
+                    if (txtCode.Text != "")
+                    {
+                        DT = PMCApp.GetDataTableWithOneStringValue("GetUnitName", txtName.Text);
                         if (DT.Rows.Count > 0)
                         {
-                            string scripts = "alert('Unit code is already exists.');";
+                            string scripts = "alert('Unit name is already exists.');";
                             ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                         }
                         else
                         {
-                            PMC.GetMaxIDForUnitID(Session["CompID"].ToString(), out UnitID);
-                            PMC.InsertUnitMaster(txtName.Text, txtCode.Text, Session["UserID"].ToString(), UnitID.ToString(), Session["CompID"].ToString());
-                            txtName.Text = ""; txtCode.Text = "";
-                            GetUnit();
-                            string scripts = "alert('Insert Successfully.');";
-                            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                            DT = PMCApp.GetDataTableWithTwoStringValue("GetUnitCode", txtName.Text, txtCode.Text);
+                            if (DT.Rows.Count > 0)
+                            {
+                                string scripts = "alert('Unit code is already exists.');";
+                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                            }
+                            else
+                            {
+                                PMC.GetMaxIDForUnitID(Session["CompID"].ToString(), out UnitID);
+                                PMC.InsertUnitMaster(txtName.Text, txtCode.Text, Session["UserID"].ToString(), UnitID.ToString(), Session["CompID"].ToString());
+                                txtName.Text = ""; txtCode.Text = "";
+                                GetUnit();
+                                string scripts = "alert('Insert Successfully.');";
+                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                            }
                         }
-                    }
-                }
-                else
-                {
-                    string scripts = "alert('Kindly fill unit code.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
-            }
-            else
-            {
-                string scripts = "alert('Kindly fill unit name.');";
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-            }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void GVUnit_RowUpdating(object sender, GridViewUpdateEventArgs e)
-    {
-        try
-        {
-            GridViewRow row = (GridViewRow)GVUnit.Rows[e.RowIndex];
-            TextBox txtUnitCode = (TextBox)row.FindControl("txtUnitCode");
-            TextBox txtUnitName = (TextBox)row.FindControl("txtUnitName");
-            HiddenField hdnTID = (HiddenField)row.FindControl("hdnTransID");
-
-            if (txtUnitName.Text != "")
-            {
-                if (txtUnitCode.Text != "")
-                {
-
-                    DT = PMCApp.GetDataTableWithTwoStringValue("GetUnitCode", txtUnitName.Text, txtUnitCode.Text);
-                    if (DT.Rows.Count > 0)
-                    {
-                        string scripts = "alert('Unit code is already exists for this name.');";
-                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                     }
                     else
                     {
-                        PMC.UpdateUnit(txtUnitName.Text, txtUnitCode.Text, hdnTID.Value);
-                        GVUnit.EditIndex = -1;
-                        GetUnit();
+                        string scripts = "alert('Kindly fill unit code.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                     }
                 }
                 else
                 {
-                    string scripts = "alert('Kindly fill unit code.');";
+                    string scripts = "alert('Kindly fill unit name.');";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly fill unit name.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        protected void GVUnit_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            try
+            {
+                GridViewRow row = (GridViewRow)GVUnit.Rows[e.RowIndex];
+                TextBox txtUnitCode = (TextBox)row.FindControl("txtUnitCode");
+                TextBox txtUnitName = (TextBox)row.FindControl("txtUnitName");
+                HiddenField hdnTID = (HiddenField)row.FindControl("hdnTransID");
+
+                if (txtUnitName.Text != "")
+                {
+                    if (txtUnitCode.Text != "")
+                    {
+
+                        DT = PMCApp.GetDataTableWithTwoStringValue("GetUnitCode", txtUnitName.Text, txtUnitCode.Text);
+                        if (DT.Rows.Count > 0)
+                        {
+                            string scripts = "alert('Unit code is already exists for this name.');";
+                            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                        }
+                        else
+                        {
+                            PMC.UpdateUnit(txtUnitName.Text, txtUnitCode.Text, hdnTID.Value);
+                            GVUnit.EditIndex = -1;
+                            GetUnit();
+                        }
+                    }
+                    else
+                    {
+                        string scripts = "alert('Kindly fill unit code.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                }
+                else
+                {
+                    string scripts = "alert('Kindly fill unit name.');";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
         }
-    }
-    protected void GVUnit_RowEditing(object sender, GridViewEditEventArgs e)
-    {
-        GVUnit.EditIndex = e.NewEditIndex;
-        GetUnit();
-    }
-    protected void GVUnit_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-    {
-        GVUnit.EditIndex = -1;
-        GetUnit();
+        protected void GVUnit_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            GVUnit.EditIndex = e.NewEditIndex;
+            GetUnit();
+        }
+        protected void GVUnit_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+            GVUnit.EditIndex = -1;
+            GetUnit();
+        }
     }
 }

@@ -10,58 +10,61 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
- 
+
 using PMCSoft.Infrastructure.Data;
-public partial class Admin_PageHeader : System.Web.UI.Page
+namespace PMCSoft.Web.Admin
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class PageHeader : System.Web.UI.Page
     {
-
-    }
-    protected void btnSubmit_Click(object sender, EventArgs e)
-    {
-        try
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (txtName.Text != "")
-            {
-                Hashtable ht = new Hashtable();
-                ht.Add("@MenuHeaderName", txtName.Text);
-                DataTable DT = PMCApp.Get(ht, "CheckMenuHeader");
-                if (DT.Rows.Count > 0)
-                {
-                    string scripts = "alert('Page name  already exists.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
 
+        }
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtName.Text != "")
+                {
+                    Hashtable ht = new Hashtable();
+                    ht.Add("@MenuHeaderName", txtName.Text);
+                    DataTable DT = PMCApp.Get(ht, "CheckMenuHeader");
+                    if (DT.Rows.Count > 0)
+                    {
+                        string scripts = "alert('Page name  already exists.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+
+                    else
+                    {
+
+                        Hashtable ht1 = new Hashtable();
+                        ht1.Add("@MenuHeaderName", txtName.Text);
+                        PMCApp.Get(ht1, "InsertMenuHeader");
+                        txtName.Text = "";
+                        // GetUnit();
+                        string scripts = "alert('Insert Successfully.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+
+
+                }
                 else
                 {
-
-                    Hashtable ht1 = new Hashtable();
-                    ht1.Add("@MenuHeaderName", txtName.Text);
-                    PMCApp.Get(ht1, "InsertMenuHeader");
-                    txtName.Text = "";
-                    // GetUnit();
-                    string scripts = "alert('Insert Successfully.');";
+                    string scripts = "alert('Kindly fill Page name.');";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                 }
-
-
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly fill Page name.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        protected void btnCancel_Click(object sender, EventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+
+
         }
-    }
-    protected void btnCancel_Click(object sender, EventArgs e)
-    {
-
-
     }
 }

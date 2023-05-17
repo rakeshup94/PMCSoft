@@ -11,9 +11,9 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.IO;
- 
+
 using PMCSoft.Infrastructure.Data;
-namespace PMCSoft.Web
+namespace PMCSoft.Web.Admin
 {
     public partial class Home : System.Web.UI.Page
     {

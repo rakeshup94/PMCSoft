@@ -11,10 +11,13 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-public partial class PMCReports_MonthlyWorkDoneActual : System.Web.UI.Page
+namespace PMCSoft.Web.PMCReports
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class MonthlyWorkDoneActual : System.Web.UI.Page
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
