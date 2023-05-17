@@ -42,3 +42,122 @@ ALTER Proc [dbo].[GetLogInformation]
 ALTER Proc [dbo].[GetMonthlyPurchase]
 ALTER proc [dbo].[GetMonthlyWorkDoneReport]
 ALTER Procedure [dbo].[GetPCBillDeductionDetail]
+
+
+
+Select p.CompanyID, p.FName + ' ' + p.LName As Name, p.EmpID, q.ID as AID,q.AccountType, p.ProjectID 
+,r.TransID
+
+from           
+tblEmployeeMaster p Inner Join tblAccountType q ON p.AccountType=q.ID 
+Inner Join tblUserVerification r on p.CompanyID=r.CompanyID and p.EmpID=r.EmpID
+Where r.Status = 'D' 
+
+Select top 1 * from  tblEmployeeMaster
+Select top 15 * from  tblAccountType
+Select * from tblUserVerification 
+
+Select * from  tblLogInformation
+Where CompanyID = @FValue and EmpID = @SValue and Status = 'D'     
+
+
+
+
+
+
+USE [TravayooNew]
+GO
+/****** Object:  StoredProcedure [dbo].[LoginProc]    Script Date: 17-05-2023 18:48:37 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE [dbo].[LoginProc]   
+ @flag int=NULL,
+ @Email varchar(50)=NULL,
+ @Password varchar(50)=NULL,
+ @UserId bigint=NULL,
+ @LoginId bigint=NULL,
+ @ClientId bigint=NULL,
+ @TypeId int=NULL,
+ @Culture int=NULL,
+ @Status bit=NULL,
+ @CreatedOn DateTime=NULL
+AS  
+BEGIN  
+/************************************************************/
+/****** Login ******/
+/************************************************************/
+
+IF @flag = 1
+
+BEGIN
+Declare @BaseXml XML=NULL
+Select @CreatedOn=GetDate()
+IF EXISTS (SELECT 1 FROM tblUser WHERE usrLoginId=@Email) 
+BEGIN
+SELECT @UserId=usrId,@Status=usrStatus FROM tblUser WHERE usrLoginId=@Email and usrPassword=@Password COLLATE SQL_Latin1_General_CP1_CS_AS
+IF (@UserId IS NOT NULL AND @Status=1)
+BEGIN
+
+INSERT INTO tblLoginInfo(UserId,SignIn,[Status])
+VALUES(@UserId,@CreatedOn,@Status)
+Select @LoginId=IDENT_CURRENT('tblLoginInfo')
+Select @TypeId=2
+;WITH OrganisationChart (usrId,usrParentId,usrtypId) AS
+(SELECT usrId,usrParentId,usrtypId FROM tblUser WHERE usrId = @UserId
+UNION ALL  SELECT emp.usrId,emp.usrParentId,emp.usrtypId
+FROM tblUser emp INNER JOIN OrganisationChart org ON 
+org.usrParentId = emp.usrId
+)
+select @ClientId=usrId from OrganisationChart where usrtypId=@TypeId;
+Select @BaseXml=(Select @LoginId LoginId,@ClientId ClientId,x.usrId UserId,x.usrtypId TypeId,x.usrScopeLevel ScopeId,x.usrRoleId RoleId, 
+IsNull(x.usrParentId,0) ParentId,z.usrDtCulture CultureId,
+z.usrDtTimeZone TimeZone,y.usrDtLclFirstName FirstName,y.usrDtLclMiddleName MiddleName,y.usrDtLclLastName LastName,x.usrImage PicName,
+(select p.rgtId Id,q.rgtCode Code,q.rgtController Controller,q.rgtAction ActionName,q.rgtParameterName ParamName,q.rgtParameter ParamValue 
+from tblUsrRel_Rgt p Inner Join  tblRightMaster q on p.rgtId=q.rgtId
+where p.rgtStatus=@Status and p.usrId=x.usrId
+FOR XML PATH ('Right') , root ('RightList'),type
+)
+from  tblUser x Inner Join  tblUserDetail_Locale y  on x.usrId=y.usrId AND y.cultId=@Culture AND  x.usrId=@UserId
+Inner join tblUserDetailSpecific z on x.usrScopeLevel=z.usrId
+FOR XML PATH ('User'))
+
+
+END
+Else IF @UserId IS NULL
+BEGIN
+Select @BaseXml='<User><Error>Invalid User Name or Password</Error></User>';
+END
+Else IF(@Status!=1)
+BEGIN
+Select @BaseXml='<User><Error>Account is Inactive</Error></User>';
+END
+END
+ELSE
+BEGIN
+ Select @BaseXml='<User><Error>Invalid User Name or Password</Error></User>';
+END
+Select @BaseXml as UserData
+END 
+
+/************************************************************/
+/****** load  Right ******/
+/************************************************************/
+IF @flag = 2
+
+BEGIN
+
+Select distinct x.rgtId,y.rgtCode,y.rgtController,
+y.rgtAction,IsNull(y.rgtParameter,'N/A' ) rgtParameter 
+from tblUsrRel_Rgt x Inner Join  tblRightMaster y 
+on x.rgtId=y.rgtId and x.rgtStatus=1 where  x.usrId=@UserId
+
+
+END 
+
+/************************************************************/
+
+
+END
