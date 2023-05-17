@@ -40,7 +40,7 @@ namespace PMCSoft.Web
                     }
                     if (Session["UserId"] != null || Session["UserName"] != null || Session["CompID"] != null || Session["AName"] != null || Session["UserEmail"] != null || Session["AID"] != null || Session["PRJID"] != null)
                     {
-                        if (Session["AID"] == "1")
+                        if (Session["AID"].ToString() == "1")
                         {
                             Response.Redirect("~/Admin/Home.aspx");
                         }
@@ -70,70 +70,42 @@ namespace PMCSoft.Web
                         DT = PMCApp.GetDataTableWithTwoStringValue("GetEmployee", txtUserID.Text, Pwd.ToString());
                         if (DT.Rows.Count > 0)
                         {
+                            var User = new
+                            {
+                                UserId = DT.Rows[0]["EmpID"].ToString(),
+                                UserName = DT.Rows[0]["Name"].ToString(),
+                                CompanyId = DT.Rows[0]["CompanyID"].ToString(),
+                                AName = DT.Rows[0]["AccountType"].ToString(),
+                                AID = DT.Rows[0]["AID"].ToString(),
+                                ProjectId = DT.Rows[0]["ProjectID"].ToString(),
+                                UserEmail = txtUserID.Text,
+                            };
+
                             DataTable DV = new DataTable();
-                            DV = PMCApp.GetDataTableWithTwoStringValue("GetUserVerify", DT.Rows[0]["CompanyID"].ToString(), DT.Rows[0]["EmpID"].ToString());
+                            DV = PMCApp.GetDataTableWithTwoStringValue("GetUserVerify", User.CompanyId, User.UserId);
                             if (DV.Rows.Count > 0)
                             {
                                 DataTable DL = new DataTable();
-                                DL = PMCApp.GetDataTableWithTwoStringValue("GetLogInformation", DT.Rows[0]["EmpID"].ToString(), DT.Rows[0]["CompanyID"].ToString());
+                                DL = PMCApp.GetDataTableWithTwoStringValue("GetLogInformation", User.UserId, User.CompanyId);
                                 if (DL.Rows.Count > 0)
                                 {
-                                    Session["UserId"] = DT.Rows[0]["EmpID"].ToString();
-                                    Session["UserName"] = DT.Rows[0]["Name"].ToString();
-                                    Session["CompID"] = DT.Rows[0]["CompanyID"].ToString();
-                                    Session["AName"] = DT.Rows[0]["AccountType"].ToString();
-                                    Session["UserEmail"] = txtUserID.Text;
-                                    Session["AID"] = DT.Rows[0]["AID"].ToString();
-                                    Session["PRJID"] = DT.Rows[0]["ProjectID"].ToString();
-                                    AID = DT.Rows[0]["AID"].ToString();
-                                    if (AID == "1")
-                                    {
-
-                                        int value;
-                                        PMC.InsertLoginInformation(Session["UserId"].ToString(), Session["CompID"].ToString(), Session["PRJID"].ToString());
-                                        PMCApp.FindTransId("GetRecordId", Session["PRJID"].ToString(), Session["UserId"].ToString(), out value);
-                                        Session["LoginId"] = value.ToString();
-
-                                        Response.Redirect("~/Admin/Home.aspx");
-                                    }
-                                    else
-                                    {
-                                        int value;
-                                        PMC.InsertLoginInformation(Session["UserId"].ToString(), Session["CompID"].ToString(), Session["PRJID"].ToString());
-                                        PMCApp.FindTransId("GetRecordId", Session["PRJID"].ToString(), Session["UserId"].ToString(), out value);
-                                        Session["LoginId"] = value.ToString();
-                                        Response.Redirect("~/User/Home.aspx");
-                                    }
-                                    PMC.InsertDataForThreeString(Session["UserId"].ToString(), Session["CompID"].ToString(), Session["LoginId"].ToString());
+                                    int value;
+                                    PMC.InsertLoginInformation(User.UserId, User.CompanyId, User.ProjectId);
+                                    PMCApp.FindTransId("GetRecordId", User.ProjectId, User.UserId, out value);
+                                    PMC.InsertDataForThreeString(User.UserId, User.CompanyId, value.ToString());
+                                    Session["LoginId"]  = value.ToString();
                                 }
-                                else
-                                {
-                                    Session["UserId"] = DT.Rows[0]["EmpID"].ToString();
-                                    Session["UserName"] = DT.Rows[0]["Name"].ToString();
-                                    Session["CompID"] = DT.Rows[0]["CompanyID"].ToString();
-                                    Session["AName"] = DT.Rows[0]["AccountType"].ToString();
-                                    Session["UserEmail"] = txtUserID.Text;
-                                    Session["AID"] = DT.Rows[0]["AID"].ToString();
-                                    AID = DT.Rows[0]["AID"].ToString();
-                                    Session["PRJID"] = DT.Rows[0]["ProjectID"].ToString();
-                                    if (AID == "1")
-                                    {
-                                        int value;
-                                        PMC.InsertLoginInformation(Session["UserId"].ToString(), Session["CompID"].ToString(), Session["PRJID"].ToString());
-                                        PMCApp.FindTransId("GetRecordId", Session["PRJID"].ToString(), Session["UserId"].ToString(), out value);
-                                        Session["LoginId"] = value.ToString();
-                                        Response.Redirect("~/Admin/Home.aspx");
-                                    }
-                                    else
-                                    {
-                                        int value;
-                                        PMC.InsertLoginInformation(Session["UserId"].ToString(), Session["CompID"].ToString(), Session["PRJID"].ToString());
-                                        PMCApp.FindTransId("GetRecordId", Session["PRJID"].ToString(), Session["UserId"].ToString(), out value);
-                                        Session["LoginId"] = value.ToString();
-                                        Response.Redirect("~/User/Home.aspx");
-                                    }
-                                    PMC.InsertDataForThreeString(Session["UserId"].ToString(), Session["CompID"].ToString(), Session["LoginId"].ToString());
-                                }
+                                Session["UserId"] = User.UserId;
+                                Session["UserName"] = User.UserName;
+                                Session["CompID"] = User.CompanyId;
+                                Session["AName"] = User.AName;
+                                Session["UserEmail"] = User.UserEmail;
+                                Session["AID"] = User.AID;
+                                Session["PRJID"] = User.ProjectId;
+
+                                var returnUrl = User.AID == "1" ? "~/Admin/Home.aspx" : "~/User/Home.aspx";
+                                Response.Redirect(returnUrl);
+
                             }
                             else
                             {

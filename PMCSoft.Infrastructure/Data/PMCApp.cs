@@ -19,7 +19,7 @@ namespace PMCSoft.Infrastructure.Data
         {
 
             
-            sqlconnectionstring = ConfigurationManager.AppSettings["DBConnectionString"].ToString();
+            sqlconnectionstring = ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
             strServerName = "118.139.182.92";
             strEmail_From = "info@sitaone.com";
         }
