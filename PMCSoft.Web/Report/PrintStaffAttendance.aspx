@@ -11,7 +11,7 @@
      <table style="width: 930px;" border="0">
                     <tr>
                         <td style="text-align: center; font-size: 18px; font-family: Cambria;">
-                            Ahluwalia Contracts (India) Ltd.<br />
+                       
                            Staff Attendance
                         </td>
                     </tr>

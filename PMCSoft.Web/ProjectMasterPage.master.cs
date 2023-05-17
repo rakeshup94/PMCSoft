@@ -12,7 +12,7 @@ using System.Web.UI.HtmlControls;
 using System.Xml.Linq;
  
 using PMCSoft.Infrastructure.Data;
-namespace WebApp
+namespace PMCSoft.Web
 {
     public partial class ProjectMasterPage : System.Web.UI.MasterPage
     {

@@ -17,11 +17,7 @@
                                     Add Monthly WorkDone Plan</HeaderTemplate>
                                 <ContentTemplate>
                                     <table style="width: 970px;">
-                                        <tr>
-                                            <td style="text-align: center; font-size: 30px; font-family: Cambria;">
-                                                Ahluwalia Contracts (India) Ltd.
-                                            </td>
-                                        </tr>
+                                       
                                         <tr>
                                             <td>
                                                 <table style="width: 910px;">

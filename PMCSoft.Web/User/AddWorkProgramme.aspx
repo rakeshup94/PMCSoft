@@ -19,11 +19,7 @@
                         <h3 class="reallynow">
                             WORK PROGRAMME</h3>
                         <table style="width: 930px;">
-                            <tr>
-                                <td colspan="4" style="text-align: center; font-size: 30px; font-family: Cambria;">
-                                    Ahluwalia Contracts (India) Ltd.
-                                </td>
-                            </tr>
+                      
                             <tr>
                                 <td colspan="4">
                                     <table style="width: 910px;">

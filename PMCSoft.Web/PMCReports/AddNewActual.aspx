@@ -13,11 +13,7 @@
                             Financial Comparision Of Plan</h3>
                             
                         <table style="width: 970px;">
-                            <tr>
-                                <td style="text-align: center; font-size: 30px; font-family: Cambria;">
-                                    Ahluwalia Contracts (India) Ltd.
-                                </td>
-                            </tr>
+                            
                           
                             <tr>
                                 <td>

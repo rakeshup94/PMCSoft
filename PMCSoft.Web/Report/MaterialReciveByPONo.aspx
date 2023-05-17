@@ -14,9 +14,7 @@
                             Matrial Recive By Project</h3>
                         <table style="width: 950px;">
                             <tr>
-                                <td style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Ahluwalia Contracts (India) Ltd.
-                                </td>
+                               
                             </tr>
                             <tr>
                                 <td font-size: 15px; font-family: Cambria;">

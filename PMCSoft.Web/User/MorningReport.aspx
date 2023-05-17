@@ -19,11 +19,7 @@
                         <h3 class="reallynow">
                             MORNING REPORT</h3>
                         <table style="width: 990px;">
-                            <tr>
-                                <td colspan="6" style="text-align: center; font-size: 30px; font-family: Cambria;">
-                                    Ahluwalia Contracts (India) Ltd.
-                                </td>
-                            </tr>
+                     
                             <tr>
                                 <td>
                                     Project:

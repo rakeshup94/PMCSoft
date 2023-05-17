@@ -8,17 +8,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-     <table style="width: 930px;" border="0">
-                    <tr>
-                        <td style="text-align: center; font-size: 18px; font-family: Cambria;">
-                            Ahluwalia Contracts (India) Ltd.<br />
-                           Staff Attendance
-                        </td>
-                    </tr>
-                </table>
-                <br />
-                <br />
-                <br />
+ 
+        
       <table style="width: 930px">
                             <tr>
                                  <td style="font-size: 15px; font-family: Cambria; color: Black">

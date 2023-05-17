@@ -12,11 +12,7 @@
                         <h3 class="reallynow">
                             MONTHLY WORK DONE</h3>
                         <table style="width: 1240px;">
-                            <tr>
-                                <td style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Ahluwalia Contracts (India) Ltd.
-                                </td>
-                            </tr>
+                        
                             <td>
                                 <table style="width: 910px;">
                                     <tr>

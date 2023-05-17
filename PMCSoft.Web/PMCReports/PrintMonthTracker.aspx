@@ -12,7 +12,7 @@
                     <tr>
                      <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="50px" />
                         <td style="text-align: center; font-size: 18px; font-family: Cambria;">
-                            Ahluwalia Contracts (India) Ltd.<br />
+                
                            FINANCIAL COMPARISION OF PLAN vis-à-vis ACTUAL													
 
                         </td>

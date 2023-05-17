@@ -12,11 +12,7 @@
                         <h3 class="reallynow">
                             Stock Opening</h3>
                         <table style="width: 1060px;">
-                            <tr>
-                                <td colspan="18" style="text-align: center; font-size: 30px; font-family: Cambria;">
-                                    Ahluwalia Contracts (India) Ltd.
-                                </td>
-                            </tr>
+                      
                             <tr>
                                 <td style="width: 100px; text-align: center;">
                                     Project:

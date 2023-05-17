@@ -11,11 +11,7 @@
                         <h3 class="reallynow">
                             MONTHLY TRACKER</h3>
                         <table style="width: 1240px;">
-                            <tr>
-                                <td style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Ahluwalia Contracts (India) Ltd.
-                                </td>
-                            </tr>
+                      
                             <tr>
                                 <td style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     Project&nbsp;&nbsp;&nbsp;<asp:DropDownList ID="ddlProject" runat="server" AutoPostBack="true"

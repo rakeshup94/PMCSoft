@@ -16,10 +16,7 @@
                 <table style="width: 1400px;" border="0">
                     <tr>
                         <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="100px" />
-                        <td style="text-align: center; font-size: 28px; font-family: Cambria;">
-                            Ahluwalia Contracts (India) Ltd.<br />
-                            RA. Chart
-                        </td>
+                      
                     </tr>
                 </table>
                 <br />

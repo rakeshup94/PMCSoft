@@ -14,7 +14,7 @@ using System.Xml.Linq;
 
 using PMCSoft.Infrastructure.Data;
 
-namespace WebApp
+namespace PMCSoft.Web
 {
     public partial class MasterPage : System.Web.UI.MasterPage
     {
