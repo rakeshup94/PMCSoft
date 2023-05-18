@@ -127,6 +127,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Account\User.cs" />
     <Compile Include="Models\CustomPrincipal.cs" />
     <Compile Include="Models\ErrorViewModel.cs" />
@@ -143,6 +150,7 @@
     <Content Include="Content\Javascripts\table-action.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
     <Content Include="images\bg-image.jpg" />
     <Content Include="images\favicon.png" />
     <Content Include="images\logo.png" />

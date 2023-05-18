@@ -32,6 +32,11 @@ namespace PMCSoft.WebMVC.Controllers
         // GET: Account
         public ActionResult Index()
         {
+
+     
+   
+
+
             return View();
         }
         [HttpGet]
@@ -92,8 +97,8 @@ namespace PMCSoft.WebMVC.Controllers
                     Response.Cookies.Add(faCookie);
 
                     var returnUrl = user.UserTypeId == 1 ? "~/Admin/Home.aspx" : "~/User/Home.aspx";
-                    Response.Redirect(returnUrl);
-                    
+                    return RedirectPermanent(returnUrl);
+
                 }
                 else
                 {
