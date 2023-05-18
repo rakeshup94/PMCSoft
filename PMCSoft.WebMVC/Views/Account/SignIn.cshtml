@@ -1,0 +1,91 @@
+﻿@model PMCSoft.WebMVC.Models.Account.SignInModel
+@{
+    ViewBag.Title = "Sign In ";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="~/Content/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="~/Content/css/style-responsive.css" />
+</head>
+<body class="h-100">
+    <div id="root" class="h-100">
+        <div class="fixed-background"></div>
+        <div class="container p-0 pt-5 h-100 position-relative">
+            <div class="row g-0 h-100">
+                <div class="col-12 h-100 pb-4 px-4 pt-0 p-lg-0">
+                    <div class="sw-lg-80 login-bg shadow-deep py-5">
+                        <div class="sw-lg-80 px-5">
+                            <div class="row mb-5">
+                                <div class="col-xl-12 text-center">
+                                    <div class="sh-11">
+                                        <div class="logo-default mx-auto">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-6">
+                                                    <img class="img-fluid" src="~/images/logo.png" />
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    @using (Html.BeginForm("SignIn", "Account", FormMethod.Post, new { id = "signInFrm", role = "form", @class = "tooltip-end-bottom", novalidate = "novalidate", enctype = "multipart/form-data" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <form class="tooltip-end-bottom">
+                                            <div class="row">
+                                                <div class="col-xl-12">
+                                                    <div class="mb-3 filled form-group tooltip-end-top">
+                                                        <i class="icon-14 bi-person-fill text-primary"></i>
+                                                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control pe-7 required", maxlength = "50", @placeholder = "Email" })
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-12">
+                                                    <div class="mb-3 filled form-group tooltip-end-top">
+                                                        <i class="icon-14 bi-unlock text-primary"></i>
+                                                        @Html.TextBoxFor(model => model.Password, new { @class = "form-control pe-7 required", maxlength = "50", @placeholder = "Password", type = "password" })
+
+                                                        <a class="text-small position-absolute t-3 e-3" href="#">Forgot?</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-12 mx-auto text-center">
+                                                    <button type="submit" class="btn btn-lg btn-danger">SignIn</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    }
+                                    <div class="row mt-5">
+                                        <div class="col-xl-12  text-center">
+                                            <p>Don't have an account ? <a href="#">Register here</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

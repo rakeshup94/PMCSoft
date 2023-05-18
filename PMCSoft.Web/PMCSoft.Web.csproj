@@ -1062,12 +1062,6 @@
     <Folder Include="js\" />
     <Folder Include="Models\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PMCSoft.Infrastructure\PMCSoft.Infrastructure.csproj">
-      <Project>{3982bd85-b93b-4f9b-bf7d-f09e6fc0be73}</Project>
-      <Name>PMCSoft.Infrastructure</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
