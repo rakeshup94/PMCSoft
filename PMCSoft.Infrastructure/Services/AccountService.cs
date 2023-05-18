@@ -2,8 +2,10 @@
 
 using PMCSoft.Core.Interfaces.Repository;
 using PMCSoft.Core.Interfaces.Service;
+using PMCSoft.Core.Models;
 using PMCSoft.Core.Models.Account;
 using PMCSoft.Infrastructure.Repository;
+using System.Threading.Tasks;
 
 namespace PMCSoft.Infrastructure.Services
 {
@@ -27,10 +29,9 @@ namespace PMCSoft.Infrastructure.Services
             this.AccountRepo = IU.AccontRepo;
 
         }
-        public AccountUser LoginUser(string email, string password)
+        public async Task<ServiceResponse<AccountUser>> LoginUser(string _email, string _password)
         {
-            AccountUser model = this.AccountRepo.AuthenticateUser(email, password);
-            return model;
+            return await this.AccountRepo.Authentication(_email, _password);
         }
 
 

@@ -225,6 +225,7 @@
     <Compile Include="Entity\tblWorkType.cs" />
     <Compile Include="Entity\UserPermission.cs" />
     <Compile Include="Entity\UserPermissionPage.cs" />
+    <Compile Include="Models\ServiceResponse.cs" />
     <Compile Include="PMCSoftContext.cs" />
     <Compile Include="Interfaces\Common\IAuditableEntity.cs" />
     <Compile Include="Interfaces\Common\IDataContext.cs" />

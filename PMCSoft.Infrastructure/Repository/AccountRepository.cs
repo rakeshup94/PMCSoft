@@ -4,13 +4,15 @@
 using PMCSoft.Core.Entity;
 using PMCSoft.Core.Interfaces.Common;
 using PMCSoft.Core.Interfaces.Repository;
+using PMCSoft.Core.Models;
 using PMCSoft.Core.Models.Account;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.Remoting.Contexts;
-
+using System.Threading.Tasks;
 
 namespace PMCSoft.Infrastructure.Repository
 {
@@ -76,8 +78,10 @@ namespace PMCSoft.Infrastructure.Repository
         }
 
 
-        public AccountUser Authentication(string _email, string _password)
+        public async Task<ServiceResponse<AccountUser>> Authentication(string _email, string _password)
         {
+
+            ServiceResponse<AccountUser> _model = new ServiceResponse<AccountUser>();
             var flag = new SqlParameter();
             flag.ParameterName = "@flag";
             flag.Direction = ParameterDirection.Input;
@@ -95,7 +99,7 @@ namespace PMCSoft.Infrastructure.Repository
             password.Direction = ParameterDirection.Input;
             password.SqlDbType = SqlDbType.VarChar;
             password.Value = _password;
-      
+
 
             var command = Context.Database.Connection.CreateCommand();
             command.CommandText = "LoginProc";
@@ -104,33 +108,38 @@ namespace PMCSoft.Infrastructure.Repository
             command.Parameters.Add(email);
             command.Parameters.Add(password);
             Context.Database.Connection.Open();
-            var result = command.ExecuteReader();
-
-
-            AccountUser dbresult = null;
+            var result = await command.ExecuteReaderAsync();
+            AccountUser dbResult = null;
             while (result.Read())
             {
-                AccountUser model = new AccountUser();
-                model.UserId = result["usrId"] == DBNull.Value ? 0 : (long)result["usrId"];
-                model.UserTypeId = result["usrtypId"] == DBNull.Value ? 0 : (long)result["usrtypId"];
-                model.ScopeId = result["usrScopeLevel"] == DBNull.Value ? 0 : (long)result["usrScopeLevel"];
-                model.ParentId = result["usrParentId"] == DBNull.Value ? 0 : (long)result["usrParentId"];
-                model.CultureId = result["usrDtCulture"] == DBNull.Value ? 0 : (byte)result["usrDtCulture"];
-                model.TimeZone = result["usrDtTimeZone"] == DBNull.Value ? "" : (string)result["usrDtTimeZone"];
-                model.FirstName = result["usrDtLclFirstName"] == DBNull.Value ? "" : (string)result["usrDtLclFirstName"];
-                model.MiddleName = result["usrDtLclMiddleName"] == DBNull.Value ? "" : (string)result["usrDtLclMiddleName"];
-                model.LastName = result["usrDtLclLastName"] == DBNull.Value ? "" : (string)result["usrDtLclLastName"];
-                model.RoleId = result["usrRoleId"] == DBNull.Value ? 0 : (long)result["usrRoleId"];
-                model.ProfilePath = result["usrImage"] == DBNull.Value ? "profile-img.png" : (string)result["usrImage"];
-                dbresult = model;
+                var IsResult = Convert.ToInt32(result["IsResult"]);
+                if (IsResult > 0)
+                {
+                    dbResult = new AccountUser()
+                    {
+                        UserId = (long)result["UserId"],
+                        EmpNo = result["EmpId"].ToString(),
+                        EmpName = result["EmpName"].ToString(),
+                        CompanyId = result["CompanyId"].ToString(),
+                        ProjectNo = result["ProjectId"].ToString(),
+                        UserTypeId = (int)result["UserTypeId"],
+                        UserType = result["AccountType"].ToString(),
+                        Email = _email,
+                        LoginId = (long)result["LoginId"],
+                    };
+                    _model.Message = "Data found.";
+                }
+                else
+                {
+                    _model.Message = result["Message"].ToString();
+                }
             }
+            _model.Data = dbResult;
+            _model.Result = dbResult != null ? true : false;
             Context.Database.Connection.Close();
-            return dbresult;
+            return _model;
+
         }
-
-
-
-
 
 
 

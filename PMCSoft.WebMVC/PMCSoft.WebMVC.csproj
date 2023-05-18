@@ -129,6 +129,8 @@
     </Compile>
     <Compile Include="Models\Account\User.cs" />
     <Compile Include="Models\CustomPrincipal.cs" />
+    <Compile Include="Models\ErrorViewModel.cs" />
+    <Compile Include="Models\ServiceResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
