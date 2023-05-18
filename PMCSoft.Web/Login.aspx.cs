@@ -8,6 +8,9 @@ using System.Web.UI.WebControls;
 using System.Text;
 using System.Security.Cryptography;
 using PMCSoft.Infrastructure.Data;
+using System.Collections;
+using System.Security.Policy;
+
 namespace PMCSoft.Web
 {
 
@@ -31,70 +34,49 @@ namespace PMCSoft.Web
         {
             try
             {
-                if (txtUserID.Text != "")
+                string _password = CreateMD5Hash(txtPassword.Text.Trim());
+                Hashtable ht = new Hashtable();
+                ht.Add("@flag", 1);
+                ht.Add("@Email", txtUserID.Text.Trim());
+                ht.Add("@Password", _password);
+                DataTable result = PMCApp.Get(ht, "LoginProc");
+                var IsResult = Convert.ToInt32(result.Rows[0]["IsResult"]);
+                if (IsResult > 0)
                 {
-                    if (txtPassword.Text != "")
+                    var User = new
                     {
-                        string Pwd = CreateMD5Hash(txtPassword.Text);
-                        DT = PMCApp.GetDataTableWithTwoStringValue("GetEmployee", txtUserID.Text, Pwd.ToString());
-                        if (DT.Rows.Count > 0)
-                        {
-                            var User = new
-                            {
-                                UserId = DT.Rows[0]["EmpID"].ToString(),
-                                UserName = DT.Rows[0]["Name"].ToString(),
-                                CompanyId = DT.Rows[0]["CompanyID"].ToString(),
-                                AName = DT.Rows[0]["AccountType"].ToString(),
-                                AID = DT.Rows[0]["AID"].ToString(),
-                                ProjectId = DT.Rows[0]["ProjectID"].ToString(),
-                                UserEmail = txtUserID.Text,
-                            };
+                        UserId = (long)result.Rows[0]["UserId"],
+                        EmpId = result.Rows[0]["EmpId"].ToString(),
+                        EmpName = result.Rows[0]["EmpName"].ToString(),
+                        CompanyId = result.Rows[0]["CompanyId"].ToString(),
+                        ProjectId = result.Rows[0]["ProjectId"].ToString(),
+                        UserTypeId = (int)result.Rows[0]["UserTypeId"],
+                        AccountType = result.Rows[0]["AccountType"].ToString(),
+                        UserEmail = txtUserID.Text.Trim(),
+                        LoginId = (long)result.Rows[0]["LoginId"],
+                    };
+                    Session["LoginId"] = User.LoginId;
+                    Session["UserId"] = User.UserId;
+                    Session["UserName"] = User.EmpName;
+                    Session["CompID"] = User.CompanyId;
+                    Session["AName"] = User.AccountType;
+                    Session["UserEmail"] = User.UserEmail;
+                    Session["AID"] = User.UserTypeId;
+                    Session["PRJID"] = User.ProjectId;
 
-                            DataTable DV = new DataTable();
-                            DV = PMCApp.GetDataTableWithTwoStringValue("GetUserVerify", User.CompanyId, User.UserId);
-                            if (DV.Rows.Count > 0)
-                            {
-                                DataTable DL = new DataTable();
-                                DL = PMCApp.GetDataTableWithTwoStringValue("GetLogInformation", User.UserId, User.CompanyId);
-                                if (DL.Rows.Count > 0)
-                                {
-                                    int value;
-                                    PMC.InsertLoginInformation(User.UserId, User.CompanyId, User.ProjectId);
-                                    PMCApp.FindTransId("GetRecordId", User.ProjectId, User.UserId, out value);
-                                    PMC.InsertDataForThreeString(User.UserId, User.CompanyId, value.ToString());
-                                    Session["LoginId"] = value.ToString();
-                                }
-                                Session["UserId"] = User.UserId;
-                                Session["UserName"] = User.UserName;
-                                Session["CompID"] = User.CompanyId;
-                                Session["AName"] = User.AName;
-                                Session["UserEmail"] = User.UserEmail;
-                                Session["AID"] = User.AID;
-                                Session["PRJID"] = User.ProjectId;
+                    var returnUrl = User.UserTypeId == 1 ? "~/Admin/Home.aspx" : "~/User/Home.aspx";
+       
 
-                                var returnUrl = User.AID == "1" ? "~/Admin/Home.aspx" : "~/User/Home.aspx";
-                                Response.Redirect(returnUrl);
+                    Response.Redirect(returnUrl, false);
+                    HttpContext.Current.ApplicationInstance.CompleteRequest();
 
-                            }
-                            else
-                            {
-                                lblMsg.Text = "This email id is not verified, please verify the mail id from your mail.";
-                            }
-                        }
-                        else
-                        {
-                            lblMsg.Text = "Incorrect Login, please try again.";
-                        }
-                    }
-                    else
-                    {
-                        lblMsg.Text = "Kindly Fill Password";
-                    }
                 }
                 else
                 {
-                    lblMsg.Text = "Kindly Fill User Id";
+                    lblMsg.Text = result.Rows[0]["Message"].ToString();
+
                 }
+
             }
             catch (Exception ex)
             {
