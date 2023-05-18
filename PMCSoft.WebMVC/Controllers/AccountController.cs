@@ -34,6 +34,7 @@ namespace PMCSoft.WebMVC.Controllers
         {
             return View();
         }
+        [HttpGet]
         public ActionResult SignIn()
         {
             var model = new SignInModel();
@@ -43,6 +44,7 @@ namespace PMCSoft.WebMVC.Controllers
         //{
         //    return Ok(await prodSrv.GetProductDetail(ProductId));
         //}
+        [HttpPost]
         public async Task<ActionResult> SignIn(SignInModel model)
         {
 
@@ -90,7 +92,7 @@ namespace PMCSoft.WebMVC.Controllers
                     Response.Cookies.Add(faCookie);
 
                     var returnUrl = user.UserTypeId == 1 ? "~/Admin/Home.aspx" : "~/User/Home.aspx";
-                    Response.Redirect(returnUrl, false);
+                    Response.Redirect(returnUrl);
                     
                 }
                 else
