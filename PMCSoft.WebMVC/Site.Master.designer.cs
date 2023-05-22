@@ -15,13 +15,22 @@ namespace PMCSoft.WebMVC
     {
 
         /// <summary>
-        /// ltnLogout control.
+        /// head control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton ltnLogout;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+
+        /// <summary>
+        /// VerticleMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::PMCSoft.WebMVC.UserControls.VerticleMenu VerticleMenu;
 
         /// <summary>
         /// RenderBody control.

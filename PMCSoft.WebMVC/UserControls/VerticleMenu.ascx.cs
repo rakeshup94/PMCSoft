@@ -1,12 +1,10 @@
-﻿using DocumentFormat.OpenXml.Wordprocessing;
-using IExpro.Core.Common;
-using IExpro.Core.Interfaces.Service;
-using IExpro.Core.Models;
-using IExpro.Infrastructure.Repository;
-using IExpro.Infrastructure.Services;
-using OfficeOpenXml.FormulaParsing.Excel.Functions.DateTime;
-using OfficeOpenXml.FormulaParsing.Excel.Functions.RefAndLookup;
-using System;   using IExpro.Core.DAL;   
+﻿
+using PMCSoft.Core.Common;
+using PMCSoft.Core.Interfaces.Service;
+using PMCSoft.Core.Models;
+using PMCSoft.Infrastructure.Repository;
+using PMCSoft.Infrastructure.Services;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -18,9 +16,10 @@ using System.Web.Razor.Parser.SyntaxTree;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace IExproERP.UI.UserControls
+namespace PMCSoft.WebMVC.UserControls
 {
-    public partial class VerticleMenu : System.Web.UI.UserControl
+
+    public partial class VerticleMenu : BaseUserControl
     {
         INavigationService NavSrv;
         List<MenuModel> models = new List<MenuModel>();
@@ -36,9 +35,8 @@ namespace IExproERP.UI.UserControls
         {
             if (!this.IsPostBack)
             {
-                int userId = Convert.ToInt32(Session["varuserid"].ToString());
-                int clientId = Convert.ToInt32(ConfigurationManager.AppSettings["clientId"]);
-                this.models = this.NavSrv.GetMenus(userId, clientId);
+               
+                this.models = this.NavSrv.GetMenus(User.EmpNo, User.ProjectNo);
                 this.rptCategories.DataSource = models;
                 this.rptCategories.DataBind();
             }
@@ -89,7 +87,7 @@ namespace IExproERP.UI.UserControls
                 }
             }
         }
-        
+
         private StringBuilder CreateChild(StringBuilder sb, string parentId, string parentTitle, IEnumerable<MenuModel> parentRows)
         {
             if (parentRows.Count() > 0)
@@ -100,7 +98,7 @@ namespace IExproERP.UI.UserControls
                     string childId = item.MenuId.ToString();
                     string childTitle = item.MenuName.ToString();
                     IEnumerable<MenuModel> childRow = item.MenuList;
-                    item.MenuUrl = this.GetItemUrl(item.MenuUrl);                  
+                    item.MenuUrl = this.GetItemUrl(item.MenuUrl);
                     if (childRow.Count() > 0)
                     {
                         sb.Append("<li><a class='second-level-heading' href='" + item.MenuUrl + "'>");
@@ -136,21 +134,21 @@ namespace IExproERP.UI.UserControls
         public string GetItemUrl(string input)
         {
             try
-            { 
-            if(!string.IsNullOrEmpty(input))
             {
-                   
+                if (!string.IsNullOrEmpty(input))
+                {
+
 
                     return Page.ResolveUrl(input.Replace("../", "~/"));
 
-                 
+
+                }
+                else
+                {
+                    return "#";
+                }
             }
-            else
-            {
-                return "#";
-            }
-            }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
 

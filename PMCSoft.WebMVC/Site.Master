@@ -1,7 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PMCSoft.WebMVC.SiteMaster" %>
 
-<%--<%@ Register Src="~/UserControls/VerticleMenu.ascx" TagPrefix="uc1" TagName="VerticleMenu" %>--%>
-
+<%@ Register Src="~/UserControls/VerticleMenu.ascx" TagPrefix="uc1" TagName="VerticleMenu" %>
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">
@@ -66,9 +65,8 @@
                             <ul class="dropdown-menu dropdown-user pull-right">
                                 <li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
                                 <li class="divider"></li>
-                                <li>
-                                    <asp:LinkButton ID="ltnLogout" runat="server" OnClick="ltnLogout_Click" ><i class="fa fa-key"></i>Log Out</asp:LinkButton>
-                                </li>
+                                <li><a href="#"><i class="fa fa-key"></i>Sign Out</a></li>
+
                             </ul>
                         </li>
                     </ul>
@@ -82,8 +80,8 @@
             <!--BEGIN SIDEBAR MENU-->
             <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
                 <div id="sidebar-collapse" class="menu-scroll collapse d-sm-block">
-                  
 
+                    <uc1:VerticleMenu runat="server" id="VerticleMenu" />
                 </div>
             </nav>
             <!--END SIDEBAR MENU-->

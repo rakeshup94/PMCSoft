@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IExproERP.UI.UserControls
+namespace PMCSoft.WebMVC.UserControls
 {
 
 

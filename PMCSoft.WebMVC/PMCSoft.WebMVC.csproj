@@ -427,6 +427,15 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BaseMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -434,6 +443,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CommonHelper.cs" />
     <Compile Include="Inventory\EnterStockDetails.aspx.cs">
       <DependentUpon>EnterStockDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -469,24 +479,10 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MasterPage.master.cs">
-      <DependentUpon>MasterPage.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MasterPage.master.designer.cs">
-      <DependentUpon>MasterPage.master</DependentUpon>
-    </Compile>
     <Compile Include="Models\Account\User.cs" />
     <Compile Include="Models\CustomPrincipal.cs" />
     <Compile Include="Models\ErrorViewModel.cs" />
     <Compile Include="Models\ServiceResponse.cs" />
-    <Compile Include="NestedMasterPage1.master.cs">
-      <DependentUpon>NestedMasterPage1.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NestedMasterPage1.master.designer.cs">
-      <DependentUpon>NestedMasterPage1.master</DependentUpon>
-    </Compile>
     <Compile Include="PMCReports\AddNewActual.aspx.cs">
       <DependentUpon>AddNewActual.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -577,13 +573,6 @@
     </Compile>
     <Compile Include="PMCReports\PrintMonthyWorkDoneReport.aspx.designer.cs">
       <DependentUpon>PrintMonthyWorkDoneReport.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ProjectMasterPage.master.cs">
-      <DependentUpon>ProjectMasterPage.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ProjectMasterPage.master.designer.cs">
-      <DependentUpon>ProjectMasterPage.master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Report\MaterialReciveByPONo.aspx.cs">
@@ -747,6 +736,13 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\VerticleMenu.ascx.cs">
+      <DependentUpon>VerticleMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\VerticleMenu.ascx.designer.cs">
+      <DependentUpon>VerticleMenu.ascx</DependentUpon>
+    </Compile>
     <Compile Include="User\AddDebitList.aspx.cs">
       <DependentUpon>AddDebitList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -893,13 +889,6 @@
     </Compile>
     <Compile Include="User\WorkProgrammeApproval.aspx.designer.cs">
       <DependentUpon>WorkProgrammeApproval.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -3049,10 +3038,7 @@
     <Content Include="lib\datatables.net-bs5\package.json" />
     <Content Include="lib\datatables.net-bs5\Readme.md" />
     <Content Include="Home.aspx" />
-    <Content Include="MasterPage.master" />
-    <Content Include="ProjectMasterPage.master" />
-    <Content Include="NestedMasterPage1.master" />
-    <Content Include="WebForm2.aspx" />
+    <Content Include="UserControls\VerticleMenu.ascx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -3111,6 +3097,7 @@
     <Content Include="Upload\vcd_55_user_guide2912014182313.pdf" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
     <Folder Include="Views\Home\" />
   </ItemGroup>

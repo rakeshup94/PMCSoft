@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="VerticleMenu.ascx.cs" Inherits="IExproERP.UI.UserControls.VerticleMenu" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="VerticleMenu.ascx.cs" Inherits="PMCSoft.WebMVC.UserControls.VerticleMenu" %>
 <ul id="side-menu" class="nav">
     <li class="user-panel">
         <div class="thumb">
