@@ -15,15 +15,6 @@ namespace PMCSoft.Web.Admin
     {
 
         /// <summary>
-        /// UpdatePanel1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
-
-        /// <summary>
         /// RadioButtonList1 control.
         /// </summary>
         /// <remarks>
@@ -87,15 +78,6 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.TextBox txtCategory;
 
         /// <summary>
-        /// txtDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescription;
-
-        /// <summary>
         /// ddlUnit control.
         /// </summary>
         /// <remarks>
@@ -121,6 +103,15 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRate;
+
+        /// <summary>
+        /// txtDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDescription;
 
         /// <summary>
         /// btnSubmit control.
@@ -177,15 +168,6 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.TextBox txtSubCategory;
 
         /// <summary>
-        /// txtSubDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSubDescription;
-
-        /// <summary>
         /// ddlSubUnit control.
         /// </summary>
         /// <remarks>
@@ -211,6 +193,15 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSubRate;
+
+        /// <summary>
+        /// txtSubDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSubDescription;
 
         /// <summary>
         /// btnSubSubmit control.
@@ -276,15 +267,6 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.TextBox txtPart;
 
         /// <summary>
-        /// txtPartDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPartDescription;
-
-        /// <summary>
         /// ddlPartUnit control.
         /// </summary>
         /// <remarks>
@@ -310,6 +292,15 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPartRate;
+
+        /// <summary>
+        /// txtPartDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPartDescription;
 
         /// <summary>
         /// btnPartSubmit control.

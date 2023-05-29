@@ -22,19 +22,9 @@ namespace PMCSoft.Web.Admin
         {
             if (!IsPostBack)
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
-                {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
-                }
-                else
-                {
-                    Panel1.Visible = true;
-                    Panel2.Visible = false;
-                    BindProject();
-                }
+                Panel1.Visible = true;
+                Panel2.Visible = false;
+                BindProject();
             }
         }
         public void BindProject()
@@ -46,7 +36,7 @@ namespace PMCSoft.Web.Admin
                 PMC.BindProjectDdl(ddlProjectSubPart);
             }
             catch (Exception ex)
-            { }
+            { throw ex; }
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {

@@ -81,12 +81,14 @@
             <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
                 <div id="sidebar-collapse" class="menu-scroll collapse d-sm-block">
 
-                    <uc1:VerticleMenu runat="server" id="VerticleMenu" />
+                    <uc1:VerticleMenu runat="server" ID="VerticleMenu" />
                 </div>
             </nav>
             <!--END SIDEBAR MENU-->
             <!--BEGIN PAGE WRAPPER-->
+
             <div id="page-wrapper">
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
                 <asp:ContentPlaceHolder ID="RenderBody" runat="server">
                 </asp:ContentPlaceHolder>
 

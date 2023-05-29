@@ -4,6 +4,7 @@ using PMCSoft.Core.Interfaces.Service;
 using PMCSoft.Core.Models;
 using PMCSoft.Infrastructure.Repository;
 using PMCSoft.Infrastructure.Services;
+using PMCSoft.WebMVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -35,8 +36,12 @@ namespace PMCSoft.WebMVC.UserControls
         {
             if (!this.IsPostBack)
             {
-               
-                this.models = this.NavSrv.GetMenus(User.EmpNo, User.ProjectNo);
+
+           
+
+                //User.EmpNo = "EMP0000001";
+                //User.ProjectNo = "AHL0000000";
+                this.models = this.NavSrv.GetMenus("EMP0000001", "AHL0000000");
                 this.rptCategories.DataSource = models;
                 this.rptCategories.DataBind();
             }
