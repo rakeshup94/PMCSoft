@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -80px;">
@@ -11,14 +11,14 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Stock Opening</h3>
-                        <table style="width: 1060px;">
+                        <div class="row"  style="width: 1060px;">
                       
                             <tr>
                                 <td style="width: 100px; text-align: center;">
                                     Project:
                                 </td>
                                 <td>
-                                    <asp:DropDownList ID="ddlProject" runat="server" Width="200px" AutoPostBack="True"
+                                    <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server"   AutoPostBack="True"
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                     </asp:DropDownList>
                                 </td>
@@ -26,7 +26,7 @@
                                     Issue Date:
                                 </td>
                                 <td>
-                                    <asp:TextBox ID="TxtIssueDate" runat="server" Width="100px"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="TxtIssueDate" runat="server" Width="100px"></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="TxtIssueDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
@@ -35,11 +35,11 @@
                                     Issue For Tower
                                 </td>
                                 <td style="width: 350px;">
-                                    <asp:TextBox ID="TxtIssueFoetower" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="TxtIssueFoetower" runat="server"></asp:TextBox>
                                 </td>
                             </tr>
-                        </table>
-                        <table style="width: 940px;">
+                          </div>
+                        <div class="row"  style="width: 940px;">
                             <tr>
                                 <td colspan="9">
                                     <asp:GridView ID="GVItemIssue" runat="server" AutoGenerateColumns="false" ShowFooter="true"
@@ -53,15 +53,15 @@
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Item Group">
                                                 <ItemTemplate>
-                                                    <asp:DropDownList ID="ddlItemCode" runat="server" Width="150px" OnSelectedIndexChanged="ddlItemCode_SelectedIndexChanged"
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlItemCode" runat="server"   OnSelectedIndexChanged="ddlItemCode_SelectedIndexChanged"
                                                         AutoPostBack="true">
                                                     </asp:DropDownList>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Item Name">
                                                 <ItemTemplate>
-                                                    <asp:DropDownList ID="ddlItemName" runat="server" Width="140px" AutoPostBack="true"
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlItemName" runat="server" Width="140px" AutoPostBack="true"
                                                         OnSelectedIndexChanged="ddlItemName_SelectedIndexChanged">
                                                     </asp:DropDownList>
                                                 </ItemTemplate>
@@ -69,7 +69,7 @@
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Unit">
                                                 <ItemTemplate>
-                                                    <asp:DropDownList ID="ddlUnit" runat="server" Width="100px" OnSelectedIndexChanged="ddlUnit_SelectedIndexChanged"
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlUnit" runat="server" Width="100px" OnSelectedIndexChanged="ddlUnit_SelectedIndexChanged"
                                                         AutoPostBack="true">
                                                     </asp:DropDownList>
                                                 </ItemTemplate>
@@ -95,7 +95,7 @@
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Issue Quantity">
                                                 <ItemTemplate>
-                                                    <asp:TextBox ID="txtIssueQty" runat="server" Width="100px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtIssueQty" runat="server" Width="100px"></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtIssueQty"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
@@ -104,14 +104,14 @@
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Description">
                                                 <ItemTemplate>
-                                                    <asp:TextBox ID="txtRemarks" Width="180px" TextMode="MultiLine" runat="server" onkeyup="valid(this)"
+                                                    <asp:TextBox CssClass="form-control" ID="txtRemarks" Width="180px" TextMode="MultiLine" runat="server" onkeyup="valid(this)"
                                                         onblur="valid(this)"></asp:TextBox>
                                                 </ItemTemplate>
                                                 <FooterTemplate>
-                                                    <asp:Button ID="btnAddMore" runat="server" OnClick="btnAddMore_Click" Text="Add More" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnAddMore" runat="server" OnClick="btnAddMore_Click" Text="Add More" />
                                                 </FooterTemplate>
                                                 <FooterStyle HorizontalAlign="Right" />
-                                                <ItemStyle VerticalAlign="Top" Width="200px" />
+                                                <ItemStyle VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                         </Columns>
                                         <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
@@ -120,11 +120,11 @@
                                 </td>
                                 <tr>
                                     <td colspan="6" style="text-align: center;">
-                                        <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                        <asp:Button ID="btnCancel" runat="server" Text="Cancel" />
+                                        <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                        <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" />
                                     </td>
                                 </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -11,13 +11,13 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Advance Requisition</h3>
-                        <table style="width: 930px; vertical-align: top;">
+                        <div class="row"  style="width: 930px; vertical-align: top;">
                             <tr>
                                 <td style="width: 100px; text-align: center; vertical-align: top;">
                                     Project
                                 </td>
                                 <td style="vertical-align: top;">
-                                    <asp:DropDownList ID="ddlProject" runat="server" AutoPostBack="True" Width="200px"
+                                    <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="True"  
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                     </asp:DropDownList>
                                 </td>
@@ -43,13 +43,13 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblVendor" runat="server" Text='<%#Bind("Vendor") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="150px" HorizontalAlign="Left" />
+                                                <ItemStyle   HorizontalAlign="Left" />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Req. Type">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblType" runat="server" Text='<%#Bind("Type") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="150px" HorizontalAlign="Left" />
+                                                <ItemStyle   HorizontalAlign="Left" />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Security">
                                                 <ItemTemplate>
@@ -61,7 +61,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblPaymentSecurity" runat="server" Text='<%#Bind("PaymentSecurity") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="150px" HorizontalAlign="Left" />
+                                                <ItemStyle   HorizontalAlign="Left" />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Amount">
                                                 <ItemTemplate>
@@ -86,7 +86,7 @@
                                     </asp:GridView>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

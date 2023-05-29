@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" Runat="Server">
   <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -10,7 +10,7 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Unit Detail</h3>
-                        <table style="width: 930px; vertical-align: top;">
+                        <div class="row"  style="width: 930px; vertical-align: top;">
                             <tr style="vertical-align: top;">
                                 <td style="vertical-align: top; width: 600px;">
                                     <asp:GridView ID="GVPage" runat="server" AutoGenerateColumns="false" GridLines="Both">
@@ -44,30 +44,30 @@
                                     <div id="rightnow">
                                         <h3 class="reallynow">
                                             Add Page</h3>
-                                        <table style="width: 290px; vertical-align: top;">
+                                        <div class="row"  style="width: 290px; vertical-align: top;">
                                             <tr>
                                                 <td>
                                                     Menu Header
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtName" runat="server" Width="200px" onkeyup="valid(this)" onblur="valid(this)">
+                                                    <asp:TextBox CssClass="form-control" ID="txtName" runat="server"   onkeyup="valid(this)" onblur="valid(this)">
                                                     </asp:TextBox>
                                                 </td>
                                             </tr>
                                         
                                             <tr>
                                                 <td colspan="2" style="text-align: center;">
-                                                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" 
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" 
                                                         onclick="btnSubmit_Click"  />
-                                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" 
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" 
                                                         onclick="btnCancel_Click" />
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </div>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

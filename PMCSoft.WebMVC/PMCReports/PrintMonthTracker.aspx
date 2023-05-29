@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-     <table style="width: 930px;" border="0">
+     <div class="row"  style="width: 930px;" border="0">
                     <tr>
                      <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="50px" />
                         <td style="text-align: center; font-size: 18px; font-family: Cambria;">
@@ -17,14 +17,14 @@
 
                         </td>
                     </tr>
-                </table>
+                  </div>
                 
-              <table>
+              <div class="row" >
                                             <tr>
                                                 <td>
                                                     <asp:Repeater ID="Repeater1" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td rowspan="3" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                         font-weight: bold;">
@@ -86,7 +86,7 @@
                                                         <ItemTemplate>
                                                             <tr>
                                                                 <td style="text-align: left; border: 1px solid black;">
-                                                                    <asp:Label ID="lblIncomeParticularsName" Width="200px"  runat="server" Text='<%#Bind("ParticularsName") %>'></asp:Label>
+                                                                    <asp:Label ID="lblIncomeParticularsName"    runat="server" Text='<%#Bind("ParticularsName") %>'></asp:Label>
                                                                 </td>
                                                                 <td style="text-align: right; border: 1px solid black;">
                                                                     <asp:Label ID="txtIPlan" runat="server" Width="100px" Text='<%#Bind("PlanValue") %>'
@@ -139,14 +139,14 @@
                                                                     <asp:Label ID="lblSumIncomeVarianceParcentageA" runat="server" Text=""></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                                 <td>
                                                     <asp:Repeater ID="Repeater2" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td colspan="6" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                         font-weight: bold;">
@@ -251,14 +251,14 @@
                                                                     <asp:Label ID="lblSumEVarianceParcentageA" runat="server" Text=""></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                                 <td>
                                                     <asp:Repeater ID="Repeater3" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td colspan="6" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                         font-weight: bold;">
@@ -363,7 +363,7 @@
                                                                     <asp:Label ID="lblSumCVarianceParcentageA" runat="server" Text=""></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
@@ -372,7 +372,7 @@
                                                 <td>
                                                     <asp:Repeater ID="RptExpenditure1" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label1" runat="server" Text="EXPENDITURE" Width="200" Height="15"></asp:Label>
@@ -443,14 +443,14 @@
                                                                 <td style="text-align: center; border: 1px solid black; font-weight: bold;">
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                                 <td>
                                                     <asp:Repeater ID="RptExpenditure2" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
@@ -516,14 +516,14 @@
                                                                     <asp:Label ID="lblPVarianceTotal" runat="server"></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                                 <td>
                                                     <asp:Repeater ID="RptExpenditure3" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
@@ -589,7 +589,7 @@
                                                                     <asp:Label ID="lblPVarianceTotal" runat="server"></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
@@ -598,7 +598,7 @@
                                                 <td>
                                                     <asp:Repeater ID="RptCon1" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label1" runat="server" Text="CONSUMBLES" Width="7" Height="15"></asp:Label>
@@ -660,14 +660,14 @@
                                                                 <td style="text-align: center; border: 1px solid black; font-weight: bold;">
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                                 <td>
                                                     <asp:Repeater ID="RptCon2" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
@@ -726,14 +726,14 @@
                                                                     <asp:Label ID="lblPVarianceTotal" runat="server"></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                                 <td>
                                                     <asp:Repeater ID="RptCon3" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
@@ -792,7 +792,7 @@
                                                                     <asp:Label ID="lblPVarianceTotal" runat="server"></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
@@ -801,7 +801,7 @@
                                                 <td>
                                                     <asp:Repeater ID="RptDirectExp1" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label1" runat="server" Text="DIRECTEXPENSES" Width="20" Height="15"></asp:Label>
@@ -813,7 +813,7 @@
                                                         <ItemTemplate>
                                                             <tr>
                                                                 <td style="text-align: left; border: 1px solid black;">
-                                                                    <asp:Label ID="lblIncomeParticularsName" runat="server" Width="200px" Text='<%#Bind("ParticularsName") %>'></asp:Label>
+                                                                    <asp:Label ID="lblIncomeParticularsName" runat="server"   Text='<%#Bind("ParticularsName") %>'></asp:Label>
                                                                 </td>
                                                                 <td style="text-align: right; border: 1px solid black;">
                                                                     <asp:Label ID="txtDAPlan" runat="server" Width="100px" Text='<%#Bind("PlanValue") %>'
@@ -863,14 +863,14 @@
                                                                 <td style="text-align: center; border: 1px solid black; font-weight: bold;">
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                                 <td>
                                                     <asp:Repeater ID="RptDirectExp2" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label3" runat="server" Text=""  Height="15"></asp:Label>
@@ -929,14 +929,14 @@
                                                                     <asp:Label ID="lblPVarianceTotal" runat="server"></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                                 <td>
                                                     <asp:Repeater ID="RptDirectExp3" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label3" runat="server" Text="" Height="15"></asp:Label>
@@ -998,7 +998,7 @@
                                                                     <asp:Label ID="lblPVarianceTotal" runat="server"></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
@@ -1007,7 +1007,7 @@
                                                 <td>
                                                     <asp:Repeater ID="RptHire1" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label1" runat="server" Text="HIRECHARGES" Width="2" Height="15"></asp:Label>
@@ -1019,7 +1019,7 @@
                                                         <ItemTemplate>
                                                             <tr>
                                                                 <td style="text-align: left; border: 1px solid black;">
-                                                                    <asp:Label ID="lblIncomeParticularsName" runat="server" Width="200px" Text='<%#Bind("ParticularsName") %>'></asp:Label>
+                                                                    <asp:Label ID="lblIncomeParticularsName" runat="server"   Text='<%#Bind("ParticularsName") %>'></asp:Label>
                                                                 </td>
                                                                 <td style="text-align: right; border: 1px solid black;">
                                                                     <asp:Label ID="txtHAPlan" runat="server" Width="100px" Text='<%#Bind("PlanValue") %>'
@@ -1069,14 +1069,14 @@
                                                                 <td style="text-align: center; border: 1px solid black; font-weight: bold;">
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                                 <td>
                                                     <asp:Repeater ID="RptHire2" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
@@ -1135,14 +1135,14 @@
                                                                     <asp:Label ID="lblPVarianceTotal" runat="server"></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                                 <td>
                                                     <asp:Repeater ID="RptHire3" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
@@ -1201,7 +1201,7 @@
                                                                     <asp:Label ID="lblPVarianceTotal" runat="server"></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
@@ -1210,7 +1210,7 @@
                                                 <td>
                                                     <asp:Repeater ID="RptIndirect1" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label1" runat="server" Text="INDIRECTEXPENSES" Width="2" Height="15"></asp:Label>
@@ -1301,14 +1301,14 @@
                                                                 </td>
                                                                  
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                                 <td>
                                                     <asp:Repeater ID="RptIndirect2" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
@@ -1392,14 +1392,14 @@
                                                                 
                                                                  
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                                 <td>
                                                     <asp:Repeater ID="RptIndirect3" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td style="border: 1px solid black; font-weight: bold;">
                                                                         <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
@@ -1483,14 +1483,14 @@
                                                                 
                                                                  
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                             </tr>
                                           
                                             
-                                        </table>
+                                          </div>
     </form>
 </body>
 </html>

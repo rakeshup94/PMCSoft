@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -11,14 +11,14 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Stock Opening</h3>
-                        <table style="width: 920px;">
+                        <div class="row"  style="width: 920px;">
                          
                             <tr>
                                 <td style="width: 100px; text-align: center;">
                                     Project:
                                 </td>
                                 <td style="width: 260px;">
-                                    <asp:DropDownList ID="ddlProject" runat="server" Width="250px" AutoPostBack="True"
+                                    <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" Width="250px" AutoPostBack="True"
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                     </asp:DropDownList>
                                 </td>
@@ -26,8 +26,8 @@
                                     &nbsp;
                                 </td>
                             </tr>
-                        </table>
-                        <table style="width: 940px;">
+                          </div>
+                        <div class="row"  style="width: 940px;">
                             <tr>
                                 <td colspan="9">
                                     <asp:GridView ID="GVOpeningStock" runat="server" AutoGenerateColumns="false" ShowFooter="false"
@@ -43,7 +43,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblGroupName" runat="server" Text='<%#Bind("GroupName") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Left" VerticalAlign="Top" Width="150px" />
+                                                <ItemStyle HorizontalAlign="Left" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Item Name">
                                                 <ItemTemplate>
@@ -85,7 +85,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblDescription" runat="server" Text='<%#Bind("Description") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle VerticalAlign="Top" Width="200px" />
+                                                <ItemStyle VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Opening Date">
                                                 <ItemTemplate>
@@ -98,7 +98,7 @@
                                         <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                     </asp:GridView>
                                 </td>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

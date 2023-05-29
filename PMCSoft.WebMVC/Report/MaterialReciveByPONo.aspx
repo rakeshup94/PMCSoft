@@ -3,7 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" Runat="Server">
  <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     
         <ContentTemplate>
@@ -12,46 +12,46 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Matrial Recive By Project</h3>
-                        <table style="width: 950px;">
+                        <div class="row"  style="width: 950px;">
                             <tr>
                                
                             </tr>
                             <tr>
                                 <td font-size: 15px; font-family: Cambria;">
                                     Project&nbsp;&nbsp;&nbsp;
-                                    <asp:DropDownList ID="ddlProject" runat="server" AutoPostBack="true" 
+                                    <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true" 
                                         Width="140px" onselectedindexchanged="ddlProject_SelectedIndexChanged">
                                     </asp:DropDownList>
                                     Vender
                                 
-                                 <asp:DropDownList ID="ddlVendor" runat="server" Width="140px" AutoPostBack="true" onselectedindexchanged="ddlVendor_SelectedIndexChanged"
+                                 <asp:DropDownList CssClass="form-select" ID="ddlVendor" runat="server" Width="140px" AutoPostBack="true" onselectedindexchanged="ddlVendor_SelectedIndexChanged"
                                         >
                                         <asp:ListItem Text="Select Vendor" Value="-1"></asp:ListItem>
                                     </asp:DropDownList>
                                     PO.No
-                                    <asp:DropDownList ID="ddlpono" runat="server" Width="120px" AutoPostBack="true"
+                                    <asp:DropDownList CssClass="form-select" ID="ddlpono" runat="server" Width="120px" AutoPostBack="true"
                                         >
                                         <asp:ListItem Text="Select"></asp:ListItem>
                                     </asp:DropDownList>
                                       TO Date
-                                     <asp:TextBox ID="txtDate" runat="server" Width="100px"></asp:TextBox>
+                                     <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" Width="100px"></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
                                     From Date
-                                     <asp:TextBox ID="Txtfrom" runat="server" Width="100px"></asp:TextBox>
+                                     <asp:TextBox CssClass="form-control" ID="Txtfrom" runat="server" Width="100px"></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="Txtfrom"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
                                     Report
-                                    <asp:Button ID="BtnReport" runat="server" Text="Report" 
+                                    <asp:Button CssClass="btn btn-primary" ID="BtnReport" runat="server" Text="Report" 
                                         onclick="BtnReport_Click" />
                                 </td>
                                  
                             </tr>
                             <tr>
                                 <td>
-                                    <table style="width: 950px;">
+                                    <div class="row"  style="width: 950px;">
                                         <tr>
                                             <td colspan="10">
                                 <asp:GridView ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="true"
@@ -79,61 +79,61 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lbladdress" runat="server" Text='<%#Bind("Address") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                               <asp:TemplateField HeaderText="Gate Entery No">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblGateentoryno" runat="server" Text='<%#Bind("Gate_Entry_No") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                               <asp:TemplateField HeaderText="Po No">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblpono" runat="server" Text='<%#Bind("PO_No") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                               <asp:TemplateField HeaderText="Po date">
                                                 <ItemTemplate>
                                                     <asp:Label ID="LblPodate" runat="server" Text='<%#Bind("Podate") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                               <asp:TemplateField HeaderText="Recived Date">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblreciveddate" runat="server" Text='<%#Bind("Received_Date") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                               <asp:TemplateField HeaderText="Recived By">
                                                 <ItemTemplate>
                                                     <asp:Label ID="LblrecivedBy" runat="server" Text='<%#Bind("recivedby") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                               <asp:TemplateField HeaderText="Bill/Challan No">
                                                 <ItemTemplate>
                                                     <asp:Label ID="LblBillChallanNo" runat="server" Text='<%#Bind("Bill_Challan_No") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                               <asp:TemplateField HeaderText="Bill/Challan Date.">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblBillChallanDate" runat="server" Text='<%#Bind("Bill_Challan_Date") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Item Code">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblitemcode" runat="server" Text='<%#Bind("GroupName") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Item Name">
                                                 <ItemTemplate>
                                                    <asp:Label ID="lblitemname" runat="server"  Text='<%#Bind("ItemName") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Unit">
                                                 <ItemTemplate>
@@ -162,10 +162,10 @@
                                             </td>
                                         </tr>
                                         
-                                    </table>
+                                      </div>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

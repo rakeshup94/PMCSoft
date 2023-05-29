@@ -9451,7 +9451,7 @@
 	
 	
 	/**
-	 * Check if a `<table>` node is a DataTable table already or not.
+	 * Check if a `<div class="row" >` node is a DataTable table already or not.
 	 *
 	 *  @param {node|jquery|string} table Table node, jQuery object or jQuery
 	 *      selector for the table to test. Note that if more than more than one

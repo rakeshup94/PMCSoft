@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
    
-                      <table style="width: 930px;" border="0">
+                      <div class="row"  style="width: 930px;" border="0">
                     <tr>
                      <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="50px" />
                         <td style="text-align: center; font-size: 18px; font-family: Cambria;">
@@ -23,14 +23,14 @@
 
                         </td>
                     </tr>
-                </table>
+                  </div>
                       
-                                    <table style="width: 1220px;">
+                                    <div class="row"  style="width: 1220px;">
                                         <tr>
                                             <td>
                                                 <asp:Repeater ID="Repeater1" runat="server" OnItemDataBound="Repeater1_ItemDataBound">
                                                     <HeaderTemplate>
-                                                        <table style="border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"  style="border: 1px solid black; border-collapse: collapse;">
                                                             <tr>
                                                                 <td rowspan="4" style="width: 40px; text-align: center; border: 1px solid black;
                                                                     background-color: #D8D8D8; font-weight: bold;">
@@ -391,12 +391,12 @@
                                                             <td style="text-align: center; border: 1px solid black; font-weight: bold;">
                                                             </td>
                                                         </tr>--%>
-                                                        </table>
+                                                          </div>
                                                     </FooterTemplate>
                                                 </asp:Repeater>
                                             </td>
                                         </tr>
-                                    </table>
+                                      </div>
                                
                    
     </form>

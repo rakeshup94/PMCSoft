@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -10,7 +10,7 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Item Group Detail</h3>
-                        <table style="width: 930px; vertical-align: top;">
+                        <div class="row"  style="width: 930px; vertical-align: top;">
                             <tr style="vertical-align: top;">
                             
                                 <td style="vertical-align: top; width: 600px;">
@@ -30,7 +30,7 @@
                                                     <asp:Label ID="lblGroupCode" runat="server" Text='<%#Bind("GroupCode") %>'></asp:Label>
                                                 </ItemTemplate>
                                                 <EditItemTemplate>
-                                                    <asp:TextBox ID="txtGroupCode" runat="server" Text='<%#Bind("GroupCode") %>' onkeyup="valid(this)"
+                                                    <asp:TextBox CssClass="form-control" ID="txtGroupCode" runat="server" Text='<%#Bind("GroupCode") %>' onkeyup="valid(this)"
                                                         onblur="valid(this)"></asp:TextBox>
                                                 </EditItemTemplate>
                                                 <ItemStyle Width="250px" />
@@ -40,7 +40,7 @@
                                                     <asp:Label ID="lblGroupName" runat="server" Text='<%#Bind("GroupName") %>'></asp:Label>
                                                 </ItemTemplate>
                                                 <EditItemTemplate>
-                                                    <asp:TextBox ID="txtGroupName" runat="server" Text='<%#Bind("GroupName") %>' onkeyup="valid(this)"
+                                                    <asp:TextBox CssClass="form-control" ID="txtGroupName" runat="server" Text='<%#Bind("GroupName") %>' onkeyup="valid(this)"
                                                         onblur="valid(this)"></asp:TextBox>
                                                 </EditItemTemplate>
                                                 <ItemStyle Width="250px" HorizontalAlign="Center" />
@@ -53,13 +53,13 @@
                                     <div id="rightnow">
                                         <h3 class="reallynow">
                                             Add Item Group</h3>
-                                        <table style="width: 290px; vertical-align: top;">
+                                        <div class="row"  style="width: 290px; vertical-align: top;">
                                             <tr>
                                                 <td>
                                                     Code
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtCode" runat="server" MaxLength="6" Width="200px" onkeyup="valid(this)"
+                                                    <asp:TextBox CssClass="form-control" ID="txtCode" runat="server" MaxLength="6"   onkeyup="valid(this)"
                                                         onblur="valid(this)">
                                                     </asp:TextBox>
                                                 </td>
@@ -69,21 +69,21 @@
                                                     Name
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtName" runat="server" Width="200px" onkeyup="valid(this)" onblur="valid(this)">
+                                                    <asp:TextBox CssClass="form-control" ID="txtName" runat="server"   onkeyup="valid(this)" onblur="valid(this)">
                                                     </asp:TextBox>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" style="text-align: center;">
-                                                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </div>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

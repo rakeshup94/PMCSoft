@@ -10,7 +10,7 @@
     </script>
 
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -18,14 +18,14 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             WORK PROGRAMME APPROVAL</h3>
-                        <table style="width: 920px;">
+                        <div class="row"  style="width: 920px;">
                            
                             <tr>
                                 <td style="width: 60px;">
                                     Date:
                                 </td>
                                 <td>
-                                    <asp:Label ID="lblDate" runat="server" Width="200px" Font-Size="12px"></asp:Label>
+                                    <asp:Label ID="lblDate" runat="server"   Font-Size="12px"></asp:Label>
                                     <asp:HiddenField ID="HiddenField2" runat="server" />
                                 </td>
                             </tr>
@@ -34,7 +34,7 @@
                                     <asp:DataList ID="DataList1" runat="server" OnItemDataBound="DataList1_ItemDataBound"
                                         Width="910px" ShowHeader="false">
                                         <HeaderTemplate>
-                                            <table>
+                                            <div class="row" >
                                         </HeaderTemplate>
                                         <ItemTemplate>
                                             <tr>
@@ -93,11 +93,11 @@
                                             </tr>
                                         </ItemTemplate>
                                         <FooterTemplate>
-                                            </table>
+                                              </div>
                                         </FooterTemplate>
                                     </asp:DataList>
                                     <div style="display: none">
-                                        <asp:Button ID="Button1" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False" DynamicServicePath=""
@@ -105,13 +105,13 @@
                                     </cc1:ModalPopupExtender>
                                     <asp:Panel ID="Panel1" runat="server" Width="810px" Height="500px" Style="display: none;
                                         border-color: Maroon; background-color: #F7F8E0;" ScrollBars="Horizontal">
-                                        <table style="width: 800px; background-color: #F7F8E0;">
+                                        <div class="row"  style="width: 800px; background-color: #F7F8E0;">
                                             <tr>
                                                 <td>
                                                     <div id="rightnow">
                                                         <h3 class="reallynow">
                                                             Work Programme Detail</h3>
-                                                        <table style="width: 790px;">
+                                                        <div class="row"  style="width: 790px;">
                                                             <tr>
                                                                 <td style="white-space: nowrap;">
                                                                     WP Date:
@@ -141,7 +141,7 @@
                                                                     ENG. In Charge:
                                                                 </td>
                                                                 <td>
-                                                                    <asp:Label ID="lblEngInCharge" runat="server" Width="200px"></asp:Label>
+                                                                    <asp:Label ID="lblEngInCharge" runat="server"  ></asp:Label>
                                                                     <asp:HiddenField ID="hdnEngInCharge" runat="server" />
                                                                 </td>
                                                                 <td style="width: 60px;">
@@ -155,7 +155,7 @@
                                                                 <td colspan="6">
                                                                     <asp:Repeater ID="Repeater1" runat="server" OnItemDataBound="Repeater1_ItemDataBound">
                                                                         <HeaderTemplate>
-                                                                            <table style="width: 780px; border: 1px solid black; border-collapse: collapse;">
+                                                                            <div class="row"  style="width: 780px; border: 1px solid black; border-collapse: collapse;">
                                                                                 <tr>
                                                                                     <td rowspan="2" style="width: 40px; text-align: center; border: 1px solid black;
                                                                                         background-color: #D8D8D8;">
@@ -253,7 +253,7 @@
                                                                                     <asp:Label ID="lblGTotal" runat="server" Text=""></asp:Label>
                                                                                 </td>
                                                                             </tr>
-                                                                            </table>
+                                                                              </div>
                                                                         </FooterTemplate>
                                                                     </asp:Repeater>
                                                                 </td>
@@ -283,92 +283,92 @@
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="6" style="text-align: center;">
-                                                                    <asp:Button ID="btnSubmit" runat="server" Text="Approved" OnClick="btnSubmit_Click" />
-                                                                    <asp:Button ID="btnCancel" runat="server" Text="Dis Approved" OnClick="btnCancel_Click" />
-                                                                    <asp:Button ID="btnClose" runat="server" Text="Cancel" OnClick="btnClose_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Approved" OnClick="btnSubmit_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Dis Approved" OnClick="btnCancel_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary" ID="btnClose" runat="server" Text="Cancel" OnClick="btnClose_Click" />
                                                                 </td>
                                                             </tr>
-                                                        </table>
+                                                          </div>
                                                     </div>
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </asp:Panel>
                                     <div style="display: none">
-                                        <asp:Button ID="Button2" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False" DynamicServicePath=""
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
                                     <asp:Panel ID="Panel2" runat="server" Style="display: none; border-color: Maroon;">
-                                        <table style="width: 400px; background-color: #F7F8E0;">
+                                        <div class="row"  style="width: 400px; background-color: #F7F8E0;">
                                             <tr>
                                                 <td>
                                                     <div id="rightnow">
                                                         <h3 class="reallynow">
                                                             Work Programme Approval</h3>
-                                                        <table style="width: 390;">
+                                                        <div class="row"  style="width: 390;">
                                                             <tr>
                                                                 <td>
                                                                     Remark
                                                                     <asp:HiddenField ID="hdnWPIDApproved" runat="server" />
                                                                 </td>
                                                                 <td>
-                                                                    <asp:TextBox ID="txtRemark" runat="server" TextMode="MultiLine" Width="300px"></asp:TextBox>
+                                                                    <asp:TextBox CssClass="form-control" ID="txtRemark" runat="server" TextMode="MultiLine" Width="300px"></asp:TextBox>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="2" style="text-align: center;">
-                                                                    <asp:Button ID="btnApproved" runat="server" Text="Submit" OnClick="btnApproved_Click" />
-                                                                    <asp:Button ID="btnApprovedCancel" runat="server" Text="Cancel" OnClick="btnApprovedCancel_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary" ID="btnApproved" runat="server" Text="Submit" OnClick="btnApproved_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary" ID="btnApprovedCancel" runat="server" Text="Cancel" OnClick="btnApprovedCancel_Click" />
                                                                 </td>
                                                             </tr>
-                                                        </table>
+                                                          </div>
                                                     </div>
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </asp:Panel>
                                     <div style="display: none">
-                                        <asp:Button ID="Button3" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary" ID="Button3" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender3" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel3" TargetControlID="Button3" EnableViewState="False" DynamicServicePath=""
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
                                     <asp:Panel ID="Panel3" runat="server" Style="display: none; border-color: Maroon;">
-                                        <table style="width: 400px; background-color: #F7F8E0;">
+                                        <div class="row"  style="width: 400px; background-color: #F7F8E0;">
                                             <tr>
                                                 <td>
                                                     <div id="rightnow">
                                                         <h3 class="reallynow">
                                                             Work Programme Dis Approval</h3>
-                                                        <table style="width: 390;">
+                                                        <div class="row"  style="width: 390;">
                                                             <tr>
                                                                 <td>
                                                                     Remark
                                                                     <asp:HiddenField ID="hdnWPIDDisApproved" runat="server" />
                                                                 </td>
                                                                 <td>
-                                                                    <asp:TextBox ID="txtRemarkDisApproved" runat="server" TextMode="MultiLine" Width="300px"></asp:TextBox>
+                                                                    <asp:TextBox CssClass="form-control" ID="txtRemarkDisApproved" runat="server" TextMode="MultiLine" Width="300px"></asp:TextBox>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="2" style="text-align: center;">
-                                                                    <asp:Button ID="btnDisApproved" runat="server" Text="Submit" OnClick="btnDisApproved_Click" />
-                                                                    <asp:Button ID="btnCancelDisApproved" runat="server" Text="Cancel" OnClick="btnCancelDisApproved_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary" ID="btnDisApproved" runat="server" Text="Submit" OnClick="btnDisApproved_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancelDisApproved" runat="server" Text="Cancel" OnClick="btnCancelDisApproved_Click" />
                                                                 </td>
                                                             </tr>
-                                                        </table>
+                                                          </div>
                                                     </div>
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </asp:Panel>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

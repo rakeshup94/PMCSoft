@@ -11,16 +11,16 @@
         <div id="content" style="width: 1500px;">
             <div id="rightnow">
    
-                <table style="width: 1400px;" border="0">
+                <div class="row"  style="width: 1400px;" border="0">
                     <tr>
                         <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="100px" />
                    
                     </tr>
-                </table>
+                  </div>
                 <br />
                 <br />
                 <br />
-                <table style="width: 1500px;">
+                <div class="row"  style="width: 1500px;">
                     <tr>
                         <td style="text-align: center; font-size: 15px; font-family: Cambria; width: 150px;">
                             Project
@@ -31,12 +31,12 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <table style="width: 1500px;">
+                            <div class="row"  style="width: 1500px;">
                                 <tr>
                                     <td colspan="23">
                                         <asp:Repeater ID="Repeater1" runat="server" OnItemDataBound="Repeater1_ItemDataBound">
                                             <HeaderTemplate>
-                                                <table style="width: 1500px; border: 1px solid black; border-collapse: collapse;">
+                                                <div class="row"  style="width: 1500px; border: 1px solid black; border-collapse: collapse;">
                                                     <tr>
                                                         <td rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;">
@@ -221,25 +221,25 @@
                                                                         <%--   <%# Container.DataItemIndex + 1 %>--%>
                                                                         <asp:HiddenField ID="TransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                                     </ItemTemplate>
-                                                                    <ItemStyle HorizontalAlign="Center" Width="150px" />
+                                                                    <ItemStyle HorizontalAlign="Center"   />
                                                                 </asp:TemplateField>
                                                                 <asp:TemplateField HeaderText="Amount Receivable">
                                                                     <ItemTemplate>
                                                                         <asp:Label ID="AmountReceived" runat="server" Text='<%#Bind("AmountReceived") %>'></asp:Label>
                                                                     </ItemTemplate>
-                                                                    <ItemStyle Width="150px" />
+                                                                    <ItemStyle   />
                                                                 </asp:TemplateField>
                                                                 <asp:TemplateField HeaderText="Cheque No./RTGS">
                                                                     <ItemTemplate>
                                                                         <asp:LinkButton ID="lnkbillperiod" runat="server" Text='<%#Bind("ChequeNoRTGS") %>'></asp:LinkButton>
                                                                     </ItemTemplate>
-                                                                    <ItemStyle Width="150px" />
+                                                                    <ItemStyle   />
                                                                 </asp:TemplateField>
                                                                 <asp:TemplateField HeaderText="Cheque No./RTGS Date">
                                                                     <ItemTemplate>
                                                                         <asp:LinkButton ID="lnksubdate" runat="server" Text='<%#Bind("ChequeNoRTGSDate") %>'></asp:LinkButton>
                                                                     </ItemTemplate>
-                                                                    <ItemStyle Width="150px" />
+                                                                    <ItemStyle   />
                                                                 </asp:TemplateField>
                                                             </Columns>
                                                         </asp:GridView>
@@ -335,15 +335,15 @@
                                                         <asp:Label ID="lblNetReceivable3" runat="server" Text=""></asp:Label>
                                                     </td>
                                                 </tr>
-                                                </table>
+                                                  </div>
                                             </FooterTemplate>
                                         </asp:Repeater>
                                     </td>
                                 </tr>
-                            </table>
+                              </div>
                         </td>
                     </tr>
-                </table>
+                  </div>
             </div>
         </div>
     </div>

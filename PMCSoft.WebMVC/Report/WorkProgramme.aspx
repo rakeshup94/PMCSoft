@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -11,33 +11,33 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Work Programme</h3>
-                        <table style="width: 930px">
+                        <div class="row"  style="width: 930px">
                             <tr>
                                 <td style="text-align: center;">
                                     Project Name
                                 </td>
                                 <td>
-                                    <asp:DropDownList ID="ddlProject" runat="server" AutoPostBack="True" Width="200px">
+                                    <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="True"  >
                                     </asp:DropDownList>
                                 </td>
                                 <td style="text-align: center;">
                                     Date
                                 </td>
                                 <td>
-                                    <asp:TextBox ID="txtDate" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
                                 </td>
                                 <td>
-                                    <asp:Button ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
-                                     <asp:Button ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
+                                    <asp:Button CssClass="btn btn-primary" ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
+                                     <asp:Button CssClass="btn btn-primary" ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="5" style="text-align: center;">
                                     <asp:Panel ID="Panel1" runat="server" Width="910px" Visible="false">
-                                        <table style="width: 900px;">
+                                        <div class="row"  style="width: 900px;">
                                             <tr>
                                                 <td style="white-space: nowrap;">
                                                     WP Date:
@@ -83,7 +83,7 @@
                                                 <td colspan="6">
                                                     <asp:Repeater ID="Repeater1" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="width: 900px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="width: 900px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td rowspan="2" style="width: 50px; text-align: center; border: 1px solid black;
                                                                         background-color: #D8D8D8;">
@@ -187,7 +187,7 @@
                                                                     <asp:Label ID="lblGTotal" runat="server" Text=""></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
@@ -215,11 +215,11 @@
                                                     <asp:HiddenField ID="hdnEngineer" runat="server" />
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </asp:Panel>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

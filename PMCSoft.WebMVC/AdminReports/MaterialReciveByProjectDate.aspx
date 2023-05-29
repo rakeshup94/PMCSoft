@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -80px;">
@@ -11,7 +11,7 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Matrial Recive Date Wise</h3>
-                        <table style="width: 1090px;">
+                        <div class="row"  style="width: 1090px;">
                             <%--<tr>
                                 <td colspan="7" style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     Ahluwalia Contracts (India) Ltd.
@@ -22,14 +22,14 @@
                                     Project
                                 </td>
                                 <td>
-                                    <asp:DropDownList ID="ddlProject" runat="server" AutoPostBack="true" Width="200px">
+                                    <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"  >
                                     </asp:DropDownList>
                                 </td>
                                 <td>
                                     TO Date
                                 </td>
                                 <td>
-                                    <asp:TextBox ID="txtDate" runat="server" Width="100px"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" Width="100px"></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
@@ -38,18 +38,18 @@
                                     From Date
                                 </td>
                                 <td>
-                                    <asp:TextBox ID="Txtfrom" runat="server" Width="100px"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="Txtfrom" runat="server" Width="100px"></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="Txtfrom"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
                                 </td>
                                 <td>
-                                    <asp:Button ID="BtnReport" runat="server" Text="View Detail" OnClick="BtnReport_Click" />
+                                    <asp:Button CssClass="btn btn-primary" ID="BtnReport" runat="server" Text="View Detail" OnClick="BtnReport_Click" />
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="7">
-                                    <table style="width: 1080px;">
+                                    <div class="row"  style="width: 1080px;">
                                         <tr>
                                             <td colspan="10">
                                                 <asp:GridView ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="false"
@@ -71,13 +71,13 @@
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblpono" runat="server" Text='<%#Bind("PO_No") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Po date" Visible="false">
                                                             <ItemTemplate>
                                                                 <asp:Label ID="LblPodate" runat="server" Text='<%#Bind("Podate") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Project" Visible="false">
                                                             <ItemTemplate>
@@ -89,19 +89,19 @@
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblvendor" runat="server" Text='<%#Bind("Name") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Left" VerticalAlign="Top" Width="200px" />
+                                                            <ItemStyle HorizontalAlign="Left" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Address" Visible="false">
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lbladdress" runat="server" Text='<%#Bind("Address") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Bill/Challan No">
                                                             <ItemTemplate>
                                                                 <asp:Label ID="LblBillChallanNo" runat="server" Text='<%#Bind("Bill_Challan_No") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Date">
                                                             <ItemTemplate>
@@ -113,13 +113,13 @@
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblitemcode" runat="server" Text='<%#Bind("GroupName") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Item Name">
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblitemname" runat="server" Text='<%#Bind("ItemName") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Left" VerticalAlign="Top" Width="150px" />
+                                                            <ItemStyle HorizontalAlign="Left" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Unit">
                                                             <ItemTemplate>
@@ -143,7 +143,7 @@
                                                             <ItemTemplate>
                                                                 <asp:Label ID="LblrecivedBy" runat="server" Text='<%#Bind("recivedby") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="150px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Date">
                                                             <ItemTemplate>
@@ -157,10 +157,10 @@
                                                 </asp:GridView>
                                             </td>
                                         </tr>
-                                    </table>
+                                      </div>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

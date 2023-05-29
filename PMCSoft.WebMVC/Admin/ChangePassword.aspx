@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -11,13 +11,13 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Change Password</h3>
-                        <table style="width: 930px">
+                        <div class="row"  style="width: 930px">
                             <tr>
                                 <td>
                                     Old Password:*
                                 </td>
                                 <td>
-                                    <asp:TextBox ID="txtOldPassword" runat="server" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtOldPassword" runat="server" TextMode="Password"></asp:TextBox>
                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" FilterMode="InvalidChars"
                                         InvalidChars="&lt;&gt;" TargetControlID="txtOldPassword">
                                     </cc1:FilteredTextBoxExtender>
@@ -28,7 +28,7 @@
                                     New Password:*
                                 </td>
                                 <td>
-                                    <asp:TextBox ID="txtNewPassword" runat="server" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtNewPassword" runat="server" TextMode="Password"></asp:TextBox>
                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" FilterMode="InvalidChars"
                                         InvalidChars="&lt;&gt;" TargetControlID="txtNewPassword">
                                     </cc1:FilteredTextBoxExtender>
@@ -42,7 +42,7 @@
                                     Re-Type Password:*
                                 </td>
                                 <td>
-                                    <asp:TextBox ID="txtReType" runat="server" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtReType" runat="server" TextMode="Password"></asp:TextBox>
                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" FilterMode="InvalidChars"
                                         InvalidChars="&lt;&gt;" TargetControlID="txtReType">
                                     </cc1:FilteredTextBoxExtender>
@@ -50,13 +50,13 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <asp:Button ID="btnSave" runat="server" Class="button-bg" Style="width: auto;" Text="Submit"
+                                    <asp:Button CssClass="btn btn-primary" ID="btnSave" runat="server" Class="button-bg"  Text="Submit"
                                         OnClick="btnSave_Click" />
-                                    <asp:Button ID="btnCancel" runat="server" Class="button-bg" Style="width: auto;"
+                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Class="button-bg" Style="width: auto;"
                                         Text="Cancel" OnClick="btnCancel_Click" />
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

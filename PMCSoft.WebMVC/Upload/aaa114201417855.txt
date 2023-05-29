@@ -42,7 +42,7 @@ http://www.asp.net/AjaxLibrary/AjaxControlToolkitSampleSite/Default.aspx
 
 http://www.aspsnippets.com/articles/Save-and-Retrieve-Files-from-SQL-Server-Database-using-ASP.Net.aspx
 
-                            <asp:TextBox ID="txtFirstName" runat="server" value="First Name" onfocus="javascript: if(this.value=='First Name') { this.value='' }" onblur="javascript: if(this.value==''){ this.value='First Name' }"></asp:TextBox>
+                            <asp:TextBox CssClass="form-control" ID="txtFirstName" runat="server" value="First Name" onfocus="javascript: if(this.value=='First Name') { this.value='' }" onblur="javascript: if(this.value==''){ this.value='First Name' }"></asp:TextBox>
 
 
  value="Last Name" onfocus="javascript: if(this.value=='Last Name') { this.value='' }" onblur="javascript: if(this.value==''){ this.value='Last Name' }"

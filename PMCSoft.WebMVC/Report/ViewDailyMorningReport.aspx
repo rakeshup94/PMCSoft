@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -11,16 +11,16 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Today's Labour Strength</h3>
-                        <table style="width: 930px">
+                        <div class="row"  style="width: 930px">
                             <tr>
                                 <td style="text-align: Right;">
-                                    <asp:Button ID="btnPrint" runat="server" OnClick="btnPrint_Click" Text="Print Preview" />
+                                    <asp:Button CssClass="btn btn-primary" ID="btnPrint" runat="server" OnClick="btnPrint_Click" Text="Print Preview" />
                                 </td>
                             </tr>
                             <tr>
                                 <td style="text-align: center;">
                                     <asp:Panel ID="Panel1" runat="server" Width="910px" Visible="false">
-                                        <table style="width: 900px;">
+                                        <div class="row"  style="width: 900px;">
                                             <tr>
                                                 <td style="white-space: nowrap;">
                                                     WP Date:
@@ -66,7 +66,7 @@
                                                 <td colspan="6">
                                                     <asp:Repeater ID="Repeater1" runat="server">
                                                         <HeaderTemplate>
-                                                            <table style="width: 900px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="width: 900px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td rowspan="2" style="width: 50px; text-align: center; border: 1px solid black;
                                                                         background-color: #D8D8D8;">
@@ -229,7 +229,7 @@
                                                                     <asp:Label ID="lblMGTotal" runat="server" Text=""></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
@@ -257,11 +257,11 @@
                                                     <asp:HiddenField ID="hdnEngineer" runat="server" />
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </asp:Panel>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

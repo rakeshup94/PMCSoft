@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -11,21 +11,21 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Debitors List For Approval</h3>
-                        <table style="width: 930px;">
+                        <div class="row"  style="width: 930px;">
                             <tr>
                                 <td style="width: 120px; text-align: center;">
                                     Project Name
                                 </td>
                                 <td>
-                                    <asp:DropDownList ID="ddlProject" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProject_SelectedIndexChanged"
-                                        Width="200px">
+                                    <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProject_SelectedIndexChanged"
+                                         >
                                     </asp:DropDownList>
                                 </td>
                                 <td style="text-align: center;">
                                     Forward To
                                 </td>
                                 <td>
-                                    <asp:DropDownList ID="ddlEmployee" runat="server" AutoPostBack="True" Width="200px">
+                                    <asp:DropDownList CssClass="form-select" ID="ddlEmployee" runat="server" AutoPostBack="True"  >
                                     </asp:DropDownList>
                                 </td>
                             </tr>
@@ -59,7 +59,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblRemarks" runat="server" Text='<%#Bind("Remarks") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="150px" VerticalAlign="Top" />
+                                                <ItemStyle   VerticalAlign="Top" />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Forward By">
                                                 <ItemTemplate>
@@ -81,14 +81,14 @@
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Remarks">
                                                 <ItemTemplate>
-                                                    <asp:TextBox ID="txtRemarks" runat="server" TextMode="MultiLine" Width="150px" onkeyup="valid(this)"
+                                                    <asp:TextBox CssClass="form-control" ID="txtRemarks" runat="server" TextMode="MultiLine"   onkeyup="valid(this)"
                                                         onblur="valid(this)"></asp:TextBox>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="150px" VerticalAlign="Top" />
+                                                <ItemStyle   VerticalAlign="Top" />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Suggest Amount">
                                                 <ItemTemplate>
-                                                    <asp:TextBox ID="txtSuggestAmount" runat="server" Width="100px" Enabled="false" ReadOnly="true"
+                                                    <asp:TextBox CssClass="form-control" ID="txtSuggestAmount" runat="server" Width="100px" Enabled="false" ReadOnly="true"
                                                         BorderColor="Gray" BackColor="LightGray">
                                                     </asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" FilterType="Custom, Numbers"
@@ -104,11 +104,11 @@
                             </tr>
                             <tr>
                                 <td colspan="4" style="text-align: center;">
-                                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

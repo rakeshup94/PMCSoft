@@ -10,7 +10,7 @@
     </script>
 
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -18,14 +18,14 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             VIEW / EDIT WORK PROGRAMME</h3>
-                        <table style="width: 920px;">
+                        <div class="row"  style="width: 920px;">
                          
                             <tr>
                                 <td style="width: 60px;">
                                     Date:
                                 </td>
                                 <td>
-                                    <asp:Label ID="lblDate" runat="server" Width="200px" Font-Size="12px"></asp:Label>
+                                    <asp:Label ID="lblDate" runat="server"   Font-Size="12px"></asp:Label>
                                     <asp:HiddenField ID="HiddenField2" runat="server" />
                                 </td>
                             </tr>
@@ -34,7 +34,7 @@
                                     <asp:DataList ID="DataList1" runat="server" OnItemDataBound="DataList1_ItemDataBound"
                                         Width="910px" ShowHeader="false">
                                         <HeaderTemplate>
-                                            <table>
+                                            <div class="row" >
                                         </HeaderTemplate>
                                         <ItemTemplate>
                                             <tr>
@@ -93,11 +93,11 @@
                                             </tr>
                                         </ItemTemplate>
                                         <FooterTemplate>
-                                            </table>
+                                              </div>
                                         </FooterTemplate>
                                     </asp:DataList>
                                     <div style="display: none">
-                                        <asp:Button ID="Button1" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False" DynamicServicePath=""
@@ -105,13 +105,13 @@
                                     </cc1:ModalPopupExtender>
                                     <asp:Panel ID="Panel1" runat="server" Width="900px" Height="500px" Style="display: none;
                                         border-color: Maroon; background-color: #F7F8E0;" ScrollBars="Horizontal">
-                                        <table style="width: 800px; background-color: #F7F8E0;">
+                                        <div class="row"  style="width: 800px; background-color: #F7F8E0;">
                                             <tr>
                                                 <td>
                                                     <div id="rightnow">
                                                         <h3 class="reallynow">
                                                             Work Programme Detail</h3>
-                                                        <table style="width: 790px;">
+                                                        <div class="row"  style="width: 790px;">
                                                             <tr>
                                                                 <td style="white-space: nowrap;">
                                                                     WP Date:
@@ -142,7 +142,7 @@
                                                                     ENG. In Charge:
                                                                 </td>
                                                                 <td>
-                                                                    <asp:Label ID="lblEngInCharge" runat="server" Width="200px"></asp:Label>
+                                                                    <asp:Label ID="lblEngInCharge" runat="server"  ></asp:Label>
                                                                     <asp:HiddenField ID="hdnEngInCharge" runat="server" />
                                                                 </td>
                                                                 <td style="width: 60px;">
@@ -156,7 +156,7 @@
                                                                 <td colspan="6">
                                                                     <asp:Repeater ID="Repeater1" runat="server" OnItemDataBound="Repeater1_ItemDataBound" onitemcommand="Repeater1_ItemCommand">
                                                                         <HeaderTemplate>
-                                                                            <table style="width: 780px; border: 1px solid black; border-collapse: collapse;">
+                                                                            <div class="row"  style="width: 780px; border: 1px solid black; border-collapse: collapse;">
                                                                                 <tr>
                                                                                     <td rowspan="2" style="width: 40px; text-align: center; border: 1px solid black;
                                                                                         background-color: #D8D8D8;">
@@ -214,27 +214,27 @@
                                                                                     <asp:Label ID="lblArea" runat="server" Text='<%#Bind("Area") %>'></asp:Label>
                                                                                 </td>
                                                                                 <td style="border: 1px solid black; text-align: center;">
-                                                                                    <asp:TextBox ID="txtSK" runat="server" Width="70px" Text='<%#Bind("LabourSK") %>'></asp:TextBox>
+                                                                                    <asp:TextBox CssClass="form-control" ID="txtSK" runat="server" Width="70px" Text='<%#Bind("LabourSK") %>'></asp:TextBox>
                                                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtSK"
                                                                                         FilterType="Custom, Numbers">
                                                                                     </cc1:FilteredTextBoxExtender>
                                                                                 </td>
                                                                                 <td style="border: 1px solid black; text-align: center;">
-                                                                                    <asp:TextBox ID="txtSEMI" runat="server" Width="70px" Text='<%#Bind("LabourSEMI") %>'>
+                                                                                    <asp:TextBox CssClass="form-control" ID="txtSEMI" runat="server" Width="70px" Text='<%#Bind("LabourSEMI") %>'>
                                                                                     </asp:TextBox>
                                                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtSEMI"
                                                                                         FilterType="Custom, Numbers">
                                                                                     </cc1:FilteredTextBoxExtender>
                                                                                 </td>
                                                                                 <td style="border: 1px solid black; text-align: center;">
-                                                                                    <asp:TextBox ID="txtUNSK" runat="server" Width="70px" Text='<%#Bind("LabourUNSK") %>'>
+                                                                                    <asp:TextBox CssClass="form-control" ID="txtUNSK" runat="server" Width="70px" Text='<%#Bind("LabourUNSK") %>'>
                                                                                     </asp:TextBox>
                                                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" TargetControlID="txtUNSK"
                                                                                         FilterType="Custom, Numbers">
                                                                                     </cc1:FilteredTextBoxExtender>
                                                                                 </td>
                                                                                 <td style="border: 1px solid black; text-align: center;">
-                                                                                    <asp:TextBox ID="txtOT" runat="server" Width="70px" Text='<%#Bind("LabourOT") %>'></asp:TextBox>
+                                                                                    <asp:TextBox CssClass="form-control" ID="txtOT" runat="server" Width="70px" Text='<%#Bind("LabourOT") %>'></asp:TextBox>
                                                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender4" runat="server" TargetControlID="txtOT"
                                                                                         FilterType="Custom, Numbers">
                                                                                     </cc1:FilteredTextBoxExtender>
@@ -289,14 +289,14 @@
                                                                                 <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center">
                                                                                 </td>
                                                                                  <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;">
-                                                                <asp:Button ID="btnAdd" runat="server" Text="Add Item" OnClick="btnAdd_Click" />
+                                                                <asp:Button CssClass="btn btn-primary" ID="btnAdd" runat="server" Text="Add Item" OnClick="btnAdd_Click" />
                                                             </td>
                                                                                 <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center">
-                                                                                    <asp:Button ID="btnCalculate" runat="server" Text="Calculate" BackColor="#33ccff"
+                                                                                    <asp:Button CssClass="btn btn-primary" ID="btnCalculate" runat="server" Text="Calculate" BackColor="#33ccff"
                                                                                         BorderColor="Navy" OnClick="btnCalculate_Click" />
                                                                                 </td>
                                                                             </tr>
-                                                                            </table>
+                                                                              </div>
                                                                         </FooterTemplate>
                                                                     </asp:Repeater>
                                                                 </td>
@@ -327,18 +327,18 @@
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="6" style="text-align: center;">
-                                                                    <asp:Button ID="btnSubmit" runat="server" Text="Update" OnClick="btnSubmit_Click" />
-                                                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Update" OnClick="btnSubmit_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                                 </td>
                                                             </tr>
-                                                        </table>
+                                                          </div>
                                                     </div>
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </asp:Panel>
                                      <div style="display: none">
-                                        <asp:Button ID="Button2" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False" DynamicServicePath=""
@@ -346,13 +346,13 @@
                                     </cc1:ModalPopupExtender>
                                     <asp:Panel ID="Panel2" runat="server" Width="300px" Height="200px" Style="display: none;
                                         border-color: Maroon; background-color: #F7F8E0;">
-                                        <table style="width: 300px; background-color: #F7F8E0;" border="1">
+                                        <div class="row"  style="width: 300px; background-color: #F7F8E0;" border="1">
                                             <tr>
                                                 <td>
                                                   Item Of Work
                                                 </td>
                                                 <td>
-                                                 <asp:DropDownList ID="ddlitemworkaddmore" runat="server" Width="200px">
+                                                 <asp:DropDownList CssClass="form-select" ID="ddlitemworkaddmore" runat="server"  >
                                                                 </asp:DropDownList>
                                                 </td>
                                                 </tr>
@@ -361,7 +361,7 @@
                                                 Area
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="TxtAreaaddmore" runat="server" Width="200px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="TxtAreaaddmore" runat="server"  ></asp:TextBox>
                                                 </td>
                                                 </tr>
                                                  <tr>
@@ -369,7 +369,7 @@
                                                 SK
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtskaddmore" runat="server" Width="200px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtskaddmore" runat="server"  ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender11" runat="server" TargetControlID="txtskaddmore"
                                                                                         FilterType="Custom, Numbers">
                                                                                     </cc1:FilteredTextBoxExtender>
@@ -380,7 +380,7 @@
                                                 SEMI
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtsemiaddmore" runat="server" Width="200px"> </asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtsemiaddmore" runat="server"  > </asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender12" runat="server" TargetControlID="txtsemiaddmore"
                                                                                         FilterType="Custom, Numbers">
                                                                                     </cc1:FilteredTextBoxExtender>
@@ -391,7 +391,7 @@
                                                 UNSK
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtunskaddmore" runat="server" Width="200px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtunskaddmore" runat="server"  ></asp:TextBox>
                                                      <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender13" runat="server" TargetControlID="txtunskaddmore"
                                                                                         FilterType="Custom, Numbers">
                                                                                     </cc1:FilteredTextBoxExtender>
@@ -404,7 +404,7 @@
                                                 </td>
                                                 <td>
                                                 
-                                                    <asp:TextBox ID="txtotaddmore" runat="server" Width="200px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtotaddmore" runat="server"  ></asp:TextBox>
                                                      <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender14" runat="server" TargetControlID="txtotaddmore"
                                                                                         FilterType="Custom, Numbers">
                                                                                     </cc1:FilteredTextBoxExtender>
@@ -412,16 +412,16 @@
                                                 </tr>
                                                   <tr style="vertical-align: top;">
                                                  <td colspan="2" style="text-align: center;">
-                                                    <asp:Button ID="BtnSaveADD" runat="server" Text="Save" OnClick="BtnSaveADD_Click" Style="width: auto;"  class="button-bg"/>
-                                                     <asp:Button ID="BtnCanceladd" runat="server" Text="Cancel"  OnClick="BtnCanceladd_Click" Style="width: auto;" class="button-bg"/>
+                                                    <asp:Button CssClass="btn btn-primary" ID="BtnSaveADD" runat="server" Text="Save" OnClick="BtnSaveADD_Click"   class="button-bg"/>
+                                                     <asp:Button CssClass="btn btn-primary" ID="BtnCanceladd" runat="server" Text="Cancel"  OnClick="BtnCanceladd_Click"  class="button-bg"/>
                                                 </td>
                                                 
                                                 </tr>
-                                                </table>
+                                                  </div>
                                                 </asp:Panel>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

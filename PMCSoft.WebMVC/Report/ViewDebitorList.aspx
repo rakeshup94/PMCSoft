@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -11,13 +11,13 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Creditor List</h3>
-                        <table style="width: 930px">
+                        <div class="row"  style="width: 930px">
                             <tr>
                                 <td style="text-align: center;">
                                     Project Name
                                 </td>
                                 <td>
-                                    <asp:DropDownList ID="ddlProject1" runat="server" Width="200px" AutoPostBack="true"
+                                    <asp:DropDownList CssClass="form-select" ID="ddlProject1" runat="server"   AutoPostBack="true"
                                         OnSelectedIndexChanged="ddlProject1_SelectedIndexChanged">
                                     </asp:DropDownList>
                                 </td>
@@ -25,7 +25,7 @@
                                     Approval Type
                                 </td>
                                 <td>
-                                    <asp:DropDownList ID="ddlType" runat="server" AutoPostBack="true" Width="200px" OnSelectedIndexChanged="ddlType_SelectedIndexChanged">
+                                    <asp:DropDownList CssClass="form-select" ID="ddlType" runat="server" AutoPostBack="true"   OnSelectedIndexChanged="ddlType_SelectedIndexChanged">
                                         <asp:ListItem Selected="True" Text="Select Type" Value="-1"></asp:ListItem>
                                         <asp:ListItem Text="Approved" Value="A"></asp:ListItem>
                                         <asp:ListItem Text="Suggest Amount" Value="S"></asp:ListItem>
@@ -69,7 +69,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSuggestAmount" runat="server" Text='<%#Bind("SuggestAmount") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="150px" HorizontalAlign="Right" />
+                                                <ItemStyle   HorizontalAlign="Right" />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Created Date">
                                                 <ItemTemplate>
@@ -82,7 +82,7 @@
                                     </asp:GridView>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

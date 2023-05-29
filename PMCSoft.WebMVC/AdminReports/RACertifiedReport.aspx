@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -100px;">
@@ -11,29 +11,29 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             RA Chart</h3>
-                        <table style="width: 1090px;">
+                        <div class="row"  style="width: 1090px;">
                             <tr>
                                 <td style="text-align: center; font-size: 15px; font-family: Cambria; width: 150px;">
                                     Project
                                 </td>
                                 <td>
-                                    <asp:DropDownList ID="ddlProject" runat="server" AutoPostBack="true" Width="200px">
+                                    <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"  >
                                     </asp:DropDownList>
                                 </td>
                                 <td>
-                                    <asp:Button ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
-                                    <asp:Button ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
+                                    <asp:Button CssClass="btn btn-primary" ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
+                                    <asp:Button CssClass="btn btn-primary" ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="22">
                                     <asp:Panel ID="Panel1" runat="server" Width="1170px" ScrollBars="Horizontal" Visible="false">
-                                        <table style="width: 1200px;">
+                                        <div class="row"  style="width: 1200px;">
                                             <tr>
                                                 <td colspan="23">
                                                     <asp:Repeater ID="Repeater1" runat="server" OnItemDataBound="Repeater1_ItemDataBound">
                                                         <HeaderTemplate>
-                                                            <table style="width: 1100px; border: 1px solid black; border-collapse: collapse;">
+                                                            <div class="row"  style="width: 1100px; border: 1px solid black; border-collapse: collapse;">
                                                                 <tr>
                                                                     <td rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
                                                                         background-color: #D8D8D8;">
@@ -328,16 +328,16 @@
                                                                     <asp:Label ID="lblNetReceivable3" runat="server" Text=""></asp:Label>
                                                                 </td>
                                                             </tr>
-                                                            </table>
+                                                              </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </asp:Panel>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

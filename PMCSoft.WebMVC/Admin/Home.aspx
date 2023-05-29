@@ -6,12 +6,12 @@
 <%@ Register TagPrefix="My" TagName="UserInfoBoxControl" Src="~/RSS/UpdateRSS.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <%--<asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>--%>
     <div id="wrapper" style="margin-left: -150px;">
         <div id="content" style="width: 1250px;">
-            <table style="width: 1240px;">
+            <div class="row"  style="width: 1240px;">
                 <tr>
                     <td>
                         <div id="rightnow" style="width: 1230px;">
@@ -129,7 +129,7 @@
                                 Notifications</h3>
                             <%--<asp:UpdatePanel ID="UpdatePanel5" runat="server">
                                         <ContentTemplate>--%>
-                            <table style="width: 295px;">
+                            <div class="row"  style="width: 295px;">
                                 <tr>
                                     <td style="text-align: right;">
                                         <asp:ImageButton ID="ImgAdd" runat="server" ImageUrl="~/img/icons/add.png" Width="12px"
@@ -172,7 +172,7 @@
                                         <%--<My:UserInfoBoxControl ID="UIBC" runat="server" />--%>
                                     </td>
                                 </tr>
-                            </table>
+                              </div>
                             <%--</ContentTemplate>
                                     </asp:UpdatePanel>--%>
                         </div>
@@ -347,13 +347,13 @@
                         </div>
                     </td>
                 </tr>
-            </table>
+              </div>
         </div>
     </div>
     <%-- </ContentTemplate>
     </asp:UpdatePanel>--%>
     <div style="display: none">
-        <asp:Button ID="Button1" runat="server" Text="Button" />
+        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
     </div>
     <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False" DynamicServicePath=""
@@ -365,20 +365,20 @@
                 <asp:PostBackTrigger ControlID="btnSubmit" />
             </Triggers>
             <ContentTemplate>
-                <table style="width: 410px; background-color: #EFFBFB;">
+                <div class="row"  style="width: 410px; background-color: #EFFBFB;">
                     <tr>
                         <td>
                             <div id="rightnow">
                                 <h3 class="reallynow">
                                     Add Notification</h3>
-                                <table style="width: 400px;">
+                                <div class="row"  style="width: 400px;">
                                     <tr>
                                         <td>
                                             Department
                                         </td>
                                         <td>
-                                            <asp:DropDownList ID="ddlDepartment" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlDepartment_SelectedIndexChanged"
-                                                Width="200px">
+                                            <asp:DropDownList CssClass="form-select" ID="ddlDepartment" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlDepartment_SelectedIndexChanged"
+                                                 >
                                             </asp:DropDownList>
                                         </td>
                                     </tr>
@@ -387,7 +387,7 @@
                                             Designation
                                         </td>
                                         <td>
-                                            <asp:DropDownList ID="ddlDesignation" runat="server" Width="200px">
+                                            <asp:DropDownList CssClass="form-select" ID="ddlDesignation" runat="server"  >
                                             </asp:DropDownList>
                                         </td>
                                     </tr>
@@ -396,7 +396,7 @@
                                             Subject
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtTitle" runat="server" Width="300px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
+                                            <asp:TextBox CssClass="form-control" ID="txtTitle" runat="server" Width="300px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -404,7 +404,7 @@
                                             Circular No.
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtCircularNo" runat="server" Width="300px" onkeyup="valid(this)"
+                                            <asp:TextBox CssClass="form-control" ID="txtCircularNo" runat="server" Width="300px" onkeyup="valid(this)"
                                                 onblur="valid(this)"></asp:TextBox>
                                         </td>
                                     </tr>
@@ -413,7 +413,7 @@
                                             Description
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtDescription" runat="server" TextMode="MultiLine" Width="305px"
+                                            <asp:TextBox CssClass="form-control" ID="txtDescription" runat="server" TextMode="MultiLine" Width="305px"
                                                 onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                         </td>
                                     </tr>
@@ -427,15 +427,15 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2" style="text-align: center;">
-                                            <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                            <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                            <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                            <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                         </td>
                                     </tr>
-                                </table>
+                                  </div>
                             </div>
                         </td>
                     </tr>
-                </table>
+                  </div>
             </ContentTemplate>
         </asp:UpdatePanel>
     </asp:Panel>

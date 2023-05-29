@@ -14,60 +14,60 @@ else
     </script>
 
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <div id="wrapper">
         <div id="content" style="width: 940px;">
             <div id="rightnow">
                 <h3 class="reallynow">
                     Add Notification</h3>
-                <table style="width: 930px; vertical-align: top;">
+                <div class="row"  style="width: 930px; vertical-align: top;">
                     <tr>
                         <td>
                             Department
                         </td>
                         <td>
-                            <asp:DropDownList ID="ddlDepartment" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlDepartment_SelectedIndexChanged"
-                                Width="200px">
+                            <asp:DropDownList CssClass="form-select" ID="ddlDepartment" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlDepartment_SelectedIndexChanged"
+                                 >
                             </asp:DropDownList>
                                                   
-            <asp:Button ID="LnkAddNewDept" runat="server" onclick="LnkAddNewDept_Click" Text="+"></asp:Button>
+            <asp:Button CssClass="btn btn-primary" ID="LnkAddNewDept" runat="server" onclick="LnkAddNewDept_Click" Text="+"></asp:Button>
      <div style="display: none">
-                <asp:Button ID="Button2" runat="server" Text="Button" />
+                <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
             </div>
             <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                 PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False" DynamicServicePath=""
                 Enabled="True">
             </cc1:ModalPopupExtender>
             <asp:Panel ID="Panel1" runat="server" Style="display: none; border-color: Maroon;">
-                <table style="width: 300px; background-color: #EFFBFB;">
+                <div class="row"  style="width: 300px; background-color: #EFFBFB;">
                     <tr>
                         <td>
                             <div id="Div1">
                                 <h3 class="reallynow">
                                     Department</h3>
-                                   <table style="width: 390px; vertical-align: top;">
+                                   <div class="row"  style="width: 390px; vertical-align: top;">
                                             <tr>
                                                 <td>
                                                     Department
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtDepartment" runat="server" Width="200px" onkeyup="valid(this)"
+                                                    <asp:TextBox CssClass="form-control" ID="txtDepartment" runat="server"   onkeyup="valid(this)"
                                                         onblur="valid(this)"></asp:TextBox>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" style="text-align: center;">
-                                                    <asp:Button ID="BtnDeptSave" runat="server" Text="Submit" 
+                                                    <asp:Button CssClass="btn btn-primary" ID="BtnDeptSave" runat="server" Text="Submit" 
                                                         onclick="BtnDeptSave_Click" />
-                                                    <asp:Button ID="btndepcancel" runat="server" Text="Cancel" 
+                                                    <asp:Button CssClass="btn btn-primary" ID="btndepcancel" runat="server" Text="Cancel" 
                                                         onclick="btndepcancel_Click" />
                                                 </td>
                                             </tr>
-                                        </table>         
+                                          </div>         
                                         </div>
                                         </td>
                                         </tr>
-                                               </table>
+                                                 </div>
             </asp:Panel>
 
                         </td>
@@ -75,31 +75,31 @@ else
                             Designation
                         </td>
                         <td>
-                            <asp:DropDownList ID="ddlDesignation" runat="server" Width="200px">
+                            <asp:DropDownList CssClass="form-select" ID="ddlDesignation" runat="server"  >
                             </asp:DropDownList>
-                            <asp:Button ID="LnkAddNewDesignation" runat="server" 
+                            <asp:Button CssClass="btn btn-primary" ID="LnkAddNewDesignation" runat="server" 
                                         onclick="LnkAddNewDesignation_Click" Text="+"></asp:Button>
                                              <div style="display: none">
-                <asp:Button ID="Button1" runat="server" Text="Button" />
+                <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
             </div>
             <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                 PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False" DynamicServicePath=""
                 Enabled="True">
             </cc1:ModalPopupExtender>
             <asp:Panel ID="Panel2" runat="server" Style="display: none; border-color: Maroon;">
-               <table style="width: 300px; background-color: #EFFBFB;">
+               <div class="row"  style="width: 300px; background-color: #EFFBFB;">
                     <tr>
                         <td>
                <div id="rightnow">
                                         <h3 class="reallynow">
                                             Add Designation</h3>
-                                        <table style="width: 290px; vertical-align: top; background-color: #EFFBFB;">
+                                        <div class="row"  style="width: 290px; vertical-align: top; background-color: #EFFBFB;">
                                             <tr>
                                                 <td>
                                                     Department
                                                 </td>
                                                 <td>
-                                                    <asp:DropDownList ID="ddlNewDept" runat="server" Width="200px">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlNewDept" runat="server"  >
                                                     </asp:DropDownList>
                                                 </td>
                                             </tr>
@@ -108,23 +108,23 @@ else
                                                     Designation
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtDesignation" runat="server" Width="200px" onkeyup="valid(this)"
+                                                    <asp:TextBox CssClass="form-control" ID="txtDesignation" runat="server"   onkeyup="valid(this)"
                                                         onblur="valid(this)"></asp:TextBox>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" style="text-align: center;">
-                                                    <asp:Button ID="BtnAddnewDesignation" runat="server" Text="Submit" 
+                                                    <asp:Button CssClass="btn btn-primary" ID="BtnAddnewDesignation" runat="server" Text="Submit" 
                                                         onclick="BtnAddnewDesignation_Click" />
-                                                    <asp:Button ID="btnAddNewDesignationCancel" runat="server" Text="Cancel" 
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnAddNewDesignationCancel" runat="server" Text="Cancel" 
                                                         onclick="btnAddNewDesignationCancel_Click"  />
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </div>
                 </td>
                 </tr>
-                </table>
+                  </div>
             </asp:Panel>
 
                         </td>
@@ -134,13 +134,13 @@ else
                             Subject
                         </td>
                         <td style="width: 350px;">
-                            <asp:TextBox ID="txtTitle" runat="server" Width="300px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
+                            <asp:TextBox CssClass="form-control" ID="txtTitle" runat="server" Width="300px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                         </td>
                         <td style="width: 100px;">
                             Circular No.
                         </td>
                         <td>
-                            <asp:TextBox ID="txtCircularNo" runat="server" Width="195px" onkeyup="valid(this)"
+                            <asp:TextBox CssClass="form-control" ID="txtCircularNo" runat="server" Width="195px" onkeyup="valid(this)"
                                 onblur="valid(this)"></asp:TextBox>
                         </td>
                     </tr>
@@ -149,7 +149,7 @@ else
                             Description
                         </td>
                         <td>
-                            <asp:TextBox ID="txtDescription" runat="server" TextMode="MultiLine" Width="305px"
+                            <asp:TextBox CssClass="form-control" ID="txtDescription" runat="server" TextMode="MultiLine" Width="305px"
                                 onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                         </td>
                         <td>
@@ -161,14 +161,14 @@ else
                     </tr>
                     <tr>
                         <td colspan="4" style="text-align: center;">
-                            <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                            <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                            <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                            <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                         </td>
                     </tr>
-                </table>
+                  </div>
                 <h3 class="reallynow">
                     Updated Notifications</h3>
-                <table style="width: 930px; vertical-align: top;">
+                <div class="row"  style="width: 930px; vertical-align: top;">
                     <tr>
                         <td style="vertical-align: top;">
                             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" Width="910px"
@@ -186,7 +186,7 @@ else
                                         <ItemTemplate>
                                             <asp:Label ID="lblTitle" runat="server" Text='<%#Bind("Title") %>'></asp:Label>
                                         </ItemTemplate>
-                                        <ItemStyle Width="150px" />
+                                        <ItemStyle   />
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="Circular No">
                                         <ItemTemplate>
@@ -198,7 +198,7 @@ else
                                         <ItemTemplate>
                                             <asp:Label ID="lblDescription" runat="server" Text='<%#Bind("Description") %>' ForeColor="#666666"></asp:Label>
                                         </ItemTemplate>
-                                        <ItemStyle Width="200px" />
+                                        <ItemStyle   />
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="Department">
                                         <ItemTemplate>
@@ -243,7 +243,7 @@ else
                             </asp:GridView>
                         </td>
                     </tr>
-                </table>
+                  </div>
             </div>
         </div>
     </div>

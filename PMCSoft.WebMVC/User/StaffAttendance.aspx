@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -11,13 +11,13 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             General Staff Attendance</h3>
-                        <table style="width: 930px;">
+                        <div class="row"  style="width: 930px;">
                             <tr>
                                 <td style="width: 100px;">
                                     Project
                                 </td>
                                 <td>
-                                    <asp:DropDownList ID="ddlProject1" runat="server" Width="200px" AutoPostBack="True"
+                                    <asp:DropDownList CssClass="form-select" ID="ddlProject1" runat="server"   AutoPostBack="True"
                                         OnSelectedIndexChanged="ddlProject1_SelectedIndexChanged">
                                     </asp:DropDownList>
                                 </td>
@@ -90,13 +90,13 @@
                             </tr>
                             <tr>
                                 <td colspan="4" style="text-align: center;">
-                                    <asp:Button ID="btnSubmit1" runat="server" Text="Submit" OnClick="btnSubmit1_Click"
+                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit1" runat="server" Text="Submit" OnClick="btnSubmit1_Click"
                                         Visible="false" />
-                                    <asp:Button ID="btnCancel1" runat="server" Text="Cancel" OnClick="btnCancel1_Click"
+                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel1" runat="server" Text="Cancel" OnClick="btnCancel1_Click"
                                         Visible="false" />
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

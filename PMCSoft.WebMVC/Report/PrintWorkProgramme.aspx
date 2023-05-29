@@ -14,7 +14,7 @@
                 <%--<h3 style="margin-right:80">
                               AHLUWALIA CONTRACTS (INDIA) LTD<br />
                            Work Programme</h3>--%>
-                <table style="width: 930px;" border="0">
+                <div class="row"  style="width: 930px;" border="0">
                     <tr>
                     <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="50px" />
                         <td style="text-align: center; font-size: 18px; font-family: Cambria;" >
@@ -22,12 +22,12 @@
                             Work Programme
                         </td>
                     </tr>
-                </table>
+                  </div>
                 <br />
                 <br />
                 <br />
                 
-                <table style="width: 930px">
+                <div class="row"  style="width: 930px">
                     <tr>
                         <td style="font-size: 15px; font-family: Cambria; color: Black">
                             Project Name:
@@ -81,7 +81,7 @@
                     <tr>
                         <td colspan="4" style="text-align: center;">
                             <asp:Panel ID="Panel1" runat="server" Width="910px" Visible="false">
-                                <table style="width: 900px;">
+                                <div class="row"  style="width: 900px;">
                                     <tr>
                                         <td style="font-size: 15px; font-family: Cambria;">
                                         </td>
@@ -95,7 +95,7 @@
                                         <td colspan="6">
                                             <asp:Repeater ID="Repeater1" runat="server">
                                                 <HeaderTemplate>
-                                                    <table style="width: 900px; border: 1px solid black; border-collapse: collapse;">
+                                                    <div class="row"  style="width: 900px; border: 1px solid black; border-collapse: collapse;">
                                                         <tr>
                                                             <td rowspan="2" style="width: 50px; text-align: center; border: 1px solid black;
                                                                 background-color: #D8D8D8;">
@@ -199,7 +199,7 @@
                                                             <asp:Label ID="lblGTotal" runat="server" Text=""></asp:Label>
                                                         </td>
                                                     </tr>
-                                                    </table>
+                                                      </div>
                                                 </FooterTemplate>
                                             </asp:Repeater>
                                         </td>
@@ -234,11 +234,11 @@
                                         Created By Sun Integrated Technologies & Application
                                     </td>
                                     </tr>
-                                </table>
+                                  </div>
                             </asp:Panel>
                         </td>
                     </tr>
-                </table>
+                  </div>
             </div>
         </div>
     </div>

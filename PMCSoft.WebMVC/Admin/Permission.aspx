@@ -79,7 +79,7 @@
     </script>
 
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <Triggers>
             <asp:PostBackTrigger ControlID="btnSubmit" />
@@ -93,13 +93,13 @@
                                 <h3 class="reallynow">
                                     Permission
                                 </h3>
-                                <table style="width: 930px; vertical-align: top;">
+                                <div class="row"  style="width: 930px; vertical-align: top;">
                                     <tr>
                                         <td style="font-size: 15px; font-family: Cambria;">
                                             Project
                                         </td>
                                         <td>
-                                            <asp:DropDownList ID="ddlProject" runat="server" AutoPostBack="true" Width="200px"
+                                            <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"  
                                                 OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                             </asp:DropDownList>
                                         </td>
@@ -107,12 +107,12 @@
                                             User
                                         </td>
                                         <td>
-                                            <asp:DropDownList ID="ddluser" runat="server" AutoPostBack="true" Width="200px" OnSelectedIndexChanged="ddluser_SelectedIndexChanged">
+                                            <asp:DropDownList CssClass="form-select" ID="ddluser" runat="server" AutoPostBack="true"   OnSelectedIndexChanged="ddluser_SelectedIndexChanged">
                                             </asp:DropDownList>
                                         </td>
                                     </tr>
-                                </table>
-                                <table>
+                                  </div>
+                                <div class="row" >
                                     <tr style="vertical-align: top;">
                                         <td style="vertical-align: top; width: 1000px;" colspan="2">
                                             <asp:Panel ID="Panel2" runat="server" Height="900px" ScrollBars="Horizontal">
@@ -170,11 +170,11 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2" style="text-align: center;">
-                                            <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                            <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                            <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                            <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                         </td>
                                     </tr>
-                                </table>
+                                  </div>
                             </div>
                         </div>
                     </div>

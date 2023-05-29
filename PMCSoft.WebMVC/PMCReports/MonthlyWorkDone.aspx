@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -150px;">
@@ -16,24 +16,24 @@
                                 <HeaderTemplate>
                                     Add Monthly WorkDone Plan</HeaderTemplate>
                                 <ContentTemplate>
-                                    <table style="width: 970px;">
+                                    <div class="row"  style="width: 970px;">
                                        
                                         <tr>
                                             <td>
-                                                <table style="width: 910px;">
+                                                <div class="row"  style="width: 910px;">
                                                     <tr>
                                                         <td>
                                                             Project
                                                         </td>
                                                         <td>
-                                                            <asp:DropDownList ID="ddlProject" runat="server" Width="200px" AutoPostBack="True">
+                                                            <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server"   AutoPostBack="True">
                                                             </asp:DropDownList>
                                                         </td>
                                                         <td>
                                                             Month
                                                         </td>
                                                         <td>
-                                                            <asp:DropDownList ID="ddlMonth" runat="server" AutoPostBack="True" Style="width: auto;">
+                                                            <asp:DropDownList CssClass="form-select" ID="ddlMonth" runat="server" AutoPostBack="True" Style="width: auto;">
                                                                 <asp:ListItem Text="January" Value="01"></asp:ListItem>
                                                                 <asp:ListItem Text="February" Value="02"></asp:ListItem>
                                                                 <asp:ListItem Text="March" Value="03"></asp:ListItem>
@@ -47,26 +47,26 @@
                                                                 <asp:ListItem Text="November" Value="11"></asp:ListItem>
                                                                 <asp:ListItem Text="December" Value="12"></asp:ListItem>
                                                             </asp:DropDownList>
-                                                            <asp:DropDownList ID="ddlSDaysYear" runat="server" AutoPostBack="True" Style="width: 400;">
+                                                            <asp:DropDownList CssClass="form-select" ID="ddlSDaysYear" runat="server" AutoPostBack="True" Style="width: 400;">
                                                             </asp:DropDownList>
                                                         </td>
                                                         <td>
                                                             <td>
-                                                                <asp:Button ID="BtnReport" runat="server" Text="View" OnClick="BtnReport_Click" />
+                                                                <asp:Button CssClass="btn btn-primary" ID="BtnReport" runat="server" Text="View" OnClick="BtnReport_Click" />
                                                             </td>
                                                         </td>
                                                     </tr>
-                                                </table>
+                                                  </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <table style="width: 1220px;">
+                                                <div class="row"  style="width: 1220px;">
                                                     <tr>
                                                         <td>
                                                             <asp:Repeater ID="Repeater1" runat="server" OnItemDataBound="Repeater1_ItemDataBound">
                                                                 <HeaderTemplate>
-                                                                    <table style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                                    <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
                                                                         <tr>
                                                                             <td rowspan="4" style="width: 40px; text-align: center; border: 1px solid black;
                                                                                 background-color: #D8D8D8; font-weight: bold;">
@@ -158,7 +158,7 @@
                                                                                         </td>
                                                                                         <td style="text-align: left; border: 1px solid black;">
                                                                                             <asp:Label ID="lblWDDName" runat="server" Text='<%#Bind("WDDName") %>'></asp:Label>
-                                                                                            <asp:Button ID="Button" runat="server" Text="+" OnClick="Button_Click" CommandArgument='<%# Eval("TransId") %>' />
+                                                                                            <asp:Button CssClass="btn btn-primary" ID="Button" runat="server" Text="+" OnClick="Button_Click" CommandArgument='<%# Eval("TransId") %>' />
                                                                                         </td>
                                                                                         <td style="text-align: right; border: 1px solid black;">
                                                                                             <asp:Label ID="txtUnit" runat="server" Width="60px" Text=""></asp:Label>
@@ -188,19 +188,19 @@
                                                                                                             <asp:Label ID="LBLPD" runat="server" Text='<%#Bind("WDDName") %>'></asp:Label>
                                                                                                         </td>
                                                                                                         <td style="text-align: right; border: 1px solid black;">
-                                                                                                            <asp:TextBox ID="txtUnit" runat="server" Width="150px" Text=""></asp:TextBox>
+                                                                                                            <asp:TextBox CssClass="form-control" ID="txtUnit" runat="server"   Text=""></asp:TextBox>
                                                                                                         </td>
                                                                                                         <td style="text-align: right; border: 1px solid black;">
-                                                                                                            <asp:TextBox ID="txtRate" runat="server" Width="150px" Text=""></asp:TextBox>
+                                                                                                            <asp:TextBox CssClass="form-control" ID="txtRate" runat="server"   Text=""></asp:TextBox>
                                                                                                         </td>
                                                                                                         <td style="text-align: right; border: 1px solid black;">
-                                                                                                            <asp:TextBox ID="txtAwardedValue" runat="server" Width="150px" Text=""></asp:TextBox>
+                                                                                                            <asp:TextBox CssClass="form-control" ID="txtAwardedValue" runat="server"   Text=""></asp:TextBox>
                                                                                                         </td>
                                                                                                         <td style="text-align: right; border: 1px solid black;">
-                                                                                                            <asp:TextBox ID="txtQty" runat="server" Width="150px" Text=""></asp:TextBox>
+                                                                                                            <asp:TextBox CssClass="form-control" ID="txtQty" runat="server"   Text=""></asp:TextBox>
                                                                                                         </td>
                                                                                                         <td style="text-align: right; border: 1px solid black;">
-                                                                                                            <asp:TextBox ID="txtAmt" runat="server" Width="150px" Text=""></asp:TextBox>
+                                                                                                            <asp:TextBox CssClass="form-control" ID="txtAmt" runat="server"   Text=""></asp:TextBox>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </ItemTemplate>
@@ -215,54 +215,54 @@
                                                             </asp:Repeater>
                                                         </td>
                                                     </tr>
-                                                </table>
+                                                  </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <tr>
                                                     <td colspan="2" style="text-align: center;">
-                                                        <asp:Button ID="BtnWorkdonePlanSave" runat="server" Text="Submit" OnClick="BtnWorkdonePlanSave_Click" />
-                                                        <asp:Button ID="btnWorkDonePlanancel" runat="server" Text="Cancel" />
+                                                        <asp:Button CssClass="btn btn-primary" ID="BtnWorkdonePlanSave" runat="server" Text="Submit" OnClick="BtnWorkdonePlanSave_Click" />
+                                                        <asp:Button CssClass="btn btn-primary" ID="btnWorkDonePlanancel" runat="server" Text="Cancel" />
                                                     </td>
                                                 </tr>
                                             </td>
                                         </tr>
-                                    </table>
+                                      </div>
                                     <div style="display: none">
-                                        <asp:Button ID="Button1" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False" DynamicServicePath=""
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
                                     <asp:Panel ID="Panel1" runat="server" Style="display: none; border-color: Maroon;">
-                                        <table style="width: 300px; background-color: #EFFBFB;">
+                                        <div class="row"  style="width: 300px; background-color: #EFFBFB;">
                                             <tr>
                                                 <td>
                                                     <div id="Div2">
                                                         <h3 class="reallynow">
                                                             Add Particulars Of Item</h3>
-                                                        <table style="width: 390px; vertical-align: top;">
+                                                        <div class="row"  style="width: 390px; vertical-align: top;">
                                                             <tr>
                                                                 <td>
                                                                     Particulars
                                                                 </td>
                                                                 <td>
-                                                                    <asp:TextBox ID="TxtExpenditure" runat="server" Width="200px" onkeyup="valid(this)"
+                                                                    <asp:TextBox CssClass="form-control" ID="TxtExpenditure" runat="server"   onkeyup="valid(this)"
                                                                         onblur="valid(this)"></asp:TextBox>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="2" style="text-align: center;">
-                                                                    <asp:Button ID="BtnAddNew" runat="server" Text="Submit" OnClick="BtnAddNew_Click"
+                                                                    <asp:Button CssClass="btn btn-primary" ID="BtnAddNew" runat="server" Text="Submit" OnClick="BtnAddNew_Click"
                                                                         CommandArgument='<%# Eval("TransId") %>' />
-                                                                    <asp:Button ID="BtnAddNewCancle" runat="server" Text="Cancel" OnClick="BtnAddNewCancle_Click"
+                                                                    <asp:Button CssClass="btn btn-primary" ID="BtnAddNewCancle" runat="server" Text="Cancel" OnClick="BtnAddNewCancle_Click"
                                                                         CommandArgument='<%# Eval("TransId") %>' />
                                                                 </td>
                                                             </tr>
-                                                        </table>
-                                        </table>
+                                                          </div>
+                                          </div>
                                     </asp:Panel>
                                 </ContentTemplate>
                             </cc1:TabPanel>
@@ -270,7 +270,7 @@
                                 <HeaderTemplate>
                                     Add Monthly WorkDone Actual</HeaderTemplate>
                                 <ContentTemplate>
-                                    <table style="width: 1240px;">
+                                    <div class="row"  style="width: 1240px;">
                                         <tr>
                                             <td style="text-align: center; font-size: 15px; font-family: Cambria;">
                                                 Ahluwalia Contracts (India) Ltd.
@@ -278,20 +278,20 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <table style="width: 910px;">
+                                                <div class="row"  style="width: 910px;">
                                                     <tr>
                                                         <td>
                                                             Project
                                                         </td>
                                                         <td>
-                                                            <asp:DropDownList ID="ddlProjectA" runat="server" Width="200px" AutoPostBack="True">
+                                                            <asp:DropDownList CssClass="form-select" ID="ddlProjectA" runat="server"   AutoPostBack="True">
                                                             </asp:DropDownList>
                                                         </td>
                                                         <td>
                                                             Month
                                                         </td>
                                                         <td>
-                                                            <asp:DropDownList ID="ddlMonthA" runat="server" AutoPostBack="True" Style="width: auto;">
+                                                            <asp:DropDownList CssClass="form-select" ID="ddlMonthA" runat="server" AutoPostBack="True" Style="width: auto;">
                                                                 <asp:ListItem Text="January" Value="01"></asp:ListItem>
                                                                 <asp:ListItem Text="February" Value="02"></asp:ListItem>
                                                                 <asp:ListItem Text="March" Value="03"></asp:ListItem>
@@ -305,26 +305,26 @@
                                                                 <asp:ListItem Text="November" Value="11"></asp:ListItem>
                                                                 <asp:ListItem Text="December" Value="12"></asp:ListItem>
                                                             </asp:DropDownList>
-                                                            <asp:DropDownList ID="ddlSDaysYearA" runat="server" AutoPostBack="True" Style="width: 400;">
+                                                            <asp:DropDownList CssClass="form-select" ID="ddlSDaysYearA" runat="server" AutoPostBack="True" Style="width: 400;">
                                                             </asp:DropDownList>
                                                         </td>
                                                         <td>
                                                             <td>
-                                                                <asp:Button ID="BtnReportA" runat="server" Text="View" OnClick="BtnReportA_Click" />
+                                                                <asp:Button CssClass="btn btn-primary" ID="BtnReportA" runat="server" Text="View" OnClick="BtnReportA_Click" />
                                                             </td>
                                                         </td>
                                                     </tr>
-                                                </table>
+                                                  </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <table style="width: 1220px;">
+                                                <div class="row"  style="width: 1220px;">
                                                     <tr>
                                                         <td>
                                                             <asp:Repeater ID="RptActualMaster" runat="server" OnItemDataBound="RptActualMaster_ItemDataBound">
                                                                 <HeaderTemplate>
-                                                                    <table style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                                    <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
                                                                         <tr>
                                                                             <td rowspan="4" style="width: 40px; text-align: center; border: 1px solid black;
                                                                                 background-color: #D8D8D8; font-weight: bold;">
@@ -494,10 +494,10 @@
                                                                                                             <asp:Label ID="txtAmt" runat="server" Width="60px" Text='<%#Bind("PlanAmt") %>'></asp:Label>
                                                                                                         </td>
                                                                                                         <td style="text-align: right; border: 1px solid black;">
-                                                                                                            <asp:TextBox ID="TxtActualQty" runat="server" Width="150px" Text=""></asp:TextBox>
+                                                                                                            <asp:TextBox CssClass="form-control" ID="TxtActualQty" runat="server"   Text=""></asp:TextBox>
                                                                                                         </td>
                                                                                                         <td style="text-align: right; border: 1px solid black;">
-                                                                                                            <asp:TextBox ID="TxtActualAmt" runat="server" Width="150px" Text=""></asp:TextBox>
+                                                                                                            <asp:TextBox CssClass="form-control" ID="TxtActualAmt" runat="server"   Text=""></asp:TextBox>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                     <tr>
@@ -516,16 +516,16 @@
                                                             </asp:Repeater>
                                                         </td>
                                                     </tr>
-                                                </table>
+                                                  </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="2" style="text-align: center;">
-                                                <asp:Button ID="BtnActualMonthlyWorkDoneSave" runat="server" Text="Submit" OnClick="BtnActualMonthlyWorkDoneSave_Click" />
-                                                <asp:Button ID="BtnActualMonthlyWorkDoneCancel" runat="server" Text="Cancel" />
+                                                <asp:Button CssClass="btn btn-primary" ID="BtnActualMonthlyWorkDoneSave" runat="server" Text="Submit" OnClick="BtnActualMonthlyWorkDoneSave_Click" />
+                                                <asp:Button CssClass="btn btn-primary" ID="BtnActualMonthlyWorkDoneCancel" runat="server" Text="Cancel" />
                                             </td>
                                         </tr>
-                                    </table>
+                                      </div>
                                 </ContentTemplate>
                             </cc1:TabPanel>
                         </cc1:TabContainer>

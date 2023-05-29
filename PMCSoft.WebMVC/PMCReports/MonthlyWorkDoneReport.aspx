@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -150px;">
@@ -11,23 +11,23 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             MONTHLY WORK DONE</h3>
-                        <table style="width: 1240px;">
+                        <div class="row"  style="width: 1240px;">
                         
                             <td>
-                                <table style="width: 910px;">
+                                <div class="row"  style="width: 910px;">
                                     <tr>
                                         <td>
                                             Project
                                         </td>
                                         <td>
-                                            <asp:DropDownList ID="ddlProject" runat="server" Width="200px" AutoPostBack="True">
+                                            <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server"   AutoPostBack="True">
                                             </asp:DropDownList>
                                         </td>
                                         <td>
                                             Month
                                         </td>
                                         <td>
-                                            <asp:DropDownList ID="ddlMonth" runat="server" AutoPostBack="True" Style="width: auto;">
+                                            <asp:DropDownList CssClass="form-select" ID="ddlMonth" runat="server" AutoPostBack="True" Style="width: auto;">
                                                 <asp:ListItem Text="January" Value="01"></asp:ListItem>
                                                 <asp:ListItem Text="February" Value="02"></asp:ListItem>
                                                 <asp:ListItem Text="March" Value="03"></asp:ListItem>
@@ -41,34 +41,34 @@
                                                 <asp:ListItem Text="November" Value="11"></asp:ListItem>
                                                 <asp:ListItem Text="December" Value="12"></asp:ListItem>
                                             </asp:DropDownList>
-                                            <asp:DropDownList ID="ddlSDaysYear" runat="server" AutoPostBack="True" Style="width: 400;">
+                                            <asp:DropDownList CssClass="form-select" ID="ddlSDaysYear" runat="server" AutoPostBack="True" Style="width: 400;">
                                             </asp:DropDownList>
                                         </td>
                                         <td>
                                             <td>
-                                                <asp:Button ID="BtnReport" runat="server" Text="View" OnClick="BtnReport_Click" />
+                                                <asp:Button CssClass="btn btn-primary" ID="BtnReport" runat="server" Text="View" OnClick="BtnReport_Click" />
                                             </td>
                                             <td>
-                                                <asp:Button ID="btnPrint" runat="server" Text="Print Preview" OnClick="btnPrint_Click" />
+                                                <asp:Button CssClass="btn btn-primary" ID="btnPrint" runat="server" Text="Print Preview" OnClick="btnPrint_Click" />
                                             </td>
                                         </td>
                                     </tr>
-                                </table>
+                                  </div>
                             </td>
                             <%--<tr>
                                 <td style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     Monthly Work Done Status For The Month Of&nbsp;&nbsp;&nbsp;
-                                    <asp:TextBox ID="txtMonth" runat="server" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtMonth" runat="server" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                 </td>
                             </tr>--%>
                             <tr>
                                 <td>
-                                    <table style="width: 1220px;">
+                                    <div class="row"  style="width: 1220px;">
                                         <tr>
                                             <td>
                                                 <asp:Repeater ID="Repeater1" runat="server" OnItemDataBound="Repeater1_ItemDataBound">
                                                     <HeaderTemplate>
-                                                        <table style="border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"  style="border: 1px solid black; border-collapse: collapse;">
                                                             <tr>
                                                                 <td rowspan="4" style="width: 40px; text-align: center; border: 1px solid black;
                                                                     background-color: #D8D8D8; font-weight: bold;">
@@ -440,7 +440,7 @@
                                                               <asp:Label ID="Label32" runat="server" Text=""></asp:Label>
                                                             </td>
                                                         </tr>
-                                                        </table>
+                                                          </div>
                                                     </FooterTemplate>
                                                 </asp:Repeater>
                                                 <%--<asp:Repeater ID="RptSubDetail" runat="server">
@@ -500,10 +500,10 @@
                                             </td>
                                             
                                         </tr>
-                                    </table>
+                                      </div>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

@@ -72,7 +72,7 @@ export type CellIdxWithVisible = {
 declare interface DataTables<T> extends DataTablesStatic {
     /**
      * Create a new DataTable
-     * @param selector Selector to pick one or more `<table>` elements
+     * @param selector Selector to pick one or more `<div class="row" >` elements
      * @param opts Configuration settings
      */
     new <T=any>(

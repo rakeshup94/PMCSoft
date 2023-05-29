@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper"">
@@ -11,20 +11,20 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             MONTHLY VWD (FORMAT No. C)</h3>
-                        <table style="width: 930px;">
+                        <div class="row"  style="width: 930px;">
                             <tr>
                            
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Project&nbsp;&nbsp;&nbsp;<asp:DropDownList ID="ddlProject" runat="server" AutoPostBack="true"
-                                        OnSelectedIndexChanged="ddlProject_SelectedIndexChanged" Width="200px">
+                                    Project&nbsp;&nbsp;&nbsp;<asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"
+                                        OnSelectedIndexChanged="ddlProject_SelectedIndexChanged"  >
                                     </asp:DropDownList>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Status of Work Done / Plan As On&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txtDate" runat="server"
+                                    Status of Work Done / Plan As On&nbsp;&nbsp;&nbsp;<asp:TextBox CssClass="form-control" ID="txtDate" runat="server"
                                         Width="100px" ReadOnly="true" Enabled="false"></asp:TextBox>
                                 </td>
                             </tr>
@@ -32,7 +32,7 @@
                                 <td>
                                     <asp:Repeater ID="Repeater1" runat="server" OnItemDataBound="Repeater1_ItemDataBound">
                                         <HeaderTemplate>
-                                            <table style="width: 920px; border: 1px solid black; border-collapse: collapse;">
+                                            <div class="row"  style="width: 920px; border: 1px solid black; border-collapse: collapse;">
                                                 <tr>
                                                     <td rowspan="3" style="width: 40px; text-align: center; border: 1px solid black;
                                                         background-color: #D8D8D8; font-weight: bold;">
@@ -116,14 +116,14 @@
                                                     <asp:Label ID="lblFiscMonths" runat="server" Text='<%#Bind("FiscMonths") %>'></asp:Label>
                                                 </td>
                                                 <td style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox ID="txtPlan" runat="server" Width="80px" Enabled="false" ReadOnly="true"
+                                                    <asp:TextBox CssClass="form-control" ID="txtPlan" runat="server" Width="80px" Enabled="false" ReadOnly="true"
                                                         Text='<%#Bind("PlanRs") %>'></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtPlan"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </td>
                                                 <td style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox ID="txtActualVWD" runat="server" Width="80px" Enabled="false" ReadOnly="true"
+                                                    <asp:TextBox CssClass="form-control" ID="txtActualVWD" runat="server" Width="80px" Enabled="false" ReadOnly="true"
                                                         Text='<%#Bind("ActualVWD") %>'>
                                                     </asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtActualVWD"
@@ -131,7 +131,7 @@
                                                     </cc1:FilteredTextBoxExtender>
                                                 </td>
                                                 <td style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox ID="txtActualEscl" runat="server" Width="80px" Enabled="false" ReadOnly="true"
+                                                    <asp:TextBox CssClass="form-control" ID="txtActualEscl" runat="server" Width="80px" Enabled="false" ReadOnly="true"
                                                         Text='<%#Bind("ActualEscl") %>'>
                                                     </asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" TargetControlID="txtActualEscl"
@@ -139,7 +139,7 @@
                                                     </cc1:FilteredTextBoxExtender>
                                                 </td>
                                                 <td style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox ID="txtExtraItem" runat="server" Width="80px" Enabled="false" ReadOnly="true"
+                                                    <asp:TextBox CssClass="form-control" ID="txtExtraItem" runat="server" Width="80px" Enabled="false" ReadOnly="true"
                                                         Text='<%#Bind("ActualExtraItem") %>'>
                                                     </asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender4" runat="server" TargetControlID="txtExtraItem"
@@ -147,16 +147,16 @@
                                                     </cc1:FilteredTextBoxExtender>
                                                 </td>
                                                 <td style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox ID="txtTotal" runat="server" Width="80px" ReadOnly="true" Enabled="false"
+                                                    <asp:TextBox CssClass="form-control" ID="txtTotal" runat="server" Width="80px" ReadOnly="true" Enabled="false"
                                                         Text='<%#Bind("ActualTotal") %>'></asp:TextBox>
                                                 </td>
                                                 <td style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox ID="txtVariation" runat="server" Width="80px" ReadOnly="true" Enabled="false"
+                                                    <asp:TextBox CssClass="form-control" ID="txtVariation" runat="server" Width="80px" ReadOnly="true" Enabled="false"
                                                         Text='<%#Bind("Variation") %>'>
                                                     </asp:TextBox>
                                                 </td>
                                                 <td style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox ID="txtRemarks" runat="server" TextMode="MultiLine" onkeyup="valid(this)"
+                                                    <asp:TextBox CssClass="form-control" ID="txtRemarks" runat="server" TextMode="MultiLine" onkeyup="valid(this)"
                                                         onblur="valid(this)" Enabled="false" ReadOnly="true" Text='<%#Bind("Remarks") %>'></asp:TextBox>
                                                 </td>
                                             </tr>
@@ -198,12 +198,12 @@
                                                     font-weight: bold;">
                                                 </td>
                                             </tr>
-                                            </table>
+                                              </div>
                                         </FooterTemplate>
                                     </asp:Repeater>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

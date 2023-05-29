@@ -5,7 +5,7 @@
  
 
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -14,7 +14,7 @@
                         <h3 class="reallynow">
                             Inventory Opening Date</h3>
                             
-                        <table style="width: 930px; vertical-align: top;">
+                        <div class="row"  style="width: 930px; vertical-align: top;">
                             <tr>
                                 <td style="vertical-align: top; width: 520px;">
                                     <asp:GridView ID="GvStockOpeningDate" runat="server" AutoGenerateColumns="false" Width="510px"
@@ -44,13 +44,13 @@
                                     <div id="rightnow">
                                         <h3 class="reallynow">
                                             Add Opening Date</h3>
-                                        <table style="width: 390px; vertical-align: top;">
+                                        <div class="row"  style="width: 390px; vertical-align: top;">
                                             <tr>
                                                 <td style="width: 150px; text-align: center;">
                                                     Project
                                                 </td>
                                                 <td>
-                                                    <asp:DropDownList ID="ddlProject" runat="server" Width="200px">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server"  >
                                                     </asp:DropDownList>
                                                 </td>
                                             </tr>
@@ -59,7 +59,7 @@
                                                     Store Opening Date
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtOpeningDate" runat="server" Width="200"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtOpeningDate" runat="server" Width="200"></asp:TextBox>
                                                        <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtOpeningDate"
                                         CssClass="cal_Theme1" PopupPosition="BottomRight" Enabled="true">
                                     </cc1:CalendarExtender>
@@ -67,15 +67,15 @@
                                             </tr>
                                             <tr>
                                                 <td colspan="2" style="text-align: center;">
-                                                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click"/>
-                                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click"/>
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </div>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

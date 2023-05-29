@@ -3,7 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" Runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -150px;">
@@ -11,14 +11,14 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             MONTHLY PLAN</h3>
-                             <table style="width: 1240px;">
+                             <div class="row"  style="width: 1240px;">
                                        
                                         <tr>
                                             <td>
                                                 Project
                                             </td>
                                             <td>
-                                                <asp:DropDownList ID="ddlProject1" runat="server" Width="200px" AutoPostBack="True"
+                                                <asp:DropDownList CssClass="form-select" ID="ddlProject1" runat="server"   AutoPostBack="True"
                                                    >
                                                 </asp:DropDownList>
                                             </td>
@@ -26,7 +26,7 @@
                                                 Date
                                             </td>
                                             <td>
-                                           <asp:TextBox ID="txtDate1" runat="server" Width="100px"></asp:TextBox>
+                                           <asp:TextBox CssClass="form-control" ID="txtDate1" runat="server" Width="100px"></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate1"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
@@ -34,7 +34,7 @@
                                             </td>
                                            <td>Month</td>
                                            <td>
-                                      <asp:DropDownList ID="ddlMonth1" runat="server" AutoPostBack="true" 
+                                      <asp:DropDownList CssClass="form-select" ID="ddlMonth1" runat="server" AutoPostBack="true" 
                                         Style="width: auto;">
                                         <asp:ListItem Text="January" Value="01"></asp:ListItem>
                                         <asp:ListItem Text="February" Value="02"></asp:ListItem>
@@ -49,28 +49,28 @@
                                         <asp:ListItem Text="November" Value="11"></asp:ListItem>
                                         <asp:ListItem Text="December" Value="12"></asp:ListItem>
                                     </asp:DropDownList>
-                                           <asp:DropDownList ID="ddlSDaysYear1" runat="server" AutoPostBack="true" 
+                                           <asp:DropDownList CssClass="form-select" ID="ddlSDaysYear1" runat="server" AutoPostBack="true" 
                                         Style="width: auto;">
                                     </asp:DropDownList>
                                           </td>
                                           <td>
-                                           <asp:Button ID="ViewReport1" runat="server" Text="View" 
+                                           <asp:Button CssClass="btn btn-primary" ID="ViewReport1" runat="server" Text="View" 
                                                   onclick="ViewReport1_Click" />
                                           </td>
                                          
                                         </tr>
                               
-                                    </table>
-                        <table style="width: 1240px;">
+                                      </div>
+                        <div class="row"  style="width: 1240px;">
                             
                             <tr>
                                 <td>
-                                    <table style="width: 1220px;">
+                                    <div class="row"  style="width: 1220px;">
                                         <tr>
                                             <td>
                                                 <asp:Repeater ID="RptIncome1" runat="server" >
                                                     <HeaderTemplate>
-                                                        <table style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
                                                             <tr>
                                                                 <td rowspan="3" style="width: 200px; text-align: center; border: 1px solid black;
                                                                     background-color: #D8D8D8; font-weight: bold;">
@@ -142,7 +142,7 @@
                                                                    <asp:Label ID="LblParticualName1" runat="server" Text='<%#Bind("ParticularsName") %>'></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                               <asp:TextBox ID="txtpincomeValue1" runat="server" Width="150px"  Text='<%#Bind("PlanValue") %>'>
+                                                               <asp:TextBox CssClass="form-control" ID="txtpincomeValue1" runat="server"    Text='<%#Bind("PlanValue") %>'>
                                                                    
                                                                 </asp:TextBox>
                                                                 <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtpincomeValue1"
@@ -150,23 +150,23 @@
                                                                  </cc1:FilteredTextBoxExtender>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtIncimePlanParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtIncimePlanParcentage1" runat="server"   Text=""
                                                                    ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:TextBox ID="txtIncomeActualValue1" runat="server" Width="150px" Text=""
+                                                                <asp:TextBox CssClass="form-control" ID="txtIncomeActualValue1" runat="server"   Text=""
                                                                     ></asp:TextBox>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtIncomeActualParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtIncomeActualParcentage1" runat="server"   Text=""
                                                                ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtIncomeVariance1" runat="server" Width="150px" 
+                                                                <asp:Label ID="txtIncomeVariance1" runat="server"   
                                                                     ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtIncomeVarianceParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtIncomeVarianceParcentage1" runat="server"   Text=""
                                                                  ></asp:Label>
                                                             </td>
                                                           
@@ -176,7 +176,7 @@
                                                 </asp:Repeater>
                                            <asp:Repeater ID="RptExpenditure1" runat="server">
                                                     <HeaderTemplate>
-                                                        <table style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
                                                             <tr>
                                                                 <td style="border: 1px solid black; width: 210px; font-weight: bold;">
                                                                     EXPENDITURE
@@ -200,28 +200,28 @@
                                                                    <asp:Label ID="LblExpParticualName1" runat="server" Text='<%#Bind("ParticularsName") %>'></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:TextBox ID="txtpExpValue1" runat="server" Width="150px"  Text='<%#Bind("PlanValue") %>'>
+                                                                <asp:TextBox CssClass="form-control" ID="txtpExpValue1" runat="server"    Text='<%#Bind("PlanValue") %>'>
                                                                    
                                                                 </asp:TextBox>
                                                             </td>
                                                                <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtExpPlanParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtExpPlanParcentage1" runat="server"   Text=""
                                                                    ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:TextBox ID="txtExpActualValue1" runat="server" Width="150px" Text=""
+                                                                <asp:TextBox CssClass="form-control" ID="txtExpActualValue1" runat="server"   Text=""
                                                                     ></asp:TextBox>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtExpActualParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtExpActualParcentage1" runat="server"   Text=""
                                                                ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtExpVariance1" runat="server" Width="150px" 
+                                                                <asp:Label ID="txtExpVariance1" runat="server"   
                                                                     ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtExpVarianceParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtExpVarianceParcentage1" runat="server"   Text=""
                                                                  ></asp:Label>
                                                             </td>
                                                            
@@ -231,7 +231,7 @@
                                                 </asp:Repeater>
                                                       <asp:Repeater ID="RptConsumbles1" runat="server">
                                                     <HeaderTemplate>
-                                                        <table style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
                                                             <tr>
                                                                 <td style="border: 1px solid black; width: 210px; font-weight: bold;">
                                                                     CONSUMBLES
@@ -249,28 +249,28 @@
                                                                    <asp:Label ID="LblConSumblesParticualName1" runat="server" Text='<%#Bind("ParticularsName") %>'></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:TextBox ID="txtpConSumblesValue1" runat="server" Width="150px"  Text='<%#Bind("PlanValue") %>'>
+                                                                <asp:TextBox CssClass="form-control" ID="txtpConSumblesValue1" runat="server"    Text='<%#Bind("PlanValue") %>'>
                                                                    
                                                                 </asp:TextBox>
                                                             </td>
                                                                <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtConSumblesPlanParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtConSumblesPlanParcentage1" runat="server"   Text=""
                                                                    ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:TextBox ID="txtConSumblesActualValue1" runat="server" Width="150px" Text=""
+                                                                <asp:TextBox CssClass="form-control" ID="txtConSumblesActualValue1" runat="server"   Text=""
                                                                     ></asp:TextBox>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtConSumblesActualParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtConSumblesActualParcentage1" runat="server"   Text=""
                                                                ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtConSumblesVariance1" runat="server" Width="150px" 
+                                                                <asp:Label ID="txtConSumblesVariance1" runat="server"   
                                                                     ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtConSumblesVarianceParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtConSumblesVarianceParcentage1" runat="server"   Text=""
                                                                  ></asp:Label>
                                                             </td>
                                                            
@@ -280,7 +280,7 @@
                                                 </asp:Repeater>
                                                    <asp:Repeater ID="RptDirectExpenses1" runat="server">
                                                     <HeaderTemplate>
-                                                        <table style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
                                                             <tr>
                                                                 <td style="border: 1px solid black; width: 210px; font-weight: bold;">
                                                                    DIRECT EXPENSES
@@ -298,28 +298,28 @@
                                                                    <asp:Label ID="LblDirectExpensesParticualName1" runat="server" Text='<%#Bind("ParticularsName") %>'></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:TextBox ID="txtpDirectExpensesValue1" runat="server" Width="150px"  Text='<%#Bind("PlanValue") %>'>
+                                                                <asp:TextBox CssClass="form-control" ID="txtpDirectExpensesValue1" runat="server"    Text='<%#Bind("PlanValue") %>'>
                                                                    
                                                                 </asp:TextBox>
                                                             </td>
                                                                <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtDirectExpensesPlanParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtDirectExpensesPlanParcentage1" runat="server"   Text=""
                                                                    ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:TextBox ID="txtDirectExpensesActualValue1" runat="server" Width="150px" Text=""
+                                                                <asp:TextBox CssClass="form-control" ID="txtDirectExpensesActualValue1" runat="server"   Text=""
                                                                     ></asp:TextBox>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtDirectExpensesActualParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtDirectExpensesActualParcentage1" runat="server"   Text=""
                                                                ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtDirectExpensesVariance1" runat="server" Width="150px" 
+                                                                <asp:Label ID="txtDirectExpensesVariance1" runat="server"   
                                                                     ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtDirectExpensesVarianceParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtDirectExpensesVarianceParcentage1" runat="server"   Text=""
                                                                  ></asp:Label>
                                                             </td>
                                                            
@@ -329,7 +329,7 @@
                                                 </asp:Repeater>
                                                 <asp:Repeater ID="RptHirecharges1" runat="server">
                                                     <HeaderTemplate>
-                                                        <table style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
                                                             <tr>
                                                                 <td style="border: 1px solid black; width: 210px; font-weight: bold;">
                                                                     HIRE CHARGES (Item-Wise)
@@ -347,28 +347,28 @@
                                                                    <asp:Label ID="LblHireChargesExpensesParticualName1" runat="server" Text='<%#Bind("ParticularsName") %>'></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:TextBox ID="txtpHireChargesExpensesValue1" runat="server" Width="150px"  Text='<%#Bind("PlanValue") %>'>
+                                                                <asp:TextBox CssClass="form-control" ID="txtpHireChargesExpensesValue1" runat="server"    Text='<%#Bind("PlanValue") %>'>
                                                                    
                                                                 </asp:TextBox>
                                                             </td>
                                                                <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtHireChargesExpensesPlanParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtHireChargesExpensesPlanParcentage1" runat="server"   Text=""
                                                                    ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:TextBox ID="txtHireChargesExpensesActualValue1" runat="server" Width="150px" Text=""
+                                                                <asp:TextBox CssClass="form-control" ID="txtHireChargesExpensesActualValue1" runat="server"   Text=""
                                                                     ></asp:TextBox>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtHireChargesExpensesActualParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtHireChargesExpensesActualParcentage1" runat="server"   Text=""
                                                                ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtHireChargesExpensesVariance1" runat="server" Width="150px" 
+                                                                <asp:Label ID="txtHireChargesExpensesVariance1" runat="server"   
                                                                     ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtHireChargesExpensesVarianceParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtHireChargesExpensesVarianceParcentage1" runat="server"   Text=""
                                                                  ></asp:Label>
                                                             </td>
                                                            
@@ -378,7 +378,7 @@
                                                 </asp:Repeater>
                                                  <asp:Repeater ID="RptIndirectExpenses1" runat="server">
                                                     <HeaderTemplate>
-                                                        <table style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
                                                             <tr>
                                                                 <td style="border: 1px solid black; width: 210px; font-weight: bold;">
                                                                     INDIRECT EXPENSES
@@ -396,28 +396,28 @@
                                                                    <asp:Label ID="LblHireIndirectExpensesParticualName1" runat="server" Text='<%#Bind("ParticularsName") %>'></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:TextBox ID="txtpIndirectExpensesValue1" runat="server" Width="150px"  Text='<%#Bind("PlanValue") %>'>
+                                                                <asp:TextBox CssClass="form-control" ID="txtpIndirectExpensesValue1" runat="server"    Text='<%#Bind("PlanValue") %>'>
                                                                    
                                                                 </asp:TextBox>
                                                             </td>
                                                                <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtIndirectExpensesPlanParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtIndirectExpensesPlanParcentage1" runat="server"   Text=""
                                                                    ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:TextBox ID="txtIndirectExpensesActualValue1" runat="server" Width="150px" Text=""
+                                                                <asp:TextBox CssClass="form-control" ID="txtIndirectExpensesActualValue1" runat="server"   Text=""
                                                                     ></asp:TextBox>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtIndirectExpensesActualParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtIndirectExpensesActualParcentage1" runat="server"   Text=""
                                                                ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtIndirectExpensesVariance1" runat="server" Width="150px" 
+                                                                <asp:Label ID="txtIndirectExpensesVariance1" runat="server"   
                                                                     ></asp:Label>
                                                             </td>
                                                             <td style="text-align: right; border: 1px solid black;">
-                                                                <asp:Label ID="txtIndirectExpensesVarianceParcentage1" runat="server" Width="150px" Text=""
+                                                                <asp:Label ID="txtIndirectExpensesVarianceParcentage1" runat="server"   Text=""
                                                                  ></asp:Label>
                                                             </td>
                                                            
@@ -431,19 +431,19 @@
                                         <tr>
                                             <td colspan="7" style="text-align: center;" >
                                             
-                                            <asp:Button ID="btnCalculate1" runat="server" Text="Calculate"  Visible="false"
+                                            <asp:Button CssClass="btn btn-primary" ID="btnCalculate1" runat="server" Text="Calculate"  Visible="false"
                                                     onclick="btnCalculate1_Click"/>
-                                                <asp:Button ID="btnSubmit1" runat="server" Text="Submit"  Visible="false"
+                                                <asp:Button CssClass="btn btn-primary" ID="btnSubmit1" runat="server" Text="Submit"  Visible="false"
                                                     onclick="btnSubmit1_Click" />
-                                                <asp:Button ID="btnCancel1" runat="server" Text="Cancel"  Visible="false"/>
+                                                <asp:Button CssClass="btn btn-primary" ID="btnCancel1" runat="server" Text="Cancel"  Visible="false"/>
                                                  
                                             </td>
                                         </tr>
                                        
-                                    </table>
+                                      </div>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

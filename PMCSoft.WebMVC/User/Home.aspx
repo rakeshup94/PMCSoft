@@ -6,13 +6,13 @@
 <%@ Register TagPrefix="My" TagName="UserInfoBoxControl" Src="~/RSS/UpdateRSS.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <%--<asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>--%>
         
     <div id="wrapper" style="margin-left: -150px;">
         <div id="content" style="width: 1250px;">
-            <table style="width: 1240px;">
+            <div class="row"  style="width: 1240px;">
                 <tr>
                     <td>
                         <div id="rightnow" style="width: 1230px;">
@@ -128,7 +128,7 @@
                         <div id="infobox" class="margin-left" style="width: 305px; height: 192px;">
                             <h3>
                                 Notifications</h3>
-                            <table style="width: 295px;">
+                            <div class="row"  style="width: 295px;">
                                 <tr>
                                     <td style="height: 150px;">
                                         <div style="padding-top: 0px; padding-bottom: 0px; height: 150px; background-color: #ECF5F8"
@@ -162,7 +162,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                            </table>
+                              </div>
                         </div>
                         <div id="infobox" style="width: 455px; height: 172px;">
                               <h3>
@@ -316,7 +316,7 @@
                         </div>
                     </td>
                 </tr>
-            </table>
+              </div>
         </div>
     </div>
 </asp:Content>

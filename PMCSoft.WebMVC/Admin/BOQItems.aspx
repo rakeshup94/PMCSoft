@@ -3,11 +3,11 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <fieldset style="border-width: 2px;">
-                <table style="width: 100%;">
+                <div class="row"  style="width: 100%;">
                     <tr>
                         <td>
                             <cc1:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0">
@@ -16,19 +16,19 @@
                                         BOQ Items
                                     </HeaderTemplate>
                                     <ContentTemplate>
-                                        <table style="width: 100%;">
+                                        <div class="row"  style="width: 100%;">
                                             <tr>
                                                 <td>
                                                     Item Name
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtCategory" runat="server" Width="200px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtCategory" runat="server"  ></asp:TextBox>
                                                 </td>
                                                 <td>
                                                     <%--Item No.--%>
                                                 </td>
                                                 <td>
-                                                    <%--<asp:TextBox ID="txtBOQItemNo" runat="server" Width="200px"></asp:TextBox>--%>
+                                                    <%--<asp:TextBox CssClass="form-control" ID="txtBOQItemNo" runat="server"  ></asp:TextBox>--%>
                                                 </td>
                                                 <td style="width: 400px;">
                                                 </td>
@@ -38,13 +38,13 @@
                                                     Description of Item
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtDescription" runat="server" TextMode="MultiLine" Width="200px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtDescription" runat="server" TextMode="MultiLine"  ></asp:TextBox>
                                                 </td>
                                                 <td>
                                                     Unit
                                                 </td>
                                                 <td>
-                                                    <asp:DropDownList ID="ddlUnit" runat="server" Width="200px">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlUnit" runat="server"  >
                                                     </asp:DropDownList>
                                                 </td>
                                                 <td>
@@ -56,13 +56,13 @@
                                             </tr>
                                             <tr>
                                                 <td colspan="4" style="text-align: center;">
-                                                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                 </td>
                                                 <td>
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </ContentTemplate>
                                 </cc1:TabPanel>
                                 <cc1:TabPanel ID="Tab2" runat="server" TabIndex="1">
@@ -70,20 +70,20 @@
                                         BOQ Sub-Items
                                     </HeaderTemplate>
                                     <ContentTemplate>
-                                        <table style="width: 100%;">
+                                        <div class="row"  style="width: 100%;">
                                             <tr>
                                                 <td>
                                                     Items
                                                 </td>
                                                 <td>
-                                                    <asp:DropDownList ID="ddlCategory" runat="server" Width="200px">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlCategory" runat="server"  >
                                                     </asp:DropDownList>
                                                 </td>
                                                 <td>
                                                     Sub-Items
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtSubCategory" runat="server" Width="200px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtSubCategory" runat="server"  ></asp:TextBox>
                                                 </td>
                                                 <td style="width: 400px;">
                                                 </td>
@@ -93,14 +93,14 @@
                                                     Description of Item
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtSubDescription" runat="server" TextMode="MultiLine" Width="200px">
+                                                    <asp:TextBox CssClass="form-control" ID="txtSubDescription" runat="server" TextMode="MultiLine"  >
                                                     </asp:TextBox>
                                                 </td>
                                                 <td>
                                                     Unit
                                                 </td>
                                                 <td>
-                                                    <asp:DropDownList ID="ddlSubUnit" runat="server" Width="200px">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlSubUnit" runat="server"  >
                                                     </asp:DropDownList>
                                                 </td>
                                                 <td>
@@ -112,33 +112,33 @@
                                             </tr>
                                             <tr>
                                                 <td colspan="4" style="text-align: center;">
-                                                    <asp:Button ID="btnSubSubmit" runat="server" Text="Submit" OnClick="btnSubSubmit_Click" />
-                                                    <asp:Button ID="btnSubCancel" runat="server" Text="Cancel" OnClick="btnSubCancel_Click" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubSubmit" runat="server" Text="Submit" OnClick="btnSubSubmit_Click" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubCancel" runat="server" Text="Cancel" OnClick="btnSubCancel_Click" />
                                                 </td>
                                                 <td>
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </ContentTemplate>
                                 </cc1:TabPanel>
                                 <cc1:TabPanel ID="Tab3" runat="server" TabIndex="2">
                                     <HeaderTemplate>
                                         BOQ Sub-Items Part</HeaderTemplate>
                                     <ContentTemplate>
-                                        <table style="width: 100%;">
+                                        <div class="row"  style="width: 100%;">
                                             <tr>
                                                 <td>
                                                     Items
                                                 </td>
                                                 <td>
-                                                    <asp:DropDownList ID="ddlPartCategory" runat="server" Width="200px">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlPartCategory" runat="server"  >
                                                     </asp:DropDownList>
                                                 </td>
                                                 <td>
                                                     Sub-Items
                                                 </td>
                                                 <td>
-                                                    <asp:DropDownList ID="ddlPartSubCategory" runat="server" Width="200px">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlPartSubCategory" runat="server"  >
                                                     </asp:DropDownList>
                                                 </td>
                                                 <td style="width: 300px;">
@@ -149,13 +149,13 @@
                                                     Sub-Items Part
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtPart" runat="server" Width="200px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtPart" runat="server"  ></asp:TextBox>
                                                 </td>
                                                 <td>
                                                     Description of Sub-Item Part
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtPartDescription" runat="server" TextMode="MultiLine" Width="200px">
+                                                    <asp:TextBox CssClass="form-control" ID="txtPartDescription" runat="server" TextMode="MultiLine"  >
                                                     </asp:TextBox>
                                                 </td>
                                                 <td>
@@ -166,7 +166,7 @@
                                                     Unit
                                                 </td>
                                                 <td>
-                                                    <asp:DropDownList ID="ddlPartUnit" runat="server" Width="200px">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlPartUnit" runat="server"  >
                                                     </asp:DropDownList>
                                                 </td>
                                                 <td>
@@ -182,19 +182,19 @@
                                             </tr>
                                             <tr>
                                                 <td colspan="4" style="text-align: center;">
-                                                    <asp:Button ID="btnPartSubmit" runat="server" Text="Submit" OnClick="btnPartSubmit_Click" />
-                                                    <asp:Button ID="btnPartCancel" runat="server" Text="Cancel" OnClick="btnPartCancel_Click" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnPartSubmit" runat="server" Text="Submit" OnClick="btnPartSubmit_Click" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnPartCancel" runat="server" Text="Cancel" OnClick="btnPartCancel_Click" />
                                                 </td>
                                                 <td>
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </ContentTemplate>
                                 </cc1:TabPanel>
                             </cc1:TabContainer>
                         </td>
                     </tr>
-                </table>
+                  </div>
             </fieldset>
         </ContentTemplate>
     </asp:UpdatePanel>

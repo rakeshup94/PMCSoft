@@ -10,7 +10,7 @@
     </script>
 
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -18,7 +18,7 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Project Detail</h3>
-                        <table style="width: 925px; vertical-align: top;">
+                        <div class="row"  style="width: 925px; vertical-align: top;">
                             <tr style="vertical-align: top;">
                                 <td>
                                     <asp:GridView ID="GridView1" runat="server" Width="910px" AutoGenerateColumns="false"
@@ -70,7 +70,7 @@
                                     </asp:GridView>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>

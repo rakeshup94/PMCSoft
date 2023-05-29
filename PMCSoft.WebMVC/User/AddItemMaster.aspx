@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -11,12 +11,12 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Item Detail</h3>
-                        <table style="width: 930px; vertical-align: top;">
+                        <div class="row"  style="width: 930px; vertical-align: top;">
                             <tr style="vertical-align: top;">
                                 <td>
                                     Group Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:DropDownList ID="ddlitemGropgrid" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlitemGropgrid_SelectedIndexChanged"
-                                        Width="200px">
+                                    <asp:DropDownList CssClass="form-select" ID="ddlitemGropgrid" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlitemGropgrid_SelectedIndexChanged"
+                                         >
                                     </asp:DropDownList>
                                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" Width="590px"
                                         EmptyDataText="No Record Found" OnRowCommand="GridView1_RowCommand">
@@ -73,38 +73,38 @@
                                     <div id="rightnow">
                                         <h3 class="reallynow">
                                             Add Item</h3>
-                                        <table style="width: 290px; vertical-align: top;">
+                                        <div class="row"  style="width: 290px; vertical-align: top;">
                                             <tr>
                                                 <td>
                                                     <br />
                                                     Group Name
                                                 </td>
                                                 <td>
-                                                    <asp:DropDownList ID="ddlGroup" runat="server" Width="180px">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlGroup" runat="server" Width="180px">
                                                     </asp:DropDownList>
-                                                    <asp:Button ID="LnkAddNewGroupName" runat="server" Text="+" OnClick="LnkAddNewGroupName_Click">
+                                                    <asp:Button CssClass="btn btn-primary" ID="LnkAddNewGroupName" runat="server" Text="+" OnClick="LnkAddNewGroupName_Click">
                                                     </asp:Button>
                                                     <div style="display: none">
-                                                        <asp:Button ID="Button1" runat="server" Text="Button" />
+                                                        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
                                                     </div>
                                                     <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                                                         PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False" DynamicServicePath=""
                                                         Enabled="True">
                                                     </cc1:ModalPopupExtender>
                                                     <asp:Panel ID="Panel2" runat="server" Style="display: none; border-color: Maroon;">
-                                                        <table style="width: 300px; background-color: #EFFBFB;">
+                                                        <div class="row"  style="width: 300px; background-color: #EFFBFB;">
                                                             <tr>
                                                                 <td>
                                                                     <div id="Div1">
                                                                         <h3 class="reallynow">
                                                                             Add Item Group</h3>
-                                                                        <table style="width: 290px; vertical-align: top;">
+                                                                        <div class="row"  style="width: 290px; vertical-align: top;">
                                                                             <tr>
                                                                                 <td>
                                                                                     Code
                                                                                 </td>
                                                                                 <td>
-                                                                                    <asp:TextBox ID="txtCode" runat="server" MaxLength="6" Width="200px" onkeyup="valid(this)"
+                                                                                    <asp:TextBox CssClass="form-control" ID="txtCode" runat="server" MaxLength="6"   onkeyup="valid(this)"
                                                                                         onblur="valid(this)">
                                                                                     </asp:TextBox>
                                                                                 </td>
@@ -114,18 +114,18 @@
                                                                                     Name
                                                                                 </td>
                                                                                 <td>
-                                                                                    <asp:TextBox ID="txtName" runat="server" Width="200px" onkeyup="valid(this)" onblur="valid(this)">
+                                                                                    <asp:TextBox CssClass="form-control" ID="txtName" runat="server"   onkeyup="valid(this)" onblur="valid(this)">
                                                                                     </asp:TextBox>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td colspan="2" style="text-align: center;">
-                                                                                    <asp:Button ID="btnAddNewGroupname" runat="server" Text="Submit" OnClick="btnAddNewGroupname_Click" />
-                                                                                    <asp:Button ID="BtnCancelAddNewGroupName" runat="server" Text="Cancel" OnClick="BtnCancelAddNewGroupName_Click" />
+                                                                                    <asp:Button CssClass="btn btn-primary" ID="btnAddNewGroupname" runat="server" Text="Submit" OnClick="btnAddNewGroupname_Click" />
+                                                                                    <asp:Button CssClass="btn btn-primary" ID="BtnCancelAddNewGroupName" runat="server" Text="Cancel" OnClick="BtnCancelAddNewGroupName_Click" />
                                                                                 </td>
                                                                             </tr>
-                                                                        </table>
-                                                        </table>
+                                                                          </div>
+                                                          </div>
                                                     </asp:Panel>
                                                 </td>
                                             </tr>
@@ -134,7 +134,7 @@
                                                     Item Name
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtItemName" runat="server" Width="200px" onkeyup="valid(this)"
+                                                    <asp:TextBox CssClass="form-control" ID="txtItemName" runat="server"   onkeyup="valid(this)"
                                                         onblur="valid(this)"></asp:TextBox>
                                                 </td>
                                             </tr>
@@ -143,12 +143,12 @@
                                                     Unit
                                                 </td>
                                                 <td>
-                                                    <asp:DropDownList ID="ddlUnit" runat="server" Width="180px">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlUnit" runat="server" Width="180px">
                                                     </asp:DropDownList>
-                                                    <asp:Button ID="LnkAddNewUnit" runat="server" Text="+" 
+                                                    <asp:Button CssClass="btn btn-primary" ID="LnkAddNewUnit" runat="server" Text="+" 
                                                         onclick="LnkAddNewUnit_Click"></asp:Button>
                                                     <div style="display: none">
-                                                        <asp:Button ID="Button3" runat="server" Text="Button" />
+                                                        <asp:Button CssClass="btn btn-primary" ID="Button3" runat="server" Text="Button" />
                                                     </div>
                                                     <cc1:ModalPopupExtender ID="ModalPopupExtender3" runat="server" BackgroundCssClass="popUpStyle"
                                                         PopupControlID="Panel3" TargetControlID="Button3" EnableViewState="False" DynamicServicePath=""
@@ -158,13 +158,13 @@
                                                         <div id="rightnow">
                                                             <h3 class="reallynow">
                                                                 Add Unit</h3>
-                                                            <table style="width: 290px; vertical-align: top; background-color: #EFFBFB;">
+                                                            <div class="row"  style="width: 290px; vertical-align: top; background-color: #EFFBFB;">
                                                                 <tr>
                                                                     <td>
                                                                         Name
                                                                     </td>
                                                                     <td>
-                                                                        <asp:TextBox ID="txtaddnewUnitName" runat="server" Width="200px" onkeyup="valid(this)" onblur="valid(this)">
+                                                                        <asp:TextBox CssClass="form-control" ID="txtaddnewUnitName" runat="server"   onkeyup="valid(this)" onblur="valid(this)">
                                                                         </asp:TextBox>
                                                                     </td>
                                                                 </tr>
@@ -173,20 +173,20 @@
                                                                         Code
                                                                     </td>
                                                                     <td>
-                                                                        <asp:TextBox ID="txtaddnewUnitcode" runat="server" MaxLength="6" Width="200px" onkeyup="valid(this)"
+                                                                        <asp:TextBox CssClass="form-control" ID="txtaddnewUnitcode" runat="server" MaxLength="6"   onkeyup="valid(this)"
                                                                             onblur="valid(this)">
                                                                         </asp:TextBox>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td colspan="2" style="text-align: center;">
-                                                                        <asp:Button ID="btnAddNewsave" runat="server" Text="Submit" 
+                                                                        <asp:Button CssClass="btn btn-primary" ID="btnAddNewsave" runat="server" Text="Submit" 
                                                                             onclick="btnAddNewsave_Click"/>
-                                                                        <asp:Button ID="BtnAddNewCancel" runat="server" Text="Cancel" 
+                                                                        <asp:Button CssClass="btn btn-primary" ID="BtnAddNewCancel" runat="server" Text="Cancel" 
                                                                             onclick="BtnAddNewCancel_Click" />
                                                                     </td>
                                                                 </tr>
-                                                            </table>
+                                                              </div>
                                                         </div>
                                                     </asp:Panel>
                                                 </td>
@@ -196,8 +196,8 @@
                                                     Make
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtItemMake" runat="server" onblur="valid(this)" onkeyup="valid(this)"
-                                                        Width="200px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtItemMake" runat="server" onblur="valid(this)" onkeyup="valid(this)"
+                                                         ></asp:TextBox>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -205,45 +205,45 @@
                                                     Part No.
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtItemPartNo" runat="server" onblur="valid(this)" onkeyup="valid(this)"
-                                                        Width="200px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtItemPartNo" runat="server" onblur="valid(this)" onkeyup="valid(this)"
+                                                         ></asp:TextBox>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" style="text-align: center;">
-                                                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </div>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>
             <div style="display: none">
-                <asp:Button ID="Button2" runat="server" Text="Button" />
+                <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
             </div>
             <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                 PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False" DynamicServicePath=""
                 Enabled="True">
             </cc1:ModalPopupExtender>
             <asp:Panel ID="Panel1" runat="server" Style="display: none; border-color: Maroon;">
-                <table style="width: 300px; background-color: #EFFBFB;">
+                <div class="row"  style="width: 300px; background-color: #EFFBFB;">
                     <tr>
                         <td>
                             <div id="rightnow">
                                 <h3 class="reallynow">
                                     Edit Item</h3>
-                                <table style="width: 290px; vertical-align: top;">
+                                <div class="row"  style="width: 290px; vertical-align: top;">
                                     <tr>
                                         <td>
                                             Group
                                         </td>
                                         <td>
-                                            <asp:Label ID="LblEditGroup" runat="server" Width="200px">
+                                            <asp:Label ID="LblEditGroup" runat="server"  >
                                             </asp:Label>
                                         </td>
                                     </tr>
@@ -252,7 +252,7 @@
                                             Item Name
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="TxtEditItem" runat="server" Width="200px" onkeyup="valid(this)"
+                                            <asp:TextBox CssClass="form-control" ID="TxtEditItem" runat="server"   onkeyup="valid(this)"
                                                 onblur="valid(this)"></asp:TextBox>
                                         </td>
                                     </tr>
@@ -261,7 +261,7 @@
                                             Unit
                                         </td>
                                         <td>
-                                            <asp:Label ID="lblEditUnit" runat="server" Width="200px">
+                                            <asp:Label ID="lblEditUnit" runat="server"  >
                                             </asp:Label>
                                         </td>
                                     </tr>
@@ -271,7 +271,7 @@
                                         </td>
                                         <td>
                                             <asp:Label ID="lblEditMake" runat="server" onblur="valid(this)" onkeyup="valid(this)"
-                                                Width="200px"></asp:Label>
+                                                 ></asp:Label>
                                         </td>
                                     </tr>
                                     <tr>
@@ -279,21 +279,21 @@
                                             Part No.
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtEditPartNo" runat="server" onblur="valid(this)" onkeyup="valid(this)"
-                                                Width="200px"></asp:TextBox>
+                                            <asp:TextBox CssClass="form-control" ID="txtEditPartNo" runat="server" onblur="valid(this)" onkeyup="valid(this)"
+                                                 ></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2" style="text-align: center;">
-                                            <asp:Button ID="EditSubmit" runat="server" Text="Submit" OnClick="EditSubmit_Click" />
-                                            <asp:Button ID="EditCancel" runat="server" Text="Cancel" OnClick="EditCancel_Click" />
+                                            <asp:Button CssClass="btn btn-primary" ID="EditSubmit" runat="server" Text="Submit" OnClick="EditSubmit_Click" />
+                                            <asp:Button CssClass="btn btn-primary" ID="EditCancel" runat="server" Text="Cancel" OnClick="EditCancel_Click" />
                                         </td>
                                     </tr>
-                                </table>
+                                  </div>
                             </div>
                         </td>
                     </tr>
-                </table>
+                  </div>
             </asp:Panel>
         </ContentTemplate>
     </asp:UpdatePanel>

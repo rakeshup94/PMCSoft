@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
  
         
-      <table style="width: 930px">
+      <div class="row"  style="width: 930px">
                             <tr>
                                  <td style="font-size: 15px; font-family: Cambria; color: Black">
                             Project Name: &nbsp; &nbsp; &nbsp; &nbsp;<asp:Label ID="lblProjectName" runat="server"></asp:Label>
@@ -87,7 +87,7 @@
                                     </asp:GridView>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
     </form>
 </body>
 </html>

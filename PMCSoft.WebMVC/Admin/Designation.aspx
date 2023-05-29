@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper">
@@ -10,7 +10,7 @@
                     <div id="rightnow">
                         <h3 class="reallynow">
                             Designation Detail</h3>
-                        <table style="width: 930px; vertical-align: top;">
+                        <div class="row"  style="width: 930px; vertical-align: top;">
                             <tr style="vertical-align: top;">
                                 <td style="vertical-align: top; width: 600px;">
                                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" OnRowCancelingEdit="GridView1_RowCancelingEdit"
@@ -35,8 +35,8 @@
                                                     <asp:Label ID="lblDesignation" runat="server" Text='<%#Bind("Designation") %>'></asp:Label>
                                                 </ItemTemplate>
                                                 <EditItemTemplate>
-                                                    <asp:TextBox ID="txtEditDesignation" runat="server" Text='<%#Bind("Designation") %>'
-                                                        Width="200px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtEditDesignation" runat="server" Text='<%#Bind("Designation") %>'
+                                                          onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                 </EditItemTemplate>
                                             </asp:TemplateField>
                                             <asp:CommandField ShowEditButton="true" />
@@ -48,13 +48,13 @@
                                     <div id="rightnow">
                                         <h3 class="reallynow">
                                             Add Designation</h3>
-                                        <table style="width: 290px; vertical-align: top;">
+                                        <div class="row"  style="width: 290px; vertical-align: top;">
                                             <tr>
                                                 <td>
                                                     Department
                                                 </td>
                                                 <td>
-                                                    <asp:DropDownList ID="ddlDept" runat="server" Width="200px">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlDept" runat="server"  >
                                                     </asp:DropDownList>
                                                 </td>
                                             </tr>
@@ -63,21 +63,21 @@
                                                     Designation
                                                 </td>
                                                 <td>
-                                                    <asp:TextBox ID="txtDesignation" runat="server" Width="200px" onkeyup="valid(this)"
+                                                    <asp:TextBox CssClass="form-control" ID="txtDesignation" runat="server"   onkeyup="valid(this)"
                                                         onblur="valid(this)"></asp:TextBox>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" style="text-align: center;">
-                                                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                 </td>
                                             </tr>
-                                        </table>
+                                          </div>
                                     </div>
                                 </td>
                             </tr>
-                        </table>
+                          </div>
                     </div>
                 </div>
             </div>
