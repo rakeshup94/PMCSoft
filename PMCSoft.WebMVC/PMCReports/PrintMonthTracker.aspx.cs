@@ -29,49 +29,38 @@ namespace PMCSoft.Web.PMCReports
                 }
                 if (!IsPostBack)
                 {
-                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                    string strReq = "";
+                    strReq = Request.RawUrl;
+                    strReq = strReq.Substring(strReq.IndexOf('?') + 1);
+
+                    if (!strReq.Equals(""))
                     {
-                        Session.Clear();
-                        Session.Abandon();
-                        Session.RemoveAll();
-                        Response.Redirect("~/Login.aspx?Value=" + "2");
-                    }
-                    else
-                    {
-                        string strReq = "";
-                        strReq = Request.RawUrl;
-                        strReq = strReq.Substring(strReq.IndexOf('?') + 1);
+                        strReq = DecryptQueryString(strReq);
+                        string[] arrMsgs = strReq.Split('&');
+                        string[] arrIndMsg;
 
-                        if (!strReq.Equals(""))
-                        {
-                            strReq = DecryptQueryString(strReq);
-                            string[] arrMsgs = strReq.Split('&');
-                            string[] arrIndMsg;
+                        string PRJID = "", ProjName = "", FromMonth = "", FromYear = "", ToMonth = "", Toyear = "";
+                        arrIndMsg = arrMsgs[0].Split('=');
+                        PRJID = arrIndMsg[1].ToString().Trim();
+                        arrIndMsg = arrMsgs[1].Split('=');
+                        ProjName = arrIndMsg[1].ToString().Trim();
+                        arrIndMsg = arrMsgs[2].Split('=');
+                        FromMonth = arrIndMsg[1].ToString().Trim();
+                        arrIndMsg = arrMsgs[3].Split('=');
+                        FromYear = arrIndMsg[1].ToString().Trim();
 
-                            string PRJID = "", ProjName = "", FromMonth = "", FromYear = "", ToMonth = "", Toyear = "";
-                            arrIndMsg = arrMsgs[0].Split('=');
-                            PRJID = arrIndMsg[1].ToString().Trim();
-                            arrIndMsg = arrMsgs[1].Split('=');
-                            ProjName = arrIndMsg[1].ToString().Trim();
-                            arrIndMsg = arrMsgs[2].Split('=');
-                            FromMonth = arrIndMsg[1].ToString().Trim();
-                            arrIndMsg = arrMsgs[3].Split('=');
-                            FromYear = arrIndMsg[1].ToString().Trim();
+                        arrIndMsg = arrMsgs[4].Split('=');
+                        ToMonth = arrIndMsg[1].ToString().Trim();
 
-                            arrIndMsg = arrMsgs[4].Split('=');
-                            ToMonth = arrIndMsg[1].ToString().Trim();
+                        arrIndMsg = arrMsgs[5].Split('=');
+                        Toyear = arrIndMsg[1].ToString().Trim();
 
-                            arrIndMsg = arrMsgs[5].Split('=');
-                            Toyear = arrIndMsg[1].ToString().Trim();
-
-                            //FromMonth.Text = Date.ToString();
-                            //lblProjectName.Text = ProjName.ToString();
-                            GetValue(FromMonth.ToString(), FromYear.ToString(), ToMonth.ToString(), Toyear.ToString());
-
-                        }
-
+                        //FromMonth.Text = Date.ToString();
+                        //lblProjectName.Text = ProjName.ToString();
+                        GetValue(FromMonth.ToString(), FromYear.ToString(), ToMonth.ToString(), Toyear.ToString());
 
                     }
+
                 }
             }
 

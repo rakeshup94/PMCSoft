@@ -4948,7 +4948,7 @@ var wrapMap = {
 	thead: [ 1, "<div class="row" >", "  </div>" ],
 	col: [ 2, "<div class="row" ><colgroup>", "</colgroup>  </div>" ],
 	tr: [ 2, "<div class="row" ><tbody>", "</tbody>  </div>" ],
-	td: [ 3, "<div class="row" ><tbody><tr>", "</tr></tbody>  </div>" ],
+	td: [ 3, "<div class="row" ><tbody><tr>", "</div></tbody>  </div>" ],
 
 	_default: [ 0, "", "" ]
 };

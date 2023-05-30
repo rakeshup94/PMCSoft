@@ -25,32 +25,22 @@ namespace PMCSoft.Web.User
             {
                 if (!IsPostBack)
                 {
-                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
-                    {
-                        Session.Clear();
-                        Session.Abandon();
-                        Session.RemoveAll();
-                        Response.Redirect("~/Login.aspx?Value=" + "2");
-                    }
-                    else
-                    {
-                        string strReq = "";
-                        strReq = Request.RawUrl;
-                        strReq = strReq.Substring(strReq.IndexOf('?') + 1);
+                    string strReq = "";
+                    strReq = Request.RawUrl;
+                    strReq = strReq.Substring(strReq.IndexOf('?') + 1);
 
-                        if (!strReq.Equals(""))
-                        {
-                            strReq = DecryptQueryString(strReq);
-                            string[] arrMsgs = strReq.Split('&');
-                            string[] arrIndMsg;
+                    if (!strReq.Equals(""))
+                    {
+                        strReq = DecryptQueryString(strReq);
+                        string[] arrMsgs = strReq.Split('&');
+                        string[] arrIndMsg;
 
-                            string PRJID = "";
-                            arrIndMsg = arrMsgs[0].Split('=');
-                            PRJID = arrIndMsg[1].ToString().Trim();
-                            ViewState["PRJID"] = PRJID.ToString();
-                        }
-                        GetProjectParticularADetail(ViewState["PRJID"].ToString());
+                        string PRJID = "";
+                        arrIndMsg = arrMsgs[0].Split('=');
+                        PRJID = arrIndMsg[1].ToString().Trim();
+                        ViewState["PRJID"] = PRJID.ToString();
                     }
+                    GetProjectParticularADetail(ViewState["PRJID"].ToString());
                 }
             }
             catch (Exception ex)

@@ -6,37 +6,37 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 940px;">
-                    <div id="rightnow">
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                <div class="card"    >
+                    <div class="card-body">
                         <h3 class="reallynow">
                             Staff Attendance</h3>
                         <div class="row"  style="width: 930px">
-                            <tr>
-                                <td style="text-align: center;">
+                            <div class="row" >
+                                <div class="col-lg-4"  style="text-align: center;">
                                     Project Name
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="True"  >
                                     </asp:DropDownList>
-                                </td>
-                                <td style="text-align: center;">
+                                </div>
+                                <div class="col-lg-4"  style="text-align: center;">
                                     Date
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" class="demo"></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         Enabled="true" CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:Button CssClass="btn btn-primary" ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
                                     <asp:Button CssClass="btn btn-primary" ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="5">
-                                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Width="910px"
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4"  colspan="5">
+                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="910px"
                                         EmptyDataText="No Records Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -90,8 +90,8 @@
                                         </Columns>
                                         <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
                                     </asp:GridView>
-                                </td>
-                            </tr>
+                                </div>
+                            </div>
                           </div>
                     </div>
                 </div>

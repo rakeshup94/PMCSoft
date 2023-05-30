@@ -11,10 +11,10 @@
         <ContentTemplate>--%>
         
     <div id="wrapper" style="margin-left: -150px;">
-        <div id="content" style="width: 1250px;">
+        <div class="card"  style="width: 1250px;">
             <div class="row"  style="width: 1240px;">
-                <tr>
-                    <td>
+                <div class="row" >
+                    <div class="col-lg-4" >
                         <div id="rightnow" style="width: 1230px;">
                             <h3 class="reallynow">
                                 <span>Right Now</span>
@@ -34,7 +34,7 @@
                                     onclick="Lnktodaylabour_Click" ></asp:LinkButton></h3>
                             <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                                 <ContentTemplate>
-                                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" Width="445px"
+                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="445px"
                                         AllowPaging="True" OnPageIndexChanging="GridView1_PageIndexChanging" PageSize="5"
                                         OnRowCommand="GridView1_RowCommand">
                                         <Columns>
@@ -89,7 +89,7 @@
                                 Staffs Attendance&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <asp:LinkButton ID="LnkStaffatt" runat="server" Text="See More" CommandName="StaffattSeeMore" ForeColor="Blue" ></asp:LinkButton></h3>
                             <asp:UpdatePanel ID="UpdatePanel3" runat="server">
                                 <ContentTemplate>
-                                    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="false" Width="445px"
+                                    <asp:GridView CssClass="table table-striped"  ID="GridView2" runat="server" AutoGenerateColumns="false" Width="445px"
                                         AllowPaging="True" OnPageIndexChanging="GridView2_PageIndexChanging" PageSize="5"
                                         OnRowCommand="GridView2_RowCommand">
                                         <Columns>
@@ -129,8 +129,8 @@
                             <h3>
                                 Notifications</h3>
                             <div class="row"  style="width: 295px;">
-                                <tr>
-                                    <td style="height: 150px;">
+                                <div class="row" >
+                                    <div class="col-lg-4"  style="height: 150px;">
                                         <div style="padding-top: 0px; padding-bottom: 0px; height: 150px; background-color: #ECF5F8"
                                             id="Feeds">
                                             <marquee id="mrqImages" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="1"
@@ -160,8 +160,8 @@
                                                         </asp:DataList>
                                                         </div></marquee>
                                         </div>
-                                    </td>
-                                </tr>
+                                    </div>
+                                </div>
                               </div>
                         </div>
                         <div id="infobox" style="width: 455px; height: 172px;">
@@ -171,7 +171,7 @@
                             <asp:UpdatePanel ID="UpdatePanel8" runat="server">
                                 <ContentTemplate>
                                     <asp:Panel ID="Panel8" runat="server" Height="145px" ScrollBars="Horizontal">
-                                       <asp:GridView ID="GvTotalLaber" runat="server" AutoGenerateColumns="false" Width="440px"
+                                       <asp:GridView CssClass="table table-striped"  ID="GvTotalLaber" runat="server" AutoGenerateColumns="false" Width="440px"
                                         AllowPaging="True" >
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -235,7 +235,7 @@
                                 <ContentTemplate>
                                        <asp:Panel ID="Panel1" runat="server" Height="145px" ScrollBars="Horizontal">
                                        
-                                                        <asp:GridView ID="GridView5" runat="server" AutoGenerateColumns="false" Width="445px">
+                                                        <asp:GridView CssClass="table table-striped"  ID="GridView5" runat="server" AutoGenerateColumns="false" Width="445px">
                                                             <Columns>
                                                                 <asp:TemplateField HeaderText="Item Name">
                                                                     <ItemTemplate>
@@ -272,7 +272,7 @@
                                     onclick="Lnkprojectdetail_Click" ></asp:LinkButton></h3>
                             <asp:UpdatePanel ID="UpdatePanel5" runat="server">
                                 <ContentTemplate>
-                                 <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="false" Width="290px"
+                                 <asp:GridView CssClass="table table-striped"  ID="GridView3" runat="server" AutoGenerateColumns="false" Width="290px"
                                         AllowPaging="True" OnPageIndexChanging="GridView3_PageIndexChanging" PageSize="4"
                                         OnRowCommand="GridView3_RowCommand" >
                                         <Columns>
@@ -314,8 +314,8 @@
                                 </ContentTemplate>
                             </asp:UpdatePanel>
                         </div>
-                    </td>
-                </tr>
+                    </div>
+                </div>
               </div>
         </div>
     </div>

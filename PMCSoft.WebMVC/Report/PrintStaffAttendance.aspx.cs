@@ -27,39 +27,29 @@ namespace PMCSoft.Web.Report
                 }
                 if (!IsPostBack)
                 {
-                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                    string strReq = "";
+                    strReq = Request.RawUrl;
+                    strReq = strReq.Substring(strReq.IndexOf('?') + 1);
+
+                    if (!strReq.Equals(""))
                     {
-                        Session.Clear();
-                        Session.Abandon();
-                        Session.RemoveAll();
-                        Response.Redirect("~/Login.aspx?Value=" + "2");
-                    }
-                    else
-                    {
-                        string strReq = "";
-                        strReq = Request.RawUrl;
-                        strReq = strReq.Substring(strReq.IndexOf('?') + 1);
+                        strReq = DecryptQueryString(strReq);
+                        string[] arrMsgs = strReq.Split('&');
+                        string[] arrIndMsg;
 
-                        if (!strReq.Equals(""))
-                        {
-                            strReq = DecryptQueryString(strReq);
-                            string[] arrMsgs = strReq.Split('&');
-                            string[] arrIndMsg;
+                        string PRJID = "", Date = "", ProjName = "";
+                        arrIndMsg = arrMsgs[0].Split('=');
+                        PRJID = arrIndMsg[1].ToString().Trim();
+                        arrIndMsg = arrMsgs[1].Split('=');
+                        Date = arrIndMsg[1].ToString().Trim();
+                        arrIndMsg = arrMsgs[2].Split('=');
+                        ProjName = arrIndMsg[1].ToString().Trim();
 
-                            string PRJID = "", Date = "", ProjName = "";
-                            arrIndMsg = arrMsgs[0].Split('=');
-                            PRJID = arrIndMsg[1].ToString().Trim();
-                            arrIndMsg = arrMsgs[1].Split('=');
-                            Date = arrIndMsg[1].ToString().Trim();
-                            arrIndMsg = arrMsgs[2].Split('=');
-                            ProjName = arrIndMsg[1].ToString().Trim();
+                        lblDate.Text = Date.ToString();
+                        lblProjectName.Text = ProjName.ToString();
 
-                            lblDate.Text = Date.ToString();
-                            lblProjectName.Text = ProjName.ToString();
+                        GetValue(PRJID.ToString(), lblDate.Text);
 
-                            GetValue(PRJID.ToString(), lblDate.Text);
-
-                        }
                     }
 
                 }

@@ -10,10 +10,10 @@
     <%--<asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>--%>
     <div id="wrapper" style="margin-left: -150px;">
-        <div id="content" style="width: 1250px;">
+        <div class="card"  style="width: 1250px;">
             <div class="row"  style="width: 1240px;">
-                <tr>
-                    <td>
+                <div class="row" >
+                    <div class="col-lg-4" >
                         <div id="rightnow" style="width: 1230px;">
                             <h3 class="reallynow">
                                 <span>Right Now</span>
@@ -31,7 +31,7 @@
                             <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                                 <ContentTemplate>
                                 <asp:Panel ID="Panel44" runat="server" Height="145px" Width="445px" ScrollBars="Both">
-                                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" Width="445px"
+                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="445px"
                                         AllowPaging="True" 
                                         OnRowCommand="GridView1_RowCommand">
                                         <Columns>
@@ -86,7 +86,7 @@
                             <asp:UpdatePanel ID="UpdatePanel3" runat="server">
                                 <ContentTemplate>
                                 <asp:Panel ID="Panel4" runat="server" Height="145px" Width="445px" ScrollBars="Both">
-                                    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="false" Width="445px"
+                                    <asp:GridView CssClass="table table-striped"  ID="GridView2" runat="server" AutoGenerateColumns="false" Width="445px"
                                         AllowPaging="True" 
                                         OnRowCommand="GridView2_RowCommand">
                                         <Columns>
@@ -130,14 +130,14 @@
                             <%--<asp:UpdatePanel ID="UpdatePanel5" runat="server">
                                         <ContentTemplate>--%>
                             <div class="row"  style="width: 295px;">
-                                <tr>
-                                    <td style="text-align: right;">
+                                <div class="row" >
+                                    <div class="col-lg-4"  style="text-align: right;">
                                         <asp:ImageButton ID="ImgAdd" runat="server" ImageUrl="~/img/icons/add.png" Width="12px"
                                             OnClick="ImgAdd_Click" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="height: 130px;">
+                                    </div>
+                                </div>
+                                <div class="row" >
+                                    <div class="col-lg-4"  style="height: 130px;">
                                         <div style="padding-top: 0px; padding-bottom: 0px; height: 120px; background-color: #ECF5F8"
                                             id="Feeds">
                                             <marquee id="mrqImages" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="1"
@@ -170,8 +170,8 @@
                                                         </div></marquee>
                                         </div>
                                         <%--<My:UserInfoBoxControl ID="UIBC" runat="server" />--%>
-                                    </td>
-                                </tr>
+                                    </div>
+                                </div>
                               </div>
                             <%--</ContentTemplate>
                                     </asp:UpdatePanel>--%>
@@ -183,7 +183,7 @@
                             <asp:UpdatePanel ID="UpdatePanel8" runat="server">
                                 <ContentTemplate>
                                     <asp:Panel ID="Panel8" runat="server" Height="145px" ScrollBars="Both">
-                                       <asp:GridView ID="GvTotalLaber" runat="server" AutoGenerateColumns="false" Width="440px"
+                                       <asp:GridView CssClass="table table-striped"  ID="GvTotalLaber" runat="server" AutoGenerateColumns="false" Width="440px"
                                         >
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -243,7 +243,7 @@
                             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                                 <ContentTemplate>
                                  <asp:Panel ID="Panel2" runat="server" Height="145px" ScrollBars="Both">
-                                      <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="false" Width="440px"
+                                      <asp:GridView CssClass="table table-striped"  ID="GridView4" runat="server" AutoGenerateColumns="false" Width="440px"
                                             OnRowCommand="GridView4_RowCommand">
                                             <Columns>
                                                 <asp:TemplateField>
@@ -261,7 +261,7 @@
                                                             CommandName="Project" CausesValidation="false" ForeColor="Blue" Font-Underline="true">
                                                         </asp:LinkButton>
                                                         <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Bind("PRJID") %>' />
-                                                        <asp:GridView ID="GridView5" runat="server" AutoGenerateColumns="false" Width="410px">
+                                                        <asp:GridView CssClass="table table-striped"  ID="GridView5" runat="server" AutoGenerateColumns="false" Width="410px">
                                                             <Columns>
                                                                 <asp:TemplateField HeaderText="Item Name">
                                                                     <ItemTemplate>
@@ -302,7 +302,7 @@
                             <asp:UpdatePanel ID="UpdatePanel5" runat="server">
                                 <ContentTemplate>
                                  <asp:Panel ID="Panel3" runat="server" Height="145px" ScrollBars="Both">
-                                <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="false" Width="300px" 
+                                <asp:GridView CssClass="table table-striped"  ID="GridView3" runat="server" AutoGenerateColumns="false" Width="300px" 
                                         AllowPaging="True"
                                         OnRowCommand="GridView3_RowCommand">
                                         <Columns>
@@ -345,8 +345,8 @@
                                 </ContentTemplate>
                             </asp:UpdatePanel>
                         </div>
-                    </td>
-                </tr>
+                    </div>
+                </div>
               </div>
         </div>
     </div>
@@ -356,85 +356,85 @@
         <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
     </div>
     <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
-        PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False" DynamicServicePath=""
+        PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
         Enabled="True">
     </cc1:ModalPopupExtender>
     <asp:Panel ID="Panel1" runat="server" Style="display: none; border-color: Maroon;">
         <asp:UpdatePanel ID="UpdatePanel6" runat="server">
-            <Triggers>
+            <div class="row" iggers>
                 <asp:PostBackTrigger ControlID="btnSubmit" />
             </Triggers>
             <ContentTemplate>
                 <div class="row"  style="width: 410px; background-color: #EFFBFB;">
-                    <tr>
-                        <td>
-                            <div id="rightnow">
+                    <div class="row" >
+                        <div class="col-lg-4" >
+                            <div class="card-body">
                                 <h3 class="reallynow">
                                     Add Notification</h3>
                                 <div class="row"  style="width: 400px;">
-                                    <tr>
-                                        <td>
+                                    <div class="row" >
+                                        <div class="col-lg-4" >
                                             Department
-                                        </td>
-                                        <td>
+                                        </div>
+                                        <div class="col-lg-4" >
                                             <asp:DropDownList CssClass="form-select" ID="ddlDepartment" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlDepartment_SelectedIndexChanged"
                                                  >
                                             </asp:DropDownList>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="col-lg-4" >
                                             Designation
-                                        </td>
-                                        <td>
+                                        </div>
+                                        <div class="col-lg-4" >
                                             <asp:DropDownList CssClass="form-select" ID="ddlDesignation" runat="server"  >
                                             </asp:DropDownList>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="col-lg-4" >
                                             Subject
-                                        </td>
-                                        <td>
+                                        </div>
+                                        <div class="col-lg-4" >
                                             <asp:TextBox CssClass="form-control" ID="txtTitle" runat="server" Width="300px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="col-lg-4" >
                                             Circular No.
-                                        </td>
-                                        <td>
+                                        </div>
+                                        <div class="col-lg-4" >
                                             <asp:TextBox CssClass="form-control" ID="txtCircularNo" runat="server" Width="300px" onkeyup="valid(this)"
                                                 onblur="valid(this)"></asp:TextBox>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="col-lg-4" >
                                             Description
-                                        </td>
-                                        <td>
+                                        </div>
+                                        <div class="col-lg-4" >
                                             <asp:TextBox CssClass="form-control" ID="txtDescription" runat="server" TextMode="MultiLine" Width="305px"
                                                 onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="col-lg-4" >
                                             Attachment
-                                        </td>
-                                        <td>
+                                        </div>
+                                        <div class="col-lg-4" >
                                             <asp:FileUpload ID="FileUpload1" runat="server" />
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" style="text-align: center;">
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="col-lg-4"    >
                                             <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                                             <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
-                                        </td>
-                                    </tr>
+                                        </div>
+                                    </div>
                                   </div>
                             </div>
-                        </td>
-                    </tr>
+                        </div>
+                    </div>
                   </div>
             </ContentTemplate>
         </asp:UpdatePanel>

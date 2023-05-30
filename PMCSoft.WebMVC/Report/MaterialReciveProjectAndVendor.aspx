@@ -7,61 +7,61 @@
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -80px;">
-                <div id="content" style="width: 1100px;">
-                    <div id="rightnow">
+                <div class="card"  style="width: 1100px;">
+                    <div class="card-body">
                         <h3 class="reallynow">
                             Matrial Recive Vendor Wise</h3>
                         <div class="row"  style="width: 1090px;">
                             <%--<tr>
-                                <td colspan="9" style="text-align: center; font-size: 15px; font-family: Cambria;">
+                                <div class="col-lg-4"  colspan="9" style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     Ahluwalia Contracts (India) Ltd.
-                                </td>
-                            </tr>--%>
-                            <tr>
-                                <td style="font-size: 15px; font-family: Cambria;">
+                                </div>
+                            </div>--%>
+                            <div class="row" >
+                                <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria;">
                                     Project
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"  
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                     </asp:DropDownList>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     Vender
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:DropDownList CssClass="form-select" ID="ddlVendor" runat="server"   AutoPostBack="true">
                                         <asp:ListItem Text="Select Vendor"></asp:ListItem>
                                     </asp:DropDownList>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                    From  Date
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" Width="100px"></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                      TO Date
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:TextBox CssClass="form-control" ID="Txtfrom" runat="server" Width="100px"></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="Txtfrom"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:Button CssClass="btn btn-primary" ID="BtnReport" runat="server" Text="View Detail" OnClick="BtnReport_Click" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="9">
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4"  colspan="9">
                                     <div class="row"  style="width: 1080px;">
-                                        <tr>
-                                            <td colspan="10">
-                                                <asp:GridView ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="false"
+                                        <div class="row" >
+                                            <div class="col-lg-4"  colspan="10">
+                                                <asp:GridView CssClass="table table-striped"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="false"
                                                     Width="1070px" EmptyDataText="No Records Found">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">
@@ -164,11 +164,11 @@
                                                     <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
                                                     <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                                 </asp:GridView>
-                                            </td>
-                                        </tr>
+                                            </div>
+                                        </div>
                                       </div>
-                                </td>
-                            </tr>
+                                </div>
+                            </div>
                           </div>
                     </div>
                 </div>

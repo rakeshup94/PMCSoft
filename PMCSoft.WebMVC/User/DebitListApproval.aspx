@@ -6,32 +6,32 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 940px;">
-                    <div id="rightnow">
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                <div class="card"    >
+                    <div class="card-body">
                         <h3 class="reallynow">
                             Debitors List For Approval</h3>
                         <div class="row"  style="width: 930px;">
-                            <tr>
-                                <td style="width: 120px; text-align: center;">
+                            <div class="row" >
+                                <div class="col-lg-4"  style="width: 120px; text-align: center;">
                                     Project Name
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProject_SelectedIndexChanged"
                                          >
                                     </asp:DropDownList>
-                                </td>
-                                <td style="text-align: center;">
+                                </div>
+                                <div class="col-lg-4"  style="text-align: center;">
                                     Forward To
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:DropDownList CssClass="form-select" ID="ddlEmployee" runat="server" AutoPostBack="True"  >
                                     </asp:DropDownList>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="4">
-                                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" Width="915px"
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4"  colspan="4">
+                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="915px"
                                         EmptyDataText="No Record Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -100,14 +100,14 @@
                                         </Columns>
                                         <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
                                     </asp:GridView>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="4" style="text-align: center;">
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4"  colspan="4" style="text-align: center;">
                                     <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                                     <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
-                                </td>
-                            </tr>
+                                </div>
+                            </div>
                           </div>
                     </div>
                 </div>

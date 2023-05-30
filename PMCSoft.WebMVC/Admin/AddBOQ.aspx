@@ -1,57 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Inherits="PMCSoft.Web.Admin.AddBOQ"
     CodeBehind="AddBOQ.aspx.cs" %>
 
-<%--<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>--%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <style type="text/css">
-        .fancy-green .ajax__tab_header {
-            background: url(green_bg_Tab.gif) repeat-x;
-            cursor: pointer;
-        }
-
-        .fancy-green .ajax__tab_hover .ajax__tab_outer, .fancy-green .ajax__tab_active .ajax__tab_outer {
-            background: url(green_left_Tab.gif) no-repeat left top;
-        }
-
-        .fancy-green .ajax__tab_hover .ajax__tab_inner, .fancy-green .ajax__tab_active .ajax__tab_inner {
-            background: url(green_right_Tab.gif) no-repeat right top;
-        }
-
-        .fancy .ajax__tab_header {
-            font-size: 13px;
-            font-weight: bold;
-            color: #000;
-            font-family: sans-serif;
-        }
-
-            .fancy .ajax__tab_active .ajax__tab_outer, .fancy .ajax__tab_header .ajax__tab_outer, .fancy .ajax__tab_hover .ajax__tab_outer {
-                height: 46px;
-            }
-
-            .fancy .ajax__tab_active .ajax__tab_inner, .fancy .ajax__tab_header .ajax__tab_inner, .fancy .ajax__tab_hover .ajax__tab_inner {
-                height: 46px;
-                margin-left: 16px; /* offset the width of the left image */
-            }
-
-            .fancy .ajax__tab_active .ajax__tab_tab, .fancy .ajax__tab_hover .ajax__tab_tab, .fancy .ajax__tab_header .ajax__tab_tab {
-                margin: 16px 16px 0px 0px;
-            }
-
-        .fancy .ajax__tab_hover .ajax__tab_tab, .fancy .ajax__tab_active .ajax__tab_tab {
-            color: #fff;
-        }
-
-        .fancy .ajax__tab_body {
-            font-family: Arial;
-            font-size: 10pt;
-            border-top: 0;
-            border: 1px solid #999999;
-            padding: 8px;
-            background-color: #ffffff;
-        }
-    </style>
-
-
     <script type="text/javascript">
         function preventBack() { window.history.forward(); }
         setTimeout("preventBack()", 0);
@@ -105,7 +55,7 @@
                                                     <div class="form-group">
                                                         Project Name
                                   
-                                        <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" CssClass="form-select">
+                                        <asp:DropDownList ID="ddlProject" runat="server">
                                         </asp:DropDownList>
                                                     </div>
                                                 </div>
@@ -113,14 +63,14 @@
                                                     <div class="form-group">
                                                         Item No.
                                         
-                                                <asp:TextBox CssClass="form-control" CssClass="form-control" ID="txtBOQItemNo" runat="server"></asp:TextBox>
+                                                <asp:TextBox CssClass="form-control" ID="txtBOQItemNo" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="form-group">
                                                         Category
                                        
-                                                <asp:TextBox CssClass="form-control" CssClass="form-control" ID="txtCategory" runat="server"></asp:TextBox>
+                                                <asp:TextBox CssClass="form-control" ID="txtCategory" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
 
@@ -128,7 +78,7 @@
                                                 <div class="col-lg-4">
                                                     <div class="form-group">
                                                         Unit
-                                        <asp:DropDownList CssClass="form-select" ID="ddlUnit" runat="server" CssClass="form-select">
+                                        <asp:DropDownList ID="ddlUnit" runat="server">
                                         </asp:DropDownList>
                                                     </div>
                                                 </div>
@@ -136,7 +86,7 @@
                                                     <div class="form-group">
                                                         Quantity
                                     
-                                                <asp:TextBox CssClass="form-control" CssClass="form-control" ID="txtQuantity" runat="server"></asp:TextBox>
+                                                <asp:TextBox CssClass="form-control" ID="txtQuantity" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
 
@@ -144,7 +94,7 @@
                                                     <div class="form-group">
                                                         Rate
                                              
-                                                    <asp:TextBox CssClass="form-control" CssClass="form-control" ID="txtRate" runat="server"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtRate" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
 
@@ -152,15 +102,18 @@
                                                     <div class="form-group">
                                                         Description of Item
                                             
-                                                    <asp:TextBox CssClass="form-control" CssClass="form-control" ID="txtDescription" runat="server" TextMode="MultiLine"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtDescription"
+                                                        runat="server" TextMode="MultiLine"></asp:TextBox>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row mtm">
                                                 <div class="col-lg-12">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" CssClass="btn btn-green" Text="Submit"
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server"
+                                                        Text="Submit"
                                                         OnClick="btnSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" CssClass="btn btn-primary" Text="Cancel"
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server"
+                                                        Text="Cancel"
                                                         OnClick="btnCancel_Click" />
                                                 </div>
 
@@ -185,7 +138,8 @@
                                                 <div class="col-lg-4">
                                                     <div class="form-group">
                                                         Project Name
-                                        <asp:DropDownList CssClass="form-select" ID="ddlProjectSub" CssClass="form-select" runat="server">
+                                        <asp:DropDownList ID="ddlProjectSub"
+                                            runat="server">
                                         </asp:DropDownList>
                                                     </div>
                                                 </div>
@@ -195,7 +149,8 @@
                                                     <div class="form-group">
                                                         Category
                                
-                                            <asp:DropDownList CssClass="form-select" ID="ddlCategory" CssClass="form-select" runat="server">
+                                            <asp:DropDownList ID="ddlCategory"
+                                                runat="server">
                                             </asp:DropDownList>
                                                     </div>
                                                 </div>
@@ -203,7 +158,8 @@
                                                     <div class="form-group">
                                                         Sub-Category
                                   
-                                            <asp:TextBox CssClass="form-control" CssClass="form-control" ID="txtSubCategory" runat="server"></asp:TextBox>
+                                            <asp:TextBox CssClass="form-control" ID="txtSubCategory"
+                                                runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
 
@@ -212,7 +168,7 @@
                                                     <div class="form-group">
                                                         Unit
                                  
-                                            <asp:DropDownList CssClass="form-select" CssClass="form-select" ID="ddlSubUnit" runat="server">
+                                            <asp:DropDownList CssClass="form-select" ID="ddlSubUnit" runat="server">
                                             </asp:DropDownList>
                                                     </div>
                                                 </div>
@@ -220,7 +176,8 @@
                                                 <div class="col-lg-4">
                                                     <div class="form-group">
                                                         Quantity
-                                                    <asp:TextBox CssClass="form-control" CssClass="form-control" ID="txtSubQuantity" runat="server"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtSubQuantity"
+                                                        runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
 
@@ -228,7 +185,7 @@
                                                     <div class="form-group">
                                                         Rate
                                                 
-                                                        <asp:TextBox CssClass="form-control" CssClass="form-control" ID="txtSubRate" runat="server"></asp:TextBox>
+                                                        <asp:TextBox CssClass="form-control" ID="txtSubRate" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
 
@@ -237,7 +194,8 @@
                                                     <div class="form-group">
                                                         Description of Item
                              
-                                            <asp:TextBox CssClass="form-control" CssClass="form-control" ID="txtSubDescription" runat="server" TextMode="MultiLine">
+                                            <asp:TextBox CssClass="form-control" ID="txtSubDescription"
+                                                runat="server" TextMode="MultiLine">
                                             </asp:TextBox>
                                                     </div>
                                                 </div>
@@ -247,9 +205,11 @@
 
 
                                                 <div class="col-lg-12">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubSubmit" runat="server" CssClass="btn btn-primary" Text="Submit"
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubSubmit" runat="server"
+                                                        Text="Submit"
                                                         OnClick="btnSubSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubCancel" runat="server" CssClass="btn btn-green" Text="Cancel"
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubCancel" runat="server"
+                                                        Text="Cancel"
                                                         OnClick="btnSubCancel_Click" />
                                                 </div>
 
@@ -274,7 +234,8 @@
                                                     <div class="form-group">
                                                         Project Name
                                
-                                        <asp:DropDownList CssClass="form-select" CssClass="form-select" ID="ddlProjectSubPart" runat="server">
+                                        <asp:DropDownList CssClass="form-select" ID="ddlProjectSubPart"
+                                            runat="server">
                                         </asp:DropDownList>
                                                     </div>
                                                 </div>
@@ -283,7 +244,8 @@
                                                     <div class="form-group">
                                                         Category
                                             
-                                                    <asp:DropDownList CssClass="form-select" CssClass="form-select" ID="ddlPartCategory" runat="server">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlPartCategory"
+                                                        runat="server">
                                                     </asp:DropDownList>
                                                     </div>
                                                 </div>
@@ -291,7 +253,8 @@
                                                     <div class="form-group">
                                                         Sub-Category
                                                
-                                                        <asp:DropDownList CssClass="form-select" CssClass="form-select" ID="ddlPartSubCategory" runat="server">
+                                                        <asp:DropDownList CssClass="form-select" ID="ddlPartSubCategory"
+                                                            runat="server">
                                                         </asp:DropDownList>
                                                     </div>
                                                 </div>
@@ -303,7 +266,7 @@
                                                     <div class="form-group">
                                                         Sub Part
                                                    
-                                                                <asp:TextBox CssClass="form-control" CssClass="form-control" ID="txtPart" runat="server"></asp:TextBox>
+                                                                <asp:TextBox CssClass="form-control" ID="txtPart" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
 
@@ -312,7 +275,8 @@
                                                     <div class="form-group">
                                                         Unit
                                                                   
-                                                                            <asp:DropDownList CssClass="form-select" CssClass="form-select" ID="ddlPartUnit" runat="server">
+                                                                            <asp:DropDownList CssClass="form-select" ID="ddlPartUnit"
+                                                                                runat="server">
                                                                             </asp:DropDownList>
                                                     </div>
                                                 </div>
@@ -322,14 +286,15 @@
                                                     <div class="form-group">
                                                         Quantity
                                                                   
-                                                                                <asp:TextBox CssClass="form-control" CssClass="form-control" ID="txtPartQuantity" runat="server"></asp:TextBox>
+                                                                                <asp:TextBox CssClass="form-control" ID="txtPartQuantity"
+                                                                                    runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="form-group">
                                                         Rate
                                                                             
-                                                                                        <asp:TextBox CssClass="form-control" CssClass="form-control" ID="txtPartRate" runat="server"></asp:TextBox>
+                                                                                        <asp:TextBox CssClass="form-control" ID="txtPartRate" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
 
@@ -340,7 +305,8 @@
                                                     <div class="form-group">
                                                         Description of Item
                                        
-                                                                    <asp:TextBox CssClass="form-control" CssClass="form-control" ID="txtPartDescription" runat="server" TextMode="MultiLine">
+                                                                    <asp:TextBox CssClass="form-control" ID="txtPartDescription"
+                                                                        runat="server" TextMode="MultiLine">
                                                                     </asp:TextBox>
                                                     </div>
                                                 </div>
@@ -351,9 +317,10 @@
 
                                             <div class="row mtm">
                                                 <div class="col-lg-12">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnPartSubmit" CssClass="btn btn-primary" runat="server" Text="Submit"
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnPartSubmit"
+                                                        runat="server" Text="Submit"
                                                         OnClick="btnPartSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnPartCancel" CssClass="btn btn-green"
+                                                    <asp:Button CssClass="btn btn-primary" ID="btnPartCancel"
                                                         runat="server" Text="Cancel" OnClick="btnPartCancel_Click" />
                                                 </div>
 
@@ -382,7 +349,8 @@
                                                 <div class="col-lg-12">
                                                     <div class="form-group">
                                                         <asp:FileUpload ID="FileUpload2" runat="server" />
-                                                        <asp:Button CssClass="btn btn-primary" ID="btnBOQUpload" runat="server" CssClass="btn btn-primary" Text="Upload"
+                                                        <asp:Button CssClass="btn btn-primary" ID="btnBOQUpload" runat="server"
+                                                            Text="Upload"
                                                             OnClick="btnBOQUpload_Click" />
                                                     </div>
                                                 </div>
@@ -400,7 +368,7 @@
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <asp:FileUpload ID="FileUpload1" runat="server" />
-                                            <asp:Button CssClass="btn btn-primary" ID="btnUpload" runat="server" Text="Upload" CssClass="btn btn-primary"
+                                            <asp:Button CssClass="btn btn-primary" ID="btnUpload" runat="server" Text="Upload"
                                                 OnClick="btnUpload_Click" />
                                         </div>
                                     </div>

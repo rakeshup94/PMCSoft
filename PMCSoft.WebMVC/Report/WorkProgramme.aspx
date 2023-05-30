@@ -6,219 +6,219 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 940px;">
-                    <div id="rightnow">
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                <div class="card"    >
+                    <div class="card-body">
                         <h3 class="reallynow">
                             Work Programme</h3>
                         <div class="row"  style="width: 930px">
-                            <tr>
-                                <td style="text-align: center;">
+                            <div class="row" >
+                                <div class="col-lg-4"  style="text-align: center;">
                                     Project Name
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="True"  >
                                     </asp:DropDownList>
-                                </td>
-                                <td style="text-align: center;">
+                                </div>
+                                <div class="col-lg-4"  style="text-align: center;">
                                     Date
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:Button CssClass="btn btn-primary" ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
                                      <asp:Button CssClass="btn btn-primary" ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" style="text-align: center;">
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4"  colspan="5" style="text-align: center;">
                                     <asp:Panel ID="Panel1" runat="server" Width="910px" Visible="false">
                                         <div class="row"  style="width: 900px;">
-                                            <tr>
-                                                <td style="white-space: nowrap;">
+                                            <div class="row" >
+                                                <div class="col-lg-4"  style="white-space: nowrap;">
                                                     WP Date:
-                                                </td>
-                                                <td>
+                                                </div>
+                                                <div class="col-lg-4" >
                                                     <asp:Label ID="lblWorkProgrammeDate" runat="server" Width="100px" Font-Size="12px"></asp:Label>
                                                     <asp:HiddenField ID="hdnWPDate" runat="server" />
                                                     <asp:HiddenField ID="hdnWPID" runat="server" />
-                                                </td>
-                                                <td>
-                                                </td>
-                                                <td>
-                                                </td>
-                                                <td>
+                                                </div>
+                                                <div class="col-lg-4" >
+                                                </div>
+                                                <div class="col-lg-4" >
+                                                </div>
+                                                <div class="col-lg-4" >
                                                     Created By
-                                                </td>
-                                                <td style="text-align: left;">
+                                                </div>
+                                                <div class="col-lg-4"  style="text-align: left;">
                                                     <asp:Label ID="lblCreatedBy" runat="server"></asp:Label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="white-space: nowrap;">
+                                                </div>
+                                            </div>
+                                            <div class="row" >
+                                                <div class="col-lg-4"  style="white-space: nowrap;">
                                                     No.:
-                                                </td>
-                                                <td>
+                                                </div>
+                                                <div class="col-lg-4" >
                                                     <asp:Label ID="lblNumber" runat="server" Width="100px"></asp:Label>
-                                                </td>
-                                                <td style="white-space: nowrap;">
+                                                </div>
+                                                <div class="col-lg-4"  style="white-space: nowrap;">
                                                     ENG. In Charge:
-                                                </td>
-                                                <td>
+                                                </div>
+                                                <div class="col-lg-4" >
                                                     <asp:Label ID="lblEngInCharge" runat="server" Width="300px"></asp:Label>
                                                     <asp:HiddenField ID="hdnEngInCharge" runat="server" />
-                                                </td>
-                                                <td style="width: 60px;">
+                                                </div>
+                                                <div class="col-lg-4"  style="width: 60px;">
                                                     Block:
-                                                </td>
-                                                <td style="text-align: left;">
+                                                </div>
+                                                <div class="col-lg-4"  style="text-align: left;">
                                                     <asp:Label ID="lblBlock" runat="server" Text="" Width="250px"></asp:Label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="6">
+                                                </div>
+                                            </div>
+                                            <div class="row" >
+                                                <div class="col-lg-4"  colspan="6">
                                                     <asp:Repeater ID="Repeater1" runat="server">
                                                         <HeaderTemplate>
                                                             <div class="row"  style="width: 900px; border: 1px solid black; border-collapse: collapse;">
-                                                                <tr>
-                                                                    <td rowspan="2" style="width: 50px; text-align: center; border: 1px solid black;
+                                                                <div class="row" >
+                                                                    <div class="col-lg-4"  rowspan="2" style="width: 50px; text-align: center; border: 1px solid black;
                                                                         background-color: #D8D8D8;">
                                                                         S.No
-                                                                    </td>
-                                                                    <td rowspan="2" style="width: 250px; text-align: center; border: 1px solid black;
+                                                                    </div>
+                                                                    <div class="col-lg-4"  rowspan="2" style="width: 250px; text-align: center; border: 1px solid black;
                                                                         background-color: #D8D8D8;">
                                                                         Item Of Work
-                                                                    </td>
-                                                                    <td rowspan="2" style="width: 150px; text-align: center; border: 1px solid black;
+                                                                    </div>
+                                                                    <div class="col-lg-4"  rowspan="2" style="width: 150px; text-align: center; border: 1px solid black;
                                                                         background-color: #D8D8D8;">
                                                                         Area
-                                                                    </td>
-                                                                    <td colspan="4" style="text-align: center; width: 400px; border: 1px solid black;
+                                                                    </div>
+                                                                    <div class="col-lg-4"  colspan="4" style="text-align: center; width: 400px; border: 1px solid black;
                                                                         background-color: #D8D8D8;">
                                                                         Work Programme
-                                                                    </td>
-                                                                    <td rowspan="2" style="width: 150px; text-align: center; border: 1px solid black;
+                                                                    </div>
+                                                                    <div class="col-lg-4"  rowspan="2" style="width: 150px; text-align: center; border: 1px solid black;
                                                                         background-color: #D8D8D8;">
                                                                         Total
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td style="text-align: center; border: 1px solid black; background-color: #D8D8D8;">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row" >
+                                                                    <div class="col-lg-4"  style="text-align: center; border: 1px solid black; background-color: #D8D8D8;">
                                                                         SK
-                                                                    </td>
-                                                                    <td style="text-align: center; border: 1px solid black; background-color: #D8D8D8;">
+                                                                    </div>
+                                                                    <div class="col-lg-4"  style="text-align: center; border: 1px solid black; background-color: #D8D8D8;">
                                                                         SEMI
-                                                                    </td>
-                                                                    <td style="text-align: center; border: 1px solid black; background-color: #D8D8D8;">
+                                                                    </div>
+                                                                    <div class="col-lg-4"  style="text-align: center; border: 1px solid black; background-color: #D8D8D8;">
                                                                         UNSK
-                                                                    </td>
-                                                                    <td style="text-align: center; border: 1px solid black; background-color: #D8D8D8;">
+                                                                    </div>
+                                                                    <div class="col-lg-4"  style="text-align: center; border: 1px solid black; background-color: #D8D8D8;">
                                                                         O.T
-                                                                    </td>
-                                                                </tr>
+                                                                    </div>
+                                                                </div>
                                                         </HeaderTemplate>
                                                         <ItemTemplate>
-                                                            <tr>
-                                                                <td style="border: 1px solid black; text-align: center;">
+                                                            <div class="row" >
+                                                                <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
                                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                                     <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                                     <asp:HiddenField ID="hdnItemID" runat="server" Value='<%#Bind("ItemID") %>' />
-                                                                </td>
-                                                                <td style="border: 1px solid black; text-align: left;">
+                                                                </div>
+                                                                <div class="col-lg-4"  style="border: 1px solid black; text-align: left;">
                                                                     <asp:Label ID="lblItemOfWork" runat="server" Text='<%#Bind("ItemOfWork") %>'></asp:Label>
-                                                                </td>
-                                                                <td style="border: 1px solid black; text-align: left;">
+                                                                </div>
+                                                                <div class="col-lg-4"  style="border: 1px solid black; text-align: left;">
                                                                     <asp:Label ID="lblArea" runat="server" Text='<%#Bind("Area") %>'></asp:Label>
-                                                                </td>
-                                                                <td style="border: 1px solid black; text-align: center;">
+                                                                </div>
+                                                                <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
                                                                     <asp:Label ID="lblSK" runat="server" Width="50px" Text='<%#Bind("LabourSK") %>'>
                                                                     </asp:Label>
-                                                                </td>
-                                                                <td style="border: 1px solid black; text-align: center;">
+                                                                </div>
+                                                                <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
                                                                     <asp:Label ID="lblSEMI" runat="server" Width="50px" Text='<%#Bind("LabourSEMI") %>'>
                                                                     </asp:Label>
-                                                                </td>
-                                                                <td style="border: 1px solid black; text-align: center;">
+                                                                </div>
+                                                                <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
                                                                     <asp:Label ID="lblUNSK" runat="server" Width="50px" Text='<%#Bind("LabourUNSK") %>'>
                                                                     </asp:Label>
-                                                                </td>
-                                                                <td style="border: 1px solid black; text-align: center;">
+                                                                </div>
+                                                                <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
                                                                     <asp:Label ID="lblOT" runat="server" Width="50px" Text='<%#Bind("LabourOT") %>'>
                                                                     </asp:Label>
-                                                                </td>
-                                                                <td style="border: 1px solid black; text-align: center; width: 50px;">
+                                                                </div>
+                                                                <div class="col-lg-4"  style="border: 1px solid black; text-align: center; width: 50px;">
                                                                     <asp:Label ID="lblTotal" runat="server" Width="50px">
                                                                     </asp:Label>
-                                                                </td>
-                                                            </tr>
+                                                                </div>
+                                                            </div>
                                                         </ItemTemplate>
                                                         <FooterTemplate>
-                                                            <tr>
-                                                                <td style="border: 1px solid black; background-color: #D8D8D8;">
-                                                                </td>
-                                                                <td style="border: 1px solid black; background-color: #D8D8D8;">
-                                                                </td>
-                                                                <td style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                            <div class="row" >
+                                                                <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8;">
+                                                                </div>
+                                                                <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8;">
+                                                                </div>
+                                                                <div class="col-lg-4"  style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     font-weight: bold;">
                                                                     Total:
-                                                                </td>
-                                                                <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                                </div>
+                                                                <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                                     font-weight: bold;">
                                                                     <asp:Label ID="lblSumSK" runat="server" Text=""></asp:Label>
-                                                                </td>
-                                                                <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                                </div>
+                                                                <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                                     font-weight: bold;">
                                                                     <asp:Label ID="lblSumSEMI" runat="server" Text=""></asp:Label>
-                                                                </td>
-                                                                <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                                </div>
+                                                                <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                                     font-weight: bold;">
                                                                     <asp:Label ID="lblSumUNSK" runat="server" Text=""></asp:Label>
-                                                                </td>
-                                                                <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                                </div>
+                                                                <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                                     font-weight: bold;">
                                                                     <asp:Label ID="lblSumOT" runat="server" Text=""></asp:Label>
-                                                                </td>
-                                                                <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                                </div>
+                                                                <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                                     font-weight: bold;">
                                                                     <asp:Label ID="lblGTotal" runat="server" Text=""></asp:Label>
-                                                                </td>
-                                                            </tr>
+                                                                </div>
+                                                            </div>
                                                               </div>
                                                         </FooterTemplate>
                                                     </asp:Repeater>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
+                                                </div>
+                                            </div>
+                                            <div class="row" >
+                                                <div class="col-lg-4" >
                                                     Supervisor:
-                                                </td>
-                                                <td style="text-align: left;">
+                                                </div>
+                                                <div class="col-lg-4"  style="text-align: left;">
                                                     <asp:Label ID="lblSupervisor" runat="server"></asp:Label>
                                                     <asp:HiddenField ID="hdnSupervisor" runat="server" />
-                                                </td>
-                                                <td>
+                                                </div>
+                                                <div class="col-lg-4" >
                                                     Foreman:
-                                                </td>
-                                                <td style="text-align: left;">
+                                                </div>
+                                                <div class="col-lg-4"  style="text-align: left;">
                                                     <asp:Label ID="lblForeman" runat="server"></asp:Label>
                                                     <asp:HiddenField ID="hdnForeman" runat="server" />
-                                                </td>
-                                                <td>
+                                                </div>
+                                                <div class="col-lg-4" >
                                                     Engineer:
-                                                </td>
-                                                <td style="text-align: left;">
+                                                </div>
+                                                <div class="col-lg-4"  style="text-align: left;">
                                                     <asp:Label ID="lblEngineer" runat="server"></asp:Label>
                                                     <asp:HiddenField ID="hdnEngineer" runat="server" />
-                                                </td>
-                                            </tr>
+                                                </div>
+                                            </div>
                                           </div>
                                     </asp:Panel>
-                                </td>
-                            </tr>
+                                </div>
+                            </div>
                           </div>
                     </div>
                 </div>

@@ -11,31 +11,31 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
-    <div id="wrapper">
-        <div id="content" style="width: 940px;">
-            <div id="rightnow">
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+        <div class="card"    >
+            <div class="card-body">
                 <h3 class="reallynow">
                     PDC</h3>
                 <div class="row"  style="width: 930px;">
-                    <tr>
-                        <td>
+                    <div class="row" >
+                        <div class="col-lg-4" >
                             Project :
-                        </td>
-                        <td>
+                        </div>
+                        <div class="col-lg-4" >
                             <asp:DropDownList CssClass="form-select" ID="ddlP" runat="server" AutoPostBack="true"   OnSelectedIndexChanged="ddlP_SelectedIndexChanged">
                             </asp:DropDownList>
-                        </td>
-                        <td>
+                        </div>
+                        <div class="col-lg-4" >
                             Forwarded To :
-                        </td>
-                        <td>
+                        </div>
+                        <div class="col-lg-4" >
                             <asp:DropDownList CssClass="form-select" ID="ddlEmployee" runat="server" AutoPostBack="True" Width="206px">
                             </asp:DropDownList>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" style="vertical-align: top;">
-                            <asp:GridView ID="grvProjectDetails" runat="server" ShowFooter="True" AutoGenerateColumns="False"
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div class="col-lg-4"  colspan="4" style="vertical-align: top;">
+                            <asp:GridView CssClass="table table-striped"  ID="grvProjectDetails" runat="server" ShowFooter="True" AutoGenerateColumns="False"
                                 ForeColor="#333333" GridLines="None" OnRowDataBound="grvProjectDetails_RowDataBound"
                                 Width="915px" OnRowCommand="grvProjectDetails_RowCommand">
                                 <Columns>
@@ -101,7 +101,7 @@
                                 <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
                             </div>
                             <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
-                                PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False" DynamicServicePath=""
+                                PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"  
                                 Enabled="True">
                             </cc1:ModalPopupExtender>
                             <asp:Panel ID="Panel2" runat="server" Style="display: none;">
@@ -109,23 +109,23 @@
                                     <h3 class="reallynow">
                                        Add Bank</h3>
                                     <div class="row"  style="width: 350px; background-color: #EFFBFB;">
-                                     <tr>
-                                                            <td style="width: 100px;">
+                                     <div class="row" >
+                                                            <div class="col-lg-4"  style="width: 100px;">
                                                                 Bank Name
-                                                            </td>
-                                                            <td>
+                                                            </div>
+                                                            <div class="col-lg-4" >
                                                                 <asp:TextBox CssClass="form-control" ID="txtbankname" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)"></asp:TextBox>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="2" style="text-align: center;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row" >
+                                                            <div class="col-lg-4"    >
                                                                 <asp:Button CssClass="btn btn-primary" ID="btnAddNewBankSave" runat="server"  Text="Submit"
                                                                     onclick="btnAddNewBankSave_Click" />
                                                                 <asp:Button CssClass="btn btn-primary" ID="BtnAddNewBankCancel" runat="server"  Text="Cancle"
                                                                     CausesValidation="False" onclick="BtnAddNewBankCancel_Click" />
-                                                            </td>
-                                                        </tr>
+                                                            </div>
+                                                        </div>
                                       </div>
                                 </div>
                             </asp:Panel>
@@ -133,7 +133,7 @@
                                 <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
                             </div>
                             <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
-                                PopupControlID="PanelBranch" TargetControlID="Button2" EnableViewState="False" DynamicServicePath=""
+                                PopupControlID="PanelBranch" TargetControlID="Button2" EnableViewState="False"  
                                 Enabled="True">
                             </cc1:ModalPopupExtender>
                             <asp:Panel ID="PanelBranch" runat="server" Style="display: none;">
@@ -141,92 +141,92 @@
                                     <h3 class="reallynow">
                                        Add Branch</h3>
                                     <div class="row"  style="width: 350px; background-color: #EFFBFB;">
-                                     <tr>
-                                                        <td style="width: 100px;">
+                                     <div class="row" >
+                                                        <div class="col-lg-4"  style="width: 100px;">
                                                             Bank
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:DropDownList CssClass="form-select" ID="ddlbank" runat="server"  >
                                                             </asp:DropDownList>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4" >
                                                             Branch
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:TextBox CssClass="form-control" ID="txtBranch" runat="server" onkeyup="valid(this)" onblur="valid(this)"
                                                                  ></asp:TextBox>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4" >
                                                             Address
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:TextBox CssClass="form-control" ID="txtadress" runat="server" TextMode="MultiLine"   onkeyup="valid(this)"
                                                                 onblur="valid(this)"></asp:TextBox>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4" >
                                                             Country
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:DropDownList CssClass="form-select" ID="ddlcountry" runat="server"   AutoPostBack="true"
                                                                 OnSelectedIndexChanged="ddlcountry_SelectedIndexChanged">
                                                             </asp:DropDownList>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4" >
                                                             Satate
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:DropDownList CssClass="form-select" ID="ddlsatete" runat="server"   AutoPostBack="true"
                                                                 OnSelectedIndexChanged="ddlsatete_SelectedIndexChanged">
                                                             </asp:DropDownList>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4" >
                                                             City
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:DropDownList CssClass="form-select" ID="ddlCity" runat="server"  >
                                                             </asp:DropDownList>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4" >
                                                             ZipCode
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:TextBox CssClass="form-control" ID="txtZipcode" runat="server" MaxLength="6"  ></asp:TextBox>
                                                             <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender7" runat="server" FilterType="Custom, Numbers"
                                                                 TargetControlID="txtZipcode">
                                                             </cc1:FilteredTextBoxExtender>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4"  colspan="2">
                                                             <asp:Button CssClass="btn btn-primary" ID="btnbranchsave" runat="server" OnClick="btnbranchsave_Click" Text="Save"
                                                                 Width="70px" />
                                                             <asp:Button CssClass="btn btn-primary" ID="btnbranchcancle" runat="server" CausesValidation="false" OnClick="btnbranchcancle_Click"
                                                                 Text="Cancel" Width="70px" />
-                                                        </td>
-                                                    </tr>
+                                                        </div>
+                                                    </div>
                                        </div>
                                      </div>
                                      </asp:Panel>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" align="center">
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div class="col-lg-4"  colspan="4" align="center">
                             <asp:Button CssClass="btn btn-primary" ID="btnsubmit" runat="server" Text="Submit" Width="75px" OnClick="btnsubmit_Click" />
                             <asp:Button CssClass="btn btn-primary" ID="btncancle" runat="server" Text="Cancel" Width="70px" OnClick="btncancle_Click" />
-                        </td>
-                    </tr>
+                        </div>
+                    </div>
                   </div>
             </div>
         </div>

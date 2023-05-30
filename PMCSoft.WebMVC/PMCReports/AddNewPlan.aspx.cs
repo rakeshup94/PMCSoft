@@ -30,21 +30,10 @@ namespace PMCSoft.Web.PMCReports
             {
                 if (!IsPostBack)
                 {
-                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
-                    {
-                        Session.Clear();
-                        Session.Abandon();
-                        Session.RemoveAll();
-                        Response.Redirect("~/Login.aspx?Value=" + "2");
-                    }
-                    else
-                    {
-                        BindProj();
-                        LoadYears(ref ddlSDaysYear);
-                        BindProj1();
-                        LoadYears1(ref ddlSDaysYear1);
-
-                    }
+                    BindProj();
+                    LoadYears(ref ddlSDaysYear);
+                    BindProj1();
+                    LoadYears1(ref ddlSDaysYear1);
                 }
             }
             catch (Exception ex)

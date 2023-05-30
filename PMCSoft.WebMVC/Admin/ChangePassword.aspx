@@ -6,28 +6,28 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 940px;">
-                    <div id="rightnow">
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                <div class="card"    >
+                    <div class="card-body">
                         <h3 class="reallynow">
                             Change Password</h3>
                         <div class="row"  style="width: 930px">
-                            <tr>
-                                <td>
+                            <div class="row" >
+                                <div class="col-lg-4" >
                                     Old Password:*
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:TextBox CssClass="form-control" ID="txtOldPassword" runat="server" TextMode="Password"></asp:TextBox>
                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" FilterMode="InvalidChars"
                                         InvalidChars="&lt;&gt;" TargetControlID="txtOldPassword">
                                     </cc1:FilteredTextBoxExtender>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4" >
                                     New Password:*
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:TextBox CssClass="form-control" ID="txtNewPassword" runat="server" TextMode="Password"></asp:TextBox>
                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" FilterMode="InvalidChars"
                                         InvalidChars="&lt;&gt;" TargetControlID="txtNewPassword">
@@ -35,27 +35,27 @@
                                     <br></br>
                                     At least one digit, one character, one special characters, and 8-20 characters in
                                     length in password. </br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4" >
                                     Re-Type Password:*
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:TextBox CssClass="form-control" ID="txtReType" runat="server" TextMode="Password"></asp:TextBox>
                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" FilterMode="InvalidChars"
                                         InvalidChars="&lt;&gt;" TargetControlID="txtReType">
                                     </cc1:FilteredTextBoxExtender>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4"  colspan="2">
                                     <asp:Button CssClass="btn btn-primary" ID="btnSave" runat="server" Class="button-bg"  Text="Submit"
                                         OnClick="btnSave_Click" />
                                     <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Class="button-bg" Style="width: auto;"
                                         Text="Cancel" OnClick="btnCancel_Click" />
-                                </td>
-                            </tr>
+                                </div>
+                            </div>
                           </div>
                     </div>
                 </div>

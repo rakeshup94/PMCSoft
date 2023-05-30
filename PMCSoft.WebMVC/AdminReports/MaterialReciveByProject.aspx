@@ -13,32 +13,32 @@
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -80px;">
-                <div id="content" style="width: 1100px;">
-                    <div id="rightnow">
+                <div class="card"  style="width: 1100px;">
+                    <div class="card-body">
                         <h3 class="reallynow">
                             Matrial Recive Project Wise</h3>
                         <div class="row"  style="width: 1090px;">
-                            <%-- <tr>
-                                <td style="text-align: center; font-size: 15px; font-family: Cambria;">
+                            <%-- <div class="row" >
+                                <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     Ahluwalia Contracts (India) Ltd.
-                                </td>
-                            </tr>--%>
-                            <tr>
-                                <td style="text-align: center; font-size: 15px; font-family: Cambria; width: 100px;">
+                                </div>
+                            </div>--%>
+                            <div class="row" >
+                                <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria; width: 100px;">
                                     Project
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlProject_SelectedIndexChanged"
                                          >
                                     </asp:DropDownList>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4"  colspan="2">
                                     <div class="row"  style="width: 1080px;">
-                                        <tr>
-                                            <td colspan="10">
-                                                <asp:GridView ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="false"
+                                        <div class="row" >
+                                            <div class="col-lg-4"  colspan="10">
+                                                <asp:GridView CssClass="table table-striped"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="false"
                                                     Width="1070px" EmptyDataText="No Records Found" OnPageIndexChanging="GVMaterialReceive_PageIndexChanging"
                                                     PageSize="50">
                                                     <Columns>
@@ -142,11 +142,11 @@
                                                     <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
                                                     <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                                 </asp:GridView>
-                                            </td>
-                                        </tr>
+                                            </div>
+                                        </div>
                                       </div>
-                                </td>
-                            </tr>
+                                </div>
+                            </div>
                           </div>
                     </div>
                 </div>

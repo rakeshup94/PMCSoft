@@ -12,20 +12,20 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-        <Triggers>
+        <div class="row" iggers>
             <asp:PostBackTrigger ControlID="Button4" />
         </Triggers>
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 940px;">
-                    <div id="rightnow">
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                <div class="card"    >
+                    <div class="card-body">
                         <h3 class="reallynow">
                             Submitted Bill</h3>
                     </div>
-                    <div class="row"  style="width: 930px; vertical-align: top;">
-                        <tr style="vertical-align: top;">
-                            <td style="vertical-align: top; width: 600px;">
-                                <asp:GridView ID="GvRAbillSub" runat="server" AutoGenerateColumns="false" GridLines="Both"
+                    <div class="row"   >
+                        <div class="row"  style="vertical-align: top;">
+                            <div class="col-lg-4"  style="vertical-align: top; width: 600px;">
+                                <asp:GridView CssClass="table table-striped"  ID="GvRAbillSub" runat="server" AutoGenerateColumns="false" GridLines="Both"
                                     OnRowCommand="GvRAbillSub_RowCommand" EmptyDataText="No Record Found">
                                     <Columns>
                                         <asp:TemplateField HeaderText="S.No">
@@ -97,152 +97,152 @@
                                     <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
                                 </div>
                                 <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
-                                    PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False" DynamicServicePath=""
+                                    PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
                                     Enabled="True">
                                 </cc1:ModalPopupExtender>
                                 <asp:Panel ID="Panel1" runat="server" Width="810px" Height="250px" Style="display: none;
                                     border-color: Maroon; background-color: #F7F8E0;">
                                     <div class="row"  style="width: 810px; vertical-align: top;">
-                                        <tr>
-                                            <td style="width: 150px;">
+                                        <div class="row" >
+                                            <div class="col-lg-4"  style="width: 150px;">
                                                 Project
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 <asp:Label ID="LblProject" runat="server" AutoPostBack="True"  >
                                                 </asp:Label>
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 Address
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 <asp:Label ID="Lbladdressview" runat="server" onkeyup="valid(this)" onblur="valid(this)"
                                                     ReadOnly="true"  ></asp:Label>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 150px;">
+                                            </div>
+                                        </div>
+                                        <div class="row" >
+                                            <div class="col-lg-4"  style="width: 150px;">
                                                 Bill No
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 <asp:Label ID="txtbillNo" runat="server" onkeyup="valid(this)" onblur="valid(this)"
                                                      ></asp:Label>
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 Bill Submitted Date
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 <asp:Label ID="Txtbillsubmitteddate" runat="server"   onkeyup="valid(this)"
                                                     onblur="valid(this)"></asp:Label>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
+                                            </div>
+                                        </div>
+                                        <div class="row" >
+                                            <div class="col-lg-4" >
                                                 Bill Certification Date
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 <asp:Label ID="Txtbillcertificationdate" runat="server"   onkeyup="valid(this)"
                                                     onblur="valid(this)"></asp:Label>
-                                            </td>
-                                        </tr>
-                                        <tr style="vertical-align: top;">
-                                            <td>
+                                            </div>
+                                        </div>
+                                        <div class="row"  style="vertical-align: top;">
+                                            <div class="col-lg-4" >
                                                 Net Amount
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 <asp:Label ID="txtNetReceivable" runat="server"   onkeyup="valid(this)"
                                                     BackColor="AliceBlue" onblur="valid(this)"></asp:Label>
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 Net Balance Amount
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 <asp:Label ID="LblNetBalanceamt" runat="server"   onkeyup="valid(this)"
                                                     BackColor="AliceBlue" onblur="valid(this)"></asp:Label>
-                                            </td>
-                                        </tr>
-                                        <tr style="vertical-align: top;">
-                                            <td>
+                                            </div>
+                                        </div>
+                                        <div class="row"  style="vertical-align: top;">
+                                            <div class="col-lg-4" >
                                                 Receviable Amount
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 <asp:TextBox CssClass="form-control" ID="txtAmountReceived" runat="server"   onkeyup="valid(this)"
                                                     onblur="valid(this)" OnTextChanged="txtAmountReceived_TextChanged" AutoPostBack="true"
                                                     Enabled="true"></asp:TextBox>
                                                      <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtAmountReceived"
                                         FilterType="Custom, Numbers" ValidChars=".">
                                         </cc1:FilteredTextBoxExtender>
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 Balance Amount
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 <asp:TextBox CssClass="form-control" ID="txtReceivable" runat="server"   onkeyup="valid(this)"
                                                     onblur="valid(this)"></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtReceivable"
                                         FilterType="Custom, Numbers" ValidChars=".">
                                         </cc1:FilteredTextBoxExtender>
-                                            </td>
-                                        </tr>
-                                        <tr style="vertical-align: top;">
-                                            <td>
+                                            </div>
+                                        </div>
+                                        <div class="row"  style="vertical-align: top;">
+                                            <div class="col-lg-4" >
                                                 Bank Name
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 <asp:TextBox CssClass="form-control" ID="TxtBankname" runat="server"   onkeyup="valid(this)"
                                                     onblur="valid(this)"></asp:TextBox>
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 Cheque No./RTGS
-                                            </td>
-                                            <td>
+                                            </div>
+                                            <div class="col-lg-4" >
                                                 <asp:TextBox CssClass="form-control" ID="txtChequeNoRTGS" runat="server"   onkeyup="valid(this)"
                                                     onblur="valid(this)"></asp:TextBox>
-                                            </td>
-                                            <tr>
-                                                <td>
+                                            </div>
+                                            <div class="row" >
+                                                <div class="col-lg-4" >
                                                     Cheque No./RTGS Date
-                                                </td>
-                                                <td>
+                                                </div>
+                                                <div class="col-lg-4" >
                                                     <asp:TextBox CssClass="form-control" ID="txtChequeNoRTGSDate" runat="server"   onkeyup="valid(this)"
                                                         onblur="valid(this)"></asp:TextBox>
                                                     <cc1:CalendarExtender ID="CalendarExtender4" runat="server" TargetControlID="txtChequeNoRTGSDate"
                                                         CssClass="cal_Theme1">
                                                     </cc1:CalendarExtender>
-                                                </td>
-                                                <td>
+                                                </div>
+                                                <div class="col-lg-4" >
                                                     Remarks
-                                                </td>
-                                                <td>
+                                                </div>
+                                                <div class="col-lg-4" >
                                                     <asp:TextBox CssClass="form-control" ID="txtRemarks" runat="server"   onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
-                                                </td>
-                                            </tr>
-                                        </tr>
-                                        <tr style="vertical-align: top;">
-                                            <td colspan="4" style="text-align: center;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row"  style="vertical-align: top;">
+                                            <div class="col-lg-4"  colspan="4" style="text-align: center;">
                                                 <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" class="button-bg" Text="Save" OnClick="btnSubmit_Click"
                                                      />
                                                 <asp:Button CssClass="btn btn-primary" ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"
                                                      />
-                                            </td>
-                                        </tr>
+                                            </div>
+                                        </div>
                                       </div>
                                 </asp:Panel>
-                            </td>
-                        </tr>
+                            </div>
+                        </div>
                       </div>
                     <div style="display: none">
                         <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
                     </div>
                     <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
-                        PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False" DynamicServicePath=""
+                        PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False"  
                         Enabled="True">
                     </cc1:ModalPopupExtender>
                     <asp:Panel ID="Panel2" runat="server" Width="810px" Height="280px" Style="display: none;
                         border-color: Maroon; background-color: #F7F8E0;">
                         <div class="row"  style="width: 810px; vertical-align: top;">
-                            <tr>
-                                <td>
-                                    <asp:GridView ID="GvCertifiedView" runat="server" AutoGenerateColumns="false" GridLines="Both"
+                            <div class="row" >
+                                <div class="col-lg-4" >
+                                    <asp:GridView CssClass="table table-striped"  ID="GvCertifiedView" runat="server" AutoGenerateColumns="false" GridLines="Both"
                                         EmptyDataText="No Record Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -302,17 +302,17 @@
                                             </asp:TemplateField>
                                         </Columns>
                                     </asp:GridView>
-                                </td>
-                            </tr>
-                            <tr style="vertical-align: top;">
-                                <td colspan="4" style="text-align: center;">
-                                    <tr style="vertical-align: top;">
-                                        <td colspan="4" style="text-align: center;">
+                                </div>
+                            </div>
+                            <div class="row"  style="vertical-align: top;">
+                                <div class="col-lg-4"  colspan="4" style="text-align: center;">
+                                    <div class="row"  style="vertical-align: top;">
+                                        <div class="col-lg-4"  colspan="4" style="text-align: center;">
                                             <asp:Button CssClass="btn btn-primary" ID="Button4" runat="server" class="button-bg" Text="Cancel" OnClick="Button4_Click"
                                                 Style="width: auto; text-align: center" />
-                                        </td>
-                                </td>
-                            </tr>
+                                        </div>
+                                </div>
+                            </div>
                           </div>
                     </asp:Panel>
                 </div>

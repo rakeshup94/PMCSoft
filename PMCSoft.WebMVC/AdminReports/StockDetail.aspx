@@ -6,20 +6,20 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 940px;">
-                    <div id="rightnow">
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                <div class="card"    >
+                    <div class="card-body">
                         <h3 class="reallynow">
                             Stock Detail</h3>
                         <div class="row"  style="width: 930px">
-                            <tr>
-                                <td style="font-weight: bold;">
+                            <div class="row" >
+                                <div class="col-lg-4"  style="font-weight: bold;">
                                     Project:&nbsp;&nbsp;&nbsp;<asp:Label ID="lblProj" runat="server"></asp:Label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                 <asp:GridView ID="GridView5" runat="server" AutoGenerateColumns="false" Width="900px">
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4"  colspan="2">
+                                 <asp:GridView CssClass="table table-striped"  ID="GridView5" runat="server" AutoGenerateColumns="false" Width="900px">
                                                             <Columns>
                                                                 <asp:TemplateField HeaderText="Item Name">
                                                                     <ItemTemplate>
@@ -44,8 +44,8 @@
                                                             </Columns>
                                                             <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
                                                         </asp:GridView>
-                                </td>
-                            </tr>
+                                </div>
+                            </div>
                           </div>
                     </div>
         </ContentTemplate>

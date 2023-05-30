@@ -7,207 +7,207 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="wrapper">
-        <div id="content" style="width: 1500px;">
-            <div id="rightnow">
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+        <div class="card"  style="width: 1500px;">
+            <div class="card-body">
                 <%--<h3 style="margin-right:80">
                               AHLUWALIA CONTRACTS (INDIA) LTD<br />
                            Work Programme</h3>--%>
                 <div class="row"  style="width: 1400px;" border="0">
-                    <tr>
+                    <div class="row" >
                         <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="100px" />
                       
-                    </tr>
+                    </div>
                   </div>
                 <br />
                 <br />
                 <br />
                 <div class="row"  style="width: 1500px;">
-                    <tr>
-                        <td style="text-align: center; font-size: 15px; font-family: Cambria; width: 150px;">
+                    <div class="row" >
+                        <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria; width: 150px;">
                             Project
-                        </td>
-                        <td>
+                        </div>
+                        <div class="col-lg-4" >
                             <asp:Label ID="LblProject" runat="server"></asp:Label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div class="col-lg-4"  colspan="2">
                             <div class="row"  style="width: 1500px;">
-                                <tr>
-                                    <td colspan="23">
+                                <div class="row" >
+                                    <div class="col-lg-4"  colspan="23">
                                         <asp:Repeater ID="Repeater1" runat="server" OnItemDataBound="Repeater1_ItemDataBound">
                                             <HeaderTemplate>
                                                 <div class="row"  style="width: 1500px; border: 1px solid black; border-collapse: collapse;">
-                                                    <tr>
-                                                        <td rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
+                                                    <div class="row" >
+                                                        <div class="col-lg-4"  rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;">
                                                             Bill.No
-                                                        </td>
-                                                        <td rowspan="2" style="width: 70px; text-align: center; border: 1px solid black;
+                                                        </div>
+                                                        <div class="col-lg-4"  rowspan="2" style="width: 70px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;" visible="false">
                                                             Bill Period
-                                                        </td>
-                                                        <td rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
+                                                        </div>
+                                                        <div class="col-lg-4"  rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;" visible="false">
                                                             Bill Submitted Date
-                                                        </td>
-                                                        <td rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
+                                                        </div>
+                                                        <div class="col-lg-4"  rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;" visible="false">
                                                             Bill Certification Date
-                                                        </td>
-                                                        <td rowspan="2" style="width: 130px; text-align: center; border: 1px solid black;
+                                                        </div>
+                                                        <div class="col-lg-4"  rowspan="2" style="width: 130px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;">
                                                             Bill Certification Amount
-                                                        </td>
-                                                        <td rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
+                                                        </div>
+                                                        <div class="col-lg-4"  rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;">
                                                             Service Tax
-                                                        </td>
-                                                        <td rowspan="2" style="width: 150px; text-align: center; border: 1px solid black;
+                                                        </div>
+                                                        <div class="col-lg-4"  rowspan="2" style="width: 150px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;">
                                                             Service Tax on Foc
-                                                        </td>
-                                                        <td rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
+                                                        </div>
+                                                        <div class="col-lg-4"  rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;">
                                                             Mobilization Advance received
-                                                        </td>
-                                                        <td rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
+                                                        </div>
+                                                        <div class="col-lg-4"  rowspan="2" style="width: 100px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;">
                                                             Secured Advance received
-                                                        </td>
-                                                        <td rowspan="2" style="width: 130px; text-align: center; border: 1px solid black;
+                                                        </div>
+                                                        <div class="col-lg-4"  rowspan="2" style="width: 130px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;">
                                                             Total
-                                                        </td>
-                                                        <td colspan="7" style="text-align: center; width: 100px; border: 1px solid black;
+                                                        </div>
+                                                        <div class="col-lg-4"  colspan="7" style="text-align: center; width: 100px; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;">
                                                             Deduction
-                                                        </td>
-                                                        <td rowspan="2" style="width: 30px; text-align: center; border: 1px solid black;
+                                                        </div>
+                                                        <div class="col-lg-4"  rowspan="2" style="width: 30px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;">
                                                             Receivable
-                                                        </td>
-                                                        <td rowspan="2" style="width: 120px; text-align: center; border: 1px solid black;
+                                                        </div>
+                                                        <div class="col-lg-4"  rowspan="2" style="width: 120px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;">
                                                             Receivable Amount
-                                                        </td>
-                                                        <td rowspan="2" style="width: 120px; text-align: center; border: 1px solid black;
+                                                        </div>
+                                                        <div class="col-lg-4"  rowspan="2" style="width: 120px; text-align: center; border: 1px solid black;
                                                             font-weight: bold; background-color: #D8D8D8;">
                                                             Net Receivable
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4"  style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                             font-weight: bold; width: 100px">
                                                             TDS @2%
-                                                        </td>
-                                                        <td style="text-align: left; border: 1px solid black; background-color: #D8D8D8;
+                                                        </div>
+                                                        <div class="col-lg-4"  style="text-align: left; border: 1px solid black; background-color: #D8D8D8;
                                                             font-weight: bold; width: 100px">
                                                             Retention Money Deductd
-                                                        </td>
-                                                        <td style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                        </div>
+                                                        <div class="col-lg-4"  style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                             font-weight: bold; width: 100px">
                                                             WCT
-                                                        </td>
-                                                        <td style="text-align: left; border: 1px solid black; background-color: #D8D8D8;
+                                                        </div>
+                                                        <div class="col-lg-4"  style="text-align: left; border: 1px solid black; background-color: #D8D8D8;
                                                             font-weight: bold; width: 100px;">
                                                             Mobilization Advance Deducted
-                                                        </td>
-                                                        <td style="text-align: left; border: 1px solid black; background-color: #D8D8D8;
+                                                        </div>
+                                                        <div class="col-lg-4"  style="text-align: left; border: 1px solid black; background-color: #D8D8D8;
                                                             font-weight: bold; width: 150px;">
                                                             Secured Advance Adjusted
-                                                        </td>
-                                                        <td style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                        </div>
+                                                        <div class="col-lg-4"  style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                             font-weight: bold; width: 150px;">
                                                             Other Deduction
-                                                        </td>
-                                                        <td style="text-align: center;width: 100px; border: 1px solid black; background-color: #D8D8D8;
+                                                        </div>
+                                                        <div class="col-lg-4"  style="text-align: center;width: 100px; border: 1px solid black; background-color: #D8D8D8;
                                                             font-weight: bold;">
                                                             Total Deduction
-                                                        </td>
+                                                        </div>
                                             </HeaderTemplate>
                                             <ItemTemplate>
-                                                <tr>
-                                                    <td style="border: 1px solid black; text-align: center;">
+                                                <div class="row" >
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
                                                         <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                         <asp:Label ID="RaBillNo" runat="server" Font-Size="15px" Text='<%#Bind("RaBillNo") %>'></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: right;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
                                                         <asp:Label ID="Billperiod" runat="server" Font-Size="15px" Width="70px" Text='<%#Bind("Billperiod") %>'></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: center;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
                                                         <asp:Label ID="Billsubmitteddate" Font-Size="15px" runat="server" Width="100px" Text='<%#Bind("Billsubmitteddate") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: center;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
                                                         <asp:Label ID="BillCertificationDate" Font-Size="15px" runat="server" Width="100px"
                                                             Text='<%#Bind("BillCertificationDate") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: right;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
                                                         <asp:Label ID="BillAmount" Font-Size="15px" runat="server" Width="100px" Text='<%#Bind("BillAmount") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align:  right;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align:  right;">
                                                         <asp:Label ID="ServiceTex" Font-Size="15px" runat="server" Width="100px" Text='<%#Bind("ServiceTex") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: right;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
                                                         <asp:Label ID="ServiceTexonFoc" runat="server" Font-Size="15px" Width="100px" Text='<%#Bind("ServiceTexonFoc") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: left;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: left;">
                                                         <asp:Label ID="MobilizationAdvancereceived" Font-Size="15px" runat="server" Width="100px"
                                                             Text='<%#Bind("MobilizationAdvancereceived") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: left;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: left;">
                                                         <asp:Label ID="SecuredAdvancereceived" Font-Size="15px" runat="server" Width="100px"
                                                             Text='<%#Bind("SecuredAdvancereceived") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: right;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
                                                         <asp:Label ID="Total" runat="server" Font-Size="15px" Width="100px" Text='<%#Bind("Total") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: right;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
                                                         <asp:Label ID="tds" runat="server" Font-Size="15px" Width="100px" Text='<%#Bind("tds") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: right;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
                                                         <asp:Label ID="RetentionMoneyDeductd" Font-Size="15px" runat="server" Width="100px"
                                                             Text='<%#Bind("RetentionMoneyDeductd") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: right;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
                                                         <asp:Label ID="WCT" runat="server" Width="100px" Font-Size="15px" Text='<%#Bind("WCT") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align:  center;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align:  center;">
                                                         <asp:Label ID="MobilizationAdvanceDeducted" Font-Size="15px" runat="server" Width="30px"
                                                             Text='<%#Bind("MobilizationAdvanceDeducted") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: left;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: left;">
                                                         <asp:Label ID="SecuredAdvanceAdjusted" Font-Size="15px" runat="server" Width="30px"
                                                             Text='<%#Bind("SecuredAdvanceAdjusted") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: right;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
                                                         <asp:Label ID="OtherDeduction" Font-Size="15px" runat="server" Width="100px" Text='<%#Bind("OtherDeduction") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: right;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
                                                         <asp:Label ID="TotalDeduction" Font-Size="15px" runat="server" Width="100px" Text='<%#Bind("TotalDeduction") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: right;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
                                                         <asp:Label ID="Receivable" Font-Size="15px" runat="server" Width="100px" Text='<%#Bind("Receivable") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                    <td>
-                                                        <asp:GridView ID="Gvcertified" runat="server" AutoGenerateColumns="false" GridLines="Both"
+                                                    </div>
+                                                    <div class="col-lg-4" >
+                                                        <asp:GridView CssClass="table table-striped"  ID="Gvcertified" runat="server" AutoGenerateColumns="false" GridLines="Both"
                                                             EmptyDataText="No Amount Receive" Width="300">
                                                             <Columns>
                                                                 <asp:TemplateField HeaderText="S.No" Visible="false">
@@ -237,102 +237,102 @@
                                                                 </asp:TemplateField>
                                                             </Columns>
                                                         </asp:GridView>
-                                                    </td>
-                                                    <td style="border: 1px solid black; text-align: right;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
                                                         <asp:Label ID="NetReceivable" runat="server" Width="120px" Text='<%#Bind("NetReceivable") %>'>
                                                         </asp:Label>
-                                                    </td>
-                                                </tr>
+                                                    </div>
+                                                </div>
                                             </ItemTemplate>
                                             <FooterTemplate>
-                                                <tr>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8;">
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8;">
-                                                    </td>
-                                                    <td style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                <div class="row" >
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                         font-weight: bold;">
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         Total:
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblbillcertifiedamt" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblServiceTax" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblServiceTaxonFoc" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblmobilizationAdvanceReceived" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblSecuredAdvanceReceived" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lbltotal" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lbltds" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblReturntionmoneyDeduced" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblwct" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblMobilizationAdvanceDeducted" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblSecuredAdvanceAdjust" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblotherduction" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblTotalduction" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblreceivable" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: left;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: left;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblamtreceived" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: left;
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: left;
                                                         font-weight: bold;">
                                                         <asp:Label ID="lblNetReceivable" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                    <td style="border: 1px solid black; background-color: #D8D8D8; text-align: center;">
+                                                    </div>
+                                                    <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;">
                                                         <asp:Label ID="lblNetReceivable3" runat="server" Text=""></asp:Label>
-                                                    </td>
-                                                </tr>
+                                                    </div>
+                                                </div>
                                                   </div>
                                             </FooterTemplate>
                                         </asp:Repeater>
-                                    </td>
-                                </tr>
+                                    </div>
+                                </div>
                               </div>
-                        </td>
-                    </tr>
+                        </div>
+                    </div>
                   </div>
             </div>
         </div>

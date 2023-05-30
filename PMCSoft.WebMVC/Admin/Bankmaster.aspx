@@ -13,21 +13,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 940px;">
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                <div class="card"    >
                     <cc1:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0">
                         <cc1:TabPanel ID="TabPanel1" runat="server" TabIndex="0">
                             <HeaderTemplate>
                                 Bank
                             </HeaderTemplate>
                             <ContentTemplate>
-                                <div id="rightnow">
+                                <div class="card-body">
                                     <h3 class="reallynow">
                                         Bank Detail</h3>
                                     <div class="row"  style="width: 910px;">
-                                        <tr>
-                                            <td style="vertical-align: top;">
-                                                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Width="540px"
+                                        <div class="row" >
+                                            <div class="col-lg-4"  style="vertical-align: top;">
+                                                <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="540px"
                                                     OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowEditing="GridView1_RowEditing"
                                                     OnRowUpdating="GridView1_RowUpdating">
                                                     <Columns>
@@ -54,32 +54,32 @@
                                                     </Columns>
                                                     <HeaderStyle CssClass="reallynow" />
                                                 </asp:GridView>
-                                            </td>
-                                            <td style="width: 390px; vertical-align: top;">
-                                                <div id="rightnow">
+                                            </div>
+                                            <div class="col-lg-4"  style="width: 390px; vertical-align: top;">
+                                                <div class="card-body">
                                                     <h3 class="reallynow">
                                                         Add Bank</h3>
                                                     <div class="row"  style="width: 380;">
-                                                        <tr>
-                                                            <td style="width: 100px;">
+                                                        <div class="row" >
+                                                            <div class="col-lg-4"  style="width: 100px;">
                                                                 Bank Name
-                                                            </td>
-                                                            <td>
+                                                            </div>
+                                                            <div class="col-lg-4" >
                                                                 <asp:TextBox CssClass="form-control" ID="txtbankname" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)"></asp:TextBox>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="2" style="text-align: center;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row" >
+                                                            <div class="col-lg-4"    >
                                                                 <asp:Button CssClass="btn btn-primary" ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Submit" />
                                                                 <asp:Button CssClass="btn btn-primary" ID="btnCancle" runat="server" OnClick="btnCancle_Click" Text="Cancle"
                                                                     CausesValidation="False" />
-                                                            </td>
-                                                        </tr>
+                                                            </div>
+                                                        </div>
                                                       </div>
                                                 </div>
-                                            </td>
-                                        </tr>
+                                            </div>
+                                        </div>
                                       </div>
                                 </div>
                             </ContentTemplate>
@@ -89,100 +89,100 @@
                                 Branch</HeaderTemplate>
                             <ContentTemplate>
                                 <div class="row"  style="width: 900px;">
-                                    <tr>
-                                        <td>
-                                            <div id="rightnow">
+                                    <div class="row" >
+                                        <div class="col-lg-4" >
+                                            <div class="card-body">
                                                 <h3 class="reallynow">
                                                     Add Branch</h3>
                                                 <div class="row"  style="width: 330px;">
-                                                    <tr>
-                                                        <td style="width: 100px;">
+                                                    <div class="row" >
+                                                        <div class="col-lg-4"  style="width: 100px;">
                                                             Bank
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:DropDownList CssClass="form-select" ID="ddlbank" runat="server"  >
                                                             </asp:DropDownList>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4" >
                                                             Branch
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:TextBox CssClass="form-control" ID="txtBranch" runat="server" onkeyup="valid(this)" onblur="valid(this)"
                                                                  ></asp:TextBox>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4" >
                                                             Address
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:TextBox CssClass="form-control" ID="txtadress" runat="server" TextMode="MultiLine"   onkeyup="valid(this)"
                                                                 onblur="valid(this)"></asp:TextBox>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4" >
                                                             Country
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:DropDownList CssClass="form-select" ID="ddlcountry" runat="server"   AutoPostBack="true"
                                                                 OnSelectedIndexChanged="ddlcountry_SelectedIndexChanged">
                                                             </asp:DropDownList>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4" >
                                                             Satate
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:DropDownList CssClass="form-select" ID="ddlsatete" runat="server"   AutoPostBack="true"
                                                                 OnSelectedIndexChanged="ddlsatete_SelectedIndexChanged">
                                                             </asp:DropDownList>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4" >
                                                             City
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:DropDownList CssClass="form-select" ID="ddlCity" runat="server"  >
                                                             </asp:DropDownList>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4" >
                                                             ZipCode
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:TextBox CssClass="form-control" ID="txtZipcode" runat="server" MaxLength="6"  ></asp:TextBox>
                                                             <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender7" runat="server" FilterType="Custom, Numbers"
                                                                 TargetControlID="txtZipcode">
                                                             </cc1:FilteredTextBoxExtender>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4"  colspan="2">
                                                             <asp:Button CssClass="btn btn-primary" ID="btnbranchsave" runat="server" OnClick="btnbranchsave_Click" Text="Save"
                                                                 Width="70px" />
                                                             <asp:Button CssClass="btn btn-primary" ID="btnbranchcancle" runat="server" CausesValidation="false" OnClick="btnbranchcancle_Click"
                                                                 Text="Cancle" Width="70px" />
-                                                        </td>
-                                                    </tr>
+                                                        </div>
+                                                    </div>
                                                   </div>
                                             </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="vertical-align: top;">
-                                            <div id="rightnow">
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="col-lg-4"  style="vertical-align: top;">
+                                            <div class="card-body">
                                                 <h3 class="reallynow">
                                                     Branch Detail</h3>
                                                 <div class="row"  style="width: 900px;">
-                                                    <tr>
-                                                        <td style="vertical-align: top;">
-                                                            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" Width="880px"
+                                                    <div class="row" >
+                                                        <div class="col-lg-4"  style="vertical-align: top;">
+                                                            <asp:GridView CssClass="table table-striped"  ID="GridView2" runat="server" AutoGenerateColumns="False" Width="880px"
                                                                 OnRowCancelingEdit="GridView2_RowCancelingEdit" OnRowEditing="GridView2_RowEditing"
                                                                 OnRowUpdating="GridView2_RowUpdating">
                                                                 <Columns>
@@ -238,12 +238,12 @@
                                                                 </Columns>
                                                                 <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
                                                             </asp:GridView>
-                                                        </td>
-                                                    </tr>
+                                                        </div>
+                                                    </div>
                                                   </div>
-                                        </td>
                                         </div>
-                                    </tr>
+                                        </div>
+                                    </div>
                                   </div>
                             </ContentTemplate>
                         </cc1:TabPanel>

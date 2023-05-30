@@ -6,36 +6,36 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 950px;">
-                    <div id="rightnow">
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                <div class="card"  style="width: 950px;">
+                    <div class="card-body">
                         <h3 class="reallynow">
                             HIRE CHARGES EXPENSES</h3>
                         <div class="row"  style="width: 950px;">
                     
-                            <tr>
-                                <td style="text-align: center; font-size: 15px; font-family: Cambria;">
+                            <div class="row" >
+                                <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     Project&nbsp;&nbsp;&nbsp;
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlProject_SelectedIndexChanged"
                                          >
                                     </asp:DropDownList>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center; font-size: 15px; font-family: Cambria;">
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     HIRE CHARGES EXPENSES REPORT FOR THE MONTH OF --&nbsp;&nbsp;&nbsp;
                                     <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" Width="100px"></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4" >
                                     <div class="row"  style="width: 950px;">
-                                        <tr>
-                                            <td colspan="8">
-                                                <asp:GridView ID="GvHireChargesExpenses" runat="server" AutoGenerateColumns="false"
+                                        <div class="row" >
+                                            <div class="col-lg-4"  colspan="8">
+                                                <asp:GridView CssClass="table table-striped"  ID="GvHireChargesExpenses" runat="server" AutoGenerateColumns="false"
                                                     ShowFooter="true" Width="500" OnRowDataBound="GvHireChargesExpenses_RowDataBound">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">
@@ -93,11 +93,11 @@
                                                                     FilterType="Custom, Numbers" ValidChars=".">
                                                                 </cc1:FilteredTextBoxExtender>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="180px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Nature / Purpose of work for which the equipment is  on Hire">
                                                             <ItemTemplate>
-                                                                <asp:TextBox CssClass="form-control" ID="txtNature" Width="180px" TextMode="MultiLine" runat="server" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtNature"   TextMode="MultiLine" runat="server" onkeyup="valid(this)"
                                                                     onblur="valid(this)"></asp:TextBox>
                                                             </ItemTemplate>
                                                             <FooterTemplate>
@@ -111,18 +111,18 @@
                                                     <HeaderStyle BackColor="#D8D8D8" ForeColor="#202020" />
                                                     <FooterStyle BackColor="#D8D8D8" ForeColor="#202020" />
                                                 </asp:GridView>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align: center;">
+                                            </div>
+                                        </div>
+                                        <div class="row" >
+                                            <div class="col-lg-4"  style="text-align: center;">
                                                 <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                                                 <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" 
                                                     onclick="btnCancel_Click" />
-                                            </td>
-                                        </tr>
+                                            </div>
+                                        </div>
                                       </div>
-                                </td>
-                            </tr>
+                                </div>
+                            </div>
                           </div>
                     </div>
                 </div>

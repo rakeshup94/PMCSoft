@@ -24,19 +24,9 @@ namespace PMCSoft.Web.Admin
         {
             if (!IsPostBack)
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
-                {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
-                }
-                else
-                {
-                    GetCountry();
-                    GetBank();
-                    GetBankBranch();
-                }
+                GetCountry();
+                GetBank();
+                GetBankBranch();
             }
         }
         public void GetBank()

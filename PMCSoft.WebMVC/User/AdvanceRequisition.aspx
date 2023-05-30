@@ -6,43 +6,43 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 940px;">
-                    <div id="rightnow">
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                <div class="card"    >
+                    <div class="card-body">
                         <h3 class="reallynow">
                             Advance Requisition</h3>
-                        <div class="row"  style="width: 930px; vertical-align: top;">
-                            <tr>
-                                <td style="width: 100px; text-align: center; vertical-align: top;">
+                        <div class="row"   >
+                            <div class="row" >
+                                <div class="col-lg-4"  style="width: 100px; text-align: center; vertical-align: top;">
                                     Project
-                                </td>
-                                <td style="vertical-align: top;">
+                                </div>
+                                <div class="col-lg-4"  style="vertical-align: top;">
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="True"  
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                     </asp:DropDownList>
-                                </td>
-                                <td style="width: 100px; text-align: center; vertical-align: top;">
+                                </div>
+                                <div class="col-lg-4"  style="width: 100px; text-align: center; vertical-align: top;">
                                     Vender
-                                </td>
-                                <td style="vertical-align: top;">
+                                </div>
+                                <div class="col-lg-4"  style="vertical-align: top;">
                                     <asp:DropDownList CssClass="form-select" ID="ddlVendor" runat="server"   AutoPostBack="true"
                                         OnSelectedIndexChanged="ddlVendor_SelectedIndexChanged">
                                         <asp:ListItem Text="Select Vendor"></asp:ListItem>
                                     </asp:DropDownList>
-                                </td>
-                                <td style="width: 100px; text-align: center; vertical-align: top;">
+                                </div>
+                                <div class="col-lg-4"  style="width: 100px; text-align: center; vertical-align: top;">
                                     Address
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:TextBox CssClass="form-control" ID="txtAddress" runat="server" TextMode="MultiLine" onkeyup="valid(this)"
                                         onblur="valid(this)"   ReadOnly="true" Enabled="false"></asp:TextBox>
-                                </td>
-                            </tr>
+                                </div>
+                            </div>
                           </div>
                         <div class="row"  style="width: 930px;">
-                            <tr>
-                                <td colspan="6">
-                                    <asp:GridView ID="GVAdvanceReQuisition" runat="server" AutoGenerateColumns="false"
+                            <div class="row" >
+                                <div class="col-lg-4"  colspan="6">
+                                    <asp:GridView CssClass="table table-striped"  ID="GVAdvanceReQuisition" runat="server" AutoGenerateColumns="false"
                                         ShowFooter="true" Width="915px" 
                                         OnRowDataBound="GVAdvanceReQuisition_RowDataBound" 
                                         onrowcommand="GVAdvanceReQuisition_RowCommand">
@@ -109,7 +109,7 @@
                                                                 <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
                                                             </div>
                                                             <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
-                                                                PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False" DynamicServicePath=""
+                                                                PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"  
                                                                 Enabled="True">
                                                             </cc1:ModalPopupExtender>
                                                             <asp:Panel ID="Panel2" runat="server" Style="display: none;">
@@ -117,23 +117,23 @@
                                                                                 <h3 class="reallynow">
                                                                                    Add New Type Of Payment</h3>
                                                                 <div class="row"  style="width: 350px; background-color: #EFFBFB;">
-                                                                     <tr>
-                                                <td>
+                                                                     <div class="row" >
+                                                <div class="col-lg-4" >
                                                    Type Of Payment
-                                                </td>
-                                                <td>
+                                                </div>
+                                                <div class="col-lg-4" >
                                                     <asp:TextBox CssClass="form-control" ID="txttypeofadvancerequisition" runat="server"   onkeyup="valid(this)"
                                                         onblur="valid(this)"></asp:TextBox>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" style="text-align: center;">
+                                                </div>
+                                            </div>
+                                            <div class="row" >
+                                                <div class="col-lg-4"    >
                                                     <asp:Button CssClass="btn btn-primary" ID="BtnTypeofAdvanceRequisitonAddNew" runat="server" Text="Submit" 
                                                         onclick="BtnTypeofAdvanceRequisitonAddNew_Click" />
                                                     <asp:Button CssClass="btn btn-primary" ID="btnCancelAddNewTypeOfAdvanceRequistion" runat="server" 
                                                         Text="Cancel" onclick="btnCancelAddNewTypeOfAdvanceRequistion_Click"  />
-                                                </td>
-                                            </tr>
+                                                </div>
+                                            </div>
                                                                                  
                                                                                   </div>
                                                                  </div>
@@ -144,7 +144,7 @@
                                                                 <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button"  />
                                                             </div>
                                                             <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
-                                                                PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False" DynamicServicePath=""
+                                                                PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False"  
                                                                 Enabled="True">
                                                             </cc1:ModalPopupExtender>
                                                             <asp:Panel ID="Panel1" runat="server" Style="display: none;">
@@ -152,35 +152,35 @@
                                         <h3 class="reallynow">
                                             Add Security</h3>
                                         <div class="row"  style="width: 350px; background-color: #EFFBFB;">
-                                            <tr>
-                                                <td>
+                                            <div class="row" >
+                                                <div class="col-lg-4" >
                                                     Security Advance Requisition
-                                                </td>
-                                                <td>
+                                                </div>
+                                                <div class="col-lg-4" >
                                                     <asp:TextBox CssClass="form-control" ID="txtsecurityadvancereq" runat="server"   onkeyup="valid(this)"
                                                         onblur="valid(this)"></asp:TextBox>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" style="text-align: center;">
+                                                </div>
+                                            </div>
+                                            <div class="row" >
+                                                <div class="col-lg-4"    >
                                                     <asp:Button CssClass="btn btn-primary" ID="BtnSecurityAddNewSave" runat="server" Text="Submit" 
                                                         onclick="BtnSecurityAddNewSave_Click"  />
                                                     <asp:Button CssClass="btn btn-primary" ID="BtnCancelSecurityAddNew" runat="server" Text="Cancel" 
                                                         onclick="BtnCancelSecurityAddNew_Click" />
-                                                </td>
-                                            </tr>
+                                                </div>
+                                            </div>
                                           </div>
                                     </div>
                                                                        
                                                                       
                                                             </asp:Panel>
-                                </td>
-                                <tr>
-                                    <td colspan="6" style="text-align: center;">
+                                </div>
+                                <div class="row" >
+                                    <div class="col-lg-4"  colspan="6" style="text-align: center;">
                                         <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                                         <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" CausesValidation="false" />
-                                    </td>
-                                </tr>
+                                    </div>
+                                </div>
                           </div>
                     </div>
                 </div>

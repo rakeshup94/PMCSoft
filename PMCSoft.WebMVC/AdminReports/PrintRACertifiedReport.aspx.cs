@@ -35,35 +35,25 @@ namespace PMCSoft.Web.AdminReports
                 }
                 if (!IsPostBack)
                 {
-                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
-                    {
-                        Session.Clear();
-                        Session.Abandon();
-                        Session.RemoveAll();
-                        Response.Redirect("~/Login.aspx?Value=" + "2");
-                    }
-                    else
-                    {
-                        string strReq = "";
-                        strReq = Request.RawUrl;
-                        strReq = strReq.Substring(strReq.IndexOf('?') + 1);
+                    string strReq = "";
+                    strReq = Request.RawUrl;
+                    strReq = strReq.Substring(strReq.IndexOf('?') + 1);
 
-                        if (!strReq.Equals(""))
-                        {
-                            strReq = DecryptQueryString(strReq);
-                            string[] arrMsgs = strReq.Split('&');
-                            string[] arrIndMsg;
+                    if (!strReq.Equals(""))
+                    {
+                        strReq = DecryptQueryString(strReq);
+                        string[] arrMsgs = strReq.Split('&');
+                        string[] arrIndMsg;
 
-                            string PRJID = "", ProjName = "";
-                            arrIndMsg = arrMsgs[0].Split('=');
-                            PRJID = arrIndMsg[1].ToString().Trim();
-                            ViewState["ProjectId"] = PRJID.ToString();
-                            arrIndMsg = arrMsgs[1].Split('=');
-                            ProjName = arrIndMsg[1].ToString().Trim();
-                            LblProject.Text = ProjName.ToString();
-                            GridBind();
-                            GetValue();
-                        }
+                        string PRJID = "", ProjName = "";
+                        arrIndMsg = arrMsgs[0].Split('=');
+                        PRJID = arrIndMsg[1].ToString().Trim();
+                        ViewState["ProjectId"] = PRJID.ToString();
+                        arrIndMsg = arrMsgs[1].Split('=');
+                        ProjName = arrIndMsg[1].ToString().Trim();
+                        LblProject.Text = ProjName.ToString();
+                        GridBind();
+                        GetValue();
                     }
                 }
             }

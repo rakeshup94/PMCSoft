@@ -31,7 +31,7 @@
 <body>
     <div style="text-align: center; margin-top: 100px; font-size: 25px; color: White;">
         Demo Client (India) Ltd.</div>
-    <div id="wrapper">
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
         <div class="user-icon">
         </div>
         <div class="pass-icon">

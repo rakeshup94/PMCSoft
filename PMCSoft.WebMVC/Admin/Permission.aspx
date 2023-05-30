@@ -81,42 +81,42 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-        <Triggers>
+        <div class="row" iggers>
             <asp:PostBackTrigger ControlID="btnSubmit" />
         </Triggers>
         <ContentTemplate>
             <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                 <ContentTemplate>
-                    <div id="wrapper">
-                        <div id="content" style="width: 940px;">
-                            <div id="rightnow">
+                    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                        <div class="card"    >
+                            <div class="card-body">
                                 <h3 class="reallynow">
                                     Permission
                                 </h3>
-                                <div class="row"  style="width: 930px; vertical-align: top;">
-                                    <tr>
-                                        <td style="font-size: 15px; font-family: Cambria;">
+                                <div class="row"   >
+                                    <div class="row" >
+                                        <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria;">
                                             Project
-                                        </td>
-                                        <td>
+                                        </div>
+                                        <div class="col-lg-4" >
                                             <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"  
                                                 OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                             </asp:DropDownList>
-                                        </td>
-                                        <td>
+                                        </div>
+                                        <div class="col-lg-4" >
                                             User
-                                        </td>
-                                        <td>
+                                        </div>
+                                        <div class="col-lg-4" >
                                             <asp:DropDownList CssClass="form-select" ID="ddluser" runat="server" AutoPostBack="true"   OnSelectedIndexChanged="ddluser_SelectedIndexChanged">
                                             </asp:DropDownList>
-                                        </td>
-                                    </tr>
+                                        </div>
+                                    </div>
                                   </div>
                                 <div class="row" >
-                                    <tr style="vertical-align: top;">
-                                        <td style="vertical-align: top; width: 1000px;" colspan="2">
+                                    <div class="row"  style="vertical-align: top;">
+                                        <div class="col-lg-4"  style="vertical-align: top; width: 1000px;" colspan="2">
                                             <asp:Panel ID="Panel2" runat="server" Height="900px" ScrollBars="Horizontal">
-                                                <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="false" Width="900px"
+                                                <asp:GridView CssClass="table table-striped"  ID="GridView4" runat="server" AutoGenerateColumns="false" Width="900px"
                                                     OnRowDataBound="GridView4_RowDataBound">
                                                     <Columns>
                                                         <asp:TemplateField>
@@ -132,7 +132,7 @@
                                                                     Font-Size="15px">
                                                                 </asp:LinkButton>
                                                                 <asp:HiddenField ID="hdnHeaderTransId" runat="server" Value='<%#Bind("TransId") %>' />
-                                                                <asp:GridView ID="GVPermission" runat="server" AutoGenerateColumns="false" DataKeyNames="TransID"
+                                                                <asp:GridView CssClass="table table-striped"  ID="GVPermission" runat="server" AutoGenerateColumns="false" DataKeyNames="TransID"
                                                                     GridLines="Both" AllowPaging="false">
                                                                     <Columns>
                                                                         <asp:TemplateField HeaderText="S.No">
@@ -166,14 +166,14 @@
                                                     <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" HorizontalAlign="Left" />
                                                 </asp:GridView>
                                             </asp:Panel>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" style="text-align: center;">
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="col-lg-4"    >
                                             <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                                             <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
-                                        </td>
-                                    </tr>
+                                        </div>
+                                    </div>
                                   </div>
                             </div>
                         </div>

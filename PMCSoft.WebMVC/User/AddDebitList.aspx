@@ -6,14 +6,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 940px;">
-                    <div id="rightnow">
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                <div class="card"    >
+                    <div class="card-body">
                         <h3 class="reallynow">
                             Creditor List</h3>
                         <div class="row"  style="width: 930px">
-                            <tr>
-                                <td>
+                            <div class="row" >
+                                <div class="col-lg-4" >
                                 
                                     <cc1:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0" Width="920px">
                                         <cc1:TabPanel ID="Tab1" runat="server" TabIndex="0">
@@ -21,30 +21,30 @@
                                                 Add Creditor List</HeaderTemplate>
                                             <ContentTemplate>
                                                 <div class="row"  style="width: 900px;">
-                                                    <tr>
-                                                        <td style="text-align: center;">
+                                                    <div class="row" >
+                                                        <div class="col-lg-4"  style="text-align: center;">
                                                             Project Name
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProject_SelectedIndexChanged"
                                                                  >
                                                             </asp:DropDownList>
-                                                        </td>
-                                                        <td style="text-align: center;">
+                                                        </div>
+                                                        <div class="col-lg-4"  style="text-align: center;">
                                                             Forward To
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:DropDownList CssClass="form-select" ID="ddlEmployee" runat="server" AutoPostBack="True"  >
                                                             </asp:DropDownList>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4"  colspan="4">
                                                             <asp:Panel ID="Panel1" runat="server" Visible="False" Width="880px">
                                                                 <div class="row"  style="width: 900px; vertical-align: top;">
-                                                                    <tr style="vertical-align: top;">
-                                                                        <td style="vertical-align: top;">
-                                                                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Width="870px"
+                                                                    <div class="row"  style="vertical-align: top;">
+                                                                        <div class="col-lg-4"  style="vertical-align: top;">
+                                                                            <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="870px"
                                                                                 OnRowDataBound="GridView1_RowDataBound" ShowFooter="True" OnRowDeleting="GridView1_RowDeleting"
                                                                                 OnRowCommand="GridView1_RowCommand">
                                                                                 <Columns>
@@ -95,148 +95,148 @@
                                                                                 <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                                                                 <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
                                                                             </asp:GridView>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="text-align: center;">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row" >
+                                                                        <div class="col-lg-4"  style="text-align: center;">
                                                                             <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                                                                             <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
-                                                                        </td>
-                                                                    </tr>
+                                                                        </div>
+                                                                    </div>
                                                                   </div>
                                                             </asp:Panel>
                                                             <div style="display: none">
                                                                 <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
                                                             </div>
                                                             <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
-                                                                PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False" DynamicServicePath=""
+                                                                PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"  
                                                                 Enabled="True">
                                                             </cc1:ModalPopupExtender>
                                                             <asp:Panel ID="Panel2" runat="server" Style="display: none;">
                                                                 <div class="row"  style="width: 350px; background-color: #EFFBFB;">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div id="rightnow">
+                                                                    <div class="row" >
+                                                                        <div class="col-lg-4" >
+                                                                            <div class="card-body">
                                                                                 <h3 class="reallynow">
                                                                                     Party / Vendor Detail</h3>
                                                                                 <div class="row"  style="width: 325px; vertical-align: top;">
-                                                                                    <tr>
-                                                                                        <td>
+                                                                                    <div class="row" >
+                                                                                        <div class="col-lg-4" >
                                                                                             Name
-                                                                                        </td>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4" >
                                                                                             <asp:TextBox CssClass="form-control" ID="txtName" runat="server"   onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row" >
+                                                                                        <div class="col-lg-4" >
                                                                                             Address
-                                                                                        </td>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4" >
                                                                                             <asp:TextBox CssClass="form-control" ID="txtAddress" runat="server" TextMode="MultiLine"   onkeyup="valid(this)"
                                                                                                 onblur="valid(this)"></asp:TextBox>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row" >
+                                                                                        <div class="col-lg-4" >
                                                                                             Country
-                                                                                        </td>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4" >
                                                                                             <asp:DropDownList CssClass="form-select" ID="ddlCountry" runat="server" AutoPostBack="True"  
                                                                                                 OnSelectedIndexChanged="ddlCountry_SelectedIndexChanged">
                                                                                             </asp:DropDownList>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row" >
+                                                                                        <div class="col-lg-4" >
                                                                                             State
-                                                                                        </td>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4" >
                                                                                             <asp:DropDownList CssClass="form-select" ID="ddlState" runat="server" AutoPostBack="True"  
                                                                                                 OnSelectedIndexChanged="ddlState_SelectedIndexChanged">
                                                                                             </asp:DropDownList>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row" >
+                                                                                        <div class="col-lg-4" >
                                                                                             City
-                                                                                        </td>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4" >
                                                                                             <asp:DropDownList CssClass="form-select" ID="ddlCity" runat="server"  >
                                                                                             </asp:DropDownList>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row" >
+                                                                                        <div class="col-lg-4" >
                                                                                             Mobile No.
-                                                                                        </td>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4" >
                                                                                             <asp:TextBox CssClass="form-control" ID="txtMobileNo" runat="server"   MaxLength="10"></asp:TextBox>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row" >
+                                                                                        <div class="col-lg-4" >
                                                                                             Email
-                                                                                        </td>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4" >
                                                                                             <asp:TextBox CssClass="form-control" ID="txtEmail" runat="server"  ></asp:TextBox>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row" >
+                                                                                        <div class="col-lg-4" >
                                                                                             PAN No
-                                                                                        </td>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4" >
                                                                                             <asp:TextBox CssClass="form-control" ID="TxtPanNo" runat="server"  ></asp:TextBox>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row" >
+                                                                                        <div class="col-lg-4" >
                                                                                             TIN
-                                                                                        </td>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4" >
                                                                                             <asp:TextBox CssClass="form-control" ID="TxtTinNo" runat="server"  ></asp:TextBox>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row" >
+                                                                                        <div class="col-lg-4" >
                                                                                             ECC No
-                                                                                        </td>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4" >
                                                                                             <asp:TextBox CssClass="form-control" ID="TxtEccNo" runat="server"  ></asp:TextBox>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row" >
+                                                                                        <div class="col-lg-4" >
                                                                                             VAT
-                                                                                        </td>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4" >
                                                                                             <asp:TextBox CssClass="form-control" ID="TxtVat" runat="server"  ></asp:TextBox>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row" >
+                                                                                        <div class="col-lg-4" >
                                                                                             Party / Vendor Type
-                                                                                        </td>
-                                                                                        <td>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4" >
                                                                                             <asp:DropDownList CssClass="form-select" ID="ddlVendorType" runat="server" Width="185px">
                                                                                             </asp:DropDownList>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td colspan="2" style="text-align: center;">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row" >
+                                                                                        <div class="col-lg-4"    >
                                                                                             <asp:Button CssClass="btn btn-primary" ID="btnVSubmit" runat="server" Text="Submit" OnClick="btnVSubmit_Click" />
                                                                                             <asp:Button CssClass="btn btn-primary" ID="btnVCancel" runat="server" Text="Cancel" OnClick="btnVCancel_Click" />
-                                                                                        </td>
-                                                                                    </tr>
+                                                                                        </div>
+                                                                                    </div>
                                                                                   </div>
                                                                             </div>
-                                                                        </td>
-                                                                    </tr>
+                                                                        </div>
+                                                                    </div>
                                                                   </div>
                                                             </asp:Panel>
-                                                        </td>
-                                                    </tr>
+                                                        </div>
+                                                    </div>
                                                   </div>
                                             </ContentTemplate>
                                         </cc1:TabPanel>
@@ -245,19 +245,19 @@
                                                 View Creditor List</HeaderTemplate>
                                             <ContentTemplate>
                                                 <div class="row"  style="width: 900px">
-                                                    <tr>
-                                                        <td style="text-align: center;">
+                                                    <div class="row" >
+                                                        <div class="col-lg-4"  style="text-align: center;">
                                                             Project Name
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:DropDownList CssClass="form-select" ID="ddlProject1" runat="server"   AutoPostBack="true"
                                                                 OnSelectedIndexChanged="ddlProject1_SelectedIndexChanged">
                                                             </asp:DropDownList>
-                                                        </td>
-                                                        <td style="text-align: center;">
+                                                        </div>
+                                                        <div class="col-lg-4"  style="text-align: center;">
                                                             Approval Type
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:DropDownList CssClass="form-select" ID="ddlType" runat="server" AutoPostBack="true"   OnSelectedIndexChanged="ddlType_SelectedIndexChanged">
                                                                 <asp:ListItem Selected="True" Text="Select Type" Value="-1"></asp:ListItem>
                                                                 <asp:ListItem Text="Approved" Value="A"></asp:ListItem>
@@ -265,23 +265,23 @@
                                                                 <asp:ListItem Text="Disapproved" Value="D"></asp:ListItem>
                                                                 <asp:ListItem Text="Pending" Value="E"></asp:ListItem>
                                                             </asp:DropDownList>
-                                                        </td>
-                                                        <td style="text-align: center; width: 80px;">
+                                                        </div>
+                                                        <div class="col-lg-4"  style="text-align: center; width: 80px;">
                                                             Date
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="col-lg-4" >
                                                             <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" Width="100px"></asp:TextBox>
                                                             <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                                                 CssClass="cal_Theme1">
                                                             </cc1:CalendarExtender>
-                                                        </td>
-                                                        <td style="text-align: center; width: 60px;">
+                                                        </div>
+                                                        <div class="col-lg-4"  style="text-align: center; width: 60px;">
                                                             <asp:Button CssClass="btn btn-primary" ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="7">
-                                                            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="false" Width="880px"
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-lg-4"  colspan="7">
+                                                            <asp:GridView CssClass="table table-striped"  ID="GridView2" runat="server" AutoGenerateColumns="false" Width="880px"
                                                                 EmptyDataText="No Record Found">
                                                                 <Columns>
                                                                     <asp:TemplateField HeaderText="S.No">
@@ -331,14 +331,14 @@
                                                                 </Columns>
                                                                 <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
                                                             </asp:GridView>
-                                                        </td>
-                                                    </tr>
+                                                        </div>
+                                                    </div>
                                                   </div>
                                             </ContentTemplate>
                                         </cc1:TabPanel>
                                     </cc1:TabContainer>
-                                </td>
-                            </tr>
+                                </div>
+                            </div>
                           </div>
                     </div>
                 </div>

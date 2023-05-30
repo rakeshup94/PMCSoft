@@ -7,17 +7,17 @@
  <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 1000px;">
-                    <div id="rightnow">
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                <div class="card"  style="width: 1000px;">
+                    <div class="card-body">
                         <h3 class="reallynow">
                             Matrial Recive By Project</h3>
                         <div class="row"  style="width: 950px;">
-                            <tr>
+                            <div class="row" >
                                
-                            </tr>
-                            <tr>
-                                <td font-size: 15px; font-family: Cambria;">
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4"  font-size: 15px; font-family: Cambria;">
                                     Project&nbsp;&nbsp;&nbsp;
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true" 
                                         Width="140px" onselectedindexchanged="ddlProject_SelectedIndexChanged">
@@ -46,15 +46,15 @@
                                     Report
                                     <asp:Button CssClass="btn btn-primary" ID="BtnReport" runat="server" Text="Report" 
                                         onclick="BtnReport_Click" />
-                                </td>
+                                </div>
                                  
-                            </tr>
-                            <tr>
-                                <td>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4" >
                                     <div class="row"  style="width: 950px;">
-                                        <tr>
-                                            <td colspan="10">
-                                <asp:GridView ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="true"
+                                        <div class="row" >
+                                            <div class="col-lg-4"  colspan="10">
+                                <asp:GridView CssClass="table table-striped"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="true"
                                        Width="100%"  EmptyDataText="No Records Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -159,12 +159,12 @@
                                         <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                     </asp:GridView>
 
-                                            </td>
-                                        </tr>
+                                            </div>
+                                        </div>
                                         
                                       </div>
-                                </td>
-                            </tr>
+                                </div>
+                            </div>
                           </div>
                     </div>
                 </div>

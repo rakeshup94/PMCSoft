@@ -264,7 +264,7 @@ export interface Config {
     retrieve?: boolean;
 
     /**
-     * Data property name that DataTables will use to set <tr> element DOM IDs. Since: 1.10.8
+     * Data property name that DataTables will use to set <div class="row" > element DOM IDs. Since: 1.10.8
      */
     rowId?: string;
 

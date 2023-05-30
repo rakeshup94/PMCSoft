@@ -3496,7 +3496,7 @@ function _fnDraw( oSettings, ajaxComplete )
 		}
 
 		anRows[ 0 ] = $( '<tr/>', { 'class': iStripes ? asStripeClasses[0] : '' } )
-			.append( $('<td />', {
+			.append( $('<div class="col-lg-4"  />', {
 				'valign':  'top',
 				'colSpan': _fnVisbleColumns( oSettings ),
 				'class':   oSettings.oClasses.sRowEmpty
@@ -5844,7 +5844,7 @@ function _fnGetWidestNode( settings, colIdx )
 
 	var data = settings.aoData[ idx ];
 	return ! data.nTr ? // Might not have been created when deferred rendering
-		$('<td/>').html( _fnGetCellData( settings, idx, colIdx, 'display' ) )[0] :
+		$('<div class="col-lg-4" />').html( _fnGetCellData( settings, idx, colIdx, 'display' ) )[0] :
 		data.anCells[ colIdx ];
 }
 
@@ -8368,7 +8368,7 @@ var __details_add = function ( ctx, row, data, klass )
 		}
 		else {
 			// Otherwise create a row with a wrapper
-			var created = $('<tr><td></td></tr>').addClass( k );
+			var created = $('<tr><div class="col-lg-4" ></div></div>').addClass( k );
 			$('td', created)
 				.addClass( k )
 				.html( r )

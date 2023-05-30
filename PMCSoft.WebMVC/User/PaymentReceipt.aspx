@@ -6,38 +6,38 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 940px;">
-                    <div id="rightnow">
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                <div class="card"    >
+                    <div class="card-body">
                         <h3 class="reallynow">
                             Payment Receipt</h3>
                         <div class="row"  style="width: 930px;">
-                            <tr>
-                                <td style="width: 100px; text-align: center;">
+                            <div class="row" >
+                                <div class="col-lg-4"  style="width: 100px; text-align: center;">
                                     Project
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server"   AutoPostBack="True"
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                     </asp:DropDownList>
-                                </td>
-                                <td style="width: 100px; text-align: center;">
+                                </div>
+                                <div class="col-lg-4"  style="width: 100px; text-align: center;">
                                     R.A Bill No.
-                                </td>
-                                <td>
+                                </div>
+                                <div class="col-lg-4" >
                                     <asp:TextBox CssClass="form-control" ID="txtRABillNo" runat="server" Text="" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
-                                </td>
-                                <td style="text-align: center;">
+                                </div>
+                                <div class="col-lg-4"  style="text-align: center;">
                                     Date
-                                </td>
-                                <td style="width: 120px; text-align: left;">
+                                </div>
+                                <div class="col-lg-4"  style="width: 120px; text-align: left;">
                                     <asp:Label ID="lblDate1" runat="server" Font-Size="11px"></asp:Label>
                                     <asp:HiddenField ID="HiddenField2" runat="server" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="6">
-                                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" Width="910px"
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4"  colspan="6">
+                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="910px"
                                         ShowFooter="true" OnRowDataBound="GridView1_RowDataBound">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -84,14 +84,14 @@
                                         <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
                                         <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                     </asp:GridView>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="6" style="text-align: center;">
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-4"  colspan="6" style="text-align: center;">
                                     <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                                     <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
-                                </td>
-                            </tr>
+                                </div>
+                            </div>
                           </div>
                     </div>
                 </div>

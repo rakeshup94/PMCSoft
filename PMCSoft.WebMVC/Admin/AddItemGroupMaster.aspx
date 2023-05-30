@@ -1,92 +1,110 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Inherits="PMCSoft.Web.Admin.AddItemGroupMaster" Codebehind="AddItemGroupMaster.aspx.cs" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Inherits="PMCSoft.Web.Admin.AddItemGroupMaster"
+    CodeBehind="AddItemGroupMaster.aspx.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+        <div class="page-header pull-left">
+            <div class="page-title">Item Group Detail</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 940px;">
-                    <div id="rightnow">
-                        <h3 class="reallynow">
-                            Item Group Detail</h3>
-                        <div class="row"  style="width: 930px; vertical-align: top;">
-                            <tr style="vertical-align: top;">
-                            
-                                <td style="vertical-align: top; width: 600px;">
-                                    <asp:GridView ID="GVGroup" runat="server" AutoGenerateColumns="false" GridLines="Both"
-                                        OnRowCancelingEdit="GVGroup_RowCancelingEdit" OnRowEditing="GVGroup_RowEditing"
-                                        OnRowUpdating="GVGroup_RowUpdating" EmptyDataText="No Record Found">
-                                        <Columns>
-                                            <asp:TemplateField HeaderText="S.No">
-                                                <ItemTemplate>
-                                                    <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
-                                                    <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
-                                                </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="50px" />
-                                            </asp:TemplateField>
-                                            <asp:TemplateField HeaderText="Group Code">
-                                                <ItemTemplate>
-                                                    <asp:Label ID="lblGroupCode" runat="server" Text='<%#Bind("GroupCode") %>'></asp:Label>
-                                                </ItemTemplate>
-                                                <EditItemTemplate>
-                                                    <asp:TextBox CssClass="form-control" ID="txtGroupCode" runat="server" Text='<%#Bind("GroupCode") %>' onkeyup="valid(this)"
-                                                        onblur="valid(this)"></asp:TextBox>
-                                                </EditItemTemplate>
-                                                <ItemStyle Width="250px" />
-                                            </asp:TemplateField>
-                                            <asp:TemplateField HeaderText="Group Name">
-                                                <ItemTemplate>
-                                                    <asp:Label ID="lblGroupName" runat="server" Text='<%#Bind("GroupName") %>'></asp:Label>
-                                                </ItemTemplate>
-                                                <EditItemTemplate>
-                                                    <asp:TextBox CssClass="form-control" ID="txtGroupName" runat="server" Text='<%#Bind("GroupName") %>' onkeyup="valid(this)"
-                                                        onblur="valid(this)"></asp:TextBox>
-                                                </EditItemTemplate>
-                                                <ItemStyle Width="250px" HorizontalAlign="Center" />
-                                            </asp:TemplateField>
-                                            <asp:CommandField ShowEditButton="true" />
-                                        </Columns>
-                                    </asp:GridView>
-                                </td>
-                                <td style="vertical-align: top; width: 300px;">
-                                    <div id="rightnow">
-                                        <h3 class="reallynow">
-                                            Add Item Group</h3>
-                                        <div class="row"  style="width: 290px; vertical-align: top;">
-                                            <tr>
-                                                <td>
-                                                    Code
-                                                </td>
-                                                <td>
-                                                    <asp:TextBox CssClass="form-control" ID="txtCode" runat="server" MaxLength="6"   onkeyup="valid(this)"
+
+            <!--END TITLE & BREADCRUMB PAGE-->
+            <!--BEGIN CONTENT-->
+            <div class="page-content">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    Code
+                                              
+                                                    <asp:TextBox CssClass="form-control" ID="txtCode" runat="server" MaxLength="6" onkeyup="valid(this)"
                                                         onblur="valid(this)">
                                                     </asp:TextBox>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Name
-                                                </td>
-                                                <td>
-                                                    <asp:TextBox CssClass="form-control" ID="txtName" runat="server"   onkeyup="valid(this)" onblur="valid(this)">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    Name
+                                              
+                                                    <asp:TextBox CssClass="form-control" ID="txtName" runat="server" onkeyup="valid(this)"
+                                                        onblur="valid(this)">
                                                     </asp:TextBox>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" style="text-align: center;">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
-                                                </td>
-                                            </tr>
-                                          </div>
-                                    </div>
-                                </td>
-                            </tr>
-                          </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit"
+                                    OnClick="btnSubmit_Click" />
+                                <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel"
+                                    OnClick="btnCancel_Click" />
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+
+                            <div class="col-lg-12">
+                                <asp:GridView CssClass="table table-striped"  ID="GVGroup" runat="server" AutoGenerateColumns="false"
+                                    OnRowCancelingEdit="GVGroup_RowCancelingEdit" OnRowEditing="GVGroup_RowEditing"
+                                    OnRowUpdating="GVGroup_RowUpdating" EmptyDataText="No Record Found" CssClass="table table-striped">
+                                    <Columns>
+                                        <asp:TemplateField HeaderText="S.No">
+                                            <ItemTemplate>
+                                                <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
+                                                <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
+                                            </ItemTemplate>
+                                            <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Group Code">
+                                            <ItemTemplate>
+                                                <asp:Label ID="lblGroupCode" runat="server" Text='<%#Bind("GroupCode") %>'></asp:Label>
+                                            </ItemTemplate>
+                                            <EditItemTemplate>
+                                                <asp:TextBox CssClass="form-control" ID="txtGroupCode" runat="server" Text='<%#Bind("GroupCode") %>'
+                                                    onkeyup="valid(this)"
+                                                    onblur="valid(this)"></asp:TextBox>
+                                            </EditItemTemplate>
+                                            <ItemStyle Width="250px" />
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Group Name">
+                                            <ItemTemplate>
+                                                <asp:Label ID="lblGroupName" runat="server" Text='<%#Bind("GroupName") %>'></asp:Label>
+                                            </ItemTemplate>
+                                            <EditItemTemplate>
+                                                <asp:TextBox CssClass="form-control" ID="txtGroupName" runat="server" Text='<%#Bind("GroupName") %>'
+                                                    onkeyup="valid(this)"
+                                                    onblur="valid(this)"></asp:TextBox>
+                                            </EditItemTemplate>
+
+                                        </asp:TemplateField>
+                                        <asp:CommandField ShowEditButton="true" ButtonType="Button" />
+                                    </Columns>
+                                </asp:GridView>
+                            </div>
+                        </div>
+
+
+
+
                     </div>
                 </div>
             </div>
+
         </ContentTemplate>
     </asp:UpdatePanel>
 </asp:Content>

@@ -24,18 +24,8 @@ namespace PMCSoft.Web.Inventory
             //  txtOpeningDate.Text = DateTime.Now.Date.ToString("MM/dd/yyyy");
             if (!IsPostBack)
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
-                {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
-                }
-                else
-                {
-                    BindProject();
-                    GetStockOpeningDate();
-                }
+                BindProject();
+                GetStockOpeningDate();
             }
 
         }

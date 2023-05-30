@@ -13,15 +13,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper">
-                <div id="content" style="width: 935px;">
-                    <div id="rightnow">
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
+                <div class="card"  style="width: 935px;">
+                    <div class="card-body">
                         <h3 class="reallynow">
                             Project Detail</h3>
                         <div class="row"  style="width: 925px; vertical-align: top;">
-                            <tr style="vertical-align: top;">
-                                <td>
-                                    <asp:GridView ID="GridView1" runat="server" Width="910px" AutoGenerateColumns="false"
+                            <div class="row"  style="vertical-align: top;">
+                                <div class="col-lg-4" >
+                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" Width="910px" AutoGenerateColumns="false"
                                         OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -68,8 +68,8 @@
                                         </Columns>
                                         <HeaderStyle HorizontalAlign="Center" BackColor="#D9EAED" ForeColor="#202020" />
                                     </asp:GridView>
-                                </td>
-                            </tr>
+                                </div>
+                            </div>
                           </div>
                     </div>
                 </div>
