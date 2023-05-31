@@ -16,7 +16,7 @@
                                 <div class="col-lg-4"  style="width: auto; text-align: center; vertical-align: top; width: 100px;">
                                     Project
                                 </div>
-                                <div class="col-lg-4"  style="vertical-align: top;">
+                                <div class="col-lg-4"   >
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="True"  
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                     </asp:DropDownList>
@@ -24,7 +24,7 @@
                                 <div class="col-lg-4"  style="width: auto; text-align: center; vertical-align: top; width: 100px;">
                                     Vender
                                 </div>
-                                <div class="col-lg-4"  style="vertical-align: top;">
+                                <div class="col-lg-4"   >
                                     <asp:DropDownList CssClass="form-select" ID="ddlVendor" runat="server"   AutoPostBack="true"
                                         OnSelectedIndexChanged="ddlVendor_SelectedIndexChanged">
                                         <asp:ListItem Text="Select Vendor"></asp:ListItem>

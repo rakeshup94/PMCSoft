@@ -102,7 +102,7 @@
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
                                                     <asp:TextBox CssClass="form-control" ID="txtEquipmentDetail" runat="server" Text='<%#Bind("EquipmentDetail") %>'
-                                                        onkeyup="valid(this)" onblur="valid(this)" Width="175px">
+                                                        onkeyup="valid(this)" onblur="valid(this)"   >
                                                     </asp:TextBox>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">

@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <div class="row" >
-                        <div class="col-lg-4"  colspan="4" style="vertical-align: top;">
+                        <div class="col-lg-4"  colspan="4"  >
                             <asp:GridView CssClass="table table-striped"  ID="grvProjectDetails" runat="server" ShowFooter="True" AutoGenerateColumns="False"
                                 ForeColor="#333333" GridLines="None" OnRowDataBound="grvProjectDetails_RowDataBound"
                                 Width="915px" OnRowCommand="grvProjectDetails_RowCommand">

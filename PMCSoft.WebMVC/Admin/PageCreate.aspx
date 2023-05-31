@@ -12,7 +12,7 @@
                         <h3 class="reallynow">
                             Unit Detail</h3>
                         <div class="row"   >
-                            <div class="row"  style="vertical-align: top;">
+                            <div class="row"   >
                                 <div class="col-lg-4"  style="vertical-align: top; width: 600px;">
                                     <asp:GridView CssClass="table table-striped"  ID="GVPage" runat="server" AutoGenerateColumns="false" GridLines="Both">
                                         <Columns>

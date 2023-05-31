@@ -42,8 +42,8 @@
                                                         <div class="col-lg-4"  colspan="4">
                                                             <asp:Panel ID="Panel1" runat="server" Visible="False" Width="880px">
                                                                 <div class="row"  style="width: 900px; vertical-align: top;">
-                                                                    <div class="row"  style="vertical-align: top;">
-                                                                        <div class="col-lg-4"  style="vertical-align: top;">
+                                                                    <div class="row"   >
+                                                                        <div class="col-lg-4"   >
                                                                             <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="870px"
                                                                                 OnRowDataBound="GridView1_RowDataBound" ShowFooter="True" OnRowDeleting="GridView1_RowDeleting"
                                                                                 OnRowCommand="GridView1_RowCommand">

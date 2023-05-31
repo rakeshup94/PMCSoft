@@ -182,7 +182,7 @@
                 <h3 class="reallynow">Updated Notifications</h3>
                 <div class="row">
                     <div class="row">
-                        <div class="col-lg-4" style="vertical-align: top;">
+                        <div class="col-lg-4"  >
                             <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="910px"
                                 OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound" EmptyDataText="No Record Found">
                                 <Columns>

@@ -11,7 +11,7 @@
                         <h3 class="reallynow">
                             Designation Detail</h3>
                         <div class="row"   >
-                            <div class="row"  style="vertical-align: top;">
+                            <div class="row"   >
                                 <div class="col-lg-4"  style="vertical-align: top; width: 600px;">
                                     <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" OnRowCancelingEdit="GridView1_RowCancelingEdit"
                                         OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" Width="590px"

@@ -68,7 +68,7 @@
                                                                 <ItemTemplate>
                                                                     <asp:Label ID="lblWPNumber" runat="server" Text='<%#Bind("WPNumber") %>'></asp:Label>
                                                                 </ItemTemplate>
-                                                                <ItemStyle HorizontalAlign="Center" Width="160px" />
+                                                                <ItemStyle HorizontalAlign="Center"   />
                                                             </asp:TemplateField>
                                                             <asp:TemplateField HeaderText="Block">
                                                                 <ItemTemplate>
@@ -410,7 +410,7 @@
                                                                                     </cc1:FilteredTextBoxExtender>
                                                 </div>
                                                 </div>
-                                                  <div class="row"  style="vertical-align: top;">
+                                                  <div class="row"   >
                                                  <div class="col-lg-4"    >
                                                     <asp:Button CssClass="btn btn-primary" ID="BtnSaveADD" runat="server" Text="Save" OnClick="BtnSaveADD_Click"   class="button-bg"/>
                                                      <asp:Button CssClass="btn btn-primary" ID="BtnCanceladd" runat="server" Text="Cancel"  OnClick="BtnCanceladd_Click"  class="button-bg"/>

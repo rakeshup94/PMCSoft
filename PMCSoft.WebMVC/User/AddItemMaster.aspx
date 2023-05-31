@@ -12,7 +12,7 @@
                         <h3 class="reallynow">
                             Item Detail</h3>
                         <div class="row"   >
-                            <div class="row"  style="vertical-align: top;">
+                            <div class="row"   >
                                 <div class="col-lg-4" >
                                     Group Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:DropDownList CssClass="form-select" ID="ddlitemGropgrid" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlitemGropgrid_SelectedIndexChanged"

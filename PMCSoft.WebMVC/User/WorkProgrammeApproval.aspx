@@ -46,7 +46,7 @@
                                             </div>
                                             <div class="row" >
                                                 <div class="col-lg-4" >
-                                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="890px"
+                                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false"   
                                                         EmptyDataText="No Record Found" OnRowCommand="GridView1_RowCommand">
                                                         <Columns>
                                                             <asp:TemplateField HeaderText="S.No">
@@ -68,7 +68,7 @@
                                                                 <ItemTemplate>
                                                                     <asp:Label ID="lblWPNumber" runat="server" Text='<%#Bind("WPNumber") %>'></asp:Label>
                                                                 </ItemTemplate>
-                                                                <ItemStyle HorizontalAlign="Center" Width="160px" />
+                                                                <ItemStyle HorizontalAlign="Center"   />
                                                             </asp:TemplateField>
                                                             <asp:TemplateField HeaderText="Block">
                                                                 <ItemTemplate>

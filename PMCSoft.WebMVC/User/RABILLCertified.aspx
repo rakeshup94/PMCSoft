@@ -23,7 +23,7 @@
                             Submitted Bill</h3>
                     </div>
                     <div class="row"   >
-                        <div class="row"  style="vertical-align: top;">
+                        <div class="row"   >
                             <div class="col-lg-4"  style="vertical-align: top; width: 600px;">
                                 <asp:GridView CssClass="table table-striped"  ID="GvRAbillSub" runat="server" AutoGenerateColumns="false" GridLines="Both"
                                     OnRowCommand="GvRAbillSub_RowCommand" EmptyDataText="No Record Found">
@@ -144,7 +144,7 @@
                                                     onblur="valid(this)"></asp:Label>
                                             </div>
                                         </div>
-                                        <div class="row"  style="vertical-align: top;">
+                                        <div class="row"   >
                                             <div class="col-lg-4" >
                                                 Net Amount
                                             </div>
@@ -160,7 +160,7 @@
                                                     BackColor="AliceBlue" onblur="valid(this)"></asp:Label>
                                             </div>
                                         </div>
-                                        <div class="row"  style="vertical-align: top;">
+                                        <div class="row"   >
                                             <div class="col-lg-4" >
                                                 Receviable Amount
                                             </div>
@@ -183,7 +183,7 @@
                                         </cc1:FilteredTextBoxExtender>
                                             </div>
                                         </div>
-                                        <div class="row"  style="vertical-align: top;">
+                                        <div class="row"   >
                                             <div class="col-lg-4" >
                                                 Bank Name
                                             </div>
@@ -217,7 +217,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row"  style="vertical-align: top;">
+                                        <div class="row"   >
                                             <div class="col-lg-4"  colspan="4" style="text-align: center;">
                                                 <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" class="button-bg" Text="Save" OnClick="btnSubmit_Click"
                                                      />
@@ -304,9 +304,9 @@
                                     </asp:GridView>
                                 </div>
                             </div>
-                            <div class="row"  style="vertical-align: top;">
+                            <div class="row"   >
                                 <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                    <div class="row"  style="vertical-align: top;">
+                                    <div class="row"   >
                                         <div class="col-lg-4"  colspan="4" style="text-align: center;">
                                             <asp:Button CssClass="btn btn-primary" ID="Button4" runat="server" class="button-bg" Text="Cancel" OnClick="Button4_Click"
                                                 Style="width: auto; text-align: center" />

@@ -16,7 +16,7 @@
                                 <div class="col-lg-4"  style="width: 100px; text-align: center; vertical-align: top;">
                                     Project
                                 </div>
-                                <div class="col-lg-4"  style="vertical-align: top;">
+                                <div class="col-lg-4"   >
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="True"  
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                     </asp:DropDownList>
@@ -24,7 +24,7 @@
                                 <div class="col-lg-4"  style="width: 100px; text-align: center; vertical-align: top;">
                                     Vender
                                 </div>
-                                <div class="col-lg-4"  style="vertical-align: top;">
+                                <div class="col-lg-4"   >
                                     <asp:DropDownList CssClass="form-select" ID="ddlVendor" runat="server"   AutoPostBack="true"
                                         OnSelectedIndexChanged="ddlVendor_SelectedIndexChanged">
                                         <asp:ListItem Text="Select Vendor"></asp:ListItem>
@@ -55,7 +55,7 @@
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText=" Type Of Payment">
                                                 <ItemTemplate>
-                                                    <asp:DropDownList CssClass="form-select" ID="ddltypeofpayment" runat="server" Width="160px">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddltypeofpayment" runat="server"  >
                                                     </asp:DropDownList>
                                                      <asp:Button CssClass="btn btn-primary" ID="btnAdvanceRequisitionAddNew" runat="server" Text="+" CausesValidation="false" CommandName="AdvanceRequisitionAddNew" />
                                                 </ItemTemplate>

@@ -127,7 +127,7 @@ else
                                                                          ></asp:TextBox>
                                                                     <asp:HiddenField ID="hdnEmployeeID" runat="server" />
                                                                 </div>
-                                                                <div class="col-lg-4"  style="vertical-align: top;">
+                                                                <div class="col-lg-4"   >
                                                                     Last Name
                                                                 </div>
                                                                 <div class="col-lg-4" >
@@ -136,13 +136,13 @@ else
                                                                 </div>
                                                             </div>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  style="vertical-align: top;">
+                                                                <div class="col-lg-4"   >
                                                                     Employee ID
                                                                 </div>
                                                                 <div class="col-lg-4" >
                                                                     <asp:TextBox CssClass="form-control" ID="txtEmployeeID" runat="server"   Enabled="false" ReadOnly="true"></asp:TextBox>
                                                                 </div>
-                                                                <div class="col-lg-4"  style="vertical-align: top;">
+                                                                <div class="col-lg-4"   >
                                                                     Employee Type
                                                                 </div>
                                                                 <div class="col-lg-4" >
@@ -153,8 +153,8 @@ else
                                                                     </asp:DropDownList>
                                                                 </div>
                                                             </div>
-                                                            <div class="row"  style="vertical-align: top;">
-                                                                <div class="col-lg-4"  style="vertical-align: top;">
+                                                            <div class="row"   >
+                                                                <div class="col-lg-4"   >
                                                                     Department
                                                                 </div>
                                                                 <div class="col-lg-4" >
@@ -162,7 +162,7 @@ else
                                                                          >
                                                                     </asp:DropDownList>
                                                                 </div>
-                                                                <div class="col-lg-4"  style="vertical-align: top;">
+                                                                <div class="col-lg-4"   >
                                                                     Designation
                                                                 </div>
                                                                 <div class="col-lg-4" >
@@ -171,7 +171,7 @@ else
                                                                     </asp:DropDownList>
                                                                 </div>
                                                             </div>
-                                                            <div class="row"  style="vertical-align: top;">
+                                                            <div class="row"   >
                                                                 <div class="col-lg-4"  style="width: 150px; vertical-align: top;">
                                                                     Date of Joining
                                                                 </div>
@@ -192,7 +192,7 @@ else
                                                                 </div>
                                                             </div>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  style="vertical-align: top;">
+                                                                <div class="col-lg-4"   >
                                                                     Mobile No.
                                                                 </div>
                                                                 <div class="col-lg-4" >
@@ -202,7 +202,7 @@ else
                                                                         FilterType="Custom, Numbers">
                                                                     </cc1:FilteredTextBoxExtender>
                                                                 </div>
-                                                                <div class="col-lg-4"  style="vertical-align: top;">
+                                                                <div class="col-lg-4"   >
                                                                     Project Name
                                                                 </div>
                                                                 <div class="col-lg-4" >
@@ -231,7 +231,7 @@ else
                                                                     </cc1:PopupControlExtender>
                                                                 </div>
                                                             </div>
-                                                            <div class="row"  style="vertical-align: top;">
+                                                            <div class="row"   >
                                                                 <div class="col-lg-4"  colspan="4" style="text-align: center;">
                                                                     <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" class="button-bg" Text="Submit" OnClick="btnSubmit_Click"
                                                                          />

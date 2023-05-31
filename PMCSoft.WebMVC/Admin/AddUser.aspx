@@ -155,7 +155,7 @@
                                     </asp:Panel>
                                 </div>
                             </div>
-                            <div class="row"  style="vertical-align: top;">
+                            <div class="row"   >
                                 <div class="col-lg-4" >
                                     Reporting To
                                 </div>
@@ -193,7 +193,7 @@
                                     </cc1:CalendarExtender>
                                 </div>
                             </div>
-                            <div class="row"  style="vertical-align: top;">
+                            <div class="row"   >
                                 <div class="col-lg-4" >
                                     Address
                                 </div>
@@ -210,7 +210,7 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                            <div class="row"  style="vertical-align: top;">
+                            <div class="row"   >
                                 <div class="col-lg-4" >
                                     State
                                 </div>
@@ -227,7 +227,7 @@
                                     </asp:DropDownList>
                                 </div>
                             </div>
-                            <div class="row"  style="vertical-align: top;">
+                            <div class="row"   >
                                 <div class="col-lg-4"  style="width: 150px;">
                                     ZIP Code
                                 </div>
@@ -282,7 +282,7 @@
                                     <asp:TextBox CssClass="form-control" ID="txtAltEmail" runat="server"  ></asp:TextBox>
                                 </div>
                             </div>
-                            <div class="row"  style="vertical-align: top;">
+                            <div class="row"   >
                                 <div class="col-lg-4" >
                                     Password
                                 </div>
@@ -303,7 +303,7 @@
                                     </cc1:FilteredTextBoxExtender>
                                 </div>
                             </div>
-                            <div class="row"  style="vertical-align: top;">
+                            <div class="row"   >
                                 <div class="col-lg-4"  colspan="4" style="text-align: center;">
                                     <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" class="button-bg" Text="Submit" OnClick="btnSubmit_Click"
                                          />

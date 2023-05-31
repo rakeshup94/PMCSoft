@@ -26,7 +26,7 @@
                                         Bank Detail</h3>
                                     <div class="row"  style="width: 910px;">
                                         <div class="row" >
-                                            <div class="col-lg-4"  style="vertical-align: top;">
+                                            <div class="col-lg-4"   >
                                                 <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="540px"
                                                     OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowEditing="GridView1_RowEditing"
                                                     OnRowUpdating="GridView1_RowUpdating">
@@ -175,13 +175,13 @@
                                         </div>
                                     </div>
                                     <div class="row" >
-                                        <div class="col-lg-4"  style="vertical-align: top;">
+                                        <div class="col-lg-4"   >
                                             <div class="card-body">
                                                 <h3 class="reallynow">
                                                     Branch Detail</h3>
                                                 <div class="row"  style="width: 900px;">
                                                     <div class="row" >
-                                                        <div class="col-lg-4"  style="vertical-align: top;">
+                                                        <div class="col-lg-4"   >
                                                             <asp:GridView CssClass="table table-striped"  ID="GridView2" runat="server" AutoGenerateColumns="False" Width="880px"
                                                                 OnRowCancelingEdit="GridView2_RowCancelingEdit" OnRowEditing="GridView2_RowEditing"
                                                                 OnRowUpdating="GridView2_RowUpdating">
