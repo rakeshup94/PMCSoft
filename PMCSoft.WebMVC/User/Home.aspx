@@ -10,8 +10,8 @@
     <%--<asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>--%>
         
-    <div id="wrapper" style="margin-left: -150px;">
-        <div class="card"  style="width: 1250px;">
+    <div id="wrapper"    >
+        <div class="card"     >
             <div class="row"  style="width: 1240px;">
                 <div class="row" >
                     <div class="col-lg-4" >

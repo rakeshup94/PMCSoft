@@ -13,15 +13,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper" style="margin-left: -150px;">
-                <div class="card"  style="width: 1250px;">
+            <div id="wrapper"    >
+                <div class="card"     >
                     <div class="card-body">
                         <h3 class="reallynow">
                             Project Detail</h3>
-                        <div class="row"  style="width: 1240px; border: .5px solid #D9EAED; border-collapse: collapse;">
+                        <div class="row"   >
                             <div class="row" >
                                 <div class="col-lg-4"   >
-                                    <div class="row"  style="width: 260px; vertical-align: top;">
+                                    <div class="row"   >
                                         <div class="row"   >
                                             <div class="col-lg-4"  colspan="2" style="font-weight: bold; background-color: #D9EAED; color: #202020;
                                                 border: .5px solid #D9EAED;">
@@ -29,76 +29,76 @@
                                             </div>
                                         </div>
                                         <div class="row"   >
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED; width: 30px; text-align: center;">
+                                            <div class="col-lg-4"   >
                                                 A1
                                             </div>
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED;">
+                                            <div class="col-lg-4"   >
                                                 Project Particulars
                                             </div>
                                         </div>
                                         <div class="row"   >
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED; width: 30px; text-align: center;">
+                                            <div class="col-lg-4"   >
                                                 A2
                                             </div>
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED;">
+                                            <div class="col-lg-4"   >
                                                 Availibility Of Documents (Y/N)
                                             </div>
                                         </div>
                                         <div class="row"   >
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED; width: 30px; text-align: center;">
+                                            <div class="col-lg-4"   >
                                                 A3
                                             </div>
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED;">
+                                            <div class="col-lg-4"   >
                                                 Insurance/Licenses (Y/N) &amp; Date of Validity
                                             </div>
                                         </div>
                                         <div class="row"   >
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED; width: 30px; text-align: center;">
+                                            <div class="col-lg-4"   >
                                                 A4
                                             </div>
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED;">
+                                            <div class="col-lg-4"   >
                                                 Other Deposit / Bonds / Guarantees
                                             </div>
                                         </div>
                                         <div class="row"   >
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED; width: 30px; text-align: center;">
+                                            <div class="col-lg-4"   >
                                                 A5
                                             </div>
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED;">
+                                            <div class="col-lg-4"   >
                                                 Facilities Provided By Clients (Y/N) and whether chargeable from Co. or not
                                             </div>
                                         </div>
                                         <div class="row"   >
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED; width: 30px; text-align: center;">
+                                            <div class="col-lg-4"   >
                                                 A6
                                             </div>
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED;">
+                                            <div class="col-lg-4"   >
                                                 Mobilization Advance
                                             </div>
                                         </div>
                                         <div class="row"   >
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED; width: 30px; text-align: center;">
+                                            <div class="col-lg-4"   >
                                                 A7
                                             </div>
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED;">
+                                            <div class="col-lg-4"   >
                                                 Billing
                                             </div>
                                         </div>
                                         <div class="row"   >
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED; width: 30px; text-align: center;">
+                                            <div class="col-lg-4"   >
                                                 A8
                                             </div>
-                                            <div class="col-lg-4"  style="border: .5px solid #D9EAED;">
+                                            <div class="col-lg-4"   >
                                                 Payment Terms
                                             </div>
                                         </div>
                                       </div>
                                 </div>
-                                <div class="col-lg-4"  style="width: 965px; border: .5px solid #D9EAED;">
+                                <div class="col-lg-4"   >
                                     <asp:Panel ID="Panel1" runat="server" Visible="false">
-                                        <div class="row"  style="width: 955px; vertical-align: top; border: .5px solid #D9EAED; border-collapse: collapse;">
+                                        <div class="row"   >
                                             <div class="row"   >
-                                                <div class="col-lg-4"  colspan="2" style="border: .5px solid #D9EAED;">
+                                                <div class="col-lg-4"  colspan="2"  >
                                                     <cc1:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0" Width="940px">
                                                         <cc1:TabPanel ID="Tab1" runat="server" TabIndex="0">
                                                             <HeaderTemplate>

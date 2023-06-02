@@ -6,8 +6,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" Runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div id="wrapper" style="margin-left: -150px;">
-                <div class="card"  style="width: 1250px;">
+            <div id="wrapper"    >
+                <div class="card"     >
                     <div class="card-body">
                         <h3 class="reallynow">
                             MONTHLY WORK DONE</h3>
@@ -302,8 +302,8 @@
                                 <HeaderTemplate>
                                     Add Monthly WorkDone Actual</HeaderTemplate>
                              <ContentTemplate>
-            <div id="Div1" style="margin-left: -150px;">
-                <div id="Div3" style="width: 1250px;">
+            <div id="Div1"    >
+                <div id="Div3"    >
                     <div id="Div4">
                         <h3 class="reallynow">
                             MONTHLY WORK DONE</h3>
