@@ -1,9 +1,9 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="Inventory_EnterStockDetails" Codebehind="EnterStockDetails.aspx.cs" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="PMCSoft.Web.Inventory.EnterStockDetails" Codebehind="EnterStockDetails.aspx.cs" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -80px;">
@@ -13,9 +13,7 @@
                             Stock Opening</h3>
                         <table style="width: 1060px;">
                             <tr>
-                                <td colspan="18" style="text-align: center; font-size: 30px; font-family: Cambria;">
-                                    Ahluwalia Contracts (India) Ltd.
-                                </td>
+                              
                             </tr>
                             <tr>
                                 <td style="width: 100px; text-align: center;">

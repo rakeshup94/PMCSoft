@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="Admin_MorningReport" Codebehind="MorningReport.aspx.cs" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="PMCSoft.Web.User.MorningReport" Codebehind="MorningReport.aspx.cs" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
@@ -10,7 +10,7 @@
     </script>
 
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -40px;">
@@ -19,11 +19,7 @@
                         <h3 class="reallynow">
                             MORNING REPORT</h3>
                         <table style="width: 990px;">
-                            <tr>
-                                <td colspan="6" style="text-align: center; font-size: 30px; font-family: Cambria;">
-                                    Ahluwalia Contracts (India) Ltd.
-                                </td>
-                            </tr>
+                     
                             <tr>
                                 <td>
                                     Project:

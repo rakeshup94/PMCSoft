@@ -1,0 +1,51 @@
+Create Proc GetOrdereMaster    
+@FValue varchar(50), @SValue varchar(50)    
+As    
+Begin    
+Select Distinct Product, ProductID, Currency,     
+SellingRate, Status from tblOrderMaster Where CONVERT(datetime, ScheduledDate + Convert(datetime, ScheduledTimeHr + ':' + ScheduledTimeMin + ':' + '00'), 103)               
+>= CONVERT(datetime, GETDATE(), 103)   and RemainingQty <> 0.00     
+   and   AssignTo Like '%' + 'Emp0000001' + '%'           
+Status = 'E' and CompanyID = @FValue and OrderID = @SValue
+and     
+End
+  try
+        {
+        
+ if (Session["AID"].ToString() != "2")
+            {
+               
+
+
+            }
+            else if (Session["AID"].ToString() == "2")
+     
+       {
+}
+}
+ catch (Exception ex)
+        {
+            string scripts = "alert('Some error occurs.');";
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            Cal.InsertErrorLog(Session["CompID"].ToString(), Session["UserID"].ToString(), ex.ToString());
+        }
+'COMP000002','EMP0000005'      
+infosys 
+
+http://www.aspsnippets.com/Articles/How-to-save-insert-Image-in-Database-in-ASPNet-using-C-and-VBNet.aspx
+http://www.aspdotnet-suresh.com/2011/01/how-to-insert-images-into-database-and.html
+
+
+http://www.aspsnippets.com/Articles/Save-Files-to-SQL-Server-Database-using-FileUpload-Control.aspx
+
+http://www.asp.net/AjaxLibrary/AjaxControlToolkitSampleSite/Default.aspx
+
+http://www.aspsnippets.com/articles/Save-and-Retrieve-Files-from-SQL-Server-Database-using-ASP.Net.aspx
+
+                            <asp:TextBox CssClass="form-control" ID="txtFirstName" runat="server" value="First Name" onfocus="javascript: if(this.value=='First Name') { this.value='' }" onblur="javascript: if(this.value==''){ this.value='First Name' }"></asp:TextBox>
+
+
+ value="Last Name" onfocus="javascript: if(this.value=='Last Name') { this.value='' }" onblur="javascript: if(this.value==''){ this.value='Last Name' }"
+
+
+http://shailajachowdarydotnet.blogspot.in/2012/04/inserting-and-retreiving-data-from.html

@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true"
-    Inherits="Report_PrintRACertifiedReport" Codebehind="PrintRACertifiedReport.aspx.cs" %>
+    Inherits="PMCSoft.Web.Report.PrintRACertifiedReport" Codebehind="PrintRACertifiedReport.aspx.cs" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -16,10 +16,7 @@
                 <table style="width: 1400px;" border="0">
                     <tr>
                         <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="100px" />
-                        <td style="text-align: center; font-size: 28px; font-family: Cambria;">
-                            Ahluwalia Contracts (India) Ltd.<br />
-                            RA. Chart
-                        </td>
+                      
                     </tr>
                 </table>
                 <br />

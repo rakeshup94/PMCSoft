@@ -18,7 +18,7 @@ namespace PMCSoft.Infrastructure.Data
 {
     public class BindData
     {
-        public static string Conn = ConfigurationManager.AppSettings["DBConnectionString"].ToString();
+        public static string Conn = ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
         public BindData()
         {
 

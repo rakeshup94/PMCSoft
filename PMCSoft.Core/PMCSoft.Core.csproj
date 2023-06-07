@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8DF68DFC-D51C-4392-B1C5-0481392B2CD7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PMCSoft.Core</RootNamespace>
+    <AssemblyName>PMCSoft.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CommonHelper.cs" />
+    <Compile Include="Common\Extensions.cs" />
+    <Compile Include="Common\GlobalVars.cs" />
+    <Compile Include="Common\MathHelper.cs" />
+    <Compile Include="Common\XmlHelper.cs" />
+    <Compile Include="Entity\AdminPermission.cs" />
+    <Compile Include="Entity\AdminPermissionPage.cs" />
+    <Compile Include="Entity\HireChargesExpens.cs" />
+    <Compile Include="Entity\NewStaffCostFoc.cs" />
+    <Compile Include="Entity\Permission.cs" />
+    <Compile Include="Entity\PermissionPage.cs" />
+    <Compile Include="Entity\PMCSoftContext.cs" />
+    <Compile Include="Entity\StaffCost.cs" />
+    <Compile Include="Entity\sysdiagram.cs" />
+    <Compile Include="Entity\tblAccountType.cs" />
+    <Compile Include="Entity\tblAcctPCBill.cs" />
+    <Compile Include="Entity\tblActulPlan.cs" />
+    <Compile Include="Entity\tblAdminMenuHeader.cs" />
+    <Compile Include="Entity\tblAdvanceRequisition.cs" />
+    <Compile Include="Entity\tblApprovalLevelForPCBill.cs" />
+    <Compile Include="Entity\tblApprovalLevelForWorkOrder.cs" />
+    <Compile Include="Entity\tblAvailibilityOfDocumentsDetail.cs" />
+    <Compile Include="Entity\tblAvailibilityOfDocumentsMaster.cs" />
+    <Compile Include="Entity\tblBackDatePermission.cs" />
+    <Compile Include="Entity\tblBankBranchMaster.cs" />
+    <Compile Include="Entity\tblBankMaster.cs" />
+    <Compile Include="Entity\tblBillingParticularsDetail.cs" />
+    <Compile Include="Entity\tblBillingParticularsMaster.cs" />
+    <Compile Include="Entity\tblBulkMaterialDescriptionMaster.cs" />
+    <Compile Include="Entity\tblBulkMaterialFixedDescriptionMaster.cs" />
+    <Compile Include="Entity\tblBulkMaterialsDetail.cs" />
+    <Compile Include="Entity\tblCityList.cs" />
+    <Compile Include="Entity\tblCompanyMaster.cs" />
+    <Compile Include="Entity\tblConsumableExpensesReportDetail.cs" />
+    <Compile Include="Entity\tblConsumableExpensesReportMaster.cs" />
+    <Compile Include="Entity\tblConsumble.cs" />
+    <Compile Include="Entity\tblCountry.cs" />
+    <Compile Include="Entity\tblDailyMorningReport.cs" />
+    <Compile Include="Entity\tblDailyWorkProgramme.cs" />
+    <Compile Include="Entity\tblDebitorsApproveList.cs" />
+    <Compile Include="Entity\tblDebitorsList.cs" />
+    <Compile Include="Entity\tblDebtorPaymentType.cs" />
+    <Compile Include="Entity\tblDepartment.cs" />
+    <Compile Include="Entity\tblDesignation.cs" />
+    <Compile Include="Entity\tblDetailMonthlyLabourDetail.cs" />
+    <Compile Include="Entity\tblDetailMonthlyLabourMaster.cs" />
+    <Compile Include="Entity\tblDetailMonthlyLabourSummary.cs" />
+    <Compile Include="Entity\tblDirectExpens.cs" />
+    <Compile Include="Entity\tblDirectExpensesMaster.cs" />
+    <Compile Include="Entity\tblEmployeeMaster.cs" />
+    <Compile Include="Entity\tblEquipmentDetail.cs" />
+    <Compile Include="Entity\tblEquipmentExpens.cs" />
+    <Compile Include="Entity\tblEquipmentMaster.cs" />
+    <Compile Include="Entity\tblErrorLog.cs" />
+    <Compile Include="Entity\tblErrorLogWithoutLogin.cs" />
+    <Compile Include="Entity\tblExpenditure.cs" />
+    <Compile Include="Entity\tblFacilitiesProvidedDetail.cs" />
+    <Compile Include="Entity\tblFacilitiesProvidedMaster.cs" />
+    <Compile Include="Entity\tblForgotCode.cs" />
+    <Compile Include="Entity\tblGeneralStaffAttendance.cs" />
+    <Compile Include="Entity\tblGeneralStaffMaster.cs" />
+    <Compile Include="Entity\tblHireChargesItemWise.cs" />
+    <Compile Include="Entity\tblHireChargesMaster.cs" />
+    <Compile Include="Entity\tblIncomeMaster.cs" />
+    <Compile Include="Entity\tblIndirectExpens.cs" />
+    <Compile Include="Entity\tblInDirectExpensesMaster.cs" />
+    <Compile Include="Entity\tblInsuranceLicensesDetail.cs" />
+    <Compile Include="Entity\tblInsuranceLicensesMaster.cs" />
+    <Compile Include="Entity\tblIssuePDCRequest.cs" />
+    <Compile Include="Entity\tblItemGroupMaster.cs" />
+    <Compile Include="Entity\tblItemIssue.cs" />
+    <Compile Include="Entity\tblItemMaster.cs" />
+    <Compile Include="Entity\tblItemOfWork.cs" />
+    <Compile Include="Entity\tblLabourDetail.cs" />
+    <Compile Include="Entity\tblLabourMaster.cs" />
+    <Compile Include="Entity\tblLogInformation.cs" />
+    <Compile Include="Entity\tblMasterstaffSalary.cs" />
+    <Compile Include="Entity\tblMasterWork.cs" />
+    <Compile Include="Entity\tblMaterialReceive.cs" />
+    <Compile Include="Entity\tblMenu.cs" />
+    <Compile Include="Entity\tblMenuHeader.cs" />
+    <Compile Include="Entity\tblMidAmendPCWOItemDetail.cs" />
+    <Compile Include="Entity\tblMidAmendPCWONotesDetail.cs" />
+    <Compile Include="Entity\tblMidAmendUploadFile.cs" />
+    <Compile Include="Entity\tblMidAmendWOPCDetail.cs" />
+    <Compile Include="Entity\tblMidAmendWORemark.cs" />
+    <Compile Include="Entity\tblMidDailyWorkProgramme.cs" />
+    <Compile Include="Entity\tblMidPCBill.cs" />
+    <Compile Include="Entity\tblMidPCBillItem.cs" />
+    <Compile Include="Entity\tblMidPCWOItemDetail.cs" />
+    <Compile Include="Entity\tblMidPCWOItemDetailForAuth.cs" />
+    <Compile Include="Entity\tblMidPCWOItemDetailForPIC.cs" />
+    <Compile Include="Entity\tblMidPCWONotesDetail.cs" />
+    <Compile Include="Entity\tblMidPCWONotesDetailForAuth.cs" />
+    <Compile Include="Entity\tblMidPCWONotesDetailForPIC.cs" />
+    <Compile Include="Entity\tblMidWOPCDetail.cs" />
+    <Compile Include="Entity\tblMidWORemarkForPIC.cs" />
+    <Compile Include="Entity\tblMobilizationAdvanceDetail.cs" />
+    <Compile Include="Entity\tblMobilizationAdvanceMaster.cs" />
+    <Compile Include="Entity\tblMonthlyDirectExpens.cs" />
+    <Compile Include="Entity\tblMonthlyHireCharge.cs" />
+    <Compile Include="Entity\tblMonthlyIncome.cs" />
+    <Compile Include="Entity\tblMonthlyInDirectExpens.cs" />
+    <Compile Include="Entity\tblMonthlyLabourAsSubmittedRaBill.cs" />
+    <Compile Include="Entity\tblMonthlyLabourMonthAndUpToDateMaster.cs" />
+    <Compile Include="Entity\tblMonthlyPurchase.cs" />
+    <Compile Include="Entity\tblMonthlyVWD.cs" />
+    <Compile Include="Entity\tblMonthlyWorkDoneActual.cs" />
+    <Compile Include="Entity\tblMonthlyWorkDonePlan.cs" />
+    <Compile Include="Entity\tblMonthlyWorkDonePlanDetail.cs" />
+    <Compile Include="Entity\tblMonthlyWorkDonePlanMaster.cs" />
+    <Compile Include="Entity\tblOtherDepositBondDetail.cs" />
+    <Compile Include="Entity\tblOtherDepositBondMaster.cs" />
+    <Compile Include="Entity\tblPaymentReceipt.cs" />
+    <Compile Include="Entity\tblPaymentTermsDetail.cs" />
+    <Compile Include="Entity\tblPaymentTermsMaster.cs" />
+    <Compile Include="Entity\tblPaymentType.cs" />
+    <Compile Include="Entity\tblPCBill.cs" />
+    <Compile Include="Entity\tblPCBillArrear.cs" />
+    <Compile Include="Entity\tblPCBillFileUpload.cs" />
+    <Compile Include="Entity\tblPCBillFromPMC.cs" />
+    <Compile Include="Entity\tblPCBillFromSITE.cs" />
+    <Compile Include="Entity\tblPCBillItem.cs" />
+    <Compile Include="Entity\tblPcReconciliationClaimedAndPaid.cs" />
+    <Compile Include="Entity\tblPcReconciliationClaimedAndPaidMaster.cs" />
+    <Compile Include="Entity\tblPCRemark.cs" />
+    <Compile Include="Entity\tblPCWOItemDetail.cs" />
+    <Compile Include="Entity\tblPCWONotesDetail.cs" />
+    <Compile Include="Entity\tblPICPCBill.cs" />
+    <Compile Include="Entity\tblPlan.cs" />
+    <Compile Include="Entity\tblPlanDetail.cs" />
+    <Compile Include="Entity\tblPlanMaster.cs" />
+    <Compile Include="Entity\tblPowerConsumptionDetail.cs" />
+    <Compile Include="Entity\tblPowerConsumptionMaster.cs" />
+    <Compile Include="Entity\tblPowerConsumptionOneTimeExpMaster.cs" />
+    <Compile Include="Entity\tblProjectCode.cs" />
+    <Compile Include="Entity\tblProjectMaster.cs" />
+    <Compile Include="Entity\tblProjectMasterDetail.cs" />
+    <Compile Include="Entity\tblProjectPage.cs" />
+    <Compile Include="Entity\tblProjectParticularsDetail.cs" />
+    <Compile Include="Entity\tblProjectParticularsDetailA.cs" />
+    <Compile Include="Entity\tblProjectParticularsMaster.cs" />
+    <Compile Include="Entity\tblPurchaseConsumptionMaster.cs" />
+    <Compile Include="Entity\tblRABill.cs" />
+    <Compile Include="Entity\tblRABillCertified.cs" />
+    <Compile Include="Entity\tblRABillSubmitted.cs" />
+    <Compile Include="Entity\tblRateType.cs" />
+    <Compile Include="Entity\tblReconciliationStatementDetail.cs" />
+    <Compile Include="Entity\tblReconciliationStatementMaster.cs" />
+    <Compile Include="Entity\tblRegion.cs" />
+    <Compile Include="Entity\tblRegistrationType.cs" />
+    <Compile Include="Entity\tblRSSFeed.cs" />
+    <Compile Include="Entity\tblSecurityForAdvanceRequisition.cs" />
+    <Compile Include="Entity\tblStaffCostCalculation.cs" />
+    <Compile Include="Entity\tblState.cs" />
+    <Compile Include="Entity\tblStock.cs" />
+    <Compile Include="Entity\tblStockMaterialMasterByClient.cs" />
+    <Compile Include="Entity\tblStockOpeningDate.cs" />
+    <Compile Include="Entity\tblStoreOpening.cs" />
+    <Compile Include="Entity\tblTypeOfAdvanceRequisition.cs" />
+    <Compile Include="Entity\tblUnitMaster.cs" />
+    <Compile Include="Entity\tblUploadFile.cs" />
+    <Compile Include="Entity\tblUserVerification.cs" />
+    <Compile Include="Entity\tblVendorDocumentUploadFile.cs" />
+    <Compile Include="Entity\tblVendorMaster.cs" />
+    <Compile Include="Entity\tblVendorTypeMaster.cs" />
+    <Compile Include="Entity\tblWOPCDetail.cs" />
+    <Compile Include="Entity\tblWORemark.cs" />
+    <Compile Include="Entity\tblWorkDoneDetail.cs" />
+    <Compile Include="Entity\tblWorkDoneMaster.cs" />
+    <Compile Include="Entity\tblWorkDoneSubDetail.cs" />
+    <Compile Include="Entity\tblWorkType.cs" />
+    <Compile Include="Entity\UserPermission.cs" />
+    <Compile Include="Entity\UserPermissionPage.cs" />
+    <Compile Include="Models\ServiceResponse.cs" />
+    <Compile Include="PMCSoftContext.cs" />
+    <Compile Include="Interfaces\Common\IAuditableEntity.cs" />
+    <Compile Include="Interfaces\Common\IDataContext.cs" />
+    <Compile Include="Interfaces\Common\IEntity.cs" />
+    <Compile Include="Interfaces\Repository\IAccountRepository.cs" />
+    <Compile Include="Interfaces\Repository\IGenericRepository.cs" />
+    <Compile Include="Interfaces\Repository\INavigationRepository.cs" />
+    <Compile Include="Interfaces\Repository\IUnitOfWork.cs" />
+    <Compile Include="Interfaces\Service\IAccountService.cs" />
+    <Compile Include="Interfaces\Service\ICommonService.cs" />
+    <Compile Include="Interfaces\Service\INavigationService.cs" />
+    <Compile Include="Models\Account\AccountModel.cs" />
+    <Compile Include="Models\MenuModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DAL\" />
+    <Folder Include="Models\Navigation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

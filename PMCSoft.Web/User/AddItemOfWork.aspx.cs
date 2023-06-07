@@ -13,130 +13,133 @@ using System.Xml.Linq;
  
 using PMCSoft.Infrastructure.Data;
 
-public partial class User_AddItemOfWork : System.Web.UI.Page
+namespace PMCSoft.Web.User
 {
-    BALPMC PMC = new BALPMC();
-    DataTable DT = new DataTable();
-    string ItemID = "";
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class AddItemOfWork : System.Web.UI.Page
     {
-        try
+        BALPMC PMC = new BALPMC();
+        DataTable DT = new DataTable();
+        string ItemID = "";
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            try
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                if (!IsPostBack)
                 {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
-                }
-                else
-                {
-                    GetItem();
+                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                    {
+                        Session.Clear();
+                        Session.Abandon();
+                        Session.RemoveAll();
+                        Response.Redirect("~/Login.aspx?Value=" + "2");
+                    }
+                    else
+                    {
+                        GetItem();
+                    }
                 }
             }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void GetItem()
-    {
-        try
-        {
-            PMC.BindItem(GridView1);
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void GridView1_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-    {
-        GridView1.EditIndex = -1;
-        GetItem();
-    }
-    protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
-    {
-        GridView1.EditIndex = e.NewEditIndex;
-        GetItem();
-    }
-    protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
-    {
-        try
-        {
-            GridViewRow row = (GridViewRow)GridView1.Rows[e.RowIndex];
-            TextBox txtItem = (TextBox)row.FindControl("txtItemOfWork");
-            HiddenField Hiddenfield1 = (HiddenField)row.FindControl("Hiddenfield1");
-
-            if (txtItem.Text != "")
+            catch (Exception ex)
             {
-                DT = PMCApp.GetDataTableWithOneStringValue("GetItem", txtItem.Text);
-                if (DT.Rows.Count > 0)
-                {
-                    string scripts = "alert('Item of work already exists.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
-                else
-                {
-                    PMC.UpdateItemOfWork(Hiddenfield1.Value, txtItem.Text);
-                    GridView1.EditIndex = -1;
-                    GetItem();
-                }
-            }
-            else
-            {
-                string scripts = "alert('Kindly fill Item of work.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        public void GetItem()
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void btnCancel_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("~/User/Home.aspx");
-    }
-    protected void btnSubmit_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            if (txtItemName.Text != "")
+            try
             {
-                DT = PMCApp.GetDataTableWithOneStringValue("GetItem", txtItemName.Text);
-                if (DT.Rows.Count > 0)
-                {
-                    string scripts = "alert('This item of work is already exists.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
-                else
-                {
-                    PMC.GetMaxIDForItemID(Session["CompID"].ToString(), out ItemID);
-                    PMC.InsertItemOfWork(Session["CompID"].ToString(), ItemID.ToString(), txtItemName.Text, Session["UserID"].ToString());
-
-                    txtItemName.Text = "";
-                    GetItem();
-                    string scripts = "alert('Insert Successfully.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
+                PMC.BindItem(GridView1);
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly fill item of work.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        protected void GridView1_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            GridView1.EditIndex = -1;
+            GetItem();
+        }
+        protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            GridView1.EditIndex = e.NewEditIndex;
+            GetItem();
+        }
+        protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            try
+            {
+                GridViewRow row = (GridViewRow)GridView1.Rows[e.RowIndex];
+                TextBox txtItem = (TextBox)row.FindControl("txtItemOfWork");
+                HiddenField Hiddenfield1 = (HiddenField)row.FindControl("Hiddenfield1");
+
+                if (txtItem.Text != "")
+                {
+                    DT = PMCApp.GetDataTableWithOneStringValue("GetItem", txtItem.Text);
+                    if (DT.Rows.Count > 0)
+                    {
+                        string scripts = "alert('Item of work already exists.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                    else
+                    {
+                        PMC.UpdateItemOfWork(Hiddenfield1.Value, txtItem.Text);
+                        GridView1.EditIndex = -1;
+                        GetItem();
+                    }
+                }
+                else
+                {
+                    string scripts = "alert('Kindly fill Item of work.');";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/User/Home.aspx");
+        }
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtItemName.Text != "")
+                {
+                    DT = PMCApp.GetDataTableWithOneStringValue("GetItem", txtItemName.Text);
+                    if (DT.Rows.Count > 0)
+                    {
+                        string scripts = "alert('This item of work is already exists.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                    else
+                    {
+                        PMC.GetMaxIDForItemID(Session["CompID"].ToString(), out ItemID);
+                        PMC.InsertItemOfWork(Session["CompID"].ToString(), ItemID.ToString(), txtItemName.Text, Session["UserID"].ToString());
+
+                        txtItemName.Text = "";
+                        GetItem();
+                        string scripts = "alert('Insert Successfully.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                }
+                else
+                {
+                    string scripts = "alert('Kindly fill item of work.');";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
         }
     }
 }

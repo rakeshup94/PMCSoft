@@ -12,61 +12,64 @@ using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
  
 using PMCSoft.Infrastructure.Data;
-public partial class Report_MaterialReciveByProject : System.Web.UI.Page
+namespace PMCSoft.Web.Report
 {
-    BALPMC PMC = new BALPMC();
-    string AListID = string.Empty;
-
-    DataTable DT = new DataTable();
-    string ItemID = "";
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class MaterialReciveByProject : System.Web.UI.Page
     {
-        if (!IsPostBack)
+        BALPMC PMC = new BALPMC();
+        string AListID = string.Empty;
+
+        DataTable DT = new DataTable();
+        string ItemID = "";
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+            if (!IsPostBack)
             {
-                Session.Clear();
-                Session.Abandon();
-                Session.RemoveAll();
-                Response.Redirect("~/Login.aspx?Value=" + "2");
+                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                {
+                    Session.Clear();
+                    Session.Abandon();
+                    Session.RemoveAll();
+                    Response.Redirect("~/Login.aspx?Value=" + "2");
+                }
+                else
+                {
+                    BindProject();
+                }
             }
-            else
+        }
+        public void BindProject()
+        {
+            try
             {
-                BindProject();
+                PMC.BindGetEmpProj(ddlProject, Session["UserID"].ToString());
+                //BindGrid();
             }
-        }
-    }
-    public void BindProject()
-    {
-        try
-        {
-            PMC.BindGetEmpProj(ddlProject, Session["UserID"].ToString());
-            //BindGrid();
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
 
-    }
-    protected void ddlProject_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        BindGrid();
-        
-    }
-    protected void GVMaterialReceive_PageIndexChanging(object sender, GridViewPageEventArgs e)
-    {
+        }
+        protected void ddlProject_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BindGrid();
 
-        GVMaterialReceive.PageIndex = e.NewPageIndex;
-        BindGrid();
-    }
-    public void BindGrid()
-    {
-        Hashtable ht = new Hashtable();
-        ht.Add("@ProjectId", ddlProject.SelectedValue);
-        DataTable dt = PMCApp.Get(ht, "GetMaterialReciveByProjectReport");
-        GVMaterialReceive.DataSource = dt;
-        GVMaterialReceive.DataBind();
+        }
+        protected void GVMaterialReceive_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+
+            GVMaterialReceive.PageIndex = e.NewPageIndex;
+            BindGrid();
+        }
+        public void BindGrid()
+        {
+            Hashtable ht = new Hashtable();
+            ht.Add("@ProjectId", ddlProject.SelectedValue);
+            DataTable dt = PMCApp.Get(ht, "GetMaterialReciveByProjectReport");
+            GVMaterialReceive.DataSource = dt;
+            GVMaterialReceive.DataBind();
+        }
     }
 }

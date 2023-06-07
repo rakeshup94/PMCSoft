@@ -1,9 +1,9 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="Report_MaterialReciveByPONo" Codebehind="MaterialReciveByPONo.aspx.cs" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="PMCSoft.Web.Report.MaterialReciveByPONo" Codebehind="MaterialReciveByPONo.aspx.cs" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" Runat="Server">
  <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     
         <ContentTemplate>
@@ -14,9 +14,7 @@
                             Matrial Recive By Project</h3>
                         <table style="width: 950px;">
                             <tr>
-                                <td style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Ahluwalia Contracts (India) Ltd.
-                                </td>
+                               
                             </tr>
                             <tr>
                                 <td font-size: 15px; font-family: Cambria;">

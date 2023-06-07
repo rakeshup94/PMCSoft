@@ -1,8 +1,8 @@
-﻿<%@Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="PMCReports_FinancialComparisionOfPlan " Codebehind="FinancialComparisionOfPlan.aspx.cs" %>
+﻿<%@Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="PMCSoft.Web.PMCReports.FinancialComparisionOfPlan " Codebehind="FinancialComparisionOfPlan.aspx.cs" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
      <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -150px;">
@@ -11,11 +11,7 @@
                         <h3 class="reallynow">
                             MONTHLY TRACKER</h3>
                         <table style="width: 1240px;">
-                            <tr>
-                                <td style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Ahluwalia Contracts (India) Ltd.
-                                </td>
-                            </tr>
+                      
                             <tr>
                                 <td style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     Project&nbsp;&nbsp;&nbsp;<asp:DropDownList ID="ddlProject" runat="server" AutoPostBack="true"

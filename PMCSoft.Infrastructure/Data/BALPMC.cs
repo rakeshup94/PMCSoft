@@ -191,6 +191,7 @@ namespace PMCSoft.Infrastructure.Data
         {
             BindData.BindGridViewWithSNo("GetProjectName", GV);
         }
+
         public void InsertGeneralStaffMaster(string CompanyID, string ProjectID, string EmpID, string FName, string LName, string MobileNo, string DateOfBirth,
             string CreatedBy, string DeptID, string DesgID, string DOJ, string OfficialEmpID, string EmployeeType)
         {

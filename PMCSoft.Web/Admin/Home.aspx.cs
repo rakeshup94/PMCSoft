@@ -11,104 +11,123 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.IO;
- 
-using PMCSoft.Infrastructure.Data;
 
-public partial class Admin_Home : System.Web.UI.Page
+using PMCSoft.Infrastructure.Data;
+namespace PMCSoft.Web.Admin
 {
-    BALPMC PMC = new BALPMC();
-    DataTable DT = new DataTable();
-    string P = "";
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class Home : System.Web.UI.Page
     {
-        try
+        BALPMC PMC = new BALPMC();
+        DataTable DT = new DataTable();
+        string P = "";
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            try
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                if (!IsPostBack)
                 {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
-                }
-                else
-                {
-                    GetCountProject();
+                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                    {
+                        Session.Clear();
+                        Session.Abandon();
+                        Session.RemoveAll();
+                        Response.Redirect("~/Login.aspx?Value=" + "2");
+                    }
+                    else
+                    {
+                        GetCountProject();
+                    }
                 }
             }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void GetCountProject()
-    
-    
-    {
-        try
-        {
-            PMC.GetCountProject(out P);
-            lblP.Text = P.ToString();
-            PMC.BindGetDMR(GridView1);
-            PMC.BindGetStaffAttendance(GridView2);
-            PMC.GetRSSNotification(DataList1, Session["UserID"].ToString());
-            PMC.BindGetProject(GridView3);
-            PMC.BindGetAdminProject(GridView4);
-            PMC.BindGetTotalLaber(GvTotalLaber);
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-   
-   
-    protected void ImgAdd_Click(object sender, ImageClickEventArgs e)
-    {
-        try
-        {
-            PMC.BindDepartmentDDL(ddlDepartment);
-            ddlDesignation.Items.Insert(0, new ListItem("Select Designation", "-1"));
-            ModalPopupExtender1.Show();
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void btnSubmit_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            if (ddlDepartment.SelectedValue != "-1")
+            catch (Exception ex)
             {
-                if (ddlDesignation.SelectedValue != "-1")
-                {
-                    if (txtTitle.Text != "")
-                    {
-                        if (txtCircularNo.Text != "")
-                        {
-                            if ((FileUpload1.PostedFile != null) && (FileUpload1.PostedFile.ContentLength > 0))
-                            {
-                                if (FileUpload1.PostedFile.ContentLength < 10485760)
-                                {
-                                    int filesize = FileUpload1.PostedFile.ContentLength;
-                                    string file = Path.GetFileNameWithoutExtension(FileUpload1.FileName);
-                                    string f = file.Replace(" ", "_");
-                                    string fileExt = Path.GetExtension(FileUpload1.FileName);
-                                    string filenameO = f.ToString() + fileExt.ToString();
-                                    string CDate = DateTime.Now.Day.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Year.ToString() + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString();
-                                    string filename = f + CDate + fileExt;
-                                    FileUpload1.SaveAs(Server.MapPath("~/Upload/") + filename);
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        public void GetCountProject()
 
-                                    PMC.InsertRSSFeeds(txtTitle.Text, txtDescription.Text, Session["UserID"].ToString(), filename.ToString(),
-                                        filenameO.ToString(), filesize.ToString(), txtCircularNo.Text, ddlDepartment.SelectedValue.ToString(),
-                                        ddlDesignation.SelectedValue.ToString());
+
+        {
+            try
+            {
+                PMC.GetCountProject(out P);
+                lblP.Text = P.ToString();
+                PMC.BindGetDMR(GridView1);
+                PMC.BindGetStaffAttendance(GridView2);
+                PMC.GetRSSNotification(DataList1, Session["UserID"].ToString());
+                PMC.BindGetProject(GridView3);
+                PMC.BindGetAdminProject(GridView4);
+                PMC.BindGetTotalLaber(GvTotalLaber);
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+
+
+        protected void ImgAdd_Click(object sender, ImageClickEventArgs e)
+        {
+            try
+            {
+                PMC.BindDepartmentDDL(ddlDepartment);
+                ddlDesignation.Items.Insert(0, new ListItem("Select Designation", "-1"));
+                ModalPopupExtender1.Show();
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ddlDepartment.SelectedValue != "-1")
+                {
+                    if (ddlDesignation.SelectedValue != "-1")
+                    {
+                        if (txtTitle.Text != "")
+                        {
+                            if (txtCircularNo.Text != "")
+                            {
+                                if ((FileUpload1.PostedFile != null) && (FileUpload1.PostedFile.ContentLength > 0))
+                                {
+                                    if (FileUpload1.PostedFile.ContentLength < 10485760)
+                                    {
+                                        int filesize = FileUpload1.PostedFile.ContentLength;
+                                        string file = Path.GetFileNameWithoutExtension(FileUpload1.FileName);
+                                        string f = file.Replace(" ", "_");
+                                        string fileExt = Path.GetExtension(FileUpload1.FileName);
+                                        string filenameO = f.ToString() + fileExt.ToString();
+                                        string CDate = DateTime.Now.Day.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Year.ToString() + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString();
+                                        string filename = f + CDate + fileExt;
+                                        FileUpload1.SaveAs(Server.MapPath("~/Upload/") + filename);
+
+                                        PMC.InsertRSSFeeds(txtTitle.Text, txtDescription.Text, Session["UserID"].ToString(), filename.ToString(),
+                                            filenameO.ToString(), filesize.ToString(), txtCircularNo.Text, ddlDepartment.SelectedValue.ToString(),
+                                            ddlDesignation.SelectedValue.ToString());
+                                        txtDescription.Text = ""; txtTitle.Text = ""; txtCircularNo.Text = ""; ddlDepartment.SelectedValue = "-1";
+                                        ddlDesignation.SelectedValue = "-1";
+                                        string script = "alert('Insert successfully.');";
+                                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", script, true);
+                                        ModalPopupExtender1.Hide();
+                                        PMC.GetRSSNotification(DataList1, Session["UserID"].ToString());
+                                    }
+                                    else
+                                    {
+                                        string scripts = "alert('This file was not upload, because file size exceed from 10 mb.');";
+                                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                                        ModalPopupExtender1.Show();
+                                    }
+                                }
+                                else
+                                {
+                                    PMC.InsertRSSFeeds(txtTitle.Text, txtDescription.Text, Session["UserID"].ToString(), "", "", "0", txtCircularNo.Text,
+                                        ddlDepartment.SelectedValue.ToString(), ddlDesignation.SelectedValue.ToString());
                                     txtDescription.Text = ""; txtTitle.Text = ""; txtCircularNo.Text = ""; ddlDepartment.SelectedValue = "-1";
                                     ddlDesignation.SelectedValue = "-1";
                                     string script = "alert('Insert successfully.');";
@@ -116,165 +135,216 @@ public partial class Admin_Home : System.Web.UI.Page
                                     ModalPopupExtender1.Hide();
                                     PMC.GetRSSNotification(DataList1, Session["UserID"].ToString());
                                 }
-                                else
-                                {
-                                    string scripts = "alert('This file was not upload, because file size exceed from 10 mb.');";
-                                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                                    ModalPopupExtender1.Show();
-                                }
                             }
                             else
                             {
-                                PMC.InsertRSSFeeds(txtTitle.Text, txtDescription.Text, Session["UserID"].ToString(), "", "", "0", txtCircularNo.Text,
-                                    ddlDepartment.SelectedValue.ToString(), ddlDesignation.SelectedValue.ToString());
-                                txtDescription.Text = ""; txtTitle.Text = ""; txtCircularNo.Text = ""; ddlDepartment.SelectedValue = "-1";
-                                ddlDesignation.SelectedValue = "-1";
-                                string script = "alert('Insert successfully.');";
-                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", script, true);
-                                ModalPopupExtender1.Hide();
-                                PMC.GetRSSNotification(DataList1, Session["UserID"].ToString());
+                                string scripts = "alert('Kindly fill circular no.');";
+                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                                ModalPopupExtender1.Show();
                             }
                         }
                         else
                         {
-                            string scripts = "alert('Kindly fill circular no.');";
+                            string scripts = "alert('Kindly fill subject.');";
                             ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                             ModalPopupExtender1.Show();
                         }
                     }
                     else
                     {
-                        string scripts = "alert('Kindly fill subject.');";
+                        string scripts = "alert('Kindly select designation.');";
                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                         ModalPopupExtender1.Show();
                     }
                 }
                 else
                 {
-                    string scripts = "alert('Kindly select designation.');";
+                    string scripts = "alert('Kindly select department.');";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                     ModalPopupExtender1.Show();
                 }
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly select department.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                 ModalPopupExtender1.Show();
             }
         }
-        catch (Exception ex)
+        protected void btnCancel_Click(object sender, EventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-            ModalPopupExtender1.Show();
+            ModalPopupExtender1.Hide();
         }
-    }
-    protected void btnCancel_Click(object sender, EventArgs e)
-    {
-        ModalPopupExtender1.Hide();
-    }
-    protected void DataList1_ItemDataBound(object sender, DataListItemEventArgs e)
-    {
-        if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+        protected void DataList1_ItemDataBound(object sender, DataListItemEventArgs e)
         {
-            LinkButton lnkAttachment = (LinkButton)e.Item.FindControl("lnkAttachment");
-            if (lnkAttachment.Text == "")
+            if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
             {
-                lnkAttachment.Visible = false;
-            }
-            else
-            {
-                lnkAttachment.Visible = true;
-            }
-        }
-    }
-    protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
-    {
-        try
-        {
-            if (e.CommandName == "FileNameO")
-            {
-                LinkButton lnk = (LinkButton)e.CommandSource;
-                LinkButton lnkAttachment = (LinkButton)lnk.Parent.FindControl("lnkAttachment");
-                HiddenField hdnAttachment = (HiddenField)lnk.Parent.FindControl("hdnAttachment");
-
-                string path = Server.MapPath("~/Upload/" + hdnAttachment.Value);
-                if (File.Exists(path))
+                LinkButton lnkAttachment = (LinkButton)e.Item.FindControl("lnkAttachment");
+                if (lnkAttachment.Text == "")
                 {
-                    Response.Clear();
-                    Response.ContentType = @"application\octet-stream";
-                    System.IO.FileInfo file = new System.IO.FileInfo(path);
-                    Response.AddHeader("Content-Disposition", "attachment; filename=" + file.Name);
-                    Response.AddHeader("Content-Length", file.Length.ToString());
-                    Response.ContentType = "application/octet-stream";
-                    Response.WriteFile(file.FullName);
-                    Response.Flush();
+                    lnkAttachment.Visible = false;
                 }
                 else
                 {
-                    string scripts = "alert('Attached file have been no longer exists on server....');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    lnkAttachment.Visible = true;
                 }
             }
         }
-        catch (Exception ex)
+        protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void GridView3_PageIndexChanging(object sender, GridViewPageEventArgs e)
-    {
-        try
-        {
-            GridView3.PageIndex = e.NewPageIndex;
-            PMC.BindGetProject(GridView3);
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void ddlDepartment_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        try
-        {
-            PMC.BindDesignationDDL(ddlDesignation, ddlDepartment.SelectedValue.ToString());
-            ModalPopupExtender1.Show();
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-            ModalPopupExtender1.Show();
-        }
-    }
-    private string DecryptQueryString(string strQueryString)
-    {
-        EncryptDecryptQueryString objEDQueryString = new EncryptDecryptQueryString();
-        return objEDQueryString.Decrypt(strQueryString, "r0b1nr0y");
-    }
-    public string EncryptQueryString(string strQueryString)
-    {
-        EncryptDecryptQueryString objEDQueryString = new EncryptDecryptQueryString();
-        return objEDQueryString.Encrypt(strQueryString, "r0b1nr0y");
-    }
-    protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
-    {
-        try
-        {
-            if (e.CommandName == "Project")
+            try
             {
-                LinkButton lnk = (LinkButton)e.CommandSource;
-                HiddenField hdnPRJID = (HiddenField)lnk.Parent.FindControl("hdnPRJID");
-                LinkButton lnkProjectName = (LinkButton)lnk.Parent.FindControl("lnkProjectName");
-
-                DT = PMCApp.GetDataTableWithOneStringValue("GetDailyMR", hdnPRJID.Value);
-                if (DT.Rows.Count > 0)
+                if (e.CommandName == "FileNameO")
                 {
-                    string strURL = "~/AdminReports/ViewDailyMorningReport.aspx?";
+                    LinkButton lnk = (LinkButton)e.CommandSource;
+                    LinkButton lnkAttachment = (LinkButton)lnk.Parent.FindControl("lnkAttachment");
+                    HiddenField hdnAttachment = (HiddenField)lnk.Parent.FindControl("hdnAttachment");
+
+                    string path = Server.MapPath("~/Upload/" + hdnAttachment.Value);
+                    if (File.Exists(path))
+                    {
+                        Response.Clear();
+                        Response.ContentType = @"application\octet-stream";
+                        System.IO.FileInfo file = new System.IO.FileInfo(path);
+                        Response.AddHeader("Content-Disposition", "attachment; filename=" + file.Name);
+                        Response.AddHeader("Content-Length", file.Length.ToString());
+                        Response.ContentType = "application/octet-stream";
+                        Response.WriteFile(file.FullName);
+                        Response.Flush();
+                    }
+                    else
+                    {
+                        string scripts = "alert('Attached file have been no longer exists on server....');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void GridView3_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            try
+            {
+                GridView3.PageIndex = e.NewPageIndex;
+                PMC.BindGetProject(GridView3);
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void ddlDepartment_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                PMC.BindDesignationDDL(ddlDesignation, ddlDepartment.SelectedValue.ToString());
+                ModalPopupExtender1.Show();
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                ModalPopupExtender1.Show();
+            }
+        }
+        private string DecryptQueryString(string strQueryString)
+        {
+            EncryptDecryptQueryString objEDQueryString = new EncryptDecryptQueryString();
+            return objEDQueryString.Decrypt(strQueryString, "r0b1nr0y");
+        }
+        public string EncryptQueryString(string strQueryString)
+        {
+            EncryptDecryptQueryString objEDQueryString = new EncryptDecryptQueryString();
+            return objEDQueryString.Encrypt(strQueryString, "r0b1nr0y");
+        }
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            try
+            {
+                if (e.CommandName == "Project")
+                {
+                    LinkButton lnk = (LinkButton)e.CommandSource;
+                    HiddenField hdnPRJID = (HiddenField)lnk.Parent.FindControl("hdnPRJID");
+                    LinkButton lnkProjectName = (LinkButton)lnk.Parent.FindControl("lnkProjectName");
+
+                    DT = PMCApp.GetDataTableWithOneStringValue("GetDailyMR", hdnPRJID.Value);
+                    if (DT.Rows.Count > 0)
+                    {
+                        string strURL = "~/AdminReports/ViewDailyMorningReport.aspx?";
+                        if (HttpContext.Current != null)
+                        {
+                            string strURLWithData = strURL + EncryptQueryString(string.Format("strPRJID={0}&strPRJNAME={1}",
+                                hdnPRJID.Value, lnkProjectName.Text));
+                            HttpContext.Current.Response.Redirect(strURLWithData);
+                        }
+                        else
+                        { }
+                    }
+                    else
+                    {
+                        string scripts = "alert('No records found.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void GridView2_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            try
+            {
+                if (e.CommandName == "Project")
+                {
+                    LinkButton lnk = (LinkButton)e.CommandSource;
+                    HiddenField hdnPRJID = (HiddenField)lnk.Parent.FindControl("hdnPRJID");
+                    LinkButton lnkProjectName = (LinkButton)lnk.Parent.FindControl("lnkProjectName");
+
+                    DT = PMCApp.GetDataTableWithOneStringValue("GetDailyAttendance", hdnPRJID.Value);
+                    if (DT.Rows.Count > 0)
+                    {
+                        string strURL = "~/AdminReports/ViewDailyStaffAttendance.aspx?";
+                        if (HttpContext.Current != null)
+                        {
+                            string strURLWithData = strURL + EncryptQueryString(string.Format("strPRJID={0}&strPRJNAME={1}",
+                                hdnPRJID.Value, lnkProjectName.Text));
+                            HttpContext.Current.Response.Redirect(strURLWithData);
+                        }
+                        else
+                        { }
+                    }
+                    else
+                    {
+                        string scripts = "alert('No records found.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void GridView3_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            try
+            {
+                if (e.CommandName == "Project")
+                {
+                    LinkButton lnk = (LinkButton)e.CommandSource;
+                    HiddenField hdnPRJID = (HiddenField)lnk.Parent.FindControl("hdnPRJID");
+                    LinkButton lnkProjectName = (LinkButton)lnk.Parent.FindControl("lnkProjectName");
+
+                    string strURL = "~/Admin/ProjectDetail.aspx?";
                     if (HttpContext.Current != null)
                     {
                         string strURLWithData = strURL + EncryptQueryString(string.Format("strPRJID={0}&strPRJNAME={1}",
@@ -284,33 +354,51 @@ public partial class Admin_Home : System.Web.UI.Page
                     else
                     { }
                 }
-                else
-                {
-                    string scripts = "alert('No records found.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        protected void GridView4_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void GridView2_RowCommand(object sender, GridViewCommandEventArgs e)
-    {
-        try
-        {
-            if (e.CommandName == "Project")
+            try
             {
-                LinkButton lnk = (LinkButton)e.CommandSource;
-                HiddenField hdnPRJID = (HiddenField)lnk.Parent.FindControl("hdnPRJID");
-                LinkButton lnkProjectName = (LinkButton)lnk.Parent.FindControl("lnkProjectName");
-
-                DT = PMCApp.GetDataTableWithOneStringValue("GetDailyAttendance", hdnPRJID.Value);
-                if (DT.Rows.Count > 0)
+                if (e.CommandName == "Open")
                 {
-                    string strURL = "~/AdminReports/ViewDailyStaffAttendance.aspx?";
+                    LinkButton lnk = (LinkButton)e.CommandSource;
+
+                    LinkButton lnkOpen = (LinkButton)lnk.Parent.FindControl("lnkOpen");
+                    HiddenField hdnPRJID = (HiddenField)lnk.Parent.FindControl("hdnPRJID");
+                    GridView GridView5 = (GridView)lnk.Parent.FindControl("GridView5");
+                    LinkButton lnkClose = (LinkButton)lnk.Parent.FindControl("lnkClose");
+
+                    PMC.BindGetRawMaterialStockDetail(GridView5, hdnPRJID.Value);
+                    GridView5.Visible = true;
+                    lnkClose.Visible = true;
+                    lnkOpen.Visible = false;
+                }
+                if (e.CommandName == "Close")
+                {
+                    LinkButton lnk = (LinkButton)e.CommandSource;
+                    LinkButton lnkOpen = (LinkButton)lnk.Parent.FindControl("lnkOpen");
+                    HiddenField hdnPRJID = (HiddenField)lnk.Parent.FindControl("hdnPRJID");
+                    GridView GridView5 = (GridView)lnk.Parent.FindControl("GridView5");
+                    LinkButton lnkClose = (LinkButton)lnk.Parent.FindControl("lnkClose");
+
+                    PMC.BindGetRawMaterialStockDetail(GridView5, hdnPRJID.Value);
+                    GridView5.Visible = false;
+                    lnkClose.Visible = false;
+                    lnkOpen.Visible = true;
+                }
+                if (e.CommandName == "Project")
+                {
+                    LinkButton lnk = (LinkButton)e.CommandSource;
+                    HiddenField hdnPRJID = (HiddenField)lnk.Parent.FindControl("hdnPRJID");
+                    LinkButton lnkProjectName = (LinkButton)lnk.Parent.FindControl("lnkProjectName");
+
+                    string strURL = "~/AdminReports/StockDetail.aspx?";
                     if (HttpContext.Current != null)
                     {
                         string strURLWithData = strURL + EncryptQueryString(string.Format("strPRJID={0}&strPRJNAME={1}",
@@ -320,98 +408,12 @@ public partial class Admin_Home : System.Web.UI.Page
                     else
                     { }
                 }
-                else
-                {
-                    string scripts = "alert('No records found.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
             }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void GridView3_RowCommand(object sender, GridViewCommandEventArgs e)
-    {
-        try
-        {
-            if (e.CommandName == "Project")
+            catch (Exception ex)
             {
-                LinkButton lnk = (LinkButton)e.CommandSource;
-                HiddenField hdnPRJID = (HiddenField)lnk.Parent.FindControl("hdnPRJID");
-                LinkButton lnkProjectName = (LinkButton)lnk.Parent.FindControl("lnkProjectName");
-
-                string strURL = "~/Admin/ProjectDetail.aspx?";
-                if (HttpContext.Current != null)
-                {
-                    string strURLWithData = strURL + EncryptQueryString(string.Format("strPRJID={0}&strPRJNAME={1}",
-                        hdnPRJID.Value, lnkProjectName.Text));
-                    HttpContext.Current.Response.Redirect(strURLWithData);
-                }
-                else
-                { }
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void GridView4_RowCommand(object sender, GridViewCommandEventArgs e)
-    {
-        try
-        {
-            if (e.CommandName == "Open")
-            {
-                LinkButton lnk = (LinkButton)e.CommandSource;
-
-                LinkButton lnkOpen = (LinkButton)lnk.Parent.FindControl("lnkOpen");
-                HiddenField hdnPRJID = (HiddenField)lnk.Parent.FindControl("hdnPRJID");
-                GridView GridView5 = (GridView)lnk.Parent.FindControl("GridView5");
-                LinkButton lnkClose = (LinkButton)lnk.Parent.FindControl("lnkClose");
-
-                PMC.BindGetRawMaterialStockDetail(GridView5, hdnPRJID.Value);
-                GridView5.Visible = true;
-                lnkClose.Visible = true;
-                lnkOpen.Visible = false;
-            }
-            if (e.CommandName == "Close")
-            {
-                LinkButton lnk = (LinkButton)e.CommandSource;
-                LinkButton lnkOpen = (LinkButton)lnk.Parent.FindControl("lnkOpen");
-                HiddenField hdnPRJID = (HiddenField)lnk.Parent.FindControl("hdnPRJID");
-                GridView GridView5 = (GridView)lnk.Parent.FindControl("GridView5");
-                LinkButton lnkClose = (LinkButton)lnk.Parent.FindControl("lnkClose");
-
-                PMC.BindGetRawMaterialStockDetail(GridView5, hdnPRJID.Value);
-                GridView5.Visible = false;
-                lnkClose.Visible = false;
-                lnkOpen.Visible = true;
-            }
-            if (e.CommandName == "Project")
-            {
-                LinkButton lnk = (LinkButton)e.CommandSource;
-                HiddenField hdnPRJID = (HiddenField)lnk.Parent.FindControl("hdnPRJID");
-                LinkButton lnkProjectName = (LinkButton)lnk.Parent.FindControl("lnkProjectName");
-
-                string strURL = "~/AdminReports/StockDetail.aspx?";
-                if (HttpContext.Current != null)
-                {
-                    string strURLWithData = strURL + EncryptQueryString(string.Format("strPRJID={0}&strPRJNAME={1}",
-                        hdnPRJID.Value, lnkProjectName.Text));
-                    HttpContext.Current.Response.Redirect(strURLWithData);
-                }
-                else
-                { }
-            }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="PMCReports_PrintMonthyWorkDoneReport" Codebehind="PrintMonthyWorkDoneReport.aspx.cs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="PMCSoft.Web.PMCReports.PrintMonthyWorkDoneReport" Codebehind="PrintMonthyWorkDoneReport.aspx.cs" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -13,7 +13,7 @@
                     <tr>
                      <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="50px" />
                         <td style="text-align: center; font-size: 18px; font-family: Cambria;">
-                            Ahluwalia Contracts (India) Ltd.<br />
+                        
                                             Project 
                             <asp:Label ID="LblProject" runat="server" Text="Label"></asp:Label>
                                        Work Done Status The Month 

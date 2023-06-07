@@ -24,7 +24,7 @@ namespace PMCSoft.Infrastructure.Data
             SqlConnection vConnection = null;
             try
             {
-                String vConnectionString = ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
+                String vConnectionString = ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString; 
                 vConnection = new SqlConnection(vConnectionString);
                 vConnection.Open();
             }

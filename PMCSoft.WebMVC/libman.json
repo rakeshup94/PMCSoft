@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "defaultProvider": "jsdelivr",
+  "libraries": [
+    {
+      "library": "jquery@3.6.1",
+      "destination": "lib/jquery/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "bootstrap@5.0.1",
+      "destination": "lib/bootstrap/"
+    },
+    {
+      "library": "bootstrap-icons@1.4.0",
+      "destination": "lib/bootstrap-icons/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "bootstrap-hover-dropdown@2.2.1",
+      "destination": "lib/bootstrap-hover-dropdown/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "font-awesome@4.1.0",
+      "destination": "lib/font-awesome/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "moment.js@2.29.4",
+      "destination": "lib/moment.js/"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "datatables.net@1.13.4",
+      "destination": "lib/datatables.net/"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "datatables-tabletools@2.2.2",
+      "destination": "lib/datatables-tabletools/"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "datatables.net-bs5@1.13.4",
+      "destination": "lib/datatables.net-bs5/"
+    }
+  ]
+}

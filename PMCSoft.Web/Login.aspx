@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="Login" Codebehind="Login.aspx.cs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="PMCSoft.Web.Login" Codebehind="Login.aspx.cs" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -39,9 +39,12 @@
         <form id="form1" runat="server" class="login-form" action="" method="post">
         <div class="header">
             <asp:Image ID="Image1" runat="server" ImageUrl="~/images/logo.png" Width="110px" />
+                     <br />
+           <asp:Label ID="lblMsg" runat="server" Font-Size="11px" ForeColor="Red" BackColor="Silver"></asp:Label>
         </div>
         <div style="color: Gray; margin-left: 62px; margin-top: -10px;">
             <asp:Label ID="lblN" runat="server" Text="Demo PROJECT MANAGEMENT" Font-Size="12px"></asp:Label>
+   
         </div>
         <div class="content" style="margin-top: 10px;">
             <asp:TextBox ID="txtUserID" runat="server" CssClass="input username" onfocus="this.value=''"
@@ -63,9 +66,9 @@
         <div class="footer11">
             <asp:LinkButton ID="lnkForgotPassword" ValidationGroup="Forget" runat="server" Text="Forgot Password?" Font-Size="11px"
                 OnClick="lnkForgotPassword_Click" ></asp:LinkButton>
-            <br />
+           
         
-            <asp:Label ID="lblMsg" runat="server" Font-Size="11px" ForeColor="Red" BackColor="Silver"></asp:Label>
+         
         </div>
         </form>
     </div>

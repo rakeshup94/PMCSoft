@@ -128,7 +128,6 @@
     <Content Include="css\theme2.css" />
     <Content Include="css\theme3.css" />
     <Content Include="css\theme4.css" />
-    <Content Include="ForgetPassword.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\background.gif" />
     <Content Include="Images\bg.png" />
@@ -232,7 +231,6 @@
     <Content Include="optimiseProc.txt" />
     <Content Include="PMCReports\AddNewActual.aspx" />
     <Content Include="PMCReports\AddNewPlan.aspx" />
-    <Content Include="PMCReports\Copy of Copy of MonthlyWorkDone.aspx" />
     <Content Include="PMCReports\EquipmentExpenses.aspx" />
     <Content Include="PMCReports\FinancialComparisionOfPlan.aspx" />
     <Content Include="PMCReports\HireChargesExpenses.aspx" />
@@ -592,13 +590,6 @@
     <Compile Include="Admin\ViewUser.aspx.designer.cs">
       <DependentUpon>ViewUser.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ForgetPassword.aspx.cs">
-      <DependentUpon>ForgetPassword.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ForgetPassword.aspx.designer.cs">
-      <DependentUpon>ForgetPassword.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -657,13 +648,6 @@
     </Compile>
     <Compile Include="PMCReports\AddNewPlan.aspx.designer.cs">
       <DependentUpon>AddNewPlan.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="PMCReports\Copy of Copy of MonthlyWorkDone.aspx.cs">
-      <DependentUpon>Copy of Copy of MonthlyWorkDone.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PMCReports\Copy of Copy of MonthlyWorkDone.aspx.designer.cs">
-      <DependentUpon>Copy of Copy of MonthlyWorkDone.aspx</DependentUpon>
     </Compile>
     <Compile Include="PMCReports\EquipmentExpenses.aspx.cs">
       <DependentUpon>EquipmentExpenses.aspx</DependentUpon>
@@ -897,12 +881,12 @@
     <Compile Include="RSS\UpdateRSS.ascx.designer.cs">
       <DependentUpon>UpdateRSS.ascx</DependentUpon>
     </Compile>
-    <Compile Include="SiteApp.Master.cs">
-      <DependentUpon>SiteApp.Master</DependentUpon>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SiteApp.Master.designer.cs">
-      <DependentUpon>SiteApp.Master</DependentUpon>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="User\AddDebitList.aspx.cs">
       <DependentUpon>AddDebitList.aspx</DependentUpon>
@@ -1059,13 +1043,13 @@
     <None Include="packages.config" />
     <Content Include="ProjectMasterPage.master" />
     <Content Include="psd\template.psd" />
-    <Content Include="SiteApp.Master" />
     <Content Include="Upload\correction_sitaone311201416480.docx" />
     <Content Include="Upload\correction_sitaone311201417224.docx" />
     <Content Include="Upload\format_bill311201418616.xlsx" />
     <Content Include="Upload\SDLC2912014171738.docx" />
     <Content Include="Upload\SITAAPPPPT12912014182252.pptx" />
     <Content Include="Upload\vcd_55_user_guide2912014182313.pdf" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

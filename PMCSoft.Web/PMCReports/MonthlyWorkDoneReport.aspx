@@ -1,9 +1,9 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="PMCReports_MonthlyWorkDoneReport" Codebehind="MonthlyWorkDoneReport.aspx.cs" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="PMCSoft.Web.PMCReports.MonthlyWorkDoneReport" Codebehind="MonthlyWorkDoneReport.aspx.cs" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -150px;">
@@ -12,11 +12,7 @@
                         <h3 class="reallynow">
                             MONTHLY WORK DONE</h3>
                         <table style="width: 1240px;">
-                            <tr>
-                                <td style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Ahluwalia Contracts (India) Ltd.
-                                </td>
-                            </tr>
+                        
                             <td>
                                 <table style="width: 910px;">
                                     <tr>

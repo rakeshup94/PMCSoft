@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -150px;">
@@ -17,11 +17,7 @@
                                     Add Monthly WorkDone Plan</HeaderTemplate>
                                 <ContentTemplate>
                                     <table style="width: 970px;">
-                                        <tr>
-                                            <td style="text-align: center; font-size: 30px; font-family: Cambria;">
-                                                Ahluwalia Contracts (India) Ltd.
-                                            </td>
-                                        </tr>
+                                       
                                         <tr>
                                             <td>
                                                 <table style="width: 910px;">

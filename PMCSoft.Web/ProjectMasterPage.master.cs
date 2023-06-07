@@ -12,7 +12,7 @@ using System.Web.UI.HtmlControls;
 using System.Xml.Linq;
  
 using PMCSoft.Infrastructure.Data;
-namespace WebApp
+namespace PMCSoft.Web
 {
     public partial class ProjectMasterPage : System.Web.UI.MasterPage
     {
@@ -31,10 +31,11 @@ namespace WebApp
                 {
                     Hashtable ht = new Hashtable();
                     ht.Add("@UserId", Session["UserId"]);
-                   
+                    ht.Add("@ProjectId'", Session["PRJID"]);
+              
                     DataTable dt = PMCApp.Get(ht, "PagePermission");
-                    
-                    
+           
+
                     //DataTable dt = PMCApp.Get(ht, "GetMenuHeaderAdmin");
 
                     for (int k = 0; k < dt.Rows.Count; k++)

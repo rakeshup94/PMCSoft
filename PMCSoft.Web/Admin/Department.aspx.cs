@@ -10,140 +10,143 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
- 
+
 using PMCSoft.Infrastructure.Data;
 
-public partial class Admin_Department : System.Web.UI.Page
+namespace PMCSoft.Web.Admin
 {
-    BALPMC PMC = new BALPMC();
-    DataTable DT = new DataTable();
-    string DeptID = "";
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class Department : System.Web.UI.Page
     {
-        try
+        BALPMC PMC = new BALPMC();
+        DataTable DT = new DataTable();
+        string DeptID = "";
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            try
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                if (!IsPostBack)
                 {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
-                }
-                else
-                {
-                    GetDepartment();
+                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                    {
+                        Session.Clear();
+                        Session.Abandon();
+                        Session.RemoveAll();
+                        Response.Redirect("~/Login.aspx?Value=" + "2");
+                    }
+                    else
+                    {
+                        GetDepartment();
+                    }
                 }
             }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void GetDepartment()
-    {
-        try
-        {
-            PMC.BindDepartment(GridView1);
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
-    {
-        try
-        {
-            GridViewRow row = (GridViewRow)GridView1.Rows[e.RowIndex];
-            TextBox txtDept = (TextBox)row.FindControl("txtEditDepartment");
-            HiddenField Hiddenfield1 = (HiddenField)row.FindControl("Hiddenfield1");
-
-            if (txtDept.Text != "")
+            catch (Exception ex)
             {
-                DT = PMCApp.GetDataTableWithOneStringValue("GetDept", txtDept.Text);
-                if (DT.Rows.Count > 0)
-                {
-                    string scripts = "alert('Department already exists.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
-                else
-                {
-                    PMC.UpdateDept(Hiddenfield1.Value, txtDept.Text);
-                    GridView1.EditIndex = -1;
-                    GetDepartment();
-                }
-            }
-            else
-            {
-                string scripts = "alert('Kindly fill department.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        public void GetDepartment()
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            try
+            {
+                PMC.BindDepartment(GridView1);
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
         }
-    }
-    protected void GridView1_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-    {
-        GridView1.EditIndex = -1;
-        GetDepartment();
-    }
-    protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
-    {
-        try
+        protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            GridView1.EditIndex = e.NewEditIndex;
+            try
+            {
+                GridViewRow row = (GridViewRow)GridView1.Rows[e.RowIndex];
+                TextBox txtDept = (TextBox)row.FindControl("txtEditDepartment");
+                HiddenField Hiddenfield1 = (HiddenField)row.FindControl("Hiddenfield1");
+
+                if (txtDept.Text != "")
+                {
+                    DT = PMCApp.GetDataTableWithOneStringValue("GetDept", txtDept.Text);
+                    if (DT.Rows.Count > 0)
+                    {
+                        string scripts = "alert('Department already exists.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                    else
+                    {
+                        PMC.UpdateDept(Hiddenfield1.Value, txtDept.Text);
+                        GridView1.EditIndex = -1;
+                        GetDepartment();
+                    }
+                }
+                else
+                {
+                    string scripts = "alert('Kindly fill department.');";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void GridView1_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+            GridView1.EditIndex = -1;
             GetDepartment();
         }
-        catch (Exception ex)
+        protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void btnCancel_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("~/Admin/Home.aspx");
-    }
-    protected void btnSubmit_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            if (txtDepartment.Text != "")
+            try
             {
-                DT = PMCApp.GetDataTableWithOneStringValue("GetDept", txtDepartment.Text);
-                if (DT.Rows.Count > 0)
-                {
-                    string scripts = "alert('Department already exists.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
-                else
-                {
-                    PMC.GetMaxIDForDeptID(Session["CompID"].ToString(), out DeptID);
-                    PMC.InsertDepartment(DeptID, txtDepartment.Text, Session["UserID"].ToString(), Session["CompID"].ToString());
-                    txtDepartment.Text = "";
-                    GetDepartment();
-                    string scripts = "alert('Department insert successfully.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                }
+                GridView1.EditIndex = e.NewEditIndex;
+                GetDepartment();
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly fill department.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        protected void btnCancel_Click(object sender, EventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            Response.Redirect("~/Admin/Home.aspx");
+        }
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtDepartment.Text != "")
+                {
+                    DT = PMCApp.GetDataTableWithOneStringValue("GetDept", txtDepartment.Text);
+                    if (DT.Rows.Count > 0)
+                    {
+                        string scripts = "alert('Department already exists.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                    else
+                    {
+                        PMC.GetMaxIDForDeptID(Session["CompID"].ToString(), out DeptID);
+                        PMC.InsertDepartment(DeptID, txtDepartment.Text, Session["UserID"].ToString(), Session["CompID"].ToString());
+                        txtDepartment.Text = "";
+                        GetDepartment();
+                        string scripts = "alert('Department insert successfully.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    }
+                }
+                else
+                {
+                    string scripts = "alert('Kindly fill department.');";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
         }
     }
 }

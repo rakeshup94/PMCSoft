@@ -10,16 +10,11 @@
     <div id="wrapper">
         <div id="content" style="width: 1500px;">
             <div id="rightnow">
-                <%--<h3 style="margin-right:80">
-                              AHLUWALIA CONTRACTS (INDIA) LTD<br />
-                           Work Programme</h3>--%>
+   
                 <table style="width: 1400px;" border="0">
                     <tr>
                         <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="100px" />
-                        <td style="text-align: center; font-size: 28px; font-family: Cambria;">
-                            Ahluwalia Contracts (India) Ltd.<br />
-                            RA. Chart
-                        </td>
+                   
                     </tr>
                 </table>
                 <br />

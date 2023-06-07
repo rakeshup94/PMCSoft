@@ -1,9 +1,9 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="PMCReports_MonthlyTracker" Codebehind="MonthlyTracker.aspx.cs" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/ProjectMasterPage.master" AutoEventWireup="true" Inherits="PMCSoft.Web.PMCReports.MonthlyTracker" Codebehind="MonthlyTracker.aspx.cs" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="wrapper" style="margin-left: -100px;">
@@ -13,11 +13,7 @@
                             FINANCIAL COMPARISION OF PLAN vis-à-vis ACTUAL													
                            </h3>
                         <table>
-                            <tr>
-                                <td style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Ahluwalia Contracts (India) Ltd.
-                                </td>
-                            </tr>
+                       
                             <tr>
                                 <td style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     <table style="width: 910px;">

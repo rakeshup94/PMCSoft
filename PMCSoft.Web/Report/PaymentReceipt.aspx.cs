@@ -13,57 +13,60 @@ using System.Xml.Linq;
  
 using PMCSoft.Infrastructure.Data;
 
-public partial class Report_PaymentReceipt : System.Web.UI.Page
+namespace PMCSoft.Web.Report
 {
-    BALPMC PMC = new BALPMC();
-    DataTable DT = new DataTable();
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class PaymentReceipt : System.Web.UI.Page
     {
-        try
+        BALPMC PMC = new BALPMC();
+        DataTable DT = new DataTable();
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            try
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                if (!IsPostBack)
                 {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
-                }
-                else
-                {
-                    GetD();
+                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                    {
+                        Session.Clear();
+                        Session.Abandon();
+                        Session.RemoveAll();
+                        Response.Redirect("~/Login.aspx?Value=" + "2");
+                    }
+                    else
+                    {
+                        GetD();
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
         }
-        catch (Exception ex)
+        public void GetD()
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            try
+            {
+                PMC.BindGetEmpProj(ddlProject, Session["UserID"].ToString());
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
         }
-    }
-    public void GetD()
-    {
-        try
+        protected void ddlProject_SelectedIndexChanged(object sender, EventArgs e)
         {
-            PMC.BindGetEmpProj(ddlProject, Session["UserID"].ToString());
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void ddlProject_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        try
-        {
-            PMC.BindGetPaymentReceipt(GridView1, ddlProject.SelectedValue.ToString());
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            try
+            {
+                PMC.BindGetPaymentReceipt(GridView1, ddlProject.SelectedValue.ToString());
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
         }
     }
 }

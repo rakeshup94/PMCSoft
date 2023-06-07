@@ -18,7 +18,7 @@ namespace PMCSoft.Infrastructure.Data
 {
     public class DALL
     {
-        public static string Conn = ConfigurationManager.AppSettings["DBConnectionString"].ToString();
+        public static string Conn = ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
         public DALL()
         {
 

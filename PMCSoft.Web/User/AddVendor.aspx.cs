@@ -20,591 +20,594 @@ using System.IO;
  
 using PMCSoft.Infrastructure.Data;
 
-public partial class User_AddVendor : System.Web.UI.Page
+namespace PMCSoft.Web.User
 {
-    BALPMC PMC = new BALPMC();
-    DataTable DT = new DataTable();
-    string VenID = "", TypeID = "";
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class AddVendor : System.Web.UI.Page
     {
-        try
+        BALPMC PMC = new BALPMC();
+        DataTable DT = new DataTable();
+        string VenID = "", TypeID = "";
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            try
             {
-                if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                if (!IsPostBack)
                 {
-                    Session.Clear();
-                    Session.Abandon();
-                    Session.RemoveAll();
-                    Response.Redirect("~/Login.aspx?Value=" + "2");
-                }
-                else
-                {
-                    GetCountry();
-                    BindProject();
-                    PMC.BindGetPartyVendorType(ddlVendorType);
+                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
+                    {
+                        Session.Clear();
+                        Session.Abandon();
+                        Session.RemoveAll();
+                        Response.Redirect("~/Login.aspx?Value=" + "2");
+                    }
+                    else
+                    {
+                        GetCountry();
+                        BindProject();
+                        PMC.BindGetPartyVendorType(ddlVendorType);
+                    }
                 }
             }
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void GetCountry()
-    {
-        try
-        {
-            PMC.BindCountryDdl(ddlCountry);
-            ddlState.Items.Insert(0, new ListItem("Select State", "-1"));
-            ddlCity.Items.Insert(0, new ListItem("Select City", "-1"));
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void BindProject()
-    {
-        try
-        {
-            PMC.BindGetEmpProjGV(GVProject, Session["UserID"].ToString());
-            //PMC.BindGetVendorDetail(GridView1);
-            PMC.BindGetEmpProj(ddlP, Session["UserID"].ToString());
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void btnCancel_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            Response.Redirect("~/User/Home.aspx");
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public bool isNumeric(string val, System.Globalization.NumberStyles NumberStyle)
-    {
-        if (val.Length > 0)
-        {
-            Double result;
-            return Double.TryParse(val, NumberStyle,
-                System.Globalization.CultureInfo.CurrentCulture, out result);
-        }
-        else
-        {
-            return true;
-        }
-    }
-    protected void btnSubmit_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            int check = 0, r = 0;
-            string ch = string.Empty;
-            if (txtEmail.Text.Length > 0)
+            catch (Exception ex)
             {
-                if (this.IsValidEmail(txtEmail.Text))
-                {
-                    check = 0;
-                }
-                else
-                {
-                    check = 1;
-                }
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        public void GetCountry()
+        {
+            try
+            {
+                PMC.BindCountryDdl(ddlCountry);
+                ddlState.Items.Insert(0, new ListItem("Select State", "-1"));
+                ddlCity.Items.Insert(0, new ListItem("Select City", "-1"));
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        public void BindProject()
+        {
+            try
+            {
+                PMC.BindGetEmpProjGV(GVProject, Session["UserID"].ToString());
+                //PMC.BindGetVendorDetail(GridView1);
+                PMC.BindGetEmpProj(ddlP, Session["UserID"].ToString());
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Response.Redirect("~/User/Home.aspx");
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        public bool isNumeric(string val, System.Globalization.NumberStyles NumberStyle)
+        {
+            if (val.Length > 0)
+            {
+                Double result;
+                return Double.TryParse(val, NumberStyle,
+                    System.Globalization.CultureInfo.CurrentCulture, out result);
             }
             else
             {
-                check = 0;
+                return true;
             }
-            if (txtName.Text != "")
+        }
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            try
             {
-                if (ddlCountry.SelectedValue != "-1")
+                int check = 0, r = 0;
+                string ch = string.Empty;
+                if (txtEmail.Text.Length > 0)
                 {
-                    if (ddlState.SelectedValue != "-1")
+                    if (this.IsValidEmail(txtEmail.Text))
                     {
-                        if (ddlCity.SelectedValue != "-1")
+                        check = 0;
+                    }
+                    else
+                    {
+                        check = 1;
+                    }
+                }
+                else
+                {
+                    check = 0;
+                }
+                if (txtName.Text != "")
+                {
+                    if (ddlCountry.SelectedValue != "-1")
+                    {
+                        if (ddlState.SelectedValue != "-1")
                         {
-                            if (this.isNumeric(txtMobileNo.Text, System.Globalization.NumberStyles.Integer))
+                            if (ddlCity.SelectedValue != "-1")
                             {
-                                if (check == 0)
+                                if (this.isNumeric(txtMobileNo.Text, System.Globalization.NumberStyles.Integer))
                                 {
-                                    if (ddlVendorType.SelectedValue != "-1")
+                                    if (check == 0)
                                     {
-                                        if (GVProject.Rows.Count > 0)
+                                        if (ddlVendorType.SelectedValue != "-1")
                                         {
-                                            for (int i = 0; i < GVProject.Rows.Count; i++)
+                                            if (GVProject.Rows.Count > 0)
                                             {
-                                                CheckBox chkSW = (CheckBox)GVProject.Rows[i].Cells[0].FindControl("chkSW");
-                                                Label lblProjectName = (Label)GVProject.Rows[i].Cells[0].FindControl("lblProjectName");
-                                                HiddenField hdnPRJID = (HiddenField)GVProject.Rows[i].Cells[0].FindControl("hdnPRJID");
+                                                for (int i = 0; i < GVProject.Rows.Count; i++)
+                                                {
+                                                    CheckBox chkSW = (CheckBox)GVProject.Rows[i].Cells[0].FindControl("chkSW");
+                                                    Label lblProjectName = (Label)GVProject.Rows[i].Cells[0].FindControl("lblProjectName");
+                                                    HiddenField hdnPRJID = (HiddenField)GVProject.Rows[i].Cells[0].FindControl("hdnPRJID");
 
-                                                if (chkSW.Checked == true)
-                                                {
-                                                    r = 1;
-                                                    break;
-                                                }
-                                            }
-                                            if (r == 1)
-                                            {
-                                                for (int w = 0; w < GVProject.Rows.Count; w++)
-                                                {
-                                                    CheckBox chkSW = (CheckBox)GVProject.Rows[w].Cells[0].FindControl("chkSW");
-                                                    if (chkSW.Checked)
+                                                    if (chkSW.Checked == true)
                                                     {
-                                                        Label lblProjectName = (Label)GVProject.Rows[w].Cells[0].FindControl("lblProjectName");
-                                                        HiddenField hdnPRJID = (HiddenField)GVProject.Rows[w].Cells[0].FindControl("hdnPRJID");
-
-                                                        ch = ch + hdnPRJID.Value + ",";
-                                                        ViewState["ch"] = ch.ToString();
+                                                        r = 1;
+                                                        break;
                                                     }
                                                 }
-                                                DT = PMCApp.GetDataTableWithOneStringValue("GetVendor", txtMobileNo.Text);
-                                                if (DT.Rows.Count > 0)
+                                                if (r == 1)
                                                 {
-                                                    string scripts1 = "alert('This vendor is already exists.');";
-                                                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts1, true);                                                
+                                                    for (int w = 0; w < GVProject.Rows.Count; w++)
+                                                    {
+                                                        CheckBox chkSW = (CheckBox)GVProject.Rows[w].Cells[0].FindControl("chkSW");
+                                                        if (chkSW.Checked)
+                                                        {
+                                                            Label lblProjectName = (Label)GVProject.Rows[w].Cells[0].FindControl("lblProjectName");
+                                                            HiddenField hdnPRJID = (HiddenField)GVProject.Rows[w].Cells[0].FindControl("hdnPRJID");
+
+                                                            ch = ch + hdnPRJID.Value + ",";
+                                                            ViewState["ch"] = ch.ToString();
+                                                        }
+                                                    }
+                                                    DT = PMCApp.GetDataTableWithOneStringValue("GetVendor", txtMobileNo.Text);
+                                                    if (DT.Rows.Count > 0)
+                                                    {
+                                                        string scripts1 = "alert('This vendor is already exists.');";
+                                                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts1, true);
+                                                    }
+                                                    else
+                                                    {
+                                                        PMC.GetMaxIDForVenID(Session["CompID"].ToString(), out VenID);
+                                                        string strCH = ViewState["ch"].ToString().Remove(ViewState["ch"].ToString().Length - 1, 1);
+                                                        ViewState["P"] = strCH.ToString();
+
+                                                        PMC.InsertVendorDetail(Session["CompID"].ToString(), ViewState["P"].ToString(), VenID.ToString(), txtName.Text,
+                                                            txtAddress.Text, ddlCountry.SelectedValue.ToString(), ddlState.SelectedValue.ToString(),
+                                                            ddlCity.SelectedValue.ToString(), txtMobileNo.Text, txtEmail.Text, ddlVendorType.SelectedItem.Text,
+                                                            Session["UserID"].ToString(), ddlVendorType.SelectedValue.ToString(), TxtPanNo.Text, TxtTinNo.Text, TxtEccNo.Text, TxtVat.Text);
+
+                                                        ClearData();
+
+                                                        string scripts1 = "alert('Vendor data insert successfully.');";
+                                                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts1, true);
+                                                    }
                                                 }
                                                 else
                                                 {
-                                                    PMC.GetMaxIDForVenID(Session["CompID"].ToString(), out VenID);
-                                                    string strCH = ViewState["ch"].ToString().Remove(ViewState["ch"].ToString().Length - 1, 1);
-                                                    ViewState["P"] = strCH.ToString();
-
-                                                    PMC.InsertVendorDetail(Session["CompID"].ToString(), ViewState["P"].ToString(), VenID.ToString(), txtName.Text,
-                                                        txtAddress.Text, ddlCountry.SelectedValue.ToString(), ddlState.SelectedValue.ToString(),
-                                                        ddlCity.SelectedValue.ToString(), txtMobileNo.Text, txtEmail.Text, ddlVendorType.SelectedItem.Text,
-                                                        Session["UserID"].ToString(), ddlVendorType.SelectedValue.ToString(),TxtPanNo.Text,TxtTinNo.Text,TxtEccNo.Text,TxtVat.Text);
-
-                                                    ClearData();
-
-                                                    string scripts1 = "alert('Vendor data insert successfully.');";
+                                                    string scripts1 = "alert('Kindly select project.');";
                                                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts1, true);
                                                 }
                                             }
                                             else
                                             {
-                                                string scripts1 = "alert('Kindly select project.');";
-                                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts1, true);
+                                                string scripts = "alert('Kindly add project.');";
+                                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                                             }
                                         }
                                         else
                                         {
-                                            string scripts = "alert('Kindly add project.');";
+                                            string scripts = "alert('Kindly select vendor type.');";
                                             ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                                         }
                                     }
                                     else
                                     {
-                                        string scripts = "alert('Kindly select vendor type.');";
+                                        string scripts = "alert('Kindly fill valid email.');";
                                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                                     }
                                 }
                                 else
                                 {
-                                    string scripts = "alert('Kindly fill valid email.');";
+                                    string scripts = "alert('Kindly fill valid mobile no.');";
                                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                                 }
                             }
                             else
                             {
-                                string scripts = "alert('Kindly fill valid mobile no.');";
+                                string scripts = "alert('Kindly select city.');";
                                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                             }
                         }
                         else
                         {
-                            string scripts = "alert('Kindly select city.');";
+                            string scripts = "alert('Kindly select state.');";
                             ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                         }
                     }
                     else
                     {
-                        string scripts = "alert('Kindly select state.');";
+                        string scripts = "alert('Kindly select country.');";
                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                     }
                 }
                 else
                 {
-                    string scripts = "alert('Kindly select country.');";
+                    string scripts = "alert('Kindly fill vendor name.');";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly fill vendor name.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        public void ClearData()
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    public void ClearData()
-    {
-        try
-        {
-            txtName.Text = ""; txtAddress.Text = ""; ddlCountry.SelectedValue = "-1"; ddlState.SelectedValue = "-1";
-            ddlCity.SelectedValue = "-1"; txtMobileNo.Text = ""; txtEmail.Text = ""; ddlVendorType.SelectedValue = "-1";
-            BindProject();
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-    {
-        GVProject.Visible = true;
-    }
-    protected void ddlCountry_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        try
-        {
-            PMC.BindStateDdl(ddlState, ddlCountry.SelectedValue.ToString());
-            ddlCity.Items.Insert(0, new ListItem("Select City", "-1"));
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void ddlState_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        try
-        {
-            PMC.BindCityDdl(ddlCity, ddlState.SelectedValue.ToString());
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    private bool IsValidEmail(string emailAddress)
-    {
-        return Regex.IsMatch(emailAddress, @"^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$");
-    }
-    protected void ddlP_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        try
-        {
-            PMC.BindGetVendorDetailByProject(GridView1, ddlP.SelectedValue.ToString());
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
-    {
-        try
-        {
-            if (e.CommandName == "EditVendor")
+            try
             {
-                LinkButton lnk = (LinkButton)e.CommandSource;
-                HiddenField HiddenField1 = (HiddenField)lnk.Parent.FindControl("HiddenField1");
-                DT = PMCApp.GetDataTableWithOneStringValue("GetVendorDetailFromID", HiddenField1.Value);
-                if (DT.Rows.Count > 0)
-                {
-                    PMC.BindCountryDdl(ddlECountry);
-                    ddlECountry.SelectedValue = DT.Rows[0]["Country"].ToString();
-                    PMC.BindStateDdl(ddlEState, ddlECountry.SelectedValue.ToString());
-                    ddlEState.SelectedValue = DT.Rows[0]["State"].ToString();
-                    PMC.BindCityDdl(ddlECity, ddlEState.SelectedValue.ToString());
-                    ddlECity.SelectedValue = DT.Rows[0]["City"].ToString();
-                    PMC.BindGetPartyVendorType(ddlEVendorType);
-                    ddlEVendorType.SelectedValue = DT.Rows[0]["VendorTypeCode"].ToString();
-                    txtEName.Text = DT.Rows[0]["Name"].ToString();
-                    txtEAddress.Text = DT.Rows[0]["Address"].ToString();
-                    txtEMobileNo.Text = DT.Rows[0]["MobileNo"].ToString();
-                    txtEEmail.Text = DT.Rows[0]["Email"].ToString();
-                    PMC.BindGetEmpProjGV(GridView2, Session["UserID"].ToString());
-                    for (int i = 0; i < GridView2.Rows.Count; i++)
-                    {
-                        CheckBox chkSW = (CheckBox)GridView2.Rows[i].Cells[0].FindControl("chkSW");
-                        HiddenField hdnPRJID = (HiddenField)GridView2.Rows[i].Cells[0].FindControl("hdnPRJID");
-                        DT = PMCApp.GetDataTableWithTwoStringValue("GetVendorDetailFromPRJID", HiddenField1.Value, hdnPRJID.Value);
-                        if (DT.Rows.Count > 0)
-                        {
-                            chkSW.Checked = true;
-                        }
-                    }
-                    HiddenField2.Value = HiddenField1.Value;
-                    ModalPopupExtender1.Show();
-                }
+                txtName.Text = ""; txtAddress.Text = ""; ddlCountry.SelectedValue = "-1"; ddlState.SelectedValue = "-1";
+                ddlCity.SelectedValue = "-1"; txtMobileNo.Text = ""; txtEmail.Text = ""; ddlVendorType.SelectedValue = "-1";
+                BindProject();
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        catch (Exception ex)
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            GVProject.Visible = true;
         }
-    }
-    protected void ddlECountry_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        try
+        protected void ddlCountry_SelectedIndexChanged(object sender, EventArgs e)
         {
-            PMC.BindStateDdl(ddlEState, ddlECountry.SelectedValue.ToString());
-            ddlECity.Items.Insert(0, new ListItem("Select City", "-1"));
-            ModalPopupExtender1.Show();
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void ddlEState_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        try
-        {
-            PMC.BindCityDdl(ddlECity, ddlEState.SelectedValue.ToString());
-            ModalPopupExtender1.Show();
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void btnECancel_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            ModalPopupExtender1.Hide();
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void btnESubmit_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            int check = 0, r = 0;
-            string ch = string.Empty;
-            if (txtEEmail.Text.Length > 0)
+            try
             {
-                if (this.IsValidEmail(txtEEmail.Text))
+                PMC.BindStateDdl(ddlState, ddlCountry.SelectedValue.ToString());
+                ddlCity.Items.Insert(0, new ListItem("Select City", "-1"));
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void ddlState_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                PMC.BindCityDdl(ddlCity, ddlState.SelectedValue.ToString());
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        private bool IsValidEmail(string emailAddress)
+        {
+            return Regex.IsMatch(emailAddress, @"^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$");
+        }
+        protected void ddlP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                PMC.BindGetVendorDetailByProject(GridView1, ddlP.SelectedValue.ToString());
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            try
+            {
+                if (e.CommandName == "EditVendor")
                 {
-                    check = 0;
+                    LinkButton lnk = (LinkButton)e.CommandSource;
+                    HiddenField HiddenField1 = (HiddenField)lnk.Parent.FindControl("HiddenField1");
+                    DT = PMCApp.GetDataTableWithOneStringValue("GetVendorDetailFromID", HiddenField1.Value);
+                    if (DT.Rows.Count > 0)
+                    {
+                        PMC.BindCountryDdl(ddlECountry);
+                        ddlECountry.SelectedValue = DT.Rows[0]["Country"].ToString();
+                        PMC.BindStateDdl(ddlEState, ddlECountry.SelectedValue.ToString());
+                        ddlEState.SelectedValue = DT.Rows[0]["State"].ToString();
+                        PMC.BindCityDdl(ddlECity, ddlEState.SelectedValue.ToString());
+                        ddlECity.SelectedValue = DT.Rows[0]["City"].ToString();
+                        PMC.BindGetPartyVendorType(ddlEVendorType);
+                        ddlEVendorType.SelectedValue = DT.Rows[0]["VendorTypeCode"].ToString();
+                        txtEName.Text = DT.Rows[0]["Name"].ToString();
+                        txtEAddress.Text = DT.Rows[0]["Address"].ToString();
+                        txtEMobileNo.Text = DT.Rows[0]["MobileNo"].ToString();
+                        txtEEmail.Text = DT.Rows[0]["Email"].ToString();
+                        PMC.BindGetEmpProjGV(GridView2, Session["UserID"].ToString());
+                        for (int i = 0; i < GridView2.Rows.Count; i++)
+                        {
+                            CheckBox chkSW = (CheckBox)GridView2.Rows[i].Cells[0].FindControl("chkSW");
+                            HiddenField hdnPRJID = (HiddenField)GridView2.Rows[i].Cells[0].FindControl("hdnPRJID");
+                            DT = PMCApp.GetDataTableWithTwoStringValue("GetVendorDetailFromPRJID", HiddenField1.Value, hdnPRJID.Value);
+                            if (DT.Rows.Count > 0)
+                            {
+                                chkSW.Checked = true;
+                            }
+                        }
+                        HiddenField2.Value = HiddenField1.Value;
+                        ModalPopupExtender1.Show();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void ddlECountry_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                PMC.BindStateDdl(ddlEState, ddlECountry.SelectedValue.ToString());
+                ddlECity.Items.Insert(0, new ListItem("Select City", "-1"));
+                ModalPopupExtender1.Show();
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void ddlEState_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                PMC.BindCityDdl(ddlECity, ddlEState.SelectedValue.ToString());
+                ModalPopupExtender1.Show();
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void btnECancel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ModalPopupExtender1.Hide();
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void btnESubmit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int check = 0, r = 0;
+                string ch = string.Empty;
+                if (txtEEmail.Text.Length > 0)
+                {
+                    if (this.IsValidEmail(txtEEmail.Text))
+                    {
+                        check = 0;
+                    }
+                    else
+                    {
+                        check = 1;
+                    }
                 }
                 else
                 {
-                    check = 1;
+                    check = 0;
                 }
-            }
-            else
-            {
-                check = 0;
-            }
-            if (txtEName.Text != "")
-            {
-                if (ddlECountry.SelectedValue != "-1")
+                if (txtEName.Text != "")
                 {
-                    if (ddlEState.SelectedValue != "-1")
+                    if (ddlECountry.SelectedValue != "-1")
                     {
-                        if (ddlECity.SelectedValue != "-1")
+                        if (ddlEState.SelectedValue != "-1")
                         {
-                            if (this.isNumeric(txtEMobileNo.Text, System.Globalization.NumberStyles.Integer))
+                            if (ddlECity.SelectedValue != "-1")
                             {
-                                if (check == 0)
+                                if (this.isNumeric(txtEMobileNo.Text, System.Globalization.NumberStyles.Integer))
                                 {
-                                    if (ddlEVendorType.SelectedValue != "-1")
+                                    if (check == 0)
                                     {
-                                        if (GridView2.Rows.Count > 0)
+                                        if (ddlEVendorType.SelectedValue != "-1")
                                         {
-                                            for (int i = 0; i < GridView2.Rows.Count; i++)
+                                            if (GridView2.Rows.Count > 0)
                                             {
-                                                CheckBox chkSW = (CheckBox)GridView2.Rows[i].Cells[0].FindControl("chkSW");
-                                                Label lblProjectName = (Label)GridView2.Rows[i].Cells[0].FindControl("lblProjectName");
-                                                HiddenField hdnPRJID = (HiddenField)GridView2.Rows[i].Cells[0].FindControl("hdnPRJID");
+                                                for (int i = 0; i < GridView2.Rows.Count; i++)
+                                                {
+                                                    CheckBox chkSW = (CheckBox)GridView2.Rows[i].Cells[0].FindControl("chkSW");
+                                                    Label lblProjectName = (Label)GridView2.Rows[i].Cells[0].FindControl("lblProjectName");
+                                                    HiddenField hdnPRJID = (HiddenField)GridView2.Rows[i].Cells[0].FindControl("hdnPRJID");
 
-                                                if (chkSW.Checked == true)
-                                                {
-                                                    r = 1;
-                                                    break;
-                                                }
-                                            }
-                                            if (r == 1)
-                                            {
-                                                for (int w = 0; w < GridView2.Rows.Count; w++)
-                                                {
-                                                    CheckBox chkSW = (CheckBox)GridView2.Rows[w].Cells[0].FindControl("chkSW");
-                                                    if (chkSW.Checked)
+                                                    if (chkSW.Checked == true)
                                                     {
-                                                        Label lblProjectName = (Label)GridView2.Rows[w].Cells[0].FindControl("lblProjectName");
-                                                        HiddenField hdnPRJID = (HiddenField)GridView2.Rows[w].Cells[0].FindControl("hdnPRJID");
-
-                                                        ch = ch + hdnPRJID.Value + ",";
-                                                        ViewState["ch1"] = ch.ToString();
+                                                        r = 1;
+                                                        break;
                                                     }
                                                 }
+                                                if (r == 1)
+                                                {
+                                                    for (int w = 0; w < GridView2.Rows.Count; w++)
+                                                    {
+                                                        CheckBox chkSW = (CheckBox)GridView2.Rows[w].Cells[0].FindControl("chkSW");
+                                                        if (chkSW.Checked)
+                                                        {
+                                                            Label lblProjectName = (Label)GridView2.Rows[w].Cells[0].FindControl("lblProjectName");
+                                                            HiddenField hdnPRJID = (HiddenField)GridView2.Rows[w].Cells[0].FindControl("hdnPRJID");
 
-                                                string strCH = ViewState["ch1"].ToString().Remove(ViewState["ch1"].ToString().Length - 1, 1);
-                                                ViewState["P1"] = strCH.ToString();
+                                                            ch = ch + hdnPRJID.Value + ",";
+                                                            ViewState["ch1"] = ch.ToString();
+                                                        }
+                                                    }
 
-                                                PMC.UpdateVendor(ViewState["P1"].ToString(), HiddenField2.Value, txtEName.Text, txtEAddress.Text,
-                                                    ddlECountry.SelectedValue.ToString(), ddlEState.SelectedValue.ToString(), ddlECity.SelectedValue.ToString(),
-                                                    txtEMobileNo.Text, txtEEmail.Text, ddlEVendorType.SelectedItem.Text, ddlEVendorType.SelectedValue.ToString());
+                                                    string strCH = ViewState["ch1"].ToString().Remove(ViewState["ch1"].ToString().Length - 1, 1);
+                                                    ViewState["P1"] = strCH.ToString();
 
-                                                ModalPopupExtender1.Hide();
-                                                //PMC.BindGetVendorDetail(GridView1);
-                                                PMC.BindGetVendorDetailByProject(GridView1, ddlP.SelectedValue.ToString());
-                                                string scripts1 = "alert('update successfully.');";
-                                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts1, true);
+                                                    PMC.UpdateVendor(ViewState["P1"].ToString(), HiddenField2.Value, txtEName.Text, txtEAddress.Text,
+                                                        ddlECountry.SelectedValue.ToString(), ddlEState.SelectedValue.ToString(), ddlECity.SelectedValue.ToString(),
+                                                        txtEMobileNo.Text, txtEEmail.Text, ddlEVendorType.SelectedItem.Text, ddlEVendorType.SelectedValue.ToString());
+
+                                                    ModalPopupExtender1.Hide();
+                                                    //PMC.BindGetVendorDetail(GridView1);
+                                                    PMC.BindGetVendorDetailByProject(GridView1, ddlP.SelectedValue.ToString());
+                                                    string scripts1 = "alert('update successfully.');";
+                                                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts1, true);
+                                                }
+                                                else
+                                                {
+                                                    string scripts1 = "alert('Kindly select project.');";
+                                                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts1, true);
+                                                    ModalPopupExtender1.Show();
+                                                }
                                             }
                                             else
                                             {
-                                                string scripts1 = "alert('Kindly select project.');";
-                                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts1, true);
+                                                string scripts = "alert('Kindly add project.');";
+                                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                                                 ModalPopupExtender1.Show();
                                             }
                                         }
                                         else
                                         {
-                                            string scripts = "alert('Kindly add project.');";
+                                            string scripts = "alert('Kindly select vendor type.');";
                                             ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                                             ModalPopupExtender1.Show();
                                         }
                                     }
                                     else
                                     {
-                                        string scripts = "alert('Kindly select vendor type.');";
+                                        string scripts = "alert('Kindly fill valid email.');";
                                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                                         ModalPopupExtender1.Show();
                                     }
                                 }
                                 else
                                 {
-                                    string scripts = "alert('Kindly fill valid email.');";
+                                    string scripts = "alert('Kindly fill valid mobile no.');";
                                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                                     ModalPopupExtender1.Show();
                                 }
                             }
                             else
                             {
-                                string scripts = "alert('Kindly fill valid mobile no.');";
+                                string scripts = "alert('Kindly select city.');";
                                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                                 ModalPopupExtender1.Show();
                             }
                         }
                         else
                         {
-                            string scripts = "alert('Kindly select city.');";
+                            string scripts = "alert('Kindly select state.');";
                             ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                             ModalPopupExtender1.Show();
                         }
                     }
                     else
                     {
-                        string scripts = "alert('Kindly select state.');";
+                        string scripts = "alert('Kindly select country.');";
                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                         ModalPopupExtender1.Show();
                     }
                 }
                 else
                 {
-                    string scripts = "alert('Kindly select country.');";
+                    string scripts = "alert('Kindly fill vendor name.');";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                     ModalPopupExtender1.Show();
                 }
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly fill vendor name.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                ModalPopupExtender1.Show();
             }
         }
-        catch (Exception ex)
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            GridView2.Visible = true;
+            ModalPopupExtender1.Show();
         }
-    }
-    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
-    {
-        GridView2.Visible = true;
-        ModalPopupExtender1.Show();
-    }
-    protected void btnAdd_Click(object sender, EventArgs e)
-    {
-        try
+        protected void btnAdd_Click(object sender, EventArgs e)
         {
-            ModalPopupExtender2.Show();
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void btnSave_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            if (txtVendorType.Text != "")
+            try
             {
-                DT = PMCApp.GetDataTableWithOneStringValue("GetVendorType", txtVendorType.Text);
-                if (DT.Rows.Count > 0)
+                ModalPopupExtender2.Show();
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
+        }
+        protected void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtVendorType.Text != "")
                 {
-                    string scripts = "alert('This party/vendor type is already exists.');";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                    ModalPopupExtender2.Show();
+                    DT = PMCApp.GetDataTableWithOneStringValue("GetVendorType", txtVendorType.Text);
+                    if (DT.Rows.Count > 0)
+                    {
+                        string scripts = "alert('This party/vendor type is already exists.');";
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                        ModalPopupExtender2.Show();
+                    }
+                    else
+                    {
+                        PMC.GetMaxIDForVenTypeID(Session["CompID"].ToString(), out TypeID);
+
+                        PMC.InsertVendorType(Session["CompID"].ToString(), TypeID.ToString(), txtVendorType.Text, Session["UserID"].ToString(),
+                            Session["UserID"].ToString());
+
+                        txtVendorType.Text = "";
+                        PMC.BindGetPartyVendorType(ddlVendorType);
+                        ModalPopupExtender2.Hide();
+                    }
                 }
                 else
                 {
-                    PMC.GetMaxIDForVenTypeID(Session["CompID"].ToString(), out TypeID);
-
-                    PMC.InsertVendorType(Session["CompID"].ToString(), TypeID.ToString(), txtVendorType.Text, Session["UserID"].ToString(),
-                        Session["UserID"].ToString());
-
-                    txtVendorType.Text = "";
-                    PMC.BindGetPartyVendorType(ddlVendorType);
-                    ModalPopupExtender2.Hide();
+                    string scripts = "alert('Kindly fill party/vendor type.');";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+                    ModalPopupExtender2.Show();
                 }
             }
-            else
+            catch (Exception ex)
             {
-                string scripts = "alert('Kindly fill party/vendor type.');";
+                string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                ModalPopupExtender2.Show();
             }
         }
-        catch (Exception ex)
+        protected void btnClose_Click(object sender, EventArgs e)
         {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-        }
-    }
-    protected void btnClose_Click(object sender, EventArgs e)
-    {
-        try
-        {
-            ModalPopupExtender2.Hide();
-        }
-        catch (Exception ex)
-        {
-            string scripts = "alert('Some error occurs.');";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            try
+            {
+                ModalPopupExtender2.Hide();
+            }
+            catch (Exception ex)
+            {
+                string scripts = "alert('Some error occurs.');";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
+            }
         }
     }
 }
