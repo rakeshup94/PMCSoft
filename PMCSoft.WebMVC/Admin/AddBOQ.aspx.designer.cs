@@ -42,24 +42,6 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
-        /// TabContainer1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.TabContainer TabContainer1;
-
-        /// <summary>
-        /// Tab1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.TabPanel Tab1;
-
-        /// <summary>
         /// ddlProject control.
         /// </summary>
         /// <remarks>
@@ -141,15 +123,6 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.Button btnCancel;
 
         /// <summary>
-        /// Tab2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.TabPanel Tab2;
-
-        /// <summary>
         /// ddlProjectSub control.
         /// </summary>
         /// <remarks>
@@ -229,15 +202,6 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSubCancel;
-
-        /// <summary>
-        /// Tab3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.TabPanel Tab3;
 
         /// <summary>
         /// ddlProjectSubPart control.
@@ -328,15 +292,6 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnPartCancel;
-
-        /// <summary>
-        /// Tab4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.TabPanel Tab4;
 
         /// <summary>
         /// FileUpload2 control.
