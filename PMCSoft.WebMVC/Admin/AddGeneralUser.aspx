@@ -23,11 +23,11 @@
     <!--END TITLE & BREADCRUMB PAGE-->
     <!--BEGIN CONTENT-->
     <div class="page-content">
-        <div class="card">
-            <div class="card-body">
-                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-                    <ContentTemplate>
 
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <div class="card">
+                    <div class="card-body">
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="mb-3">
@@ -97,156 +97,33 @@
                                 </div>
                             </div>
 
-                            <asp:Panel ID="Panel1" runat="server" Style="display: none;">
 
-
-
-
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Department</h4>
-
-
-                                        </div>
-
-                                        <div class="modal-body">
-
-                                            <div class="card">
-
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-6">
-                                                            <div class="mb-3">
-                                                                <asp:TextBox CssClass="form-control" ID="txtDepartment" runat="server" onkeyup="valid(this)"
-                                                                    onblur="valid(this)"></asp:TextBox>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6">
-                                                            <asp:Button CssClass="btn btn-primary" ID="BtnDeptSave" runat="server" Text="Submit"
-                                                                OnClick="BtnDeptSave_Click" />
-                                                            <asp:Button CssClass="btn btn-primary" ID="btndepcancel" runat="server" Text="Cancel"
-                                                                OnClick="btndepcancel_Click" />
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            </asp:Panel>
 
                             <div class="col-lg-4">
                                 <div class="mb-3">
                                     Designation
                                                 <div class="row">
-                                    <div class="col-xl-10 col-10 pe-0">
-                                         <asp:DropDownList CssClass="form-select" ID="ddlDesignation" runat="server" AutoPostBack="True"
-                                                    OnSelectedIndexChanged="ddlDesignation_SelectedIndexChanged">
-                                                </asp:DropDownList>
-                                    
-                                    </div>
-                                    <div class="col-xl-2 col-2 ps-0">
-                                                  <asp:Button CssClass="btn btn-primary" ID="LnkAddNewDesignation" runat="server" Text="+"
-                                        OnClick="LnkAddNewDesignation_Click"></asp:Button>
-                                    <div style="display: none">
-                                        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
-                                    </div>
-                                    <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
-                                        PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"
-                                        Enabled="True">
-                                    </cc1:ModalPopupExtender>
-                                    </div>
-                                </div>
-                                               
-                       
-                                    <asp:Panel ID="Panel2" runat="server" Style="display: none;">
+                                                    <div class="col-xl-10 col-10 pe-0">
+                                                        <asp:DropDownList CssClass="form-select" ID="ddlDesignation" runat="server" AutoPostBack="True"
+                                                            OnSelectedIndexChanged="ddlDesignation_SelectedIndexChanged">
+                                                        </asp:DropDownList>
 
-
-
-                                        <div class="modal-dialog modal-dialog-centered">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title">Add Designation</h4>
-
-
-                                                </div>
-
-                                                <div class="modal-body">
-                                                    <div class="card">
-
-                                                        <div class="card-body">
-                                                            <div class="row">
-
-                                                                <div class="col-lg-4">
-                                                                    <div class="mb-3">
-                                                                        Department
-                                                                                   
-                                                                                        <asp:DropDownList CssClass="form-select" ID="ddlNewDept"
-                                                                                            runat="server">
-                                                                                        </asp:DropDownList>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="col-lg-4">
-                                                                    <div class="mb-3">
-                                                                        Designation
-                                                                                 
-                                                                                        <asp:TextBox CssClass="form-control" ID="txtDesignation"
-                                                                                            runat="server" onkeyup="valid(this)"
-                                                                                            onblur="valid(this)"></asp:TextBox>
-                                                                    </div>
-                                                                </div>
-
-
-                                                                <div class="col-lg-12">
-                                                                    <asp:Button CssClass="btn btn-primary" ID="BtnAddnewDesignation"
-                                                                        runat="server" Text="Submit"
-                                                                        OnClick="BtnAddnewDesignation_Click" />
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnAddNewDesignationCancel"
-                                                                        runat="server"
-                                                                        Text="Cancel" OnClick="btnAddNewDesignationCancel_Click" />
-                                                                </div>
-
-
-
-
-
-                                                            </div>
+                                                    </div>
+                                                    <div class="col-xl-2 col-2 ps-0">
+                                                        <asp:Button CssClass="btn btn-primary" ID="LnkAddNewDesignation" runat="server" Text="+"
+                                                            OnClick="LnkAddNewDesignation_Click"></asp:Button>
+                                                        <div style="display: none">
+                                                            <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
                                                         </div>
+                                                        <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
+                                                            PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"
+                                                            Enabled="True">
+                                                        </cc1:ModalPopupExtender>
                                                     </div>
                                                 </div>
 
 
-                                            </div>
-                                        </div>
 
-
-
-
-
-
-
-
-                                    </asp:Panel>
                                 </div>
                             </div>
 
@@ -287,42 +164,7 @@
                                                         <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/Images/DropDownList.png" />
                                 </div>
                             </div>
-                            <asp:Panel ID="pnlCustomers" runat="server" Style="display: none;">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title"></h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-lg-12" style="max-height:100px; overflow:auto;">
 
-
-                                                    <asp:GridView CssClass="table table-striped"  ID="GVProject" runat="server" AutoGenerateColumns="false" GridLines="None"
-                                                        ShowHeader="false">
-                                                        <Columns>
-                                                            <asp:TemplateField>
-                                                                <ItemTemplate>
-                                                                    <asp:CheckBox ID="chkSW" runat="server" />
-                                                                </ItemTemplate>
-                                                                <ItemStyle Width="10" />
-                                                            </asp:TemplateField>
-                                                            <asp:TemplateField>
-                                                                <ItemTemplate>
-                                                                    <asp:Label ID="lblProjectName" runat="server" Text='<%#Bind("ProjectName") %>' ></asp:Label>
-                                                                    <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Eval("PRJID") %>' />
-                                                                </ItemTemplate>
-                                                            </asp:TemplateField>
-                                                        </Columns>
-                                                    </asp:GridView>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </asp:Panel>
                             <cc1:PopupControlExtender ID="PopupControlExtender1" runat="server" TargetControlID="ImageButton1"
                                 PopupControlID="pnlCustomers" Position="Bottom" OffsetY="-16">
                             </cc1:PopupControlExtender>
@@ -336,10 +178,165 @@
                                     Text="Cancel" OnClick="btnReset_Click" />
                             </div>
                         </div>
+                    </div>
+                </div>
+                <asp:Panel ID="pnlCustomers" runat="server" Style="display: none;">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"></h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-12" style="max-height: 100px; overflow: auto;">
+                                        <asp:GridView CssClass="table table-striped" ID="GVProject" runat="server" AutoGenerateColumns="false"
+                                            GridLines="None"
+                                            ShowHeader="false">
+                                            <Columns>
+                                                <asp:TemplateField>
+                                                    <ItemTemplate>
+                                                        <asp:CheckBox ID="chkSW" runat="server" />
+                                                    </ItemTemplate>
+                                                    <ItemStyle Width="10" />
+                                                </asp:TemplateField>
+                                                <asp:TemplateField>
+                                                    <ItemTemplate>
+                                                        <asp:Label ID="lblProjectName" runat="server" Text='<%#Bind("ProjectName") %>'></asp:Label>
+                                                        <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Eval("PRJID") %>' />
+                                                    </ItemTemplate>
+                                                </asp:TemplateField>
+                                            </Columns>
+                                        </asp:GridView>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
 
-                    </ContentTemplate>
-                </asp:UpdatePanel>
-            </div>
-        </div>
+                        </div>
+                    </div>
+                </asp:Panel>
+                <asp:Panel ID="Panel2" runat="server" Style="display: none;">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Add Designation</h4>
+
+                                <asp:Button CssClass="btn-close" ID="btnAddNewDesignationCancel"
+                                    runat="server"
+                                    OnClick="btnAddNewDesignationCancel_Click" />
+
+
+
+                            </div>
+                            <div class="modal-body">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+
+                                            <div class="col-lg-4">
+                                                <div class="mb-3">
+                                                    Department
+                                                                                   
+                                                                                        <asp:DropDownList CssClass="form-select" ID="ddlNewDept"
+                                                                                            runat="server">
+                                                                                        </asp:DropDownList>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <div class="mb-3">
+                                                    Designation
+                                                                                 
+                                                                                        <asp:TextBox CssClass="form-control" ID="txtDesignation"
+                                                                                            runat="server" onkeyup="valid(this)"
+                                                                                            onblur="valid(this)"></asp:TextBox>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-lg-12">
+                                                <asp:Button CssClass="btn btn-primary" ID="BtnAddnewDesignation"
+                                                    runat="server" Text="Submit"
+                                                    OnClick="BtnAddnewDesignation_Click" />
+
+                                            </div>
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+
+
+                                <asp:Button CssClass="btn btn-danger" ID="Button3"
+                                    runat="server" Text="Close"
+                                    OnClick="btnAddNewDesignationCancel_Click" />
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </asp:Panel>
+                <asp:Panel ID="Panel1" runat="server" Style="display: none;">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Department</h4>
+                                <asp:Button CssClass="btn-close" ID="btndepcancel" runat="server"
+                                    OnClick="btndepcancel_Click" />
+                            </div>
+                            <div class="modal-body">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <asp:TextBox CssClass="form-control" ID="txtDepartment" runat="server" onkeyup="valid(this)"
+                                                        onblur="valid(this)"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <asp:Button CssClass="btn btn-primary" ID="BtnDeptSave" runat="server" Text="Submit"
+                                                    OnClick="BtnDeptSave_Click" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <asp:Button CssClass="btn btn-danger" ID="Button4" runat="server" Text="Close"
+                                    OnClick="btndepcancel_Click" />
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </asp:Panel>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+
+
+
+        <!-- The Modal -->
+
+
+
+
+
+
+
     </div>
 </asp:Content>
