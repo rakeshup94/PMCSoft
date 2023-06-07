@@ -67,12 +67,12 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-4">
+                            <div class="col-lg-4">
                                 <div class="mb-3">
                                     Department
 
                                 <div class="row">
-                                    <div class="col-xl-10 col-10 pe-0">
+                                    <div class="col-lg-10 col-10 pe-0">
 
                                         <asp:DropDownList CssClass="form-select" ID="ddlDepartment" runat="server" AutoPostBack="True"
                                             OnSelectedIndexChanged="ddlDepartment_SelectedIndexChanged">
@@ -80,7 +80,7 @@
                                     </div>
 
 
-                                    <div class="col-xl-2 col-2 ps-0">
+                                    <div class="col-lg-2 col-2 ps-0">
 
                                         <asp:Button CssClass="btn btn-danger btn-xs mbs rounded-0 rounded-end" ID="LnkAddNewDept"
                                             runat="server" OnClick="LnkAddNewDept_Click"
@@ -160,13 +160,18 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="mb-3">
-                                    Project Name                                                   
-                                                        <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/Images/DropDownList.png" />
+                                    Project Name     
+   
+                                    <asp:LinkButton runat="server" ID="btnProject" OnClick="btnRun_Click"><i class='fa fa-refresh'></i></asp:LinkButton>
+
+
+
+
                                 </div>
                             </div>
 
-                            <cc1:PopupControlExtender ID="PopupControlExtender1" runat="server" TargetControlID="ImageButton1"
-                                PopupControlID="pnlCustomers" Position="Bottom" OffsetY="-16">
+                            <cc1:PopupControlExtender ID="PopupControlExtender1" runat="server" TargetControlID="btnProject"
+                                PopupControlID="pnlCustomers" Position="Center">
                             </cc1:PopupControlExtender>
                         </div>
 
@@ -184,11 +189,11 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title"></h4>
+                                <h4 class="modal-title">Choose Project</h4>
                             </div>
                             <div class="modal-body">
                                 <div class="row">
-                                    <div class="col-lg-12" style="max-height: 100px; overflow: auto;">
+                                    <div class="col-lg-12" style="max-height: 200px; overflow: auto;">
                                         <asp:GridView CssClass="table table-striped" ID="GVProject" runat="server" AutoGenerateColumns="false"
                                             GridLines="None"
                                             ShowHeader="false">
@@ -212,7 +217,6 @@
                             </div>
                             <!-- Modal footer -->
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                             </div>
 
                         </div>

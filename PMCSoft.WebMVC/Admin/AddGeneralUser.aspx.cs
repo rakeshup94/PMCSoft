@@ -256,10 +256,7 @@ namespace PMCSoft.Web.Admin
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-        {
-            GVProject.Visible = true;
-        }
+    
         protected void LnkAddNewDept_Click(object sender, EventArgs e)
         {
             ModalPopupExtender1.Show();
@@ -371,5 +368,9 @@ namespace PMCSoft.Web.Admin
             ModalPopupExtender2.Hide();
         }
 
+        protected void btnRun_Click(object sender, EventArgs e)
+        {
+            GVProject.Visible = true;
+        }
     }
 }
