@@ -180,9 +180,9 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" class="button-bg"
+                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server"   
                                     Text="Submit" OnClick="btnSubmit_Click" />
-                                <asp:Button CssClass="btn btn-default btn-square" ID="btnReset" runat="server" class="button-bg"
+                                <asp:Button CssClass="btn btn-default btn-square" ID="btnReset" runat="server"   
                                     Text="Cancel" OnClick="btnReset_Click" />
                             </div>
                         </div>
@@ -206,7 +206,7 @@
                                                     <ItemTemplate>
                                                         <asp:CheckBox ID="chkSW" runat="server" />
                                                     </ItemTemplate>
-                                                    <ItemStyle Width="10" />
+                                                 
                                                 </asp:TemplateField>
                                                 <asp:TemplateField>
                                                     <ItemTemplate>

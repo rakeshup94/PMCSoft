@@ -163,7 +163,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="row" >
-                                                        <div class="col-lg-4"  colspan="2">
+                                                        <div class="col-lg-4"    >
                                                             <asp:Button CssClass="btn btn-primary btn-square" ID="btnbranchsave" runat="server" OnClick="btnbranchsave_Click" Text="Save"
                                                                 Width="70px" />
                                                             <asp:Button CssClass="btn btn-primary btn-square" ID="btnbranchcancle" runat="server" CausesValidation="false" OnClick="btnbranchcancle_Click"

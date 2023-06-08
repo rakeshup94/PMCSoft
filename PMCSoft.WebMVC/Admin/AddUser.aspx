@@ -20,7 +20,7 @@
                             User Detail</h3>
                         <div class="row"   >
                             <div class="row" >
-                                <div class="col-lg-4"  style="width: 150px;">
+                                <div class="col-lg-4"    >
                                     First Name
                                 </div>
                                 <div class="col-lg-4" >
@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  style="width: 150px;">
+                                <div class="col-lg-4"    >
                                     Employee ID
                                 </div>
                                 <div class="col-lg-4" >
@@ -228,7 +228,7 @@
                                 </div>
                             </div>
                             <div class="row"   >
-                                <div class="col-lg-4"  style="width: 150px;">
+                                <div class="col-lg-4"    >
                                     ZIP Code
                                 </div>
                                 <div class="col-lg-4" >
@@ -238,12 +238,12 @@
                                         FilterType="Custom, Numbers">
                                     </cc1:FilteredTextBoxExtender>
                                 </div>
-                                <div class="col-lg-4"  style="width: 150px;">
+                                <div class="col-lg-4"    >
                                     Project Name
                                 </div>
                                 <div class="col-lg-4" >
                                     <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/Images/DropDownList.png" />
-                                    <asp:Panel ID="pnlCustomers" runat="server" CssClass="bgdesign" Style="display: none;">
+                                    <asp:Panel ID="pnlCustomers" runat="server"    Style="display: none;">
                                         <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVProject" runat="server" AutoGenerateColumns="false" GridLines="None"
                                             ShowHeader="false">
                                             <Columns>
@@ -251,11 +251,11 @@
                                                     <ItemTemplate>
                                                         <asp:CheckBox ID="chkSW" runat="server" />
                                                     </ItemTemplate>
-                                                    <ItemStyle Width="10" />
+                                                 
                                                 </asp:TemplateField>
                                                 <asp:TemplateField>
                                                     <ItemTemplate>
-                                                        <asp:Label ID="lblProjectName" runat="server" Text='<%#Bind("ProjectName") %>' Font-Size="14px">
+                                                        <asp:Label ID="lblProjectName" runat="server" Text='<%#Bind("ProjectName") %>'   >
                                                         </asp:Label>
                                                         <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Eval("PRJID") %>' />
                                                     </ItemTemplate>
@@ -305,9 +305,9 @@
                             </div>
                             <div class="row"   >
                                 <div class="col-lg-4"   >
-                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" class="button-bg" Text="Submit" OnClick="btnSubmit_Click"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server"    Text="Submit" OnClick="btnSubmit_Click"
                                          />
-                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnReset" runat="server"    Text="Cancel" OnClick="btnReset_Click"
                                          />
                                 </div>
                             </div>

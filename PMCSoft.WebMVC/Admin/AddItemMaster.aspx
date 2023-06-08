@@ -5,7 +5,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
-
     <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
         <div class="page-header pull-left">
             <div class="page-title">Add Item</div>
@@ -16,12 +15,6 @@
     <!--BEGIN CONTENT-->
     <div class="page-content">
         <div class="card">
-
-
-
-
-
-
             <div class="card-body">
                 <div class="row">
 
@@ -206,15 +199,15 @@
 
 
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-        <ContentTemplate>
+        <contenttemplate>
             <div style="display: none">
 
                 <asp:Button CssClass="btn btn-primary btn-square" ID="Button3" runat="server" />
             </div>
-            <cc1:ModalPopupExtender ID="ModalPopupExtender3" runat="server" BackgroundCssClass="popUpStyle"
-                PopupControlID="Panel3" TargetControlID="Button3" EnableViewState="False"
-                Enabled="True">
-            </cc1:ModalPopupExtender>
+            <cc1:modalpopupextender id="ModalPopupExtender3" runat="server" backgroundcssclass="popUpStyle"
+                popupcontrolid="Panel3" targetcontrolid="Button3" enableviewstate="False"
+                enabled="True">
+            </cc1:modalpopupextender>
             <asp:Panel ID="Panel3" runat="server" Style="display: none;">
 
                 <div class="modal-dialog modal-dialog-centered">
@@ -279,10 +272,10 @@
 
                 <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" />
             </div>
-            <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
-                PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"
-                Enabled="True">
-            </cc1:ModalPopupExtender>
+            <cc1:modalpopupextender id="ModalPopupExtender2" runat="server" backgroundcssclass="popUpStyle"
+                popupcontrolid="Panel2" targetcontrolid="Button1" enableviewstate="False"
+                enabled="True">
+            </cc1:modalpopupextender>
             <asp:Panel ID="Panel2" runat="server" Style="display: none;">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -478,12 +471,12 @@
                 <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" />
 
             </div>
-            <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
-                PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False"
-                Enabled="True">
-            </cc1:ModalPopupExtender>
+            <cc1:modalpopupextender id="ModalPopupExtender1" runat="server" backgroundcssclass="popUpStyle"
+                popupcontrolid="Panel1" targetcontrolid="Button2" enableviewstate="False"
+                enabled="True">
+            </cc1:modalpopupextender>
 
 
-        </ContentTemplate>
+        </contenttemplate>
     </asp:UpdatePanel>
 </asp:Content>

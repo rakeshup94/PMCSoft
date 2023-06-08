@@ -71,7 +71,7 @@
                         <h3 class="reallynow">Project Detail</h3>
                         <div class="row"  >
                             <div class="row"  >
-                                <div class="col-lg-4" colspan="2">
+                                <div class="col-lg-4"   >
                                     <asp:Panel ID="Panel1" runat="server" Visible="false">
                                         <cc1:Accordion ID="Accordion1" runat="server" SelectedIndex="0" HeaderCssClass="accordionHeader"
                                             HeaderSelectedCssClass="accordionHeaderSelected" ContentCssClass="accordionContent"

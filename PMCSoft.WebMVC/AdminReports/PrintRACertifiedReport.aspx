@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="row" >
-                        <div class="col-lg-4"  colspan="2">
+                        <div class="col-lg-4"    >
                             <div class="row"  style="width: 1500px;">
                                 <div class="row" >
                                     <div class="col-lg-4"  colspan="23">

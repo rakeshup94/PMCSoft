@@ -104,7 +104,7 @@
                                        background-color: #F7F8E0;">
                                     <div class="row"  style="width: 810px; vertical-align: top;">
                                         <div class="row" >
-                                            <div class="col-lg-4"  style="width: 150px;">
+                                            <div class="col-lg-4"    >
                                                 Project
                                             </div>
                                             <div class="col-lg-4" >
@@ -120,7 +120,7 @@
                                             </div>
                                         </div>
                                         <div class="row" >
-                                            <div class="col-lg-4"  style="width: 150px;">
+                                            <div class="col-lg-4"    >
                                                 Bill No
                                             </div>
                                             <div class="col-lg-4" >
@@ -219,9 +219,9 @@
                                         </div>
                                         <div class="row"   >
                                             <div class="col-lg-4"   >
-                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" class="button-bg" Text="Save" OnClick="btnSubmit_Click"
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server"    Text="Save" OnClick="btnSubmit_Click"
                                                      />
-                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnReset" runat="server"    Text="Cancel" OnClick="btnReset_Click"
                                                      />
                                             </div>
                                         </div>
@@ -308,7 +308,7 @@
                                 <div class="col-lg-4"   >
                                     <div class="row"   >
                                         <div class="col-lg-4"   >
-                                            <asp:Button CssClass="btn btn-primary btn-square" ID="Button4" runat="server" class="button-bg" Text="Cancel" OnClick="Button4_Click"
+                                            <asp:Button CssClass="btn btn-primary btn-square" ID="Button4" runat="server"    Text="Cancel" OnClick="Button4_Click"
                                                 Style="width: auto; text-align: center" />
                                         </div>
                                 </div>

@@ -30,7 +30,7 @@
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  colspan="2">
+                                <div class="col-lg-4"    >
                                     <asp:DataList ID="DataList1" runat="server" OnItemDataBound="DataList1_ItemDataBound"
                                            ShowHeader="false">
                                         <HeaderTemplate>

@@ -23,7 +23,7 @@
                                 <div class="col-lg-4"   >
                                     <div class="row"   >
                                         <div class="row"   >
-                                            <div class="col-lg-4"  colspan="2" style="font-weight: bold; background-color: #D9EAED; color: #202020;
+                                            <div class="col-lg-4"     style="font-weight: bold; background-color: #D9EAED; color: #202020;
                                                 border: .5px solid #D9EAED;">
                                                 Header Detail
                                             </div>
@@ -98,7 +98,7 @@
                                     <asp:Panel ID="Panel1" runat="server" Visible="false">
                                         <div class="row"   >
                                             <div class="row"   >
-                                                <div class="col-lg-4"  colspan="2"  >
+                                                <div class="col-lg-4"      >
                                                     <cc1:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0" Width="940px">
                                                         <cc1:TabPanel ID="Tab1" runat="server" TabIndex="0">
                                                             <HeaderTemplate>

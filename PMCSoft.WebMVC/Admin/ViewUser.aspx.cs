@@ -434,11 +434,7 @@ namespace PMCSoft.Web.Admin
             PMC.BindCityDdl(ddlCity, ddlState.SelectedValue.ToString());
             ModalPopupExtender1.Show();
         }
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-        {
-            GVProject.Visible = true;
-            ModalPopupExtender1.Show();
-        }
+     
         public bool isNumeric(string val, System.Globalization.NumberStyles NumberStyle)
         {
             if (val.Length > 0)
@@ -484,6 +480,12 @@ namespace PMCSoft.Web.Admin
                 string scripts = "alert('Some error occurs.');";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
+        }
+
+        protected void ImageButton1_Click1(object sender, EventArgs e)
+        {
+            GVProject.Visible = true;
+            ModalPopupExtender1.Show();
         }
     }
 }

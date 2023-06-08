@@ -83,15 +83,15 @@
                                                                 
                                                             </div>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 100px; font-weight: bold;">
                                                                     Plan
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 100px; font-weight: bold;">
                                                                     Actual
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 100px; font-weight: bold;">
                                                                     Variance
                                                                 </div>

@@ -43,7 +43,7 @@
                                                         background-color: #D8D8D8; font-weight: bold;">
                                                         Equipment Detail
                                                     </div>
-                                                    <div class="col-lg-4"  colspan="2" style="width: 250px; text-align: center; border: 1px solid black;
+                                                    <div class="col-lg-4"     style="width: 250px; text-align: center; border: 1px solid black;
                                                         background-color: #D8D8D8; font-weight: bold;">
                                                         Amt. Upto Previous Months
                                                         <asp:TextBox CssClass="form-control" ID="txtPreviousMonth" runat="server" Width="80px"></asp:TextBox>
@@ -51,7 +51,7 @@
                                                             CssClass="cal_Theme1">
                                                         </cc1:CalendarExtender>
                                                     </div>
-                                                    <div class="col-lg-4"  colspan="2" style="width: 220px; text-align: center; border: 1px solid black;
+                                                    <div class="col-lg-4"     style="width: 220px; text-align: center; border: 1px solid black;
                                                         background-color: #D8D8D8; font-weight: bold;">
                                                         Amt. Current Months
                                                         <asp:TextBox CssClass="form-control" ID="txtCurrentMonth" runat="server" Width="80px"></asp:TextBox>
@@ -59,7 +59,7 @@
                                                             CssClass="cal_Theme1">
                                                         </cc1:CalendarExtender>
                                                     </div>
-                                                    <div class="col-lg-4"  colspan="2" style="width: 200px; text-align: center; border: 1px solid black;
+                                                    <div class="col-lg-4"     style="width: 200px; text-align: center; border: 1px solid black;
                                                         background-color: #D8D8D8; font-weight: bold;">
                                                         Amt. Up To Date
                                                         <asp:TextBox CssClass="form-control" ID="txtUpToDate" runat="server" Width="80px"></asp:TextBox>

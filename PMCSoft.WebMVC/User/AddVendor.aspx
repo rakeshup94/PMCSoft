@@ -154,7 +154,7 @@
                                                                 </div>
                                                                 <div class="col-lg-4" >
                                                                     <asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" ImageUrl="~/Images/DropDownList.png" />
-                                                                    <asp:Panel ID="Panel2" runat="server" CssClass="bgdesign" Style="display: none;">
+                                                                    <asp:Panel ID="Panel2" runat="server"    Style="display: none;">
                                                                         <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView2" runat="server" AutoGenerateColumns="false" GridLines="None"
                                                                             ShowHeader="false">
                                                                             <Columns>
@@ -162,11 +162,11 @@
                                                                                     <ItemTemplate>
                                                                                         <asp:CheckBox ID="chkSW" runat="server" />
                                                                                     </ItemTemplate>
-                                                                                    <ItemStyle Width="10" />
+                                                                                 
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField>
                                                                                     <ItemTemplate>
-                                                                                        <asp:Label ID="lblProjectName" runat="server" Text='<%#Bind("ProjectName") %>' Font-Size="14px"></asp:Label>
+                                                                                        <asp:Label ID="lblProjectName" runat="server" Text='<%#Bind("ProjectName") %>'   ></asp:Label>
                                                                                         <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Eval("ProjectID") %>' />
                                                                                     </ItemTemplate>
                                                                                 </asp:TemplateField>
@@ -346,7 +346,7 @@
                                                 </div>
                                                 <div class="col-lg-4" >
                                                     <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/Images/DropDownList.png" />
-                                                    <asp:Panel ID="pnlCustomers" runat="server" CssClass="bgdesign" Style="display: none;">
+                                                    <asp:Panel ID="pnlCustomers" runat="server"    Style="display: none;">
                                                         <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVProject" runat="server" AutoGenerateColumns="false" GridLines="None"
                                                             ShowHeader="false">
                                                             <Columns>
@@ -354,11 +354,11 @@
                                                                     <ItemTemplate>
                                                                         <asp:CheckBox ID="chkSW" runat="server" />
                                                                     </ItemTemplate>
-                                                                    <ItemStyle Width="10" />
+                                                                 
                                                                 </asp:TemplateField>
                                                                 <asp:TemplateField>
                                                                     <ItemTemplate>
-                                                                        <asp:Label ID="lblProjectName" runat="server" Text='<%#Bind("ProjectName") %>' Font-Size="14px"></asp:Label>
+                                                                        <asp:Label ID="lblProjectName" runat="server" Text='<%#Bind("ProjectName") %>'   ></asp:Label>
                                                                         <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Eval("ProjectID") %>' />
                                                                     </ItemTemplate>
                                                                 </asp:TemplateField>

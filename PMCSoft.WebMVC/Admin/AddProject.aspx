@@ -133,7 +133,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-4" colspan="2">
+                                <div class="col-lg-4"   >
                                     <cc1:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0">
                                         <cc1:TabPanel ID="Tab1" runat="server" TabIndex="0">
                                             <HeaderTemplate>

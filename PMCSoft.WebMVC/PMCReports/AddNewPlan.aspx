@@ -96,7 +96,7 @@
                                                                
                                                             </div>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 100px; font-weight: bold;">
                                                                     Plan
                                                                 </div>
@@ -104,7 +104,7 @@
                                                                 
                                                             </div>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"   colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"      style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 50px; font-weight: bold;">
                                                                     
                                                                 </div>
@@ -170,7 +170,7 @@
                                                                 <div class="col-lg-4"  style="border: 1px solid black; width: 20px; font-weight: bold;">
                                                                     PURCHASE/CONSUMPTION
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="border: 1px solid black;">
+                                                                <div class="col-lg-4"     style="border: 1px solid black;">
                                                                 </div>
                                                             </div>
                                                     </HeaderTemplate>
@@ -684,15 +684,15 @@
                                                                 
                                                             </div>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 100px; font-weight: bold;">
                                                                     Plan
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 100px; font-weight: bold;">
                                                                     Actual
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 100px; font-weight: bold;">
                                                                     Variance
                                                                 </div>

@@ -30,7 +30,7 @@
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  colspan="2">
+                                <div class="col-lg-4"    >
                                     <asp:DataList ID="DataList1" runat="server" OnItemDataBound="DataList1_ItemDataBound"
                                            ShowHeader="false">
                                         <HeaderTemplate>
@@ -412,8 +412,8 @@
                                                 </div>
                                                   <div class="row"   >
                                                  <div class="col-lg-4"    >
-                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnSaveADD" runat="server" Text="Save" OnClick="BtnSaveADD_Click"   class="button-bg"/>
-                                                     <asp:Button CssClass="btn btn-primary btn-square" ID="BtnCanceladd" runat="server" Text="Cancel"  OnClick="BtnCanceladd_Click"  class="button-bg"/>
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnSaveADD" runat="server" Text="Save" OnClick="BtnSaveADD_Click"     />
+                                                     <asp:Button CssClass="btn btn-primary btn-square" ID="BtnCanceladd" runat="server" Text="Cancel"  OnClick="BtnCanceladd_Click"    />
                                                 </div>
                                                 
                                                 </div>

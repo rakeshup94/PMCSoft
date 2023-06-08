@@ -34,7 +34,7 @@
                         </div>
                         <div class="col-lg-4" >
                             <asp:Label ID="lblDate" runat="server" Visible="false"></asp:Label>
-                            <asp:Label ID="lblWorkProgrammeDate" runat="server" Width="100px" Font-Size="14px"></asp:Label>
+                            <asp:Label ID="lblWorkProgrammeDate" runat="server" Width="100px"   ></asp:Label>
                             <asp:HiddenField ID="hdnWPDate" runat="server" />
                             <asp:HiddenField ID="hdnWPID" runat="server" />
                         </div>
@@ -50,7 +50,7 @@
                             Work Programme No:
                         </div>
                         <div class="col-lg-4" >
-                            <asp:Label ID="lblNumber" runat="server" Width="100px" Font-Size="14px"></asp:Label>
+                            <asp:Label ID="lblNumber" runat="server" Width="100px"   ></asp:Label>
                         </div>
                     </div>
                     <div class="row" >

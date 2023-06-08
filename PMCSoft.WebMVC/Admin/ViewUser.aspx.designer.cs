@@ -6,6 +6,7 @@
 //     the code is regenerated. 
 // </auto-generated>
 //------------------------------------------------------------------------------
+
 namespace PMCSoft.Web.Admin
 {
 
@@ -266,24 +267,6 @@ namespace PMCSoft.Web.Admin
         protected global::AjaxControlToolkit.FilteredTextBoxExtender FilteredTextBoxExtender2;
 
         /// <summary>
-        /// ImageButton1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
-
-        /// <summary>
-        /// pnlCustomers control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlCustomers;
-
-        /// <summary>
         /// GVProject control.
         /// </summary>
         /// <remarks>
@@ -291,15 +274,6 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GVProject;
-
-        /// <summary>
-        /// PopupControlExtender1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.PopupControlExtender PopupControlExtender1;
 
         /// <summary>
         /// btnSubmit control.

@@ -114,7 +114,7 @@
                                   </div>
                                 <div class="row" >
                                     <div class="row"   >
-                                        <div class="col-lg-4"  style="vertical-align: top; width: 1000px;" colspan="2">
+                                        <div class="col-lg-4"  style="vertical-align: top; width: 1000px;"   >
                                             <asp:Panel ID="Panel2" runat="server" Height="900px" ScrollBars="Horizontal">
                                                 <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView4" runat="server" AutoGenerateColumns="false" Width="900px"
                                                     OnRowDataBound="GridView4_RowDataBound">
