@@ -250,14 +250,21 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddNewsave" runat="server" Text="Submit"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddNewsave" runat="server"
+                                        Text="Submit"
                                         OnClick="btnAddNewsave_Click" />
-                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnAddNewCancel" runat="server" Text="Cancel"
-                                        OnClick="BtnAddNewCancel_Click" />
+
                                 </div>
                             </div>
                         </div>
 
+
+                        <div class="modal-footer">
+
+                            <asp:Button CssClass="btn btn-danger btn-square" ID="BtnAddNewCancel" runat="server"
+                                Text="Cancel"
+                                OnClick="BtnAddNewCancel_Click" />
+                        </div>
 
                     </div>
                 </div>
@@ -298,25 +305,49 @@
                                 <div class="col-lg-4">
                                     <div class="mb-3">
                                         Name
-                                    </div>
+                                  
 
                                     <asp:TextBox CssClass="form-control" ID="txtName" runat="server" onkeyup="valid(this)"
                                         onblur="valid(this)">
                                     </asp:TextBox>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddNewGroupname" runat="server" Text="Submit"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddNewGroupname" runat="server"
+                                        Text="Submit"
                                         OnClick="btnAddNewGroupname_Click" />
-                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnCancelAddNewGroupName" runat="server"
-                                        Text="Cancel" OnClick="BtnCancelAddNewGroupName_Click" />
+
                                 </div>
                             </div>
 
 
 
                         </div>
+
+
+
+
+
+
+                        <div class="modal-footer">
+
+                            <asp:Button CssClass="btn btn-danger btn-square" ID="BtnCancelAddNewGroupName" runat="server"
+                                Text="Cancel"
+                                OnClick="BtnCancelAddNewGroupName_Click" />
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
             </asp:Panel>
@@ -351,7 +382,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title">>Edit Item</h4>
+                            <h4 class="modal-title">Edit Item</h4>
 
 
                         </div>
@@ -366,14 +397,7 @@
                                             </asp:Label>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="mb-3">
-                                        Item Name
-                                     
-                                            <asp:TextBox CssClass="form-control" ID="TxtEditItem" runat="server" onkeyup="valid(this)"
-                                                onblur="valid(this)"></asp:TextBox>
-                                    </div>
-                                </div>
+
                                 <div class="col-lg-4">
                                     <div class="mb-3">
                                         Unit
@@ -389,6 +413,18 @@
                                             <asp:Label ID="lblEditMake" runat="server" onblur="valid(this)" onkeyup="valid(this)"></asp:Label>
                                     </div>
                                 </div>
+
+
+                                <div class="col-lg-4">
+                                    <div class="mb-3">
+                                        Item Name
+                                     
+                                            <asp:TextBox CssClass="form-control" ID="TxtEditItem" runat="server" onkeyup="valid(this)"
+                                                onblur="valid(this)"></asp:TextBox>
+                                    </div>
+                                </div>
+
+
                                 <div class="col-lg-4">
                                     <div class="mb-3">
                                         Part No.
@@ -401,13 +437,34 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <asp:Button CssClass="btn btn-primary btn-square" ID="EditSubmit" runat="server" Text="Submit"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="EditSubmit" runat="server"
+                                        Text="Submit"
                                         OnClick="EditSubmit_Click" />
-                                    <asp:Button CssClass="btn btn-primary btn-square" ID="EditCancel" runat="server" Text="Cancel"
-                                        OnClick="EditCancel_Click" />
+
                                 </div>
                             </div>
                         </div>
+
+
+
+
+
+
+                        <div class="modal-footer">
+
+                            <asp:Button CssClass="btn btn-danger btn-square" ID="EditCancel" runat="server" Text="Cancel"
+                                OnClick="EditCancel_Click" />
+                        </div>
+
+
+
+
+
+
+
+
+
+
                     </div>
 
 
