@@ -24,7 +24,7 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="2">
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" Width="910px" AutoGenerateColumns="false"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" Width="910px" AutoGenerateColumns="false"
                                         EmptyDataText="No Records Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">

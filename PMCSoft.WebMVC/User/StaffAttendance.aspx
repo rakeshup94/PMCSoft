@@ -31,7 +31,7 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="4">
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView2" runat="server" Width="910px" AutoGenerateColumns="False"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView2" runat="server" Width="910px" AutoGenerateColumns="False"
                                         EmptyDataText="No Record Found" onrowdatabound="GridView2_RowDataBound">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -90,9 +90,9 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit1" runat="server" Text="Submit" OnClick="btnSubmit1_Click"
+                                    <asp:Button btn btn-primary btn-square ID="btnSubmit1" runat="server" Text="Submit" OnClick="btnSubmit1_Click"
                                         Visible="false" />
-                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel1" runat="server" Text="Cancel" OnClick="btnCancel1_Click"
+                                    <asp:Button btn btn-primary btn-square ID="btnCancel1" runat="server" Text="Cancel" OnClick="btnCancel1_Click"
                                         Visible="false" />
                                 </div>
                             </div>

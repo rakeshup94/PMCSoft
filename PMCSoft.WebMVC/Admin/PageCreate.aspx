@@ -14,7 +14,7 @@
                         <div class="row"   >
                             <div class="row"   >
                                 <div class="col-lg-4"  style="vertical-align: top; width: 600px;">
-                                    <asp:GridView CssClass="table table-striped"  ID="GVPage" runat="server" AutoGenerateColumns="false" GridLines="Both">
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVPage" runat="server" AutoGenerateColumns="false" GridLines="Both">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
                                                 <ItemTemplate>
@@ -67,9 +67,9 @@
                                         
                                             <div class="row" >
                                                 <div class="col-lg-4"    >
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" 
+                                                    <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" 
                                                         onclick="btnSubmit_Click"  />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" 
+                                                    <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" 
                                                         onclick="btnCancel_Click" />
                                                 </div>
                                             </div>

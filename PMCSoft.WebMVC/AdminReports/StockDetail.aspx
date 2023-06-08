@@ -19,7 +19,7 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="2">
-                                 <asp:GridView CssClass="table table-striped"  ID="GridView5" runat="server" AutoGenerateColumns="false" Width="900px">
+                                 <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView5" runat="server" AutoGenerateColumns="false" Width="900px">
                                                             <Columns>
                                                                 <asp:TemplateField HeaderText="Item Name">
                                                                     <ItemTemplate>

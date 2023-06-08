@@ -44,7 +44,7 @@
                                     </cc1:CalendarExtender>
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:Button CssClass="btn btn-primary" ID="BtnReport" runat="server" Text="View Detail" OnClick="BtnReport_Click" />
+                                    <asp:Button btn btn-primary btn-square ID="BtnReport" runat="server" Text="View Detail" OnClick="BtnReport_Click" />
                                 </div>
                             </div>
                             <div class="row" >
@@ -52,7 +52,7 @@
                                     <div class="row"  style="width: 1080px;">
                                         <div class="row" >
                                             <div class="col-lg-4"  colspan="10">
-                                                <asp:GridView CssClass="table table-striped"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="false"
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="false"
                                                     Width="1070px" EmptyDataText="No Records Found" PageSize="50">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">

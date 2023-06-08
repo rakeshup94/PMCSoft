@@ -14,12 +14,12 @@
                         <div class="row"  style="width: 930px">
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: right;">
-                                    <asp:Button CssClass="btn btn-primary" ID="btnPrint" runat="server" OnClick="btnPrint_Click" Text="Print Preview" />
+                                    <asp:Button btn btn-primary btn-square ID="btnPrint" runat="server" OnClick="btnPrint_Click" Text="Print Preview" />
                                 </div>
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4" >
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="910px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="910px"
                                         EmptyDataText="No Records Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">

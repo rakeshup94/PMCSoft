@@ -35,7 +35,7 @@
                                     <div class="row"  style="width: 950px;">
                                         <div class="row" >
                                             <div class="col-lg-4"  colspan="8">
-                                                <asp:GridView CssClass="table table-striped"  ID="GvHireChargesExpenses" runat="server" AutoGenerateColumns="false"
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GvHireChargesExpenses" runat="server" AutoGenerateColumns="false"
                                                     ShowFooter="true" Width="500" OnRowDataBound="GvHireChargesExpenses_RowDataBound">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">
@@ -102,7 +102,7 @@
                                                             </ItemTemplate>
                                                             <FooterTemplate>
                                                                 <asp:Label ID="lblTotal" runat="server"></asp:Label>
-                                                                <asp:Button CssClass="btn btn-primary" ID="btnAddMore" runat="server" Text="Add More" OnClick="btnAddMore_Click" />
+                                                                <asp:Button btn btn-primary btn-square ID="btnAddMore" runat="server" Text="Add More" OnClick="btnAddMore_Click" />
                                                             </FooterTemplate>
                                                             <FooterStyle HorizontalAlign="Right" />
                                                             <ItemStyle VerticalAlign="Top"   />
@@ -115,8 +115,8 @@
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4"  style="text-align: center;">
-                                                <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                                <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" 
+                                                <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                                <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" 
                                                     onclick="btnCancel_Click" />
                                             </div>
                                         </div>

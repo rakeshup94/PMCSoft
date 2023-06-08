@@ -38,7 +38,7 @@
                                     <div class="row"  style="width: 1080px;">
                                         <div class="row" >
                                             <div class="col-lg-4"  colspan="10">
-                                                <asp:GridView CssClass="table table-striped"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="false"
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="false"
                                                     Width="1070px" EmptyDataText="No Records Found" OnPageIndexChanging="GVMaterialReceive_PageIndexChanging"
                                                     PageSize="50">
                                                     <Columns>

@@ -27,7 +27,7 @@
                                     <div class="row"  style="width: 910px;">
                                         <div class="row" >
                                             <div class="col-lg-4"   >
-                                                <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="540px"
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="540px"
                                                     OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowEditing="GridView1_RowEditing"
                                                     OnRowUpdating="GridView1_RowUpdating">
                                                     <Columns>
@@ -71,8 +71,8 @@
                                                         </div>
                                                         <div class="row" >
                                                             <div class="col-lg-4"    >
-                                                                <asp:Button CssClass="btn btn-primary" ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Submit" />
-                                                                <asp:Button CssClass="btn btn-primary" ID="btnCancle" runat="server" OnClick="btnCancle_Click" Text="Cancle"
+                                                                <asp:Button btn btn-primary btn-square ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Submit" />
+                                                                <asp:Button btn btn-primary btn-square ID="btnCancle" runat="server" OnClick="btnCancle_Click" Text="Cancle"
                                                                     CausesValidation="False" />
                                                             </div>
                                                         </div>
@@ -164,9 +164,9 @@
                                                     </div>
                                                     <div class="row" >
                                                         <div class="col-lg-4"  colspan="2">
-                                                            <asp:Button CssClass="btn btn-primary" ID="btnbranchsave" runat="server" OnClick="btnbranchsave_Click" Text="Save"
+                                                            <asp:Button btn btn-primary btn-square ID="btnbranchsave" runat="server" OnClick="btnbranchsave_Click" Text="Save"
                                                                 Width="70px" />
-                                                            <asp:Button CssClass="btn btn-primary" ID="btnbranchcancle" runat="server" CausesValidation="false" OnClick="btnbranchcancle_Click"
+                                                            <asp:Button btn btn-primary btn-square ID="btnbranchcancle" runat="server" CausesValidation="false" OnClick="btnbranchcancle_Click"
                                                                 Text="Cancle" Width="70px" />
                                                         </div>
                                                     </div>
@@ -182,7 +182,7 @@
                                                 <div class="row"  style="width: 900px;">
                                                     <div class="row" >
                                                         <div class="col-lg-4"   >
-                                                            <asp:GridView CssClass="table table-striped"  ID="GridView2" runat="server" AutoGenerateColumns="False" Width="880px"
+                                                            <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView2" runat="server" AutoGenerateColumns="False" Width="880px"
                                                                 OnRowCancelingEdit="GridView2_RowCancelingEdit" OnRowEditing="GridView2_RowEditing"
                                                                 OnRowUpdating="GridView2_RowUpdating">
                                                                 <Columns>

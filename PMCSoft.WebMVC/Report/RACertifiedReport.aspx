@@ -21,8 +21,8 @@
                                     </asp:DropDownList>
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:Button CssClass="btn btn-primary" ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
-                                    <asp:Button CssClass="btn btn-primary" ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
+                                    <asp:Button btn btn-primary btn-square ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
+                                    <asp:Button btn btn-primary btn-square ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
                                 </div>
                             </div>
                             <div class="row" >
@@ -196,7 +196,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4" >
-                                                                    <asp:GridView CssClass="table table-striped"  ID="Gvcertified" runat="server" AutoGenerateColumns="false" GridLines="Both"
+                                                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="Gvcertified" runat="server" AutoGenerateColumns="false" GridLines="Both"
                                                                         EmptyDataText="No Amount Receive" Width="300px">
                                                                         <Columns>
                                                                             <asp:TemplateField HeaderText="S.No" Visible="false">

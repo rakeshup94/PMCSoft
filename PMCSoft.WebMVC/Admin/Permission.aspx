@@ -116,7 +116,7 @@
                                     <div class="row"   >
                                         <div class="col-lg-4"  style="vertical-align: top; width: 1000px;" colspan="2">
                                             <asp:Panel ID="Panel2" runat="server" Height="900px" ScrollBars="Horizontal">
-                                                <asp:GridView CssClass="table table-striped"  ID="GridView4" runat="server" AutoGenerateColumns="false" Width="900px"
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView4" runat="server" AutoGenerateColumns="false" Width="900px"
                                                     OnRowDataBound="GridView4_RowDataBound">
                                                     <Columns>
                                                         <asp:TemplateField>
@@ -132,7 +132,7 @@
                                                                     Font-Size="15px">
                                                                 </asp:LinkButton>
                                                                 <asp:HiddenField ID="hdnHeaderTransId" runat="server" Value='<%#Bind("TransId") %>' />
-                                                                <asp:GridView CssClass="table table-striped"  ID="GVPermission" runat="server" AutoGenerateColumns="false" DataKeyNames="TransID"
+                                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVPermission" runat="server" AutoGenerateColumns="false" DataKeyNames="TransID"
                                                                     GridLines="Both" AllowPaging="false">
                                                                     <Columns>
                                                                         <asp:TemplateField HeaderText="S.No">
@@ -170,8 +170,8 @@
                                     </div>
                                     <div class="row" >
                                         <div class="col-lg-4"    >
-                                            <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                            <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                            <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                            <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                         </div>
                                     </div>
                                   </div>

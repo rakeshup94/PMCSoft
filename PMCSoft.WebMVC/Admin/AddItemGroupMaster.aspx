@@ -41,9 +41,9 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit"
+                                <asp:LinkButton btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit"
                                     OnClick="btnSubmit_Click" />
-                                <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel"
+                                <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel"
                                     OnClick="btnCancel_Click" />
                             </div>
 
@@ -59,9 +59,9 @@
                         <div class="row">
 
                             <div class="col-lg-12">
-                                <asp:GridView CssClass="table table-striped"  ID="GVGroup" runat="server" AutoGenerateColumns="false"
+                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVGroup" runat="server" AutoGenerateColumns="false"
                                     OnRowCancelingEdit="GVGroup_RowCancelingEdit" OnRowEditing="GVGroup_RowEditing"
-                                    OnRowUpdating="GVGroup_RowUpdating" EmptyDataText="No Record Found" CssClass="table table-striped">
+                                    OnRowUpdating="GVGroup_RowUpdating" EmptyDataText="No Record Found" >
                                     <Columns>
                                         <asp:TemplateField HeaderText="S.No">
                                             <ItemTemplate>

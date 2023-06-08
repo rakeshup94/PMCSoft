@@ -52,7 +52,7 @@
                                                         </div>
                                                         <div class="col-lg-4" >
                                                             <div class="col-lg-4" >
-                                                                <asp:Button CssClass="btn btn-primary" ID="BtnReport" runat="server" Text="View" OnClick="BtnReport_Click" />
+                                                                <asp:Button btn btn-primary btn-square ID="BtnReport" runat="server" Text="View" OnClick="BtnReport_Click" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -158,7 +158,7 @@
                                                                                         </div>
                                                                                         <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
                                                                                             <asp:Label ID="lblWDDName" runat="server" Text='<%#Bind("WDDName") %>'></asp:Label>
-                                                                                            <asp:Button CssClass="btn btn-primary" ID="Button" runat="server" Text="+" OnClick="Button_Click" CommandArgument='<%# Eval("TransId") %>' />
+                                                                                            <asp:Button btn btn-primary btn-square ID="Button" runat="server" Text="+" OnClick="Button_Click" CommandArgument='<%# Eval("TransId") %>' />
                                                                                         </div>
                                                                                         <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
                                                                                             <asp:Label ID="txtUnit" runat="server" Width="60px" Text=""></asp:Label>
@@ -222,15 +222,15 @@
                                             <div class="col-lg-4" >
                                                 <div class="row" >
                                                     <div class="col-lg-4"    >
-                                                        <asp:Button CssClass="btn btn-primary" ID="BtnWorkdonePlanSave" runat="server" Text="Submit" OnClick="BtnWorkdonePlanSave_Click" />
-                                                        <asp:Button CssClass="btn btn-primary" ID="btnWorkDonePlanancel" runat="server" Text="Cancel" />
+                                                        <asp:Button btn btn-primary btn-square ID="BtnWorkdonePlanSave" runat="server" Text="Submit" OnClick="BtnWorkdonePlanSave_Click" />
+                                                        <asp:Button btn btn-primary btn-square ID="btnWorkDonePlanancel" runat="server" Text="Cancel" />
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                       </div>
                                     <div style="display: none">
-                                        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
+                                        <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
@@ -255,9 +255,9 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"    >
-                                                                    <asp:Button CssClass="btn btn-primary" ID="BtnAddNew" runat="server" Text="Submit" OnClick="BtnAddNew_Click"
+                                                                    <asp:Button btn btn-primary btn-square ID="BtnAddNew" runat="server" Text="Submit" OnClick="BtnAddNew_Click"
                                                                         CommandArgument='<%# Eval("TransId") %>' />
-                                                                    <asp:Button CssClass="btn btn-primary" ID="BtnAddNewCancle" runat="server" Text="Cancel" OnClick="BtnAddNewCancle_Click"
+                                                                    <asp:Button btn btn-primary btn-square ID="BtnAddNewCancle" runat="server" Text="Cancel" OnClick="BtnAddNewCancle_Click"
                                                                         CommandArgument='<%# Eval("TransId") %>' />
                                                                 </div>
                                                             </div>
@@ -310,7 +310,7 @@
                                                         </div>
                                                         <div class="col-lg-4" >
                                                             <div class="col-lg-4" >
-                                                                <asp:Button CssClass="btn btn-primary" ID="BtnReportA" runat="server" Text="View" OnClick="BtnReportA_Click" />
+                                                                <asp:Button btn btn-primary btn-square ID="BtnReportA" runat="server" Text="View" OnClick="BtnReportA_Click" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -521,8 +521,8 @@
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4"    >
-                                                <asp:Button CssClass="btn btn-primary" ID="BtnActualMonthlyWorkDoneSave" runat="server" Text="Submit" OnClick="BtnActualMonthlyWorkDoneSave_Click" />
-                                                <asp:Button CssClass="btn btn-primary" ID="BtnActualMonthlyWorkDoneCancel" runat="server" Text="Cancel" />
+                                                <asp:Button btn btn-primary btn-square ID="BtnActualMonthlyWorkDoneSave" runat="server" Text="Submit" OnClick="BtnActualMonthlyWorkDoneSave_Click" />
+                                                <asp:Button btn btn-primary btn-square ID="BtnActualMonthlyWorkDoneCancel" runat="server" Text="Cancel" />
                                             </div>
                                         </div>
                                       </div>

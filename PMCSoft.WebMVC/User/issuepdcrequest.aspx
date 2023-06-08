@@ -35,7 +35,7 @@
                     </div>
                     <div class="row" >
                         <div class="col-lg-4"  colspan="4"  >
-                            <asp:GridView CssClass="table table-striped"  ID="grvProjectDetails" runat="server" ShowFooter="True" AutoGenerateColumns="False"
+                            <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="grvProjectDetails" runat="server" ShowFooter="True" AutoGenerateColumns="False"
                                 ForeColor="#333333" GridLines="None" OnRowDataBound="grvProjectDetails_RowDataBound"
                                 Width="915px" OnRowCommand="grvProjectDetails_RowCommand">
                                 <Columns>
@@ -50,14 +50,14 @@
                                         <ItemTemplate>
                                             <asp:DropDownList CssClass="form-select" ID="ddlBank" runat="server"   AutoPostBack="true" OnSelectedIndexChanged="ddlBank_SelectedIndexChanged">
                                             </asp:DropDownList>
-                                            <asp:Button CssClass="btn btn-primary" ID="btnAddNewBank" runat="server" Text="+" CausesValidation="false" CommandName="AddNewBank" />
+                                            <asp:Button btn btn-primary btn-square ID="btnAddNewBank" runat="server" Text="+" CausesValidation="false" CommandName="AddNewBank" />
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="Branch">
                                         <ItemTemplate>
                                             <asp:DropDownList CssClass="form-select" ID="ddlBranch" runat="server"   AutoPostBack="true">
                                             </asp:DropDownList>
-                                            <asp:Button CssClass="btn btn-primary" ID="btnAddNewBranch" runat="server" Text="+" CausesValidation="false"
+                                            <asp:Button btn btn-primary btn-square ID="btnAddNewBranch" runat="server" Text="+" CausesValidation="false"
                                                 CommandName="AddNewBranch" />
                                         </ItemTemplate>
                                     </asp:TemplateField>
@@ -84,7 +84,7 @@
                                         </ItemTemplate>
                                         <FooterStyle HorizontalAlign="Right" />
                                         <FooterTemplate>
-                                            <asp:Button CssClass="btn btn-primary" ID="ButtonAdd" runat="server" Text="Add More" OnClick="ButtonAdd_Click" />
+                                            <asp:Button btn btn-primary btn-square ID="ButtonAdd" runat="server" Text="Add More" OnClick="ButtonAdd_Click" />
                                             <%--OnClick="ButtonAdd_Click" />--%>
                                         </FooterTemplate>
                                     </asp:TemplateField>
@@ -98,7 +98,7 @@
                                 <AlternatingRowStyle BackColor="White" />
                             </asp:GridView>
                             <div style="display: none">
-                                <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
+                                <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
                             </div>
                             <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                 PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"  
@@ -120,9 +120,9 @@
                                                         </div>
                                                         <div class="row" >
                                                             <div class="col-lg-4"    >
-                                                                <asp:Button CssClass="btn btn-primary" ID="btnAddNewBankSave" runat="server"  Text="Submit"
+                                                                <asp:Button btn btn-primary btn-square ID="btnAddNewBankSave" runat="server"  Text="Submit"
                                                                     onclick="btnAddNewBankSave_Click" />
-                                                                <asp:Button CssClass="btn btn-primary" ID="BtnAddNewBankCancel" runat="server"  Text="Cancle"
+                                                                <asp:Button btn btn-primary btn-square ID="BtnAddNewBankCancel" runat="server"  Text="Cancle"
                                                                     CausesValidation="False" onclick="BtnAddNewBankCancel_Click" />
                                                             </div>
                                                         </div>
@@ -130,7 +130,7 @@
                                 </div>
                             </asp:Panel>
                             <div style="display: none">
-                                <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
+                                <asp:Button btn btn-primary btn-square ID="Button2" runat="server" Text="Button" />
                             </div>
                             <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                                 PopupControlID="PanelBranch" TargetControlID="Button2" EnableViewState="False"  
@@ -210,9 +210,9 @@
                                                     </div>
                                                     <div class="row" >
                                                         <div class="col-lg-4"  colspan="2">
-                                                            <asp:Button CssClass="btn btn-primary" ID="btnbranchsave" runat="server" OnClick="btnbranchsave_Click" Text="Save"
+                                                            <asp:Button btn btn-primary btn-square ID="btnbranchsave" runat="server" OnClick="btnbranchsave_Click" Text="Save"
                                                                 Width="70px" />
-                                                            <asp:Button CssClass="btn btn-primary" ID="btnbranchcancle" runat="server" CausesValidation="false" OnClick="btnbranchcancle_Click"
+                                                            <asp:Button btn btn-primary btn-square ID="btnbranchcancle" runat="server" CausesValidation="false" OnClick="btnbranchcancle_Click"
                                                                 Text="Cancel" Width="70px" />
                                                         </div>
                                                     </div>
@@ -223,8 +223,8 @@
                     </div>
                     <div class="row" >
                         <div class="col-lg-4"  colspan="4" align="center">
-                            <asp:Button CssClass="btn btn-primary" ID="btnsubmit" runat="server" Text="Submit" Width="75px" OnClick="btnsubmit_Click" />
-                            <asp:Button CssClass="btn btn-primary" ID="btncancle" runat="server" Text="Cancel" Width="70px" OnClick="btncancle_Click" />
+                            <asp:Button btn btn-primary btn-square ID="btnsubmit" runat="server" Text="Submit" Width="75px" OnClick="btnsubmit_Click" />
+                            <asp:Button btn btn-primary btn-square ID="btncancle" runat="server" Text="Cancel" Width="70px" OnClick="btncancle_Click" />
                         </div>
                     </div>
                   </div>

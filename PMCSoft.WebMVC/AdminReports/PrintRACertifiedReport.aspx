@@ -213,7 +213,7 @@
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4" >
-                                                        <asp:GridView CssClass="table table-striped"  ID="Gvcertified" runat="server" AutoGenerateColumns="false" GridLines="Both"
+                                                        <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="Gvcertified" runat="server" AutoGenerateColumns="false" GridLines="Both"
                                                             EmptyDataText="No Amount Receive" Width="300">
                                                             <Columns>
                                                                 <asp:TemplateField HeaderText="S.No" Visible="false">

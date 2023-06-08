@@ -50,9 +50,9 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="2">
-                                    <asp:Button CssClass="btn btn-primary" ID="btnSave" runat="server" Class="button-bg"  Text="Submit"
+                                    <asp:Button btn btn-primary btn-square ID="btnSave" runat="server" Class="button-bg"  Text="Submit"
                                         OnClick="btnSave_Click" />
-                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Class="button-bg" Style="width: auto;"
+                                    <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Class="button-bg" Style="width: auto;"
                                         Text="Cancel" OnClick="btnCancel_Click" />
                                 </div>
                             </div>

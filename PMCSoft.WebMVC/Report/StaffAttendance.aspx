@@ -30,13 +30,13 @@
                                     </cc1:CalendarExtender>
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:Button CssClass="btn btn-primary" ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
-                                    <asp:Button CssClass="btn btn-primary" ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
+                                    <asp:Button btn btn-primary btn-square ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
+                                    <asp:Button btn btn-primary btn-square ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
                                 </div>
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="5">
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="910px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="910px"
                                         EmptyDataText="No Records Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">

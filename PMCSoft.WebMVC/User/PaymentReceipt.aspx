@@ -37,7 +37,7 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="6">
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="910px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="910px"
                                         ShowFooter="true" OnRowDataBound="GridView1_RowDataBound">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -75,7 +75,7 @@
                                                     </cc1:FilteredTextBoxExtender>
                                                 </ItemTemplate>
                                                 <FooterTemplate>
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnAddMore" runat="server" Text="Add More" OnClick="btnAddMore_Click" />
+                                                    <asp:Button btn btn-primary btn-square ID="btnAddMore" runat="server" Text="Add More" OnClick="btnAddMore_Click" />
                                                 </FooterTemplate>
                                                 <FooterStyle HorizontalAlign="Right" />
                                                 <ItemStyle HorizontalAlign="Center" />
@@ -88,8 +88,8 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="6" style="text-align: center;">
-                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                    <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                    <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                 </div>
                             </div>
                           </div>

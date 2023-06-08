@@ -185,7 +185,7 @@
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                     font-weight: bold;">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnCalculate" runat="server" OnClick="btnCalculate_Click" Text="Calculate"
+                                                    <asp:Button btn btn-primary btn-square ID="btnCalculate" runat="server" OnClick="btnCalculate_Click" Text="Calculate"
                                                         BackColor="#33ccff" BorderColor="Navy" />
                                                 </div>
                                             </div>
@@ -200,8 +200,8 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center;">
-                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
-                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" OnClick="btnCancel_Click" Text="Cancel" />
+                                    <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
+                                    <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" OnClick="btnCancel_Click" Text="Cancel" />
                                 </div>
                             </div>
                           </div>

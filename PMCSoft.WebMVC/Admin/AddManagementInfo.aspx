@@ -38,10 +38,10 @@
                                 OnSelectedIndexChanged="ddlDepartment_SelectedIndexChanged">
                             </asp:DropDownList>
 
-                            <asp:Button CssClass="btn btn-primary" ID="LnkAddNewDept" runat="server" OnClick="LnkAddNewDept_Click"
+                            <asp:Button btn btn-primary btn-square ID="LnkAddNewDept" runat="server" OnClick="LnkAddNewDept_Click"
                                 Text="+"></asp:Button>
                             <div style="display: none">
-                                <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
+                                <asp:Button btn btn-primary btn-square ID="Button2" runat="server" Text="Button" />
                             </div>
                             <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                 PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False"
@@ -65,9 +65,9 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-lg-4"   >
-                                                            <asp:Button CssClass="btn btn-primary" ID="BtnDeptSave" runat="server" Text="Submit"
+                                                            <asp:Button btn btn-primary btn-square ID="BtnDeptSave" runat="server" Text="Submit"
                                                                 OnClick="BtnDeptSave_Click" />
-                                                            <asp:Button CssClass="btn btn-primary" ID="btndepcancel" runat="server" Text="Cancel"
+                                                            <asp:Button btn btn-primary btn-square ID="btndepcancel" runat="server" Text="Cancel"
                                                                 OnClick="btndepcancel_Click" />
                                                         </div>
                                                     </div>
@@ -85,10 +85,10 @@
                         <div class="col-lg-4">
                             <asp:DropDownList CssClass="form-select" ID="ddlDesignation" runat="server">
                             </asp:DropDownList>
-                            <asp:Button CssClass="btn btn-primary" ID="LnkAddNewDesignation" runat="server"
+                            <asp:Button btn btn-primary btn-square ID="LnkAddNewDesignation" runat="server"
                                 OnClick="LnkAddNewDesignation_Click" Text="+"></asp:Button>
                             <div style="display: none">
-                                <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
+                                <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
                             </div>
                             <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                                 PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"
@@ -121,9 +121,9 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-lg-4"   >
-                                                            <asp:Button CssClass="btn btn-primary" ID="BtnAddnewDesignation" runat="server" Text="Submit"
+                                                            <asp:Button btn btn-primary btn-square ID="BtnAddnewDesignation" runat="server" Text="Submit"
                                                                 OnClick="BtnAddnewDesignation_Click" />
-                                                            <asp:Button CssClass="btn btn-primary" ID="btnAddNewDesignationCancel" runat="server"
+                                                            <asp:Button btn btn-primary btn-square ID="btnAddNewDesignationCancel" runat="server"
                                                                 Text="Cancel"
                                                                 OnClick="btnAddNewDesignationCancel_Click" />
                                                         </div>
@@ -172,9 +172,9 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-4" colspan="4" style="text-align: center;">
-                            <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit"
+                            <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit"
                                 OnClick="btnSubmit_Click" />
-                            <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel"
+                            <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel"
                                 OnClick="btnCancel_Click" />
                         </div>
                     </div>
@@ -183,7 +183,7 @@
                 <div class="row">
                     <div class="row">
                         <div class="col-lg-4"  >
-                            <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="910px"
+                            <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="910px"
                                 OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound" EmptyDataText="No Record Found">
                                 <Columns>
                                     <asp:TemplateField HeaderText="S.No">

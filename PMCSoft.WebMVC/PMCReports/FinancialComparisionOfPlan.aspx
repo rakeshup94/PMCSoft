@@ -96,7 +96,7 @@
                                                                 Total Income
                                                             </div>
                                                             <div class="col-lg-4"   style="text-align: center; border: 1px solid black; font-weight: bold;">
-                                                                <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Add New" />
+                                                                <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Add New" />
                                                             </div>
                                                             
                                                             <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
@@ -319,18 +319,18 @@
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4"  style="text-align: right;">
-                                                <asp:Button CssClass="btn btn-primary" ID="btnCalculate" runat="server" Text="Calculate" />
+                                                <asp:Button btn btn-primary btn-square ID="btnCalculate" runat="server" Text="Calculate" />
                                             </div>
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4"  style="text-align: center;">
-                                                <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server"  />
-                                                <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" />
+                                                <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server"  />
+                                                <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" />
                                             </div>
                                         </div>
                                       </div>
                                      <div style="display: none">
-                                        <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
+                                        <asp:Button btn btn-primary btn-square ID="Button2" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False"  
@@ -355,9 +355,9 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"    >
-                                                                    <asp:Button CssClass="btn btn-primary" ID="BtnIncomeSave" runat="server" Text="Submit" 
+                                                                    <asp:Button btn btn-primary btn-square ID="BtnIncomeSave" runat="server" Text="Submit" 
                                                                         onclick="BtnIncomeSave_Click" />
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnIncomeCancel" runat="server" Text="Cancel" 
+                                                                    <asp:Button btn btn-primary btn-square ID="btnIncomeCancel" runat="server" Text="Cancel" 
                                                                         onclick="btnIncomeCancel_Click"/>
                                                                 </div>
                                                             </div>

@@ -46,10 +46,10 @@
                                         </div>
                                         <div class="col-lg-4" >
                                             <div class="col-lg-4" >
-                                                <asp:Button CssClass="btn btn-primary" ID="BtnReport" runat="server" Text="View" OnClick="BtnReport_Click" />
+                                                <asp:Button btn btn-primary btn-square ID="BtnReport" runat="server" Text="View" OnClick="BtnReport_Click" />
                                             </div>
                                             <div class="col-lg-4" >
-                                                <asp:Button CssClass="btn btn-primary" ID="btnPrint" runat="server" Text="Print Preview" OnClick="btnPrint_Click" />
+                                                <asp:Button btn btn-primary btn-square ID="btnPrint" runat="server" Text="Print Preview" OnClick="btnPrint_Click" />
                                             </div>
                                         </div>
                                     </div>

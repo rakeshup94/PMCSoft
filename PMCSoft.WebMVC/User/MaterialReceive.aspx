@@ -116,7 +116,7 @@
                         <div class="row"    >
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="6">
-                                    <asp:GridView CssClass="table table-striped"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="true"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="true"
                                         Width="925" OnRowDataBound="GVMaterialReceive_RowDataBound">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -171,7 +171,7 @@
                                                         onblur="valid(this)"></asp:TextBox>
                                                 </ItemTemplate>
                                                 <FooterTemplate>
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnAddMore" runat="server" OnClick="btnAddMore_Click" Text="Add More" />
+                                                    <asp:Button btn btn-primary btn-square ID="btnAddMore" runat="server" OnClick="btnAddMore_Click" Text="Add More" />
                                                 </FooterTemplate>
                                                 <FooterStyle HorizontalAlign="Right" />
                                                 <ItemStyle VerticalAlign="Top"   />
@@ -183,8 +183,8 @@
                                 </div>
                                 <div class="row" >
                                     <div class="col-lg-4"  colspan="6" style="text-align: center;">
-                                        <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                        <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                        <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                        <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                     </div>
                                 </div>
                           </div>

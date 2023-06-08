@@ -46,7 +46,7 @@
                                             </div>
                                             <div class="row" >
                                                 <div class="col-lg-4" >
-                                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="890px"
+                                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="890px"
                                                         EmptyDataText="No Record Found" OnRowCommand="GridView1_RowCommand">
                                                         <Columns>
                                                             <asp:TemplateField HeaderText="S.No">
@@ -97,7 +97,7 @@
                                         </FooterTemplate>
                                     </asp:DataList>
                                     <div style="display: none">
-                                        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
+                                        <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
@@ -289,10 +289,10 @@
                                                                                 <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center">
                                                                                 </div>
                                                                                  <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;">
-                                                                <asp:Button CssClass="btn btn-primary" ID="btnAdd" runat="server" Text="Add Item" OnClick="btnAdd_Click" />
+                                                                <asp:Button btn btn-primary btn-square ID="btnAdd" runat="server" Text="Add Item" OnClick="btnAdd_Click" />
                                                             </div>
                                                                                 <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center">
-                                                                                    <asp:Button CssClass="btn btn-primary" ID="btnCalculate" runat="server" Text="Calculate" BackColor="#33ccff"
+                                                                                    <asp:Button btn btn-primary btn-square ID="btnCalculate" runat="server" Text="Calculate" BackColor="#33ccff"
                                                                                         BorderColor="Navy" OnClick="btnCalculate_Click" />
                                                                                 </div>
                                                                             </div>
@@ -327,8 +327,8 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  colspan="6" style="text-align: center;">
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Update" OnClick="btnSubmit_Click" />
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                                                    <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Update" OnClick="btnSubmit_Click" />
+                                                                    <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                                 </div>
                                                             </div>
                                                           </div>
@@ -338,7 +338,7 @@
                                           </div>
                                     </asp:Panel>
                                      <div style="display: none">
-                                        <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
+                                        <asp:Button btn btn-primary btn-square ID="Button2" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False"  
@@ -412,8 +412,8 @@
                                                 </div>
                                                   <div class="row"   >
                                                  <div class="col-lg-4"    >
-                                                    <asp:Button CssClass="btn btn-primary" ID="BtnSaveADD" runat="server" Text="Save" OnClick="BtnSaveADD_Click"   class="button-bg"/>
-                                                     <asp:Button CssClass="btn btn-primary" ID="BtnCanceladd" runat="server" Text="Cancel"  OnClick="BtnCanceladd_Click"  class="button-bg"/>
+                                                    <asp:Button btn btn-primary btn-square ID="BtnSaveADD" runat="server" Text="Save" OnClick="BtnSaveADD_Click"   class="button-bg"/>
+                                                     <asp:Button btn btn-primary btn-square ID="BtnCanceladd" runat="server" Text="Cancel"  OnClick="BtnCanceladd_Click"  class="button-bg"/>
                                                 </div>
                                                 
                                                 </div>

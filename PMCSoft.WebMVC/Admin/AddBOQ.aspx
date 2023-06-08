@@ -119,10 +119,10 @@
                                             </div>
                                             <div class="row mtm">
                                                 <div class="col-lg-12">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server"
+                                                    <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server"
                                                         Text="Submit"
                                                         OnClick="btnSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server"
+                                                    <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server"
                                                         Text="Cancel"
                                                         OnClick="btnCancel_Click" />
                                                 </div>
@@ -203,10 +203,10 @@
 
 
                                                 <div class="col-lg-12">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubSubmit" runat="server"
+                                                    <asp:Button btn btn-primary btn-square ID="btnSubSubmit" runat="server"
                                                         Text="Submit"
                                                         OnClick="btnSubSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubCancel" runat="server"
+                                                    <asp:Button btn btn-primary btn-square ID="btnSubCancel" runat="server"
                                                         Text="Cancel"
                                                         OnClick="btnSubCancel_Click" />
                                                 </div>
@@ -302,10 +302,10 @@
                                             </div>
                                             <div class="row mtm">
                                                 <div class="col-lg-12">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnPartSubmit"
+                                                    <asp:Button btn btn-primary btn-square ID="btnPartSubmit"
                                                         runat="server" Text="Submit"
                                                         OnClick="btnPartSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnPartCancel"
+                                                    <asp:Button btn btn-primary btn-square ID="btnPartCancel"
                                                         runat="server" Text="Cancel" OnClick="btnPartCancel_Click" />
                                                 </div>
                                             </div>
@@ -315,7 +315,7 @@
                                                 <div class="col-lg-12">
                                                     <div class="mb-3">
                                                         <asp:FileUpload ID="FileUpload2" runat="server" />
-                                                        <asp:Button CssClass="btn btn-primary" ID="btnBOQUpload" runat="server"
+                                                        <asp:Button btn btn-primary btn-square ID="btnBOQUpload" runat="server"
                                                             Text="Upload"
                                                             OnClick="btnBOQUpload_Click" />
                                                     </div>
@@ -348,7 +348,7 @@
                                 <div class="col-lg-12">
                                     <div class="mb-3">
                                         <asp:FileUpload ID="FileUpload1" runat="server" />
-                                        <asp:Button CssClass="btn btn-primary" ID="btnUpload" runat="server" Text="Upload"
+                                        <asp:Button btn btn-primary btn-square ID="btnUpload" runat="server" Text="Upload"
                                             OnClick="btnUpload_Click" />
                                     </div>
                                 </div>

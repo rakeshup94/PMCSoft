@@ -48,7 +48,7 @@ namespace PMCSoft.Web.Admin
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSubmit;
+        protected global::System.Web.UI.WebControls.LinkButton btnSubmit;
 
         /// <summary>
         /// btnCancel control.

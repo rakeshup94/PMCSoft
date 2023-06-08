@@ -13,7 +13,7 @@
                         <div class="row"  style="width: 500px">
                             <div class="row" >
                                 <div class="col-lg-4"  style="width: 550px; vertical-align: top;">
-                                    <asp:GridView CssClass="table table-striped"  ID="GvTypeofAdvanceRequisition" runat="server" Width="540px" AutoGenerateColumns="false"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GvTypeofAdvanceRequisition" runat="server" Width="540px" AutoGenerateColumns="false"
                                         EmptyDataText="No Record Found" OnRowCancelingEdit="GvTypeofAdvanceRequisition_RowCancelingEdit"
                                         OnRowEditing="GvTypeofAdvanceRequisition_RowEditing" OnRowUpdating="GvTypeofAdvanceRequisition_RowUpdating">
                                         <Columns>
@@ -59,8 +59,8 @@
                                             </div>
                                             <div class="row" >
                                                 <div class="col-lg-4"    >
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                                    <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                                    <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                 </div>
                                             </div>
                                           </div>

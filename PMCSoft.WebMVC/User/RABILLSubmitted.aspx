@@ -22,7 +22,7 @@
                     <div class="row"   >
                         <div class="row"   >
                             <div class="col-lg-4"  style="vertical-align: top; width: 600px;">
-                                <asp:GridView CssClass="table table-striped"  ID="GvRAbillSub" runat="server" AutoGenerateColumns="false" GridLines="Both"
+                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GvRAbillSub" runat="server" AutoGenerateColumns="false" GridLines="Both"
                                     OnRowCommand="GvRAbillSub_RowCommand" OnRowDataBound="GvRAbillSub_RowDataBound">
                                     <Columns>
                                         <asp:TemplateField HeaderText="S.No">
@@ -77,7 +77,7 @@
                                     </Columns>
                                 </asp:GridView>
                                 <div style="display: none">
-                                    <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
+                                    <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
                                 </div>
                                 <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                     PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
@@ -370,11 +370,11 @@
                                                         </div>
                                                         <div class="row"   >
                                                             <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                                                <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" class="button-bg" Text="Submit" OnClick="btnSubmit_Click"
+                                                                <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" class="button-bg" Text="Submit" OnClick="btnSubmit_Click"
                                                                      />
-                                                                <asp:Button CssClass="btn btn-primary" ID="BtnCalculate" runat="server" class="button-bg" Text="Calculate" OnClick="BtnCalculate_Click"
+                                                                <asp:Button btn btn-primary btn-square ID="BtnCalculate" runat="server" class="button-bg" Text="Calculate" OnClick="BtnCalculate_Click"
                                                                      />
-                                                                <asp:Button CssClass="btn btn-primary" ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"
+                                                                <asp:Button btn btn-primary btn-square ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"
                                                                      />
                                                             </div>
                                                         </div>
@@ -385,7 +385,7 @@
                                       </div>
                                 </asp:Panel>
                                 <div style="display: none">
-                                    <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
+                                    <asp:Button btn btn-primary btn-square ID="Button2" runat="server" Text="Button" />
                                 </div>
                                 <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                                     PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False"  
@@ -603,7 +603,7 @@
                                                             </div>
                                                             <div class="row"   >
                                                                 <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                                                    <asp:Button CssClass="btn btn-primary" ID="BtnLablcan" runat="server" class="button-bg" Text="Cancel"  />
+                                                                    <asp:Button btn btn-primary btn-square ID="BtnLablcan" runat="server" class="button-bg" Text="Cancel"  />
                                                                 </div>
                                                             </div>
                                                           </div>

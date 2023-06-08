@@ -56,7 +56,7 @@
 
                                             <div class="col-lg-12">
                                                 <div class="table-responsive">
-                                                    <table class="table table-striped table-bordered table-hover">
+                                                    <table class="table table-hover table-striped table-bordered table-advanced tablesorter mbn table-bordered table-hover">
                                                         <thead>
                                                             <tr>
                                                                 <th>S.No</th>
@@ -1353,7 +1353,7 @@
 
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <asp:GridView CssClass="table table-striped" ID="GridView1" runat="server" AutoGenerateColumns="false">
+                                                        <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView1" runat="server" AutoGenerateColumns="false">
                                                             <Columns>
                                                                 <asp:TemplateField HeaderText="S.No">
                                                                     <ItemTemplate>
@@ -1411,7 +1411,7 @@
 
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <asp:GridView CssClass="table table-striped" ID="GridView2" runat="server" AutoGenerateColumns="false">
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView2" runat="server" AutoGenerateColumns="false">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">
                                                             <ItemTemplate>
@@ -1465,7 +1465,7 @@
 
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <asp:GridView CssClass="table table-striped" ID="GridView3" runat="server" AutoGenerateColumns="false">
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView3" runat="server" AutoGenerateColumns="false">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">
                                                             <ItemTemplate>
@@ -1519,7 +1519,7 @@
 
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <asp:GridView CssClass="table table-striped" ID="GridView4" runat="server" AutoGenerateColumns="false">
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView4" runat="server" AutoGenerateColumns="false">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">
                                                             <ItemTemplate>
@@ -1574,7 +1574,7 @@
 
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <asp:GridView CssClass="table table-striped" ID="GridView5" runat="server" AutoGenerateColumns="false">
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView5" runat="server" AutoGenerateColumns="false">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">
                                                             <ItemTemplate>
@@ -1628,7 +1628,7 @@
 
                                         <div class="row">
                                             <div class="col-lg-4">
-                                                <asp:GridView CssClass="table table-striped" ID="GridView6" runat="server" AutoGenerateColumns="false">
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView6" runat="server" AutoGenerateColumns="false">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">
                                                             <ItemTemplate>
@@ -1682,7 +1682,7 @@
 
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <asp:GridView CssClass="table table-striped" ID="GridView7" runat="server" AutoGenerateColumns="false">
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView7" runat="server" AutoGenerateColumns="false">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">
                                                             <ItemTemplate>
@@ -1735,7 +1735,7 @@
                                     <Content>
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <asp:GridView CssClass="table table-striped" ID="GridView8" runat="server" AutoGenerateColumns="false">
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView8" runat="server" AutoGenerateColumns="false">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">
                                                             <ItemTemplate>
@@ -1787,9 +1787,9 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <asp:Button CssClass="btn btn-primary" ID="btnParticularsSubmit" runat="server" Text="Submit"
+                                <asp:Button btn btn-primary btn-square ID="btnParticularsSubmit" runat="server" Text="Submit"
                                     OnClick="btnParticularsSubmit_Click" />
-                                <asp:Button CssClass="btn btn-primary" ID="btnParticularsCancel" runat="server" Text="Cancel"
+                                <asp:Button btn btn-primary btn-square ID="btnParticularsCancel" runat="server" Text="Cancel"
                                     OnClick="btnParticularsCancel_Click" />
                             </div>
                         </div>

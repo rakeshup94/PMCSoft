@@ -34,7 +34,7 @@
                                     onclick="Lnktodaylabour_Click" ></asp:LinkButton></h3>
                             <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                                 <ContentTemplate>
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="445px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="445px"
                                         AllowPaging="True" OnPageIndexChanging="GridView1_PageIndexChanging" PageSize="5"
                                         OnRowCommand="GridView1_RowCommand">
                                         <Columns>
@@ -89,7 +89,7 @@
                                 Staffs Attendance&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <asp:LinkButton ID="LnkStaffatt" runat="server" Text="See More" CommandName="StaffattSeeMore" ForeColor="Blue" ></asp:LinkButton></h3>
                             <asp:UpdatePanel ID="UpdatePanel3" runat="server">
                                 <ContentTemplate>
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView2" runat="server" AutoGenerateColumns="false" Width="445px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView2" runat="server" AutoGenerateColumns="false" Width="445px"
                                         AllowPaging="True" OnPageIndexChanging="GridView2_PageIndexChanging" PageSize="5"
                                         OnRowCommand="GridView2_RowCommand">
                                         <Columns>
@@ -171,7 +171,7 @@
                             <asp:UpdatePanel ID="UpdatePanel8" runat="server">
                                 <ContentTemplate>
                                     <asp:Panel ID="Panel8" runat="server" Height="145px" ScrollBars="Horizontal">
-                                       <asp:GridView CssClass="table table-striped"  ID="GvTotalLaber" runat="server" AutoGenerateColumns="false" Width="440px"
+                                       <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GvTotalLaber" runat="server" AutoGenerateColumns="false" Width="440px"
                                         AllowPaging="True" >
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -235,7 +235,7 @@
                                 <ContentTemplate>
                                        <asp:Panel ID="Panel1" runat="server" Height="145px" ScrollBars="Horizontal">
                                        
-                                                        <asp:GridView CssClass="table table-striped"  ID="GridView5" runat="server" AutoGenerateColumns="false" Width="445px">
+                                                        <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView5" runat="server" AutoGenerateColumns="false" Width="445px">
                                                             <Columns>
                                                                 <asp:TemplateField HeaderText="Item Name">
                                                                     <ItemTemplate>
@@ -272,7 +272,7 @@
                                     onclick="Lnkprojectdetail_Click" ></asp:LinkButton></h3>
                             <asp:UpdatePanel ID="UpdatePanel5" runat="server">
                                 <ContentTemplate>
-                                 <asp:GridView CssClass="table table-striped"  ID="GridView3" runat="server" AutoGenerateColumns="false" Width="290px"
+                                 <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView3" runat="server" AutoGenerateColumns="false" Width="290px"
                                         AllowPaging="True" OnPageIndexChanging="GridView3_PageIndexChanging" PageSize="4"
                                         OnRowCommand="GridView3_RowCommand" >
                                         <Columns>

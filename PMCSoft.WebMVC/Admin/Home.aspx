@@ -31,7 +31,7 @@
                             <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                                 <ContentTemplate>
                                 <asp:Panel ID="Panel44" runat="server" Height="145px" Width="445px" ScrollBars="Both">
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="445px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="445px"
                                         AllowPaging="True" 
                                         OnRowCommand="GridView1_RowCommand">
                                         <Columns>
@@ -86,7 +86,7 @@
                             <asp:UpdatePanel ID="UpdatePanel3" runat="server">
                                 <ContentTemplate>
                                 <asp:Panel ID="Panel4" runat="server" Height="145px" Width="445px" ScrollBars="Both">
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView2" runat="server" AutoGenerateColumns="false" Width="445px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView2" runat="server" AutoGenerateColumns="false" Width="445px"
                                         AllowPaging="True" 
                                         OnRowCommand="GridView2_RowCommand">
                                         <Columns>
@@ -183,7 +183,7 @@
                             <asp:UpdatePanel ID="UpdatePanel8" runat="server">
                                 <ContentTemplate>
                                     <asp:Panel ID="Panel8" runat="server" Height="145px" ScrollBars="Both">
-                                       <asp:GridView CssClass="table table-striped"  ID="GvTotalLaber" runat="server" AutoGenerateColumns="false" Width="440px"
+                                       <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GvTotalLaber" runat="server" AutoGenerateColumns="false" Width="440px"
                                         >
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -243,7 +243,7 @@
                             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                                 <ContentTemplate>
                                  <asp:Panel ID="Panel2" runat="server" Height="145px" ScrollBars="Both">
-                                      <asp:GridView CssClass="table table-striped"  ID="GridView4" runat="server" AutoGenerateColumns="false" Width="440px"
+                                      <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView4" runat="server" AutoGenerateColumns="false" Width="440px"
                                             OnRowCommand="GridView4_RowCommand">
                                             <Columns>
                                                 <asp:TemplateField>
@@ -261,7 +261,7 @@
                                                             CommandName="Project" CausesValidation="false" ForeColor="Blue" Font-Underline="true">
                                                         </asp:LinkButton>
                                                         <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Bind("PRJID") %>' />
-                                                        <asp:GridView CssClass="table table-striped"  ID="GridView5" runat="server" AutoGenerateColumns="false" Width="410px">
+                                                        <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView5" runat="server" AutoGenerateColumns="false" Width="410px">
                                                             <Columns>
                                                                 <asp:TemplateField HeaderText="Item Name">
                                                                     <ItemTemplate>
@@ -302,7 +302,7 @@
                             <asp:UpdatePanel ID="UpdatePanel5" runat="server">
                                 <ContentTemplate>
                                  <asp:Panel ID="Panel3" runat="server" Height="145px" ScrollBars="Both">
-                                <asp:GridView CssClass="table table-striped"  ID="GridView3" runat="server" AutoGenerateColumns="false" Width="300px" 
+                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView3" runat="server" AutoGenerateColumns="false" Width="300px" 
                                         AllowPaging="True"
                                         OnRowCommand="GridView3_RowCommand">
                                         <Columns>
@@ -353,7 +353,7 @@
     <%-- </ContentTemplate>
     </asp:UpdatePanel>--%>
     <div style="display: none">
-        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
+        <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
     </div>
     <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
@@ -427,8 +427,8 @@
                                     </div>
                                     <div class="row" >
                                         <div class="col-lg-4"    >
-                                            <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                            <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                            <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                            <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                         </div>
                                     </div>
                                   </div>

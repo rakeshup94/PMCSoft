@@ -86,7 +86,7 @@
                                             runat="server" OnClick="LnkAddNewDept_Click"
                                             Text="+"></asp:Button>
                                         <div style="display: none">
-                                            <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
+                                            <asp:Button btn btn-primary btn-square ID="Button2" runat="server" Text="Button" />
                                         </div>
                                         <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                             PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False" Enabled="True">
@@ -110,10 +110,10 @@
 
                                                     </div>
                                                     <div class="col-xl-2 col-2 ps-0">
-                                                        <asp:Button CssClass="btn btn-primary" ID="LnkAddNewDesignation" runat="server" Text="+"
+                                                        <asp:Button btn btn-primary btn-square ID="LnkAddNewDesignation" runat="server" Text="+"
                                                             OnClick="LnkAddNewDesignation_Click"></asp:Button>
                                                         <div style="display: none">
-                                                            <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
+                                                            <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
                                                         </div>
                                                         <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                                                             PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"
@@ -177,9 +177,9 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" class="button-bg"
+                                <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" class="button-bg"
                                     Text="Submit" OnClick="btnSubmit_Click" />
-                                <asp:Button CssClass="btn btn-primary" ID="btnReset" runat="server" class="button-bg"
+                                <asp:Button btn btn-primary btn-square ID="btnReset" runat="server" class="button-bg"
                                     Text="Cancel" OnClick="btnReset_Click" />
                             </div>
                         </div>
@@ -194,7 +194,7 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-lg-12" style="max-height: 200px; overflow: auto;">
-                                        <asp:GridView CssClass="table table-striped" ID="GVProject" runat="server" AutoGenerateColumns="false"
+                                        <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GVProject" runat="server" AutoGenerateColumns="false"
                                             GridLines="None"
                                             ShowHeader="false">
                                             <Columns>
@@ -262,7 +262,7 @@
 
 
                                             <div class="col-lg-12">
-                                                <asp:Button CssClass="btn btn-primary" ID="BtnAddnewDesignation"
+                                                <asp:Button btn btn-primary btn-square ID="BtnAddnewDesignation"
                                                     runat="server" Text="Submit"
                                                     OnClick="BtnAddnewDesignation_Click" />
 
@@ -309,7 +309,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <asp:Button CssClass="btn btn-primary" ID="BtnDeptSave" runat="server" Text="Submit"
+                                                <asp:Button btn btn-primary btn-square ID="BtnDeptSave" runat="server" Text="Submit"
                                                     OnClick="BtnDeptSave_Click" />
                                             </div>
                                         </div>
