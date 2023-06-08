@@ -474,14 +474,14 @@
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4"  style="text-align: right;">
-                                                <asp:Button btn btn-primary btn-square ID="btnCalculate" runat="server" Text="Calculate"  />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCalculate" runat="server" Text="Calculate"  />
                                             </div>
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4"  style="text-align: center;">
-                                                <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" 
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" 
                                                     onclick="btnSubmit_Click" />
-                                                <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel"/>
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel"/>
                                             </div>
                                         </div>
                                       </div>

@@ -71,29 +71,32 @@
                                 <div class="mb-3">
                                     Department
 
-                                <div class="row">
-                                    <div class="col-lg-10 col-10 pe-0">
-
-                                        <asp:DropDownList CssClass="form-select" ID="ddlDepartment" runat="server" AutoPostBack="True"
-                                            OnSelectedIndexChanged="ddlDepartment_SelectedIndexChanged">
-                                        </asp:DropDownList>
-                                    </div>
 
 
-                                    <div class="col-lg-2 col-2 ps-0">
+                                           <div class="input-group">
+                                               <asp:DropDownList CssClass="form-select" ID="ddlDepartment" runat="server" AutoPostBack="True"
+                                                   OnSelectedIndexChanged="ddlDepartment_SelectedIndexChanged">
+                                               </asp:DropDownList>
 
-                                        <asp:Button CssClass="btn btn-danger btn-xs mbs rounded-0 rounded-end" ID="LnkAddNewDept"
-                                            runat="server" OnClick="LnkAddNewDept_Click"
-                                            Text="+"></asp:Button>
-                                        <div style="display: none">
-                                            <asp:Button btn btn-primary btn-square ID="Button2" runat="server" Text="Button" />
-                                        </div>
-                                        <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
-                                            PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False" Enabled="True">
-                                        </cc1:ModalPopupExtender>
+                                               <div class="input-group-addon">
 
-                                    </div>
-                                </div>
+
+
+
+
+                                                   <asp:LinkButton runat="server" ID="LnkAddNewDept" Text="<i class='fa fa-plus text-green'></i>"
+                                                       OnClick="LnkAddNewDept_Click" CssClass="mediumtxt ps-3" />
+
+
+                                                   <div style="display: none">
+                                                       <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" Text="Button" />
+                                                   </div>
+                                                   <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
+                                                       PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False" Enabled="True">
+                                                   </cc1:ModalPopupExtender>
+
+                                               </div>
+                                           </div>
                                 </div>
                             </div>
 
@@ -102,27 +105,27 @@
                             <div class="col-lg-4">
                                 <div class="mb-3">
                                     Designation
-                                                <div class="row">
-                                                    <div class="col-xl-10 col-10 pe-0">
-                                                        <asp:DropDownList CssClass="form-select" ID="ddlDesignation" runat="server" AutoPostBack="True"
-                                                            OnSelectedIndexChanged="ddlDesignation_SelectedIndexChanged">
-                                                        </asp:DropDownList>
-
-                                                    </div>
-                                                    <div class="col-xl-2 col-2 ps-0">
-                                                        <asp:Button btn btn-primary btn-square ID="LnkAddNewDesignation" runat="server" Text="+"
-                                                            OnClick="LnkAddNewDesignation_Click"></asp:Button>
-                                                        <div style="display: none">
-                                                            <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
-                                                        </div>
-                                                        <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
-                                                            PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"
-                                                            Enabled="True">
-                                                        </cc1:ModalPopupExtender>
-                                                    </div>
-                                                </div>
 
 
+                                           <div class="input-group">
+                                               <asp:DropDownList CssClass="form-select" ID="ddlDesignation" runat="server" AutoPostBack="True"
+                                                   OnSelectedIndexChanged="ddlDesignation_SelectedIndexChanged">
+                                               </asp:DropDownList>
+
+                                               <div class="input-group-addon">
+                                                   <asp:LinkButton runat="server" ID="LnkAddNewDesignation" Text="<i class='fa fa-plus text-green'></i>"
+                                                       OnClick="LnkAddNewDesignation_Click" CssClass="mediumtxt ps-3" />
+
+                                                   <div style="display: none">
+                                                       <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
+                                                   </div>
+                                                   <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
+                                                       PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"
+                                                       Enabled="True">
+                                                   </cc1:ModalPopupExtender>
+
+                                               </div>
+                                           </div>
 
                                 </div>
                             </div>
@@ -177,9 +180,9 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" class="button-bg"
+                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" class="button-bg"
                                     Text="Submit" OnClick="btnSubmit_Click" />
-                                <asp:Button btn btn-primary btn-square ID="btnReset" runat="server" class="button-bg"
+                                <asp:Button CssClass="btn btn-default btn-square" ID="btnReset" runat="server" class="button-bg"
                                     Text="Cancel" OnClick="btnReset_Click" />
                             </div>
                         </div>
@@ -194,7 +197,8 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-lg-12" style="max-height: 200px; overflow: auto;">
-                                        <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GVProject" runat="server" AutoGenerateColumns="false"
+                                        <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"
+                                            ID="GVProject" runat="server" AutoGenerateColumns="false"
                                             GridLines="None"
                                             ShowHeader="false">
                                             <Columns>
@@ -262,7 +266,7 @@
 
 
                                             <div class="col-lg-12">
-                                                <asp:Button btn btn-primary btn-square ID="BtnAddnewDesignation"
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="BtnAddnewDesignation"
                                                     runat="server" Text="Submit"
                                                     OnClick="BtnAddnewDesignation_Click" />
 
@@ -309,7 +313,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <asp:Button btn btn-primary btn-square ID="BtnDeptSave" runat="server" Text="Submit"
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="BtnDeptSave" runat="server"
+                                                    Text="Submit"
                                                     OnClick="BtnDeptSave_Click" />
                                             </div>
                                         </div>

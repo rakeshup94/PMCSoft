@@ -44,7 +44,7 @@
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
                                     Report
-                                    <asp:Button btn btn-primary btn-square ID="BtnReport" runat="server" Text="Report" 
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnReport" runat="server" Text="Report" 
                                         onclick="BtnReport_Click" />
                                 </div>
                                  

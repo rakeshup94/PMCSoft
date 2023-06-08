@@ -68,10 +68,10 @@
                                                 </asp:DropDownList>
                                             </div>
                                             <div class="col-lg-4" >
-                                                <asp:Button btn btn-primary btn-square ID="BtnReport" runat="server" Text="Report" OnClick="BtnReport_Click" />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="BtnReport" runat="server" Text="Report" OnClick="BtnReport_Click" />
                                             </div>
                                             <div class="col-lg-4" >
-                                                <asp:Button btn btn-primary btn-square ID="btnPrint" runat="server" Text="Print Preview" OnClick="btnPrint_Click" />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnPrint" runat="server" Text="Print Preview" OnClick="btnPrint_Click" />
                                             </div>
                                         </div>
                                       </div>
@@ -1557,7 +1557,7 @@
                                             <div class="row" >
                                                 <div class="col-lg-4"   colspan="7" style="text-align: center;">
                                                 
-                                                    <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" 
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" 
                                                         onclick="btnCancel_Click" />
                                                 </div>
                                             </div>

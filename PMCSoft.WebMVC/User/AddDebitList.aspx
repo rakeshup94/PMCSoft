@@ -58,7 +58,7 @@
                                                                                         <ItemTemplate>
                                                                                             <asp:DropDownList CssClass="form-select" ID="ddlVendor" runat="server"  >
                                                                                             </asp:DropDownList>
-                                                                                            <asp:Button btn btn-primary btn-square ID="btnAddVendor" runat="server" Text="+" CausesValidation="false" CommandName="AddVendor" />
+                                                                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddVendor" runat="server" Text="+" CausesValidation="false" CommandName="AddVendor" />
                                                                                         </ItemTemplate>
                                                                                         <ItemStyle Width="250px" HorizontalAlign="Center" VerticalAlign="Top" />
                                                                                     </asp:TemplateField>
@@ -80,7 +80,7 @@
                                                                                     </asp:TemplateField>
                                                                                     <asp:TemplateField HeaderText="Remarks">
                                                                                         <FooterTemplate>
-                                                                                            <asp:Button btn btn-primary btn-square ID="btnAddMore" runat="server" Text="Add More" OnClick="btnAddMore_Click" />
+                                                                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddMore" runat="server" Text="Add More" OnClick="btnAddMore_Click" />
                                                                                         </FooterTemplate>
                                                                                         <ItemTemplate>
                                                                                             <asp:TextBox CssClass="form-control" ID="txtRemarks" runat="server" TextMode="MultiLine" Width="250px" onkeyup="valid(this)"
@@ -99,14 +99,14 @@
                                                                     </div>
                                                                     <div class="row" >
                                                                         <div class="col-lg-4"  style="text-align: center;">
-                                                                            <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                                                            <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                                         </div>
                                                                     </div>
                                                                   </div>
                                                             </asp:Panel>
                                                             <div style="display: none">
-                                                                <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
+                                                                <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
                                                             </div>
                                                             <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                                                 PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"  
@@ -225,8 +225,8 @@
                                                                                     </div>
                                                                                     <div class="row" >
                                                                                         <div class="col-lg-4"    >
-                                                                                            <asp:Button btn btn-primary btn-square ID="btnVSubmit" runat="server" Text="Submit" OnClick="btnVSubmit_Click" />
-                                                                                            <asp:Button btn btn-primary btn-square ID="btnVCancel" runat="server" Text="Cancel" OnClick="btnVCancel_Click" />
+                                                                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnVSubmit" runat="server" Text="Submit" OnClick="btnVSubmit_Click" />
+                                                                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnVCancel" runat="server" Text="Cancel" OnClick="btnVCancel_Click" />
                                                                                         </div>
                                                                                     </div>
                                                                                   </div>
@@ -276,7 +276,7 @@
                                                             </cc1:CalendarExtender>
                                                         </div>
                                                         <div class="col-lg-4"  style="text-align: center; width: 60px;">
-                                                            <asp:Button btn btn-primary btn-square ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
+                                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
                                                         </div>
                                                     </div>
                                                     <div class="row" >

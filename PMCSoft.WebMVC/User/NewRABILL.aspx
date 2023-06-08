@@ -281,11 +281,11 @@
                             </div>
                             <div class="row"   >
                                 <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                    <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" class="button-bg" Text="Submit" OnClick="btnSubmit_Click"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" class="button-bg" Text="Submit" OnClick="btnSubmit_Click"
                                          />
-                                    <asp:Button btn btn-primary btn-square ID="BtnCalculate" runat="server" class="button-bg" Text="Calculate" OnClick="BtnCalculate_Click"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnCalculate" runat="server" class="button-bg" Text="Calculate" OnClick="BtnCalculate_Click"
                                          />
-                                    <asp:Button btn btn-primary btn-square ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"
                                          />
                                 </div>
                             </div>

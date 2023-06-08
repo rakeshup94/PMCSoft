@@ -30,8 +30,8 @@
                                     </cc1:CalendarExtender>
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:Button btn btn-primary btn-square ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
-                                       <asp:Button btn btn-primary btn-square ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
+                                       <asp:Button CssClass="btn btn-primary btn-square" ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
                                 </div>
                             </div>
                             <div class="row" >

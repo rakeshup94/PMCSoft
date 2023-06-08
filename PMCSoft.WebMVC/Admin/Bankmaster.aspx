@@ -71,8 +71,8 @@
                                                         </div>
                                                         <div class="row" >
                                                             <div class="col-lg-4"    >
-                                                                <asp:Button btn btn-primary btn-square ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Submit" />
-                                                                <asp:Button btn btn-primary btn-square ID="btnCancle" runat="server" OnClick="btnCancle_Click" Text="Cancle"
+                                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Submit" />
+                                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancle" runat="server" OnClick="btnCancle_Click" Text="Cancle"
                                                                     CausesValidation="False" />
                                                             </div>
                                                         </div>
@@ -164,9 +164,9 @@
                                                     </div>
                                                     <div class="row" >
                                                         <div class="col-lg-4"  colspan="2">
-                                                            <asp:Button btn btn-primary btn-square ID="btnbranchsave" runat="server" OnClick="btnbranchsave_Click" Text="Save"
+                                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnbranchsave" runat="server" OnClick="btnbranchsave_Click" Text="Save"
                                                                 Width="70px" />
-                                                            <asp:Button btn btn-primary btn-square ID="btnbranchcancle" runat="server" CausesValidation="false" OnClick="btnbranchcancle_Click"
+                                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnbranchcancle" runat="server" CausesValidation="false" OnClick="btnbranchcancle_Click"
                                                                 Text="Cancle" Width="70px" />
                                                         </div>
                                                     </div>

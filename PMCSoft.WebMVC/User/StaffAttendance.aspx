@@ -90,9 +90,9 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                    <asp:Button btn btn-primary btn-square ID="btnSubmit1" runat="server" Text="Submit" OnClick="btnSubmit1_Click"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit1" runat="server" Text="Submit" OnClick="btnSubmit1_Click"
                                         Visible="false" />
-                                    <asp:Button btn btn-primary btn-square ID="btnCancel1" runat="server" Text="Cancel" OnClick="btnCancel1_Click"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel1" runat="server" Text="Cancel" OnClick="btnCancel1_Click"
                                         Visible="false" />
                                 </div>
                             </div>

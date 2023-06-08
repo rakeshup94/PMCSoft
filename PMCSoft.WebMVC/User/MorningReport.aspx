@@ -278,7 +278,7 @@
                                                                 <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center">
                                                                 </div>
                                                                 <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center">
-                                                                    <asp:Button btn btn-primary btn-square ID="btnCalculate" runat="server" Text="Calculate" BackColor="#33ccff"
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCalculate" runat="server" Text="Calculate" BackColor="#33ccff"
                                                                         BorderColor="Navy" OnClick="btnCalculate_Click" />
                                                                 </div>
                                                             </div>
@@ -312,8 +312,8 @@
                                             </div>
                                             <div class="row" >
                                                 <div class="col-lg-4"  colspan="6" style="text-align: center;">
-                                                    <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                                    <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                 </div>
                                             </div>
                                           </div>

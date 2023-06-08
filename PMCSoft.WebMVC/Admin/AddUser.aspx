@@ -62,10 +62,10 @@
                                     <asp:DropDownList CssClass="form-select" ID="ddlDepartment" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlDepartment_SelectedIndexChanged"
                                          >
                                     </asp:DropDownList>
-                                    <asp:Button btn btn-primary btn-square ID="LnkAddNewDept" runat="server" OnClick="LnkAddNewDept_Click" Text="+">
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="LnkAddNewDept" runat="server" OnClick="LnkAddNewDept_Click" Text="+">
                                     </asp:Button>
                                     <div style="display: none">
-                                        <asp:Button btn btn-primary btn-square ID="Button2" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False"  
@@ -90,8 +90,8 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"    >
-                                                                    <asp:Button btn btn-primary btn-square ID="BtnDeptSave" runat="server" Text="Submit" OnClick="BtnDeptSave_Click" />
-                                                                    <asp:Button btn btn-primary btn-square ID="btndepcancel" runat="server" Text="Cancel" OnClick="btndepcancel_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnDeptSave" runat="server" Text="Submit" OnClick="BtnDeptSave_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btndepcancel" runat="server" Text="Cancel" OnClick="btndepcancel_Click" />
                                                                 </div>
                                                             </div>
                                                           </div>
@@ -105,10 +105,10 @@
                                     <asp:DropDownList CssClass="form-select" ID="ddlDesignation" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlDesignation_SelectedIndexChanged"
                                          >
                                     </asp:DropDownList>
-                                    <asp:Button btn btn-primary btn-square ID="LnkAddNewDesignation" runat="server" Text="+" OnClick="LnkAddNewDesignation_Click">
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="LnkAddNewDesignation" runat="server" Text="+" OnClick="LnkAddNewDesignation_Click">
                                     </asp:Button>
                                     <div style="display: none">
-                                        <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"  
@@ -143,8 +143,8 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"    >
-                                                                    <asp:Button btn btn-primary btn-square ID="BtnAddnewDesignation" runat="server" Text="Submit" OnClick="BtnAddnewDesignation_Click" />
-                                                                    <asp:Button btn btn-primary btn-square ID="btnAddNewDesignationCancel" runat="server" Text="Cancel" OnClick="btnAddNewDesignationCancel_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnAddnewDesignation" runat="server" Text="Submit" OnClick="BtnAddnewDesignation_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddNewDesignationCancel" runat="server" Text="Cancel" OnClick="btnAddNewDesignationCancel_Click" />
                                                                 </div>
                                                             </div>
                                                           </div>
@@ -305,9 +305,9 @@
                             </div>
                             <div class="row"   >
                                 <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                    <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" class="button-bg" Text="Submit" OnClick="btnSubmit_Click"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" class="button-bg" Text="Submit" OnClick="btnSubmit_Click"
                                          />
-                                    <asp:Button btn btn-primary btn-square ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"
                                          />
                                 </div>
                             </div>

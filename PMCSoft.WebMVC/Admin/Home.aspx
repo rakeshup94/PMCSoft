@@ -353,7 +353,7 @@
     <%-- </ContentTemplate>
     </asp:UpdatePanel>--%>
     <div style="display: none">
-        <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
+        <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
     </div>
     <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
@@ -427,8 +427,8 @@
                                     </div>
                                     <div class="row" >
                                         <div class="col-lg-4"    >
-                                            <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                            <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                         </div>
                                     </div>
                                   </div>

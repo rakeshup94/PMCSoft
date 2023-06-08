@@ -43,9 +43,9 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit"
+                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit"
                                     OnClick="btnSubmit_Click" />
-                                <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel"
+                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel"
                                     OnClick="btnCancel_Click" />
                             </div>
                         </div>

@@ -1614,8 +1614,8 @@
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4"    >
-                                                <asp:Button btn btn-primary btn-square ID="btnParticularsSubmit" runat="server" Text="Update" OnClick="btnParticularsSubmit_Click" />
-                                                <asp:Button btn btn-primary btn-square ID="btnParticularsCancel" runat="server" Text="Cancel" OnClick="btnParticularsCancel_Click" />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnParticularsSubmit" runat="server" Text="Update" OnClick="btnParticularsSubmit_Click" />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnParticularsCancel" runat="server" Text="Cancel" OnClick="btnParticularsCancel_Click" />
                                             </div>
                                         </div>
                                       </div>

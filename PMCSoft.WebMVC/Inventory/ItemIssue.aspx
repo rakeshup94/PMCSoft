@@ -108,7 +108,7 @@
                                                         onblur="valid(this)"></asp:TextBox>
                                                 </ItemTemplate>
                                                 <FooterTemplate>
-                                                    <asp:Button btn btn-primary btn-square ID="btnAddMore" runat="server" OnClick="btnAddMore_Click" Text="Add More" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddMore" runat="server" OnClick="btnAddMore_Click" Text="Add More" />
                                                 </FooterTemplate>
                                                 <FooterStyle HorizontalAlign="Right" />
                                                 <ItemStyle VerticalAlign="Top"   />
@@ -120,8 +120,8 @@
                                 </div>
                                 <div class="row" >
                                     <div class="col-lg-4"  colspan="6" style="text-align: center;">
-                                        <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                        <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" />
                                     </div>
                                 </div>
                           </div>

@@ -94,7 +94,7 @@
                                     </Columns>
                                 </asp:GridView>
                                 <div style="display: none">
-                                    <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
                                 </div>
                                 <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                     PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
@@ -219,9 +219,9 @@
                                         </div>
                                         <div class="row"   >
                                             <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                                <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" class="button-bg" Text="Save" OnClick="btnSubmit_Click"
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" class="button-bg" Text="Save" OnClick="btnSubmit_Click"
                                                      />
-                                                <asp:Button btn btn-primary btn-square ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"
                                                      />
                                             </div>
                                         </div>
@@ -231,7 +231,7 @@
                         </div>
                       </div>
                     <div style="display: none">
-                        <asp:Button btn btn-primary btn-square ID="Button2" runat="server" Text="Button" />
+                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" Text="Button" />
                     </div>
                     <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                         PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False"  
@@ -308,7 +308,7 @@
                                 <div class="col-lg-4"  colspan="4" style="text-align: center;">
                                     <div class="row"   >
                                         <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                            <asp:Button btn btn-primary btn-square ID="Button4" runat="server" class="button-bg" Text="Cancel" OnClick="Button4_Click"
+                                            <asp:Button CssClass="btn btn-primary btn-square" ID="Button4" runat="server" class="button-bg" Text="Cancel" OnClick="Button4_Click"
                                                 Style="width: auto; text-align: center" />
                                         </div>
                                 </div>

@@ -102,7 +102,7 @@
                                                             </ItemTemplate>
                                                             <FooterTemplate>
                                                                 <asp:Label ID="lblTotal" runat="server"></asp:Label>
-                                                                <asp:Button btn btn-primary btn-square ID="btnAddMore" runat="server" Text="Add More" OnClick="btnAddMore_Click" />
+                                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddMore" runat="server" Text="Add More" OnClick="btnAddMore_Click" />
                                                             </FooterTemplate>
                                                             <FooterStyle HorizontalAlign="Right" />
                                                             <ItemStyle VerticalAlign="Top"   />
@@ -115,8 +115,8 @@
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4"  style="text-align: center;">
-                                                <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                                <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" 
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" 
                                                     onclick="btnCancel_Click" />
                                             </div>
                                         </div>

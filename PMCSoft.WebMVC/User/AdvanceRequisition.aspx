@@ -57,7 +57,7 @@
                                                 <ItemTemplate>
                                                     <asp:DropDownList CssClass="form-select" ID="ddltypeofpayment" runat="server"  >
                                                     </asp:DropDownList>
-                                                     <asp:Button btn btn-primary btn-square ID="btnAdvanceRequisitionAddNew" runat="server" Text="+" CausesValidation="false" CommandName="AdvanceRequisitionAddNew" />
+                                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnAdvanceRequisitionAddNew" runat="server" Text="+" CausesValidation="false" CommandName="AdvanceRequisitionAddNew" />
                                                 </ItemTemplate>
                                                 <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
@@ -93,10 +93,10 @@
                                                     <asp:DropDownList CssClass="form-select" ID="ddlSecurity" runat="server" AutoPostBack="True" Enabled="false">
                                                         <asp:ListItem Text="Select Security" Value="0"></asp:ListItem>
                                                     </asp:DropDownList>
-                                                    <asp:Button btn btn-primary btn-square ID="btnAdvanceRequisitionAddNewSecurity" runat="server" Text="+" CausesValidation="false" CommandName="AdvanceRequisitionAddNewSecurity" Enabled="false" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAdvanceRequisitionAddNewSecurity" runat="server" Text="+" CausesValidation="false" CommandName="AdvanceRequisitionAddNewSecurity" Enabled="false" />
                                                 </ItemTemplate>
                                                 <FooterTemplate>
-                                                    <asp:Button btn btn-primary btn-square ID="btnAddMore" runat="server" OnClick="btnAddMore_Click" Text="Add More" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddMore" runat="server" OnClick="btnAddMore_Click" Text="Add More" />
                                                 </FooterTemplate>
                                                 <FooterStyle HorizontalAlign="Right" />
                                                 <ItemStyle VerticalAlign="Top" />
@@ -106,7 +106,7 @@
                                         <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                     </asp:GridView>
                                      <div style="display: none">
-                                                                <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
+                                                                <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
                                                             </div>
                                                             <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                                                 PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"  
@@ -128,9 +128,9 @@
                                             </div>
                                             <div class="row" >
                                                 <div class="col-lg-4"    >
-                                                    <asp:Button btn btn-primary btn-square ID="BtnTypeofAdvanceRequisitonAddNew" runat="server" Text="Submit" 
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnTypeofAdvanceRequisitonAddNew" runat="server" Text="Submit" 
                                                         onclick="BtnTypeofAdvanceRequisitonAddNew_Click" />
-                                                    <asp:Button btn btn-primary btn-square ID="btnCancelAddNewTypeOfAdvanceRequistion" runat="server" 
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancelAddNewTypeOfAdvanceRequistion" runat="server" 
                                                         Text="Cancel" onclick="btnCancelAddNewTypeOfAdvanceRequistion_Click"  />
                                                 </div>
                                             </div>
@@ -141,7 +141,7 @@
                                                                       
                                                             </asp:Panel>
                                                              <div style="display: none">
-                                                                <asp:Button btn btn-primary btn-square ID="Button2" runat="server" Text="Button"  />
+                                                                <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" Text="Button"  />
                                                             </div>
                                                             <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                                                                 PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False"  
@@ -163,9 +163,9 @@
                                             </div>
                                             <div class="row" >
                                                 <div class="col-lg-4"    >
-                                                    <asp:Button btn btn-primary btn-square ID="BtnSecurityAddNewSave" runat="server" Text="Submit" 
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnSecurityAddNewSave" runat="server" Text="Submit" 
                                                         onclick="BtnSecurityAddNewSave_Click"  />
-                                                    <asp:Button btn btn-primary btn-square ID="BtnCancelSecurityAddNew" runat="server" Text="Cancel" 
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnCancelSecurityAddNew" runat="server" Text="Cancel" 
                                                         onclick="BtnCancelSecurityAddNew_Click" />
                                                 </div>
                                             </div>
@@ -177,8 +177,8 @@
                                 </div>
                                 <div class="row" >
                                     <div class="col-lg-4"  colspan="6" style="text-align: center;">
-                                        <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                        <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" CausesValidation="false" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" CausesValidation="false" />
                                     </div>
                                 </div>
                           </div>

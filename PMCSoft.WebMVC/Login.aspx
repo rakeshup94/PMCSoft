@@ -61,7 +61,7 @@
                 runat="server" ErrorMessage="*" ValidationGroup="Login"></asp:RequiredFieldValidator>
         </div>
         <div class="footer">
-            <asp:Button btn btn-primary btn-square ID="btnLogin" runat="server" Text="Login" CssClass="button" ValidationGroup="Login" OnClick="btnLogin_Click" />
+            <asp:Button CssClass="btn btn-primary btn-square" ID="btnLogin" runat="server" Text="Login" CssClass="button" ValidationGroup="Login" OnClick="btnLogin_Click" />
         </div>
         <div class="footer11">
             <asp:LinkButton ID="lnkForgotPassword" ValidationGroup="Forget" runat="server" Text="Forgot Password?" Font-Size="11px"

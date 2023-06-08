@@ -209,7 +209,7 @@
         <ContentTemplate>
             <div style="display: none">
 
-                <asp:Button btn btn-primary btn-square ID="Button3" runat="server" />
+                <asp:Button CssClass="btn btn-primary btn-square" ID="Button3" runat="server" />
             </div>
             <cc1:ModalPopupExtender ID="ModalPopupExtender3" runat="server" BackgroundCssClass="popUpStyle"
                 PopupControlID="Panel3" TargetControlID="Button3" EnableViewState="False"
@@ -250,9 +250,9 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <asp:Button btn btn-primary btn-square ID="btnAddNewsave" runat="server" Text="Submit"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddNewsave" runat="server" Text="Submit"
                                         OnClick="btnAddNewsave_Click" />
-                                    <asp:Button btn btn-primary btn-square ID="BtnAddNewCancel" runat="server" Text="Cancel"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnAddNewCancel" runat="server" Text="Cancel"
                                         OnClick="BtnAddNewCancel_Click" />
                                 </div>
                             </div>
@@ -270,7 +270,7 @@
 
             <div style="display: none">
 
-                <asp:Button btn btn-primary btn-square ID="Button1" runat="server" />
+                <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" />
             </div>
             <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                 PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"
@@ -307,9 +307,9 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <asp:Button btn btn-primary btn-square ID="btnAddNewGroupname" runat="server" Text="Submit"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddNewGroupname" runat="server" Text="Submit"
                                         OnClick="btnAddNewGroupname_Click" />
-                                    <asp:Button btn btn-primary btn-square ID="BtnCancelAddNewGroupName" runat="server"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnCancelAddNewGroupName" runat="server"
                                         Text="Cancel" OnClick="BtnCancelAddNewGroupName_Click" />
                                 </div>
                             </div>
@@ -401,9 +401,9 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <asp:Button btn btn-primary btn-square ID="EditSubmit" runat="server" Text="Submit"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="EditSubmit" runat="server" Text="Submit"
                                         OnClick="EditSubmit_Click" />
-                                    <asp:Button btn btn-primary btn-square ID="EditCancel" runat="server" Text="Cancel"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="EditCancel" runat="server" Text="Cancel"
                                         OnClick="EditCancel_Click" />
                                 </div>
                             </div>
@@ -418,7 +418,7 @@
 
             </asp:Panel>
             <div style="display: none">
-                <asp:Button btn btn-primary btn-square ID="Button2" runat="server" />
+                <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" />
 
             </div>
             <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"

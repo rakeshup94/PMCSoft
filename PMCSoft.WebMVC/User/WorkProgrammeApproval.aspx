@@ -97,7 +97,7 @@
                                         </FooterTemplate>
                                     </asp:DataList>
                                     <div style="display: none">
-                                        <asp:Button btn btn-primary btn-square ID="Button1" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
@@ -283,9 +283,9 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  colspan="6" style="text-align: center;">
-                                                                    <asp:Button btn btn-primary btn-square ID="btnSubmit" runat="server" Text="Approved" OnClick="btnSubmit_Click" />
-                                                                    <asp:Button btn btn-primary btn-square ID="btnCancel" runat="server" Text="Dis Approved" OnClick="btnCancel_Click" />
-                                                                    <asp:Button btn btn-primary btn-square ID="btnClose" runat="server" Text="Cancel" OnClick="btnClose_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Approved" OnClick="btnSubmit_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Dis Approved" OnClick="btnCancel_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnClose" runat="server" Text="Cancel" OnClick="btnClose_Click" />
                                                                 </div>
                                                             </div>
                                                           </div>
@@ -295,7 +295,7 @@
                                           </div>
                                     </asp:Panel>
                                     <div style="display: none">
-                                        <asp:Button btn btn-primary btn-square ID="Button2" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False"  
@@ -320,8 +320,8 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"    >
-                                                                    <asp:Button btn btn-primary btn-square ID="btnApproved" runat="server" Text="Submit" OnClick="btnApproved_Click" />
-                                                                    <asp:Button btn btn-primary btn-square ID="btnApprovedCancel" runat="server" Text="Cancel" OnClick="btnApprovedCancel_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnApproved" runat="server" Text="Submit" OnClick="btnApproved_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnApprovedCancel" runat="server" Text="Cancel" OnClick="btnApprovedCancel_Click" />
                                                                 </div>
                                                             </div>
                                                           </div>
@@ -331,7 +331,7 @@
                                           </div>
                                     </asp:Panel>
                                     <div style="display: none">
-                                        <asp:Button btn btn-primary btn-square ID="Button3" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button3" runat="server" Text="Button" />
                                     </div>
                                     <cc1:ModalPopupExtender ID="ModalPopupExtender3" runat="server" BackgroundCssClass="popUpStyle"
                                         PopupControlID="Panel3" TargetControlID="Button3" EnableViewState="False"  
@@ -356,8 +356,8 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"    >
-                                                                    <asp:Button btn btn-primary btn-square ID="btnDisApproved" runat="server" Text="Submit" OnClick="btnDisApproved_Click" />
-                                                                    <asp:Button btn btn-primary btn-square ID="btnCancelDisApproved" runat="server" Text="Cancel" OnClick="btnCancelDisApproved_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnDisApproved" runat="server" Text="Submit" OnClick="btnDisApproved_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancelDisApproved" runat="server" Text="Cancel" OnClick="btnCancelDisApproved_Click" />
                                                                 </div>
                                                             </div>
                                                           </div>
