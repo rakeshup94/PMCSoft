@@ -227,7 +227,7 @@
 
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-6">
                                     <div class="mb-3">
                                         Name
                            
@@ -237,7 +237,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-4">
+                                <div class="col-lg-6">
                                     <div class="mb-3">
                                         Code
                               
@@ -292,7 +292,7 @@
 
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-6">
                                     <div class="mb-3">
                                         Code
                             
@@ -302,7 +302,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-4">
+                                <div class="col-lg-6">
                                     <div class="mb-3">
                                         Name
                                   
@@ -469,7 +469,7 @@
 
 
                 </div>
-                </div>
+
 
 
 

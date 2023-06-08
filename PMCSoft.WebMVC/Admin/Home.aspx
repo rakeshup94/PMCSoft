@@ -39,7 +39,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="40px" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Project Name">
                                                 <ItemTemplate>
@@ -94,7 +94,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="40px" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Project Name">
                                                 <ItemTemplate>
@@ -190,7 +190,7 @@
                                                 <ItemTemplate>
                                                    <%# Container.DataItemIndex+1 %>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="40px" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Project Name">
                                                 <ItemTemplate>
@@ -302,7 +302,7 @@
                             <asp:UpdatePanel ID="UpdatePanel5" runat="server">
                                 <ContentTemplate>
                                  <asp:Panel ID="Panel3" runat="server" Height="145px" ScrollBars="Both">
-                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView3" runat="server" AutoGenerateColumns="false" Width="300px" 
+                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView3" runat="server" AutoGenerateColumns="false"   
                                         AllowPaging="True"
                                         OnRowCommand="GridView3_RowCommand">
                                         <Columns>
@@ -310,7 +310,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="40px" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Project Name">
                                                 <ItemTemplate>
@@ -359,7 +359,7 @@
         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
         Enabled="True">
     </cc1:ModalPopupExtender>
-    <asp:Panel ID="Panel1" runat="server" Style="display: none; border-color: Maroon;">
+    <asp:Panel ID="Panel1" runat="server" Style="display: none;   ">
         <asp:UpdatePanel ID="UpdatePanel6" runat="server">
             <div class="row" iggers>
                 <asp:PostBackTrigger ControlID="btnSubmit" />
@@ -396,7 +396,7 @@
                                             Subject
                                         </div>
                                         <div class="col-lg-4" >
-                                            <asp:TextBox CssClass="form-control" ID="txtTitle" runat="server" Width="300px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
+                                            <asp:TextBox CssClass="form-control" ID="txtTitle" runat="server"   onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="row" >
@@ -404,7 +404,7 @@
                                             Circular No.
                                         </div>
                                         <div class="col-lg-4" >
-                                            <asp:TextBox CssClass="form-control" ID="txtCircularNo" runat="server" Width="300px" onkeyup="valid(this)"
+                                            <asp:TextBox CssClass="form-control" ID="txtCircularNo" runat="server"   onkeyup="valid(this)"
                                                 onblur="valid(this)"></asp:TextBox>
                                         </div>
                                     </div>

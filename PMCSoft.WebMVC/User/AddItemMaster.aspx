@@ -91,8 +91,8 @@
                                                         PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"  
                                                         Enabled="True">
                                                     </cc1:ModalPopupExtender>
-                                                    <asp:Panel ID="Panel2" runat="server" Style="display: none; border-color: Maroon;">
-                                                        <div class="row"  style="width: 300px; background-color: #EFFBFB;">
+                                                    <asp:Panel ID="Panel2" runat="server" Style="display: none;   ">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     <div id="Div1">
@@ -154,7 +154,7 @@
                                                         PopupControlID="Panel3" TargetControlID="Button3" EnableViewState="False"  
                                                         Enabled="True">
                                                     </cc1:ModalPopupExtender>
-                                                    <asp:Panel ID="Panel3" runat="server" Style="display: none; border-color: Maroon;">
+                                                    <asp:Panel ID="Panel3" runat="server" Style="display: none;   ">
                                                         <div class="card-body">
                                                             <h3 class="reallynow">
                                                                 Add Unit</h3>
@@ -230,8 +230,8 @@
                 PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False"  
                 Enabled="True">
             </cc1:ModalPopupExtender>
-            <asp:Panel ID="Panel1" runat="server" Style="display: none; border-color: Maroon;">
-                <div class="row"  style="width: 300px; background-color: #EFFBFB;">
+            <asp:Panel ID="Panel1" runat="server" Style="display: none;   ">
+                <div class="row"   >
                     <div class="row" >
                         <div class="col-lg-4" >
                             <div class="card-body">

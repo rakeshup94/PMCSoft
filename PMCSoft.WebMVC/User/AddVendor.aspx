@@ -318,7 +318,7 @@
                                                                             Party / Vendor Type</h3>
                                                                         <div class="row"  style="width: 330px;">
                                                                             <div class="row" >
-                                                                                <div class="col-lg-4"  style="width: 100px;">
+                                                                                <div class="col-lg-4"    >
                                                                                     Type
                                                                                 </div>
                                                                                 <div class="col-lg-4" >

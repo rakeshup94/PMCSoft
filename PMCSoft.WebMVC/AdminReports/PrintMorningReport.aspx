@@ -56,7 +56,7 @@
                     <div class="row" >
                         <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria;">
                             Eng. In Charge: &nbsp; &nbsp; &nbsp; &nbsp;
-                            <asp:Label ID="lblEngInCharge" runat="server" Width="300px"></asp:Label>
+                            <asp:Label ID="lblEngInCharge" runat="server"  ></asp:Label>
                             &nbsp; &nbsp; &nbsp; &nbsp;<asp:HiddenField ID="hdnEngInCharge" runat="server" />
                         </div>
                         <div class="col-lg-4" >
@@ -70,8 +70,8 @@
                         </div>
                     </div>
                     <div class="row" >
-                        <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                            <asp:Panel ID="Panel1" runat="server" Width="910px" Visible="false">
+                        <div class="col-lg-4"   >
+                            <asp:Panel ID="Panel1" runat="server"    Visible="false">
                                 <div class="row"  style="width: 900px;">
                                     <div class="row" >
                                         <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria;">

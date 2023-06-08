@@ -84,7 +84,7 @@
                                     Enabled="True">
                                 </cc1:ModalPopupExtender>
                                 <asp:Panel ID="Panel1" runat="server" Width="850px" Height="450px" Style="display: none;
-                                    border-color: Maroon; background-color: #F7F8E0;" ScrollBars="Horizontal">
+                                       background-color: #F7F8E0;" ScrollBars="Horizontal">
                                     <div class="row"  style="width: 800px; background-color: #F7F8E0;">
                                         <div class="row" >
                                             <div class="col-lg-4" >
@@ -369,7 +369,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row"   >
-                                                            <div class="col-lg-4"  colspan="4" style="text-align: center;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" class="button-bg" Text="Submit" OnClick="btnSubmit_Click"
                                                                      />
                                                                 <asp:Button CssClass="btn btn-primary btn-square" ID="BtnCalculate" runat="server" class="button-bg" Text="Calculate" OnClick="BtnCalculate_Click"
@@ -392,8 +392,8 @@
                                     Enabled="True">
                                 </cc1:ModalPopupExtender>
                                 <asp:Panel ID="Panel2" runat="server" Width="800px" Height="350px" Style="display: none;
-                                    border-color: Maroon; background-color: #F7F8E0;">
-                                    <fieldset style="border-width: 1px; border-color: Maroon;">
+                                       background-color: #F7F8E0;">
+                                    <fieldset style="border-width: 1px;   ">
                                         <div class="row"  style="width: 800px; background-color: #F7F8E0;">
                                             <div class="row" >
                                                 <div class="col-lg-4" >
@@ -602,7 +602,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row"   >
-                                                                <div class="col-lg-4"  colspan="4" style="text-align: center;">
+                                                                <div class="col-lg-4"   >
                                                                     <asp:Button CssClass="btn btn-primary btn-square" ID="BtnLablcan" runat="server" class="button-bg" Text="Cancel"  />
                                                                 </div>
                                                             </div>

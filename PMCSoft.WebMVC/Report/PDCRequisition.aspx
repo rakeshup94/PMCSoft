@@ -24,7 +24,7 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="2">
-                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" Width="910px" AutoGenerateColumns="false"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server"    AutoGenerateColumns="false"
                                         EmptyDataText="No Records Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -37,7 +37,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblIssueID" runat="server" Text='<%#Bind("IssueID") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="60px" HorizontalAlign="Center" />
+                                              
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Vendor">
                                                 <ItemTemplate>
@@ -61,7 +61,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblChequeNo" runat="server" Text='<%#Bind("ChequeNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="80px" HorizontalAlign="Center" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Amount">
                                                 <ItemTemplate>
@@ -73,7 +73,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblIssueDate" runat="server" Text='<%#Bind("IssueDate") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="80px" HorizontalAlign="Center" />
+                                           
                                             </asp:TemplateField>
                                         </Columns>
                                         <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />

@@ -1303,7 +1303,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-4">
                                                             <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView1" runat="server" AutoGenerateColumns="false"
-                                                                Width="910px">
+                                                                  >
                                                                 <Columns>
                                                                     <asp:TemplateField HeaderText="S.No">
                                                                         <ItemTemplate>
@@ -1325,7 +1325,7 @@
                                                                                 Width="280px"
                                                                                 onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                         </ItemTemplate>
-                                                                        <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                        <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                     </asp:TemplateField>
                                                                     <asp:TemplateField HeaderText="Clause">
                                                                         <ItemTemplate>
@@ -1359,7 +1359,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-4">
                                                             <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView2" runat="server" AutoGenerateColumns="false"
-                                                                Width="910px">
+                                                                  >
                                                                 <Columns>
                                                                     <asp:TemplateField HeaderText="S.No">
                                                                         <ItemTemplate>
@@ -1381,7 +1381,7 @@
                                                                                 Width="280px"
                                                                                 onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                         </ItemTemplate>
-                                                                        <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                        <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                     </asp:TemplateField>
                                                                     <asp:TemplateField HeaderText="Clause">
                                                                         <ItemTemplate>
@@ -1415,7 +1415,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-4">
                                                             <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView3" runat="server" AutoGenerateColumns="false"
-                                                                Width="910px">
+                                                                  >
                                                                 <Columns>
                                                                     <asp:TemplateField HeaderText="S.No">
                                                                         <ItemTemplate>
@@ -1437,7 +1437,7 @@
                                                                                 Width="280px"
                                                                                 onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                         </ItemTemplate>
-                                                                        <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                        <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                     </asp:TemplateField>
                                                                     <asp:TemplateField HeaderText="Clause">
                                                                         <ItemTemplate>
@@ -1471,7 +1471,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-4">
                                                             <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView4" runat="server" AutoGenerateColumns="false"
-                                                                Width="910px">
+                                                                  >
                                                                 <Columns>
                                                                     <asp:TemplateField HeaderText="S.No">
                                                                         <ItemTemplate>
@@ -1493,7 +1493,7 @@
                                                                                 Width="280px"
                                                                                 onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                         </ItemTemplate>
-                                                                        <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                        <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                     </asp:TemplateField>
                                                                     <asp:TemplateField HeaderText="Clause">
                                                                         <ItemTemplate>
@@ -1527,7 +1527,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-4">
                                                             <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView5" runat="server" AutoGenerateColumns="false"
-                                                                Width="910px">
+                                                                  >
                                                                 <Columns>
                                                                     <asp:TemplateField HeaderText="S.No">
                                                                         <ItemTemplate>
@@ -1549,7 +1549,7 @@
                                                                                 Width="280px"
                                                                                 onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                         </ItemTemplate>
-                                                                        <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                        <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                     </asp:TemplateField>
                                                                     <asp:TemplateField HeaderText="Clause">
                                                                         <ItemTemplate>
@@ -1583,7 +1583,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-4">
                                                             <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView6" runat="server" AutoGenerateColumns="false"
-                                                                Width="910px">
+                                                                  >
                                                                 <Columns>
                                                                     <asp:TemplateField HeaderText="S.No">
                                                                         <ItemTemplate>
@@ -1605,7 +1605,7 @@
                                                                                 Width="280px"
                                                                                 onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                         </ItemTemplate>
-                                                                        <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                        <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                     </asp:TemplateField>
                                                                     <asp:TemplateField HeaderText="Clause">
                                                                         <ItemTemplate>
@@ -1639,7 +1639,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-4">
                                                             <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView7" runat="server" AutoGenerateColumns="false"
-                                                                Width="910px">
+                                                                  >
                                                                 <Columns>
                                                                     <asp:TemplateField HeaderText="S.No">
                                                                         <ItemTemplate>
@@ -1661,7 +1661,7 @@
                                                                                 Width="280px"
                                                                                 onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                         </ItemTemplate>
-                                                                        <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                        <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                     </asp:TemplateField>
                                                                     <asp:TemplateField HeaderText="Clause">
                                                                         <ItemTemplate>
@@ -1695,7 +1695,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-4">
                                                             <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GridView8" runat="server" AutoGenerateColumns="false"
-                                                                Width="910px">
+                                                                  >
                                                                 <Columns>
                                                                     <asp:TemplateField HeaderText="S.No">
                                                                         <ItemTemplate>
@@ -1717,7 +1717,7 @@
                                                                                 Width="280px"
                                                                                 onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                         </ItemTemplate>
-                                                                        <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                        <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                     </asp:TemplateField>
                                                                     <asp:TemplateField HeaderText="Clause">
                                                                         <ItemTemplate>

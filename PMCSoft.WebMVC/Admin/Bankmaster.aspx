@@ -55,13 +55,13 @@
                                                     <HeaderStyle CssClass="reallynow" />
                                                 </asp:GridView>
                                             </div>
-                                            <div class="col-lg-4"  style="width: 390px; vertical-align: top;">
+                                            <div class="col-lg-4"   >
                                                 <div class="card-body">
                                                     <h3 class="reallynow">
                                                         Add Bank</h3>
                                                     <div class="row"  style="width: 380;">
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="width: 100px;">
+                                                            <div class="col-lg-4"    >
                                                                 Bank Name
                                                             </div>
                                                             <div class="col-lg-4" >
@@ -96,7 +96,7 @@
                                                     Add Branch</h3>
                                                 <div class="row"  style="width: 330px;">
                                                     <div class="row" >
-                                                        <div class="col-lg-4"  style="width: 100px;">
+                                                        <div class="col-lg-4"    >
                                                             Bank
                                                         </div>
                                                         <div class="col-lg-4" >

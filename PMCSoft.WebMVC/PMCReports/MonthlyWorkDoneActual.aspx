@@ -268,14 +268,14 @@
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False" 
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel1" runat="server" Style="display: none; border-color: Maroon;">
-                                        <div class="row"  style="width: 300px; background-color: #EFFBFB;">
+                                    <asp:Panel ID="Panel1" runat="server" Style="display: none;   ">
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div2">
                                                         <h3 class="reallynow">
                                                             Add Particulars Of Item</h3>
-                                                        <div class="row"  style="width: 390px; vertical-align: top;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     Particulars

@@ -34,7 +34,7 @@ else
                                     Project
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" Width="300px" AutoPostBack="true"
+                                    <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server"   AutoPostBack="true"
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                     </asp:DropDownList>
                                 </div>
@@ -110,7 +110,7 @@ else
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel1" runat="server" Style="display: none; border-color: Maroon;">
+                                    <asp:Panel ID="Panel1" runat="server" Style="display: none;   ">
                                         <div class="row"  style="width: 650px; background-color: #EFFBFB;">
                                             <div class="row" >
                                                 <div class="col-lg-4" >
@@ -232,7 +232,7 @@ else
                                                                 </div>
                                                             </div>
                                                             <div class="row"   >
-                                                                <div class="col-lg-4"  colspan="4" style="text-align: center;">
+                                                                <div class="col-lg-4"   >
                                                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" class="button-bg" Text="Submit" OnClick="btnSubmit_Click"
                                                                          />
                                                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"

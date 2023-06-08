@@ -75,7 +75,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblCreatedDate" runat="server" Text='<%#Bind("CreatedDate") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="100px" HorizontalAlign="Center" />
+                                                  
                                             </asp:TemplateField>
                                         </Columns>
                                         <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />

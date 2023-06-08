@@ -32,7 +32,7 @@
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="2">
                                     <asp:DataList ID="DataList1" runat="server" OnItemDataBound="DataList1_ItemDataBound"
-                                        Width="910px" ShowHeader="false">
+                                           ShowHeader="false">
                                         <HeaderTemplate>
                                             <div class="row" >
                                         </HeaderTemplate>
@@ -104,7 +104,7 @@
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
                                     <asp:Panel ID="Panel1" runat="server" Width="900px" Height="500px" Style="display: none;
-                                        border-color: Maroon; background-color: #F7F8E0;" ScrollBars="Horizontal">
+                                           background-color: #F7F8E0;" ScrollBars="Horizontal">
                                         <div class="row"  style="width: 800px; background-color: #F7F8E0;">
                                             <div class="row" >
                                                 <div class="col-lg-4" >
@@ -344,8 +344,8 @@
                                         PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel2" runat="server" Width="300px" Height="200px" Style="display: none;
-                                        border-color: Maroon; background-color: #F7F8E0;">
+                                    <asp:Panel ID="Panel2" runat="server"   Height="200px" Style="display: none;
+                                           background-color: #F7F8E0;">
                                         <div class="row"  style="width: 300px; background-color: #F7F8E0;" border="1">
                                             <div class="row" >
                                                 <div class="col-lg-4" >

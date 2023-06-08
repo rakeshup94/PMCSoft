@@ -71,14 +71,14 @@
                                         PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel1" runat="server" Style="display: none; border-color: Maroon;">
-                                        <div class="row"  style="width: 300px; background-color: #EFFBFB;">
+                                    <asp:Panel ID="Panel1" runat="server" Style="display: none;   ">
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div class="card-body">
                                                         <h3 class="reallynow">
                                                             Department</h3>
-                                                        <div class="row"  style="width: 390px; vertical-align: top;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     Department
@@ -114,9 +114,9 @@
                                         PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel2" runat="server" Style="display: none; border-color: Maroon;
+                                    <asp:Panel ID="Panel2" runat="server" Style="display: none;   
                                         width: 290">
-                                        <div class="row"  style="width: 300px; background-color: #EFFBFB;">
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div class="card-body">
@@ -304,7 +304,7 @@
                                 </div>
                             </div>
                             <div class="row"   >
-                                <div class="col-lg-4"  colspan="4" style="text-align: center;">
+                                <div class="col-lg-4"   >
                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" class="button-bg" Text="Submit" OnClick="btnSubmit_Click"
                                          />
                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"

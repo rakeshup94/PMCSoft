@@ -44,7 +44,7 @@
                                     <div class="card-body">
                                         <h3 class="reallynow">
                                             Add Opening Date</h3>
-                                        <div class="row"  style="width: 390px; vertical-align: top;">
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4"  style="width: 150px; text-align: center;">
                                                     Project

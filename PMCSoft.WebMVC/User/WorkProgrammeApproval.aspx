@@ -32,7 +32,7 @@
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="2">
                                     <asp:DataList ID="DataList1" runat="server" OnItemDataBound="DataList1_ItemDataBound"
-                                        Width="910px" ShowHeader="false">
+                                           ShowHeader="false">
                                         <HeaderTemplate>
                                             <div class="row" >
                                         </HeaderTemplate>
@@ -104,7 +104,7 @@
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
                                     <asp:Panel ID="Panel1" runat="server" Width="810px" Height="500px" Style="display: none;
-                                        border-color: Maroon; background-color: #F7F8E0;" ScrollBars="Horizontal">
+                                           background-color: #F7F8E0;" ScrollBars="Horizontal">
                                         <div class="row"  style="width: 800px; background-color: #F7F8E0;">
                                             <div class="row" >
                                                 <div class="col-lg-4" >
@@ -301,7 +301,7 @@
                                         PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel2" runat="server" Style="display: none; border-color: Maroon;">
+                                    <asp:Panel ID="Panel2" runat="server" Style="display: none;   ">
                                         <div class="row"  style="width: 400px; background-color: #F7F8E0;">
                                             <div class="row" >
                                                 <div class="col-lg-4" >
@@ -315,7 +315,7 @@
                                                                     <asp:HiddenField ID="hdnWPIDApproved" runat="server" />
                                                                 </div>
                                                                 <div class="col-lg-4" >
-                                                                    <asp:TextBox CssClass="form-control" ID="txtRemark" runat="server" TextMode="MultiLine" Width="300px"></asp:TextBox>
+                                                                    <asp:TextBox CssClass="form-control" ID="txtRemark" runat="server" TextMode="MultiLine"  ></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                             <div class="row" >
@@ -337,7 +337,7 @@
                                         PopupControlID="Panel3" TargetControlID="Button3" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel3" runat="server" Style="display: none; border-color: Maroon;">
+                                    <asp:Panel ID="Panel3" runat="server" Style="display: none;   ">
                                         <div class="row"  style="width: 400px; background-color: #F7F8E0;">
                                             <div class="row" >
                                                 <div class="col-lg-4" >
@@ -351,7 +351,7 @@
                                                                     <asp:HiddenField ID="hdnWPIDDisApproved" runat="server" />
                                                                 </div>
                                                                 <div class="col-lg-4" >
-                                                                    <asp:TextBox CssClass="form-control" ID="txtRemarkDisApproved" runat="server" TextMode="MultiLine" Width="300px"></asp:TextBox>
+                                                                    <asp:TextBox CssClass="form-control" ID="txtRemarkDisApproved" runat="server" TextMode="MultiLine"  ></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                             <div class="row" >

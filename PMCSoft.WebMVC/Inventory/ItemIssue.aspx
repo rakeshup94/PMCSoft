@@ -34,7 +34,7 @@
                                 <div class="col-lg-4"  style="width: 150px; text-align: center;">
                                     Issue For Tower
                                 </div>
-                                <div class="col-lg-4"  style="width: 350px;">
+                                <div class="col-lg-4"    >
                                     <asp:TextBox CssClass="form-control" ID="TxtIssueFoetower" runat="server"></asp:TextBox>
                                 </div>
                             </div>

@@ -399,14 +399,14 @@
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel1" runat="server" Style="display:none; border-color: Maroon;">
-                                        <div class="row"  style="width: 300px; background-color: #EFFBFB;">
+                                    <asp:Panel ID="Panel1" runat="server" Style="display:none;   ">
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div1">
                                                         <h3 class="reallynow">
                                                             Add Particulars Income</h3>
-                                                        <div class="row"  style="width: 390px; vertical-align: top;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     Particulars
@@ -434,14 +434,14 @@
                                         PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel2" runat="server" Style="display:none; border-color: Maroon;">
-                                        <div class="row"  style="width: 300px; background-color: #EFFBFB;">
+                                    <asp:Panel ID="Panel2" runat="server" Style="display:none;   ">
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div2">
                                                         <h3 class="reallynow">
                                                             Add Particulars Expenditure</h3>
-                                                        <div class="row"  style="width: 390px; vertical-align: top;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     Particulars
@@ -469,14 +469,14 @@
                                         PopupControlID="PnlConsumable" TargetControlID="BtnCunsumable" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="PnlConsumable" runat="server" Style="display:none; border-color: Maroon;">
-                                        <div class="row"  style="width: 300px; background-color: #EFFBFB;">
+                                    <asp:Panel ID="PnlConsumable" runat="server" Style="display:none;   ">
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div6">
                                                         <h3 class="reallynow">
                                                             Add Particulars Consumable Expenses</h3>
-                                                        <div class="row"  style="width: 390px; vertical-align: top;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     Particulars
@@ -504,14 +504,14 @@
                                         PopupControlID="PnlDirectExpenses" TargetControlID="BtnDirectExpenses" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="PnlDirectExpenses" runat="server" Style="display:none; border-color: Maroon;">
-                                        <div class="row"  style="width: 300px; background-color: #EFFBFB;">
+                                    <asp:Panel ID="PnlDirectExpenses" runat="server" Style="display:none;   ">
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div3">
                                                         <h3 class="reallynow">
                                                             Add Particulars Direct Expenses</h3>
-                                                        <div class="row"  style="width: 390px; vertical-align: top;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     Particulars
@@ -539,14 +539,14 @@
                                         PopupControlID="PnlHireCharges" TargetControlID="BtnHireCharges" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="PnlHireCharges" runat="server" Style="display:none; border-color: Maroon;">
-                                     <div class="row"  style="width: 300px; background-color: #EFFBFB;">
+                                    <asp:Panel ID="PnlHireCharges" runat="server" Style="display:none;   ">
+                                     <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div4">
                                                         <h3 class="reallynow">
                                                             Add Particulars Hire Charges</h3>
-                                                        <div class="row"  style="width: 390px; vertical-align: top;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     Particulars
@@ -574,14 +574,14 @@
                                         PopupControlID="PnlIndirectExpenses" TargetControlID="BtnIndirectExpenses" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="PnlIndirectExpenses" runat="server" Style="display:none; border-color: Maroon;">
-                                        <div class="row"  style="width: 300px; background-color: #EFFBFB;">
+                                    <asp:Panel ID="PnlIndirectExpenses" runat="server" Style="display:none;   ">
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div5">
                                                         <h3 class="reallynow">
                                                             Add Particulars Indirect Expenses</h3>
-                                                        <div class="row"  style="width: 390px; vertical-align: top;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     Particulars

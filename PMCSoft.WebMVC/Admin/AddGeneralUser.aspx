@@ -244,7 +244,7 @@
                                     <div class="card-body">
                                         <div class="row">
 
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-6">
                                                 <div class="mb-3">
                                                     Department
                                                                                    
@@ -254,7 +254,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-6">
                                                 <div class="mb-3">
                                                     Designation
                                                                                  
@@ -263,7 +263,8 @@
                                                                                             onblur="valid(this)"></asp:TextBox>
                                                 </div>
                                             </div>
-
+                                        </div>
+                                        <div class="row">
 
                                             <div class="col-lg-12">
                                                 <asp:Button CssClass="btn btn-primary btn-square" ID="BtnAddnewDesignation"
@@ -306,13 +307,15 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-12">
                                                 <div class="mb-3">
                                                     <asp:TextBox CssClass="form-control" ID="txtDepartment" runat="server" onkeyup="valid(this)"
                                                         onblur="valid(this)"></asp:TextBox>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
                                                 <asp:Button CssClass="btn btn-primary btn-square" ID="BtnDeptSave" runat="server"
                                                     Text="Submit"
                                                     OnClick="BtnDeptSave_Click" />

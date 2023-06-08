@@ -36,7 +36,7 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="5" style="text-align: center;">
-                                    <asp:Panel ID="Panel1" runat="server" Width="910px" Visible="false">
+                                    <asp:Panel ID="Panel1" runat="server"    Visible="false">
                                         <div class="row"  style="width: 900px;">
                                             <div class="row" >
                                                 <div class="col-lg-4"  style="white-space: nowrap;">
@@ -69,7 +69,7 @@
                                                     ENG. In Charge:
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: left;">
-                                                    <asp:Label ID="lblEngInCharge" runat="server" Width="300px"></asp:Label>
+                                                    <asp:Label ID="lblEngInCharge" runat="server"  ></asp:Label>
                                                     <asp:HiddenField ID="hdnEngInCharge" runat="server" />
                                                 </div>
                                                 <div class="col-lg-4"  style="width: 60px;">

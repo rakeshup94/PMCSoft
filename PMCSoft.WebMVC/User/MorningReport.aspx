@@ -74,7 +74,7 @@
                                                     ENG. In Charge:
                                                 </div>
                                                 <div class="col-lg-4" >
-                                                    <asp:Label ID="lblEngInCharge" runat="server" Width="300px"></asp:Label>
+                                                    <asp:Label ID="lblEngInCharge" runat="server"  ></asp:Label>
                                                     <asp:HiddenField ID="hdnEngInCharge" runat="server" />
                                                 </div>
                                                 <div class="col-lg-4"  style="width: 60px; font-weight: bold;">

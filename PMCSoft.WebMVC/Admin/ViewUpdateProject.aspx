@@ -21,7 +21,7 @@
                         <div class="row"   >
                             <div class="row"   >
                                 <div class="col-lg-4" >
-                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" Width="910px" AutoGenerateColumns="false"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server"    AutoGenerateColumns="false"
                                         OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -36,27 +36,27 @@
                                                     <asp:Label ID="lblProjectName" runat="server" Text='<%#Bind("ProjectName") %>'></asp:Label>
                                                     <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Bind("PRJID") %>' />
                                                 </ItemTemplate>
-                                                <ItemStyle Width="300px" />
+                                                <ItemStyle   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Start Date">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblStartDate" runat="server" Text='<%#Bind("StartDate") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="80px" HorizontalAlign="Center" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="End Date">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblEndDate" runat="server" Text='<%#Bind("EndDate") %>'></asp:Label>
                                                     <asp:HiddenField ID="hdnFinalStatus" runat="server" Value='<%#Bind("FinalStatus") %>' />
                                                 </ItemTemplate>
-                                                <ItemStyle Width="80px" HorizontalAlign="Center" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField>
                                                 <ItemTemplate>
                                                     <asp:LinkButton ID="lnkUpdate" runat="server" CausesValidation="false" CommandName="DetailUpdate"
                                                         Text="Update"></asp:LinkButton>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="60px" HorizontalAlign="Center" />
+                                              
                                             </asp:TemplateField>
                                             <asp:TemplateField>
                                                 <ItemTemplate>

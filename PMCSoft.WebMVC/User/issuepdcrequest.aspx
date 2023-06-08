@@ -110,7 +110,7 @@
                                        Add Bank</h3>
                                     <div class="row"  style="width: 350px; background-color: #EFFBFB;">
                                      <div class="row" >
-                                                            <div class="col-lg-4"  style="width: 100px;">
+                                                            <div class="col-lg-4"    >
                                                                 Bank Name
                                                             </div>
                                                             <div class="col-lg-4" >
@@ -142,7 +142,7 @@
                                        Add Branch</h3>
                                     <div class="row"  style="width: 350px; background-color: #EFFBFB;">
                                      <div class="row" >
-                                                        <div class="col-lg-4"  style="width: 100px;">
+                                                        <div class="col-lg-4"    >
                                                             Bank
                                                         </div>
                                                         <div class="col-lg-4" >

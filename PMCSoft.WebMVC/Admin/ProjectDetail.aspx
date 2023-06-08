@@ -1294,7 +1294,7 @@
                                                                                     <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" Text='<%#Bind("Details") %>'
                                                                                         TextMode="MultiLine" Width="280px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                 </ItemTemplate>
-                                                                                <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                             </asp:TemplateField>
                                                                             <asp:TemplateField HeaderText="Clause">
                                                                                 <ItemTemplate>
@@ -1350,7 +1350,7 @@
                                                                                     <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" Text='<%#Bind("Details") %>'
                                                                                         TextMode="MultiLine" Width="280px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                 </ItemTemplate>
-                                                                                <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                             </asp:TemplateField>
                                                                             <asp:TemplateField HeaderText="Clause">
                                                                                 <ItemTemplate>
@@ -1406,7 +1406,7 @@
                                                                                     <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" Text='<%#Bind("Details") %>'
                                                                                         TextMode="MultiLine" Width="280px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                 </ItemTemplate>
-                                                                                <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                             </asp:TemplateField>
                                                                             <asp:TemplateField HeaderText="Clause">
                                                                                 <ItemTemplate>
@@ -1462,7 +1462,7 @@
                                                                                     <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" Text='<%#Bind("Details") %>'
                                                                                         TextMode="MultiLine" Width="280px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                 </ItemTemplate>
-                                                                                <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                             </asp:TemplateField>
                                                                             <asp:TemplateField HeaderText="Clause">
                                                                                 <ItemTemplate>
@@ -1519,7 +1519,7 @@
                                                                                     <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" Text='<%#Bind("Details") %>'
                                                                                         TextMode="MultiLine" Width="280px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                 </ItemTemplate>
-                                                                                <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                             </asp:TemplateField>
                                                                             <asp:TemplateField HeaderText="Clause">
                                                                                 <ItemTemplate>
@@ -1575,7 +1575,7 @@
                                                                                     <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" Text='<%#Bind("Details") %>'
                                                                                         TextMode="MultiLine" Width="280px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                 </ItemTemplate>
-                                                                                <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                             </asp:TemplateField>
                                                                             <asp:TemplateField HeaderText="Clause">
                                                                                 <ItemTemplate>
@@ -1631,7 +1631,7 @@
                                                                                     <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" Text='<%#Bind("Details") %>'
                                                                                         TextMode="MultiLine" Width="280px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                 </ItemTemplate>
-                                                                                <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                             </asp:TemplateField>
                                                                             <asp:TemplateField HeaderText="Clause">
                                                                                 <ItemTemplate>
@@ -1687,7 +1687,7 @@
                                                                                     <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" Text='<%#Bind("Details") %>'
                                                                                         TextMode="MultiLine" Width="280px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                 </ItemTemplate>
-                                                                                <ItemStyle Width="300px" HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                             </asp:TemplateField>
                                                                             <asp:TemplateField HeaderText="Clause">
                                                                                 <ItemTemplate>

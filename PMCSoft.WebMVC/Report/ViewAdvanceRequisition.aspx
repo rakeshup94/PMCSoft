@@ -24,7 +24,7 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="2">
-                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" Width="910px" AutoGenerateColumns="false"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server"    AutoGenerateColumns="false"
                                         EmptyDataText="No Records Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -37,7 +37,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblARId" runat="server" Text='<%#Bind("ARId") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="60px" HorizontalAlign="Center" />
+                                              
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Vendor">
                                                 <ItemTemplate>
@@ -79,7 +79,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblCreatedDate" runat="server" Text='<%#Bind("CreatedDate") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="100px" HorizontalAlign="Center" />
+                                                  
                                             </asp:TemplateField>
                                         </Columns>
                                         <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
