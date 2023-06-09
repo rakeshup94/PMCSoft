@@ -22,7 +22,7 @@
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                     <asp:HiddenField ID="HiddenField1" runat="server" Value='<%#Bind("ItemID") %>' />
                                                 </ItemTemplate>
-                                                <ItemStyle Width="50px" HorizontalAlign="Center" />
+                                             
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Item Of Work">
                                                 <ItemTemplate>

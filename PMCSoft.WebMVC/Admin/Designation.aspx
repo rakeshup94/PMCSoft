@@ -23,7 +23,7 @@
                                                     <asp:HiddenField ID="Hiddenfield1" runat="server" Value='<%#Bind("DeptID") %>' />
                                                     <asp:HiddenField ID="Hiddenfield2" runat="server" Value='<%#Bind("DesgID") %>' />
                                                 </ItemTemplate>
-                                                <ItemStyle Width="50px" HorizontalAlign="Center" />
+                                             
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Department">
                                                 <ItemTemplate>

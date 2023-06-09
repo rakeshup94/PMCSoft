@@ -27,7 +27,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblTransid" runat="server" Text='<%#Bind("TransId") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="50px" HorizontalAlign="Center" />
+                                             
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Type">
                                                 <ItemTemplate>

@@ -115,7 +115,7 @@
                                         <asp:TemplateField>
                                             <ItemTemplate>
                                                 <asp:LinkButton CssClass="btn btn-default btn-xs" ID="lnkEmpEdit" runat="server"
-                                                    Text="Edit" CommandName="EmpEdit"><i class='fa fa-edit'></i> </asp:LinkButton>
+                                                    Text="Edit" CommandName="EmpEdit"><i class='fa fa-edit mediumtxt'></i> </asp:LinkButton>
 
                                             </ItemTemplate>
                                         </asp:TemplateField>
@@ -123,7 +123,7 @@
                                             <ItemTemplate>
                                                 <asp:LinkButton CssClass="btn btn-danger btn-xs" ID="lnkEmpDelete" runat="server"
                                                     Text="Delete" CommandName="EmpDelete"
-                                                    OnClientClick="return Confirm()"><i class='fa fa-trash-o'></i>
+                                                    OnClientClick="return Confirm()"><i class='fa fa-trash-o mediumtxt'></i>
                                                 </asp:LinkButton>
                                             </ItemTemplate>
                                         </asp:TemplateField>
