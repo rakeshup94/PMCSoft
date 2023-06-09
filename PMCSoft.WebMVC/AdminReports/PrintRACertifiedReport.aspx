@@ -13,7 +13,7 @@
    
                 <div class="row"  style="width: 1400px;" border="0">
                     <div class="row" >
-                        <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="100px" />
+                          <asp:LinkButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="100px" />
                    
                     </div>
                   </div>

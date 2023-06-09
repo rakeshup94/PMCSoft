@@ -52,25 +52,25 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSK" runat="server" Text='<%#Bind("SK") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="SEMI">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSEMI" runat="server" Text='<%#Bind("SEMI") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="UNSK">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblUNSK" runat="server" Text='<%#Bind("UNSK") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="OT">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblOT" runat="server" Text='<%#Bind("OT") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                                 
                                             </asp:TemplateField>
                                         </Columns>
                                         <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
@@ -132,7 +132,7 @@
                             <div class="row"  style="width: 295px;">
                                 <div class="row" >
                                     <div class="col-lg-4"  style="text-align: right;">
-                                        <asp:ImageButton ID="ImgAdd" runat="server" ImageUrl="~/img/icons/add.png" Width="12px"
+                                          <asp:LinkButton ID="ImgAdd" runat="server" ImageUrl="~/img/icons/add.png" Width="12px"
                                             OnClick="ImgAdd_Click" />
                                     </div>
                                 </div>

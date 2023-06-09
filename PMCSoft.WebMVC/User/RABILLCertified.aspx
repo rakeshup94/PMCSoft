@@ -33,7 +33,7 @@
                                                 <%# Container.DataItemIndex + 1 %>
                                                 <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                             
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Project">
                                             <ItemTemplate>
@@ -250,7 +250,7 @@
                                                     <%# Container.DataItemIndex + 1 %>
                                                     <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Project">
                                                 <ItemTemplate>

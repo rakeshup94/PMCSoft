@@ -16,7 +16,7 @@
                            Work Programme</h3>--%>
                 <div class="row"  style="width: 930px;" border="0">
                     <div class="row" >
-                    <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="50px" />
+                      <asp:LinkButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="50px" />
                         <div class="col-lg-4"  style="text-align: center; font-size: 18px; font-family: Cambria;" >
            
                             Work Programme

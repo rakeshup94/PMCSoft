@@ -88,7 +88,7 @@
                                                                                             </asp:TextBox>
                                                                                         </ItemTemplate>
                                                                                         <FooterStyle HorizontalAlign="Right" />
-                                                                                        <ItemStyle Width="250px" HorizontalAlign="Center" />
+                                                                                      
                                                                                     </asp:TemplateField>
                                                                                     <asp:CommandField ShowDeleteButton="True" />
                                                                                 </Columns>

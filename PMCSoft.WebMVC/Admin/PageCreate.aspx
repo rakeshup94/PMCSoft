@@ -21,21 +21,21 @@
                                                     
                                                     <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Page Name">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblPageName" runat="server" Text='<%#Bind("UnitName") %>'></asp:Label>
                                                 </ItemTemplate>
                                               
-                                                <ItemStyle Width="250px" />
+                                        
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Status">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblStatus" runat="server" Text='<%#Bind("UnitCode") %>'></asp:Label>
                                                 </ItemTemplate>
                                                
-                                                <ItemStyle Width="250px" HorizontalAlign="Center" />
+                                              
                                             </asp:TemplateField>
                                             <asp:CommandField ShowEditButton="true" />
                                         </Columns>

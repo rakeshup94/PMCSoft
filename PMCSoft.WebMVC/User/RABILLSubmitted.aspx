@@ -30,19 +30,19 @@
                                                 <%# Container.DataItemIndex + 1 %>
                                                 <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                             
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Project">
                                             <ItemTemplate>
                                                 <asp:LinkButton ID="lnkprojectname" runat="server" Text='<%#Bind("ProjectName") %>'></asp:LinkButton>
                                             </ItemTemplate>
-                                            <ItemStyle Width="250px" />
+                                    
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Bill No">
                                             <ItemTemplate>
                                                 <asp:LinkButton ID="Lnkrabillno" runat="server" Text='<%#Bind("RaBillNo") %>'></asp:LinkButton>
                                             </ItemTemplate>
-                                            <ItemStyle Width="250px" />
+                                    
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Bill Period">
                                             <ItemTemplate>
@@ -54,25 +54,25 @@
                                             <ItemTemplate>
                                                 <asp:LinkButton ID="LnkRabilldate" runat="server" Text='<%#Bind("Billsubmitteddate") %>'></asp:LinkButton>
                                             </ItemTemplate>
-                                            <ItemStyle Width="250px" />
+                                    
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Bill Amount">
                                             <ItemTemplate>
                                                 <asp:LinkButton ID="LnkRabillamount" runat="server" Text='<%#Bind("NetReceivable") %>'></asp:LinkButton>
                                             </ItemTemplate>
-                                            <ItemStyle Width="250px" />
+                                    
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Bill Certification">
                                             <ItemTemplate>
                                                 <asp:LinkButton ID="LnkRabillupdate" runat="server" CommandName="RABILLsub" Text='<%#Bind("SubmittedStatus") %>'></asp:LinkButton>
                                             </ItemTemplate>
-                                            <ItemStyle Width="250px" />
+                                    
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="View">
                                             <ItemTemplate>
                                                 <asp:LinkButton ID="LnkRabillview" runat="server" CommandName="RABILLView" Text="View"></asp:LinkButton>
                                             </ItemTemplate>
-                                            <ItemStyle Width="250px" />
+                                    
                                         </asp:TemplateField>
                                     </Columns>
                                 </asp:GridView>

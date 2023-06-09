@@ -63,7 +63,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblRemarks" runat="server" Text='<%#Bind("ApprovalRemarks") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="250px" />
+                                        
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Suggest Amount">
                                                 <ItemTemplate>

@@ -62,7 +62,7 @@
                                                 <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                             
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Group Code">
                                             <ItemTemplate>
@@ -73,7 +73,7 @@
                                                     onkeyup="valid(this)"
                                                     onblur="valid(this)"></asp:TextBox>
                                             </EditItemTemplate>
-                                            <ItemStyle Width="250px" />
+                                    
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Group Name">
                                             <ItemTemplate>

@@ -155,7 +155,7 @@
                                                                             <ItemTemplate>
                                                                                 <asp:Label ID="lblPageName" runat="server" Text='<%#Bind("PageName") %>'></asp:Label>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="250px" />
+                                                                    
                                                                         </asp:TemplateField>
                                                                     </Columns>
                                                                     <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />

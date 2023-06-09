@@ -436,7 +436,7 @@ namespace PMCSoft.Web.Admin
                 return false;
             }
         }
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        protected void ImageButton1_Click(object sender, EventArgs e)
         {
             GVProject.Visible = true;
         }

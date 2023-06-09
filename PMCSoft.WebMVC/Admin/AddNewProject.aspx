@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-2">
-                                <asp:ImageButton ID="ImgRefresh" runat="server" ImageUrl="~/img/icons/refresh.png"
+                                  <asp:LinkButton ID="ImgRefresh" runat="server" ImageUrl="~/img/icons/refresh.png"
                                     OnClick="ImgRefresh_Click" ToolTip="Refresh Project Id" />
                             </div>
                         </div>

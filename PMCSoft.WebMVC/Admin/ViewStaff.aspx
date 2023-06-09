@@ -206,7 +206,7 @@ else
                                                                     Project Name
                                                                 </div>
                                                                 <div class="col-lg-4" >
-                                                                    <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/Images/DropDownList.png" />
+                                                                      <asp:LinkButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ><i class="fa fa-check-square"></i></asp:LinkButton>
                                                                     <asp:Panel ID="pnlCustomers" runat="server"    Style="display: none;">
                                                                         <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVProject" runat="server" AutoGenerateColumns="false" GridLines="None"
                                                                             ShowHeader="false">
