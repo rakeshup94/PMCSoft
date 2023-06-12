@@ -14,8 +14,8 @@
     <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
         <div class="card"    >
             <div class="card-body">
-                <h3 class="reallynow">
-                    PDC</h3>
+                <div class="card-header">
+                    PDC</div>
                 <div class="row"  style="width: 930px;">
                     <div class="row" >
                         <div class="col-lg-4" >
@@ -106,8 +106,8 @@
                             </cc1:ModalPopupExtender>
                             <asp:Panel ID="Panel2" runat="server" Style="display: none;">
                                 <div id="Div1">
-                                    <h3 class="reallynow">
-                                       Add Bank</h3>
+                                    <div class="card-header">
+                                       Add Bank</div>
                                     <div class="row"  style="width: 350px; background-color: #EFFBFB;">
                                      <div class="row" >
                                                             <div class="col-lg-4"    >
@@ -138,8 +138,8 @@
                             </cc1:ModalPopupExtender>
                             <asp:Panel ID="PanelBranch" runat="server" Style="display: none;">
                                 <div id="Div2">
-                                    <h3 class="reallynow">
-                                       Add Branch</h3>
+                                    <div class="card-header">
+                                       Add Branch</div>
                                     <div class="row"  style="width: 350px; background-color: #EFFBFB;">
                                      <div class="row" >
                                                         <div class="col-lg-4"    >

@@ -9,8 +9,8 @@
             <div id="wrapper"">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            MONTHLY VWD (FORMAT No. C)</h3>
+                        <div class="card-header">
+                            MONTHLY VWD (FORMAT No. C)</div>
                         <div class="row"  style="width: 930px;">
                             <div class="row" >
                            

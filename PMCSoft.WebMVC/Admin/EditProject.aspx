@@ -16,8 +16,8 @@
             <div id="wrapper"    >
                 <div class="card"     >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Project Detail</h3>
+                        <div class="card-header">
+                            Project Detail</div>
                         <div class="row"   >
                             <div class="row" >
                                 <div class="col-lg-4"   >

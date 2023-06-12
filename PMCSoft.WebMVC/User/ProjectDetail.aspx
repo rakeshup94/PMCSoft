@@ -60,8 +60,8 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"   >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Project Detail</h3>
+                        <div class="card-header">
+                            Project Detail</div>
                         <div class="row"   >
                             <div class="row"   >
                                 <div class="col-lg-4"    >

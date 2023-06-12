@@ -9,8 +9,8 @@
             <div id="wrapper" style="margin-left: -80px;">
                 <div class="card"  style="width: 1090px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Stock Opening</h3>
+                        <div class="card-header">
+                            Stock Opening</div>
                         <div class="row"  style="width: 1060px;">
                             <div class="row" >
                               
@@ -115,7 +115,7 @@
                                                     <ItemStyle VerticalAlign="Top"   />
                                                 </asp:TemplateField>
                                             </Columns>
-                                            <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                           
                                             <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                         </asp:GridView>
                                     </div>

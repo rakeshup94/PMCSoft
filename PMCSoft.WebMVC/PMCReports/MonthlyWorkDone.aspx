@@ -9,8 +9,8 @@
             <div id="wrapper"    >
                 <div class="card"     >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            MONTHLY WORK DONE</h3>
+                        <div class="card-header">
+                            MONTHLY WORK DONE</div>
                         <cc1:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="1" Width="1250px">
                             <cc1:TabPanel ID="Tab1" runat="server" TabIndex="0">
                                 <HeaderTemplate>
@@ -241,8 +241,8 @@
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div2">
-                                                        <h3 class="reallynow">
-                                                            Add Particulars Of Item</h3>
+                                                        <div class="card-header">
+                                                            Add Particulars Of Item</div>
                                                         <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >

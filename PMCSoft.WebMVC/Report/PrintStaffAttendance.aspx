@@ -19,13 +19,13 @@
                 <br />
                 <br />
                 <br />
-      <div class="row"  style="width: 930px">
+      <div class="row"   >
                             <div class="row" >
                                  <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria; color: Black">
                             Project Name: &nbsp; &nbsp; &nbsp; &nbsp;<asp:Label ID="lblProjectName" runat="server"></asp:Label>
                             <asp:HiddenField ID="hdnPRJID" runat="server" />
                         </div>
-                        <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria;">
+                        <div class="col-lg-4"   >
                         </div>
                         <div class="col-lg-4" >
                             Date
@@ -92,7 +92,7 @@
                                                 <ItemStyle HorizontalAlign="Center" />
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                     </asp:GridView>
                                 </div>
                             </div>

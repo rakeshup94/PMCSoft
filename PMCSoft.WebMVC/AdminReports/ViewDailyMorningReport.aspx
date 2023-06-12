@@ -9,9 +9,9 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Today's Labour Strength</h3>
-                        <div class="row"  style="width: 930px">
+                        <div class="card-header">
+                            Today's Labour Strength</div>
+                        <div class="row"   >
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: Right;">
                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnPrint" runat="server" OnClick="btnPrint_Click" Text="Print Preview" />

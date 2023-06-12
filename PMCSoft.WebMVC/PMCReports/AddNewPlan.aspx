@@ -9,8 +9,8 @@
             <div id="wrapper" style="margin-left:-100px">
                 <div class="card"  style="width: 1200px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Financial Comparision Of Plan</h3>
+                        <div class="card-header">
+                            Financial Comparision Of Plan</div>
                          <div class="row"  style="width: 1200px">
                             <div class="row" >
                                 <div class="col-lg-4" >
@@ -404,8 +404,8 @@
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div1">
-                                                        <h3 class="reallynow">
-                                                            Add Particulars Income</h3>
+                                                        <div class="card-header">
+                                                            Add Particulars Income</div>
                                                         <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
@@ -439,8 +439,8 @@
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div2">
-                                                        <h3 class="reallynow">
-                                                            Add Particulars Expenditure</h3>
+                                                        <div class="card-header">
+                                                            Add Particulars Expenditure</div>
                                                         <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
@@ -474,8 +474,8 @@
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div6">
-                                                        <h3 class="reallynow">
-                                                            Add Particulars Consumable Expenses</h3>
+                                                        <div class="card-header">
+                                                            Add Particulars Consumable Expenses</div>
                                                         <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
@@ -509,8 +509,8 @@
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div3">
-                                                        <h3 class="reallynow">
-                                                            Add Particulars Direct Expenses</h3>
+                                                        <div class="card-header">
+                                                            Add Particulars Direct Expenses</div>
                                                         <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
@@ -544,8 +544,8 @@
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div4">
-                                                        <h3 class="reallynow">
-                                                            Add Particulars Hire Charges</h3>
+                                                        <div class="card-header">
+                                                            Add Particulars Hire Charges</div>
                                                         <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
@@ -579,8 +579,8 @@
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div5">
-                                                        <h3 class="reallynow">
-                                                            Add Particulars Indirect Expenses</h3>
+                                                        <div class="card-header">
+                                                            Add Particulars Indirect Expenses</div>
                                                         <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >

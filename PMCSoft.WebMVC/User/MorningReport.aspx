@@ -16,8 +16,8 @@
             <div id="wrapper" style="margin-left: -40px;">
                 <div class="card"  style="width: 1000px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            MORNING REPORT</h3>
+                        <div class="card-header">
+                            MORNING REPORT</div>
                         <div class="row"  style="width: 990px;">
                      
                             <div class="row" >

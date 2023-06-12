@@ -9,8 +9,8 @@
             <div id="wrapper"    >
                 <div class="card"     >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            MONTHLY PLAN</h3>
+                        <div class="card-header">
+                            MONTHLY PLAN</div>
                              <div class="row"  style="width: 1240px;">
                                        
                                         <div class="row" >

@@ -9,8 +9,8 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Advance Requisition</h3>
+                        <div class="card-header">
+                            Advance Requisition</div>
                         <div class="row"   >
                             <div class="row" >
                                 <div class="col-lg-4"  style="width: 100px; text-align: center; vertical-align: top;">
@@ -102,7 +102,7 @@
                                                 <ItemStyle VerticalAlign="Top" />
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                         <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                     </asp:GridView>
                                      <div style="display: none">
@@ -114,8 +114,8 @@
                                                             </cc1:ModalPopupExtender>
                                                             <asp:Panel ID="Panel2" runat="server" Style="display: none;">
                                                              <div id="Div1">
-                                                                                <h3 class="reallynow">
-                                                                                   Add New Type Of Payment</h3>
+                                                                                <div class="card-header">
+                                                                                   Add New Type Of Payment</div>
                                                                 <div class="row"  style="width: 350px; background-color: #EFFBFB;">
                                                                      <div class="row" >
                                                 <div class="col-lg-4" >
@@ -149,8 +149,8 @@
                                                             </cc1:ModalPopupExtender>
                                                             <asp:Panel ID="Panel1" runat="server" Style="display: none;">
                                                                 <div id="Div2">
-                                        <h3 class="reallynow">
-                                            Add Security</h3>
+                                        <div class="card-header">
+                                            Add Security</div>
                                         <div class="row"  style="width: 350px; background-color: #EFFBFB;">
                                             <div class="row" >
                                                 <div class="col-lg-4" >

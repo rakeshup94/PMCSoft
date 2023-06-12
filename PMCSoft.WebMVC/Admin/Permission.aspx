@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Inherits="PMCSoft.Web.Admin.Permission" Codebehind="Permission.aspx.cs" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Inherits="PMCSoft.Web.Admin.Permission"
+    CodeBehind="Permission.aspx.cs" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
@@ -80,101 +81,105 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+        <div class="page-header pull-left">
+            <div class="page-title">Permission</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-        <div class="row" iggers>
+        <Triggers>
             <asp:PostBackTrigger ControlID="btnSubmit" />
         </Triggers>
         <ContentTemplate>
             <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                 <ContentTemplate>
-                    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
-                        <div class="card"    >
+
+                    <!--END TITLE & BREADCRUMB PAGE-->
+                    <!--BEGIN CONTENT-->
+                    <div class="page-content">
+                        <div class="card">
                             <div class="card-body">
-                                <h3 class="reallynow">
-                                    Permission
-                                </h3>
-                                <div class="row"   >
-                                    <div class="row" >
-                                        <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria;">
+
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
                                             Project
-                                        </div>
-                                        <div class="col-lg-4" >
-                                            <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"  
+
+                                            <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"
                                                 OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                             </asp:DropDownList>
                                         </div>
-                                        <div class="col-lg-4" >
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
                                             User
-                                        </div>
-                                        <div class="col-lg-4" >
-                                            <asp:DropDownList CssClass="form-select" ID="ddluser" runat="server" AutoPostBack="true"   OnSelectedIndexChanged="ddluser_SelectedIndexChanged">
+                                   
+                                            <asp:DropDownList CssClass="form-select" ID="ddluser" runat="server" AutoPostBack="true"
+                                                OnSelectedIndexChanged="ddluser_SelectedIndexChanged">
                                             </asp:DropDownList>
                                         </div>
                                     </div>
-                                  </div>
-                                <div class="row" >
-                                    <div class="row"   >
-                                        <div class="col-lg-4"  style="vertical-align: top; width: 1000px;"   >
-                                            <asp:Panel ID="Panel2" runat="server" Height="900px" ScrollBars="Horizontal">
-                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView4" runat="server" AutoGenerateColumns="false" Width="900px"
-                                                    OnRowDataBound="GridView4_RowDataBound">
-                                                    <Columns>
-                                                        <asp:TemplateField>
-                                                            <ItemTemplate>
-                                                                <asp:CheckBox ID="Chckheader" runat="server" AutoPostBack="true" OnCheckedChanged="Chckheader_CheckedChanged" />
-                                                            </ItemTemplate>
-                                                            <ItemStyle Width="20px" HorizontalAlign="Left" VerticalAlign="Top" />
-                                                        </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="Main Menu">
-                                                            <ItemTemplate>
-                                                                <asp:LinkButton ID="lnkMenuHeadername" runat="server" Text='<%#Bind("MenuHeaderName") %>'
-                                                                    CommandName="Project" CausesValidation="false" ForeColor="Blue" Font-Underline="true"
-                                                                    Font-Size="15px">
-                                                                </asp:LinkButton>
-                                                                <asp:HiddenField ID="hdnHeaderTransId" runat="server" Value='<%#Bind("TransId") %>' />
-                                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVPermission" runat="server" AutoGenerateColumns="false" DataKeyNames="TransID"
-                                                                    GridLines="Both" AllowPaging="false">
-                                                                    <Columns>
-                                                                        <asp:TemplateField HeaderText="S.No">
-                                                                            <ItemTemplate>
-                                                                                <%# Container.DataItemIndex + 1 %>
-                                                                                <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
-                                                                            </ItemTemplate>
-                                                                            <ItemStyle HorizontalAlign="Center" Width="20px" />
-                                                                        </asp:TemplateField>
-                                                                        <asp:TemplateField>
-                                                                            <HeaderTemplate>
-                                                                                <asp:CheckBox ID="chkSelectAll" runat="server" TextAlign="Left" onclick="checkAllRow(this);" />
-                                                                            </HeaderTemplate>
-                                                                            <ItemTemplate>
-                                                                                <asp:CheckBox ID="chkSelectRow" runat="server" TextAlign="Left" onclick="CheckRow(this);" />
-                                                                            </ItemTemplate>
-                                                                            <ItemStyle HorizontalAlign="Center" Width="20px" />
-                                                                        </asp:TemplateField>
-                                                                        <asp:TemplateField HeaderText="Sub Menu">
-                                                                            <ItemTemplate>
-                                                                                <asp:Label ID="lblPageName" runat="server" Text='<%#Bind("PageName") %>'></asp:Label>
-                                                                            </ItemTemplate>
-                                                                    
-                                                                        </asp:TemplateField>
-                                                                    </Columns>
-                                                                    <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
-                                                                </asp:GridView>
-                                                            </ItemTemplate>
-                                                        </asp:TemplateField>
-                                                    </Columns>
-                                                    <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" HorizontalAlign="Left" />
-                                                </asp:GridView>
-                                            </asp:Panel>
-                                        </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"
+                                            ID="GridView4" runat="server" AutoGenerateColumns="false"
+                                            OnRowDataBound="GridView4_RowDataBound">
+                                            <Columns>
+                                                <asp:TemplateField>
+                                                    <ItemTemplate>
+                                                        <strong>
+                                                            <asp:CheckBox ID="Chckheader" runat="server" AutoPostBack="true" OnCheckedChanged="Chckheader_CheckedChanged" />
+
+                                                            <asp:LinkButton ID="lnkMenuHeadername" runat="server" Text='<%#Bind("MenuHeaderName") %>'
+                                                                CommandName="Project" CausesValidation="false">
+                                                            </asp:LinkButton></strong>
+                                                        <asp:HiddenField ID="hdnHeaderTransId" runat="server" Value='<%#Bind("TransId") %>' />
+                                                        <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"
+                                                            ID="GVPermission" runat="server" AutoGenerateColumns="false" DataKeyNames="TransID"
+                                                            GridLines="Both" AllowPaging="false">
+                                                            <Columns>
+                                                                <asp:TemplateField>
+                                                                    <HeaderTemplate>
+                                                                        <%#Eval("MenuHeaderName") %>
+                                                                        <asp:CheckBox ID="chkSelectAll" runat="server" onclick="checkAllRow(this);" />
+                                                                    </HeaderTemplate>
+                                                                    <ItemTemplate>
+
+                                                                        <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
+                                                                        <asp:CheckBox ID="chkSelectRow" runat="server" onclick="CheckRow(this);" />
+
+                                                                        <asp:Label ID="lblPageName" runat="server" Text='<%#Bind("PageName") %>'></asp:Label>
+                                                                    </ItemTemplate>
+                                                                </asp:TemplateField>
+
+
+                                                            </Columns>
+
+                                                        </asp:GridView>
+
+
+
+                                                    </ItemTemplate>
+
+                                                </asp:TemplateField>
+
+                                            </Columns>
+
+                                        </asp:GridView>
                                     </div>
-                                    <div class="row" >
-                                        <div class="col-lg-4"    >
-                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
-                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit"
+                                            OnClick="btnSubmit_Click" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel"
+                                            OnClick="btnCancel_Click" />
                                     </div>
-                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>

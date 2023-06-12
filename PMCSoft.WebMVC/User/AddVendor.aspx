@@ -9,8 +9,8 @@
             <div id="wrapper" style="margin-left: -30px;">
                 <div class="card"  style="width: 1000px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Party / Vendor Detail</h3>
+                        <div class="card-header">
+                            Party / Vendor Detail</div>
                         <div class="row"  style="width: 990px">
                             <div class="row" >
                                 <div class="col-lg-4"  style="width: 650px; vertical-align: top;">
@@ -55,7 +55,7 @@
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                     </asp:GridView>
                                     <div style="display: none">
                                         <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
@@ -69,8 +69,8 @@
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div class="card-body">
-                                                        <h3 class="reallynow">
-                                                            Party / Vendor Detail</h3>
+                                                        <div class="card-header">
+                                                            Party / Vendor Detail</div>
                                                         <div class="row"  style="width: 330px;">
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
@@ -193,8 +193,8 @@
                                 </div>
                                 <div class="col-lg-4"  style="width: 330px;">
                                     <div class="card-body">
-                                        <h3 class="reallynow">
-                                            Add Party / Vendor</h3>
+                                        <div class="card-header">
+                                            Add Party / Vendor</div>
                                         <div class="row"  style="width: 325px; vertical-align: top;">
                                             <div class="row" >
                                                 <div class="col-lg-4" >
@@ -314,8 +314,8 @@
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     <div id="Div1">
-                                                                        <h3 class="reallynow">
-                                                                            Party / Vendor Type</h3>
+                                                                        <div class="card-header">
+                                                                            Party / Vendor Type</div>
                                                                         <div class="row"  style="width: 330px;">
                                                                             <div class="row" >
                                                                                 <div class="col-lg-4"    >

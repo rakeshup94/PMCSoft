@@ -9,8 +9,8 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Item Detail</h3>
+                        <div class="card-header">
+                            Item Detail</div>
                         <div class="row"   >
                             <div class="row"   >
                                 <div class="col-lg-4" >
@@ -18,11 +18,11 @@
                                     <asp:DropDownList CssClass="form-select" ID="ddlitemGropgrid" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlitemGropgrid_SelectedIndexChanged"
                                          >
                                     </asp:DropDownList>
-                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="590px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="false"  
                                         EmptyDataText="No Record Found" OnRowCommand="GridView1_RowCommand">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
-                                                <ItemStyle Width="30px" />
+                                                
                                                 <ItemTemplate>
                                                     <%# Container.DataItemIndex + 1 %>.&nbsp;
                                                     <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
@@ -66,13 +66,13 @@
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                     </asp:GridView>
                                 </div>
                                 <div class="col-lg-4"    >
                                     <div class="card-body">
-                                        <h3 class="reallynow">
-                                            Add Item</h3>
+                                        <div class="card-header">
+                                            Add Item</div>
                                         <div class="row"    >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
@@ -96,8 +96,8 @@
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     <div id="Div1">
-                                                                        <h3 class="reallynow">
-                                                                            Add Item Group</h3>
+                                                                        <div class="card-header">
+                                                                            Add Item Group</div>
                                                                         <div class="row"    >
                                                                             <div class="row" >
                                                                                 <div class="col-lg-4" >
@@ -156,8 +156,8 @@
                                                     </cc1:ModalPopupExtender>
                                                     <asp:Panel ID="Panel3" runat="server" Style="display: none;   ">
                                                         <div class="card-body">
-                                                            <h3 class="reallynow">
-                                                                Add Unit</h3>
+                                                            <div class="card-header">
+                                                                Add Unit</div>
                                                             <div class="row"   >
                                                                 <div class="row" >
                                                                     <div class="col-lg-4" >
@@ -235,8 +235,8 @@
                     <div class="row" >
                         <div class="col-lg-4" >
                             <div class="card-body">
-                                <h3 class="reallynow">
-                                    Edit Item</h3>
+                                <div class="card-header">
+                                    Edit Item</div>
                                 <div class="row"    >
                                     <div class="row" >
                                         <div class="col-lg-4" >

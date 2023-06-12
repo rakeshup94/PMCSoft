@@ -11,17 +11,17 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Inventory Opening Date</h3>
+                        <div class="card-header">
+                            Inventory Opening Date</div>
                             
                         <div class="row"   >
                             <div class="row" >
-                                <div class="col-lg-4"  style="vertical-align: top; width: 520px;">
-                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GvStockOpeningDate" runat="server" AutoGenerateColumns="false" Width="510px"
+                                <div class="col-lg-4"   >
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GvStockOpeningDate" runat="server" AutoGenerateColumns="false"  
                                         EmptyDataText="No Record Found">
                                         <Columns>
                                          <asp:TemplateField HeaderText="S.No">
-                                                <ItemStyle Width="30px" />
+                                                
                                                 <ItemTemplate>
                                                     <%# Container.DataItemIndex + 1 %>.&nbsp;
                                                 </ItemTemplate>
@@ -40,10 +40,10 @@
                                         </Columns>
                                     </asp:GridView>
                                 </div>
-                                <div class="col-lg-4"  style="vertical-align: top; width: 400px;">
+                                <div class="col-lg-4"   >
                                     <div class="card-body">
-                                        <h3 class="reallynow">
-                                            Add Opening Date</h3>
+                                        <div class="card-header">
+                                            Add Opening Date</div>
                                         <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4"  style="width: 150px; text-align: center;">

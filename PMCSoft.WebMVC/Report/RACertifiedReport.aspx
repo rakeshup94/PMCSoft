@@ -9,8 +9,8 @@
             <div id="wrapper" style="margin-left: -100px;">
                 <div class="card"  style="width: 1200px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            RA Chart</h3>
+                        <div class="card-header">
+                            RA Chart</div>
                         <div class="row"  style="width: 1090px;">
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria; width: 150px;">

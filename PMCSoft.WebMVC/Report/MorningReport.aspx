@@ -9,9 +9,9 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Morning Report</h3>
-                        <div class="row"  style="width: 930px">
+                        <div class="card-header">
+                            Morning Report</div>
+                        <div class="row"   >
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center;">
                                     Project Name

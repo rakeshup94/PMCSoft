@@ -22,8 +22,8 @@
                             </HeaderTemplate>
                             <ContentTemplate>
                                 <div class="card-body">
-                                    <h3 class="reallynow">
-                                        Bank Detail</h3>
+                                    <div class="card-header">
+                                        Bank Detail</div>
                                     <div class="row"  style="width: 910px;">
                                         <div class="row" >
                                             <div class="col-lg-4"   >
@@ -57,8 +57,8 @@
                                             </div>
                                             <div class="col-lg-4"   >
                                                 <div class="card-body">
-                                                    <h3 class="reallynow">
-                                                        Add Bank</h3>
+                                                    <div class="card-header">
+                                                        Add Bank</div>
                                                     <div class="row"  style="width: 380;">
                                                         <div class="row" >
                                                             <div class="col-lg-4"    >
@@ -92,8 +92,8 @@
                                     <div class="row" >
                                         <div class="col-lg-4" >
                                             <div class="card-body">
-                                                <h3 class="reallynow">
-                                                    Add Branch</h3>
+                                                <div class="card-header">
+                                                    Add Branch</div>
                                                 <div class="row"  style="width: 330px;">
                                                     <div class="row" >
                                                         <div class="col-lg-4"    >
@@ -177,8 +177,8 @@
                                     <div class="row" >
                                         <div class="col-lg-4"   >
                                             <div class="card-body">
-                                                <h3 class="reallynow">
-                                                    Branch Detail</h3>
+                                                <div class="card-header">
+                                                    Branch Detail</div>
                                                 <div class="row"  style="width: 900px;">
                                                     <div class="row" >
                                                         <div class="col-lg-4"   >
@@ -236,7 +236,7 @@
                                                                         <HeaderStyle Width="30px" />
                                                                     </asp:CommandField>
                                                                 </Columns>
-                                                                <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                                               
                                                             </asp:GridView>
                                                         </div>
                                                     </div>

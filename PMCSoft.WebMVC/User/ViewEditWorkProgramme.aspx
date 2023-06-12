@@ -16,8 +16,8 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            VIEW / EDIT WORK PROGRAMME</h3>
+                        <div class="card-header">
+                            VIEW / EDIT WORK PROGRAMME</div>
                         <div class="row"  style="width: 920px;">
                          
                             <div class="row" >
@@ -109,8 +109,8 @@
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div class="card-body">
-                                                        <h3 class="reallynow">
-                                                            Work Programme Detail</h3>
+                                                        <div class="card-header">
+                                                            Work Programme Detail</div>
                                                         <div class="row"  style="width: 790px;">
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  style="white-space: nowrap;">

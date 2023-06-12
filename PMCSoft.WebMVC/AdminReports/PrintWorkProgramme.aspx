@@ -22,14 +22,14 @@
                 <br />
                 <br />
                 
-                <div class="row"  style="width: 930px">
+                <div class="row"   >
                     <div class="row" >
                         <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria; color: Black">
                             Project Name:
                               &nbsp; &nbsp; &nbsp;  &nbsp;<asp:Label ID="lblProjectName" runat="server"></asp:Label>
                             <asp:HiddenField ID="hdnPRJID" runat="server" />
                         </div>
-                        <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria;">
+                        <div class="col-lg-4"   >
                         </div>
                      
                         <div class="col-lg-4" >
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="row" >
-                        <div class="col-lg-4"   style="font-size: 15px; font-family: Cambria;">
+                        <div class="col-lg-4"    >
                             Created By:
                               &nbsp; &nbsp; &nbsp;  &nbsp;<asp:Label ID="lblCreatedBy" runat="server"></asp:Label>
                         </div>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="row" >
-                        <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria;">
+                        <div class="col-lg-4"   >
                             Eng. In Charge:
                                 &nbsp; &nbsp; &nbsp;  &nbsp; <asp:Label ID="lblEngInCharge" runat="server"  ></asp:Label>
                                 &nbsp; &nbsp; &nbsp;  &nbsp;<asp:HiddenField ID="hdnEngInCharge" runat="server" />
@@ -78,7 +78,7 @@
                             <asp:Panel ID="Panel1" runat="server"    Visible="false">
                                 <div class="row"  style="width: 900px;">
                                     <div class="row" >
-                                        <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria;">
+                                        <div class="col-lg-4"   >
                                         </div>
                                     </div>
                                     <div class="row" >

@@ -8,8 +8,8 @@
             <div id="wrapper"    >
                 <div class="card"     >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            MONTHLY TRACKER</h3>
+                        <div class="card-header">
+                            MONTHLY TRACKER</div>
                         <div class="row"  style="width: 1240px;">
                       
                             <div class="row" >
@@ -341,8 +341,8 @@
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div1">
-                                                        <h3 class="reallynow">
-                                                          Add Particulars</h3>
+                                                        <div class="card-header">
+                                                          Add Particulars</div>
                                                         <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >

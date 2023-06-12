@@ -9,9 +9,9 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Creditor List</h3>
-                        <div class="row"  style="width: 930px">
+                        <div class="card-header">
+                            Creditor List</div>
+                        <div class="row"   >
                             <div class="row" >
                                 <div class="col-lg-4" >
                                 
@@ -93,7 +93,7 @@
                                                                                     <asp:CommandField ShowDeleteButton="True" />
                                                                                 </Columns>
                                                                                 <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
-                                                                                <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                                                               
                                                                             </asp:GridView>
                                                                         </div>
                                                                     </div>
@@ -117,8 +117,8 @@
                                                                     <div class="row" >
                                                                         <div class="col-lg-4" >
                                                                             <div class="card-body">
-                                                                                <h3 class="reallynow">
-                                                                                    Party / Vendor Detail</h3>
+                                                                                <div class="card-header">
+                                                                                    Party / Vendor Detail</div>
                                                                                 <div class="row"  style="width: 325px; vertical-align: top;">
                                                                                     <div class="row" >
                                                                                         <div class="col-lg-4" >
@@ -329,7 +329,7 @@
                                                                         <ItemStyle   HorizontalAlign="Right" />
                                                                     </asp:TemplateField>
                                                                 </Columns>
-                                                                <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                                               
                                                             </asp:GridView>
                                                         </div>
                                                     </div>

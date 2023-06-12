@@ -9,9 +9,9 @@
             <div id="wrapper" style="margin-left: -100px;">
                 <div class="card"  style="width: 1750px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
+                        <div class="card-header">
                             FINANCIAL COMPARISION OF PLAN vis-à-vis ACTUAL													
-                           </h3>
+                           </div>
                         <div class="row" >
                        
                             <div class="row" >

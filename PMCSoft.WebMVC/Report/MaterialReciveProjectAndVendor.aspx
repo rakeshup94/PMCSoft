@@ -9,8 +9,8 @@
             <div id="wrapper" style="margin-left: -80px;">
                 <div class="card"  style="width: 1100px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Matrial Recive Vendor Wise</h3>
+                        <div class="card-header">
+                            Matrial Recive Vendor Wise</div>
                         <div class="row"  style="width: 1090px;">
                             <%--<tr>
                                 <div class="col-lg-4"  colspan="9" style="text-align: center; font-size: 15px; font-family: Cambria;">
@@ -18,7 +18,7 @@
                                 </div>
                             </div>--%>
                             <div class="row" >
-                                <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria;">
+                                <div class="col-lg-4"   >
                                     Project
                                 </div>
                                 <div class="col-lg-4" >
@@ -161,7 +161,7 @@
                                                             <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="80px" />
                                                         </asp:TemplateField>
                                                     </Columns>
-                                                    <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                                   
                                                     <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                                 </asp:GridView>
                                             </div>

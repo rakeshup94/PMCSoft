@@ -16,12 +16,12 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Submitted Bill</h3>
+                        <div class="card-header">
+                            Submitted Bill</div>
                     </div>
                     <div class="row"   >
                         <div class="row"   >
-                            <div class="col-lg-4"  style="vertical-align: top; width: 600px;">
+                            <div class="col-lg-4"   >
                                 <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GvRAbillSub" runat="server" AutoGenerateColumns="false" GridLines="Both"
                                     OnRowCommand="GvRAbillSub_RowCommand" OnRowDataBound="GvRAbillSub_RowDataBound">
                                     <Columns>
@@ -89,8 +89,8 @@
                                         <div class="row" >
                                             <div class="col-lg-4" >
                                                 <div id="Div1">
-                                                    <h3 class="reallynow">
-                                                        RA BILL Detail</h3>
+                                                    <div class="card-header">
+                                                        RA BILL Detail</div>
                                                     <div class="row"   >
                                                         <div class="row" >
                                                             <div class="col-lg-4"    >
@@ -227,7 +227,7 @@
                                                         <div class="row" >
                                                             <div class="col-lg-4"  colspan="4">
                                                                 <h3>
-                                                                    Deduction</h3>
+                                                                    Deduction</div>
                                                             </div>
                                                         </div>
                                                         <div class="row" >
@@ -398,8 +398,8 @@
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div2">
-                                                        <h3 class="reallynow">
-                                                            View RA BILL</h3>
+                                                        <div class="card-header">
+                                                            View RA BILL</div>
                                                         <div class="row"  style="width: 850px; vertical-align: top;">
                                                             <div class="row" >
                                                                 <div class="col-lg-4"    >
@@ -496,7 +496,7 @@
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  colspan="4">
                                                                     <h3>
-                                                                        Deduction</h3>
+                                                                        Deduction</div>
                                                                 </div>
                                                             </div>
                                                             <div class="row" >

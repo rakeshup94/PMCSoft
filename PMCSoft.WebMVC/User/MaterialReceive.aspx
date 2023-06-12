@@ -9,8 +9,8 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"  style="width: 950px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Material Receive</h3>
+                        <div class="card-header">
+                            Material Receive</div>
                         <div class="row"  style="width: 940px; vertical-align: top;">
                             <div class="row" >
                                 <div class="col-lg-4"  style="width: auto; text-align: center; vertical-align: top; width: 100px;">
@@ -177,7 +177,7 @@
                                                 <ItemStyle VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                         <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                     </asp:GridView>
                                 </div>
