@@ -3039,6 +3039,7 @@
     <Content Include="lib\datatables.net-bs5\package.json" />
     <Content Include="lib\datatables.net-bs5\Readme.md" />
     <Content Include="Home.aspx" />
+    <Content Include="Style.html" />
     <Content Include="UserControls\VerticleMenu.ascx" />
     <Content Include="Site.Master" />
     <Content Include="Upload\aaa114201417846.txt" />
