@@ -204,7 +204,7 @@
 
                 <asp:Button CssClass="btn btn-primary btn-square" ID="Button3" runat="server" />
             </div>
-            <cc1:modalpopupextender id="ModalPopupExtender3" runat="server" backgroundcssclass="popUpStyle"
+            <cc1:modalpopupextender id="ModalPopupExtender3" runat="server"  
                 popupcontrolid="Panel3" targetcontrolid="Button3" enableviewstate="False"
                 enabled="True">
             </cc1:modalpopupextender>
@@ -272,7 +272,7 @@
 
                 <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" />
             </div>
-            <cc1:modalpopupextender id="ModalPopupExtender2" runat="server" backgroundcssclass="popUpStyle"
+            <cc1:modalpopupextender id="ModalPopupExtender2" runat="server"  
                 popupcontrolid="Panel2" targetcontrolid="Button1" enableviewstate="False"
                 enabled="True">
             </cc1:modalpopupextender>
@@ -471,7 +471,7 @@
                 <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" />
 
             </div>
-            <cc1:modalpopupextender id="ModalPopupExtender1" runat="server" backgroundcssclass="popUpStyle"
+            <cc1:modalpopupextender id="ModalPopupExtender1" runat="server"  
                 popupcontrolid="Panel1" targetcontrolid="Button2" enableviewstate="False"
                 enabled="True">
             </cc1:modalpopupextender>

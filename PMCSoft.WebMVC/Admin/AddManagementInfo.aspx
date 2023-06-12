@@ -50,7 +50,7 @@
                                        <div style="display: none">
                                            <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" Text="Button" />
                                        </div>
-                                       <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
+                                       <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server"  
                                            PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False"
                                            Enabled="True">
                                        </cc1:ModalPopupExtender>
@@ -99,7 +99,7 @@
                                                runat="server" Text="Button" />
                                        </div>
                                        <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server"
-                                           BackgroundCssClass="popUpStyle"
+                                            
                                            PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"
                                            Enabled="True">
                                        </cc1:ModalPopupExtender>

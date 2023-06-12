@@ -10,6 +10,7 @@
 namespace PMCSoft.Web.Admin
 {
 
+
     public partial class ViewStaff
     {
 
@@ -185,31 +186,13 @@ namespace PMCSoft.Web.Admin
         protected global::AjaxControlToolkit.FilteredTextBoxExtender FilteredTextBoxExtender1;
 
         /// <summary>
-        /// ImageButton1 control.
+        /// lnkBtnProject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
-
-        /// <summary>
-        /// pnlCustomers control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlCustomers;
-
-        /// <summary>
-        /// GVProject control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GVProject;
+        protected global::System.Web.UI.WebControls.LinkButton lnkBtnProject;
 
         /// <summary>
         /// PopupControlExtender1 control.
@@ -237,5 +220,23 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnReset;
+
+        /// <summary>
+        /// pnlCustomers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlCustomers;
+
+        /// <summary>
+        /// GVProject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GVProject;
     }
 }

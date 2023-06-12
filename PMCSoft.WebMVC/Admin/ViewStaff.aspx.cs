@@ -256,7 +256,7 @@ namespace PMCSoft.Web.Admin
                 return true;
             }
         }
-        protected void ImageButton1_Click(object sender, EventArgs e)
+        protected void lnkBtnProject_Click(object sender, EventArgs e)
         {
             GVProject.Visible = true;
             ModalPopupExtender1.Show();

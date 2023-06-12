@@ -257,7 +257,7 @@ namespace PMCSoft.Web.User
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        protected void ImageButton1_Click(object sender, EventArgs e)
+        protected void lnkBtnProject_Click(object sender, EventArgs e)
         {
             GVProject.Visible = true;
         }

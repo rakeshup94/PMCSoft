@@ -60,7 +60,7 @@
                                     <div style="display: none">
                                         <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
                                     </div>
-                                    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
+                                    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server"  
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
@@ -305,7 +305,7 @@
                                                     <div style="display: none">
                                                         <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" Text="Button" />
                                                     </div>
-                                                    <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
+                                                    <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server"  
                                                         PopupControlID="Panel3" TargetControlID="Button2" EnableViewState="False"  
                                                         Enabled="True">
                                                     </cc1:ModalPopupExtender>
@@ -345,7 +345,7 @@
                                                     Project Name
                                                 </div>
                                                 <div class="col-lg-4" >
-                                                      <asp:LinkButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ><i class="fa fa-check-square"></i></asp:LinkButton>
+                                                      <asp:LinkButton ID="ImageButton1" runat="server" OnClick="lnkBtnProject_Click" ><i class="fa fa-check-square"></i></asp:LinkButton>
                                                     <asp:Panel ID="pnlCustomers" runat="server"    Style="display: none;">
                                                         <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVProject" runat="server" AutoGenerateColumns="false" GridLines="None"
                                                             ShowHeader="false">
@@ -365,7 +365,7 @@
                                                             </Columns>
                                                         </asp:GridView>
                                                     </asp:Panel>
-                                                    <cc1:PopupControlExtender ID="PopupControlExtender1" runat="server" TargetControlID="ImageButton1"
+                                                    <cc1:PopupControlExtender ID="PopupControlExtender1" runat="server" TargetControlID="lnkBtnProject"
                                                         PopupControlID="pnlCustomers" Position="Bottom" OffsetY="-16">
                                                     </cc1:PopupControlExtender>
                                                 </div>
