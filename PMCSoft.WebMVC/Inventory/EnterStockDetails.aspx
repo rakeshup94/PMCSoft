@@ -68,40 +68,40 @@
                                                 </asp:TemplateField>
                                                 <asp:TemplateField HeaderText="Unit">
                                                     <ItemTemplate>
-                                                        <asp:DropDownList CssClass="form-select" ID="ddlUnit" runat="server" Width="100px" AutoPostBack="true">
+                                                        <asp:DropDownList CssClass="form-select" ID="ddlUnit" runat="server"   AutoPostBack="true">
                                                         </asp:DropDownList>
                                                     </ItemTemplate>
-                                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                 </asp:TemplateField>
                                                 <asp:TemplateField HeaderText="Item Make">
                                                     <ItemTemplate>
-                                                        <asp:Label ID="TxtItemMake" runat="server" Width="100px"></asp:Label>
+                                                        <asp:Label ID="TxtItemMake" runat="server"  ></asp:Label>
                                                     </ItemTemplate>
-                                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                 </asp:TemplateField>
                                                 <asp:TemplateField HeaderText="Part No">
                                                     <ItemTemplate>
-                                                        <asp:Label ID="TxtpartNo" runat="server" Width="100px"></asp:Label>
+                                                        <asp:Label ID="TxtpartNo" runat="server"  ></asp:Label>
                                                     </ItemTemplate>
-                                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                 </asp:TemplateField>
                                                 <asp:TemplateField HeaderText="Quantity">
                                                     <ItemTemplate>
-                                                        <asp:TextBox CssClass="form-control" ID="txtQuantity" runat="server" Width="100px"></asp:TextBox>
+                                                        <asp:TextBox CssClass="form-control" ID="txtQuantity" runat="server"  ></asp:TextBox>
                                                         <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtQuantity"
                                                             FilterType="Custom, Numbers" ValidChars=".">
                                                         </cc1:FilteredTextBoxExtender>
                                                     </ItemTemplate>
-                                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                 </asp:TemplateField>
                                                 <asp:TemplateField HeaderText="Rate">
                                                     <ItemTemplate>
-                                                        <asp:TextBox CssClass="form-control" ID="txtRate" runat="server" Width="100px"></asp:TextBox>
+                                                        <asp:TextBox CssClass="form-control" ID="txtRate" runat="server"  ></asp:TextBox>
                                                         <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtRate"
                                                             FilterType="Custom, Numbers" ValidChars=".">
                                                         </cc1:FilteredTextBoxExtender>
                                                     </ItemTemplate>
-                                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                 </asp:TemplateField>
                                                 <asp:TemplateField HeaderText="Description">
                                                     <ItemTemplate>

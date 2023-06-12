@@ -29,7 +29,7 @@
                                     From Date
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" Width="100px"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"  ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
@@ -38,7 +38,7 @@
                                     TO Date
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:TextBox CssClass="form-control" ID="Txtfrom" runat="server" Width="100px"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="Txtfrom" runat="server"  ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="Txtfrom"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
@@ -65,7 +65,7 @@
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblGateentoryno" runat="server" Text='<%#Bind("Gate_Entry_No") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Po No" Visible="false">
                                                             <ItemTemplate>
@@ -125,19 +125,19 @@
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblunit" runat="server" Text='<%#Bind("UnitName") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Quantity">
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblQty" runat="server" Text='<%#Bind("Item_Quantity") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Right" VerticalAlign="Top" Width="100px" />
+                                                            <ItemStyle HorizontalAlign="Right" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Rate">
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblRate" runat="server" Text='<%#Bind("Item_Rate") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Right" VerticalAlign="Top" Width="100px" />
+                                                            <ItemStyle HorizontalAlign="Right" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Recived By">
                                                             <ItemTemplate>

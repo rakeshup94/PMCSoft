@@ -50,7 +50,7 @@
                                                     WP Date:
                                                 </div>
                                                 <div class="col-lg-4"  style="font-weight: bold;">
-                                                    <asp:Label ID="lblWorkProgrammeDate" runat="server" Width="100px" Font-Size="12px"></asp:Label>
+                                                    <asp:Label ID="lblWorkProgrammeDate" runat="server"   Font-Size="12px"></asp:Label>
                                                     <asp:HiddenField ID="hdnWPDate" runat="server" />
                                                     <asp:HiddenField ID="hdnWPID" runat="server" />
                                                 </div>
@@ -68,7 +68,7 @@
                                                     No.:
                                                 </div>
                                                 <div class="col-lg-4" >
-                                                    <asp:Label ID="lblNumber" runat="server" Width="100px"></asp:Label>
+                                                    <asp:Label ID="lblNumber" runat="server"  ></asp:Label>
                                                 </div>
                                                 <div class="col-lg-4"  style="white-space: nowrap; font-weight: bold;">
                                                     ENG. In Charge:

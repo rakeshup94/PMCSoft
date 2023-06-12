@@ -27,7 +27,7 @@
                                     <div class="row"  style="width: 910px;">
                                         <div class="row" >
                                             <div class="col-lg-4"   >
-                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="540px"
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="False"  
                                                     OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowEditing="GridView1_RowEditing"
                                                     OnRowUpdating="GridView1_RowUpdating">
                                                     <Columns>

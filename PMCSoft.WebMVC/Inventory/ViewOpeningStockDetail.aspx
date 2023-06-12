@@ -55,31 +55,31 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblUnitName" runat="server" Text='<%#Bind("UnitName") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Item Make">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblMake" runat="server" Text='<%#Bind("Make") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Part No">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblPartNo" runat="server" Text='<%#Bind("PartNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Quantity">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblQty" runat="server" Text='<%#Bind("Qty") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Right" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Right" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Rate">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblRate" runat="server" Text='<%#Bind("Rate") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Right" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Right" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Description">
                                                 <ItemTemplate>
@@ -91,7 +91,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblLastOpeningDate" runat="server" Text='<%#Bind("LastOpeningDate") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle VerticalAlign="Top" Width="100px" HorizontalAlign="Center" />
+                                                <ItemStyle VerticalAlign="Top"   HorizontalAlign="Center" />
                                             </asp:TemplateField>
                                         </Columns>
                                         <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />

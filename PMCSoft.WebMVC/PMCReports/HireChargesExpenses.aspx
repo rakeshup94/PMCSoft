@@ -24,7 +24,7 @@
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     HIRE CHARGES EXPENSES REPORT FOR THE MONTH OF --&nbsp;&nbsp;&nbsp;
-                                    <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" Width="100px"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"  ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
@@ -46,17 +46,17 @@
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="DESCRIPTION">
                                                             <ItemTemplate>
-                                                                <asp:TextBox CssClass="form-control" ID="txtDESCRIPTION" Width="100px" TextMode="MultiLine" runat="server"
+                                                                <asp:TextBox CssClass="form-control" ID="txtDESCRIPTION"   TextMode="MultiLine" runat="server"
                                                                     onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="MODEL">
                                                             <ItemTemplate>
-                                                                <asp:TextBox CssClass="form-control" ID="txtMODEL" Width="100px" TextMode="MultiLine" runat="server" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtMODEL"   TextMode="MultiLine" runat="server" onkeyup="valid(this)"
                                                                     onblur="valid(this)"></asp:TextBox>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="VENDOR`S NAME">
                                                             <ItemTemplate>
@@ -68,27 +68,27 @@
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Date of Installation">
                                                             <ItemTemplate>
-                                                                <asp:TextBox CssClass="form-control" ID="txtDateofInstallation" Width="100px" runat="server" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtDateofInstallation"   runat="server" onkeyup="valid(this)"
                                                                     onblur="valid(this)"></asp:TextBox>
                                                                 <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDateofInstallation"
                                                                     CssClass="cal_Theme1">
                                                                 </cc1:CalendarExtender>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="QTY.">
                                                             <ItemTemplate>
-                                                                <asp:TextBox CssClass="form-control" ID="txtQTY" Width="100px" TextMode="MultiLine" runat="server" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtQTY"   TextMode="MultiLine" runat="server" onkeyup="valid(this)"
                                                                     onblur="valid(this)"></asp:TextBox>
                                                                 <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtQTY"
                                                                     FilterType="Custom, Numbers" ValidChars=".">
                                                                 </cc1:FilteredTextBoxExtender>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="AMOUNT">
                                                             <ItemTemplate>
-                                                                <asp:TextBox CssClass="form-control" ID="txtAMOUNT" runat="server" Width="100px"></asp:TextBox>
+                                                                <asp:TextBox CssClass="form-control" ID="txtAMOUNT" runat="server"  ></asp:TextBox>
                                                                 <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtAMOUNT"
                                                                     FilterType="Custom, Numbers" ValidChars=".">
                                                                 </cc1:FilteredTextBoxExtender>

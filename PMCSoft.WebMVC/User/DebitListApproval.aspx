@@ -88,14 +88,14 @@
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Suggest Amount">
                                                 <ItemTemplate>
-                                                    <asp:TextBox CssClass="form-control" ID="txtSuggestAmount" runat="server" Width="100px" Enabled="false" ReadOnly="true"
+                                                    <asp:TextBox CssClass="form-control" ID="txtSuggestAmount" runat="server"   Enabled="false" ReadOnly="true"
                                                         BorderColor="Gray" BackColor="LightGray">
                                                     </asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" FilterType="Custom, Numbers"
                                                         TargetControlID="txtSuggestAmount" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </ItemTemplate>
-                                                <ItemStyle VerticalAlign="Middle" Width="100px" />
+                                                <ItemStyle VerticalAlign="Middle"   />
                                             </asp:TemplateField>
                                         </Columns>
                                         <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />

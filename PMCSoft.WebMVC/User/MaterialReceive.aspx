@@ -58,7 +58,7 @@
                                 </div>
                                 <div class="col-lg-4" >
                                     <asp:TextBox CssClass="form-control" ID="TxtPOdate" runat="server" onkeyup="valid(this)" onblur="valid(this)"
-                                        Width="100px"></asp:TextBox>
+                                         ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="TxtPOdate"
                                         CssClass="cal_Theme1" PopupPosition="BottomRight" Enabled="true">
                                     </cc1:CalendarExtender>
@@ -70,7 +70,7 @@
                                 </div>
                                 <div class="col-lg-4" >
                                     <asp:TextBox CssClass="form-control" ID="TxtReceivedDate" runat="server" onkeyup="valid(this)" onblur="valid(this)"
-                                        Width="100px"></asp:TextBox>
+                                         ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="TxtReceivedDate"
                                         CssClass="cal_Theme1" PopupPosition="BottomRight" Enabled="true">
                                     </cc1:CalendarExtender>
@@ -98,7 +98,7 @@
                                 </div>
                                 <div class="col-lg-4" >
                                     <asp:TextBox CssClass="form-control" ID="TxtBillChallanDate" runat="server" onkeyup="valid(this)" onblur="valid(this)"
-                                        Width="100px"></asp:TextBox>
+                                         ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender3" runat="server" TargetControlID="TxtBillChallanDate"
                                         CssClass="cal_Theme1" PopupPosition="BottomRight" Enabled="true">
                                     </cc1:CalendarExtender>
@@ -142,28 +142,28 @@
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Unit">
                                                 <ItemTemplate>
-                                                    <asp:DropDownList CssClass="form-select" ID="ddlUnit" runat="server" Width="100px" AutoPostBack="true">
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlUnit" runat="server"   AutoPostBack="true">
                                                     </asp:DropDownList>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Quantity">
                                                 <ItemTemplate>
-                                                    <asp:TextBox CssClass="form-control" ID="txtQuantity" runat="server" Width="100px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtQuantity" runat="server"  ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtQuantity"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Rate">
                                                 <ItemTemplate>
-                                                    <asp:TextBox CssClass="form-control" ID="txtRate" runat="server" Width="100px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtRate" runat="server"  ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtRate"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Remarks">
                                                 <ItemTemplate>

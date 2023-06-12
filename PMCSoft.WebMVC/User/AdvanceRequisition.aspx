@@ -63,7 +63,7 @@
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Amount">
                                                 <ItemTemplate>
-                                                    <asp:TextBox CssClass="form-control" ID="txtAmount" runat="server" Width="100px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtAmount" runat="server"  ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtAmount"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>

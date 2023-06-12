@@ -23,7 +23,7 @@
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     Status of Work Done / Plan As On&nbsp;&nbsp;&nbsp;<asp:TextBox CssClass="form-control" ID="txtDate" runat="server"
-                                        Width="100px" Enabled="false" ReadOnly="true"></asp:TextBox>
+                                          Enabled="false" ReadOnly="true"></asp:TextBox>
                                    
                                 </div>
                             </div>

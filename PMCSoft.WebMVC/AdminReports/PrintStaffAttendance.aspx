@@ -23,7 +23,7 @@
                         </div>
                         <div class="col-lg-4" >
                             <asp:Label ID="lblDate" runat="server"></asp:Label>
-                            <asp:Label ID="lblWorkProgrammeDate" runat="server" Width="100px"   ></asp:Label>
+                            <asp:Label ID="lblWorkProgrammeDate" runat="server"     ></asp:Label>
                             <asp:HiddenField ID="hdnWPDate" runat="server" />
                             <asp:HiddenField ID="hdnWPID" runat="server" />
                         </div>

@@ -74,31 +74,31 @@
                                                 <Header>
                                                     <a href="#" class="href">Project Particulars</a></Header>
                                                 <Content>
-                                                    <div class="row"  style="width: 900px; border: 1px solid #D9EAED; border-collapse: collapse;">
+                                                    <div class="row"   >
                                                         <div class="row"  style="background-color: #D9EAED; color: #202020; font-weight: bold;">
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED; width: 40px;">
+                                                            <div class="col-lg-4"   >
                                                                 S.No
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED; width: 550px;">
+                                                            <div class="col-lg-4"   >
                                                                 Particular Details/Contract Provision
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED; width: 120px;">
+                                                            <div class="col-lg-4"   >
                                                                 Clause
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED; width: 170px;">
+                                                            <div class="col-lg-4"   >
                                                                 Subsequent Amendments
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 1
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtProjectName" runat="server" Width="540px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtProjectName" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Name of Project"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtProjectClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtProjectClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -107,15 +107,15 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 2
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtLocation" runat="server" Width="540px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtLocation" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Location"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtLocationClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtLocationClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -124,18 +124,18 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 3
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtDateOfAward" runat="server" Width="540px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtDateOfAward" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Date of Award"></asp:TextBox>
                                                                 <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDateOfAward"
                                                                     CssClass="cal_Theme1">
                                                                 </cc1:CalendarExtender>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtDateofAwardClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtDateofAwardClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -144,15 +144,15 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 4
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtLOINo" runat="server" Width="540px" onkeyup="valid(this)" onblur="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtLOINo" runat="server"   onkeyup="valid(this)" onblur="valid(this)"
                                                                     placeholder="LOI No"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtLOINoClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtLOINoClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -161,18 +161,18 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 5
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtLOIDate" runat="server" Width="540px" onkeyup="valid(this)" onblur="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtLOIDate" runat="server"   onkeyup="valid(this)" onblur="valid(this)"
                                                                     placeholder="LOI Date"></asp:TextBox>
                                                                 <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="txtLOIDate"
                                                                     CssClass="cal_Theme1">
                                                                 </cc1:CalendarExtender>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtLOIDateClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtLOIDateClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -181,15 +181,15 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 6
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtNameOfRegion" runat="server" Width="540px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtNameOfRegion" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Name Of Region Handling Project"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtNameOfRegionClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtNameOfRegionClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -198,7 +198,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 7
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -211,7 +211,7 @@
                                                                 </cc1:FilteredTextBoxExtender>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtProjectInChargeClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtProjectInChargeClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -220,7 +220,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 8
                                                             </div>
                                                             <div class="col-lg-4"  style="border: 1px solid #D9EAED; vertical-align: top;">
@@ -327,7 +327,7 @@
                                                                   </div>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtClientClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtClientClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -336,7 +336,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 9
                                                             </div>
                                                             <div class="col-lg-4"  style="border: 1px solid #D9EAED; vertical-align: top;">
@@ -443,7 +443,7 @@
                                                                   </div>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtProjectManagerClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtProjectManagerClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -452,7 +452,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 10
                                                             </div>
                                                             <div class="col-lg-4"  style="border: 1px solid #D9EAED; vertical-align: top;">
@@ -559,7 +559,7 @@
                                                                   </div>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtArchitectClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtArchitectClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -568,7 +568,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 11
                                                             </div>
                                                             <div class="col-lg-4"  style="border: 1px solid #D9EAED; vertical-align: top;">
@@ -676,7 +676,7 @@
                                                                   </div>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtStructuralConsultantClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtStructuralConsultantClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -685,7 +685,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 12
                                                             </div>
                                                             <div class="col-lg-4"  style="border: 1px solid #D9EAED; vertical-align: top;">
@@ -792,7 +792,7 @@
                                                                   </div>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtMechanicalClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtMechanicalClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -801,7 +801,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 13
                                                             </div>
                                                             <div class="col-lg-4"  style="border: 1px solid #D9EAED; vertical-align: top;">
@@ -908,7 +908,7 @@
                                                                   </div>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtElectricalClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtElectricalClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -917,7 +917,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 14
                                                             </div>
                                                             <div class="col-lg-4"  style="border: 1px solid #D9EAED; vertical-align: top;">
@@ -1024,7 +1024,7 @@
                                                                   </div>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtPlumbingClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtPlumbingClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -1033,18 +1033,18 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 15
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtStipulatedDateOfStart" runat="server" Width="540px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtStipulatedDateOfStart" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Stipulated Date Of Start"></asp:TextBox>
                                                                 <cc1:CalendarExtender ID="CalendarExtender4" runat="server" TargetControlID="txtStipulatedDateOfStart"
                                                                     CssClass="cal_Theme1">
                                                                 </cc1:CalendarExtender>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtStipulatedDateClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtStipulatedDateClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -1053,18 +1053,18 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 16
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtActualDateOfStart" runat="server" Width="540px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtActualDateOfStart" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Date Of Actual Start"></asp:TextBox>
                                                                 <cc1:CalendarExtender ID="CalendarExtender3" runat="server" TargetControlID="txtActualDateOfStart"
                                                                     CssClass="cal_Theme1">
                                                                 </cc1:CalendarExtender>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtActualDateClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtActualDateClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -1073,18 +1073,18 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 17
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtStipulatedDateOfFinish" runat="server" Width="540px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtStipulatedDateOfFinish" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Stipulated Date Of Finish"></asp:TextBox>
                                                                 <cc1:CalendarExtender ID="CalendarExtender5" runat="server" TargetControlID="txtStipulatedDateOfFinish"
                                                                     CssClass="cal_Theme1">
                                                                 </cc1:CalendarExtender>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtStipulatedDateFinishClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtStipulatedDateFinishClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -1093,7 +1093,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 18
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -1105,7 +1105,7 @@
                                                                     placeholder="Original Contract Value Word Format"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtOCVClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtOCVClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -1114,7 +1114,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 19
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -1126,7 +1126,7 @@
                                                                     placeholder="Revised Contract Value Word Format"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtRCVClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtRCVClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -1135,7 +1135,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid #D9EAED;">
+                                                            <div class="col-lg-4"   >
                                                                 20
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -1147,7 +1147,7 @@
                                                                     placeholder="Expected Contract Value Word Format"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtECVClause" runat="server" Width="100px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtECVClause" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)" placeholder="Clause"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
@@ -1187,7 +1187,7 @@
                                                                                 <asp:TextBox CssClass="form-control" ID="txtClause" runat="server" Text='<%#Bind("Clause") %>' onkeyup="valid(this)"
                                                                                     onblur="valid(this)"></asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                         <asp:TemplateField HeaderText="Subsequent Amendments">
                                                                             <ItemTemplate>
@@ -1195,7 +1195,7 @@
                                                                                     onblur="valid(this)">
                                                                                 </asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                     </Columns>
                                                                     <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
@@ -1240,7 +1240,7 @@
                                                                                 <asp:TextBox CssClass="form-control" ID="txtClause" runat="server" Text='<%#Bind("Clause") %>' onkeyup="valid(this)"
                                                                                     onblur="valid(this)"></asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                         <asp:TemplateField HeaderText="Subsequent Amendments">
                                                                             <ItemTemplate>
@@ -1248,7 +1248,7 @@
                                                                                     onblur="valid(this)">
                                                                                 </asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                     </Columns>
                                                                     <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
@@ -1293,7 +1293,7 @@
                                                                                 <asp:TextBox CssClass="form-control" ID="txtClause" runat="server" Text='<%#Bind("Clause") %>' onkeyup="valid(this)"
                                                                                     onblur="valid(this)"></asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                         <asp:TemplateField HeaderText="Subsequent Amendments">
                                                                             <ItemTemplate>
@@ -1301,7 +1301,7 @@
                                                                                     onblur="valid(this)">
                                                                                 </asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                     </Columns>
                                                                     <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
@@ -1346,7 +1346,7 @@
                                                                                 <asp:TextBox CssClass="form-control" ID="txtClause" runat="server" Text='<%#Bind("Clause") %>' onkeyup="valid(this)"
                                                                                     onblur="valid(this)"></asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                         <asp:TemplateField HeaderText="Subsequent Amendments">
                                                                             <ItemTemplate>
@@ -1354,7 +1354,7 @@
                                                                                     onblur="valid(this)">
                                                                                 </asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                     </Columns>
                                                                     <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
@@ -1400,7 +1400,7 @@
                                                                                 <asp:TextBox CssClass="form-control" ID="txtClause" runat="server" Text='<%#Bind("Clause") %>' onkeyup="valid(this)"
                                                                                     onblur="valid(this)"></asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                         <asp:TemplateField HeaderText="Subsequent Amendments">
                                                                             <ItemTemplate>
@@ -1408,7 +1408,7 @@
                                                                                     onblur="valid(this)">
                                                                                 </asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                     </Columns>
                                                                     <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
@@ -1453,7 +1453,7 @@
                                                                                 <asp:TextBox CssClass="form-control" ID="txtClause" runat="server" Text='<%#Bind("Clause") %>' onkeyup="valid(this)"
                                                                                     onblur="valid(this)"></asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                         <asp:TemplateField HeaderText="Subsequent Amendments">
                                                                             <ItemTemplate>
@@ -1461,7 +1461,7 @@
                                                                                     onblur="valid(this)">
                                                                                 </asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                     </Columns>
                                                                     <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
@@ -1506,7 +1506,7 @@
                                                                                 <asp:TextBox CssClass="form-control" ID="txtClause" runat="server" Text='<%#Bind("Clause") %>' onkeyup="valid(this)"
                                                                                     onblur="valid(this)"></asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                         <asp:TemplateField HeaderText="Subsequent Amendments">
                                                                             <ItemTemplate>
@@ -1514,7 +1514,7 @@
                                                                                     onblur="valid(this)">
                                                                                 </asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                     </Columns>
                                                                     <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
@@ -1559,7 +1559,7 @@
                                                                                 <asp:TextBox CssClass="form-control" ID="txtClause" runat="server" Text='<%#Bind("Clause") %>' onkeyup="valid(this)"
                                                                                     onblur="valid(this)"></asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                         <asp:TemplateField HeaderText="Subsequent Amendments">
                                                                             <ItemTemplate>
@@ -1567,7 +1567,7 @@
                                                                                     onblur="valid(this)">
                                                                                 </asp:TextBox>
                                                                             </ItemTemplate>
-                                                                            <ItemStyle Width="100px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                            <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                         </asp:TemplateField>
                                                                     </Columns>
                                                                     <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />

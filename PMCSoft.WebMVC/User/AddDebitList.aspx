@@ -64,7 +64,7 @@
                                                                                     </asp:TemplateField>
                                                                                     <asp:TemplateField HeaderText="Amount">
                                                                                         <ItemTemplate>
-                                                                                            <asp:TextBox CssClass="form-control" ID="txtAmount" runat="server" Width="100px"></asp:TextBox>
+                                                                                            <asp:TextBox CssClass="form-control" ID="txtAmount" runat="server"  ></asp:TextBox>
                                                                                             <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" FilterType="Custom, Numbers"
                                                                                                 TargetControlID="txtAmount" ValidChars=".">
                                                                                             </cc1:FilteredTextBoxExtender>
@@ -270,7 +270,7 @@
                                                             Date
                                                         </div>
                                                         <div class="col-lg-4" >
-                                                            <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" Width="100px"></asp:TextBox>
+                                                            <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"  ></asp:TextBox>
                                                             <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                                                 CssClass="cal_Theme1">
                                                             </cc1:CalendarExtender>
@@ -302,13 +302,13 @@
                                                                         <ItemTemplate>
                                                                             <asp:Label ID="lblAmount" runat="server" Text='<%#Bind("Amount") %>'></asp:Label>
                                                                         </ItemTemplate>
-                                                                        <ItemStyle Width="100px" HorizontalAlign="Right" />
+                                                                        <ItemStyle   HorizontalAlign="Right" />
                                                                     </asp:TemplateField>
                                                                     <asp:TemplateField HeaderText="Payment Type">
                                                                         <ItemTemplate>
                                                                             <asp:Label ID="lblPaymentType" runat="server" Text='<%#Bind("PaymentType") %>'></asp:Label>
                                                                         </ItemTemplate>
-                                                                        <ItemStyle Width="100px" HorizontalAlign="Left" />
+                                                                        <ItemStyle   HorizontalAlign="Left" />
                                                                     </asp:TemplateField>
                                                                     <asp:TemplateField HeaderText="Remarks">
                                                                         <ItemTemplate>
@@ -326,7 +326,7 @@
                                                                         <ItemTemplate>
                                                                             <asp:Label ID="lblBalanceAmount" runat="server" Text='<%#Bind("BalanceAmount") %>'></asp:Label>
                                                                         </ItemTemplate>
-                                                                        <ItemStyle Width="100px" HorizontalAlign="Right" />
+                                                                        <ItemStyle   HorizontalAlign="Right" />
                                                                     </asp:TemplateField>
                                                                 </Columns>
                                                                 <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />

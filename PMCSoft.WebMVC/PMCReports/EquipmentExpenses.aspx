@@ -23,7 +23,7 @@
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     Equipment Expenses Report As On&nbsp;&nbsp;&nbsp;
-                                    <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" Width="100px"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"  ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
@@ -106,14 +106,14 @@
                                                     </asp:TextBox>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtPMRepairs" runat="server" Text='<%#Bind("PMRepairs") %>' Width="100px">
+                                                    <asp:TextBox CssClass="form-control" ID="txtPMRepairs" runat="server" Text='<%#Bind("PMRepairs") %>'  >
                                                     </asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtPMRepairs"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtPMFuel" runat="server" Text='<%#Bind("PMFuel") %>' Width="100px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtPMFuel" runat="server" Text='<%#Bind("PMFuel") %>'  ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtPMFuel"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
