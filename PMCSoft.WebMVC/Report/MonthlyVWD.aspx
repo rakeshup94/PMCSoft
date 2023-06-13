@@ -9,8 +9,8 @@
             <div id="wrapper"">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            MONTHLY VWD (FORMAT No. C)</h3>
+                        <div class="card-header">
+                            MONTHLY VWD (FORMAT No. C)</div>
                         <div class="row"  style="width: 930px;">
                             <div class="row" >
                            
@@ -25,7 +25,7 @@
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     Status of Work Done / Plan As On&nbsp;&nbsp;&nbsp;<asp:TextBox CssClass="form-control" ID="txtDate" runat="server"
-                                        Width="100px" ReadOnly="true" Enabled="false"></asp:TextBox>
+                                          ReadOnly="true" Enabled="false"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="row" >

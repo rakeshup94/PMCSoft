@@ -9,8 +9,8 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"  style="width: 970px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Financial Comparision Of Plan</h3>
+                        <div class="card-header">
+                            Financial Comparision Of Plan</div>
                             
                         <div class="row"  style="width: 970px;">
                             
@@ -32,7 +32,7 @@
                                                 Date
                                             </div>
                                             <div class="col-lg-4" >
-                                           <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" Width="100px"></asp:TextBox>
+                                           <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"  ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
@@ -85,11 +85,11 @@
                                                                 
                                                             </div>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 200px; font-weight: bold;">
                                                                     Plan
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 200px; font-weight: bold;">
                                                                     Actual
                                                                 </div>
@@ -474,14 +474,14 @@
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4"  style="text-align: right;">
-                                                <asp:Button CssClass="btn btn-primary" ID="btnCalculate" runat="server" Text="Calculate"  />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCalculate" runat="server" Text="Calculate"  />
                                             </div>
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4"  style="text-align: center;">
-                                                <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" 
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" 
                                                     onclick="btnSubmit_Click" />
-                                                <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel"/>
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel"/>
                                             </div>
                                         </div>
                                       </div>

@@ -22,53 +22,47 @@
                             <div class="col-lg-4">
                                 <div class="mb-3">
                                     Code
-                                              
-                                                    <asp:TextBox CssClass="form-control" ID="txtCode" runat="server" MaxLength="6" onkeyup="valid(this)"
-                                                        onblur="valid(this)">
-                                                    </asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtCode" runat="server" MaxLength="6" onkeyup="valid(this)"
+                                        onblur="valid(this)">
+                                    </asp:TextBox>
                                 </div>
                             </div>
 
                             <div class="col-lg-4">
                                 <div class="mb-3">
                                     Name
-                                              
-                                                    <asp:TextBox CssClass="form-control" ID="txtName" runat="server" onkeyup="valid(this)"
-                                                        onblur="valid(this)">
-                                                    </asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtName" runat="server" onkeyup="valid(this)"
+                                        onblur="valid(this)">
+                                    </asp:TextBox>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit"
+                                <asp:LinkButton CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server"
+                                    Text="Submit"
                                     OnClick="btnSubmit_Click" />
-                                <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel"
+                                <asp:Button CssClass="btn btn-default btn-square" ID="btnCancel" runat="server" Text="Cancel"
                                     OnClick="btnCancel_Click" />
                             </div>
-
-
                         </div>
-
-
-
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
-
                             <div class="col-lg-12">
-                                <asp:GridView CssClass="table table-striped"  ID="GVGroup" runat="server" AutoGenerateColumns="false"
+                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"
+                                    ID="GVGroup" runat="server" AutoGenerateColumns="false"
                                     OnRowCancelingEdit="GVGroup_RowCancelingEdit" OnRowEditing="GVGroup_RowEditing"
-                                    OnRowUpdating="GVGroup_RowUpdating" EmptyDataText="No Record Found" CssClass="table table-striped">
+                                    OnRowUpdating="GVGroup_RowUpdating" EmptyDataText="No Record Found">
                                     <Columns>
                                         <asp:TemplateField HeaderText="S.No">
                                             <ItemTemplate>
                                                 <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                             
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Group Code">
                                             <ItemTemplate>
@@ -79,7 +73,7 @@
                                                     onkeyup="valid(this)"
                                                     onblur="valid(this)"></asp:TextBox>
                                             </EditItemTemplate>
-                                            <ItemStyle Width="250px" />
+                                    
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Group Name">
                                             <ItemTemplate>
@@ -90,21 +84,15 @@
                                                     onkeyup="valid(this)"
                                                     onblur="valid(this)"></asp:TextBox>
                                             </EditItemTemplate>
-
                                         </asp:TemplateField>
-                                        <asp:CommandField ShowEditButton="true" ButtonType="Button" />
+                                        <asp:CommandField  EditText="<i class='fa fa-edit mediumtxt'></i>" UpdateText="<i class='fa fa-floppy-o text-green mediumtxt mrs'></i>" CancelText="<i class='fa fa-times text-red mediumtxt'></i>" ShowEditButton="true" ButtonType="Link" />
                                     </Columns>
                                 </asp:GridView>
                             </div>
                         </div>
-
-
-
-
                     </div>
                 </div>
             </div>
-
         </ContentTemplate>
     </asp:UpdatePanel>
 </asp:Content>

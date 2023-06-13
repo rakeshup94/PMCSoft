@@ -9,8 +9,8 @@
             <div id="wrapper"    >
                 <div class="card"     >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            MONTHLY WORK DONE</h3>
+                        <div class="card-header">
+                            MONTHLY WORK DONE</div>
                         <cc1:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="1" Width="1250px">
                             <cc1:TabPanel ID="Tab1" runat="server" TabIndex="0">
                                 <HeaderTemplate>
@@ -52,7 +52,7 @@
                                                         </div>
                                                         <div class="col-lg-4" >
                                                             <div class="col-lg-4" >
-                                                                <asp:Button CssClass="btn btn-primary" ID="BtnReport" runat="server" Text="View" OnClick="BtnReport_Click" />
+                                                                <asp:Button CssClass="btn btn-primary btn-square" ID="BtnReport" runat="server" Text="View" OnClick="BtnReport_Click" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -94,7 +94,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="row" >
-                                                                            <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                            <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                                 width: 100px; font-weight: bold;">
                                                                                 Current Months
                                                                             </div>
@@ -104,7 +104,7 @@
                                                                                 width: 50px; font-weight: bold;">
                                                                                 A
                                                                             </div>
-                                                                            <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                            <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                                 width: 50px; font-weight: bold;">
                                                                                 B
                                                                             </div>
@@ -158,7 +158,7 @@
                                                                                         </div>
                                                                                         <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
                                                                                             <asp:Label ID="lblWDDName" runat="server" Text='<%#Bind("WDDName") %>'></asp:Label>
-                                                                                            <asp:Button CssClass="btn btn-primary" ID="Button" runat="server" Text="+" OnClick="Button_Click" CommandArgument='<%# Eval("TransId") %>' />
+                                                                                            <asp:Button CssClass="btn btn-primary btn-square" ID="Button" runat="server" Text="+" OnClick="Button_Click" CommandArgument='<%# Eval("TransId") %>' />
                                                                                         </div>
                                                                                         <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
                                                                                             <asp:Label ID="txtUnit" runat="server" Width="60px" Text=""></asp:Label>
@@ -222,28 +222,28 @@
                                             <div class="col-lg-4" >
                                                 <div class="row" >
                                                     <div class="col-lg-4"    >
-                                                        <asp:Button CssClass="btn btn-primary" ID="BtnWorkdonePlanSave" runat="server" Text="Submit" OnClick="BtnWorkdonePlanSave_Click" />
-                                                        <asp:Button CssClass="btn btn-primary" ID="btnWorkDonePlanancel" runat="server" Text="Cancel" />
+                                                        <asp:Button CssClass="btn btn-primary btn-square" ID="BtnWorkdonePlanSave" runat="server" Text="Submit" OnClick="BtnWorkdonePlanSave_Click" />
+                                                        <asp:Button CssClass="btn btn-primary btn-square" ID="btnWorkDonePlanancel" runat="server" Text="Cancel" />
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                       </div>
                                     <div style="display: none">
-                                        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
                                     </div>
-                                    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
+                                    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server"  
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel1" runat="server" Style="display: none; border-color: Maroon;">
-                                        <div class="row"  style="width: 300px; background-color: #EFFBFB;">
+                                    <asp:Panel ID="Panel1" runat="server" Style="display: none;   ">
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div2">
-                                                        <h3 class="reallynow">
-                                                            Add Particulars Of Item</h3>
-                                                        <div class="row"  style="width: 390px; vertical-align: top;">
+                                                        <div class="card-header">
+                                                            Add Particulars Of Item</div>
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     Particulars
@@ -255,9 +255,9 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"    >
-                                                                    <asp:Button CssClass="btn btn-primary" ID="BtnAddNew" runat="server" Text="Submit" OnClick="BtnAddNew_Click"
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnAddNew" runat="server" Text="Submit" OnClick="BtnAddNew_Click"
                                                                         CommandArgument='<%# Eval("TransId") %>' />
-                                                                    <asp:Button CssClass="btn btn-primary" ID="BtnAddNewCancle" runat="server" Text="Cancel" OnClick="BtnAddNewCancle_Click"
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnAddNewCancle" runat="server" Text="Cancel" OnClick="BtnAddNewCancle_Click"
                                                                         CommandArgument='<%# Eval("TransId") %>' />
                                                                 </div>
                                                             </div>
@@ -310,7 +310,7 @@
                                                         </div>
                                                         <div class="col-lg-4" >
                                                             <div class="col-lg-4" >
-                                                                <asp:Button CssClass="btn btn-primary" ID="BtnReportA" runat="server" Text="View" OnClick="BtnReportA_Click" />
+                                                                <asp:Button CssClass="btn btn-primary btn-square" ID="BtnReportA" runat="server" Text="View" OnClick="BtnReportA_Click" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -346,21 +346,21 @@
                                                                                 background-color: #D8D8D8; font-weight: bold;">
                                                                                 Awarded value of work (Rs.)
                                                                             </div>
-                                                                            <div class="col-lg-4"  colspan="2" style="width: 250px; text-align: center; border: 1px solid black;
+                                                                            <div class="col-lg-4"     style="width: 250px; text-align: center; border: 1px solid black;
                                                                                 background-color: #D8D8D8; font-weight: bold;">
                                                                                 Work Done (Plan)
                                                                             </div>
-                                                                            <div class="col-lg-4"  colspan="2" style="width: 250px; text-align: center; border: 1px solid black;
+                                                                            <div class="col-lg-4"     style="width: 250px; text-align: center; border: 1px solid black;
                                                                                 background-color: #D8D8D8; font-weight: bold;">
                                                                                 Work Done (Actual)
                                                                             </div>
                                                                         </div>
                                                                         <div class="row" >
-                                                                            <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                            <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                                 width: 100px; font-weight: bold;">
                                                                                 Months
                                                                             </div>
-                                                                            <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                            <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                                 width: 100px; font-weight: bold;">
                                                                                 Current Month
                                                                             </div>
@@ -370,11 +370,11 @@
                                                                                 width: 50px; font-weight: bold;">
                                                                                 A
                                                                             </div>
-                                                                            <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                            <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                                 width: 50px; font-weight: bold;">
                                                                                 B
                                                                             </div>
-                                                                            <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                            <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                                 width: 50px; font-weight: bold;">
                                                                                 C
                                                                             </div>
@@ -521,8 +521,8 @@
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4"    >
-                                                <asp:Button CssClass="btn btn-primary" ID="BtnActualMonthlyWorkDoneSave" runat="server" Text="Submit" OnClick="BtnActualMonthlyWorkDoneSave_Click" />
-                                                <asp:Button CssClass="btn btn-primary" ID="BtnActualMonthlyWorkDoneCancel" runat="server" Text="Cancel" />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="BtnActualMonthlyWorkDoneSave" runat="server" Text="Submit" OnClick="BtnActualMonthlyWorkDoneSave_Click" />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="BtnActualMonthlyWorkDoneCancel" runat="server" Text="Cancel" />
                                             </div>
                                         </div>
                                       </div>

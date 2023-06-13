@@ -55,9 +55,9 @@
                                                 </div>
                                             </div>
                                             <div class="row" >
-                                                <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                                <div class="col-lg-4"   >
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                 </div>
                                                 <div class="col-lg-4" >
                                                 </div>
@@ -111,9 +111,9 @@
                                                 </div>
                                             </div>
                                             <div class="row" >
-                                                <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubSubmit" runat="server" Text="Submit" OnClick="btnSubSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubCancel" runat="server" Text="Cancel" OnClick="btnSubCancel_Click" />
+                                                <div class="col-lg-4"   >
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubSubmit" runat="server" Text="Submit" OnClick="btnSubSubmit_Click" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubCancel" runat="server" Text="Cancel" OnClick="btnSubCancel_Click" />
                                                 </div>
                                                 <div class="col-lg-4" >
                                                 </div>
@@ -181,9 +181,9 @@
                                                 </div>
                                             </div>
                                             <div class="row" >
-                                                <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnPartSubmit" runat="server" Text="Submit" OnClick="btnPartSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnPartCancel" runat="server" Text="Cancel" OnClick="btnPartCancel_Click" />
+                                                <div class="col-lg-4"   >
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnPartSubmit" runat="server" Text="Submit" OnClick="btnPartSubmit_Click" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnPartCancel" runat="server" Text="Cancel" OnClick="btnPartCancel_Click" />
                                                 </div>
                                                 <div class="col-lg-4" >
                                                 </div>

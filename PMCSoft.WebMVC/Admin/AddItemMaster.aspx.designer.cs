@@ -15,24 +15,6 @@ namespace PMCSoft.Web.Admin
     {
 
         /// <summary>
-        /// ddlitemGropgrid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlitemGropgrid;
-
-        /// <summary>
-        /// GridView1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
-
-        /// <summary>
         /// ddlGroup control.
         /// </summary>
         /// <remarks>
@@ -42,13 +24,13 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.DropDownList ddlGroup;
 
         /// <summary>
-        /// LnkAddNewGroupName control.
+        /// btnRun control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LnkAddNewGroupName;
+        protected global::System.Web.UI.WebControls.LinkButton btnRun;
 
         /// <summary>
         /// txtItemName control.
@@ -75,7 +57,7 @@ namespace PMCSoft.Web.Admin
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LnkAddNewUnit;
+        protected global::System.Web.UI.WebControls.LinkButton LnkAddNewUnit;
 
         /// <summary>
         /// txtItemMake control.
@@ -112,6 +94,15 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCancel;
+
+        /// <summary>
+        /// GridView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
         /// UpdatePanel1 control.
@@ -267,15 +258,6 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.Label LblEditGroup;
 
         /// <summary>
-        /// TxtEditItem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtEditItem;
-
-        /// <summary>
         /// lblEditUnit control.
         /// </summary>
         /// <remarks>
@@ -292,6 +274,15 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblEditMake;
+
+        /// <summary>
+        /// TxtEditItem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtEditItem;
 
         /// <summary>
         /// txtEditPartNo control.

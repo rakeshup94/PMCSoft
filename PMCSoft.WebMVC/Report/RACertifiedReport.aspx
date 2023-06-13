@@ -9,8 +9,8 @@
             <div id="wrapper" style="margin-left: -100px;">
                 <div class="card"  style="width: 1200px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            RA Chart</h3>
+                        <div class="card-header">
+                            RA Chart</div>
                         <div class="row"  style="width: 1090px;">
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria; width: 150px;">
@@ -21,8 +21,8 @@
                                     </asp:DropDownList>
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:Button CssClass="btn btn-primary" ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
-                                    <asp:Button CssClass="btn btn-primary" ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
                                 </div>
                             </div>
                             <div class="row" >
@@ -140,7 +140,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                                    <asp:Label ID="BillAmount" runat="server" Width="100px" Text='<%#Bind("BillAmount") %>'>
+                                                                    <asp:Label ID="BillAmount" runat="server"   Text='<%#Bind("BillAmount") %>'>
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
@@ -160,7 +160,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                                    <asp:Label ID="Total" runat="server" Width="100px" Text='<%#Bind("Total") %>'>
+                                                                    <asp:Label ID="Total" runat="server"   Text='<%#Bind("Total") %>'>
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
@@ -196,39 +196,39 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4" >
-                                                                    <asp:GridView CssClass="table table-striped"  ID="Gvcertified" runat="server" AutoGenerateColumns="false" GridLines="Both"
-                                                                        EmptyDataText="No Amount Receive" Width="300px">
+                                                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="Gvcertified" runat="server" AutoGenerateColumns="false" GridLines="Both"
+                                                                        EmptyDataText="No Amount Receive"  >
                                                                         <Columns>
                                                                             <asp:TemplateField HeaderText="S.No" Visible="false">
                                                                                 <ItemTemplate>
                                                                                     <%--   <%# Container.DataItemIndex + 1 %>--%>
                                                                                     <asp:HiddenField ID="TransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                                                 </ItemTemplate>
-                                                                                <ItemStyle HorizontalAlign="Center" Width="100px" />
+                                                                                <ItemStyle HorizontalAlign="Center"   />
                                                                             </asp:TemplateField>
                                                                             <asp:TemplateField HeaderText="Amount Receivable">
                                                                                 <ItemTemplate>
                                                                                     <asp:Label ID="AmountReceived" runat="server" Text='<%#Bind("AmountReceived") %>'></asp:Label>
                                                                                 </ItemTemplate>
-                                                                                <ItemStyle Width="100px" />
+                                                                                <ItemStyle   />
                                                                             </asp:TemplateField>
                                                                             <asp:TemplateField HeaderText="Cheque No./RTGS">
                                                                                 <ItemTemplate>
                                                                                     <asp:LinkButton ID="lnkbillperiod" runat="server" Text='<%#Bind("ChequeNoRTGS") %>'></asp:LinkButton>
                                                                                 </ItemTemplate>
-                                                                                <ItemStyle Width="100px" />
+                                                                                <ItemStyle   />
                                                                             </asp:TemplateField>
                                                                             <asp:TemplateField HeaderText="Cheque No./RTGS Date">
                                                                                 <ItemTemplate>
                                                                                     <asp:LinkButton ID="lnksubdate" runat="server" Text='<%#Bind("ChequeNoRTGSDate") %>'></asp:LinkButton>
                                                                                 </ItemTemplate>
-                                                                                <ItemStyle Width="100px" />
+                                                                                <ItemStyle   />
                                                                             </asp:TemplateField>
                                                                         </Columns>
                                                                     </asp:GridView>
                                                                 </div>
                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: left;">
-                                                                    <asp:Label ID="NetReceivable" runat="server" Width="100px" Text='<%#Bind("NetReceivable") %>'>
+                                                                    <asp:Label ID="NetReceivable" runat="server"   Text='<%#Bind("NetReceivable") %>'>
                                                                     </asp:Label>
                                                                 </div>
                                                             </div>

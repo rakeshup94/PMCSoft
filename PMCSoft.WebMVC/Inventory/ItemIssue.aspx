@@ -9,8 +9,8 @@
             <div id="wrapper" style="margin-left: -80px;">
                 <div class="card"  style="width: 1090px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Stock Opening</h3>
+                        <div class="card-header">
+                            Stock Opening</div>
                         <div class="row"  style="width: 1060px;">
                       
                             <div class="row" >
@@ -26,7 +26,7 @@
                                     Issue Date:
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:TextBox CssClass="form-control" ID="TxtIssueDate" runat="server" Width="100px"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="TxtIssueDate" runat="server"  ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="TxtIssueDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
@@ -34,7 +34,7 @@
                                 <div class="col-lg-4"  style="width: 150px; text-align: center;">
                                     Issue For Tower
                                 </div>
-                                <div class="col-lg-4"  style="width: 350px;">
+                                <div class="col-lg-4"    >
                                     <asp:TextBox CssClass="form-control" ID="TxtIssueFoetower" runat="server"></asp:TextBox>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@
                         <div class="row"    >
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="9">
-                                    <asp:GridView CssClass="table table-striped"  ID="GVItemIssue" runat="server" AutoGenerateColumns="false" ShowFooter="true"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVItemIssue" runat="server" AutoGenerateColumns="false" ShowFooter="true"
                                         Width="930" OnRowDataBound="GVItemIssue_RowDataBound">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -69,38 +69,38 @@
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Unit">
                                                 <ItemTemplate>
-                                                    <asp:DropDownList CssClass="form-select" ID="ddlUnit" runat="server" Width="100px" OnSelectedIndexChanged="ddlUnit_SelectedIndexChanged"
+                                                    <asp:DropDownList CssClass="form-select" ID="ddlUnit" runat="server"   OnSelectedIndexChanged="ddlUnit_SelectedIndexChanged"
                                                         AutoPostBack="true">
                                                     </asp:DropDownList>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Item Make">
                                                 <ItemTemplate>
-                                                    <asp:Label ID="TxtItemMake" runat="server" Width="100px"></asp:Label>
+                                                    <asp:Label ID="TxtItemMake" runat="server"  ></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Part No">
                                                 <ItemTemplate>
-                                                    <asp:Label ID="TxtpartNo" runat="server" Width="100px"></asp:Label>
+                                                    <asp:Label ID="TxtpartNo" runat="server"  ></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Available Quantity">
                                                 <ItemTemplate>
-                                                    <asp:Label ID="txtAbQuantity" runat="server" Width="100px"></asp:Label>
+                                                    <asp:Label ID="txtAbQuantity" runat="server"  ></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Issue Quantity">
                                                 <ItemTemplate>
-                                                    <asp:TextBox CssClass="form-control" ID="txtIssueQty" runat="server" Width="100px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtIssueQty" runat="server"  ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtIssueQty"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Description">
                                                 <ItemTemplate>
@@ -108,20 +108,20 @@
                                                         onblur="valid(this)"></asp:TextBox>
                                                 </ItemTemplate>
                                                 <FooterTemplate>
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnAddMore" runat="server" OnClick="btnAddMore_Click" Text="Add More" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddMore" runat="server" OnClick="btnAddMore_Click" Text="Add More" />
                                                 </FooterTemplate>
                                                 <FooterStyle HorizontalAlign="Right" />
                                                 <ItemStyle VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                         <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                     </asp:GridView>
                                 </div>
                                 <div class="row" >
                                     <div class="col-lg-4"  colspan="6" style="text-align: center;">
-                                        <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                        <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" />
                                     </div>
                                 </div>
                           </div>

@@ -43,9 +43,9 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit"
+                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit"
                                     OnClick="btnSubmit_Click" />
-                                <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel"
+                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel"
                                     OnClick="btnCancel_Click" />
                             </div>
                         </div>
@@ -67,7 +67,7 @@
                         <div class="row">
 
                             <div class="col-lg-12">
-                                <asp:GridView CssClass="table table-striped" ID="GVUnit" runat="server" AutoGenerateColumns="false"
+                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn" ID="GVUnit" runat="server" AutoGenerateColumns="false"
                                     GridLines="Both"
                                     OnRowCancelingEdit="GVUnit_RowCancelingEdit" OnRowEditing="GVUnit_RowEditing"
                                     OnRowUpdating="GVUnit_RowUpdating">
@@ -77,7 +77,7 @@
                                                 <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                             
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Unit Name">
                                             <ItemTemplate>
@@ -88,7 +88,7 @@
                                                     onkeyup="valid(this)"
                                                     onblur="valid(this)"></asp:TextBox>
                                             </EditItemTemplate>
-                                            <ItemStyle Width="250px" />
+                                    
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Unit Code">
                                             <ItemTemplate>
@@ -99,7 +99,7 @@
                                                     onkeyup="valid(this)"
                                                     onblur="valid(this)"></asp:TextBox>
                                             </EditItemTemplate>
-                                            <ItemStyle Width="250px" HorizontalAlign="Center" />
+                                          
                                         </asp:TemplateField>
                                         <asp:CommandField ButtonType="Button" ShowEditButton="true" />
                                     </Columns>

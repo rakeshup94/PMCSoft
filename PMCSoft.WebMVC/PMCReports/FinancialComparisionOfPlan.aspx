@@ -8,8 +8,8 @@
             <div id="wrapper"    >
                 <div class="card"     >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            MONTHLY TRACKER</h3>
+                        <div class="card-header">
+                            MONTHLY TRACKER</div>
                         <div class="row"  style="width: 1240px;">
                       
                             <div class="row" >
@@ -45,7 +45,7 @@
                                                                
                                                             </div>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 100px; font-weight: bold;">
                                                                     Plan
                                                                 </div>
@@ -53,7 +53,7 @@
                                                                 
                                                             </div>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"   colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"      style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 50px; font-weight: bold;">
                                                                     
                                                                 </div>
@@ -96,7 +96,7 @@
                                                                 Total Income
                                                             </div>
                                                             <div class="col-lg-4"   style="text-align: center; border: 1px solid black; font-weight: bold;">
-                                                                <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Add New" />
+                                                                <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Add New" />
                                                             </div>
                                                             
                                                             <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
@@ -122,7 +122,7 @@
                                                                 <div class="col-lg-4"  style="border: 1px solid black; width: 20px; font-weight: bold;">
                                                                     PURCHASE/CONSUMPTION
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="border: 1px solid black;">
+                                                                <div class="col-lg-4"     style="border: 1px solid black;">
                                                                 </div>
                                                             </div>
                                                     </HeaderTemplate>
@@ -319,31 +319,31 @@
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4"  style="text-align: right;">
-                                                <asp:Button CssClass="btn btn-primary" ID="btnCalculate" runat="server" Text="Calculate" />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCalculate" runat="server" Text="Calculate" />
                                             </div>
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4"  style="text-align: center;">
-                                                <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server"  />
-                                                <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server"  />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" />
                                             </div>
                                         </div>
                                       </div>
                                      <div style="display: none">
-                                        <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" Text="Button" />
                                     </div>
-                                    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
+                                    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server"  
                                         PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel1" runat="server" Style="display:none; border-color: Maroon;">
-                                        <div class="row"  style="width: 300px; background-color: #EFFBFB;">
+                                    <asp:Panel ID="Panel1" runat="server" Style="display:none;   ">
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div id="Div1">
-                                                        <h3 class="reallynow">
-                                                          Add Particulars</h3>
-                                                        <div class="row"  style="width: 390px; vertical-align: top;">
+                                                        <div class="card-header">
+                                                          Add Particulars</div>
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     Particulars
@@ -355,9 +355,9 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"    >
-                                                                    <asp:Button CssClass="btn btn-primary" ID="BtnIncomeSave" runat="server" Text="Submit" 
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnIncomeSave" runat="server" Text="Submit" 
                                                                         onclick="BtnIncomeSave_Click" />
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnIncomeCancel" runat="server" Text="Cancel" 
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnIncomeCancel" runat="server" Text="Cancel" 
                                                                         onclick="btnIncomeCancel_Click"/>
                                                                 </div>
                                                             </div>

@@ -16,8 +16,8 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            WORK PROGRAMME APPROVAL</h3>
+                        <div class="card-header">
+                            WORK PROGRAMME APPROVAL</div>
                         <div class="row"  style="width: 920px;">
                            
                             <div class="row" >
@@ -30,9 +30,9 @@
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  colspan="2">
+                                <div class="col-lg-4"    >
                                     <asp:DataList ID="DataList1" runat="server" OnItemDataBound="DataList1_ItemDataBound"
-                                        Width="910px" ShowHeader="false">
+                                           ShowHeader="false">
                                         <HeaderTemplate>
                                             <div class="row" >
                                         </HeaderTemplate>
@@ -46,7 +46,7 @@
                                             </div>
                                             <div class="row" >
                                                 <div class="col-lg-4" >
-                                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false"   
+                                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="false"   
                                                         EmptyDataText="No Record Found" OnRowCommand="GridView1_RowCommand">
                                                         <Columns>
                                                             <asp:TemplateField HeaderText="S.No">
@@ -97,27 +97,27 @@
                                         </FooterTemplate>
                                     </asp:DataList>
                                     <div style="display: none">
-                                        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
                                     </div>
-                                    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
+                                    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server"  
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
                                     <asp:Panel ID="Panel1" runat="server" Width="810px" Height="500px" Style="display: none;
-                                        border-color: Maroon; background-color: #F7F8E0;" ScrollBars="Horizontal">
+                                           background-color: #F7F8E0;" ScrollBars="Horizontal">
                                         <div class="row"  style="width: 800px; background-color: #F7F8E0;">
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div class="card-body">
-                                                        <h3 class="reallynow">
-                                                            Work Programme Detail</h3>
+                                                        <div class="card-header">
+                                                            Work Programme Detail</div>
                                                         <div class="row"  style="width: 790px;">
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  style="white-space: nowrap;">
                                                                     WP Date:
                                                                 </div>
                                                                 <div class="col-lg-4" >
-                                                                    <asp:Label ID="lblWorkProgrammeDate" runat="server" Width="100px" Font-Size="12px"></asp:Label>
+                                                                    <asp:Label ID="lblWorkProgrammeDate" runat="server"   Font-Size="12px"></asp:Label>
                                                                     <asp:HiddenField ID="hdnWPDate" runat="server" />
                                                                     <asp:HiddenField ID="hdnWPID" runat="server" />
                                                                 </div>
@@ -135,7 +135,7 @@
                                                                     No.:
                                                                 </div>
                                                                 <div class="col-lg-4" >
-                                                                    <asp:Label ID="lblNumber" runat="server" Width="100px"></asp:Label>
+                                                                    <asp:Label ID="lblNumber" runat="server"  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"  style="white-space: nowrap;">
                                                                     ENG. In Charge:
@@ -283,9 +283,9 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  colspan="6" style="text-align: center;">
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Approved" OnClick="btnSubmit_Click" />
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Dis Approved" OnClick="btnCancel_Click" />
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnClose" runat="server" Text="Cancel" OnClick="btnClose_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Approved" OnClick="btnSubmit_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Dis Approved" OnClick="btnCancel_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnClose" runat="server" Text="Cancel" OnClick="btnClose_Click" />
                                                                 </div>
                                                             </div>
                                                           </div>
@@ -295,19 +295,19 @@
                                           </div>
                                     </asp:Panel>
                                     <div style="display: none">
-                                        <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" Text="Button" />
                                     </div>
-                                    <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
+                                    <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server"  
                                         PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel2" runat="server" Style="display: none; border-color: Maroon;">
+                                    <asp:Panel ID="Panel2" runat="server" Style="display: none;   ">
                                         <div class="row"  style="width: 400px; background-color: #F7F8E0;">
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div class="card-body">
-                                                        <h3 class="reallynow">
-                                                            Work Programme Approval</h3>
+                                                        <div class="card-header">
+                                                            Work Programme Approval</div>
                                                         <div class="row"  style="width: 390;">
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
@@ -315,13 +315,13 @@
                                                                     <asp:HiddenField ID="hdnWPIDApproved" runat="server" />
                                                                 </div>
                                                                 <div class="col-lg-4" >
-                                                                    <asp:TextBox CssClass="form-control" ID="txtRemark" runat="server" TextMode="MultiLine" Width="300px"></asp:TextBox>
+                                                                    <asp:TextBox CssClass="form-control" ID="txtRemark" runat="server" TextMode="MultiLine"  ></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"    >
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnApproved" runat="server" Text="Submit" OnClick="btnApproved_Click" />
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnApprovedCancel" runat="server" Text="Cancel" OnClick="btnApprovedCancel_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnApproved" runat="server" Text="Submit" OnClick="btnApproved_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnApprovedCancel" runat="server" Text="Cancel" OnClick="btnApprovedCancel_Click" />
                                                                 </div>
                                                             </div>
                                                           </div>
@@ -331,19 +331,19 @@
                                           </div>
                                     </asp:Panel>
                                     <div style="display: none">
-                                        <asp:Button CssClass="btn btn-primary" ID="Button3" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button3" runat="server" Text="Button" />
                                     </div>
-                                    <cc1:ModalPopupExtender ID="ModalPopupExtender3" runat="server" BackgroundCssClass="popUpStyle"
+                                    <cc1:ModalPopupExtender ID="ModalPopupExtender3" runat="server"  
                                         PopupControlID="Panel3" TargetControlID="Button3" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel3" runat="server" Style="display: none; border-color: Maroon;">
+                                    <asp:Panel ID="Panel3" runat="server" Style="display: none;   ">
                                         <div class="row"  style="width: 400px; background-color: #F7F8E0;">
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div class="card-body">
-                                                        <h3 class="reallynow">
-                                                            Work Programme Dis Approval</h3>
+                                                        <div class="card-header">
+                                                            Work Programme Dis Approval</div>
                                                         <div class="row"  style="width: 390;">
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
@@ -351,13 +351,13 @@
                                                                     <asp:HiddenField ID="hdnWPIDDisApproved" runat="server" />
                                                                 </div>
                                                                 <div class="col-lg-4" >
-                                                                    <asp:TextBox CssClass="form-control" ID="txtRemarkDisApproved" runat="server" TextMode="MultiLine" Width="300px"></asp:TextBox>
+                                                                    <asp:TextBox CssClass="form-control" ID="txtRemarkDisApproved" runat="server" TextMode="MultiLine"  ></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"    >
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnDisApproved" runat="server" Text="Submit" OnClick="btnDisApproved_Click" />
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancelDisApproved" runat="server" Text="Cancel" OnClick="btnCancelDisApproved_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnDisApproved" runat="server" Text="Submit" OnClick="btnDisApproved_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancelDisApproved" runat="server" Text="Cancel" OnClick="btnCancelDisApproved_Click" />
                                                                 </div>
                                                             </div>
                                                           </div>

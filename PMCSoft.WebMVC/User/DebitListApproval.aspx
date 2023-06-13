@@ -9,8 +9,8 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Debitors List For Approval</h3>
+                        <div class="card-header">
+                            Debitors List For Approval</div>
                         <div class="row"  style="width: 930px;">
                             <div class="row" >
                                 <div class="col-lg-4"  style="width: 120px; text-align: center;">
@@ -31,7 +31,7 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="4">
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="915px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="915px"
                                         EmptyDataText="No Record Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -88,24 +88,24 @@
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Suggest Amount">
                                                 <ItemTemplate>
-                                                    <asp:TextBox CssClass="form-control" ID="txtSuggestAmount" runat="server" Width="100px" Enabled="false" ReadOnly="true"
+                                                    <asp:TextBox CssClass="form-control" ID="txtSuggestAmount" runat="server"   Enabled="false" ReadOnly="true"
                                                         BorderColor="Gray" BackColor="LightGray">
                                                     </asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" FilterType="Custom, Numbers"
                                                         TargetControlID="txtSuggestAmount" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </ItemTemplate>
-                                                <ItemStyle VerticalAlign="Middle" Width="100px" />
+                                                <ItemStyle VerticalAlign="Middle"   />
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                     </asp:GridView>
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                <div class="col-lg-4"   >
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                 </div>
                             </div>
                           </div>

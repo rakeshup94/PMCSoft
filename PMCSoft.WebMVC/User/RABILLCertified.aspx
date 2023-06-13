@@ -19,13 +19,13 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Submitted Bill</h3>
+                        <div class="card-header">
+                            Submitted Bill</div>
                     </div>
                     <div class="row"   >
                         <div class="row"   >
-                            <div class="col-lg-4"  style="vertical-align: top; width: 600px;">
-                                <asp:GridView CssClass="table table-striped"  ID="GvRAbillSub" runat="server" AutoGenerateColumns="false" GridLines="Both"
+                            <div class="col-lg-4"   >
+                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GvRAbillSub" runat="server" AutoGenerateColumns="false" GridLines="Both"
                                     OnRowCommand="GvRAbillSub_RowCommand" EmptyDataText="No Record Found">
                                     <Columns>
                                         <asp:TemplateField HeaderText="S.No">
@@ -33,13 +33,13 @@
                                                 <%# Container.DataItemIndex + 1 %>
                                                 <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                             
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Project">
                                             <ItemTemplate>
                                                 <asp:LinkButton ID="LnkProject" runat="server" Text='<%#Bind("ProjectName") %>'></asp:LinkButton>
                                             </ItemTemplate>
-                                            <ItemStyle Width="550px" />
+                                            <ItemStyle   />
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Bill NO">
                                             <ItemTemplate>
@@ -94,17 +94,17 @@
                                     </Columns>
                                 </asp:GridView>
                                 <div style="display: none">
-                                    <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
                                 </div>
-                                <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
+                                <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server"  
                                     PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
                                     Enabled="True">
                                 </cc1:ModalPopupExtender>
                                 <asp:Panel ID="Panel1" runat="server" Width="810px" Height="250px" Style="display: none;
-                                    border-color: Maroon; background-color: #F7F8E0;">
+                                       background-color: #F7F8E0;">
                                     <div class="row"  style="width: 810px; vertical-align: top;">
                                         <div class="row" >
-                                            <div class="col-lg-4"  style="width: 150px;">
+                                            <div class="col-lg-4"    >
                                                 Project
                                             </div>
                                             <div class="col-lg-4" >
@@ -120,7 +120,7 @@
                                             </div>
                                         </div>
                                         <div class="row" >
-                                            <div class="col-lg-4"  style="width: 150px;">
+                                            <div class="col-lg-4"    >
                                                 Bill No
                                             </div>
                                             <div class="col-lg-4" >
@@ -218,10 +218,10 @@
                                             </div>
                                         </div>
                                         <div class="row"   >
-                                            <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                                <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" class="button-bg" Text="Save" OnClick="btnSubmit_Click"
+                                            <div class="col-lg-4"   >
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server"    Text="Save" OnClick="btnSubmit_Click"
                                                      />
-                                                <asp:Button CssClass="btn btn-primary" ID="btnReset" runat="server" class="button-bg" Text="Cancel" OnClick="btnReset_Click"
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnReset" runat="server"    Text="Cancel" OnClick="btnReset_Click"
                                                      />
                                             </div>
                                         </div>
@@ -231,18 +231,18 @@
                         </div>
                       </div>
                     <div style="display: none">
-                        <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
+                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" Text="Button" />
                     </div>
-                    <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
+                    <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server"  
                         PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False"  
                         Enabled="True">
                     </cc1:ModalPopupExtender>
                     <asp:Panel ID="Panel2" runat="server" Width="810px" Height="280px" Style="display: none;
-                        border-color: Maroon; background-color: #F7F8E0;">
+                           background-color: #F7F8E0;">
                         <div class="row"  style="width: 810px; vertical-align: top;">
                             <div class="row" >
                                 <div class="col-lg-4" >
-                                    <asp:GridView CssClass="table table-striped"  ID="GvCertifiedView" runat="server" AutoGenerateColumns="false" GridLines="Both"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GvCertifiedView" runat="server" AutoGenerateColumns="false" GridLines="Both"
                                         EmptyDataText="No Record Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -250,13 +250,13 @@
                                                     <%# Container.DataItemIndex + 1 %>
                                                     <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Project">
                                                 <ItemTemplate>
                                                     <asp:LinkButton ID="LnkProject" runat="server" Text='<%#Bind("ProjectName") %>'></asp:LinkButton>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="550px" />
+                                                <ItemStyle   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Bill NO">
                                                 <ItemTemplate>
@@ -305,10 +305,10 @@
                                 </div>
                             </div>
                             <div class="row"   >
-                                <div class="col-lg-4"  colspan="4" style="text-align: center;">
+                                <div class="col-lg-4"   >
                                     <div class="row"   >
-                                        <div class="col-lg-4"  colspan="4" style="text-align: center;">
-                                            <asp:Button CssClass="btn btn-primary" ID="Button4" runat="server" class="button-bg" Text="Cancel" OnClick="Button4_Click"
+                                        <div class="col-lg-4"   >
+                                            <asp:Button CssClass="btn btn-primary btn-square" ID="Button4" runat="server"    Text="Cancel" OnClick="Button4_Click"
                                                 Style="width: auto; text-align: center" />
                                         </div>
                                 </div>

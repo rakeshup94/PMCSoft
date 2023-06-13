@@ -257,7 +257,7 @@ namespace PMCSoft.Web.User
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        protected void lnkBtnProject_Click(object sender, EventArgs e)
         {
             GVProject.Visible = true;
         }
@@ -532,7 +532,7 @@ namespace PMCSoft.Web.User
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        protected void ImageButton2_Click(object sender, EventArgs e)
         {
             GridView2.Visible = true;
             ModalPopupExtender1.Show();

@@ -9,9 +9,9 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Morning Report</h3>
-                        <div class="row"  style="width: 930px">
+                        <div class="card-header">
+                            Morning Report</div>
+                        <div class="row"   >
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center;">
                                     Project Name
@@ -30,20 +30,20 @@
                                     </cc1:CalendarExtender>
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:Button CssClass="btn btn-primary" ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
-                                     <asp:Button CssClass="btn btn-primary" ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnView" runat="server" Text="View" OnClick="btnView_Click" />
+                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnPrint" runat="server" Text="Print Preview" Visible="false" OnClick="btnPrint_Click" />
                                 </div>
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="5" style="text-align: center;">
-                                    <asp:Panel ID="Panel1" runat="server" Width="910px" Visible="false">
+                                    <asp:Panel ID="Panel1" runat="server"    Visible="false">
                                         <div class="row"  style="width: 900px;">
                                             <div class="row" >
                                                 <div class="col-lg-4"  style="white-space: nowrap;">
                                                     WP Date:
                                                 </div>
                                                 <div class="col-lg-4" >
-                                                    <asp:Label ID="lblWorkProgrammeDate" runat="server" Width="100px" Font-Size="12px"></asp:Label>
+                                                    <asp:Label ID="lblWorkProgrammeDate" runat="server"   Font-Size="12px"></asp:Label>
                                                     <asp:HiddenField ID="hdnWPDate" runat="server" />
                                                     <asp:HiddenField ID="hdnWPID" runat="server" />
                                                 </div>
@@ -63,13 +63,13 @@
                                                     No.:
                                                 </div>
                                                 <div class="col-lg-4" >
-                                                    <asp:Label ID="lblNumber" runat="server" Width="100px"></asp:Label>
+                                                    <asp:Label ID="lblNumber" runat="server"  ></asp:Label>
                                                 </div>
                                                 <div class="col-lg-4"  style="white-space: nowrap;">
                                                     ENG. In Charge:
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: left;">
-                                                    <asp:Label ID="lblEngInCharge" runat="server" Width="300px"></asp:Label>
+                                                    <asp:Label ID="lblEngInCharge" runat="server"  ></asp:Label>
                                                     <asp:HiddenField ID="hdnEngInCharge" runat="server" />
                                                 </div>
                                                 <div class="col-lg-4"  style="width: 60px;">

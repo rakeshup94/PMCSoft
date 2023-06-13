@@ -9,8 +9,8 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            PDC</h3>
+                        <div class="card-header">
+                            PDC</div>
                         <div class="row"  style="width: 930px;">
                             <div class="row" >
                                 <div class="col-lg-4"  style="width: 100px; text-align: center;">
@@ -23,8 +23,8 @@
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  colspan="2">
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" Width="910px" AutoGenerateColumns="false"
+                                <div class="col-lg-4"    >
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server"    AutoGenerateColumns="false"
                                         EmptyDataText="No Records Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -37,7 +37,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblIssueID" runat="server" Text='<%#Bind("IssueID") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="60px" HorizontalAlign="Center" />
+                                              
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Vendor">
                                                 <ItemTemplate>
@@ -61,7 +61,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblChequeNo" runat="server" Text='<%#Bind("ChequeNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="80px" HorizontalAlign="Center" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Amount">
                                                 <ItemTemplate>
@@ -73,10 +73,10 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblIssueDate" runat="server" Text='<%#Bind("IssueDate") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="80px" HorizontalAlign="Center" />
+                                           
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                     </asp:GridView>
                                 </div>
                             </div>

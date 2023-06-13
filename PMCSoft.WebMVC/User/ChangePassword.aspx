@@ -9,9 +9,9 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Change Password</h3>
-                        <div class="row"  style="width: 930px">
+                        <div class="card-header">
+                            Change Password</div>
+                        <div class="row"   >
                             <div class="row" >
                                 <div class="col-lg-4" >
                                     Old Password:*
@@ -49,10 +49,10 @@
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  colspan="2">
-                                    <asp:Button CssClass="btn btn-primary" ID="btnSave" runat="server" Class="button-bg"  Text="Submit"
+                                <div class="col-lg-4"    >
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSave" runat="server"     Text="Submit"
                                         OnClick="btnSave_Click" />
-                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Class="button-bg" Style="width: auto;"
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server"    Style="width: auto;"
                                         Text="Cancel" OnClick="btnCancel_Click" />
                                 </div>
                             </div>

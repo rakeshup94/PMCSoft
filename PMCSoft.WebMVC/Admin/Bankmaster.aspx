@@ -22,12 +22,12 @@
                             </HeaderTemplate>
                             <ContentTemplate>
                                 <div class="card-body">
-                                    <h3 class="reallynow">
-                                        Bank Detail</h3>
+                                    <div class="card-header">
+                                        Bank Detail</div>
                                     <div class="row"  style="width: 910px;">
                                         <div class="row" >
                                             <div class="col-lg-4"   >
-                                                <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="540px"
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="False"  
                                                     OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowEditing="GridView1_RowEditing"
                                                     OnRowUpdating="GridView1_RowUpdating">
                                                     <Columns>
@@ -55,13 +55,13 @@
                                                     <HeaderStyle CssClass="reallynow" />
                                                 </asp:GridView>
                                             </div>
-                                            <div class="col-lg-4"  style="width: 390px; vertical-align: top;">
+                                            <div class="col-lg-4"   >
                                                 <div class="card-body">
-                                                    <h3 class="reallynow">
-                                                        Add Bank</h3>
+                                                    <div class="card-header">
+                                                        Add Bank</div>
                                                     <div class="row"  style="width: 380;">
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="width: 100px;">
+                                                            <div class="col-lg-4"    >
                                                                 Bank Name
                                                             </div>
                                                             <div class="col-lg-4" >
@@ -71,8 +71,8 @@
                                                         </div>
                                                         <div class="row" >
                                                             <div class="col-lg-4"    >
-                                                                <asp:Button CssClass="btn btn-primary" ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Submit" />
-                                                                <asp:Button CssClass="btn btn-primary" ID="btnCancle" runat="server" OnClick="btnCancle_Click" Text="Cancle"
+                                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Submit" />
+                                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancle" runat="server" OnClick="btnCancle_Click" Text="Cancle"
                                                                     CausesValidation="False" />
                                                             </div>
                                                         </div>
@@ -92,11 +92,11 @@
                                     <div class="row" >
                                         <div class="col-lg-4" >
                                             <div class="card-body">
-                                                <h3 class="reallynow">
-                                                    Add Branch</h3>
+                                                <div class="card-header">
+                                                    Add Branch</div>
                                                 <div class="row"  style="width: 330px;">
                                                     <div class="row" >
-                                                        <div class="col-lg-4"  style="width: 100px;">
+                                                        <div class="col-lg-4"    >
                                                             Bank
                                                         </div>
                                                         <div class="col-lg-4" >
@@ -163,10 +163,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="row" >
-                                                        <div class="col-lg-4"  colspan="2">
-                                                            <asp:Button CssClass="btn btn-primary" ID="btnbranchsave" runat="server" OnClick="btnbranchsave_Click" Text="Save"
+                                                        <div class="col-lg-4"    >
+                                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnbranchsave" runat="server" OnClick="btnbranchsave_Click" Text="Save"
                                                                 Width="70px" />
-                                                            <asp:Button CssClass="btn btn-primary" ID="btnbranchcancle" runat="server" CausesValidation="false" OnClick="btnbranchcancle_Click"
+                                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnbranchcancle" runat="server" CausesValidation="false" OnClick="btnbranchcancle_Click"
                                                                 Text="Cancle" Width="70px" />
                                                         </div>
                                                     </div>
@@ -177,12 +177,12 @@
                                     <div class="row" >
                                         <div class="col-lg-4"   >
                                             <div class="card-body">
-                                                <h3 class="reallynow">
-                                                    Branch Detail</h3>
+                                                <div class="card-header">
+                                                    Branch Detail</div>
                                                 <div class="row"  style="width: 900px;">
                                                     <div class="row" >
                                                         <div class="col-lg-4"   >
-                                                            <asp:GridView CssClass="table table-striped"  ID="GridView2" runat="server" AutoGenerateColumns="False" Width="880px"
+                                                            <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView2" runat="server" AutoGenerateColumns="False" Width="880px"
                                                                 OnRowCancelingEdit="GridView2_RowCancelingEdit" OnRowEditing="GridView2_RowEditing"
                                                                 OnRowUpdating="GridView2_RowUpdating">
                                                                 <Columns>
@@ -236,7 +236,7 @@
                                                                         <HeaderStyle Width="30px" />
                                                                     </asp:CommandField>
                                                                 </Columns>
-                                                                <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                                               
                                                             </asp:GridView>
                                                         </div>
                                                     </div>

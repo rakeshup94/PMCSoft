@@ -28,9 +28,9 @@ namespace PMCSoft.Web.Admin
             {
                 if (!IsPostBack)
                 {
-                    BindGetGroupDDL();
-                    BindGetGroupDDLGrid();
-                    //BindGetItemDetail();
+                    PMC.BindGetGroupDDL(ddlGroup);
+                    PMC.BindGetUnitDetail(ddlUnit);
+                    BindGetItemDetail();
                 }
             }
             catch (Exception ex)
@@ -39,40 +39,15 @@ namespace PMCSoft.Web.Admin
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        public void BindGetGroupDDL()
-        {
-            try
-            {
-                PMC.BindGetGroupDDL(ddlGroup);
-                PMC.BindGetUnitDetail(ddlUnit);
 
-            }
-            catch (Exception ex)
-            {
-                string scripts = "alert('Some error occurs.');";
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-            }
-        }
-        public void BindGetGroupDDLGrid()
-        {
-            try
-            {
-                PMC.BindGetGroupDDL(ddlitemGropgrid);
 
-            }
-            catch (Exception ex)
-            {
-                string scripts = "alert('Some error occurs.');";
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-            }
-        }
 
         public void BindGetItemDetail()
         {
             try
             {
                 Hashtable ht = new Hashtable();
-                ht.Add("@ItemGroupID", ddlitemGropgrid.SelectedValue);
+                ht.Add("@ItemGroupID", ddlGroup.SelectedValue);
                 DataTable dt = PMCApp.Get(ht, "GetItemDetailByid");
                 GridView1.DataSource = dt;
                 GridView1.DataBind();

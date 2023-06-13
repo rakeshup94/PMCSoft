@@ -16,8 +16,8 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            VIEW / EDIT WORK PROGRAMME</h3>
+                        <div class="card-header">
+                            VIEW / EDIT WORK PROGRAMME</div>
                         <div class="row"  style="width: 920px;">
                          
                             <div class="row" >
@@ -30,9 +30,9 @@
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  colspan="2">
+                                <div class="col-lg-4"    >
                                     <asp:DataList ID="DataList1" runat="server" OnItemDataBound="DataList1_ItemDataBound"
-                                        Width="910px" ShowHeader="false">
+                                           ShowHeader="false">
                                         <HeaderTemplate>
                                             <div class="row" >
                                         </HeaderTemplate>
@@ -46,7 +46,7 @@
                                             </div>
                                             <div class="row" >
                                                 <div class="col-lg-4" >
-                                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="890px"
+                                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="false"  
                                                         EmptyDataText="No Record Found" OnRowCommand="GridView1_RowCommand">
                                                         <Columns>
                                                             <asp:TemplateField HeaderText="S.No">
@@ -97,27 +97,27 @@
                                         </FooterTemplate>
                                     </asp:DataList>
                                     <div style="display: none">
-                                        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
                                     </div>
-                                    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
+                                    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server"  
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
                                     <asp:Panel ID="Panel1" runat="server" Width="900px" Height="500px" Style="display: none;
-                                        border-color: Maroon; background-color: #F7F8E0;" ScrollBars="Horizontal">
+                                           background-color: #F7F8E0;" ScrollBars="Horizontal">
                                         <div class="row"  style="width: 800px; background-color: #F7F8E0;">
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div class="card-body">
-                                                        <h3 class="reallynow">
-                                                            Work Programme Detail</h3>
+                                                        <div class="card-header">
+                                                            Work Programme Detail</div>
                                                         <div class="row"  style="width: 790px;">
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  style="white-space: nowrap;">
                                                                     WP Date:
                                                                 </div>
                                                                 <div class="col-lg-4" >
-                                                                    <asp:Label ID="lblWorkProgrammeDate" runat="server" Width="100px" Font-Size="12px"></asp:Label>
+                                                                    <asp:Label ID="lblWorkProgrammeDate" runat="server"   Font-Size="12px"></asp:Label>
                                                                     <asp:HiddenField ID="hdnWPDate" runat="server" />
                                                                     <asp:HiddenField ID="hdnWPID" runat="server" />
                                                                     <asp:HiddenField ID="hdnProjID" runat="server" />
@@ -136,7 +136,7 @@
                                                                     No.:
                                                                 </div>
                                                                 <div class="col-lg-4" >
-                                                                    <asp:Label ID="lblNumber" runat="server" Width="100px"></asp:Label>
+                                                                    <asp:Label ID="lblNumber" runat="server"  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"  style="white-space: nowrap;">
                                                                     ENG. In Charge:
@@ -289,10 +289,10 @@
                                                                                 <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center">
                                                                                 </div>
                                                                                  <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;">
-                                                                <asp:Button CssClass="btn btn-primary" ID="btnAdd" runat="server" Text="Add Item" OnClick="btnAdd_Click" />
+                                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnAdd" runat="server" Text="Add Item" OnClick="btnAdd_Click" />
                                                             </div>
                                                                                 <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center">
-                                                                                    <asp:Button CssClass="btn btn-primary" ID="btnCalculate" runat="server" Text="Calculate" BackColor="#33ccff"
+                                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCalculate" runat="server" Text="Calculate" BackColor="#33ccff"
                                                                                         BorderColor="Navy" OnClick="btnCalculate_Click" />
                                                                                 </div>
                                                                             </div>
@@ -327,8 +327,8 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  colspan="6" style="text-align: center;">
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Update" OnClick="btnSubmit_Click" />
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Update" OnClick="btnSubmit_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                                 </div>
                                                             </div>
                                                           </div>
@@ -338,14 +338,14 @@
                                           </div>
                                     </asp:Panel>
                                      <div style="display: none">
-                                        <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" Text="Button" />
                                     </div>
-                                    <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
+                                    <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server"  
                                         PopupControlID="Panel2" TargetControlID="Button2" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel2" runat="server" Width="300px" Height="200px" Style="display: none;
-                                        border-color: Maroon; background-color: #F7F8E0;">
+                                    <asp:Panel ID="Panel2" runat="server"   Height="200px" Style="display: none;
+                                           background-color: #F7F8E0;">
                                         <div class="row"  style="width: 300px; background-color: #F7F8E0;" border="1">
                                             <div class="row" >
                                                 <div class="col-lg-4" >
@@ -412,8 +412,8 @@
                                                 </div>
                                                   <div class="row"   >
                                                  <div class="col-lg-4"    >
-                                                    <asp:Button CssClass="btn btn-primary" ID="BtnSaveADD" runat="server" Text="Save" OnClick="BtnSaveADD_Click"   class="button-bg"/>
-                                                     <asp:Button CssClass="btn btn-primary" ID="BtnCanceladd" runat="server" Text="Cancel"  OnClick="BtnCanceladd_Click"  class="button-bg"/>
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnSaveADD" runat="server" Text="Save" OnClick="BtnSaveADD_Click"     />
+                                                     <asp:Button CssClass="btn btn-primary btn-square" ID="BtnCanceladd" runat="server" Text="Cancel"  OnClick="BtnCanceladd_Click"    />
                                                 </div>
                                                 
                                                 </div>

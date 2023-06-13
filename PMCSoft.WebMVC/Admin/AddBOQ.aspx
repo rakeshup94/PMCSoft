@@ -41,8 +41,7 @@
                             <div class="row">
                                 <div class="col-12 d-block d-sm-none">
                                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                        <button class="nav-link active text-start" data-bs-toggle="pill" data-bs-target="#tab-0"
-                                            type="button">
+                                        <button class="nav-link active text-start" data-bs-toggle="pill" data-bs-target="#tab-0" type="button">
                                             Category</button>
                                         <button class="nav-link text-start" data-bs-toggle="pill"
                                             data-bs-target="#tab-1" type="button">
@@ -119,10 +118,10 @@
                                             </div>
                                             <div class="row mtm">
                                                 <div class="col-lg-12">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server"
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server"
                                                         Text="Submit"
                                                         OnClick="btnSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server"
+                                                    <asp:Button CssClass="btn btn-default btn-square" ID="btnCancel" runat="server"
                                                         Text="Cancel"
                                                         OnClick="btnCancel_Click" />
                                                 </div>
@@ -203,10 +202,10 @@
 
 
                                                 <div class="col-lg-12">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubSubmit" runat="server"
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubSubmit" runat="server"
                                                         Text="Submit"
                                                         OnClick="btnSubSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubCancel" runat="server"
+                                                    <asp:Button CssClass="btn btn-default btn-square" ID="btnSubCancel" runat="server"
                                                         Text="Cancel"
                                                         OnClick="btnSubCancel_Click" />
                                                 </div>
@@ -302,10 +301,10 @@
                                             </div>
                                             <div class="row mtm">
                                                 <div class="col-lg-12">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnPartSubmit"
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnPartSubmit"
                                                         runat="server" Text="Submit"
                                                         OnClick="btnPartSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnPartCancel"
+                                                    <asp:Button CssClass="btn btn-default btn-square" ID="btnPartCancel"
                                                         runat="server" Text="Cancel" OnClick="btnPartCancel_Click" />
                                                 </div>
                                             </div>
@@ -315,7 +314,7 @@
                                                 <div class="col-lg-12">
                                                     <div class="mb-3">
                                                         <asp:FileUpload ID="FileUpload2" runat="server" />
-                                                        <asp:Button CssClass="btn btn-primary" ID="btnBOQUpload" runat="server"
+                                                        <asp:Button CssClass="btn btn-primary btn-square" ID="btnBOQUpload" runat="server"
                                                             Text="Upload"
                                                             OnClick="btnBOQUpload_Click" />
                                                     </div>
@@ -348,7 +347,7 @@
                                 <div class="col-lg-12">
                                     <div class="mb-3">
                                         <asp:FileUpload ID="FileUpload1" runat="server" />
-                                        <asp:Button CssClass="btn btn-primary" ID="btnUpload" runat="server" Text="Upload"
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="btnUpload" runat="server" Text="Upload"
                                             OnClick="btnUpload_Click" />
                                     </div>
                                 </div>

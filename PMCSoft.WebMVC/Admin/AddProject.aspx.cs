@@ -572,7 +572,7 @@ namespace PMCSoft.Web.Admin
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-        protected void ImgRefresh_Click(object sender, ImageClickEventArgs e)
+        protected void ImgRefresh_Click(object sender, EventArgs e)
         {
             try
             {

@@ -15,10 +15,10 @@
                 <div class="row" >
                     <div class="col-lg-4" >
                         <div id="rightnow" style="width: 1230px;">
-                            <h3 class="reallynow">
+                            <div class="card-header">
                                 <span>Right Now</span>
                                 <br />
-                            </h3>
+                            </div>
                             <p class="youhave">
                                 You have
                                 <asp:Label ID="lblP" runat="server" Text=""></asp:Label>
@@ -27,11 +27,11 @@
                         </div>
                         <div id="infobox" style="width: 455px; height: 192px;">
                             <h3>
-                                Today&#39;s Labour Strength</h3>
+                                Today&#39;s Labour Strength</div>
                             <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                                 <ContentTemplate>
                                 <asp:Panel ID="Panel44" runat="server" Height="145px" Width="445px" ScrollBars="Both">
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="445px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="445px"
                                         AllowPaging="True" 
                                         OnRowCommand="GridView1_RowCommand">
                                         <Columns>
@@ -39,12 +39,12 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="40px" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Project Name">
                                                 <ItemTemplate>
                                                     <asp:LinkButton ID="lnkProjectName" runat="server" Text='<%#Bind("ProjectName") %>'
-                                                        CommandName="Project" CausesValidation="false" ForeColor="Blue" Font-Underline="true"></asp:LinkButton>
+                                                        CommandName="Project" CausesValidation="false"  ></asp:LinkButton>
                                                     <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Bind("PRJID") %>' />
                                                 </ItemTemplate>
                                             </asp:TemplateField>
@@ -52,28 +52,28 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSK" runat="server" Text='<%#Bind("SK") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="SEMI">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSEMI" runat="server" Text='<%#Bind("SEMI") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="UNSK">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblUNSK" runat="server" Text='<%#Bind("UNSK") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="OT">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblOT" runat="server" Text='<%#Bind("OT") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="50px" />
+                                                 
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                         <PagerStyle BackColor="#D9EAED" ForeColor="#202020" Font-Underline="true" />
                                     </asp:GridView>
                                     </asp:Panel>
@@ -82,11 +82,11 @@
                         </div>
                         <div id="infobox" class="margin-left" style="width: 455px; height: 192px;">
                             <h3>
-                                Staffs Attendance</h3>
+                                Staffs Attendance</div>
                             <asp:UpdatePanel ID="UpdatePanel3" runat="server">
                                 <ContentTemplate>
                                 <asp:Panel ID="Panel4" runat="server" Height="145px" Width="445px" ScrollBars="Both">
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView2" runat="server" AutoGenerateColumns="false" Width="445px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView2" runat="server" AutoGenerateColumns="false" Width="445px"
                                         AllowPaging="True" 
                                         OnRowCommand="GridView2_RowCommand">
                                         <Columns>
@@ -94,12 +94,12 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="40px" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Project Name">
                                                 <ItemTemplate>
                                                     <asp:LinkButton ID="lnkProjectName" runat="server" Text='<%#Bind("ProjectName") %>'
-                                                        CommandName="Project" ForeColor="Blue" Font-Underline="true"></asp:LinkButton>
+                                                        CommandName="Project"  ></asp:LinkButton>
                                                     <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Bind("PRJID") %>' />
                                                 </ItemTemplate>
                                             </asp:TemplateField>
@@ -116,7 +116,7 @@
                                                 <ItemStyle HorizontalAlign="Center" Width="80px" />
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                         <PagerStyle BackColor="#D9EAED" ForeColor="#202020" Font-Underline="true" />
                                     </asp:GridView>
                                     </asp:Panel>
@@ -126,13 +126,13 @@
                         </div>
                         <div id="infobox" class="margin-left" style="width: 305px; height: 192px;">
                             <h3>
-                                Notifications</h3>
+                                Notifications</div>
                             <%--<asp:UpdatePanel ID="UpdatePanel5" runat="server">
                                         <ContentTemplate>--%>
                             <div class="row"  style="width: 295px;">
                                 <div class="row" >
                                     <div class="col-lg-4"  style="text-align: right;">
-                                        <asp:ImageButton ID="ImgAdd" runat="server" ImageUrl="~/img/icons/add.png" Width="12px"
+                                          <asp:LinkButton ID="ImgAdd" runat="server" ImageUrl="~/img/icons/add.png" Width="12px"
                                             OnClick="ImgAdd_Click" />
                                     </div>
                                 </div>
@@ -161,7 +161,7 @@
                                                                     <asp:Label ID="lblDescription" runat="server" Text='<%#Bind("Description") %>'>
                                                                     </asp:Label></span>
                                                                 <br />
-                                                                <asp:LinkButton ID="lnkAttachment" runat="server" Text='<%#Bind("FileNameOriginal") %>' Font-Size="10px" ForeColor="Blue" Font-Underline="true" CommandName="FileNameO">
+                                                                <asp:LinkButton ID="lnkAttachment" runat="server" Text='<%#Bind("FileNameOriginal") %>' Font-Size="10px"   CommandName="FileNameO">
                                                                 </asp:LinkButton>
                                                                 <asp:HiddenField ID="hdnAttachment" runat="server" Value='<%#Bind("FileName") %>'>
                                                                 </asp:HiddenField>
@@ -179,23 +179,23 @@
                         <div id="infobox" style="width: 455px; height: 172px;">
                             <h3>
                                  Total Labour Strength
-                               </h3>
+                               </div>
                             <asp:UpdatePanel ID="UpdatePanel8" runat="server">
                                 <ContentTemplate>
                                     <asp:Panel ID="Panel8" runat="server" Height="145px" ScrollBars="Both">
-                                       <asp:GridView CssClass="table table-striped"  ID="GvTotalLaber" runat="server" AutoGenerateColumns="false" Width="440px"
+                                       <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GvTotalLaber" runat="server" AutoGenerateColumns="false" Width="440px"
                                         >
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
                                                 <ItemTemplate>
                                                    <%# Container.DataItemIndex+1 %>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="40px" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Project Name">
                                                 <ItemTemplate>
                                                     <asp:LinkButton ID="lnkProjectName" runat="server" Text='<%#Bind("ProjectName") %>'
-                                                        CommandName="Project" CausesValidation="false" ForeColor="Blue" Font-Underline="true"></asp:LinkButton>
+                                                        CommandName="Project" CausesValidation="false"  ></asp:LinkButton>
                                                     <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Bind("PRJID") %>' />
                                                 </ItemTemplate>
                                             </asp:TemplateField>
@@ -230,7 +230,7 @@
                                                 <ItemStyle HorizontalAlign="Center" Width="70px" />
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                         <PagerStyle BackColor="#D9EAED" ForeColor="#202020" Font-Underline="true" />
                                     </asp:GridView>
                                     </asp:Panel>
@@ -239,11 +239,11 @@
                         </div>
                         <div id="infobox" class="margin-left" style="width: 455px; height: 172px;">
                             <h3>
-                                 Raw Material Receive</h3>
+                                 Raw Material Receive</div>
                             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                                 <ContentTemplate>
                                  <asp:Panel ID="Panel2" runat="server" Height="145px" ScrollBars="Both">
-                                      <asp:GridView CssClass="table table-striped"  ID="GridView4" runat="server" AutoGenerateColumns="false" Width="440px"
+                                      <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView4" runat="server" AutoGenerateColumns="false" Width="440px"
                                             OnRowCommand="GridView4_RowCommand">
                                             <Columns>
                                                 <asp:TemplateField>
@@ -258,10 +258,10 @@
                                                 <asp:TemplateField HeaderText="Project Name">
                                                     <ItemTemplate>
                                                         <asp:LinkButton ID="lnkProjectName" runat="server" Text='<%#Bind("ProjectName") %>'
-                                                            CommandName="Project" CausesValidation="false" ForeColor="Blue" Font-Underline="true">
+                                                            CommandName="Project" CausesValidation="false"  >
                                                         </asp:LinkButton>
                                                         <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Bind("PRJID") %>' />
-                                                        <asp:GridView CssClass="table table-striped"  ID="GridView5" runat="server" AutoGenerateColumns="false" Width="410px">
+                                                        <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView5" runat="server" AutoGenerateColumns="false" Width="410px">
                                                             <Columns>
                                                                 <asp:TemplateField HeaderText="Item Name">
                                                                     <ItemTemplate>
@@ -284,12 +284,12 @@
                                                                     </ItemTemplate>
                                                                 </asp:TemplateField>
                                                             </Columns>
-                                                            <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                                           
                                                         </asp:GridView>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
                                             </Columns>
-                                            <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                           
                                         </asp:GridView>
                                        </asp:Panel>
                                 </ContentTemplate>
@@ -298,11 +298,11 @@
                         <div id="infobox" class="margin-left" style="width: 305px; height: 172px;">
                             <h3>
                             Projects
-                            </h3>
+                            </div>
                             <asp:UpdatePanel ID="UpdatePanel5" runat="server">
                                 <ContentTemplate>
                                  <asp:Panel ID="Panel3" runat="server" Height="145px" ScrollBars="Both">
-                                <asp:GridView CssClass="table table-striped"  ID="GridView3" runat="server" AutoGenerateColumns="false" Width="300px" 
+                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView3" runat="server" AutoGenerateColumns="false"   
                                         AllowPaging="True"
                                         OnRowCommand="GridView3_RowCommand">
                                         <Columns>
@@ -310,12 +310,12 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="40px" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Project Name">
                                                 <ItemTemplate>
                                                     <asp:LinkButton ID="lnkProjectName" runat="server" Text='<%#Bind("ProjectName") %>'
-                                                        CausesValidation="false" CommandName="Project" ForeColor="Blue" Font-Underline="true"></asp:LinkButton>
+                                                        CausesValidation="false" CommandName="Project"  ></asp:LinkButton>
                                                     <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Bind("PRJID") %>' />
                                                 </ItemTemplate>
                                             </asp:TemplateField>
@@ -338,7 +338,7 @@
                                                 <ItemStyle HorizontalAlign="Center" Width="80px" />
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                         <PagerStyle BackColor="#D9EAED" ForeColor="#202020" Font-Underline="true" />
                                     </asp:GridView>
                                  </asp:Panel>
@@ -353,13 +353,13 @@
     <%-- </ContentTemplate>
     </asp:UpdatePanel>--%>
     <div style="display: none">
-        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
+        <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
     </div>
-    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
+    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server"  
         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
         Enabled="True">
     </cc1:ModalPopupExtender>
-    <asp:Panel ID="Panel1" runat="server" Style="display: none; border-color: Maroon;">
+    <asp:Panel ID="Panel1" runat="server" Style="display: none;   ">
         <asp:UpdatePanel ID="UpdatePanel6" runat="server">
             <div class="row" iggers>
                 <asp:PostBackTrigger ControlID="btnSubmit" />
@@ -369,8 +369,8 @@
                     <div class="row" >
                         <div class="col-lg-4" >
                             <div class="card-body">
-                                <h3 class="reallynow">
-                                    Add Notification</h3>
+                                <div class="card-header">
+                                    Add Notification</div>
                                 <div class="row"  style="width: 400px;">
                                     <div class="row" >
                                         <div class="col-lg-4" >
@@ -396,7 +396,7 @@
                                             Subject
                                         </div>
                                         <div class="col-lg-4" >
-                                            <asp:TextBox CssClass="form-control" ID="txtTitle" runat="server" Width="300px" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
+                                            <asp:TextBox CssClass="form-control" ID="txtTitle" runat="server"   onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="row" >
@@ -404,7 +404,7 @@
                                             Circular No.
                                         </div>
                                         <div class="col-lg-4" >
-                                            <asp:TextBox CssClass="form-control" ID="txtCircularNo" runat="server" Width="300px" onkeyup="valid(this)"
+                                            <asp:TextBox CssClass="form-control" ID="txtCircularNo" runat="server"   onkeyup="valid(this)"
                                                 onblur="valid(this)"></asp:TextBox>
                                         </div>
                                     </div>
@@ -427,8 +427,8 @@
                                     </div>
                                     <div class="row" >
                                         <div class="col-lg-4"    >
-                                            <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                            <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                         </div>
                                     </div>
                                   </div>

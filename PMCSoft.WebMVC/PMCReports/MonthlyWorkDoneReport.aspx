@@ -9,8 +9,8 @@
             <div id="wrapper"    >
                 <div class="card"     >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            MONTHLY WORK DONE</h3>
+                        <div class="card-header">
+                            MONTHLY WORK DONE</div>
                         <div class="row"  style="width: 1240px;">
                         
                             <div class="col-lg-4" >
@@ -46,10 +46,10 @@
                                         </div>
                                         <div class="col-lg-4" >
                                             <div class="col-lg-4" >
-                                                <asp:Button CssClass="btn btn-primary" ID="BtnReport" runat="server" Text="View" OnClick="BtnReport_Click" />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="BtnReport" runat="server" Text="View" OnClick="BtnReport_Click" />
                                             </div>
                                             <div class="col-lg-4" >
-                                                <asp:Button CssClass="btn btn-primary" ID="btnPrint" runat="server" Text="Print Preview" OnClick="btnPrint_Click" />
+                                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnPrint" runat="server" Text="Print Preview" OnClick="btnPrint_Click" />
                                             </div>
                                         </div>
                                     </div>
@@ -98,7 +98,7 @@
                                                                     background-color: #D8D8D8; font-weight: bold;">
                                                                     Work Done (Actual)
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="width: 100px; text-align: center; border: 1px solid black;
+                                                                <div class="col-lg-4"     style="width: 100px; text-align: center; border: 1px solid black;
                                                                     background-color: #D8D8D8; font-weight: bold;">
                                                                     Variation (Rs.)
                                                                 </div>
@@ -108,19 +108,19 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  colspan="2" style="width: 100px; text-align: center; border: 1px solid black;
+                                                                <div class="col-lg-4"     style="width: 100px; text-align: center; border: 1px solid black;
                                                                     background-color: #D8D8D8; width: 100px; font-weight: bold;">
                                                                     Upto Previous Months
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="width: 100px; text-align: center; border: 1px solid black;
+                                                                <div class="col-lg-4"     style="width: 100px; text-align: center; border: 1px solid black;
                                                                     background-color: #D8D8D8; width: 100px; font-weight: bold;">
                                                                     Current Month
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="width: 100px; text-align: center; border: 1px solid black;
+                                                                <div class="col-lg-4"     style="width: 100px; text-align: center; border: 1px solid black;
                                                                     background-color: #D8D8D8; width: 100px; font-weight: bold;">
                                                                     Upto Previous Months
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="width: 100px; text-align: center; border: 1px solid black;
+                                                                <div class="col-lg-4"     style="width: 100px; text-align: center; border: 1px solid black;
                                                                     background-color: #D8D8D8; width: 100px; font-weight: bold;">
                                                                     Current Month
                                                                 </div>
@@ -141,19 +141,19 @@
                                                                     width: 50px; font-weight: bold;">
                                                                     A
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 50px; font-weight: bold;">
                                                                     B
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 50px; font-weight: bold;">
                                                                     C
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 50px; font-weight: bold;">
                                                                     D
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="2" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
+                                                                <div class="col-lg-4"     style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     width: 50px; font-weight: bold;">
                                                                     E
                                                                 </div>

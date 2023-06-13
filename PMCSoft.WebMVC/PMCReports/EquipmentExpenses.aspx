@@ -9,8 +9,8 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            EQUIPMENT EXPENSES</h3>
+                        <div class="card-header">
+                            EQUIPMENT EXPENSES</div>
                         <div class="row"  style="width: 930px;">
                           
                             <div class="row" >
@@ -23,7 +23,7 @@
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     Equipment Expenses Report As On&nbsp;&nbsp;&nbsp;
-                                    <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" Width="100px"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"  ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
@@ -43,7 +43,7 @@
                                                         background-color: #D8D8D8; font-weight: bold;">
                                                         Equipment Detail
                                                     </div>
-                                                    <div class="col-lg-4"  colspan="2" style="width: 250px; text-align: center; border: 1px solid black;
+                                                    <div class="col-lg-4"     style="width: 250px; text-align: center; border: 1px solid black;
                                                         background-color: #D8D8D8; font-weight: bold;">
                                                         Amt. Upto Previous Months
                                                         <asp:TextBox CssClass="form-control" ID="txtPreviousMonth" runat="server" Width="80px"></asp:TextBox>
@@ -51,7 +51,7 @@
                                                             CssClass="cal_Theme1">
                                                         </cc1:CalendarExtender>
                                                     </div>
-                                                    <div class="col-lg-4"  colspan="2" style="width: 220px; text-align: center; border: 1px solid black;
+                                                    <div class="col-lg-4"     style="width: 220px; text-align: center; border: 1px solid black;
                                                         background-color: #D8D8D8; font-weight: bold;">
                                                         Amt. Current Months
                                                         <asp:TextBox CssClass="form-control" ID="txtCurrentMonth" runat="server" Width="80px"></asp:TextBox>
@@ -59,7 +59,7 @@
                                                             CssClass="cal_Theme1">
                                                         </cc1:CalendarExtender>
                                                     </div>
-                                                    <div class="col-lg-4"  colspan="2" style="width: 200px; text-align: center; border: 1px solid black;
+                                                    <div class="col-lg-4"     style="width: 200px; text-align: center; border: 1px solid black;
                                                         background-color: #D8D8D8; font-weight: bold;">
                                                         Amt. Up To Date
                                                         <asp:TextBox CssClass="form-control" ID="txtUpToDate" runat="server" Width="80px"></asp:TextBox>
@@ -106,14 +106,14 @@
                                                     </asp:TextBox>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtPMRepairs" runat="server" Text='<%#Bind("PMRepairs") %>' Width="100px">
+                                                    <asp:TextBox CssClass="form-control" ID="txtPMRepairs" runat="server" Text='<%#Bind("PMRepairs") %>'  >
                                                     </asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtPMRepairs"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtPMFuel" runat="server" Text='<%#Bind("PMFuel") %>' Width="100px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtPMFuel" runat="server" Text='<%#Bind("PMFuel") %>'  ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtPMFuel"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
@@ -161,7 +161,7 @@
                                                 <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8;">
                                                 </div>
                                                 <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8; text-align: center;">
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnAdd" runat="server" Text="Add Item" OnClick="btnAdd_Click" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAdd" runat="server" Text="Add Item" OnClick="btnAdd_Click" />
                                                 </div>
                                             </div>
                                               </div>
@@ -171,9 +171,9 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center;">
-                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" 
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" 
                                         onclick="btnSubmit_Click" />
-                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" 
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" 
                                         onclick="btnCancel_Click" />
                                 </div>
                             </div>

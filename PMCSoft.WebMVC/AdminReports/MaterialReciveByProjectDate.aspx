@@ -9,8 +9,8 @@
             <div id="wrapper" style="margin-left: -80px;">
                 <div class="card"  style="width: 1100px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Matrial Recive Date Wise</h3>
+                        <div class="card-header">
+                            Matrial Recive Date Wise</div>
                         <div class="row"  style="width: 1090px;">
                             <%--<tr>
                                 <div class="col-lg-4"  colspan="7" style="text-align: center; font-size: 15px; font-family: Cambria;">
@@ -18,7 +18,7 @@
                                 </div>
                             </div>--%>
                             <div class="row" >
-                                <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria;">
+                                <div class="col-lg-4"   >
                                     Project
                                 </div>
                                 <div class="col-lg-4" >
@@ -29,7 +29,7 @@
                                     TO Date
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" Width="100px"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"  ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
@@ -38,13 +38,13 @@
                                     From Date
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:TextBox CssClass="form-control" ID="Txtfrom" runat="server" Width="100px"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="Txtfrom" runat="server"  ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="Txtfrom"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:Button CssClass="btn btn-primary" ID="BtnReport" runat="server" Text="View Detail" OnClick="BtnReport_Click" />
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnReport" runat="server" Text="View Detail" OnClick="BtnReport_Click" />
                                 </div>
                             </div>
                             <div class="row" >
@@ -52,7 +52,7 @@
                                     <div class="row"  style="width: 1080px;">
                                         <div class="row" >
                                             <div class="col-lg-4"  colspan="10">
-                                                <asp:GridView CssClass="table table-striped"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="false"
+                                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="false"
                                                     Width="1070px" EmptyDataText="No Records Found" PageSize="50">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">
@@ -65,7 +65,7 @@
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblGateentoryno" runat="server" Text='<%#Bind("Gate_Entry_No") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Po No" Visible="false">
                                                             <ItemTemplate>
@@ -125,19 +125,19 @@
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblunit" runat="server" Text='<%#Bind("UnitName") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Quantity">
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblQty" runat="server" Text='<%#Bind("Item_Quantity") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Right" VerticalAlign="Top" Width="100px" />
+                                                            <ItemStyle HorizontalAlign="Right" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Rate">
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblRate" runat="server" Text='<%#Bind("Item_Rate") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Right" VerticalAlign="Top" Width="100px" />
+                                                            <ItemStyle HorizontalAlign="Right" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Recived By">
                                                             <ItemTemplate>
@@ -152,7 +152,7 @@
                                                             <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="80px" />
                                                         </asp:TemplateField>
                                                     </Columns>
-                                                    <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                                   
                                                     <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                                 </asp:GridView>
                                             </div>

@@ -19,20 +19,20 @@
                 <br />
                 <br />
                 <br />
-      <div class="row"  style="width: 930px">
+      <div class="row"   >
                             <div class="row" >
                                  <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria; color: Black">
                             Project Name: &nbsp; &nbsp; &nbsp; &nbsp;<asp:Label ID="lblProjectName" runat="server"></asp:Label>
                             <asp:HiddenField ID="hdnPRJID" runat="server" />
                         </div>
-                        <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria;">
+                        <div class="col-lg-4"   >
                         </div>
                         <div class="col-lg-4" >
                             Date
                         </div>
                         <div class="col-lg-4" >
                             <asp:Label ID="lblDate" runat="server"></asp:Label>
-                            <asp:Label ID="lblWorkProgrammeDate" runat="server" Width="100px" Font-Size="14px"></asp:Label>
+                            <asp:Label ID="lblWorkProgrammeDate" runat="server"     ></asp:Label>
                             <asp:HiddenField ID="hdnWPDate" runat="server" />
                             <asp:HiddenField ID="hdnWPID" runat="server" />
                         </div>
@@ -40,14 +40,14 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="5">
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="False" Width="910px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="False"   
                                         EmptyDataText="No Records Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="40px" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Employee ID">
                                                 <ItemTemplate>
@@ -92,7 +92,7 @@
                                                 <ItemStyle HorizontalAlign="Center" />
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                     </asp:GridView>
                                 </div>
                             </div>

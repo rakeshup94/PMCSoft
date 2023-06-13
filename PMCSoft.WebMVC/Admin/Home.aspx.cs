@@ -58,7 +58,7 @@ namespace PMCSoft.Web.Admin
         }
 
 
-        protected void ImgAdd_Click(object sender, ImageClickEventArgs e)
+        protected void ImgAdd_Click(object sender, EventArgs e)
         {
             try
             {

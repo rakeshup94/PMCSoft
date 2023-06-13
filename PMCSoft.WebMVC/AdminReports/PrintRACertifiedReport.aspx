@@ -13,7 +13,7 @@
    
                 <div class="row"  style="width: 1400px;" border="0">
                     <div class="row" >
-                        <asp:ImageButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="100px" />
+                          <asp:LinkButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="100px" />
                    
                     </div>
                   </div>
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="row" >
-                        <div class="col-lg-4"  colspan="2">
+                        <div class="col-lg-4"    >
                             <div class="row"  style="width: 1500px;">
                                 <div class="row" >
                                     <div class="col-lg-4"  colspan="23">
@@ -133,87 +133,87 @@
                                                 <div class="row" >
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
                                                         <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
-                                                        <asp:Label ID="RaBillNo" runat="server" Font-Size="15px" Text='<%#Bind("RaBillNo") %>'></asp:Label>
+                                                        <asp:Label ID="RaBillNo" runat="server"   Text='<%#Bind("RaBillNo") %>'></asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                        <asp:Label ID="Billperiod" runat="server" Font-Size="15px" Width="70px" Text='<%#Bind("Billperiod") %>'></asp:Label>
+                                                        <asp:Label ID="Billperiod" runat="server"   Width="70px" Text='<%#Bind("Billperiod") %>'></asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                        <asp:Label ID="Billsubmitteddate" Font-Size="15px" runat="server" Width="100px" Text='<%#Bind("Billsubmitteddate") %>'>
+                                                        <asp:Label ID="Billsubmitteddate"   runat="server"   Text='<%#Bind("Billsubmitteddate") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                        <asp:Label ID="BillCertificationDate" Font-Size="15px" runat="server" Width="100px"
+                                                        <asp:Label ID="BillCertificationDate"   runat="server"  
                                                             Text='<%#Bind("BillCertificationDate") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                        <asp:Label ID="BillAmtRABill" runat="server" Width="100px" Text='<%#Bind("BillAmtRABill") %>'>
+                                                        <asp:Label ID="BillAmtRABill" runat="server"   Text='<%#Bind("BillAmtRABill") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                        <asp:Label ID="BillAmount" Font-Size="15px" runat="server" Width="100px" Text='<%#Bind("BillAmount") %>'>
+                                                        <asp:Label ID="BillAmount"   runat="server"   Text='<%#Bind("BillAmount") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                        <asp:Label ID="ServiceTex" Font-Size="15px" runat="server" Width="100px" Text='<%#Bind("ServiceTex") %>'>
+                                                        <asp:Label ID="ServiceTex"   runat="server"   Text='<%#Bind("ServiceTex") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                        <asp:Label ID="ServiceTexonFoc" runat="server" Font-Size="15px" Width="100px" Text='<%#Bind("ServiceTexonFoc") %>'>
+                                                        <asp:Label ID="ServiceTexonFoc" runat="server"     Text='<%#Bind("ServiceTexonFoc") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: left;">
-                                                        <asp:Label ID="MobilizationAdvancereceived" Font-Size="15px" runat="server" Width="100px"
+                                                        <asp:Label ID="MobilizationAdvancereceived"   runat="server"  
                                                             Text='<%#Bind("MobilizationAdvancereceived") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: left;">
-                                                        <asp:Label ID="SecuredAdvancereceived" Font-Size="15px" runat="server" Width="100px"
+                                                        <asp:Label ID="SecuredAdvancereceived"   runat="server"  
                                                             Text='<%#Bind("SecuredAdvancereceived") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                        <asp:Label ID="Total" runat="server" Font-Size="15px" Width="100px" Text='<%#Bind("Total") %>'>
+                                                        <asp:Label ID="Total" runat="server"     Text='<%#Bind("Total") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                        <asp:Label ID="tds" runat="server" Font-Size="15px" Width="100px" Text='<%#Bind("tds") %>'>
+                                                        <asp:Label ID="tds" runat="server"     Text='<%#Bind("tds") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                        <asp:Label ID="RetentionMoneyDeductd" Font-Size="15px" runat="server" Width="100px"
+                                                        <asp:Label ID="RetentionMoneyDeductd"   runat="server"  
                                                             Text='<%#Bind("RetentionMoneyDeductd") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                        <asp:Label ID="WCT" runat="server" Width="100px" Font-Size="15px" Text='<%#Bind("WCT") %>'>
+                                                        <asp:Label ID="WCT" runat="server"     Text='<%#Bind("WCT") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                        <asp:Label ID="MobilizationAdvanceDeducted" Font-Size="15px" runat="server" Width="30px"
+                                                        <asp:Label ID="MobilizationAdvanceDeducted"   runat="server" Width="30px"
                                                             Text='<%#Bind("MobilizationAdvanceDeducted") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: left;">
-                                                        <asp:Label ID="SecuredAdvanceAdjusted" Font-Size="15px" runat="server" Width="30px"
+                                                        <asp:Label ID="SecuredAdvanceAdjusted"   runat="server" Width="30px"
                                                             Text='<%#Bind("SecuredAdvanceAdjusted") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                        <asp:Label ID="OtherDeduction" Font-Size="15px" runat="server" Width="100px" Text='<%#Bind("OtherDeduction") %>'>
+                                                        <asp:Label ID="OtherDeduction"   runat="server"   Text='<%#Bind("OtherDeduction") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                        <asp:Label ID="TotalDeduction" Font-Size="15px" runat="server" Width="100px" Text='<%#Bind("TotalDeduction") %>'>
+                                                        <asp:Label ID="TotalDeduction"   runat="server"   Text='<%#Bind("TotalDeduction") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                        <asp:Label ID="Receivable" Font-Size="15px" runat="server" Width="100px" Text='<%#Bind("Receivable") %>'>
+                                                        <asp:Label ID="Receivable"   runat="server"   Text='<%#Bind("Receivable") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4" >
-                                                        <asp:GridView CssClass="table table-striped"  ID="Gvcertified" runat="server" AutoGenerateColumns="false" GridLines="Both"
+                                                        <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="Gvcertified" runat="server" AutoGenerateColumns="false" GridLines="Both"
                                                             EmptyDataText="No Amount Receive" Width="300">
                                                             <Columns>
                                                                 <asp:TemplateField HeaderText="S.No" Visible="false">

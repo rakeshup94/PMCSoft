@@ -9,8 +9,8 @@
             <div id="wrapper" style="margin-left: -30px;">
                 <div class="card"  style="width: 1000px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Party / Vendor Detail</h3>
+                        <div class="card-header">
+                            Party / Vendor Detail</div>
                         <div class="row"  style="width: 990px">
                             <div class="row" >
                                 <div class="col-lg-4"  style="width: 650px; vertical-align: top;">
@@ -18,7 +18,7 @@
                                           OnSelectedIndexChanged="ddlP_SelectedIndexChanged">
                                     </asp:DropDownList>
                                     <br />
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" Width="640px" AutoGenerateColumns="false"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" Width="640px" AutoGenerateColumns="false"
                                         EmptyDataText="No Record Found" OnRowCommand="GridView1_RowCommand">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -55,12 +55,12 @@
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                     </asp:GridView>
                                     <div style="display: none">
-                                        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Button" />
+                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
                                     </div>
-                                    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="popUpStyle"
+                                    <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server"  
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
@@ -69,8 +69,8 @@
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div class="card-body">
-                                                        <h3 class="reallynow">
-                                                            Party / Vendor Detail</h3>
+                                                        <div class="card-header">
+                                                            Party / Vendor Detail</div>
                                                         <div class="row"  style="width: 330px;">
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
@@ -153,20 +153,20 @@
                                                                     Project Name
                                                                 </div>
                                                                 <div class="col-lg-4" >
-                                                                    <asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" ImageUrl="~/Images/DropDownList.png" />
-                                                                    <asp:Panel ID="Panel2" runat="server" CssClass="bgdesign" Style="display: none;">
-                                                                        <asp:GridView CssClass="table table-striped"  ID="GridView2" runat="server" AutoGenerateColumns="false" GridLines="None"
+                                                                      <asp:LinkButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" ><i class="fa fa-check-square"></i></asp:LinkButton>
+                                                                    <asp:Panel ID="Panel2" runat="server"    Style="display: none;">
+                                                                        <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView2" runat="server" AutoGenerateColumns="false" GridLines="None"
                                                                             ShowHeader="false">
                                                                             <Columns>
                                                                                 <asp:TemplateField>
                                                                                     <ItemTemplate>
                                                                                         <asp:CheckBox ID="chkSW" runat="server" />
                                                                                     </ItemTemplate>
-                                                                                    <ItemStyle Width="10" />
+                                                                                 
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField>
                                                                                     <ItemTemplate>
-                                                                                        <asp:Label ID="lblProjectName" runat="server" Text='<%#Bind("ProjectName") %>' Font-Size="14px"></asp:Label>
+                                                                                        <asp:Label ID="lblProjectName" runat="server" Text='<%#Bind("ProjectName") %>'   ></asp:Label>
                                                                                         <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Eval("ProjectID") %>' />
                                                                                     </ItemTemplate>
                                                                                 </asp:TemplateField>
@@ -180,8 +180,8 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"    >
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnESubmit" runat="server" Text="Submit" OnClick="btnESubmit_Click" />
-                                                                    <asp:Button CssClass="btn btn-primary" ID="btnECancel" runat="server" Text="Cancel" OnClick="btnECancel_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnESubmit" runat="server" Text="Submit" OnClick="btnESubmit_Click" />
+                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnECancel" runat="server" Text="Cancel" OnClick="btnECancel_Click" />
                                                                 </div>
                                                             </div>
                                                           </div>
@@ -193,8 +193,8 @@
                                 </div>
                                 <div class="col-lg-4"  style="width: 330px;">
                                     <div class="card-body">
-                                        <h3 class="reallynow">
-                                            Add Party / Vendor</h3>
+                                        <div class="card-header">
+                                            Add Party / Vendor</div>
                                         <div class="row"  style="width: 325px; vertical-align: top;">
                                             <div class="row" >
                                                 <div class="col-lg-4" >
@@ -301,11 +301,11 @@
                                                         <asp:ListItem Text="PRW" Value="2"></asp:ListItem>
                                                         <asp:ListItem Text="Shuttering" Value="3"></asp:ListItem>--%>
                                                     </asp:DropDownList>
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnAdd" runat="server" Text="+" OnClick="btnAdd_Click" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAdd" runat="server" Text="+" OnClick="btnAdd_Click" />
                                                     <div style="display: none">
-                                                        <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Button" />
+                                                        <asp:Button CssClass="btn btn-primary btn-square" ID="Button2" runat="server" Text="Button" />
                                                     </div>
-                                                    <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server" BackgroundCssClass="popUpStyle"
+                                                    <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server"  
                                                         PopupControlID="Panel3" TargetControlID="Button2" EnableViewState="False"  
                                                         Enabled="True">
                                                     </cc1:ModalPopupExtender>
@@ -314,11 +314,11 @@
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     <div id="Div1">
-                                                                        <h3 class="reallynow">
-                                                                            Party / Vendor Type</h3>
+                                                                        <div class="card-header">
+                                                                            Party / Vendor Type</div>
                                                                         <div class="row"  style="width: 330px;">
                                                                             <div class="row" >
-                                                                                <div class="col-lg-4"  style="width: 100px;">
+                                                                                <div class="col-lg-4"    >
                                                                                     Type
                                                                                 </div>
                                                                                 <div class="col-lg-4" >
@@ -328,8 +328,8 @@
                                                                             </div>
                                                                             <div class="row" >
                                                                                 <div class="col-lg-4"    >
-                                                                                    <asp:Button CssClass="btn btn-primary" ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Submit" />
-                                                                                    <asp:Button CssClass="btn btn-primary" ID="btnClose" runat="server" OnClick="btnClose_Click" Text="Cancel" />
+                                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Submit" />
+                                                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnClose" runat="server" OnClick="btnClose_Click" Text="Cancel" />
                                                                                 </div>
                                                                             </div>
                                                                           </div>
@@ -345,35 +345,35 @@
                                                     Project Name
                                                 </div>
                                                 <div class="col-lg-4" >
-                                                    <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/Images/DropDownList.png" />
-                                                    <asp:Panel ID="pnlCustomers" runat="server" CssClass="bgdesign" Style="display: none;">
-                                                        <asp:GridView CssClass="table table-striped"  ID="GVProject" runat="server" AutoGenerateColumns="false" GridLines="None"
+                                                      <asp:LinkButton ID="ImageButton1" runat="server" OnClick="lnkBtnProject_Click" ><i class="fa fa-check-square"></i></asp:LinkButton>
+                                                    <asp:Panel ID="pnlCustomers" runat="server"    Style="display: none;">
+                                                        <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVProject" runat="server" AutoGenerateColumns="false" GridLines="None"
                                                             ShowHeader="false">
                                                             <Columns>
                                                                 <asp:TemplateField>
                                                                     <ItemTemplate>
                                                                         <asp:CheckBox ID="chkSW" runat="server" />
                                                                     </ItemTemplate>
-                                                                    <ItemStyle Width="10" />
+                                                                 
                                                                 </asp:TemplateField>
                                                                 <asp:TemplateField>
                                                                     <ItemTemplate>
-                                                                        <asp:Label ID="lblProjectName" runat="server" Text='<%#Bind("ProjectName") %>' Font-Size="14px"></asp:Label>
+                                                                        <asp:Label ID="lblProjectName" runat="server" Text='<%#Bind("ProjectName") %>'   ></asp:Label>
                                                                         <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Eval("ProjectID") %>' />
                                                                     </ItemTemplate>
                                                                 </asp:TemplateField>
                                                             </Columns>
                                                         </asp:GridView>
                                                     </asp:Panel>
-                                                    <cc1:PopupControlExtender ID="PopupControlExtender1" runat="server" TargetControlID="ImageButton1"
+                                                    <cc1:PopupControlExtender ID="PopupControlExtender1" runat="server" TargetControlID="lnkBtnProject"
                                                         PopupControlID="pnlCustomers" Position="Bottom" OffsetY="-16">
                                                     </cc1:PopupControlExtender>
                                                 </div>
                                             </div>
                                             <div class="row" >
                                                 <div class="col-lg-4"    >
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                 </div>
                                             </div>
                                           </div>

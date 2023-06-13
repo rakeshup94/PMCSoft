@@ -9,8 +9,8 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"    >
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Payment Receipt</h3>
+                        <div class="card-header">
+                            Payment Receipt</div>
                         <div class="row"  style="width: 930px;">
                             <div class="row" >
                                 <div class="col-lg-4"  style="width: 100px; text-align: center;">
@@ -37,14 +37,14 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="6">
-                                    <asp:GridView CssClass="table table-striped"  ID="GridView1" runat="server" AutoGenerateColumns="false" Width="910px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="false"   
                                         ShowFooter="true" OnRowDataBound="GridView1_RowDataBound">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="40px" />
+                                           
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Payment Type">
                                                 <ItemTemplate>
@@ -75,21 +75,21 @@
                                                     </cc1:FilteredTextBoxExtender>
                                                 </ItemTemplate>
                                                 <FooterTemplate>
-                                                    <asp:Button CssClass="btn btn-primary" ID="btnAddMore" runat="server" Text="Add More" OnClick="btnAddMore_Click" />
+                                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddMore" runat="server" Text="Add More" OnClick="btnAddMore_Click" />
                                                 </FooterTemplate>
                                                 <FooterStyle HorizontalAlign="Right" />
                                                 <ItemStyle HorizontalAlign="Center" />
                                             </asp:TemplateField>
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                         <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                     </asp:GridView>
                                 </div>
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="6" style="text-align: center;">
-                                    <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-                                    <asp:Button CssClass="btn btn-primary" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                 </div>
                             </div>
                           </div>

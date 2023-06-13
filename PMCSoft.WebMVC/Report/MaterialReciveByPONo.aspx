@@ -10,8 +10,8 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
                 <div class="card"  style="width: 1000px;">
                     <div class="card-body">
-                        <h3 class="reallynow">
-                            Matrial Recive By Project</h3>
+                        <div class="card-header">
+                            Matrial Recive By Project</div>
                         <div class="row"  style="width: 950px;">
                             <div class="row" >
                                
@@ -34,17 +34,17 @@
                                         <asp:ListItem Text="Select"></asp:ListItem>
                                     </asp:DropDownList>
                                       TO Date
-                                     <asp:TextBox CssClass="form-control" ID="txtDate" runat="server" Width="100px"></asp:TextBox>
+                                     <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"  ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
                                     From Date
-                                     <asp:TextBox CssClass="form-control" ID="Txtfrom" runat="server" Width="100px"></asp:TextBox>
+                                     <asp:TextBox CssClass="form-control" ID="Txtfrom" runat="server"  ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="Txtfrom"
                                         CssClass="cal_Theme1">
                                     </cc1:CalendarExtender>
                                     Report
-                                    <asp:Button CssClass="btn btn-primary" ID="BtnReport" runat="server" Text="Report" 
+                                    <asp:Button CssClass="btn btn-primary btn-square" ID="BtnReport" runat="server" Text="Report" 
                                         onclick="BtnReport_Click" />
                                 </div>
                                  
@@ -54,7 +54,7 @@
                                     <div class="row"  style="width: 950px;">
                                         <div class="row" >
                                             <div class="col-lg-4"  colspan="10">
-                                <asp:GridView CssClass="table table-striped"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="true"
+                                <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="true"
                                        Width="100%"  EmptyDataText="No Records Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">
@@ -139,23 +139,23 @@
                                                 <ItemTemplate>
                                                      <asp:Label ID="lblunit" runat="server" Text='<%#Bind("UnitName") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Quantity">
                                                 <ItemTemplate>
                                                          <asp:Label ID="lblQty" runat="server" Text='<%#Bind("Item_Quantity") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Rate">
                                                 <ItemTemplate>
                                                        <asp:Label ID="lblRate" runat="server" Text='<%#Bind("Item_Rate") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="100px" />
+                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                            
                                         </Columns>
-                                        <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                       
                                         <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
                                     </asp:GridView>
 
