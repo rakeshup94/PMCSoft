@@ -10,6 +10,7 @@
 namespace PMCSoft.Web.Admin
 {
 
+
     public partial class EditProject
     {
 
@@ -23,22 +24,22 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
 
         /// <summary>
-        /// TabContainer1 control.
+        /// btnParticularsSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.TabContainer TabContainer1;
+        protected global::System.Web.UI.WebControls.Button btnParticularsSubmit;
 
         /// <summary>
-        /// Tab1 control.
+        /// btnParticularsCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.TabPanel Tab1;
+        protected global::System.Web.UI.WebControls.Button btnParticularsCancel;
 
         /// <summary>
         /// txtProjectName control.
@@ -275,58 +276,22 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.TextBox txtClientName;
 
         /// <summary>
-        /// txtClientAddress control.
+        /// txtClientClause control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtClientAddress;
+        protected global::System.Web.UI.WebControls.TextBox txtClientClause;
 
         /// <summary>
-        /// ddlClientCountry control.
+        /// txtClientAmendments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlClientCountry;
-
-        /// <summary>
-        /// ddlClientState control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlClientState;
-
-        /// <summary>
-        /// ddlClientCity control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlClientCity;
-
-        /// <summary>
-        /// txtClientZipCode control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtClientZipCode;
-
-        /// <summary>
-        /// FilteredTextBoxExtender9 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.FilteredTextBoxExtender FilteredTextBoxExtender9;
+        protected global::System.Web.UI.WebControls.TextBox txtClientAmendments;
 
         /// <summary>
         /// txtClientMobileNo control.
@@ -392,22 +357,58 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.TextBox txtClientEmail;
 
         /// <summary>
-        /// txtClientClause control.
+        /// ddlClientCountry control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtClientClause;
+        protected global::System.Web.UI.WebControls.DropDownList ddlClientCountry;
 
         /// <summary>
-        /// txtClientAmendments control.
+        /// ddlClientState control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtClientAmendments;
+        protected global::System.Web.UI.WebControls.DropDownList ddlClientState;
+
+        /// <summary>
+        /// ddlClientCity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlClientCity;
+
+        /// <summary>
+        /// txtClientZipCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtClientZipCode;
+
+        /// <summary>
+        /// FilteredTextBoxExtender9 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.FilteredTextBoxExtender FilteredTextBoxExtender9;
+
+        /// <summary>
+        /// txtClientAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtClientAddress;
 
         /// <summary>
         /// txtProjectManagerName control.
@@ -1526,15 +1527,6 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// Tab2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.TabPanel Tab2;
-
-        /// <summary>
         /// GridView2 control.
         /// </summary>
         /// <remarks>
@@ -1542,15 +1534,6 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView2;
-
-        /// <summary>
-        /// Tab3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.TabPanel Tab3;
 
         /// <summary>
         /// GridView3 control.
@@ -1562,13 +1545,13 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.GridView GridView3;
 
         /// <summary>
-        /// Tab4 control.
+        /// GridView5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.TabPanel Tab4;
+        protected global::System.Web.UI.WebControls.GridView GridView5;
 
         /// <summary>
         /// GridView4 control.
@@ -1580,33 +1563,6 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.GridView GridView4;
 
         /// <summary>
-        /// Tab5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.TabPanel Tab5;
-
-        /// <summary>
-        /// GridView5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView5;
-
-        /// <summary>
-        /// Tab6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.TabPanel Tab6;
-
-        /// <summary>
         /// GridView6 control.
         /// </summary>
         /// <remarks>
@@ -1614,15 +1570,6 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView6;
-
-        /// <summary>
-        /// Tab7 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.TabPanel Tab7;
 
         /// <summary>
         /// GridView7 control.
@@ -1634,15 +1581,6 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.GridView GridView7;
 
         /// <summary>
-        /// Tab8 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.TabPanel Tab8;
-
-        /// <summary>
         /// GridView8 control.
         /// </summary>
         /// <remarks>
@@ -1650,23 +1588,5 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView8;
-
-        /// <summary>
-        /// btnParticularsSubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnParticularsSubmit;
-
-        /// <summary>
-        /// btnParticularsCancel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnParticularsCancel;
     }
 }

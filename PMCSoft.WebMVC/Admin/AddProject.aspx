@@ -128,7 +128,7 @@
                                     <asp:TextBox CssClass="form-control" ID="txtProjectID" runat="server"  
                                         Enabled="false" ReadOnly="true"
                                         BackColor="#ffffcc" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
-                                      <asp:LinkButton ID="ImgRefresh" runat="server" ImageUrl="~/img/icons/refresh.png"
+                                      <asp:LinkButton ID="ImgRefresh" runat="server" 
                                         OnClick="ImgRefresh_Click" ToolTip="Refresh Project Id" />
                                 </div>
                             </div>
