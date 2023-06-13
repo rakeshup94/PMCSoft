@@ -1527,24 +1527,6 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// Accordion1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.Accordion Accordion1;
-
-        /// <summary>
-        /// AccordionPane2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane2;
-
-        /// <summary>
         /// GridView2 control.
         /// </summary>
         /// <remarks>
@@ -1552,15 +1534,6 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView2;
-
-        /// <summary>
-        /// AccordionPane3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane3;
 
         /// <summary>
         /// GridView3 control.
@@ -1572,13 +1545,13 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.GridView GridView3;
 
         /// <summary>
-        /// AccordionPane4 control.
+        /// GridView5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane4;
+        protected global::System.Web.UI.WebControls.GridView GridView5;
 
         /// <summary>
         /// GridView4 control.
@@ -1590,33 +1563,6 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.GridView GridView4;
 
         /// <summary>
-        /// AccordionPane5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane5;
-
-        /// <summary>
-        /// GridView5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView5;
-
-        /// <summary>
-        /// AccordionPane6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane6;
-
-        /// <summary>
         /// GridView6 control.
         /// </summary>
         /// <remarks>
@@ -1626,15 +1572,6 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.GridView GridView6;
 
         /// <summary>
-        /// AccordionPane7 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane7;
-
-        /// <summary>
         /// GridView7 control.
         /// </summary>
         /// <remarks>
@@ -1642,15 +1579,6 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView7;
-
-        /// <summary>
-        /// AccordionPane8 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.AccordionPane AccordionPane8;
 
         /// <summary>
         /// GridView8 control.

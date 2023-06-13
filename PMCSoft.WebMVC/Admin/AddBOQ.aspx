@@ -41,8 +41,7 @@
                             <div class="row">
                                 <div class="col-12 d-block d-sm-none">
                                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                        <button class="nav-link active text-start" data-bs-toggle="pill" data-bs-target="#tab-0"
-                                            type="button">
+                                        <button class="nav-link active text-start" data-bs-toggle="pill" data-bs-target="#tab-0" type="button">
                                             Category</button>
                                         <button class="nav-link text-start" data-bs-toggle="pill"
                                             data-bs-target="#tab-1" type="button">
