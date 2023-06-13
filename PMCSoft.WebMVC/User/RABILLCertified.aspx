@@ -39,7 +39,7 @@
                                             <ItemTemplate>
                                                 <asp:LinkButton ID="LnkProject" runat="server" Text='<%#Bind("ProjectName") %>'></asp:LinkButton>
                                             </ItemTemplate>
-                                            <ItemStyle Width="550px" />
+                                            <ItemStyle   />
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Bill NO">
                                             <ItemTemplate>
@@ -256,7 +256,7 @@
                                                 <ItemTemplate>
                                                     <asp:LinkButton ID="LnkProject" runat="server" Text='<%#Bind("ProjectName") %>'></asp:LinkButton>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="550px" />
+                                                <ItemStyle   />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Bill NO">
                                                 <ItemTemplate>

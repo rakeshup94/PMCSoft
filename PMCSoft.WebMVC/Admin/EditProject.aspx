@@ -124,7 +124,7 @@
                                                                         1
                                                                     </div>
                                                                     <div class="col-lg-4"   >
-                                                                        <asp:TextBox CssClass="form-control" ID="txtProjectName" runat="server" Width="550px" onkeyup="valid(this)"
+                                                                        <asp:TextBox CssClass="form-control" ID="txtProjectName" runat="server"   onkeyup="valid(this)"
                                                                             onblur="valid(this)" placeholder="Name of Project"></asp:TextBox>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
@@ -141,7 +141,7 @@
                                                                         2
                                                                     </div>
                                                                     <div class="col-lg-4"   >
-                                                                        <asp:TextBox CssClass="form-control" ID="txtLocation" runat="server" Width="550px" onkeyup="valid(this)"
+                                                                        <asp:TextBox CssClass="form-control" ID="txtLocation" runat="server"   onkeyup="valid(this)"
                                                                             onblur="valid(this)" placeholder="Location"></asp:TextBox>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
@@ -158,7 +158,7 @@
                                                                         3
                                                                     </div>
                                                                     <div class="col-lg-4"   >
-                                                                        <asp:TextBox CssClass="form-control" ID="txtDateOfAward" runat="server" Width="550px" onkeyup="valid(this)"
+                                                                        <asp:TextBox CssClass="form-control" ID="txtDateOfAward" runat="server"   onkeyup="valid(this)"
                                                                             onblur="valid(this)" placeholder="Date of Award"></asp:TextBox>
                                                                         <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDateOfAward"
                                                                             CssClass="cal_Theme1">
@@ -178,7 +178,7 @@
                                                                         4
                                                                     </div>
                                                                     <div class="col-lg-4"   >
-                                                                        <asp:TextBox CssClass="form-control" ID="txtLOINo" runat="server" Width="550px" onkeyup="valid(this)" onblur="valid(this)"
+                                                                        <asp:TextBox CssClass="form-control" ID="txtLOINo" runat="server"   onkeyup="valid(this)" onblur="valid(this)"
                                                                             placeholder="LOI No"></asp:TextBox>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
@@ -195,7 +195,7 @@
                                                                         5
                                                                     </div>
                                                                     <div class="col-lg-4"   >
-                                                                        <asp:TextBox CssClass="form-control" ID="txtLOIDate" runat="server" Width="550px" onkeyup="valid(this)" onblur="valid(this)"
+                                                                        <asp:TextBox CssClass="form-control" ID="txtLOIDate" runat="server"   onkeyup="valid(this)" onblur="valid(this)"
                                                                             placeholder="LOI Date"></asp:TextBox>
                                                                         <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="txtLOIDate"
                                                                             CssClass="cal_Theme1">
@@ -215,7 +215,7 @@
                                                                         6
                                                                     </div>
                                                                     <div class="col-lg-4"   >
-                                                                        <asp:TextBox CssClass="form-control" ID="txtNameOfRegion" runat="server" Width="550px" onkeyup="valid(this)"
+                                                                        <asp:TextBox CssClass="form-control" ID="txtNameOfRegion" runat="server"   onkeyup="valid(this)"
                                                                             onblur="valid(this)" placeholder="Name Of Region Handling Project"></asp:TextBox>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
@@ -1067,7 +1067,7 @@
                                                                         15
                                                                     </div>
                                                                     <div class="col-lg-4"   >
-                                                                        <asp:TextBox CssClass="form-control" ID="txtStipulatedDateOfStart" runat="server" Width="550px" onkeyup="valid(this)"
+                                                                        <asp:TextBox CssClass="form-control" ID="txtStipulatedDateOfStart" runat="server"   onkeyup="valid(this)"
                                                                             onblur="valid(this)" placeholder="Stipulated Date Of Start"></asp:TextBox>
                                                                         <cc1:CalendarExtender ID="CalendarExtender4" runat="server" TargetControlID="txtStipulatedDateOfStart"
                                                                             CssClass="cal_Theme1">
@@ -1087,7 +1087,7 @@
                                                                         16
                                                                     </div>
                                                                     <div class="col-lg-4"   >
-                                                                        <asp:TextBox CssClass="form-control" ID="txtActualDateOfStart" runat="server" Width="550px" onkeyup="valid(this)"
+                                                                        <asp:TextBox CssClass="form-control" ID="txtActualDateOfStart" runat="server"   onkeyup="valid(this)"
                                                                             onblur="valid(this)" placeholder="Date Of Actual Start"></asp:TextBox>
                                                                         <cc1:CalendarExtender ID="CalendarExtender3" runat="server" TargetControlID="txtActualDateOfStart"
                                                                             CssClass="cal_Theme1">
@@ -1107,7 +1107,7 @@
                                                                         17
                                                                     </div>
                                                                     <div class="col-lg-4"   >
-                                                                        <asp:TextBox CssClass="form-control" ID="txtStipulatedDateOfFinish" runat="server" Width="550px" onkeyup="valid(this)"
+                                                                        <asp:TextBox CssClass="form-control" ID="txtStipulatedDateOfFinish" runat="server"   onkeyup="valid(this)"
                                                                             onblur="valid(this)" placeholder="Stipulated Date Of Finish"></asp:TextBox>
                                                                         <cc1:CalendarExtender ID="CalendarExtender5" runat="server" TargetControlID="txtStipulatedDateOfFinish"
                                                                             CssClass="cal_Theme1">
@@ -1131,7 +1131,7 @@
                                                                         <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender23" runat="server" FilterType="Custom, Numbers"
                                                                             TargetControlID="txtOriginalContractValue" ValidChars=".">
                                                                         </cc1:FilteredTextBoxExtender>
-                                                                        <asp:TextBox CssClass="form-control" ID="txtOCVWord" runat="server" Width="380px" onkeyup="valid(this)" onblur="valid(this)"
+                                                                        <asp:TextBox CssClass="form-control" ID="txtOCVWord" runat="server"   onkeyup="valid(this)" onblur="valid(this)"
                                                                             placeholder="Original Contract Value Word Format"></asp:TextBox>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
@@ -1152,7 +1152,7 @@
                                                                         <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender24" runat="server" FilterType="Custom, Numbers"
                                                                             TargetControlID="txtRevisedContractValue" ValidChars=".">
                                                                         </cc1:FilteredTextBoxExtender>
-                                                                        <asp:TextBox CssClass="form-control" ID="txtRCVWord" runat="server" Width="380px" onkeyup="valid(this)" onblur="valid(this)"
+                                                                        <asp:TextBox CssClass="form-control" ID="txtRCVWord" runat="server"   onkeyup="valid(this)" onblur="valid(this)"
                                                                             placeholder="Revised Contract Value Word Format"></asp:TextBox>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
@@ -1173,7 +1173,7 @@
                                                                         <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender25" runat="server" FilterType="Custom, Numbers"
                                                                             TargetControlID="txtExpectedContractValue" ValidChars=".">
                                                                         </cc1:FilteredTextBoxExtender>
-                                                                        <asp:TextBox CssClass="form-control" ID="txtECVWord" runat="server" Width="380px" onkeyup="valid(this)" onblur="valid(this)"
+                                                                        <asp:TextBox CssClass="form-control" ID="txtECVWord" runat="server"   onkeyup="valid(this)" onblur="valid(this)"
                                                                             placeholder="Expected Contract Value Word Format"></asp:TextBox>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
@@ -1196,7 +1196,7 @@
                                                                                         <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                                                         <asp:HiddenField ID="hdnProjectParticularsTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                                                     </ItemTemplate>
-                                                                                    <ItemStyle HorizontalAlign="Center" Width="40px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Particulars">
                                                                                     <ItemTemplate>
@@ -1207,7 +1207,7 @@
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Details / Contract Provision">
                                                                                     <ItemTemplate>
-                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" Width="280px"
+                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" 
                                                                                             Text='<%#Bind("Details") %>' onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                     </ItemTemplate>
                                                                                     <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
@@ -1228,7 +1228,7 @@
                                                                                     <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                                 </asp:TemplateField>
                                                                             </Columns>
-                                                                            <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
+                                                                      
                                                                         </asp:GridView>
                                                                     </div>
                                                                 </div>
@@ -1250,7 +1250,7 @@
                                                                                         <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                                                         <asp:HiddenField ID="hdnProjectParticularsTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                                                     </ItemTemplate>
-                                                                                    <ItemStyle HorizontalAlign="Center" Width="40px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Particulars">
                                                                                     <ItemTemplate>
@@ -1261,7 +1261,7 @@
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Details / Contract Provision">
                                                                                     <ItemTemplate>
-                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" Width="280px"
+                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" 
                                                                                             Text='<%#Bind("Details") %>' onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                     </ItemTemplate>
                                                                                     <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
@@ -1282,7 +1282,7 @@
                                                                                     <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                                 </asp:TemplateField>
                                                                             </Columns>
-                                                                            <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
+                                                                      
                                                                         </asp:GridView>
                                                                     </div>
                                                                 </div>
@@ -1303,7 +1303,7 @@
                                                                                         <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                                                         <asp:HiddenField ID="hdnProjectParticularsTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                                                     </ItemTemplate>
-                                                                                    <ItemStyle HorizontalAlign="Center" Width="40px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Particulars">
                                                                                     <ItemTemplate>
@@ -1314,7 +1314,7 @@
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Details / Contract Provision">
                                                                                     <ItemTemplate>
-                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" Width="280px"
+                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" 
                                                                                             Text='<%#Bind("Details") %>' onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                     </ItemTemplate>
                                                                                     <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
@@ -1335,7 +1335,7 @@
                                                                                     <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                                 </asp:TemplateField>
                                                                             </Columns>
-                                                                            <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
+                                                                      
                                                                         </asp:GridView>
                                                                     </div>
                                                                 </div>
@@ -1357,7 +1357,7 @@
                                                                                         <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                                                         <asp:HiddenField ID="hdnProjectParticularsTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                                                     </ItemTemplate>
-                                                                                    <ItemStyle HorizontalAlign="Center" Width="40px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Particulars">
                                                                                     <ItemTemplate>
@@ -1368,7 +1368,7 @@
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Details / Contract Provision">
                                                                                     <ItemTemplate>
-                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" Width="280px"
+                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" 
                                                                                             Text='<%#Bind("Details") %>' onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                     </ItemTemplate>
                                                                                     <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
@@ -1389,7 +1389,7 @@
                                                                                     <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                                 </asp:TemplateField>
                                                                             </Columns>
-                                                                            <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
+                                                                      
                                                                         </asp:GridView>
                                                                     </div>
                                                                 </div>
@@ -1411,7 +1411,7 @@
                                                                                         <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                                                         <asp:HiddenField ID="hdnProjectParticularsTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                                                     </ItemTemplate>
-                                                                                    <ItemStyle HorizontalAlign="Center" Width="40px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Particulars">
                                                                                     <ItemTemplate>
@@ -1422,7 +1422,7 @@
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Details / Contract Provision">
                                                                                     <ItemTemplate>
-                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" Width="280px"
+                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" 
                                                                                             Text='<%#Bind("Details") %>' onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                     </ItemTemplate>
                                                                                     <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
@@ -1443,7 +1443,7 @@
                                                                                     <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                                 </asp:TemplateField>
                                                                             </Columns>
-                                                                            <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
+                                                                      
                                                                         </asp:GridView>
                                                                     </div>
                                                                 </div>
@@ -1464,7 +1464,7 @@
                                                                                         <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                                                         <asp:HiddenField ID="hdnProjectParticularsTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                                                     </ItemTemplate>
-                                                                                    <ItemStyle HorizontalAlign="Center" Width="40px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Particulars">
                                                                                     <ItemTemplate>
@@ -1475,7 +1475,7 @@
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Details / Contract Provision">
                                                                                     <ItemTemplate>
-                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" Width="280px"
+                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" 
                                                                                             Text='<%#Bind("Details") %>' onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                     </ItemTemplate>
                                                                                     <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
@@ -1496,7 +1496,7 @@
                                                                                     <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                                 </asp:TemplateField>
                                                                             </Columns>
-                                                                            <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
+                                                                      
                                                                         </asp:GridView>
                                                                     </div>
                                                                 </div>
@@ -1517,7 +1517,7 @@
                                                                                         <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                                                         <asp:HiddenField ID="hdnProjectParticularsTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                                                     </ItemTemplate>
-                                                                                    <ItemStyle HorizontalAlign="Center" Width="40px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Particulars">
                                                                                     <ItemTemplate>
@@ -1528,7 +1528,7 @@
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Details / Contract Provision">
                                                                                     <ItemTemplate>
-                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" Width="280px"
+                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" 
                                                                                             Text='<%#Bind("Details") %>' onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                     </ItemTemplate>
                                                                                     <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
@@ -1549,7 +1549,7 @@
                                                                                     <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                                 </asp:TemplateField>
                                                                             </Columns>
-                                                                            <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
+                                                                      
                                                                         </asp:GridView>
                                                                     </div>
                                                                 </div>
@@ -1570,7 +1570,7 @@
                                                                                         <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                                                         <asp:HiddenField ID="hdnProjectParticularsTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                                                     </ItemTemplate>
-                                                                                    <ItemStyle HorizontalAlign="Center" Width="40px" VerticalAlign="Top" BorderColor="#D9EAED" />
+                                                                                
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Particulars">
                                                                                     <ItemTemplate>
@@ -1581,7 +1581,7 @@
                                                                                 </asp:TemplateField>
                                                                                 <asp:TemplateField HeaderText="Details / Contract Provision">
                                                                                     <ItemTemplate>
-                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" Width="280px"
+                                                                                        <asp:TextBox CssClass="form-control" ID="txtContractProvision" runat="server" TextMode="MultiLine" 
                                                                                             Text='<%#Bind("Details") %>' onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                                                     </ItemTemplate>
                                                                                     <ItemStyle   HorizontalAlign="Center" VerticalAlign="Top" BorderColor="#D9EAED" />
@@ -1602,7 +1602,7 @@
                                                                                     <ItemStyle   VerticalAlign="Top" BorderColor="#D9EAED" />
                                                                                 </asp:TemplateField>
                                                                             </Columns>
-                                                                            <HeaderStyle BackColor="#D9EAED" ForeColor="#202020" BorderColor="#D9EAED" />
+                                                                      
                                                                         </asp:GridView>
                                                                     </div>
                                                                 </div>
