@@ -42,6 +42,24 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.LinkButton ImgRefresh;
 
         /// <summary>
+        /// btnParticularsSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnParticularsSubmit;
+
+        /// <summary>
+        /// btnParticularsCancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnParticularsCancel;
+
+        /// <summary>
         /// txtProjectName control.
         /// </summary>
         /// <remarks>
@@ -1588,23 +1606,5 @@ namespace PMCSoft.Web.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView8;
-
-        /// <summary>
-        /// btnParticularsSubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnParticularsSubmit;
-
-        /// <summary>
-        /// btnParticularsCancel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnParticularsCancel;
     }
 }

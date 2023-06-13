@@ -14,7 +14,7 @@ namespace PMCSoft.Infrastructure.Data
 {
     public class ReturnOutPutValue
     {
-        public static string Conn = ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
+        public static string Conn = ConfigurationManager.ConnectionStrings["PMCSoftContext"].ConnectionString;
         public ReturnOutPutValue()
         {
 
@@ -39,7 +39,7 @@ namespace PMCSoft.Infrastructure.Data
             {
                 if (Conn == string.Empty)
                 {
-                    Conn = ConfigurationManager.AppSettings["DBConnectionString"].ToString();
+                    Conn = ConfigurationManager.AppSettings["PMCSoftContext"].ToString();
                 }
                 return new SqlConnection(Conn);
             }

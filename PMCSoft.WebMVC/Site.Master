@@ -81,7 +81,7 @@
             <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
                 <div id="sidebar-collapse" class="menu-scroll collapse d-sm-block">
 
-                    <uc1:VerticleMenu runat="server" ID="VerticleMenu" />
+                    <%--<uc1:VerticleMenu runat="server" ID="VerticleMenu" />--%>
                 </div>
             </nav>
             <!--END SIDEBAR MENU-->

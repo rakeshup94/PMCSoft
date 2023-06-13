@@ -18,7 +18,7 @@ namespace PMCSoft.Infrastructure.Data
 {
     public class DALL
     {
-        public static string Conn = ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
+        public static string Conn = ConfigurationManager.ConnectionStrings["PMCSoftContext"].ConnectionString;
         public DALL()
         {
 
@@ -44,7 +44,7 @@ namespace PMCSoft.Infrastructure.Data
             {
                 if (Conn == string.Empty)
                 {
-                    Conn = ConfigurationManager.AppSettings["DBConnectionString"].ToString();
+                    Conn = ConfigurationManager.AppSettings["PMCSoftContext"].ToString();
                 }
                 return new SqlConnection(Conn);
             }
