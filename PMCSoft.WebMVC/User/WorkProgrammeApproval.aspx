@@ -55,7 +55,7 @@
                                                                     <asp:HiddenField ID="hdnWPID1" runat="server" Value='<%#Bind("WPID") %>' />
                                                                     <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Bind("PRJID") %>' />
                                                                 </ItemTemplate>
-                                                                <ItemStyle Width="40px" HorizontalAlign="Center" />
+                                                               
                                                             </asp:TemplateField>
                                                             <asp:TemplateField HeaderText="Work Programme Date">
                                                                 <ItemTemplate>

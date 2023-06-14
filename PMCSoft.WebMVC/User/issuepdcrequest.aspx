@@ -211,9 +211,9 @@
                                                     <div class="row" >
                                                         <div class="col-lg-4"    >
                                                             <asp:Button CssClass="btn btn-primary btn-square" ID="btnbranchsave" runat="server" OnClick="btnbranchsave_Click" Text="Save"
-                                                                Width="70px" />
+                                                                />
                                                             <asp:Button CssClass="btn btn-primary btn-square" ID="btnbranchcancle" runat="server" CausesValidation="false" OnClick="btnbranchcancle_Click"
-                                                                Text="Cancel" Width="70px" />
+                                                                Text="Cancel" />
                                                         </div>
                                                     </div>
                                        </div>
@@ -224,7 +224,7 @@
                     <div class="row" >
                         <div class="col-lg-4"  colspan="4" align="center">
                             <asp:Button CssClass="btn btn-primary btn-square" ID="btnsubmit" runat="server" Text="Submit" Width="75px" OnClick="btnsubmit_Click" />
-                            <asp:Button CssClass="btn btn-primary btn-square" ID="btncancle" runat="server" Text="Cancel" Width="70px" OnClick="btncancle_Click" />
+                            <asp:Button CssClass="btn btn-primary btn-square" ID="btncancle" runat="server" Text="Cancel" OnClick="btncancle_Click" />
                         </div>
                     </div>
                   </div>

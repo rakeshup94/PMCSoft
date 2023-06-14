@@ -22,7 +22,7 @@
                       
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="4">
-                                    <div class="row"  style="width: 910px;">
+                                    <div class="row"   >
                                         <div class="row" >
                                             <div class="col-lg-4" >
                                                 No.
@@ -92,7 +92,7 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="4">
-                                    <div class="row"  style="width: 910px;">
+                                    <div class="row"   >
                                         <div class="row" >
                                             <div class="col-lg-4"  colspan="6">
                                                 <asp:Repeater ID="Repeater1" runat="server" 

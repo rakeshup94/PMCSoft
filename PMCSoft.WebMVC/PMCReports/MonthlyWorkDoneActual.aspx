@@ -16,11 +16,11 @@
                                 <HeaderTemplate>
                                     Add Monthly WorkDone Plan</HeaderTemplate>
                                 <ContentTemplate>
-                                    <div class="row"  style="width: 970px;">
+                                    <div class="row"   >
                                  
                                         <div class="row" >
                                             <div class="col-lg-4" >
-                                                <div class="row"  style="width: 910px;">
+                                                <div class="row"   >
                                                     <div class="row" >
                                                         <div class="col-lg-4" >
                                                             Project
@@ -149,33 +149,33 @@
                                                                 </HeaderTemplate>
                                                                 <ItemTemplate>
                                                                     <div class="row" >
-                                                                        <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                                        <div class="col-lg-4"   >
                                                                             <asp:Label ID="Label1" runat="server" Text='<%#Bind("TransId") %>'></asp:Label>
                                                                         </div>
-                                                                        <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                                        <div class="col-lg-4"   >
                                                                             <asp:Label ID="lblIncome" runat="server" Text='<%#Bind("WDName") %>' Font-Bold="true"
                                                                                 Height="15"></asp:Label>
                                                                         </div>
-                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                        <div class="col-lg-4"   >
                                                                             <asp:Label ID="txtUnit" runat="server" Width="60px" Text=""></asp:Label>
                                                                         </div>
-                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                        <div class="col-lg-4"   >
                                                                             <asp:Label ID="txtRate" runat="server" Width="60px" Text=""></asp:Label>
                                                                         </div>
-                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                        <div class="col-lg-4"   >
                                                                             <asp:Label ID="txtAwardedValue" runat="server" Width="60px" Text=""></asp:Label>
                                                                         </div>
-                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                        <div class="col-lg-4"   >
                                                                             <asp:Label ID="txtQty" runat="server" Width="60px" Text=""></asp:Label>
                                                                         </div>
-                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                        <div class="col-lg-4"   >
                                                                             <asp:Label ID="txtAmt" runat="server" Width="60px" Text=""></asp:Label>
                                                                         </div>
-                                                                          <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                          <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtCPlan" runat="server" Width="60px" Text='<%#Bind("CPlan") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtCPlan1" runat="server" Width="60px" Text='<%#Bind("CPlan1") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
@@ -185,26 +185,26 @@
                                                                             <asp:Repeater ID="RptSub" runat="server" >
                                                                                 <ItemTemplate>
                                                                                     <div class="row" >
-                                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                        <div class="col-lg-4"   >
                                                                                             <asp:Label ID="LabelLblsub" runat="server" Text='<%#Bind("TransId") %>'></asp:Label>
                                                                                         </div>
-                                                                                        <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                                                        <div class="col-lg-4"   >
                                                                                             <asp:Label ID="lblWDDName" runat="server" Text='<%#Bind("WDDName") %>'></asp:Label>
                                                                                             <asp:Button CssClass="btn btn-primary btn-square" ID="Button" runat="server" Text="+" CommandArgument='<%# Eval("TransId") %>' />
                                                                                         </div>
-                                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                        <div class="col-lg-4"   >
                                                                                             <asp:Label ID="txtUnit" runat="server" Width="60px" Text=""></asp:Label>
                                                                                         </div>
-                                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                        <div class="col-lg-4"   >
                                                                                             <asp:Label ID="txtRate" runat="server" Width="60px" Text=""></asp:Label>
                                                                                         </div>
-                                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                        <div class="col-lg-4"   >
                                                                                             <asp:Label ID="txtAwardedValue" runat="server" Width="60px" Text=""></asp:Label>
                                                                                         </div>
-                                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                        <div class="col-lg-4"   >
                                                                                             <asp:Label ID="txtQty" runat="server" Width="60px" Text=""></asp:Label>
                                                                                         </div>
-                                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                        <div class="col-lg-4"   >
                                                                                             <asp:Label ID="txtAmt" runat="server" Width="60px" Text=""></asp:Label>
                                                                                         </div>
                                                                                     </div>
@@ -213,25 +213,25 @@
                                                                                             <asp:Repeater ID="RptSubDetail" runat="server">
                                                                                                 <ItemTemplate>
                                                                                                     <div class="row" >
-                                                                                                        <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                                                                        <div class="col-lg-4"   >
                                                                                                             <asp:Label ID="LblSWDDId" runat="server" Text='<%#Bind("TransId") %>' Visible="false"></asp:Label>
                                                                                                         </div>
-                                                                                                        <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                                                                        <div class="col-lg-4"   >
                                                                                                             <asp:Label ID="LBLPD" runat="server" Text='<%#Bind("WDDName") %>'></asp:Label>
                                                                                                         </div>
-                                                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                                        <div class="col-lg-4"   >
                                                                                                             <asp:TextBox CssClass="form-control" ID="txtUnit" runat="server"   Text=""></asp:TextBox>
                                                                                                         </div>
-                                                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                                        <div class="col-lg-4"   >
                                                                                                             <asp:TextBox CssClass="form-control" ID="txtRate" runat="server"   Text=""></asp:TextBox>
                                                                                                         </div>
-                                                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                                        <div class="col-lg-4"   >
                                                                                                             <asp:TextBox CssClass="form-control" ID="txtAwardedValue" runat="server"   Text=""></asp:TextBox>
                                                                                                         </div>
-                                                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                                        <div class="col-lg-4"   >
                                                                                                             <asp:TextBox CssClass="form-control" ID="txtQty" runat="server"   Text=""></asp:TextBox>
                                                                                                         </div>
-                                                                                                        <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                                        <div class="col-lg-4"   >
                                                                                                             <asp:TextBox CssClass="form-control" ID="txtAmt" runat="server"   Text=""></asp:TextBox>
                                                                                                         </div>
                                                                                                     </div>
@@ -310,7 +310,7 @@
                         <div class="row"  style="width: 1240px;">
                             <div class="row" >
                             <div class="col-lg-4" >
-                             <div class="row"  style="width: 910px;">
+                             <div class="row"   >
                                                     <div class="row" >
                                                         <div class="col-lg-4" >
                                                             Project
@@ -448,41 +448,41 @@
                                                     </HeaderTemplate>
                                                     <ItemTemplate>
                                                       <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblIncome" runat="server" Text='<%#Bind("Particular") %>'></asp:Label>
                                                                 <asp:HiddenField ID="hdnIncomeParticularID" runat="server" 
                                                                 Value='<%#Bind("ParticularID") %>' />
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtPPlan" runat="server" Width="60px" Text='<%#Bind("PPlan") %>'
                                                                     Enabled="false" ReadOnly="true">
                                                                 </asp:TextBox>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtPPlan1" runat="server" Width="60px" Text='<%#Bind("PPlan1") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtActual" runat="server" Width="60px" Text='<%#Bind("PActual") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtActual1" runat="server" Width="60px" Text='<%#Bind("PActual1") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtVariance" runat="server" Width="60px" Text='<%#Bind("PVariance") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtVariance1" runat="server" Width="60px" Text='<%#Bind("PVariance1") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtCPlan" runat="server" Width="60px" Text='<%#Bind("CPlan") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtCPlan1" runat="server" Width="60px" Text='<%#Bind("CPlan1") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>

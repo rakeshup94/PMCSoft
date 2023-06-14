@@ -31,7 +31,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="40px" HorizontalAlign="Center" />
+                                               
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Receipt ID">
                                                 <ItemTemplate>

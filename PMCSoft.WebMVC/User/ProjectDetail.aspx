@@ -1157,7 +1157,7 @@
                                                                 </div>
                                                             </div>
                                                           </div>
-                                                        <div class="row"  style="width: 910px;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="false"  >
@@ -1263,7 +1263,7 @@
                                                     <Header>
                                                         <a href="#" class="href">Insurance/Licenses (Y/N) &amp; Date of Validity</a></Header>
                                                     <Content>
-                                                        <div class="row"  style="width: 910px;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView3" runat="server" AutoGenerateColumns="false"  >
@@ -1316,7 +1316,7 @@
                                                     <Header>
                                                         <a href="#" class="href">Other Deposit / Bonds / Guarantees</a></Header>
                                                     <Content>
-                                                        <div class="row"  style="width: 910px;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView4" runat="server" AutoGenerateColumns="false"  >
@@ -1370,7 +1370,7 @@
                                                         <a href="#" class="href">Facilities Provided By Clients (Y/N) and whether chargeable
                                                             from Co. or not</a></Header>
                                                     <Content>
-                                                        <div class="row"  style="width: 910px;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView5" runat="server" AutoGenerateColumns="false"  >
@@ -1423,7 +1423,7 @@
                                                     <Header>
                                                         <a href="#" class="href">Mobilization Advance</a></Header>
                                                     <Content>
-                                                        <div class="row"  style="width: 910px;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView6" runat="server" AutoGenerateColumns="false"  >
@@ -1476,7 +1476,7 @@
                                                     <Header>
                                                         <a href="#" class="href">Billing</a></Header>
                                                     <Content>
-                                                        <div class="row"  style="width: 910px;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView7" runat="server" AutoGenerateColumns="false"  >
@@ -1529,7 +1529,7 @@
                                                     <Header>
                                                         <a href="#" class="href">Payments Terms</a></Header>
                                                     <Content>
-                                                        <div class="row"  style="width: 910px;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView8" runat="server" AutoGenerateColumns="false"  >

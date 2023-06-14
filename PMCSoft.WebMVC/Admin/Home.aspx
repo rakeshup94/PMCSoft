@@ -227,7 +227,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblTotal" runat="server" Text='<%#Bind("Total") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="70px" />
+                                                <ItemStyle HorizontalAlign="Center" />
                                             </asp:TemplateField>
                                         </Columns>
                                        

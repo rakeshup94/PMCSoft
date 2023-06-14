@@ -134,7 +134,7 @@
                                                         <asp:Label ID="RaBillNo" runat="server"   Text='<%#Bind("RaBillNo") %>'></asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                        <asp:Label ID="Billperiod" runat="server"   Width="70px" Text='<%#Bind("Billperiod") %>'></asp:Label>
+                                                        <asp:Label ID="Billperiod" runat="server"   Text='<%#Bind("Billperiod") %>'></asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
                                                         <asp:Label ID="Billsubmitteddate"   runat="server"   Text='<%#Bind("Billsubmitteddate") %>'>

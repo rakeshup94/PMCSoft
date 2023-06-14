@@ -51,21 +51,21 @@
                                                     <asp:DropDownList CssClass="form-select" ID="ddlPaymentType" runat="server"  >
                                                     </asp:DropDownList>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" />
+                                               
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Bank Name">
                                                 <ItemTemplate>
                                                     <asp:TextBox CssClass="form-control" ID="txtBankName" runat="server" Text=""   onkeyup="valid(this)"
                                                         onblur="valid(this)"></asp:TextBox>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" />
+                                               
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Cheque No">
                                                 <ItemTemplate>
                                                     <asp:TextBox CssClass="form-control" ID="txtCheckNo" runat="server" Text="" onkeyup="valid(this)" onblur="valid(this)">
                                                     </asp:TextBox>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" />
+                                               
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Amount">
                                                 <ItemTemplate>
@@ -78,7 +78,7 @@
                                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddMore" runat="server" Text="Add More" OnClick="btnAddMore_Click" />
                                                 </FooterTemplate>
                                                 <FooterStyle HorizontalAlign="Right" />
-                                                <ItemStyle HorizontalAlign="Center" />
+                                               
                                             </asp:TemplateField>
                                         </Columns>
                                        

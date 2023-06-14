@@ -183,53 +183,53 @@
                                                     </HeaderTemplate>
                                                     <ItemTemplate>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="Label1" runat="server" Text='<%#Bind("WDMParticularId") %>'></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblActual" runat="server" Text='<%#Bind("WDMParticularName") %>' Font-Bold="true"
                                                                     Height="15"></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="txtUnit" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="txtRate" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="txtAwardedValue" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="txtQty" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="txtAmt" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="Label2" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="Label3" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="Label4" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="Label5" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="Label6" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="Label7" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="Label8" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="Label9" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="Label10" runat="server" Width="60px" Text=""></asp:Label>
                                                             </div>
                                                         </div>
@@ -238,52 +238,52 @@
                                                                 <asp:Repeater ID="RptSub" runat="server" OnItemDataBound="RptSub_ItemDataBound">
                                                                     <ItemTemplate>
                                                                         <div class="row" >
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="LabelLblsub" runat="server" Text='<%#Bind("TransId") %>'></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="lblWDDName" runat="server" Text='<%#Bind("WDDName") %>'></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="txtUnit" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="txtRate" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="txtAwardedValue" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="txtQty" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="txtAmt" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="Label11" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="Label12" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="Label13" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="Label14" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="Label15" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="Label16" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="Label17" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="Label18" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
-                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                            <div class="col-lg-4"   >
                                                                                 <asp:Label ID="Label19" runat="server" Width="60px" Text=""></asp:Label>
                                                                             </div>
                                                                         </div>
@@ -292,52 +292,52 @@
                                                                                 <asp:Repeater ID="RptSubDetail" runat="server">
                                                                                     <ItemTemplate>
                                                                                         <div class="row" >
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="LabelLblsub" runat="server" Text='<%#Bind("WDSubDID") %>' Visible="false"></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="lblWDDName" runat="server" Text='<%#Bind("WDSubParticularsName") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="txtUnit" runat="server" Width="60px" Text='<%#Bind("preUnit") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="txtRate" runat="server" Width="60px" Text='<%#Bind("preRate") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="txtAwardedValue" runat="server" Width="60px" Text='<%#Bind("preAwardedValue") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="txtQty" runat="server" Width="60px" Text='<%#Bind("prePlanQty") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="txtAmt" runat="server" Width="60px" Text='<%#Bind("prePlanAmt") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="Label11" runat="server" Width="60px" Text='<%#Bind("CurrPlanQty") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="Label12" runat="server" Width="60px" Text='<%#Bind("CurrPlanAmt") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="Label13" runat="server" Width="60px" Text='<%#Bind("preActualQty") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="Label14" runat="server" Width="60px" Text='<%#Bind("preActualAmt") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="Label15" runat="server" Width="60px" Text='<%#Bind("CurrActualQty") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="Label16" runat="server" Width="60px" Text='<%#Bind("CurrActualAmt") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="Label17" runat="server" Width="60px" Text='<%#Bind("variationAmt") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="Label18" runat="server" Width="60px" Text='<%#Bind("currentMonth") %>'></asp:Label>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                                                            <div class="col-lg-4"   >
                                                                                                 <asp:Label ID="Label19" runat="server" Width="60px" Text='<%#Bind("BalanceAmt") %>'></asp:Label>
                                                                                             </div>
                                                                                         </div>
@@ -352,43 +352,43 @@
                                                     </ItemTemplate>
                                                     <FooterTemplate>
                                                         <%--<tr>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 Total Income
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblPActualTotal" runat="server"></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblPVarianceTotal" runat="server"></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblCPlanTotal" runat="server"></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblCActualTotal" runat="server"></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblCVarianceTotal" runat="server"></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblNPlanTotal" runat="server"></asp:Label>
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                             </div>
                                                         </div>--%>
                                                           </div>

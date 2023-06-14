@@ -65,7 +65,7 @@
                                                     Width="1070px" EmptyDataText="No Records Found">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">
-                                                            <ItemStyle Width="40px" HorizontalAlign="Center" />
+                                                           
                                                             <ItemTemplate>
                                                                 <%# Container.DataItemIndex + 1 %>.&nbsp;
                                                             </ItemTemplate>

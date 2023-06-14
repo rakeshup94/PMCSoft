@@ -72,11 +72,11 @@
                                                     </HeaderTemplate>
                                                     <ItemTemplate>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblIncome" runat="server" Text='<%#Bind("Particular") %>'></asp:Label>
                                                                 <asp:HiddenField ID="hdnIncomeParticularID" runat="server" Value='<%#Bind("TransID") %>' />
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtPPlan" runat="server" Width="60px" Text="">
                                                                    
                                                                 </asp:TextBox>
@@ -92,14 +92,14 @@
                                                     </ItemTemplate>
                                                     <FooterTemplate>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"   style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"    >
                                                                 Total Income
                                                             </div>
-                                                            <div class="col-lg-4"   style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"    >
                                                                 <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Add New" />
                                                             </div>
                                                             
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
                                                             </div>
                                                             
@@ -115,7 +115,7 @@
                                                                 <div class="col-lg-4"  style="border: 1px solid black; width: 435px; font-weight: bold;">
                                                                     EXPENDITURE
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="14" style="border: 1px solid black;">
+                                                                <div class="col-lg-4"   >
                                                                 </div>
                                                             </div>
                                                             <div class="row" >
@@ -128,11 +128,11 @@
                                                     </HeaderTemplate>
                                                     <ItemTemplate>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblExpenditure" runat="server" Text='<%#Bind("Particular") %>'></asp:Label>
                                                                 <asp:HiddenField ID="hdnEXPENDITUREParticularID" runat="server" Value='<%#Bind("TransId") %>' />
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtPPlan" runat="server" Width="60px" Text=""
                                                                    >
                                                                 </asp:TextBox>
@@ -146,7 +146,7 @@
                                                             <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold; width:"200">
                                                                 Total Purchase
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
                                                             </div>
                                                           
@@ -162,18 +162,18 @@
                                                                 <div class="col-lg-4"  style="border: 1px solid black; width: 435px; font-weight: bold;">
                                                                     CONSUMBLES
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="14" style="border: 1px solid black;">
+                                                                <div class="col-lg-4"   >
                                                                 </div>
                                                             </div>
                                                     </HeaderTemplate>
                                                     <ItemTemplate>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblCONSUMBLES" runat="server" Text='<%#Bind("Particular") %>'></asp:Label>
                                                                 <asp:HiddenField ID="hdnCONSUMBLESParticularID" runat="server" Value='<%#Bind("TransID") %>' />
                                                                
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtPPlan" runat="server" Width="60px" Text="">
                                                                 </asp:TextBox>
                                                             </div>
@@ -183,10 +183,10 @@
                                                     </ItemTemplate>
                                                     <FooterTemplate>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 Total Direct Expense
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
                                                             </div>
                                                            
@@ -201,18 +201,18 @@
                                                                 <div class="col-lg-4"  style="border: 1px solid black; width: 435px; font-weight: bold;">
                                                                     DIRECT EXPENSES
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="14" style="border: 1px solid black;">
+                                                                <div class="col-lg-4"   >
                                                                 </div>
                                                             </div>
                                                     </HeaderTemplate>
                                                     <ItemTemplate>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                
                                                                  <asp:Label ID="lblDIRECTEXPENSES" runat="server" Text='<%#Bind("Particular") %>'></asp:Label>
                                                                 <asp:HiddenField ID="hdnDIRECTEXPENSESParticularID" runat="server" Value='<%#Bind("TransID") %>' />
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtPPlan" runat="server" Width="60px" Text="">
                                                                 </asp:TextBox>
                                                             </div>
@@ -222,10 +222,10 @@
                                                     </ItemTemplate>
                                                     <FooterTemplate>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 Total Direct Expense
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
                                                             </div>
                                                            
@@ -241,17 +241,17 @@
                                                                 <div class="col-lg-4"  style="border: 1px solid black; width: 435px; font-weight: bold;">
                                                                     HIRE CHARGES (Item-Wise)
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="14" style="border: 1px solid black;">
+                                                                <div class="col-lg-4"   >
                                                                 </div>
                                                             </div>
                                                     </HeaderTemplate>
                                                     <ItemTemplate>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                               <asp:Label ID="lblHireCharge" runat="server" Text='<%#Bind("Particular") %>'></asp:Label>
                                                                 <asp:HiddenField ID="hdnHIRECHARGESParticularID" runat="server" Value='<%#Bind("ParticularID") %>' />
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtPPlan" runat="server" Width="60px" Text=""
                                                                    >
                                                                 </asp:TextBox>
@@ -262,10 +262,10 @@
                                                     </ItemTemplate>
                                                     <FooterTemplate>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 Total Hire Charges
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
                                                             </div>
                                                          
@@ -281,17 +281,17 @@
                                                                 <div class="col-lg-4"  style="border: 1px solid black; width: 435px; font-weight: bold;">
                                                                     INDIRECT EXPENSES
                                                                 </div>
-                                                                <div class="col-lg-4"  colspan="14" style="border: 1px solid black;">
+                                                                <div class="col-lg-4"   >
                                                                 </div>
                                                             </div>
                                                     </HeaderTemplate>
                                                     <ItemTemplate>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: left; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                             <asp:Label ID="lblIndirctExpenses" runat="server" Text='<%#Bind("Particular") %>'></asp:Label>
                                                                 <asp:HiddenField ID="hdnIncomeParticularID" runat="server" Value='<%#Bind("ParticularID") %>' />
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: right; border: 1px solid black;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:TextBox CssClass="form-control" ID="txtPPlan" runat="server" Width="60px" Text="">
                                                                 </asp:TextBox>
                                                             </div>
@@ -301,10 +301,10 @@
                                                     </ItemTemplate>
                                                     <FooterTemplate>
                                                         <div class="row" >
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 Total Indirect Expense
                                                             </div>
-                                                            <div class="col-lg-4"  style="text-align: center; border: 1px solid black; font-weight: bold;">
+                                                            <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
                                                             </div>
                                                             

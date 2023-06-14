@@ -43,7 +43,7 @@
                                                     PageSize="50">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No">
-                                                            <ItemStyle Width="40px" HorizontalAlign="Center" />
+                                                           
                                                             <ItemTemplate>
                                                                 <%# Container.DataItemIndex + 1 %>.&nbsp;
                                                             </ItemTemplate>

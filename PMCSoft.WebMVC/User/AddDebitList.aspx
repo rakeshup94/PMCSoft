@@ -20,7 +20,7 @@
                                             <HeaderTemplate>
                                                 Add Creditor List</HeaderTemplate>
                                             <ContentTemplate>
-                                                <div class="row"  style="width: 900px;">
+                                                <div class="row"   >
                                                     <div class="row" >
                                                         <div class="col-lg-4"  style="text-align: center;">
                                                             Project Name
@@ -290,7 +290,7 @@
                                                                             <asp:HiddenField ID="hdnListID" runat="server" Value='<%#Bind("ListID") %>' />
                                                                             <asp:HiddenField ID="hdnApproveListID" runat="server" Value='<%#Bind("ApproveListID") %>' />
                                                                         </ItemTemplate>
-                                                                        <ItemStyle Width="40px" HorizontalAlign="Center" />
+                                                                       
                                                                     </asp:TemplateField>
                                                                     <asp:TemplateField HeaderText="Party / Vendor">
                                                                         <ItemTemplate>

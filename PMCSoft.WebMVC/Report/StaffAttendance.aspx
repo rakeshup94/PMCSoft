@@ -50,7 +50,7 @@
                                                     <asp:Label ID="lblEmployeeID" runat="server" Text='<%#Bind("OfficialEMPID") %>'></asp:Label>
                                                     <asp:HiddenField ID="hdnEmpID" runat="server" Value='<%#Bind("EmpID") %>' />
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" />
+                                               
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Name">
                                                 <ItemTemplate>
@@ -61,31 +61,31 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblMobileNo" runat="server" Text='<%#Bind("MobileNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" />
+                                               
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Designation">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lbDesignation" runat="server" Text='<%#Bind("Designation") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" />
+                                               
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Date Of Joining">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lbDOJ" runat="server" Text='<%#Bind("DOJ") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" />
+                                               
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Employee Type">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lbEmployeeType" runat="server" Text='<%#Bind("EmployeeType") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" />
+                                               
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Time">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblTime" runat="server" Text='<%#Bind("AttendanceTime") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" />
+                                               
                                             </asp:TemplateField>
                                         </Columns>
                                        

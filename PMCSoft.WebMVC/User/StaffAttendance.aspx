@@ -38,7 +38,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="40px" HorizontalAlign="Center" />
+                                               
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Employee ID">
                                                 <ItemTemplate>
@@ -81,7 +81,7 @@
                                                 <ItemTemplate>
                                                     <asp:CheckBox ID="chk" runat="server" />
                                                 </ItemTemplate>
-                                                <ItemStyle Width="40px" HorizontalAlign="Center" />
+                                               
                                             </asp:TemplateField>
                                         </Columns>
                                        

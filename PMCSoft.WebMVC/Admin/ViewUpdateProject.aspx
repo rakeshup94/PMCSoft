@@ -38,7 +38,7 @@
                                                 <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                             </ItemTemplate>
-                                            <ItemStyle Width="40px" HorizontalAlign="Center" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Project">
                                             <ItemTemplate>

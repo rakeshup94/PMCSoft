@@ -129,14 +129,14 @@
                                                                     <asp:Label ID="RaBillNo" runat="server" Text='<%#Bind("RaBillNo") %>'></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                                    <asp:Label ID="Billperiod" runat="server" Width="70px" Text='<%#Bind("Billperiod") %>'></asp:Label>
+                                                                    <asp:Label ID="Billperiod" runat="server" Text='<%#Bind("Billperiod") %>'></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                                    <asp:Label ID="Billsubmitteddate" runat="server" Width="70px" Text='<%#Bind("Billsubmitteddate") %>'>
+                                                                    <asp:Label ID="Billsubmitteddate" runat="server" Text='<%#Bind("Billsubmitteddate") %>'>
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                                    <asp:Label ID="BillCertificationDate" runat="server" Width="70px" Text='<%#Bind("BillCertificationDate") %>'>
+                                                                    <asp:Label ID="BillCertificationDate" runat="server" Text='<%#Bind("BillCertificationDate") %>'>
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">

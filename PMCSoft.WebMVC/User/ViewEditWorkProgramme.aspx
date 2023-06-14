@@ -55,7 +55,7 @@
                                                                     <asp:HiddenField ID="hdnWPID1" runat="server" Value='<%#Bind("WPID") %>' />
                                                                     <asp:HiddenField ID="hdnPRJID" runat="server" Value='<%#Bind("PRJID") %>' />
                                                                 </ItemTemplate>
-                                                                <ItemStyle Width="40px" HorizontalAlign="Center" />
+                                                               
                                                             </asp:TemplateField>
                                                             <asp:TemplateField HeaderText="Work Programme Date">
                                                                 <ItemTemplate>
@@ -214,27 +214,27 @@
                                                                                     <asp:Label ID="lblArea" runat="server" Text='<%#Bind("Area") %>'></asp:Label>
                                                                                 </div>
                                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                                                    <asp:TextBox CssClass="form-control" ID="txtSK" runat="server" Width="70px" Text='<%#Bind("LabourSK") %>'></asp:TextBox>
+                                                                                    <asp:TextBox CssClass="form-control" ID="txtSK" runat="server" Text='<%#Bind("LabourSK") %>'></asp:TextBox>
                                                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtSK"
                                                                                         FilterType="Custom, Numbers">
                                                                                     </cc1:FilteredTextBoxExtender>
                                                                                 </div>
                                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                                                    <asp:TextBox CssClass="form-control" ID="txtSEMI" runat="server" Width="70px" Text='<%#Bind("LabourSEMI") %>'>
+                                                                                    <asp:TextBox CssClass="form-control" ID="txtSEMI" runat="server" Text='<%#Bind("LabourSEMI") %>'>
                                                                                     </asp:TextBox>
                                                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtSEMI"
                                                                                         FilterType="Custom, Numbers">
                                                                                     </cc1:FilteredTextBoxExtender>
                                                                                 </div>
                                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                                                    <asp:TextBox CssClass="form-control" ID="txtUNSK" runat="server" Width="70px" Text='<%#Bind("LabourUNSK") %>'>
+                                                                                    <asp:TextBox CssClass="form-control" ID="txtUNSK" runat="server" Text='<%#Bind("LabourUNSK") %>'>
                                                                                     </asp:TextBox>
                                                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" TargetControlID="txtUNSK"
                                                                                         FilterType="Custom, Numbers">
                                                                                     </cc1:FilteredTextBoxExtender>
                                                                                 </div>
                                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                                                    <asp:TextBox CssClass="form-control" ID="txtOT" runat="server" Width="70px" Text='<%#Bind("LabourOT") %>'></asp:TextBox>
+                                                                                    <asp:TextBox CssClass="form-control" ID="txtOT" runat="server" Text='<%#Bind("LabourOT") %>'></asp:TextBox>
                                                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender4" runat="server" TargetControlID="txtOT"
                                                                                         FilterType="Custom, Numbers">
                                                                                     </cc1:FilteredTextBoxExtender>

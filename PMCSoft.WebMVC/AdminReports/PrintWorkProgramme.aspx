@@ -76,7 +76,7 @@
                     <div class="row" >
                         <div class="col-lg-4"   >
                             <asp:Panel ID="Panel1" runat="server"    Visible="false">
-                                <div class="row"  style="width: 900px;">
+                                <div class="row"   >
                                     <div class="row" >
                                         <div class="col-lg-4"   >
                                         </div>
