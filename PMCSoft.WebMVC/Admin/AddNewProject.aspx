@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Inherits="PMCSoft.Web.Admin.AddNewProject"
     CodeBehind="AddNewProject.aspx.cs" %>
 
-<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+ 
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">

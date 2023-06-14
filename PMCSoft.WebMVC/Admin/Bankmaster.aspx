@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Inherits="PMCSoft.Web.Admin.Bankmaster"
     CodeBehind="Bankmaster.aspx.cs" %>
 
-<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 
     <script type="text/javascript">
@@ -24,17 +24,43 @@
             <!--BEGIN CONTENT-->
             <div class="page-content">
                 <div class="card">
-                    <cc1:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0">
-                        <cc1:TabPanel ID="TabPanel1" runat="server" TabIndex="0">
-                            <HeaderTemplate>
-                                Bank
-                            </HeaderTemplate>
-                            <ContentTemplate>
+                    <div class="row">
+                        <div class="col-12 d-block d-sm-none">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-                                <div class="card-header">
-                                    Bank Detail
-                                </div>
-                                <div class="card-body">
+
+                                <button class="nav-link text-start active" data-bs-toggle="pill" data-bs-target="#v-pills-Bank"
+                                    type="button" role="tab">
+                                    Bank
+                                </button>
+                                <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#v-pills-Branch"
+                                    type="button" role="tab">
+                                    Branch
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-9 pe-sm-0">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-Bank" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="mb-3">
+                                                Bank Name
+                                                     
+                                                            <asp:TextBox CssClass="form-control" ID="txtbankname" runat="server" onkeyup="valid(this)"
+                                                                onblur="valid(this)"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+
+                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnSave" runat="server" OnClick="btnSave_Click"
+                                                Text="Submit" />
+                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancle" runat="server" OnClick="btnCancle_Click"
+                                                Text="Cancle"
+                                                CausesValidation="False" />
+                                        </div>
+                                    </div>
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"
@@ -65,44 +91,10 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="tab-pane fade show active" id="v-pills-Branch" role="tabpanel">
 
-                                <div class="card-header">
-                                    Add Bank
-                                </div>
 
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div class="mb-3">
-                                                Bank Name
-                                                     
-                                                            <asp:TextBox CssClass="form-control" ID="txtbankname" runat="server" onkeyup="valid(this)"
-                                                                onblur="valid(this)"></asp:TextBox>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
 
-                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnSave" runat="server" OnClick="btnSave_Click"
-                                                Text="Submit" />
-                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancle" runat="server" OnClick="btnCancle_Click"
-                                                Text="Cancle"
-                                                CausesValidation="False" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </ContentTemplate>
-                        </cc1:TabPanel>
-                        <cc1:TabPanel ID="TabPanel2" runat="server" TabIndex="1">
-                            <HeaderTemplate>
-                                Branch
-                            </HeaderTemplate>
-                            <ContentTemplate>
-                                <div class="card-header">
-                                    Add Branch
-                                </div>
-
-                                <div class="card-body">
 
 
                                     <div class="row">
@@ -188,11 +180,7 @@
                                                 Text="Cancle" />
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card-header">
-                                    Branch Detail
-                                </div>
-                                <div class="card-body">
+
 
 
                                     <div class="row">
@@ -257,10 +245,40 @@
                                         </div>
                                     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                 </div>
-                            </ContentTemplate>
-                        </cc1:TabPanel>
-                    </cc1:TabContainer>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 ps-sm-0 d-none d-sm-block">
+                            <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link text-start active" data-bs-toggle="pill" data-bs-target="#v-pills-Bank"
+                                    type="button" role="tab">
+                                    Bank
+                                </button>
+                                <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#v-pills-Branch"
+                                    type="button" role="tab">
+                                    Branch
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
         </ContentTemplate>
     </asp:UpdatePanel>
