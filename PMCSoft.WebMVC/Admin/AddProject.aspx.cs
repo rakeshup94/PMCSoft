@@ -285,7 +285,7 @@ namespace PMCSoft.Web.Admin
                                                         BindR();
 
                                                         ClearField();
-                                                        TabContainer1.ActiveTabIndex = 0;
+                                                      
                                                         string scripts = "alert('Project insert successfully.');";
                                                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
                                                     }

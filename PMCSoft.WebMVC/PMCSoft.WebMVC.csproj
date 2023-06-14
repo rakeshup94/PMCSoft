@@ -396,6 +396,13 @@
     <Compile Include="Admin\ViewEditProject.aspx.designer.cs">
       <DependentUpon>ViewEditProject.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\ViewProject.aspx.cs">
+      <DependentUpon>ViewProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewProject.aspx.designer.cs">
+      <DependentUpon>ViewProject.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\ViewProjectDetail.aspx.cs">
       <DependentUpon>ViewProjectDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -930,6 +937,7 @@
     <Content Include="Admin\SecurityForAdvanceRequisition.aspx" />
     <Content Include="Admin\TypeOfAdvanceRequisition.aspx" />
     <Content Include="Admin\ViewEditProject.aspx" />
+    <Content Include="Admin\ViewProject.aspx" />
     <Content Include="Admin\ViewProjectDetail.aspx" />
     <Content Include="Admin\ViewStaff.aspx" />
     <Content Include="Admin\ViewUpdateProject.aspx" />

@@ -248,13 +248,13 @@ namespace PMCSoft.Web.Admin
                     PMC.GetBillingParticularsDetail(GridView7, ProjectID.ToString());
                     PMC.GetPaymentTermsDetail(GridView8, ProjectID.ToString());
 
-                    Panel1.Visible = true;
+         
                 }
                 else
                 {
                     string scripts = "alert('No record found.');";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-                    Panel1.Visible = false;
+              
                 }
             }
             catch (Exception ex)
