@@ -43,7 +43,7 @@
                                                 <asp:Label ID="lblPaymentSecurity" runat="server" Text='<%#Bind("PaymentSecurity") %>'></asp:Label>
                                             </ItemTemplate>
                                             <EditItemTemplate>
-                                                <asp:TextBox CssClass="form-control" ID="txtPaymentSecurity" runat="server" Width="250px"
+                                                <asp:TextBox CssClass="form-control" ID="txtPaymentSecurity" runat="server"  
                                                     onkeyup="valid(this)"
                                                     onblur="valid(this)" Text='<%#Bind("PaymentSecurity") %>'></asp:TextBox>
                                             </EditItemTemplate>

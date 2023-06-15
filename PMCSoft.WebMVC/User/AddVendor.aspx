@@ -64,8 +64,8 @@
                                         PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"  
                                         Enabled="True">
                                     </cc1:ModalPopupExtender>
-                                    <asp:Panel ID="Panel1" runat="server" Style="display: none;">
-                                        <div class="row"  style="width: 350px; background-color: #EFFBFB;">
+                                    <asp:Panel ID="Panel1" runat="server"  >
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     <div class="card-body">
@@ -154,7 +154,7 @@
                                                                 </div>
                                                                 <div class="col-lg-4" >
                                                                       <asp:LinkButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" ><i class="fa fa-check-square"></i></asp:LinkButton>
-                                                                    <asp:Panel ID="Panel2" runat="server"    Style="display: none;">
+                                                                    <asp:Panel ID="Panel2" runat="server"     >
                                                                         <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView2" runat="server" AutoGenerateColumns="false" GridLines="None"
                                                                             ShowHeader="false">
                                                                             <Columns>
@@ -195,7 +195,7 @@
                                     <div class="card-body">
                                         <div class="card-header">
                                             Add Party / Vendor</div>
-                                        <div class="row"  style="width: 325px; vertical-align: top;">
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     Name
@@ -309,8 +309,8 @@
                                                         PopupControlID="Panel3" TargetControlID="Button2" EnableViewState="False"  
                                                         Enabled="True">
                                                     </cc1:ModalPopupExtender>
-                                                    <asp:Panel ID="Panel3" runat="server" Style="display: none;">
-                                                        <div class="row"  style="width: 350px; background-color: #EFFBFB;">
+                                                    <asp:Panel ID="Panel3" runat="server"  >
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4" >
                                                                     <div id="Div1">
@@ -346,7 +346,7 @@
                                                 </div>
                                                 <div class="col-lg-4" >
                                                       <asp:LinkButton ID="ImageButton1" runat="server" OnClick="lnkBtnProject_Click" ><i class="fa fa-check-square"></i></asp:LinkButton>
-                                                    <asp:Panel ID="pnlCustomers" runat="server"    Style="display: none;">
+                                                    <asp:Panel ID="pnlCustomers" runat="server"     >
                                                         <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVProject" runat="server" AutoGenerateColumns="false" GridLines="None"
                                                             ShowHeader="false">
                                                             <Columns>

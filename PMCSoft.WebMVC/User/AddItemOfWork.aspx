@@ -29,7 +29,7 @@
                                                     <asp:Label ID="lblItemOfWork" runat="server" Text='<%#Bind("ItemOfWork") %>'></asp:Label>
                                                 </ItemTemplate>
                                                 <EditItemTemplate>
-                                                    <asp:TextBox CssClass="form-control" ID="txtItemOfWork" runat="server" Width="250px" Text='<%#Bind("ItemOfWork") %>'
+                                                    <asp:TextBox CssClass="form-control" ID="txtItemOfWork" runat="server"   Text='<%#Bind("ItemOfWork") %>'
                                                         onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                 </EditItemTemplate>
                                             </asp:TemplateField>

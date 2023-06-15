@@ -143,7 +143,7 @@
 
 
 
-            <asp:Panel ID="Panel1" runat="server" Style="display: none;">
+            <asp:Panel ID="Panel1" runat="server"  >
 
 
 
@@ -288,7 +288,7 @@
 
             </asp:Panel>
 
-            <asp:Panel ID="pnlCustomers" runat="server" Style="display: none;">
+            <asp:Panel ID="pnlCustomers" runat="server"  >
                 <div class="row">
                     <div class="col-lg-12">
                         <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"

@@ -21,7 +21,7 @@
                                          >
                                     </asp:DropDownList>
                                 </div>
-                                <div class="col-lg-4"  style="text-align: center;">
+                                <div class="col-lg-4"   >
                                     Forward To
                                 </div>
                                 <div class="col-lg-4" >

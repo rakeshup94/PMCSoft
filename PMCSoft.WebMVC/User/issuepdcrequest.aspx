@@ -104,11 +104,11 @@
                                 PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"  
                                 Enabled="True">
                             </cc1:ModalPopupExtender>
-                            <asp:Panel ID="Panel2" runat="server" Style="display: none;">
+                            <asp:Panel ID="Panel2" runat="server"  >
                                 <div id="Div1">
                                     <div class="card-header">
                                        Add Bank</div>
-                                    <div class="row"  style="width: 350px; background-color: #EFFBFB;">
+                                    <div class="row"   >
                                      <div class="row" >
                                                             <div class="col-lg-4"    >
                                                                 Bank Name
@@ -136,11 +136,11 @@
                                 PopupControlID="PanelBranch" TargetControlID="Button2" EnableViewState="False"  
                                 Enabled="True">
                             </cc1:ModalPopupExtender>
-                            <asp:Panel ID="PanelBranch" runat="server" Style="display: none;">
+                            <asp:Panel ID="PanelBranch" runat="server"  >
                                 <div id="Div2">
                                     <div class="card-header">
                                        Add Branch</div>
-                                    <div class="row"  style="width: 350px; background-color: #EFFBFB;">
+                                    <div class="row"   >
                                      <div class="row" >
                                                         <div class="col-lg-4"    >
                                                             Bank

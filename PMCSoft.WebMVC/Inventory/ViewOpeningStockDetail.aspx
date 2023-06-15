@@ -18,7 +18,7 @@
                                     Project:
                                 </div>
                                 <div class="col-lg-4"  style="width: 260px;">
-                                    <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" Width="250px" AutoPostBack="True"
+                                    <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server"   AutoPostBack="True"
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                     </asp:DropDownList>
                                 </div>
@@ -95,7 +95,7 @@
                                             </asp:TemplateField>
                                         </Columns>
                                        
-                                        <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                        
                                     </asp:GridView>
                                 </div>
                           </div>

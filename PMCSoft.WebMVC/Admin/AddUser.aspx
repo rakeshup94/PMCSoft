@@ -304,7 +304,7 @@
                     </div>
                 </div>
             </div>
-            <asp:Panel ID="pnlCustomers" runat="server" Style="display: none;">
+            <asp:Panel ID="pnlCustomers" runat="server"  >
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -338,7 +338,7 @@
                 </div>
             </asp:Panel>
 
-            <asp:Panel ID="Panel2" runat="server" Style="display: none;">
+            <asp:Panel ID="Panel2" runat="server"  >
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -396,7 +396,7 @@
 
             </asp:Panel>
 
-            <asp:Panel ID="Panel1" runat="server" Style="display: none;">
+            <asp:Panel ID="Panel1" runat="server"  >
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">

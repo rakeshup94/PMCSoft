@@ -43,7 +43,7 @@
                                                 <asp:Label ID="lblType" runat="server" Text='<%#Bind("Type") %>'></asp:Label>
                                             </ItemTemplate>
                                             <EditItemTemplate>
-                                                <asp:TextBox CssClass="form-control" ID="txtType" runat="server" Width="250px" onkeyup="valid(this)"
+                                                <asp:TextBox CssClass="form-control" ID="txtType" runat="server"   onkeyup="valid(this)"
                                                     onblur="valid(this)"
                                                     Text='<%#Bind("Type") %>'></asp:TextBox>
                                             </EditItemTemplate>

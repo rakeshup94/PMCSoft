@@ -27,7 +27,7 @@
                                 <div class="col-lg-4" >
                                     <asp:TextBox CssClass="form-control" ID="txtRABillNo" runat="server" Text="" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                 </div>
-                                <div class="col-lg-4"  style="text-align: center;">
+                                <div class="col-lg-4"   >
                                     Date
                                 </div>
                                 <div class="col-lg-4"  style="width: 120px; text-align: left;">
@@ -82,12 +82,12 @@
                                             </asp:TemplateField>
                                         </Columns>
                                        
-                                        <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                        
                                     </asp:GridView>
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  colspan="6" style="text-align: center;">
+                                <div class="col-lg-4"  colspan="6"  >
                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                 </div>

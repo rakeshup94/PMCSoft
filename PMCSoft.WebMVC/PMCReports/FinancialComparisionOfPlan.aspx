@@ -323,7 +323,7 @@
                                             </div>
                                         </div>
                                         <div class="row" >
-                                            <div class="col-lg-4"  style="text-align: center;">
+                                            <div class="col-lg-4"   >
                                                 <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server"  />
                                                 <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" />
                                             </div>

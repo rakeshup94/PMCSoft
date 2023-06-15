@@ -186,7 +186,7 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"
-                                                ID="GridView2" runat="server" AutoGenerateColumns="False" Width="880px"
+                                                ID="GridView2" runat="server" AutoGenerateColumns="False"  
                                                 OnRowCancelingEdit="GridView2_RowCancelingEdit" OnRowEditing="GridView2_RowEditing"
                                                 OnRowUpdating="GridView2_RowUpdating">
                                                 <Columns>

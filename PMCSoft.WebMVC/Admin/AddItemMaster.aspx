@@ -208,7 +208,7 @@
                 popupcontrolid="Panel3" targetcontrolid="Button3" enableviewstate="False"
                 enabled="True">
             </cc1:modalpopupextender>
-            <asp:Panel ID="Panel3" runat="server" Style="display: none;">
+            <asp:Panel ID="Panel3" runat="server"  >
 
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -276,7 +276,7 @@
                 popupcontrolid="Panel2" targetcontrolid="Button1" enableviewstate="False"
                 enabled="True">
             </cc1:modalpopupextender>
-            <asp:Panel ID="Panel2" runat="server" Style="display: none;">
+            <asp:Panel ID="Panel2" runat="server"  >
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -370,7 +370,7 @@
 
 
 
-            <asp:Panel ID="Panel1" runat="server" Style="display: none;">
+            <asp:Panel ID="Panel1" runat="server"  >
 
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">

@@ -29,7 +29,7 @@
                                                     <asp:Label ID="lblPaymentType" runat="server" Text='<%#Bind("PaymentType") %>'></asp:Label>
                                                 </ItemTemplate>
                                                 <EditItemTemplate>
-                                                    <asp:TextBox CssClass="form-control" ID="txtPaymentType" runat="server" Width="250px" Text='<%#Bind("PaymentType") %>'
+                                                    <asp:TextBox CssClass="form-control" ID="txtPaymentType" runat="server"   Text='<%#Bind("PaymentType") %>'
                                                         onkeyup="valid(this)" onblur="valid(this)">
                                                     </asp:TextBox>
                                                 </EditItemTemplate>

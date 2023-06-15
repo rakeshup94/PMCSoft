@@ -69,7 +69,7 @@
                                             Block:</div>
                        
                         <div class="col-lg-4" >
-                                            <asp:Label ID="lblBlock" runat="server" Text="" Width="250px"></asp:Label>
+                                            <asp:Label ID="lblBlock" runat="server" Text=""  ></asp:Label>
                                         </div>
                        
                     </div>
@@ -213,7 +213,7 @@
                                             Foreman: &nbsp; &nbsp;<asp:Label ID="lblForeman" runat="server"></asp:Label>
                                             <asp:HiddenField ID="hdnForeman" runat="server" />
                                         </div>
-                                        <div class="col-lg-4"  style="text-align: center;">
+                                        <div class="col-lg-4"   >
                                             
                                         </div>
                                         <div class="col-lg-4" >

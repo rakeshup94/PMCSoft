@@ -13,7 +13,7 @@
                             Creditor List</div>
                         <div class="row"   >
                             <div class="row" >
-                                <div class="col-lg-4"  style="text-align: center;">
+                                <div class="col-lg-4"   >
                                     Project Name
                                 </div>
                                 <div class="col-lg-4" >
@@ -21,7 +21,7 @@
                                         OnSelectedIndexChanged="ddlProject1_SelectedIndexChanged">
                                     </asp:DropDownList>
                                 </div>
-                                <div class="col-lg-4"  style="text-align: center;">
+                                <div class="col-lg-4"   >
                                     Approval Type
                                 </div>
                                 <div class="col-lg-4" >
@@ -36,7 +36,7 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="4">
-                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView2" runat="server" AutoGenerateColumns="false" Width="920px"
+                                    <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView2" runat="server" AutoGenerateColumns="false"  
                                         EmptyDataText="No Record Found">
                                         <Columns>
                                             <asp:TemplateField HeaderText="S.No">

@@ -13,7 +13,7 @@
                             Matrial Recive Date Wise</div>
                         <div class="row"  style="width: 1090px;">
                             <%--<tr>
-                                <div class="col-lg-4"  colspan="7" style="text-align: center; font-size: 15px; font-family: Cambria;">
+                                <div class="col-lg-4"    style="text-align: center; font-size: 15px; font-family: Cambria;">
                                     Ahluwalia Contracts (India) Ltd.
                                 </div>
                             </div>--%>
@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  colspan="7">
+                                <div class="col-lg-4"   >
                                     <div class="row"  style="width: 1080px;">
                                         <div class="row" >
                                             <div class="col-lg-4"  colspan="10">
@@ -83,7 +83,7 @@
                                                             <ItemTemplate>
                                                                 <asp:Label ID="Lblprojectname" runat="server" Text='<%#Bind("ProjectName") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="250px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Vendor">
                                                             <ItemTemplate>
@@ -153,7 +153,7 @@
                                                         </asp:TemplateField>
                                                     </Columns>
                                                    
-                                                    <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                                    
                                                 </asp:GridView>
                                             </div>
                                         </div>

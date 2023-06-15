@@ -18,7 +18,7 @@
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  style="text-align: center;">
+                                <div class="col-lg-4"   >
                                     <asp:Panel ID="Panel1" runat="server"    Visible="false">
                                         <div class="row"   >
                                             <div class="row" >
@@ -59,7 +59,7 @@
                                                     Block:
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: left;">
-                                                    <asp:Label ID="lblBlock" runat="server" Text="" Width="250px"></asp:Label>
+                                                    <asp:Label ID="lblBlock" runat="server" Text=""  ></asp:Label>
                                                 </div>
                                             </div>
                                             <div class="row" >

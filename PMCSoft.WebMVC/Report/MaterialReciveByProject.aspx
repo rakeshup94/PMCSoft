@@ -70,7 +70,7 @@
                                                             <ItemTemplate>
                                                                 <asp:Label ID="Lblprojectname" runat="server" Text='<%#Bind("ProjectName") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="250px" />
+                                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Vendor">
                                                             <ItemTemplate>
@@ -140,7 +140,7 @@
                                                         </asp:TemplateField>
                                                     </Columns>
                                                    
-                                                    <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                                    
                                                 </asp:GridView>
                                             </div>
                                         </div>

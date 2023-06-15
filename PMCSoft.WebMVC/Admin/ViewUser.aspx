@@ -146,7 +146,7 @@
                 PopupControlID="Panel1" TargetControlID="Button1" EnableViewState="False"
                 Enabled="True">
             </cc1:ModalPopupExtender>
-            <asp:Panel ID="Panel1" runat="server" Style="display: none;">
+            <asp:Panel ID="Panel1" runat="server"  >
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">

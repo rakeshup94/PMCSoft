@@ -13,14 +13,14 @@
                             Morning Report</div>
                         <div class="row"   >
                             <div class="row" >
-                                <div class="col-lg-4"  style="text-align: center;">
+                                <div class="col-lg-4"   >
                                     Project Name
                                 </div>
                                 <div class="col-lg-4" >
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="True"  >
                                     </asp:DropDownList>
                                 </div>
-                                <div class="col-lg-4"  style="text-align: center;">
+                                <div class="col-lg-4"   >
                                     Date
                                 </div>
                                 <div class="col-lg-4" >
@@ -35,7 +35,7 @@
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"   style="text-align: center;">
+                                <div class="col-lg-4"    >
                                     <asp:Panel ID="Panel1" runat="server"    Visible="false">
                                         <div class="row"   >
                                             <div class="row" >
@@ -76,7 +76,7 @@
                                                     Block:
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: left;">
-                                                    <asp:Label ID="lblBlock" runat="server" Text="" Width="250px"></asp:Label>
+                                                    <asp:Label ID="lblBlock" runat="server" Text=""  ></asp:Label>
                                                 </div>
                                             </div>
                                             <div class="row" >

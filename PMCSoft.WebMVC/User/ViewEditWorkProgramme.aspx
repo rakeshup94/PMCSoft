@@ -149,7 +149,7 @@
                                                                     Block:
                                                                 </div>
                                                                 <div class="col-lg-4" >
-                                                                    <asp:Label ID="lblBlock" runat="server" Text="" Width="250px"></asp:Label>
+                                                                    <asp:Label ID="lblBlock" runat="server" Text=""  ></asp:Label>
                                                                 </div>
                                                             </div>
                                                             <div class="row" >
@@ -326,7 +326,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  colspan="6" style="text-align: center;">
+                                                                <div class="col-lg-4"  colspan="6"  >
                                                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Update" OnClick="btnSubmit_Click" />
                                                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                                                 </div>

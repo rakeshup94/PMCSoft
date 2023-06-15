@@ -103,7 +103,7 @@
                                             </asp:TemplateField>
                                         </Columns>
                                        
-                                        <FooterStyle BackColor="#D9EAED" ForeColor="#202020" />
+                                        
                                     </asp:GridView>
                                      <div style="display: none">
                                                                 <asp:Button CssClass="btn btn-primary btn-square" ID="Button1" runat="server" Text="Button" />
@@ -112,11 +112,11 @@
                                                                 PopupControlID="Panel2" TargetControlID="Button1" EnableViewState="False"  
                                                                 Enabled="True">
                                                             </cc1:ModalPopupExtender>
-                                                            <asp:Panel ID="Panel2" runat="server" Style="display: none;">
+                                                            <asp:Panel ID="Panel2" runat="server"  >
                                                              <div id="Div1">
                                                                                 <div class="card-header">
                                                                                    Add New Type Of Payment</div>
-                                                                <div class="row"  style="width: 350px; background-color: #EFFBFB;">
+                                                                <div class="row"   >
                                                                      <div class="row" >
                                                 <div class="col-lg-4" >
                                                    Type Of Payment
@@ -147,11 +147,11 @@
                                                                 PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False"  
                                                                 Enabled="True">
                                                             </cc1:ModalPopupExtender>
-                                                            <asp:Panel ID="Panel1" runat="server" Style="display: none;">
+                                                            <asp:Panel ID="Panel1" runat="server"  >
                                                                 <div id="Div2">
                                         <div class="card-header">
                                             Add Security</div>
-                                        <div class="row"  style="width: 350px; background-color: #EFFBFB;">
+                                        <div class="row"   >
                                             <div class="row" >
                                                 <div class="col-lg-4" >
                                                     Security Advance Requisition
@@ -176,7 +176,7 @@
                                                             </asp:Panel>
                                 </div>
                                 <div class="row" >
-                                    <div class="col-lg-4"  colspan="6" style="text-align: center;">
+                                    <div class="col-lg-4"  colspan="6"  >
                                         <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                                         <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" CausesValidation="false" />
                                     </div>

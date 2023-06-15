@@ -252,7 +252,7 @@
                                             <div class="col-lg-4" >
                                                 &nbsp;
                                             </div>
-                                            <div class="col-lg-4"  style="text-align: center;">
+                                            <div class="col-lg-4"   >
                                             </div>
                                         </div>
                                         <div class="row" >
@@ -279,7 +279,7 @@
                                             </div>
                                         </div>
                                         <div class="row" >
-                                            <div class="col-lg-4"  colspan="6" style="text-align: center;">
+                                            <div class="col-lg-4"  colspan="6"  >
                                                 <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                                                 <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
                                             </div>

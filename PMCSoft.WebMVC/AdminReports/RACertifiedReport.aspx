@@ -79,7 +79,7 @@
                                                                         background-color: #D8D8D8;">
                                                                         Total
                                                                     </div>
-                                                                    <div class="col-lg-4"  colspan="7" style="text-align: center; width: 80px; border: 1px solid black;
+                                                                    <div class="col-lg-4"    style="text-align: center; width: 80px; border: 1px solid black;
                                                                         background-color: #D8D8D8;">
                                                                         Deduction
                                                                     </div>
