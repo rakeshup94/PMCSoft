@@ -393,7 +393,7 @@
 
                         <div class="modal-footer">
 
-                            <asp:Button CssClass="btn btn-danger btn-square" ID="btnReset"
+                            <asp:Button CssClass="btn btn-default btn-square" ID="btnReset"
                                 runat="server"
                                 Text="Cancel" OnClick="btnReset_Click" />
 

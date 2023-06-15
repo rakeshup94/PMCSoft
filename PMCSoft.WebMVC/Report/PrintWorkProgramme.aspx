@@ -205,7 +205,7 @@
                                         </div>
                                     </div>
                                       <div class="row" >
-                                        <div class="col-lg-4"  colspan="5" style="height: 50px;">
+                                        <div class="col-lg-4"   style="height: 50px;">
                                         </div>
                                     </div>
                                     <div class="row" >
@@ -230,7 +230,7 @@
                                         </div>
                                     </div>
                                      <div class="row" >
-                                       <div class="col-lg-4"  colspan="5" style="text-align: center; font-size: 18px;  ">
+                                       <div class="col-lg-4"   style="text-align: center; font-size: 18px;  ">
                                         Created By Sun Integrated Technologies & Application
                                     </div>
                                     </div>

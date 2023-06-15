@@ -101,11 +101,11 @@
                                                                 background-color: #D8D8D8;">
                                                                 Area
                                                             </div>
-                                                            <div class="col-lg-4"  colspan="5" style="text-align: center; width: 400px; border: 1px solid black;
+                                                            <div class="col-lg-4"   style="text-align: center; width: 400px; border: 1px solid black;
                                                                 background-color: #D8D8D8;">
                                                                 Work Programme
                                                             </div>
-                                                            <div class="col-lg-4"  colspan="5" style="text-align: center; width: 400px; border: 1px solid black;
+                                                            <div class="col-lg-4"   style="text-align: center; width: 400px; border: 1px solid black;
                                                                 background-color: #D8D8D8;">
                                                                 Actual Labour
                                                             </div>
@@ -256,7 +256,7 @@
                                         </div>
                                     </div>
                                     <div class="row" >
-                                        <div class="col-lg-4"  colspan="5" style="height: 50px;">
+                                        <div class="col-lg-4"   style="height: 50px;">
                                         </div>
                                     </div>
                                     <div class="row" >
@@ -278,7 +278,7 @@
                                         </div>
                                     </div>
                                      <div class="row" >
-                                    <div class="col-lg-4"  colspan="5" style="text-align: center; font-size: 18px;  ">
+                                    <div class="col-lg-4"   style="text-align: center; font-size: 18px;  ">
                                         Created By Sun Integrated Technologies & Application
                                     </div>
                                 </div>

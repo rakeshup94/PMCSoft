@@ -32,7 +32,7 @@
                             <div class="col-lg-6 mtm">
                                 <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit"
                                     OnClick="btnSubmit_Click" />
-                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel"
+                                <asp:Button CssClass="btn btn-default btn-square" ID="btnCancel" runat="server" Text="Cancel"
                                     OnClick="btnCancel_Click" />
                             </div>
                         </div>

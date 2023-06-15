@@ -39,7 +39,7 @@
                                 
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  colspan="5">
+                                <div class="col-lg-4"  >
                                     <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView1" runat="server" AutoGenerateColumns="False"   
                                         EmptyDataText="No Records Found">
                                         <Columns>

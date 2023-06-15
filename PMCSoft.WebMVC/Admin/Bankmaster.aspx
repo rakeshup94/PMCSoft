@@ -56,7 +56,7 @@
 
                                             <asp:Button CssClass="btn btn-primary btn-square" ID="btnSave" runat="server" OnClick="btnSave_Click"
                                                 Text="Submit" />
-                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancle" runat="server" OnClick="btnCancle_Click"
+                                            <asp:Button CssClass="btn btn-default btn-square" ID="btnCancle" runat="server" OnClick="btnCancle_Click"
                                                 Text="Cancle"
                                                 CausesValidation="False" />
                                         </div>
@@ -91,7 +91,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade show active" id="v-pills-Branch" role="tabpanel">
+                                <div class="tab-pane fade" id="v-pills-Branch" role="tabpanel">
 
 
 
@@ -175,7 +175,7 @@
                                         <div class="col-lg-12">
                                             <asp:Button CssClass="btn btn-primary btn-square" ID="btnbranchsave" runat="server"
                                                 OnClick="btnbranchsave_Click" Text="Save" />
-                                            <asp:Button CssClass="btn btn-primary btn-square" ID="btnbranchcancle" runat="server"
+                                            <asp:Button CssClass="btn btn-default btn-square" ID="btnbranchcancle" runat="server"
                                                 CausesValidation="false" OnClick="btnbranchcancle_Click"
                                                 Text="Cancle" />
                                         </div>

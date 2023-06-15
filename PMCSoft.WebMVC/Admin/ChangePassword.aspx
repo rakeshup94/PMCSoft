@@ -77,7 +77,7 @@
                             <div class="col-lg-12">
                                 <asp:Button CssClass="btn btn-primary btn-square" ID="btnSave" runat="server" Text="Submit"
                                     OnClick="btnSave_Click" />
-                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel"
+                                <asp:Button CssClass="btn btn-default btn-square" ID="btnCancel" runat="server" Text="Cancel"
                                     OnClick="btnCancel_Click" />
                             </div>
                         </div>

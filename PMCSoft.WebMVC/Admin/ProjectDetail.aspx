@@ -1721,7 +1721,7 @@
                             </div>
                             <div class="row">
                                  <div class="col-lg-12">
-                                    <asp:Button CssClass="btn btn-primary btn-square" ID="btnParticularsCancel" runat="server" Text="Cancel"
+                                    <asp:Button CssClass="btn btn-default btn-square" ID="btnParticularsCancel" runat="server" Text="Cancel"
                                         OnClick="btnParticularsCancel_Click" />
                                 </div>
                             </div>

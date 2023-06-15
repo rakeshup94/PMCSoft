@@ -446,7 +446,7 @@
                                                 Text="Submit" OnClick="BtnDeptSave_Click" />
                                             <asp:Button CssClass="btn
                 btn-primary btn-square"
-                                                ID="btndepcancel" runat="server"
+                                                ID="btndepcancel"  runat="server"
                                                 Text="Cancel" OnClick="btndepcancel_Click" />
                                         </div>
                                     </div>
