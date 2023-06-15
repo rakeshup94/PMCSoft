@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Inherits="PMCSoft.Web.Admin.AddUser"
     CodeBehind="AddUser.aspx.cs" %>
 
- 
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 
     <script type="text/javascript">
@@ -86,7 +86,6 @@
                                                     runat="server" Text="Button" />
                                             </div>
                                             <cc1:ModalPopupExtender ID="ModalPopupExtender1" runat="server"
-                                                 
                                                 PopupControlID="Panel1" TargetControlID="Button2" EnableViewState="False"
                                                 Enabled="True">
                                             </cc1:ModalPopupExtender>
@@ -98,21 +97,6 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                                 <div class="mb-3">
                                     Designation
@@ -134,7 +118,6 @@
                                                     ID="Button1" runat="server" Text="Button" />
                                             </div>
                                             <cc1:ModalPopupExtender ID="ModalPopupExtender2" runat="server"
-                                                 
                                                 PopupControlID="Panel2" TargetControlID="Button1"
                                                 EnableViewState="False"
                                                 Enabled="True">
@@ -200,7 +183,7 @@
                                  
                                         <asp:TextBox CssClass="form-control" ID="txtAddress"
                                             runat="server" TextMode="MultiLine"
-                                            Style="width: 205px;"
+                                             
                                             onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                 </div>
                             </div>
@@ -253,7 +236,7 @@
                                 <div class="mb-3">
                                     Project Name 
 
-                                          <asp:LinkButton ID="ImageButton1" runat="server" OnClick="lnkBtnProject_Click"><i class="fa fa-square-o mediumtxt"></i></asp:LinkButton>
+                                          <asp:LinkButton ID="lnkBtnProject" runat="server" OnClick="lnkBtnProject_Click"><i class="fa fa-square-o mediumtxt"></i></asp:LinkButton>
                                     <cc1:PopupControlExtender ID="PopupControlExtender1"
                                         runat="server" TargetControlID="lnkBtnProject"
                                         PopupControlID="pnlCustomers" Position="Bottom"
@@ -446,7 +429,7 @@
                                                 Text="Submit" OnClick="BtnDeptSave_Click" />
                                             <asp:Button CssClass="btn
                 btn-primary btn-square"
-                                                ID="btndepcancel"  runat="server"
+                                                ID="btndepcancel" runat="server"
                                                 Text="Cancel" OnClick="btndepcancel_Click" />
                                         </div>
                                     </div>
