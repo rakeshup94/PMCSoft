@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Inherits="PMCSoft.Web.Admin.AddNewProject"
     CodeBehind="AddNewProject.aspx.cs" %>
 
- 
+
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
@@ -1338,19 +1338,22 @@
                                                                                             <td>
                                                                                                 <div class="row">
                                                                                                     <div class="col-lg-6">
-                                                                                                <asp:TextBox CssClass="form-control" ID="txtOriginalContractValue"
-                                                                                                    runat="server"
-                                                                                                    placeholder="Original Contract Value"></asp:TextBox></div>
-                                                                                                    <div class="col-lg-6">    <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender23" runat="server"
-                                                                                                    FilterType="Custom, Numbers"
-                                                                                                    TargetControlID="txtOriginalContractValue" ValidChars=".">
-                                                                                                </cc1:FilteredTextBoxExtender>
-                                                                                                <asp:TextBox CssClass="form-control" ID="txtOCVWord" runat="server"
-                                                                                                    onkeyup="valid(this)" onblur="valid(this)"
-                                                                                                    placeholder="Original Contract Value Word Format"></asp:TextBox></div>
+                                                                                                        <asp:TextBox CssClass="form-control" ID="txtOriginalContractValue"
+                                                                                                            runat="server"
+                                                                                                            placeholder="Original Contract Value"></asp:TextBox>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-6">
+                                                                                                        <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender23" runat="server"
+                                                                                                            FilterType="Custom, Numbers"
+                                                                                                            TargetControlID="txtOriginalContractValue" ValidChars=".">
+                                                                                                        </cc1:FilteredTextBoxExtender>
+                                                                                                        <asp:TextBox CssClass="form-control" ID="txtOCVWord" runat="server"
+                                                                                                            onkeyup="valid(this)" onblur="valid(this)"
+                                                                                                            placeholder="Original Contract Value Word Format"></asp:TextBox>
+                                                                                                    </div>
                                                                                                 </div>
 
-                                                                                            
+
                                                                                             </td>
                                                                                             <td>
                                                                                                 <asp:TextBox CssClass="form-control" ID="txtOCVClause" runat="server"
@@ -1369,20 +1372,25 @@
                                                                                         <tr>
                                                                                             <td>5</td>
 
-                                                                                            <td> <div class="row">
-                                                                                                    <div class="col-lg-6"><asp:TextBox CssClass="form-control" ID="txtRevisedContractValue"
-                                                                                                    runat="server"
-                                                                                                    placeholder="Revised Contract Value"></asp:TextBox></div>
-                                                                                                    <div class="col-lg-6">         <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender24" runat="server"
-                                                                                                    FilterType="Custom, Numbers"
-                                                                                                    TargetControlID="txtRevisedContractValue" ValidChars=".">
-                                                                                                </cc1:FilteredTextBoxExtender>
-                                                                                                <asp:TextBox CssClass="form-control" ID="txtRCVWord" runat="server"
-                                                                                                    onkeyup="valid(this)" onblur="valid(this)"
-                                                                                                    placeholder="Revised Contract Value Word Format"></asp:TextBox></div>
+                                                                                            <td>
+                                                                                                <div class="row">
+                                                                                                    <div class="col-lg-6">
+                                                                                                        <asp:TextBox CssClass="form-control" ID="txtRevisedContractValue"
+                                                                                                            runat="server"
+                                                                                                            placeholder="Revised Contract Value"></asp:TextBox>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-6">
+                                                                                                        <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender24" runat="server"
+                                                                                                            FilterType="Custom, Numbers"
+                                                                                                            TargetControlID="txtRevisedContractValue" ValidChars=".">
+                                                                                                        </cc1:FilteredTextBoxExtender>
+                                                                                                        <asp:TextBox CssClass="form-control" ID="txtRCVWord" runat="server"
+                                                                                                            onkeyup="valid(this)" onblur="valid(this)"
+                                                                                                            placeholder="Revised Contract Value Word Format"></asp:TextBox>
+                                                                                                    </div>
                                                                                                 </div>
-                                                                                                
-                                                                                       
+
+
                                                                                             </td>
                                                                                             <td>
                                                                                                 <asp:TextBox CssClass="form-control" ID="txtRCVClause" runat="server"
@@ -1399,20 +1407,25 @@
                                                                                         <tr>
                                                                                             <td>6</td>
 
-                                                                                            <td> <div class="row">
-                                                                                                    <div class="col-lg-6">  <asp:TextBox CssClass="form-control" ID="txtExpectedContractValue"
-                                                                                                    runat="server"
-                                                                                                    placeholder="Expected Contract Value"></asp:TextBox>
-                                                                                                <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender25" runat="server"
-                                                                                                    FilterType="Custom, Numbers"
-                                                                                                    TargetControlID="txtExpectedContractValue" ValidChars=".">
-                                                                                                </cc1:FilteredTextBoxExtender></div>
-                                                                                                    <div class="col-lg-6">   <asp:TextBox CssClass="form-control" ID="txtECVWord" runat="server"
-                                                                                                    onkeyup="valid(this)" onblur="valid(this)"
-                                                                                                    placeholder="Expected Contract Value Word Format"></asp:TextBox></div>
+                                                                                            <td>
+                                                                                                <div class="row">
+                                                                                                    <div class="col-lg-6">
+                                                                                                        <asp:TextBox CssClass="form-control" ID="txtExpectedContractValue"
+                                                                                                            runat="server"
+                                                                                                            placeholder="Expected Contract Value"></asp:TextBox>
+                                                                                                        <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender25" runat="server"
+                                                                                                            FilterType="Custom, Numbers"
+                                                                                                            TargetControlID="txtExpectedContractValue" ValidChars=".">
+                                                                                                        </cc1:FilteredTextBoxExtender>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-6">
+                                                                                                        <asp:TextBox CssClass="form-control" ID="txtECVWord" runat="server"
+                                                                                                            onkeyup="valid(this)" onblur="valid(this)"
+                                                                                                            placeholder="Expected Contract Value Word Format"></asp:TextBox>
+                                                                                                    </div>
                                                                                                 </div>
-                                                                                              
-                                                                                             
+
+
                                                                                             </td>
                                                                                             <td>
                                                                                                 <asp:TextBox CssClass="form-control" ID="txtECVClause" runat="server"

@@ -13,7 +13,7 @@
                             Advance Requisition</div>
                         <div class="row"   >
                             <div class="row" >
-                                <div class="col-lg-4"  style="width: 100px; text-align: center; vertical-align: top;">
+                                <div class="col-lg-4"   >
                                     Project
                                 </div>
                                 <div class="col-lg-4"   >
