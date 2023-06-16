@@ -14,7 +14,7 @@
                         <div class="row"   >
                             <div class="row" >
                                 <div class="col-lg-4"  style="font-weight: bold;">
-                                    Project:&nbsp;&nbsp;&nbsp;<asp:Label ID="lblProj" runat="server"></asp:Label>
+                                    Project:   <asp:Label ID="lblProj" runat="server"></asp:Label>
                                 </div>
                             </div>
                             <div class="row" >

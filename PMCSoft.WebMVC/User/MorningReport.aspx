@@ -21,7 +21,7 @@
                         <div class="row"  style="width: 990px;">
                      
                             <div class="row" >
-                                <div class="col-lg-4" >
+                                <div class="col-lg-4" ><div class="mb-3">
                                     Project:
                                 </div>
                                 <div class="col-lg-4" >
@@ -33,11 +33,11 @@
                                 </div>
                                 <div class="col-lg-4"  style="width: 510px;">
                                 </div>
-                                <div class="col-lg-4"  style="width: 60px; font-weight: bold;">
+                                <div class="col-lg-4"  style="width: 60px; font-weight: bold;"><div class="mb-3">
                                     Date:
                                 </div>
                                 <div class="col-lg-4"  style="font-weight: bold;">
-                                    <asp:Label ID="lblDate" runat="server"   Font-Size="12px"></asp:Label>
+                                    <asp:Label ID="lblDate" runat="server"    ></asp:Label>
                                     <asp:HiddenField ID="HiddenField2" runat="server" />
                                 </div>
                             </div>
@@ -50,7 +50,7 @@
                                                     WP Date:
                                                 </div>
                                                 <div class="col-lg-4"  style="font-weight: bold;">
-                                                    <asp:Label ID="lblWorkProgrammeDate" runat="server"   Font-Size="12px"></asp:Label>
+                                                    <asp:Label ID="lblWorkProgrammeDate" runat="server"    ></asp:Label>
                                                     <asp:HiddenField ID="hdnWPDate" runat="server" />
                                                     <asp:HiddenField ID="hdnWPID" runat="server" />
                                                 </div>
@@ -58,7 +58,7 @@
                                                 </div>
                                                 <div class="col-lg-4" >
                                                 </div>
-                                                <div class="col-lg-4"  style="width: 60px;">
+                                                <div class="col-lg-4"    >
                                                 </div>
                                                 <div class="col-lg-4" >
                                                 </div>
@@ -77,7 +77,7 @@
                                                     <asp:Label ID="lblEngInCharge" runat="server"  ></asp:Label>
                                                     <asp:HiddenField ID="hdnEngInCharge" runat="server" />
                                                 </div>
-                                                <div class="col-lg-4"  style="width: 60px; font-weight: bold;">
+                                                <div class="col-lg-4"  style="width: 60px; font-weight: bold;"><div class="mb-3">
                                                     Block:
                                                 </div>
                                                 <div class="col-lg-4" >

@@ -392,5 +392,10 @@ namespace PMCSoft.Web.User
         {
             ModalPopupExtender3.Hide();
         }
+
+        protected void EditCancel_Click1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

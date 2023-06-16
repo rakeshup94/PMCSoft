@@ -57,7 +57,7 @@
                             </div>
                             <%--<tr>
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Monthly Work Done Status For The Month Of&nbsp;&nbsp;&nbsp;
+                                    Monthly Work Done Status For The Month Of   
                                     <asp:TextBox CssClass="form-control" ID="txtMonth" runat="server" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                 </div>
                             </div>--%>

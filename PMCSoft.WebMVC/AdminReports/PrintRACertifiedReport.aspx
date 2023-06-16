@@ -245,7 +245,7 @@
                                                         </asp:GridView>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: right;">
-                                                        <asp:Label ID="NetReceivable" runat="server" Width="120px" Text='<%#Bind("NetReceivable") %>'>
+                                                        <asp:Label ID="NetReceivable" runat="server"   Text='<%#Bind("NetReceivable") %>'>
                                                         </asp:Label>
                                                     </div>
                                                 </div>

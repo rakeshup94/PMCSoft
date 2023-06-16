@@ -18,7 +18,7 @@
                     <div class="card-body">
                         <div class="card-header">
                             WORK PROGRAMME</div>
-                        <div class="row"  style="width: 930px;">
+                        <div class="row"   >
                       
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="4">
@@ -34,11 +34,11 @@
                                             </div>
                                             <div class="col-lg-4" >
                                             </div>
-                                            <div class="col-lg-4"  style="width: 60px;">
+                                            <div class="col-lg-4"    >
                                                 Date
                                             </div>
                                             <div class="col-lg-4" >
-                                                <asp:Label ID="lblDate" runat="server"   Font-Size="12px"></asp:Label>
+                                                <asp:Label ID="lblDate" runat="server"    ></asp:Label>
                                                 <asp:HiddenField ID="HiddenField2" runat="server" />
                                             </div>
                                         </div>
@@ -75,16 +75,16 @@
                                                 </asp:DropDownList>
                                             </div>
                                             <div class="col-lg-4"  style="white-space: nowrap;">
-                                                &nbsp;
+                                                 
                                             </div>
                                             <div class="col-lg-4" >
-                                                &nbsp;
+                                                 
                                             </div>
                                             <div class="col-lg-4" >
-                                                &nbsp;
+                                                 
                                             </div>
                                             <div class="col-lg-4" >
-                                                &nbsp;
+                                                 
                                             </div>
                                         </div>
                                       </div>
@@ -238,19 +238,19 @@
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4" >
-                                                &nbsp;
+                                                 
                                             </div>
                                             <div class="col-lg-4" >
-                                                &nbsp;
+                                                 
                                             </div>
                                             <div class="col-lg-4" >
-                                                &nbsp;
+                                                 
                                             </div>
                                             <div class="col-lg-4" >
-                                                &nbsp;
+                                                 
                                             </div>
                                             <div class="col-lg-4" >
-                                                &nbsp;
+                                                 
                                             </div>
                                             <div class="col-lg-4"   >
                                             </div>

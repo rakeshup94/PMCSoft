@@ -14,7 +14,7 @@
                         <div class="row"  style="width: 1060px;">
                       
                             <div class="row" >
-                                <div class="col-lg-4"  style="width: 100px; text-align: center;">
+                                <div class="col-lg-4"   >
                                     Project:
                                 </div>
                                 <div class="col-lg-4" >
@@ -22,7 +22,7 @@
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
                                     </asp:DropDownList>
                                 </div>
-                                <div class="col-lg-4"  style="width: 100px; text-align: center;">
+                                <div class="col-lg-4"   >
                                     Issue Date:
                                 </div>
                                 <div class="col-lg-4" >
@@ -49,7 +49,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="40px" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Item Group">
                                                 <ItemTemplate>
@@ -110,7 +110,7 @@
                                                 <FooterTemplate>
                                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddMore" runat="server" OnClick="btnAddMore_Click" Text="Add More" />
                                                 </FooterTemplate>
-                                                <FooterStyle HorizontalAlign="Right" />
+                                                
                                                 <ItemStyle VerticalAlign="Top"   />
                                             </asp:TemplateField>
                                         </Columns>

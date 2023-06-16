@@ -758,11 +758,11 @@
       <DependentUpon>AddDebitList.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\AddItemMaster.aspx.cs">
-      <DependentUpon>AddItemMaster.aspx.InProcess</DependentUpon>
+      <DependentUpon>AddItemMaster.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User\AddItemMaster.aspx.designer.cs">
-      <DependentUpon>AddItemMaster.aspx.InProcess</DependentUpon>
+      <DependentUpon>AddItemMaster.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\AddItemOfWork.aspx.cs">
       <DependentUpon>AddItemOfWork.aspx</DependentUpon>
@@ -3045,7 +3045,7 @@
     <Content Include="Upload\aaa114201417846.txt" />
     <Content Include="Upload\aaa114201417855.txt" />
     <Content Include="User\AddDebitList.aspx" />
-    <None Include="User\AddItemMaster.aspx.InProcess" />
+    <Content Include="User\AddItemMaster.aspx" />
     <Content Include="User\AddItemOfWork.aspx" />
     <Content Include="User\AddPaymentType.aspx" />
     <Content Include="User\AddVendor.aspx" />

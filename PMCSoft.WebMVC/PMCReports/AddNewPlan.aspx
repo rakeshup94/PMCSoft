@@ -21,7 +21,7 @@
                                             <HeaderTemplate>
                                                 Add Plan</HeaderTemplate>
                                             <ContentTemplate>
-                                             <div class="row"  style="width: 930px;">
+                                             <div class="row"   >
                            
                           
                             <div class="row" >

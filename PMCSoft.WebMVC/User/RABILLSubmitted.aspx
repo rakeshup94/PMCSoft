@@ -120,13 +120,13 @@
                                                                 Bill Period
                                                             </div>
                                                             <div class="col-lg-4" >
-                                                                <asp:TextBox CssClass="form-control" ID="txtbillPeriod" runat="server" Width="88px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="txtbillPeriod" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)"></asp:TextBox>
                                                                 <cc1:CalendarExtender ID="CalendarExtender22" runat="server" TargetControlID="txtbillPeriod"
                                                                     CssClass="cal_Theme1">
                                                                 </cc1:CalendarExtender>
                                                                 To
-                                                                <asp:TextBox CssClass="form-control" ID="TxtBillperiodto" runat="server" Width="88px" onkeyup="valid(this)"
+                                                                <asp:TextBox CssClass="form-control" ID="TxtBillperiodto" runat="server"   onkeyup="valid(this)"
                                                                     onblur="valid(this)"></asp:TextBox>
                                                                 <cc1:CalendarExtender ID="CalendarExtender3" runat="server" TargetControlID="TxtBillperiodto"
                                                                     CssClass="cal_Theme1">
@@ -358,7 +358,7 @@
                                                         </div>
                                                         <div class="row" >
                                                             <div class="col-lg-4" >
-                                                                Net Receivable&nbsp;
+                                                                Net Receivable 
                                                             </div>
                                                             <div class="col-lg-4" >
                                                                 <asp:TextBox CssClass="form-control" ID="TxttotalReceivable" runat="server"   onkeyup="valid(this)"

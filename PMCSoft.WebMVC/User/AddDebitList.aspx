@@ -93,14 +93,14 @@
                                                                         TargetControlID="txtAmount" ValidChars=".">
                                                                     </cc1:FilteredTextBoxExtender>
                                                                 </ItemTemplate>
-                                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                                                 
                                                             </asp:TemplateField>
                                                             <asp:TemplateField HeaderText="Payment Type">
                                                                 <ItemTemplate>
                                                                     <asp:DropDownList CssClass="form-select" ID="ddlPaymentType" runat="server">
                                                                     </asp:DropDownList>
                                                                 </ItemTemplate>
-                                                                <ItemStyle VerticalAlign="Top" />
+                                                         
                                                             </asp:TemplateField>
                                                             <asp:TemplateField HeaderText="Remarks">
                                                                 <FooterTemplate>
@@ -113,7 +113,7 @@
                                                                         onblur="valid(this)">
                                                                     </asp:TextBox>
                                                                 </ItemTemplate>
-                                                                <FooterStyle HorizontalAlign="Right" />
+                                                                
 
                                                             </asp:TemplateField>
                                                             <asp:CommandField ShowDeleteButton="True" />

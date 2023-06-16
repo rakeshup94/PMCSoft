@@ -42,6 +42,24 @@ namespace PMCSoft.Web.User
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
+        /// Button2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button2;
+
+        /// <summary>
+        /// ModalPopupExtender1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.ModalPopupExtender ModalPopupExtender1;
+
+        /// <summary>
         /// ddlGroup control.
         /// </summary>
         /// <remarks>
@@ -159,24 +177,6 @@ namespace PMCSoft.Web.User
         protected global::System.Web.UI.WebControls.Button btnCancel;
 
         /// <summary>
-        /// Button2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
-
-        /// <summary>
-        /// ModalPopupExtender1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.ModalPopupExtender ModalPopupExtender1;
-
-        /// <summary>
         /// Panel3 control.
         /// </summary>
         /// <remarks>
@@ -219,7 +219,7 @@ namespace PMCSoft.Web.User
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAddNewCancel;
+        protected global::System.Web.UI.WebControls.LinkButton BtnAddNewCancel;
 
         /// <summary>
         /// Panel2 control.
@@ -264,7 +264,7 @@ namespace PMCSoft.Web.User
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnCancelAddNewGroupName;
+        protected global::System.Web.UI.WebControls.LinkButton BtnCancelAddNewGroupName;
 
         /// <summary>
         /// Panel1 control.
@@ -276,15 +276,6 @@ namespace PMCSoft.Web.User
         protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
-        /// LblEditGroup control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblEditGroup;
-
-        /// <summary>
         /// TxtEditItem control.
         /// </summary>
         /// <remarks>
@@ -292,6 +283,24 @@ namespace PMCSoft.Web.User
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtEditItem;
+
+        /// <summary>
+        /// txtEditPartNo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEditPartNo;
+
+        /// <summary>
+        /// LblEditGroup control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblEditGroup;
 
         /// <summary>
         /// lblEditUnit control.
@@ -312,15 +321,6 @@ namespace PMCSoft.Web.User
         protected global::System.Web.UI.WebControls.Label lblEditMake;
 
         /// <summary>
-        /// txtEditPartNo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEditPartNo;
-
-        /// <summary>
         /// EditSubmit control.
         /// </summary>
         /// <remarks>
@@ -336,6 +336,6 @@ namespace PMCSoft.Web.User
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button EditCancel;
+        protected global::System.Web.UI.WebControls.LinkButton EditCancel;
     }
 }

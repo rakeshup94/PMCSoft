@@ -40,10 +40,10 @@
         <div class="header">
             <asp:Image ID="Image1" runat="server" ImageUrl="~/images/logo.png" Width="110px" />
                      <br />
-           <asp:Label ID="lblMsg" runat="server" Font-Size="11px" ForeColor="Red" BackColor="Silver"></asp:Label>
+           <asp:Label ID="lblMsg" runat="server"   ForeColor="Red" BackColor="Silver"></asp:Label>
         </div>
         <div style="color: Gray; margin-left: 62px; margin-top: -10px;">
-            <asp:Label ID="lblN" runat="server" Text="Demo PROJECT MANAGEMENT" Font-Size="12px"></asp:Label>
+            <asp:Label ID="lblN" runat="server" Text="Demo PROJECT MANAGEMENT"  ></asp:Label>
    
         </div>
         <div class="content" style="margin-top: 10px;">
@@ -64,7 +64,7 @@
             <asp:Button CssClass="btn btn-primary btn-square" ID="btnLogin" runat="server" Text="Login" CssClass="button" ValidationGroup="Login" OnClick="btnLogin_Click" />
         </div>
         <div class="footer11">
-            <asp:LinkButton ID="lnkForgotPassword" ValidationGroup="Forget" runat="server" Text="Forgot Password?" Font-Size="11px"
+            <asp:LinkButton ID="lnkForgotPassword" ValidationGroup="Forget" runat="server" Text="Forgot Password?"  
                 OnClick="lnkForgotPassword_Click" ></asp:LinkButton>
            
         

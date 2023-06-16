@@ -14,7 +14,7 @@
                       
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Project&nbsp;&nbsp;&nbsp;<asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"
+                                    Project   <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged"  >
                                     </asp:DropDownList>
                                 </div>

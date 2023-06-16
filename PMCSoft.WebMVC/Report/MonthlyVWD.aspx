@@ -11,20 +11,20 @@
                     <div class="card-body">
                         <div class="card-header">
                             MONTHLY VWD (FORMAT No. C)</div>
-                        <div class="row"  style="width: 930px;">
+                        <div class="row"   >
                             <div class="row" >
                            
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Project&nbsp;&nbsp;&nbsp;<asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"
+                                    Project   <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged"  >
                                     </asp:DropDownList>
                                 </div>
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Status of Work Done / Plan As On&nbsp;&nbsp;&nbsp;<asp:TextBox CssClass="form-control" ID="txtDate" runat="server"
+                                    Status of Work Done / Plan As On   <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"
                                           ReadOnly="true" Enabled="false"></asp:TextBox>
                                 </div>
                             </div>

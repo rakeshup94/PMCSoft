@@ -11,18 +11,18 @@
                     <div class="card-body">
                         <div class="card-header">
                             EQUIPMENT EXPENSES</div>
-                        <div class="row"  style="width: 930px;">
+                        <div class="row"   >
                           
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Project&nbsp;&nbsp;&nbsp;<asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"
+                                    Project   <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged"  >
                                     </asp:DropDownList>
                                 </div>
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Equipment Expenses Report As On&nbsp;&nbsp;&nbsp;
+                                    Equipment Expenses Report As On   
                                     <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"  ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">

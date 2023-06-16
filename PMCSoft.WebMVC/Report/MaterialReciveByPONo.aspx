@@ -12,13 +12,13 @@
                     <div class="card-body">
                         <div class="card-header">
                             Matrial Recive By Project</div>
-                        <div class="row"  style="width: 950px;">
+                        <div class="row"   >
                             <div class="row" >
                                
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  font-size: 15px; font-family: Cambria;">
-                                    Project&nbsp;&nbsp;&nbsp;
+                                    Project   
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true" 
                                         Width="140px" onselectedindexchanged="ddlProject_SelectedIndexChanged">
                                     </asp:DropDownList>
@@ -29,7 +29,7 @@
                                         <asp:ListItem Text="Select Vendor" Value="-1"></asp:ListItem>
                                     </asp:DropDownList>
                                     PO.No
-                                    <asp:DropDownList CssClass="form-select" ID="ddlpono" runat="server" Width="120px" AutoPostBack="true"
+                                    <asp:DropDownList CssClass="form-select" ID="ddlpono" runat="server"   AutoPostBack="true"
                                         >
                                         <asp:ListItem Text="Select"></asp:ListItem>
                                     </asp:DropDownList>
@@ -51,7 +51,7 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4" >
-                                    <div class="row"  style="width: 950px;">
+                                    <div class="row"   >
                                         <div class="row" >
                                             <div class="col-lg-4"  colspan="10">
                                 <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="true"
@@ -60,7 +60,7 @@
                                             <asp:TemplateField HeaderText="S.No">
                                                 <ItemStyle Width="20px" />
                                                 <ItemTemplate>
-                                                    <%# Container.DataItemIndex + 1 %>.&nbsp;
+                                                    <%# Container.DataItemIndex + 1 %>. 
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                               <asp:TemplateField HeaderText="Project" Visible="false" >

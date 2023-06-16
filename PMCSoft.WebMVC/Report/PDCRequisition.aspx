@@ -11,9 +11,9 @@
                     <div class="card-body">
                         <div class="card-header">
                             PDC</div>
-                        <div class="row"  style="width: 930px;">
+                        <div class="row"   >
                             <div class="row" >
-                                <div class="col-lg-4"  style="width: 100px; text-align: center;">
+                                <div class="col-lg-4"   >
                                     Project :
                                 </div>
                                 <div class="col-lg-4" >

@@ -7,15 +7,15 @@
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb"><div class="page-header pull-left"><div class="page-title">Add BOQ</div></div><div class="clearfix"></div></div><!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT--><div class="page-content">
-                <div class="card"  style="width: 950px;">
+                <div class="card"   >
                     <div class="card-body">
                         <div class="card-header">
                             HIRE CHARGES EXPENSES</div>
-                        <div class="row"  style="width: 950px;">
+                        <div class="row"   >
                     
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    Project&nbsp;&nbsp;&nbsp;
+                                    Project   
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlProject_SelectedIndexChanged"
                                          >
                                     </asp:DropDownList>
@@ -23,7 +23,7 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
-                                    HIRE CHARGES EXPENSES REPORT FOR THE MONTH OF --&nbsp;&nbsp;&nbsp;
+                                    HIRE CHARGES EXPENSES REPORT FOR THE MONTH OF --   
                                     <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"  ></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"
                                         CssClass="cal_Theme1">
@@ -32,7 +32,7 @@
                             </div>
                             <div class="row" >
                                 <div class="col-lg-4" >
-                                    <div class="row"  style="width: 950px;">
+                                    <div class="row"   >
                                         <div class="row" >
                                             <div class="col-lg-4"  colspan="8">
                                                 <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GvHireChargesExpenses" runat="server" AutoGenerateColumns="false"
@@ -104,7 +104,7 @@
                                                                 <asp:Label ID="lblTotal" runat="server"></asp:Label>
                                                                 <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddMore" runat="server" Text="Add More" OnClick="btnAddMore_Click" />
                                                             </FooterTemplate>
-                                                            <FooterStyle HorizontalAlign="Right" />
+                                                            
                                                             <ItemStyle VerticalAlign="Top"   />
                                                         </asp:TemplateField>
                                                     </Columns>

@@ -107,13 +107,13 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblECount" runat="server" Text='<%#Bind("ECount") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="80px" />
+                                             
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Present Staff">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblECount1" runat="server" Text='<%#Bind("ECount1") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="80px" />
+                                             
                                             </asp:TemplateField>
                                         </Columns>
                                        
@@ -329,13 +329,13 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblStartDate" runat="server" Text='<%#Bind("StartDate") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="80px" />
+                                             
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="End Date">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblEndDate" runat="server" Text='<%#Bind("EndDate") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="80px" />
+                                             
                                             </asp:TemplateField>
                                         </Columns>
                                        

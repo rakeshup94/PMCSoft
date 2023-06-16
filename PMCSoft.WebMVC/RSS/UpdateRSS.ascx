@@ -9,7 +9,7 @@
              <asp:DataList ID="DataList1" runat="server" DataSourceID="XmlDataSource1" 
       GridLines="Vertical"  BorderStyle="None" Height="120px">
             <ItemTemplate>
-                <span style="color:#005480 ;"><font style="color:#a52c29 ; vertical-align:middle ; font-weight:bold">»&nbsp;</font><%#XPath("title")%></span>
+                <span style="color:#005480 ;"><font style="color:#a52c29 ; vertical-align:middle ; font-weight:bold">» </font><%#XPath("title")%></span>
                 <span style="color:#888888 ;text-shadow: 1px 1px 1px #cccccc; "><%#XPath("pubDate")%></span><br />
                <font style=" font-weight:700"><%#XPath("author")%></font><br />
                 <span style="color:#666666 ;"><%#XPath("description")%></span>

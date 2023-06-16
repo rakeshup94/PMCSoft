@@ -28,7 +28,7 @@
                         </div>
                         <div id="infobox" style="width: 455px; height: 192px;">
                             <h3>
-                                Today&#39;s Labour Strength  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  
+                                Today&#39;s Labour Strength                                                                       
                                 <asp:LinkButton ID="Lnktodaylabour" runat="server" Text="See More" 
                                     ForeColor="Blue" 
                                     onclick="Lnktodaylabour_Click" ></asp:LinkButton></div>
@@ -86,7 +86,7 @@
                         </div>
                         <div id="infobox" class="margin-left" style="width: 455px; height: 192px;">
                             <h3>
-                                Staffs Attendance&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <asp:LinkButton ID="LnkStaffatt" runat="server" Text="See More" CommandName="StaffattSeeMore" ForeColor="Blue" ></asp:LinkButton></div>
+                                Staffs Attendance                                                                     <asp:LinkButton ID="LnkStaffatt" runat="server" Text="See More" CommandName="StaffattSeeMore" ForeColor="Blue" ></asp:LinkButton></div>
                             <asp:UpdatePanel ID="UpdatePanel3" runat="server">
                                 <ContentTemplate>
                                     <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GridView2" runat="server" AutoGenerateColumns="false" Width="445px"
@@ -110,13 +110,13 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblECount" runat="server" Text='<%#Bind("ECount") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="80px" />
+                                             
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Present Staff">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblECount1" runat="server" Text='<%#Bind("ECount1") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="80px" />
+                                             
                                             </asp:TemplateField>
                                         </Columns>
                                        
@@ -167,7 +167,7 @@
                         <div id="infobox" style="width: 455px; height: 172px;">
                               <h3>
                                  Total Labour Strength
-                              &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <asp:LinkButton ID="lnktotalLabour" runat="server" Text="See More" CommandName="TotalLabourSeeMore" ForeColor="Blue" ></asp:LinkButton></div>
+                                                                                                   <asp:LinkButton ID="lnktotalLabour" runat="server" Text="See More" CommandName="TotalLabourSeeMore" ForeColor="Blue" ></asp:LinkButton></div>
                             <asp:UpdatePanel ID="UpdatePanel8" runat="server">
                                 <ContentTemplate>
                                     <asp:Panel ID="Panel8" runat="server" Height="145px" ScrollBars="Horizontal">
@@ -228,7 +228,7 @@
                         <div id="infobox" class="margin-left" style="width: 455px; height: 172px;">
                             <h3>
                                   Raw Material Receive 
-                                   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  
+                                                                                                        
                                   <asp:LinkButton ID="LinkButton1" runat="server" Text="See More" 
                                       CommandName="MatrielSeeMore" ForeColor="Blue" onclick="LinkButton1_Click" ></asp:LinkButton></div>
                             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
@@ -266,7 +266,7 @@
                         </div>
                         <div id="infobox" class="margin-left" style="width: 305px; height: 172px;">
                             <h3>Projects
-                           &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  
+                                                                                                
                                 <asp:LinkButton ID="Lnkprojectdetail" runat="server" Text="Detail" 
                                     ForeColor="Blue" 
                                     onclick="Lnkprojectdetail_Click" ></asp:LinkButton></div>
@@ -299,13 +299,13 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblStartDate" runat="server" Text='<%#Bind("StartDate") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="80px" />
+                                             
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="End Date">
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblEndDate" runat="server" Text='<%#Bind("EndDate") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" Width="80px" />
+                                             
                                             </asp:TemplateField>
                                         </Columns>
                                        

@@ -14,7 +14,7 @@
                         <div class="row"  style="width: 990px">
                             <div class="row" >
                                 <div class="col-lg-4"  style="width: 650px; vertical-align: top;">
-                                    &nbsp;&nbsp;Project Name&nbsp;&nbsp;<asp:DropDownList CssClass="form-select" ID="ddlP" runat="server" AutoPostBack="true"
+                                      Project Name  <asp:DropDownList CssClass="form-select" ID="ddlP" runat="server" AutoPostBack="true"
                                           OnSelectedIndexChanged="ddlP_SelectedIndexChanged">
                                     </asp:DropDownList>
                                     <br />

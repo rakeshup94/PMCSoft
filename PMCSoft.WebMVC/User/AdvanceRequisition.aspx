@@ -39,11 +39,11 @@
                                 </div>
                             </div>
                           </div>
-                        <div class="row"  style="width: 930px;">
+                        <div class="row"   >
                             <div class="row" >
                                 <div class="col-lg-4"  colspan="6">
                                     <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVAdvanceReQuisition" runat="server" AutoGenerateColumns="false"
-                                        ShowFooter="true" Width="915px" 
+                                        ShowFooter="true"   
                                         OnRowDataBound="GVAdvanceReQuisition_RowDataBound" 
                                         onrowcommand="GVAdvanceReQuisition_RowCommand">
                                         <Columns>
@@ -51,7 +51,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="40px" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText=" Type Of Payment">
                                                 <ItemTemplate>
@@ -69,14 +69,14 @@
                                                     </cc1:FilteredTextBoxExtender>
                                                     
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Reason">
                                                 <ItemTemplate>
                                                     <asp:TextBox CssClass="form-control" ID="txtReason" runat="server" onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                    
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Any Security Created">
                                                 <ItemTemplate>
@@ -86,7 +86,7 @@
                                                         <asp:ListItem Text="No" Value="2"></asp:ListItem>
                                                     </asp:RadioButtonList>
                                                 </ItemTemplate>
-                                                <ItemStyle VerticalAlign="Top" />
+                                         
                                             </asp:TemplateField>
                                             <asp:TemplateField>
                                                 <ItemTemplate>
@@ -98,8 +98,8 @@
                                                 <FooterTemplate>
                                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddMore" runat="server" OnClick="btnAddMore_Click" Text="Add More" />
                                                 </FooterTemplate>
-                                                <FooterStyle HorizontalAlign="Right" />
-                                                <ItemStyle VerticalAlign="Top" />
+                                                
+                                         
                                             </asp:TemplateField>
                                         </Columns>
                                        

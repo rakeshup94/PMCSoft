@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-     <div class="row"  style="width: 930px;" border="0">
+     <div class="row"    border="0">
                     <div class="row" >
                         <div class="col-lg-4"  style="text-align: center; font-size: 18px; font-family: Cambria;">
                        
@@ -22,7 +22,7 @@
       <div class="row"   >
                             <div class="row" >
                                  <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria; color: Black">
-                            Project Name: &nbsp; &nbsp; &nbsp; &nbsp;<asp:Label ID="lblProjectName" runat="server"></asp:Label>
+                            Project Name:        <asp:Label ID="lblProjectName" runat="server"></asp:Label>
                             <asp:HiddenField ID="hdnPRJID" runat="server" />
                         </div>
                         <div class="col-lg-4"   >

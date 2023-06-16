@@ -131,7 +131,7 @@
                                 <asp:TemplateField HeaderText="S.No">
 
                                     <ItemTemplate>
-                                        <%# Container.DataItemIndex + 1 %>.&nbsp;
+                                        <%# Container.DataItemIndex + 1 %>. 
                                                     <asp:HiddenField ID="hdnTransID" runat="server"
                                                         Value='<%#Bind("TransID") %>' />
                                     </ItemTemplate>

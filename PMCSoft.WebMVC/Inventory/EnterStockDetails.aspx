@@ -16,7 +16,7 @@
                               
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  style="width: 100px; text-align: center;">
+                                <div class="col-lg-4"   >
                                     Project:
                                 </div>
                                 <div class="col-lg-4" >
@@ -28,11 +28,11 @@
                                 </div>
                                 <div class="col-lg-4"  style="width: 450px;">
                                 </div>
-                                <div class="col-lg-4"  style="width: 60px;">
+                                <div class="col-lg-4"    >
                                     <asp:Label ID="lblDate1" runat="server" Text="Date:" Visible="false"></asp:Label>
                                 </div>
                                 <div class="col-lg-4" >
-                                    <asp:Label ID="lblDate" runat="server"   Font-Size="12px"></asp:Label>
+                                    <asp:Label ID="lblDate" runat="server"    ></asp:Label>
                                     <asp:HiddenField ID="HiddenField2" runat="server" />
                                 </div>
                             </div>
@@ -42,13 +42,13 @@
                                 <div class="row" >
                                     <div class="col-lg-4"  colspan="9">
                                         <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="GVMaterialReceive" runat="server" AutoGenerateColumns="false" ShowFooter="true"
-                                            Width="925" OnRowDataBound="GVMaterialReceive_RowDataBound">
+                                              OnRowDataBound="GVMaterialReceive_RowDataBound">
                                             <Columns>
                                                 <asp:TemplateField HeaderText="S.No">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                     </ItemTemplate>
-                                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="40px" />
+                                                     
                                                 </asp:TemplateField>
                                                 <asp:TemplateField HeaderText="Item Group">
                                                     <ItemTemplate>
@@ -111,7 +111,7 @@
                                                     <FooterTemplate>
                                                         <asp:Button CssClass="btn btn-primary btn-square" ID="btnAddMore" runat="server" OnClick="btnAddMore_Click" Text="Add More" />
                                                     </FooterTemplate>
-                                                    <FooterStyle HorizontalAlign="Right" />
+                                                    
                                                     <ItemStyle VerticalAlign="Top"   />
                                                 </asp:TemplateField>
                                             </Columns>

@@ -16,7 +16,7 @@
             <div class="card-body">
                 <div class="card-header">
                     PDC</div>
-                <div class="row"  style="width: 930px;">
+                <div class="row"   >
                     <div class="row" >
                         <div class="col-lg-4" >
                             Project :
@@ -37,7 +37,7 @@
                         <div class="col-lg-4"  colspan="4"  >
                             <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"  ID="grvProjectDetails" runat="server" ShowFooter="True" AutoGenerateColumns="False"
                                 ForeColor="#333333" GridLines="None" OnRowDataBound="grvProjectDetails_RowDataBound"
-                                Width="915px" OnRowCommand="grvProjectDetails_RowCommand">
+                                  OnRowCommand="grvProjectDetails_RowCommand">
                                 <Columns>
                                     <%-- <asp:BoundField DataField="RowNumber" HeaderText="SNo" />--%>
                                     <asp:TemplateField HeaderText="Vendor">
@@ -82,7 +82,7 @@
                                                 CssClass="cal_Theme1">
                                             </cc1:CalendarExtender>
                                         </ItemTemplate>
-                                        <FooterStyle HorizontalAlign="Right" />
+                                        
                                         <FooterTemplate>
                                             <asp:Button CssClass="btn btn-primary btn-square" ID="ButtonAdd" runat="server" Text="Add More" OnClick="ButtonAdd_Click" />
                                             <%--OnClick="ButtonAdd_Click" />--%>

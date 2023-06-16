@@ -11,10 +11,10 @@
                     <div class="card-body">
                         <div class="card-header">
                             Stock Opening</div>
-                        <div class="row"  style="width: 920px;">
+                        <div class="row"   >
                          
                             <div class="row" >
-                                <div class="col-lg-4"  style="width: 100px; text-align: center;">
+                                <div class="col-lg-4"   >
                                     Project:
                                 </div>
                                 <div class="col-lg-4"  style="width: 260px;">
@@ -23,7 +23,7 @@
                                     </asp:DropDownList>
                                 </div>
                                 <div class="col-lg-4" >
-                                    &nbsp;
+                                     
                                 </div>
                             </div>
                           </div>
@@ -37,7 +37,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="40px" />
+                                                 
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Item Group">
                                                 <ItemTemplate>

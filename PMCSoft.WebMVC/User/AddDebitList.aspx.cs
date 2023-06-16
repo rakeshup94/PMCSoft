@@ -17,7 +17,7 @@ using System.Security.Cryptography;
 using System.Net;
 using System.Net.Mail;
 using System.IO;
- 
+
 using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.User
@@ -34,7 +34,7 @@ namespace PMCSoft.Web.User
                 if (!IsPostBack)
                 {
 
-                    TabContainer1.ActiveTabIndex = 0;
+
                     BindProject();
                     BindProj();
                 }
@@ -477,7 +477,7 @@ namespace PMCSoft.Web.User
                 {
                     GetProj();
                 }
-                TabContainer1.ActiveTabIndex = 1;
+
             }
             catch (Exception ex)
             {
@@ -537,7 +537,7 @@ namespace PMCSoft.Web.User
                     if (ddlType.SelectedValue != "-1")
                     {
                         GetSProj();
-                        TabContainer1.ActiveTabIndex = 1;
+
                     }
                     else
                     {

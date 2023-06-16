@@ -14,7 +14,7 @@
                 <%--<h3 style="margin-right:80">
                               AHLUWALIA CONTRACTS (INDIA) LTD<br />
                            Work Programme</div>--%>
-                <div class="row"  style="width: 930px;" border="0">
+                <div class="row"    border="0">
                     <div class="row" >
                       <asp:LinkButton ID="ImgImage" runat="server" ImageUrl="~/Images/logo.png" Height="50px" />
                         <div class="col-lg-4"  style="text-align: center; font-size: 18px; font-family: Cambria;" >
@@ -31,7 +31,7 @@
                     <div class="row" >
                         <div class="col-lg-4"  style="font-size: 15px; font-family: Cambria; color: Black">
                             Project Name:
-                              &nbsp; &nbsp; &nbsp;  &nbsp;<asp:Label ID="lblProjectName" runat="server"></asp:Label>
+                                      <asp:Label ID="lblProjectName" runat="server"></asp:Label>
                             <asp:HiddenField ID="hdnPRJID" runat="server" />
                         </div>
                         <div class="col-lg-4"   >
@@ -50,10 +50,10 @@
                     <div class="row" >
                         <div class="col-lg-4"    >
                             Created By:
-                              &nbsp; &nbsp; &nbsp;  &nbsp;<asp:Label ID="lblCreatedBy" runat="server"></asp:Label>
+                                      <asp:Label ID="lblCreatedBy" runat="server"></asp:Label>
                         </div>
                         <div class="col-lg-4"  style="text-align: left;">
-                            &nbsp;
+                             
                         </div>
                         <div class="col-lg-4" >
                             Work Programme No:
@@ -65,11 +65,11 @@
                     <div class="row" >
                         <div class="col-lg-4"   >
                             Eng. In Charge:
-                                &nbsp; &nbsp; &nbsp;  &nbsp; <asp:Label ID="lblEngInCharge" runat="server"  ></asp:Label>
-                                &nbsp; &nbsp; &nbsp;  &nbsp;<asp:HiddenField ID="hdnEngInCharge" runat="server" />
+                                         <asp:Label ID="lblEngInCharge" runat="server"  ></asp:Label>
+                                        <asp:HiddenField ID="hdnEngInCharge" runat="server" />
                         </div>
                          <div class="col-lg-4" >
-                                            &nbsp;</div>
+                                             </div>
                                         <div class="col-lg-4" >
                                             Block:</div>
                        
@@ -210,19 +210,19 @@
                                     </div>
                                     <div class="row" >
                                         <div class="col-lg-4"  style="text-align: left;">
-                                            Supervisor:  &nbsp; &nbsp;<asp:Label ID="lblSupervisor" runat="server"></asp:Label>
+                                            Supervisor:     <asp:Label ID="lblSupervisor" runat="server"></asp:Label>
                                             <asp:HiddenField ID="hdnSupervisor" runat="server" />
                                         </div>
                                         
                                         <div class="col-lg-4" >
-                                            Foreman: &nbsp; &nbsp;<asp:Label ID="lblForeman" runat="server"></asp:Label>
+                                            Foreman:    <asp:Label ID="lblForeman" runat="server"></asp:Label>
                                             <asp:HiddenField ID="hdnForeman" runat="server" />
                                         </div>
                                         <div class="col-lg-4"   >
                                             
                                         </div>
                                         <div class="col-lg-4" >
-                                            Engineer: &nbsp; &nbsp;<asp:Label ID="lblEngineer" runat="server"></asp:Label>
+                                            Engineer:    <asp:Label ID="lblEngineer" runat="server"></asp:Label>
                                             <asp:HiddenField ID="hdnEngineer" runat="server" />
                                         </div>
                                         <div class="col-lg-4"  style="text-align: left;">

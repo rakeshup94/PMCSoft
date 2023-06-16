@@ -43,7 +43,7 @@
                                                     WP Date:
                                                 </div>
                                                 <div class="col-lg-4" >
-                                                    <asp:Label ID="lblWorkProgrammeDate" runat="server"   Font-Size="12px"></asp:Label>
+                                                    <asp:Label ID="lblWorkProgrammeDate" runat="server"    ></asp:Label>
                                                     <asp:HiddenField ID="hdnWPDate" runat="server" />
                                                     <asp:HiddenField ID="hdnWPID" runat="server" />
                                                 </div>
@@ -72,7 +72,7 @@
                                                     <asp:Label ID="lblEngInCharge" runat="server"  ></asp:Label>
                                                     <asp:HiddenField ID="hdnEngInCharge" runat="server" />
                                                 </div>
-                                                <div class="col-lg-4"  style="width: 60px;">
+                                                <div class="col-lg-4"    >
                                                     Block:
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: left;">
