@@ -153,25 +153,25 @@
                                                                 <asp:TextBox CssClass="form-control" ID="txtArea" runat="server"   onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                                <asp:TextBox CssClass="form-control" ID="txtSK" runat="server" Width="80px"></asp:TextBox>
+                                                                <asp:TextBox CssClass="form-control" ID="txtSK" runat="server"   ></asp:TextBox>
                                                                 <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtSK"
                                                                     FilterType="Custom, Numbers">
                                                                 </cc1:FilteredTextBoxExtender>
                                                             </div>
                                                             <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                                <asp:TextBox CssClass="form-control" ID="txtSEMI" runat="server" Width="80px"></asp:TextBox>
+                                                                <asp:TextBox CssClass="form-control" ID="txtSEMI" runat="server"   ></asp:TextBox>
                                                                 <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtSEMI"
                                                                     FilterType="Custom, Numbers">
                                                                 </cc1:FilteredTextBoxExtender>
                                                             </div>
                                                             <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                                <asp:TextBox CssClass="form-control" ID="txtUNSK" runat="server" Width="80px"></asp:TextBox>
+                                                                <asp:TextBox CssClass="form-control" ID="txtUNSK" runat="server"   ></asp:TextBox>
                                                                 <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" TargetControlID="txtUNSK"
                                                                     FilterType="Custom, Numbers">
                                                                 </cc1:FilteredTextBoxExtender>
                                                             </div>
                                                             <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
-                                                                <asp:TextBox CssClass="form-control" ID="txtOT" runat="server" Width="80px"></asp:TextBox>
+                                                                <asp:TextBox CssClass="form-control" ID="txtOT" runat="server"   ></asp:TextBox>
                                                                 <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender4" runat="server" TargetControlID="txtOT"
                                                                     FilterType="Custom, Numbers">
                                                                 </cc1:FilteredTextBoxExtender>

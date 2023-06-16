@@ -46,7 +46,7 @@
                                                     <div class="col-lg-4"     style="width: 250px; text-align: center; border: 1px solid black;
                                                         background-color: #D8D8D8; font-weight: bold;">
                                                         Amt. Upto Previous Months
-                                                        <asp:TextBox CssClass="form-control" ID="txtPreviousMonth" runat="server" Width="80px"></asp:TextBox>
+                                                        <asp:TextBox CssClass="form-control" ID="txtPreviousMonth" runat="server"   ></asp:TextBox>
                                                         <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="txtPreviousMonth"
                                                             CssClass="cal_Theme1">
                                                         </cc1:CalendarExtender>
@@ -54,7 +54,7 @@
                                                     <div class="col-lg-4"     style="width: 220px; text-align: center; border: 1px solid black;
                                                         background-color: #D8D8D8; font-weight: bold;">
                                                         Amt. Current Months
-                                                        <asp:TextBox CssClass="form-control" ID="txtCurrentMonth" runat="server" Width="80px"></asp:TextBox>
+                                                        <asp:TextBox CssClass="form-control" ID="txtCurrentMonth" runat="server"   ></asp:TextBox>
                                                         <cc1:CalendarExtender ID="CalendarExtender3" runat="server" TargetControlID="txtCurrentMonth"
                                                             CssClass="cal_Theme1">
                                                         </cc1:CalendarExtender>
@@ -62,7 +62,7 @@
                                                     <div class="col-lg-4"     style="width: 200px; text-align: center; border: 1px solid black;
                                                         background-color: #D8D8D8; font-weight: bold;">
                                                         Amt. Up To Date
-                                                        <asp:TextBox CssClass="form-control" ID="txtUpToDate" runat="server" Width="80px"></asp:TextBox>
+                                                        <asp:TextBox CssClass="form-control" ID="txtUpToDate" runat="server"   ></asp:TextBox>
                                                         <cc1:CalendarExtender ID="CalendarExtender4" runat="server" TargetControlID="txtUpToDate"
                                                             CssClass="cal_Theme1">
                                                         </cc1:CalendarExtender>
@@ -119,25 +119,25 @@
                                                     </cc1:FilteredTextBoxExtender>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtCMRepairs" runat="server" Text='<%#Bind("CMRepairs") %>' Width="80px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtCMRepairs" runat="server" Text='<%#Bind("CMRepairs") %>'   ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" TargetControlID="txtCMRepairs"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtCMFuel" runat="server" Text='<%#Bind("CMFuel") %>' Width="80px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtCMFuel" runat="server" Text='<%#Bind("CMFuel") %>'   ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender4" runat="server" TargetControlID="txtCMFuel"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtUTRepairs" runat="server" Text='<%#Bind("UTRepairs") %>' Width="80px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtUTRepairs" runat="server" Text='<%#Bind("UTRepairs") %>'   ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender5" runat="server" TargetControlID="txtUTRepairs"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtUTFuel" runat="server" Text='<%#Bind("UTFuel") %>' Width="80px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtUTFuel" runat="server" Text='<%#Bind("UTFuel") %>'   ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender6" runat="server" TargetControlID="txtUTFuel"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>

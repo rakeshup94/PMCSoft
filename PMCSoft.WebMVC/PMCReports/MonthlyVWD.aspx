@@ -115,34 +115,34 @@
                                                     <asp:Label ID="lblFiscMonths" runat="server" Text='<%#Bind("FiscMonths") %>'></asp:Label>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtPlan" runat="server" Width="80px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtPlan" runat="server"   ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtPlan"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtActualVWD" runat="server" Width="80px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtActualVWD" runat="server"   ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtActualVWD"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtActualEscl" runat="server" Width="80px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtActualEscl" runat="server"   ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" TargetControlID="txtActualEscl"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtExtraItem" runat="server" Width="80px"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtExtraItem" runat="server"   ></asp:TextBox>
                                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender4" runat="server" TargetControlID="txtExtraItem"
                                                         FilterType="Custom, Numbers" ValidChars=".">
                                                     </cc1:FilteredTextBoxExtender>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtTotal" runat="server" Width="80px" ReadOnly="true" Enabled="false"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtTotal" runat="server"    ReadOnly="true" Enabled="false"></asp:TextBox>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
-                                                    <asp:TextBox CssClass="form-control" ID="txtVariation" runat="server" Width="80px" ReadOnly="true" Enabled="false"></asp:TextBox>
+                                                    <asp:TextBox CssClass="form-control" ID="txtVariation" runat="server"    ReadOnly="true" Enabled="false"></asp:TextBox>
                                                 </div>
                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black;">
                                                     <asp:TextBox CssClass="form-control" ID="txtRemarks" runat="server" TextMode="MultiLine" onkeyup="valid(this)"

@@ -293,7 +293,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblTotalCost" runat="server" Text='<%#Bind("OriginalContractValue") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle HorizontalAlign="Right" Width="80px" />
+                                                <ItemStyle HorizontalAlign="Right"    />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Start Date">
                                                 <ItemTemplate>

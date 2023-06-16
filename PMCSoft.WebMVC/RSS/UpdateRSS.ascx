@@ -15,8 +15,8 @@
                 <span style="color:#666666 ;"><%#XPath("description")%></span>
                 <br /><br />
             </ItemTemplate>
-                 <ItemStyle BackColor="#ECF5F8" ForeColor="#333333"  HorizontalAlign="Justify" BorderStyle="None"/>
-               <%--  <AlternatingItemStyle BackColor="#e" ForeColor="#333333" Height="165px"/>
+                 <ItemStyle BackColor="#ECF5F8"     HorizontalAlign="Justify" BorderStyle="None"/>
+               <%--  <AlternatingItemStyle BackColor="#e"    Height="165px"/>
         --%>    <HeaderStyle BackColor="#ECF5F8" ForeColor="Black" Font-Bold="true" />
         </asp:DataList>
         </div>

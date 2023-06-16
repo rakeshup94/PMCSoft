@@ -67,7 +67,7 @@
                                                 <ItemTemplate>
                                                     <asp:Label ID="lblAmount" runat="server" Text='<%#Bind("Amount") %>'></asp:Label>
                                                 </ItemTemplate>
-                                                <ItemStyle Width="80px" HorizontalAlign="Right" />
+                                                <ItemStyle    HorizontalAlign="Right" />
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Issue Date">
                                                 <ItemTemplate>
