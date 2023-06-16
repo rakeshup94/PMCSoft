@@ -51,6 +51,15 @@ namespace PMCSoft.Web.User
         protected global::System.Web.UI.WebControls.Label lblDate1;
 
         /// <summary>
+        /// HiddenField2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField HiddenField2;
+
+        /// <summary>
         /// GridView1 control.
         /// </summary>
         /// <remarks>

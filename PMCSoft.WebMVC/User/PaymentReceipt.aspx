@@ -42,7 +42,7 @@
                                 <div class="mb-3">
                                     Date   <asp:Label ID="lblDate1" class="form-control" runat="server"></asp:Label>
                  
-
+                                    <asp:HiddenField ID="HiddenField2" runat="server" />
                                 </div>
                             </div>
                         </div>
