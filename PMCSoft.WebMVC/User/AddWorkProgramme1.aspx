@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Inherits="PMCSoft.Web.User.AddWorkProgramme" Codebehind="AddWorkProgramme.aspx.cs" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Inherits="PMCSoft.Web.User.AddWorkProgramme" Codebehind="AddWorkProgramme1.aspx.cs" %>
 
  
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">

@@ -785,12 +785,12 @@
     <Compile Include="User\AddVendor.aspx.designer.cs">
       <DependentUpon>AddVendor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User\AddWorkProgramme.aspx.cs">
-      <DependentUpon>AddWorkProgramme.aspx</DependentUpon>
+    <Compile Include="User\AddWorkProgramme1.aspx.cs">
+      <DependentUpon>AddWorkProgramme1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\AddWorkProgramme.aspx.designer.cs">
-      <DependentUpon>AddWorkProgramme.aspx</DependentUpon>
+    <Compile Include="User\AddWorkProgramme1.aspx.designer.cs">
+      <DependentUpon>AddWorkProgramme1.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\AdvanceRequisition.aspx.cs">
       <DependentUpon>AdvanceRequisition.aspx</DependentUpon>
@@ -813,12 +813,12 @@
     <Compile Include="User\DebitListApproval.aspx.designer.cs">
       <DependentUpon>DebitListApproval.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User\Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="User\Home1.aspx.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="User\Home1.aspx.designer.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\issuepdcrequest.aspx.cs">
       <DependentUpon>issuepdcrequest.aspx</DependentUpon>
@@ -834,12 +834,12 @@
     <Compile Include="User\MaterialReceive.aspx.designer.cs">
       <DependentUpon>MaterialReceive.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User\MorningReport.aspx.cs">
-      <DependentUpon>MorningReport.aspx</DependentUpon>
+    <Compile Include="User\MorningReport1.aspx.cs">
+      <DependentUpon>MorningReport1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\MorningReport.aspx.designer.cs">
-      <DependentUpon>MorningReport.aspx</DependentUpon>
+    <Compile Include="User\MorningReport1.aspx.designer.cs">
+      <DependentUpon>MorningReport1.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\NewRABILL.aspx.cs">
       <DependentUpon>NewRABILL.aspx</DependentUpon>
@@ -3049,14 +3049,14 @@
     <Content Include="User\AddItemOfWork.aspx" />
     <Content Include="User\AddPaymentType.aspx" />
     <Content Include="User\AddVendor.aspx" />
-    <Content Include="User\AddWorkProgramme.aspx" />
+    <Content Include="User\AddWorkProgramme1.aspx" />
     <Content Include="User\AdvanceRequisition.aspx" />
     <Content Include="User\ChangePassword.aspx" />
     <Content Include="User\DebitListApproval.aspx" />
-    <Content Include="User\Home.aspx" />
+    <Content Include="User\Home1.aspx" />
     <Content Include="User\issuepdcrequest.aspx" />
     <Content Include="User\MaterialReceive.aspx" />
-    <Content Include="User\MorningReport.aspx" />
+    <Content Include="User\MorningReport1.aspx" />
     <Content Include="User\NewRABILL.aspx" />
     <Content Include="User\PaymentReceipt.aspx" />
     <Content Include="User\ProjectDetail.aspx" />
