@@ -1,0 +1,61 @@
+﻿@{
+
+    Layout = null;
+}
+
+@model IEnumerable<INGM.Core.ViewModel.Navigation.NavModel>
+@using INGM.Core.Common;
+
+
+<div class="panel panel-blue">
+    <div class="panel-heading">System Navigation</div>
+    <div class="panel-body">
+
+        <div id="no-more-tables">
+            <table class="table table-bordered table-striped table-condensed cf">
+                <thead class="cf">
+                    <tr>
+                        <th>MenuId</th>
+                        <th>Name</th>
+                        <th>OrderNo</th>
+                        <th>ParentId</th>
+                        <th>Menu Type</th>
+                        <th>@Html.DisplayName("Action")</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td data-title="Id">
+                                @item.MenuId
+                            </td>
+                            <td data-title="Name">
+                                <i class="@item.MenuIcon"></i> &nbsp; @item.MenuName
+                            </td>
+                            <td data-title="OrderNo">
+                                @item.OrderNo
+                            </td>
+                            <td data-title="Parent">
+                                @item.ParentId
+                            </td>
+
+                            <td data-title="Type">
+                              
+                     
+                                @Html.Label((item.IsRight ? "Accessible" : "Non-Accessible"), new { @class = (item.IsRight ? "label label-sm label-success" : "label label-sm label-warning") })
+                            </td>
+                            <td data-title="Action">
+                                <span data-access=@Permission.EditNavRight>
+                                    @Html.ActionLink("Edit", "EditMenu", new { MenuId = item.MenuId }, new { @class = "btn btn-default btn-xs" })
+                                    </span>
+</td>
+</tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

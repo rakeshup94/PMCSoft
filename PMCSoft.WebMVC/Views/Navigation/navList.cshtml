@@ -1,0 +1,40 @@
+﻿@using INGM.Core.ViewModel.Navigation;
+@model IEnumerable<NavModel>
+@{
+    Layout = null;
+}
+
+@foreach (var menuitem in Model)
+{
+  
+        <li>
+            @{
+    if (menuitem.SubMenu.Count != 0)
+    {
+
+        <a href="@menuitem.MenuUrl"><i class="@menuitem.MenuIcon"></i><span class="submenu-title">@menuitem.MenuName<span class="fa arrow"></span></span></a>
+    <ul class="nav nav-third-level">
+        @{
+
+        if (menuitem.SubMenu.Count > 0)
+        {
+            Html.RenderPartial("navList", menuitem.SubMenu);
+        }
+
+        }
+
+            </ul>
+    }
+
+    else
+    {
+        <a href="@menuitem.MenuUrl"><i class="@menuitem.MenuIcon"></i><span class="submenu-title">@menuitem.MenuName</span></a>
+
+    }
+
+}
+
+          
+        </li>
+    
+}

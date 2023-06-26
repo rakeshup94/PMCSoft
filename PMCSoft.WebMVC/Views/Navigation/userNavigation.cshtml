@@ -1,0 +1,82 @@
+﻿@using INGM.Core.ViewModel.Navigation;
+@model IEnumerable<NavModel>
+@{   var menusList = Model as IEnumerable<NavModel>;
+     Layout = null;
+     var sessionSection = (System.Web.Configuration.SessionStateSection)System.Web.Configuration.WebConfigurationManager.GetSection("system.web/sessionState");
+     var sessiontime = sessionSection.Timeout.TotalMinutes.ToString();
+
+     int LoginTime = (int)(sessionSection.Timeout.TotalMilliseconds / 2);
+}
+
+
+
+@Html.Hidden("hdnMainPageRptSequence", TempData["SequenceMsg"] ?? string.Empty)
+<nav id="sidebar" role="navigation" class="navbar-default navbar-static-side" style="min-height: 100%;">
+    <div class="sidebar-collapse menu-scroll hiden-menu" style="height: auto;">
+        <ul id="side-menu" class="nav">
+            <li class="user-panel">
+                <div class="thumb"><img src="@Url.Content(Convert.ToString(@Html.Action("GetImage", "UserProfile")))" width="128" height="128" alt="" class="img-circle" /></div>
+                <div class="info">
+                    <p>
+
+                        @User.FirstName @User.MiddleName @User.LastName
+                        @{
+                            
+                            string strName = User.FirstName + " " + User.MiddleName + " " + User.LastName;
+                        }
+
+                        @Html.Hidden("hdnLayOutGuest", strName ?? string.Empty)
+
+
+                        @Html.Hidden("hdnTimeOut", LoginTime)
+
+
+                    </p>
+                    <ul class="list-inline list-unstyled">
+                        <li>
+                            <a href="@Url.Action("Index", "UserProfile")" data-hover="tooltip" title="Profile">
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("LogOut", "Account")" data-hover="tooltip" title="Logout">
+                                <i class="fa fa-sign-out"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+
+            @foreach (var item in menusList)
+            {
+
+                <li class="">
+                    <a href="@item.MenuUrl" class="menu-txt-font">
+
+                        <i class="@item.MenuIcon menu-icon-font">
+                            <div class="icon-bg bg-red"></div>
+                        </i>
+                        <span class="menu-title">@item.MenuName</span>
+
+                    </a>
+                    @if (item.SubMenu.Count > 0)
+                    { 
+                    <ul class="nav nav-second-level">
+                        @{
+                             Html.RenderPartial("navList", item.SubMenu);
+                        }
+                    </ul>
+                    }
+                </li>
+
+            }
+
+
+
+
+
+            <!--li.charts-sum<div id="ajax-loaded-data-sidebar"></div>-->
+        </ul>
+    </div>
+</nav>

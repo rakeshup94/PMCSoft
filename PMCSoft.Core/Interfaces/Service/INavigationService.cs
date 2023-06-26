@@ -1,4 +1,6 @@
-﻿using PMCSoft.Core.Models;
+﻿
+
+using PMCSoft.Core.Models.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,18 @@ namespace PMCSoft.Core.Interfaces.Service
 {
     public interface INavigationService
     {
-        List<MenuModel> GetMenus(string _userId, string _projectId);
+
+
+        IEnumerable<NavModel> GetAllMenu();
+        IEnumerable<NavModel> GetMenu(bool IsPublished);
+        IEnumerable<NavModel> GetAccessibleMenu(bool IsAction, bool IsPublished);
+        IEnumerable<NavModel> GetUserMenu(long UserId, bool IsPublished);
+        IEnumerable<NavModel> GetRoleMenu(int RoleId, bool IsPublished);
+        NavModel GetMenuItem(int MenuId);
+        int AddMenu(NavModel model);
+        void UpdateMenu(NavModel model);
+        int AddMenuMapping(string[] MenuRight, int RoleId);
+
+
     }
 }

@@ -17,4 +17,24 @@ namespace PMCSoft.Core.Entity
         [StringLength(50)]
         public string Status { get; set; }
     }
+
+
+    [Table("tblRoleMenu")]
+    public partial class tblRoleMenu
+    {
+        [Key]
+        public int MenuId { get; set; }
+        [Key]
+        public int RoleId { get; set; }
+        public long CreatedBy { get; set; }
+        public DateTime CreatedOn { get; set; }
+    }
+
+
+
+
+
+
+
+
 }

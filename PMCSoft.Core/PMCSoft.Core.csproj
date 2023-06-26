@@ -228,6 +228,8 @@
     <Compile Include="Entity\tblWorkType.cs" />
     <Compile Include="Entity\UserPermission.cs" />
     <Compile Include="Entity\UserPermissionPage.cs" />
+    <Compile Include="Models\CommonModel.cs" />
+    <Compile Include="Models\Navigation\NavModel.cs" />
     <Compile Include="Models\ServiceResponse.cs" />
     <Compile Include="PMCSoftContext.cs" />
     <Compile Include="Interfaces\Common\IAuditableEntity.cs" />
@@ -246,7 +248,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DAL\" />
-    <Folder Include="Models\Navigation\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />

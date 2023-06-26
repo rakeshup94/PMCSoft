@@ -1,0 +1,56 @@
+﻿@model IEnumerable<INGM.Core.ViewModel.Security.ServiceModel>
+
+
+@{
+    ViewBag.Title = "_mapMenuRights";   
+}
+
+
+
+<div id="divRight" class="row mbm">
+
+        <div class="col-md-12">
+            <div class="panel-group">
+
+                @foreach (var serv in Model)
+                {
+                    string panelId = "panel-" + serv.Id;
+                    string chkId = "chkserv-" + serv.Id;
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <input id="@chkId" tabindex="" type="checkbox" name="services" data-panel="@panelId" />&nbsp;&nbsp;
+                            <label for="minimal-checkbox-1">@Html.DisplayFor(modelItem => serv.Name)</label>
+                        </div>
+                        <div class="panel-body">
+                            <div id="@panelId" class="panel-collapse">
+                                <div class="panel-body">
+                                    <div class="row mbm">
+                                        @foreach (var items in serv.Rights)
+                                    {
+                                        string chkRgtId = "chkRight-" + @items.Id;
+                                            <div class="col-md-3">
+
+                                                <input id="@chkRgtId" type="checkbox"
+                                                       value="@items.Id" name="MenuRight" chkstatus="@items.RgtStatus" />
+                                                &nbsp;&nbsp;
+                                                <label for="minimal-checkbox-1">
+                                                    @Html.DisplayFor(modelItem => items.Name)
+                                                </label>
+                                            </div>
+                                    }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+   
+
+</div>
+
+
+
+

@@ -30,7 +30,7 @@ namespace PMCSoft.Core.Entity
         [StringLength(500)]
         public string MenuDesc { get; set; }
 
-        public float MenuOrderNo { get; set; }
+        public float? MenuOrderNo { get; set; }
         public bool IsAction { get; set; }
 
         [StringLength(500)]

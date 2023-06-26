@@ -1,0 +1,126 @@
+﻿@using INGM.Core.Common;
+@{
+    ViewBag.Title = "CreateMapping";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="page-wrapper">
+    <!--BEGIN TITLE & BREADCRUMB PAGE-->
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb hidden-sm">
+        <div class="page-header pull-left">
+            <div class="page-title">
+
+            </div>
+        </div>
+
+
+    </div>
+    <!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT-->
+    <div class="page-content">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="portlet portlet-white">
+
+                 
+
+
+                    <div class="portlet-body">
+
+                        @using (Html.BeginForm("CreateMapping", "Navigation", FormMethod.Post, new { id = "frmMenuMap", role = "form", @class = "", novalidate = "novalidate", enctype = "multipart/form-data" }))
+                        {
+
+                            @Html.AntiForgeryToken()
+                            <div class="row mbm">
+                                <div class="col-lg-6">
+
+                                    <div class="form-group">
+                                        <label class="control-label col-lg-2">User Type</label>
+                                        <div class="col-lg-10 UserType">
+                                            @Html.DropDownList("ddlUserType", new SelectList(ViewBag.UserType, "ItemId", "ItemName"), "- Please select a User Type -",new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-check-circle"></i>&nbsp; Save Setting</button>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12" id="panelMenuList">
+
+                                </div>
+
+                            </div>
+
+
+                        }
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <!-- end of row-->
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Use for Disable icheck Plugin-->
+<div id="demo-checkbox-radio">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@section styles {
+
+    <!--LOADING STYLESHEET FOR PAGE-->
+    <link type="text/css" rel="stylesheet" href="~/Scripts/DataTables/media/css/jquery.dataTables.css">
+    <link type="text/css" rel="stylesheet" href="~/Scripts/DataTables/extensions/TableTools/css/dataTables.tableTools.min.css">
+    <link type="text/css" rel="stylesheet" href="~/Scripts/bootstrap-select/bootstrap-select.min.css">
+    <link type="text/css" rel="stylesheet" href="~/Scripts/jquery-steps/css/jquery.steps.css">
+}
+
+
+@section scripts {
+    <script src="~/Scripts/form-wizard-new/formValidation.min.js"></script>
+    <script src="~/Scripts/form-wizard-new/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-steps/js/jquery.withoutsteps.min.js"></script>
+    <script src="~/JavaScript/partialwizard.js"></script>
+    <script src="~/JavaScript/Navigation.js"></script>
+
+}
+
+

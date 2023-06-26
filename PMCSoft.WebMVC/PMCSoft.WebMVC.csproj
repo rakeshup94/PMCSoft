@@ -447,10 +447,19 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\NavigationController2334.cs" />
+    <Compile Include="Filters\CustomErrorFilter.cs" />
+    <Compile Include="Filters\PermissionFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\BaseViewPage.cs" />
+    <Compile Include="Helpers\Common.cs" />
     <Compile Include="Helpers\CommonHelper.cs" />
+    <Compile Include="Helpers\CustomAuthorizeAttribute.cs" />
+    <Compile Include="Helpers\PriceHelper.cs" />
+    <Compile Include="Helpers\SqlHelper.cs" />
+    <Compile Include="Helpers\StaticCache.cs" />
     <Compile Include="Inventory\EnterStockDetails.aspx.cs">
       <DependentUpon>EnterStockDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -489,7 +498,10 @@
     <Compile Include="Models\Account\User.cs" />
     <Compile Include="Models\CustomPrincipal.cs" />
     <Compile Include="Models\ErrorViewModel.cs" />
+    <Compile Include="Models\PermissionManager.cs" />
     <Compile Include="Models\ServiceResponse.cs" />
+    <Compile Include="Models\SessionManager.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="PMCReports\AddNewActual.aspx.cs">
       <DependentUpon>AddNewActual.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3094,6 +3106,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Views\Navigation\Create.cshtml" />
+    <Content Include="Views\Navigation\CreateMapping.cshtml" />
+    <Content Include="Views\Navigation\navList.cshtml" />
+    <Content Include="Views\Navigation\userNavigation.cshtml" />
+    <Content Include="Views\Navigation\_mapMenuRights.cshtml" />
+    <Content Include="Views\Navigation\_menuList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PMCSoft.Core\PMCSoft.Core.csproj">
