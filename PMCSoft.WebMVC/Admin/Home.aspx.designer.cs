@@ -78,13 +78,13 @@ namespace PMCSoft.Web.Admin
         protected global::System.Web.UI.WebControls.GridView GridView2;
 
         /// <summary>
-        /// ImgAdd control.
+        /// ltnAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImgAdd;
+        protected global::System.Web.UI.WebControls.LinkButton ltnAdd;
 
         /// <summary>
         /// DataList1 control.

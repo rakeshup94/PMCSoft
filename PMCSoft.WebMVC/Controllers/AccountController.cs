@@ -5,6 +5,7 @@ using PMCSoft.Infrastructure.Repository;
 using PMCSoft.Infrastructure.Services;
 using PMCSoft.WebMVC.Models;
 using PMCSoft.WebMVC.Models.Account;
+using PMCSoft.Core.Common;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -13,6 +14,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
+using System.Configuration;
 
 namespace PMCSoft.WebMVC.Controllers
 {
@@ -52,6 +54,7 @@ namespace PMCSoft.WebMVC.Controllers
 
             if (ModelState.IsValid)
             {
+                model.Password = model.Password.CreateMD5Hash();
                 var _result = await accSrv.LoginUser(model.Email, model.Password);
                 var user = _result.Data;
                 if (_result.Result)

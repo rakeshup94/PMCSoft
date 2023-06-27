@@ -11,8 +11,9 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.IO;
-
 using PMCSoft.Infrastructure.Data;
+
+using PMCSoft.Core.Common;
 namespace PMCSoft.Web.Admin
 {
     public partial class Home : System.Web.UI.Page
@@ -244,13 +245,13 @@ namespace PMCSoft.Web.Admin
         }
         private string DecryptQueryString(string strQueryString)
         {
-            EncryptDecryptQueryString objEDQueryString = new EncryptDecryptQueryString();
-            return objEDQueryString.Decrypt(strQueryString, "r0b1nr0y");
+             
+            return  strQueryString.Decrypt();
         }
         public string EncryptQueryString(string strQueryString)
         {
-            EncryptDecryptQueryString objEDQueryString = new EncryptDecryptQueryString();
-            return objEDQueryString.Encrypt(strQueryString, "r0b1nr0y");
+             
+            return  strQueryString.Encrypt();
         }
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {

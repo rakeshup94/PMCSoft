@@ -99,8 +99,8 @@ namespace PMCSoft.Web.Admin
         }
         public string EncryptQueryString(string strQueryString)
         {
-            EncryptDecryptQueryString objEDQueryString = new EncryptDecryptQueryString();
-            return objEDQueryString.Encrypt(strQueryString, "r0b1nr0y");
+               ();
+            return  strQueryString.Encrypt();
         }
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
         {

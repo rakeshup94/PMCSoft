@@ -51,13 +51,13 @@ namespace PMCSoft.Web.Admin
         }
         private string DecryptQueryString(string strQueryString)
         {
-            EncryptDecryptQueryString objEDQueryString = new EncryptDecryptQueryString();
-            return objEDQueryString.Decrypt(strQueryString, "r0b1nr0y");
+               ();
+            return  strQueryString.Decrypt();
         }
         public string EncryptQueryString(string strQueryString)
         {
-            EncryptDecryptQueryString objEDQueryString = new EncryptDecryptQueryString();
-            return objEDQueryString.Encrypt(strQueryString, "r0b1nr0y");
+               ();
+            return  strQueryString.Encrypt();
         }
         public void GetProjectParticularADetail(string ProjectID)
         {
