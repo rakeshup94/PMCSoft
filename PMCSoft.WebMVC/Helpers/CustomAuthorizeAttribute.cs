@@ -1,4 +1,5 @@
-﻿using INGM.Web.Models;
+﻿
+using PMCSoft.WebMVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -7,7 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace INGM.Web.Helpers
+namespace PMCSoft.WebMVC.Helpers
 {
     public class CustomAuthorizeAttribute : AuthorizeAttribute
     {

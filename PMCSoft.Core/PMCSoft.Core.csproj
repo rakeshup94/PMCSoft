@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\CommonHelper.cs" />
+    <Compile Include="Common\Encryption.cs" />
     <Compile Include="Common\Extensions.cs" />
     <Compile Include="Common\GlobalVars.cs" />
     <Compile Include="Common\MathHelper.cs" />
@@ -109,6 +110,8 @@
     <Compile Include="Entity\tblEquipmentMaster.cs" />
     <Compile Include="Entity\tblErrorLog.cs" />
     <Compile Include="Entity\tblErrorLogWithoutLogin.cs" />
+    <Compile Include="Entity\tblException.cs" />
+    <Compile Include="Entity\tblExceptionLogging.cs" />
     <Compile Include="Entity\tblExpenditure.cs" />
     <Compile Include="Entity\tblFacilitiesProvidedDetail.cs" />
     <Compile Include="Entity\tblFacilitiesProvidedMaster.cs" />
@@ -228,7 +231,9 @@
     <Compile Include="Entity\tblWorkType.cs" />
     <Compile Include="Entity\UserPermission.cs" />
     <Compile Include="Entity\UserPermissionPage.cs" />
+    <Compile Include="Interfaces\Service\IErrorService.cs" />
     <Compile Include="Models\CommonModel.cs" />
+    <Compile Include="Models\ErrorLogModel.cs" />
     <Compile Include="Models\Navigation\NavModel.cs" />
     <Compile Include="Models\ServiceResponse.cs" />
     <Compile Include="PMCSoftContext.cs" />

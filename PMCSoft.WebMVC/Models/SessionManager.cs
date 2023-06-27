@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
-namespace INGM.Web.Models
+namespace PMCSoft.WebMVC.Models
 {
     public static class SessionManager
     {

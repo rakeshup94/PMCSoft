@@ -25,9 +25,18 @@ namespace PMCSoft.Core.Models.Account
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
+        public IList<PermissionObj> PermissionList { get; set; }
+
+    }
+
+
+
+    public class PermissionObj
+    {
+        public string PermissionId { get; set; }
+    }
 
 
 
     }
-}
 

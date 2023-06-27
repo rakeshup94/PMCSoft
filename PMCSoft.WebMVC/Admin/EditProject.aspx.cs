@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using PMCSoft.Infrastructure.Data;
-
+using PMCSoft.Core.Common;
 
 namespace PMCSoft.Web.Admin
 {

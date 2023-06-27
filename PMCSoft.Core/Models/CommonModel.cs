@@ -36,4 +36,17 @@ namespace PMCSoft.Core.Models
         public DateTime CreatedOn { get; set; }
 
     }
+
+    public class SelectedList
+    {
+        public int ItemId { get; set; }
+        public string ItemName { get; set; }
+    }
+    public class ItemsList
+    {
+
+        
+        public string ItemCode { get; set; }
+        public string ItemName { get; set; }
+    }
 }

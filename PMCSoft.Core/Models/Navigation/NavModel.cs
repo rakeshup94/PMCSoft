@@ -3,7 +3,7 @@
 
 namespace PMCSoft.Core.Models.Navigation
 {
-    public class NavModel: AuditableEntity
+    public class NavModel : AuditableEntity
     {
         public int MenuId { get; set; }
         public int? ParentId { get; set; }
@@ -13,9 +13,9 @@ namespace PMCSoft.Core.Models.Navigation
         public string Description { get; set; }
         public float OrderNo { get; set; }
         public bool IsAction { get; set; }
-        
+        public IEnumerable<SelectedList> MenuList { get; set; }
         public virtual ICollection<NavModel> SubMenu { get; set; }
-        //public IEnumerable<SelectedList> MenuList { get; set; }
+
 
     }
 }

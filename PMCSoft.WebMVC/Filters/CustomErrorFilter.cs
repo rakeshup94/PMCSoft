@@ -1,8 +1,7 @@
-﻿using INGM.Core.Common;
-using INGM.Core.Interfaces.Service;
-using INGM.Core.ViewModel.Error;
-using INGM.Infrastructure.Services;
-using INGM.Web.Models;
+﻿
+using PMCSoft.Core.Interfaces.Service;
+using PMCSoft.Core.Models;
+using PMCSoft.WebMVC.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,7 +10,7 @@ using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 
-namespace INGM.Web.Filters
+namespace PMCSoft.WebMVC.Filters
 {
     public class CustomErrorFilter : HandleErrorAttribute
     {

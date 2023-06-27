@@ -1,17 +1,18 @@
-﻿using INGM.Core.ViewModel.Account;
+﻿
+using PMCSoft.Core.Models.Account;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace INGM.Web.Models
+namespace PMCSoft.WebMVC.Models
 {
     public class PermissionManager
     {
         static readonly string PERMISSION_SESSIONNAME = "UserPermissions";
         AccountUser _loggedInUserContact;
 
-        List<AccessRight> _accessibleFeatures = new List<AccessRight>();
+        List<PermissionObj> _accessibleFeatures = new List<PermissionObj>();
 
 
         public static bool enablePermissioningSystem
@@ -25,7 +26,7 @@ namespace INGM.Web.Models
             set { _loggedInUserContact = value; }
         }
 
-        public List<AccessRight> accessibleFeatures
+        public List<PermissionObj> accessibleFeatures
         {
             get { return _accessibleFeatures; }
             set { _accessibleFeatures = value; }
@@ -39,7 +40,7 @@ namespace INGM.Web.Models
         {
             PermissionManager userPermissions = new PermissionManager();
             userPermissions.loggedInUserContact = loggedInUser;
-            userPermissions.accessibleFeatures = loggedInUser.lstRight.ToList();
+            userPermissions.accessibleFeatures = loggedInUser.PermissionList.ToList();
             SessionManager.setSession<PermissionManager>(PERMISSION_SESSIONNAME, userPermissions);
         }
         public static void logout()
@@ -49,13 +50,13 @@ namespace INGM.Web.Models
         public static List<string> getAccessibleRightsControlID()
         {
             PermissionManager userPermissions = PermissionManager.getPermissions();
-            return userPermissions.accessibleFeatures.Select(x => x.RightCode.ToString()).ToList();
+            return userPermissions.accessibleFeatures.Select(x => x.PermissionId.ToString()).ToList();
         }
 
 
 
 
-        public static int getAccessRight(string rightCode)
+        public static int getAccessRight(string _permissionId)
         {
             //bool Istrue = false;
 
@@ -64,7 +65,7 @@ namespace INGM.Web.Models
             if (SessionManager.checkIfSessionExist(PERMISSION_SESSIONNAME))
             {
                 PermissionManager userPermissions = PermissionManager.getPermissions();
-                count = userPermissions.accessibleFeatures.Where(x => x.RightCode == rightCode).ToList().Count;
+                count = userPermissions.accessibleFeatures.Where(x => x.PermissionId == _permissionId).ToList().Count;
             }
 
 

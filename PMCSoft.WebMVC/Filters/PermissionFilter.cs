@@ -1,5 +1,5 @@
-﻿using INGM.Web.Helpers;
-using INGM.Web.Models;
+﻿
+using PMCSoft.WebMVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace INGM.Web.Filters
+namespace PMCSoft.WebMVC.Filters
 {
     public class PermissionFilter : ActionFilterAttribute
     {
@@ -56,7 +56,7 @@ namespace INGM.Web.Filters
                     if (userPermissions != null)
                     {
                         bool hasPermission = false;
-                        hasPermission = Common.isFeaturePresentInList(userPermissions.accessibleFeatures, currentControllerName, currentActionName, currentParameter);
+                        //hasPermission = Common.isFeaturePresentInList(userPermissions.accessibleFeatures, currentControllerName, currentActionName, currentParameter);
 
                         if (!hasPermission)
                         {

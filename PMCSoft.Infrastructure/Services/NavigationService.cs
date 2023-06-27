@@ -2,6 +2,7 @@
 using PMCSoft.Core.Entity;
 using PMCSoft.Core.Interfaces.Repository;
 using PMCSoft.Core.Interfaces.Service;
+using PMCSoft.Core.Models;
 using PMCSoft.Core.Models.Navigation;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,12 @@ namespace PMCSoft.Infrastructure.Services
         }
 
         #region Rakesh
+
+
+     
+
+
+
         public int AddMenu(NavModel _model)
         {
             int menuId = -1000;

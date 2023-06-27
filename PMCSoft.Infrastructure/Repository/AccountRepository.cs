@@ -89,7 +89,7 @@ namespace PMCSoft.Infrastructure.Repository
             flag.Value = 1;
 
             var email = new SqlParameter();
-            email.ParameterName = "@Email";
+            email.ParameterName = "@UserName";
             email.Direction = ParameterDirection.Input;
             email.SqlDbType = SqlDbType.VarChar;
             email.Value = _email;

@@ -3,12 +3,12 @@
     Layout = null;
 }
 
-@model IEnumerable<INGM.Core.ViewModel.Navigation.NavModel>
-@using INGM.Core.Common;
+@model IEnumerable<PMCSoft.Core.Models.Navigation.NavModel>
+
 
 
 <div class="panel panel-blue">
-    <div class="panel-heading">System Navigation</div>
+    <div class="panel-heading">Navigation List</div>
     <div class="panel-body">
 
         <div id="no-more-tables">
@@ -42,16 +42,13 @@
                             </td>
 
                             <td data-title="Type">
-                              
-                     
-                                @Html.Label((item.IsRight ? "Accessible" : "Non-Accessible"), new { @class = (item.IsRight ? "label label-sm label-success" : "label label-sm label-warning") })
+
+
+                                @Html.Label((item.IsAction ? "Accessible" : "Non-Accessible"), new { @class = (item.IsAction ? "label label-sm label-success" : "label label-sm label-warning") })
                             </td>
                             <td data-title="Action">
-                                <span data-access=@Permission.EditNavRight>
-                                    @Html.ActionLink("Edit", "EditMenu", new { MenuId = item.MenuId }, new { @class = "btn btn-default btn-xs" })
-                                    </span>
-</td>
-</tr>
+                                @Html.ActionLink("Edit", "EditMenu", new { MenuId = item.MenuId }, new { @class = "btn btn-default btn-xs" })
+                        </tr>
                     }
 
                 </tbody>

@@ -1,6 +1,4 @@
-﻿@using IExpro.Core.Models;
-@model IEnumerable<MenuModel>
-
+﻿@model IEnumerable<PMCSoft.Core.Models.Navigation.NavModel>
 @foreach (var menuitem in Model)
 {
     <li>
@@ -9,32 +7,32 @@
 
         @if (menuitem.MenuList.Count() > 0)
         {
-            <a href="@menuitem.MenuUrl">
-                <i class="fa fa-sitemap fa-fw">
-                    <div class="icon-bg bg-dark"></div>
-                </i><span class="menu-title">
+            <a href="@menuitem.NavigateURL">
+                <i class="fa fa-sitemap fa-fw"></i>
+                <div class="icon-bg bg-dark"></div>
+                <span class="menu-title">
                     @menuitem.MenuName
                 </span>
                 <span class="fa arrow"></span>
             </a>
             <ul class="nav nav-second-level">
-                @foreach (var sitem in menuitem.MenuList)
+                @foreach (var sitem in menuitem.SubMenu)
                 {
                     <li>
 
 
-                        @if (sitem.MenuList.Count() > 0)
-                        {<a class='second-level-heading' href="@sitem.MenuUrl">
+                        @if (sitem.SubMenu.Count() > 0)
+                        {<a class='second-level-heading' href="@sitem.NavigateURL">
                                 <span class='submenu-title'>@sitem.MenuName</span>
                                 <span class='fa arrow  text-white'></span>
                             </a>
-                            Html.RenderPartial("_subMenuItems", menuitem.MenuList);
+                            Html.RenderPartial("_subMenuItems", menuitem.SubMenu);
                         }
                         else
                         {
-                            <a class='second-level-heading' href="@sitem.MenuUrl">
+                            <a class='second-level-heading' href="@sitem.NavigateURL">
                                 <span class='submenu-title'>@sitem.MenuName</span>
-                         
+
                             </a>
                         }
                     </li>
@@ -43,10 +41,10 @@
         }
         else
         {
-            <a href="@menuitem.MenuUrl">
-                <i class="fa fa-sitemap fa-fw">
-                    <div class="icon-bg bg-dark"></div>
-                </i><span class="menu-title">
+            <a href="@menuitem.NavigateURL">
+                <i class="fa fa-sitemap fa-fw"></i>
+                <div class="icon-bg bg-dark"></div>
+                <span class="menu-title">
                     @menuitem.MenuName
                 </span>
 

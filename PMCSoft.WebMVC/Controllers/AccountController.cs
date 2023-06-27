@@ -29,16 +29,13 @@ namespace PMCSoft.WebMVC.Controllers
             this.accSrv = new AccountService(new UnitOfWork());
         }
 
-        // GET: Account
+
         public ActionResult Index()
         {
-
-     
-   
-
-
             return View();
         }
+
+
         [HttpGet]
         public ActionResult SignIn()
         {

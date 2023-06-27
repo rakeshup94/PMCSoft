@@ -10,7 +10,7 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
- 
+using PMCSoft.Core.Common;
 using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.Report
@@ -198,13 +198,13 @@ namespace PMCSoft.Web.Report
         }
         private string DecryptQueryString(string strQueryString)
         {
-            EncryptDecryptQueryString objEDQueryString = new EncryptDecryptQueryString();
-            return objEDQueryString.Decrypt(strQueryString, "r0b1nr0y");
+
+            return strQueryString.Decrypt("r0b1nr0y");
         }
         public string EncryptQueryString(string strQueryString)
         {
-            EncryptDecryptQueryString objEDQueryString = new EncryptDecryptQueryString();
-            return objEDQueryString.Encrypt(strQueryString, "r0b1nr0y");
+
+            return strQueryString.Encrypt("r0b1nr0y");
         }
     }
 }

@@ -20,8 +20,6 @@ namespace PMCSoft.WebMVC.Controllers
         {
             NavSrv = _NavSrv;
         }
-
-
         public NavigationController()
         {
             this.NavSrv = new NavigationService(new UnitOfWork());

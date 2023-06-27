@@ -58,7 +58,6 @@
     <Compile Include="Data\BindData.cs" />
     <Compile Include="Data\DataMethod.cs" />
     <Compile Include="Data\ReturnOutPutValue.cs" />
-    <Compile Include="Data\EncryptDecryptQueryString.cs" />
     <Compile Include="Data\PMCApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\AccountRepository.cs" />
@@ -66,6 +65,7 @@
     <Compile Include="Repository\NavigationRepository.cs" />
     <Compile Include="Repository\UnitOfWork.cs" />
     <Compile Include="Services\AccountService.cs" />
+    <Compile Include="Services\ErrorService.cs" />
     <Compile Include="Services\NavigationService.cs" />
   </ItemGroup>
   <ItemGroup>

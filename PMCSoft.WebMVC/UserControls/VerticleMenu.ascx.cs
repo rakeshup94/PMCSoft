@@ -41,7 +41,7 @@ namespace PMCSoft.WebMVC.UserControls
 
                 //User.EmpNo = "EMP0000001";
                 //User.ProjectNo = "AHL0000000";
-                this.models = this.NavSrv.GetMenus("EMP0000001", "AHL0000000");
+               // this.models = this.NavSrv.GetMenus("EMP0000001", "AHL0000000");
                 this.rptCategories.DataSource = models;
                 this.rptCategories.DataBind();
             }

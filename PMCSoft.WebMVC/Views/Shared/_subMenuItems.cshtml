@@ -1,5 +1,4 @@
-﻿@using IExpro.Core.Models;
-@model IEnumerable<MenuModel>
+﻿@model IEnumerable<PMCSoft.Core.Models.Navigation.NavModel>
 @{
     string rootId = "menu-" + Model.FirstOrDefault().ParentId;
 }
@@ -9,7 +8,7 @@
         <li>
 
             @if (menuitem.MenuList.Count() > 0)
-            {<a class='second-level-heading' href="@menuitem.MenuUrl">
+            {<a class='second-level-heading' href="@menuitem.NavigateURL">
                     <span class='submenu-title'>@menuitem.MenuName</span>
                     <span class='fa arrow  text-white'></span>
                 </a>
@@ -18,7 +17,7 @@
             }
             else
             {
-                <a class='second-level-heading' href="@menuitem.MenuUrl">
+                <a class='second-level-heading' href="@menuitem.NavigateURL">
                     <span class='submenu-title'>@menuitem.MenuName</span>
 
                 </a>
