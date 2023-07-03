@@ -12,6 +12,8 @@ namespace PMCSoft.Core.Entity
         [Key]
         public int TransID { get; set; }
 
+        public long? UserId { get; set; }
+
         [StringLength(50)]
         public string CompanyID { get; set; }
 

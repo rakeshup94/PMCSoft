@@ -6,39 +6,23 @@ namespace PMCSoft.Core.Entity
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("tblMenu")]
-    public partial class tblMenu
+    [Table("tblRole")]
+    public partial class tblRole
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public tblMenu()
+        public tblRole()
         {
-            tblMenu1 = new HashSet<tblMenu>();
             tblRoleMenus = new HashSet<tblRoleMenu>();
+            tblUserRoles = new HashSet<tblUserRole>();
         }
 
         [Key]
-        public int MenuId { get; set; }
-
-        public int? ParentId { get; set; }
-
-        [StringLength(50)]
-        public string MenuIcon { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int RoleId { get; set; }
 
         [Required]
-        [StringLength(100)]
-        public string MenuName { get; set; }
-
-        [StringLength(500)]
-        public string MenuDesc { get; set; }
-
-        public double? MenuOrderNo { get; set; }
-
-        public bool IsAction { get; set; }
-
-        [StringLength(500)]
-        public string NavigateURL { get; set; }
-
-        public byte MenuStatus { get; set; }
+        [StringLength(150)]
+        public string RoleName { get; set; }
 
         public bool IsPublished { get; set; }
 
@@ -47,11 +31,9 @@ namespace PMCSoft.Core.Entity
         public DateTime CreatedOn { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<tblMenu> tblMenu1 { get; set; }
-
-        public virtual tblMenu tblMenu2 { get; set; }
+        public virtual ICollection<tblRoleMenu> tblRoleMenus { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<tblRoleMenu> tblRoleMenus { get; set; }
+        public virtual ICollection<tblUserRole> tblUserRoles { get; set; }
     }
 }

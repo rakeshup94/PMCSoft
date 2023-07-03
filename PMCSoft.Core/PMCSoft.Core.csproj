@@ -88,6 +88,7 @@
     <Compile Include="Entity\tblBulkMaterialFixedDescriptionMaster.cs" />
     <Compile Include="Entity\tblBulkMaterialsDetail.cs" />
     <Compile Include="Entity\tblCityList.cs" />
+    <Compile Include="Entity\tblClientMaster.cs" />
     <Compile Include="Entity\tblCompanyMaster.cs" />
     <Compile Include="Entity\tblConsumableExpensesReportDetail.cs" />
     <Compile Include="Entity\tblConsumableExpensesReportMaster.cs" />
@@ -111,8 +112,6 @@
     <Compile Include="Entity\tblEquipmentMaster.cs" />
     <Compile Include="Entity\tblErrorLog.cs" />
     <Compile Include="Entity\tblErrorLogWithoutLogin.cs" />
-    <Compile Include="Entity\tblException.cs" />
-    <Compile Include="Entity\tblExceptionLogging.cs" />
     <Compile Include="Entity\tblExpenditure.cs" />
     <Compile Include="Entity\tblFacilitiesProvidedDetail.cs" />
     <Compile Include="Entity\tblFacilitiesProvidedMaster.cs" />
@@ -139,6 +138,7 @@
     <Compile Include="Entity\tblMaterialReceive.cs" />
     <Compile Include="Entity\tblMenu.cs" />
     <Compile Include="Entity\tblMenuHeader.cs" />
+    <Compile Include="Entity\tblMenuX.cs" />
     <Compile Include="Entity\tblMidAmendPCWOItemDetail.cs" />
     <Compile Include="Entity\tblMidAmendPCWONotesDetail.cs" />
     <Compile Include="Entity\tblMidAmendUploadFile.cs" />
@@ -209,6 +209,8 @@
     <Compile Include="Entity\tblReconciliationStatementMaster.cs" />
     <Compile Include="Entity\tblRegion.cs" />
     <Compile Include="Entity\tblRegistrationType.cs" />
+    <Compile Include="Entity\tblRole.cs" />
+    <Compile Include="Entity\tblRoleMenu.cs" />
     <Compile Include="Entity\tblRSSFeed.cs" />
     <Compile Include="Entity\tblSecurityForAdvanceRequisition.cs" />
     <Compile Include="Entity\tblStaffCostCalculation.cs" />
@@ -220,6 +222,8 @@
     <Compile Include="Entity\tblTypeOfAdvanceRequisition.cs" />
     <Compile Include="Entity\tblUnitMaster.cs" />
     <Compile Include="Entity\tblUploadFile.cs" />
+    <Compile Include="Entity\tblUser.cs" />
+    <Compile Include="Entity\tblUserRole.cs" />
     <Compile Include="Entity\tblUserVerification.cs" />
     <Compile Include="Entity\tblVendorDocumentUploadFile.cs" />
     <Compile Include="Entity\tblVendorMaster.cs" />
@@ -230,8 +234,6 @@
     <Compile Include="Entity\tblWorkDoneMaster.cs" />
     <Compile Include="Entity\tblWorkDoneSubDetail.cs" />
     <Compile Include="Entity\tblWorkType.cs" />
-    <Compile Include="Entity\UserPermission.cs" />
-    <Compile Include="Entity\UserPermissionPage.cs" />
     <Compile Include="Interfaces\Service\IErrorService.cs" />
     <Compile Include="Models\CommonModel.cs" />
     <Compile Include="Models\ErrorLogModel.cs" />

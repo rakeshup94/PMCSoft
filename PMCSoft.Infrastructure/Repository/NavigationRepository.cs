@@ -87,7 +87,7 @@ namespace PMCSoft.Infrastructure.Repository
                 SqlDataAdapter adapter = new SqlDataAdapter();
                 command.CommandText = @"Select x.*,y.RoleId,z.MenuId,xx.MenuName from tblUser x inner join tblUserRoles y on x.UserId=y.UserId 
 inner join tblRoleMenu z on y.RoleId=z.RoleId inner join  tblMenu xx on z.MenuId=xx.MenuId
-Where x.UserId=@UserId and z.IsPublished=@IsPublished and xx.IsPublished=@IsPublished";
+Where x.UserId=@UserId and xx.IsPublished=@IsPublished";
                 command.CommandType = CommandType.Text;
                 command.Parameters.Add(status);
                 command.Parameters.Add(user);

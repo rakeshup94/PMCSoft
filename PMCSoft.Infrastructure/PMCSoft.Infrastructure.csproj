@@ -65,7 +65,6 @@
     <Compile Include="Repository\NavigationRepository.cs" />
     <Compile Include="Repository\UnitOfWork.cs" />
     <Compile Include="Services\AccountService.cs" />
-    <Compile Include="Services\ErrorService.cs" />
     <Compile Include="Services\NavigationService.cs" />
   </ItemGroup>
   <ItemGroup>

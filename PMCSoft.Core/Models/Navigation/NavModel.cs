@@ -11,7 +11,7 @@ namespace PMCSoft.Core.Models.Navigation
         public string MenuIcon { get; set; }
         public string NavigateURL { get; set; }
         public string Description { get; set; }
-        public float OrderNo { get; set; }
+        public double OrderNo { get; set; }
         public bool IsAction { get; set; }
         public IEnumerable<SelectedList> MenuList { get; set; }
         public virtual ICollection<NavModel> SubMenu { get; set; }

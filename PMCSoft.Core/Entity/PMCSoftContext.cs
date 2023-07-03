@@ -32,6 +32,7 @@ namespace PMCSoft.Core.Entity
         public virtual DbSet<tblBulkMaterialDescriptionMaster> tblBulkMaterialDescriptionMasters { get; set; }
         public virtual DbSet<tblBulkMaterialFixedDescriptionMaster> tblBulkMaterialFixedDescriptionMasters { get; set; }
         public virtual DbSet<tblBulkMaterialsDetail> tblBulkMaterialsDetails { get; set; }
+        public virtual DbSet<tblClientMaster> tblClientMasters { get; set; }
         public virtual DbSet<tblCompanyMaster> tblCompanyMasters { get; set; }
         public virtual DbSet<tblConsumableExpensesReportDetail> tblConsumableExpensesReportDetails { get; set; }
         public virtual DbSet<tblConsumableExpensesReportMaster> tblConsumableExpensesReportMasters { get; set; }
@@ -136,18 +137,21 @@ namespace PMCSoft.Core.Entity
         public virtual DbSet<tblReconciliationStatementMaster> tblReconciliationStatementMasters { get; set; }
         public virtual DbSet<tblRegion> tblRegions { get; set; }
         public virtual DbSet<tblRegistrationType> tblRegistrationTypes { get; set; }
+        public virtual DbSet<tblRole> tblRoles { get; set; }
+        public virtual DbSet<tblRoleMenu> tblRoleMenus { get; set; }
         public virtual DbSet<tblRSSFeed> tblRSSFeeds { get; set; }
         public virtual DbSet<tblStaffCostCalculation> tblStaffCostCalculations { get; set; }
         public virtual DbSet<tblStockMaterialMasterByClient> tblStockMaterialMasterByClients { get; set; }
         public virtual DbSet<tblUnitMaster> tblUnitMasters { get; set; }
         public virtual DbSet<tblUploadFile> tblUploadFiles { get; set; }
+        public virtual DbSet<tblUser> tblUsers { get; set; }
+        public virtual DbSet<tblUserRole> tblUserRoles { get; set; }
         public virtual DbSet<tblUserVerification> tblUserVerifications { get; set; }
         public virtual DbSet<tblVendorDocumentUploadFile> tblVendorDocumentUploadFiles { get; set; }
         public virtual DbSet<tblVendorMaster> tblVendorMasters { get; set; }
         public virtual DbSet<tblWOPCDetail> tblWOPCDetails { get; set; }
         public virtual DbSet<tblWORemark> tblWORemarks { get; set; }
         public virtual DbSet<tblWorkType> tblWorkTypes { get; set; }
-        public virtual DbSet<UserPermission> UserPermissions { get; set; }
         public virtual DbSet<AdminPermissionPage> AdminPermissionPages { get; set; }
         public virtual DbSet<HireChargesExpens> HireChargesExpenses { get; set; }
         public virtual DbSet<PermissionPage> PermissionPages { get; set; }
@@ -158,6 +162,7 @@ namespace PMCSoft.Core.Entity
         public virtual DbSet<tblItemIssue> tblItemIssues { get; set; }
         public virtual DbSet<tblMaterialReceive> tblMaterialReceives { get; set; }
         public virtual DbSet<tblMenuHeader> tblMenuHeaders { get; set; }
+        public virtual DbSet<tblMenuX> tblMenuXes { get; set; }
         public virtual DbSet<tblMonthlyLabourAsSubmittedRaBill> tblMonthlyLabourAsSubmittedRaBills { get; set; }
         public virtual DbSet<tblMonthlyLabourMonthAndUpToDateMaster> tblMonthlyLabourMonthAndUpToDateMasters { get; set; }
         public virtual DbSet<tblMonthlyWorkDoneActual> tblMonthlyWorkDoneActuals { get; set; }
@@ -179,7 +184,6 @@ namespace PMCSoft.Core.Entity
         public virtual DbSet<tblWorkDoneDetail> tblWorkDoneDetails { get; set; }
         public virtual DbSet<tblWorkDoneMaster> tblWorkDoneMasters { get; set; }
         public virtual DbSet<tblWorkDoneSubDetail> tblWorkDoneSubDetails { get; set; }
-        public virtual DbSet<UserPermissionPage> UserPermissionPages { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -666,6 +670,82 @@ namespace PMCSoft.Core.Entity
 
             modelBuilder.Entity<tblBulkMaterialsDetail>()
                 .Property(e => e.Status)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.Company)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.Initial)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.Logo)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.Note)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.Currency)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.PanNo)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.TanNo)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.GSTNo)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.PhoneNo)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.FaxNo)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.TimeZone)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.Culture)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.Address)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.Country)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.State)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.City)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.Logitude)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.Latitude)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblClientMaster>()
+                .Property(e => e.WebAddress)
                 .IsUnicode(false);
 
             modelBuilder.Entity<tblCompanyMaster>()
@@ -1957,12 +2037,15 @@ namespace PMCSoft.Core.Entity
                 .Property(e => e.MenuIcon)
                 .IsUnicode(false);
 
-     
-
             modelBuilder.Entity<tblMenu>()
                 .HasMany(e => e.tblMenu1)
                 .WithOptional(e => e.tblMenu2)
                 .HasForeignKey(e => e.ParentId);
+
+            modelBuilder.Entity<tblMenu>()
+                .HasMany(e => e.tblRoleMenus)
+                .WithRequired(e => e.tblMenu)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<tblMidAmendPCWOItemDetail>()
                 .Property(e => e.CompanyID)
@@ -4608,6 +4691,20 @@ namespace PMCSoft.Core.Entity
                 .Property(e => e.CreatedBy)
                 .IsUnicode(false);
 
+            modelBuilder.Entity<tblRole>()
+                .Property(e => e.RoleName)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblRole>()
+                .HasMany(e => e.tblRoleMenus)
+                .WithRequired(e => e.tblRole)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<tblRole>()
+                .HasMany(e => e.tblUserRoles)
+                .WithRequired(e => e.tblRole)
+                .WillCascadeOnDelete(false);
+
             modelBuilder.Entity<tblRSSFeed>()
                 .Property(e => e.Title)
                 .IsUnicode(false);
@@ -4730,6 +4827,30 @@ namespace PMCSoft.Core.Entity
 
             modelBuilder.Entity<tblUploadFile>()
                 .Property(e => e.WOID)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblUser>()
+                .Property(e => e.FirstName)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblUser>()
+                .Property(e => e.MiddleName)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblUser>()
+                .Property(e => e.LastName)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblUser>()
+                .Property(e => e.UserName)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblUser>()
+                .Property(e => e.Password)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblUser>()
+                .Property(e => e.MobileNo)
                 .IsUnicode(false);
 
             modelBuilder.Entity<tblUserVerification>()
@@ -5030,26 +5151,6 @@ namespace PMCSoft.Core.Entity
 
             modelBuilder.Entity<tblWorkType>()
                 .Property(e => e.CreatedBy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<UserPermission>()
-                .Property(e => e.ProjectId)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<UserPermission>()
-                .Property(e => e.UserId)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<UserPermission>()
-                .Property(e => e.PageName)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<UserPermission>()
-                .Property(e => e.Pagevalue)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<UserPermission>()
-                .Property(e => e.Status)
                 .IsUnicode(false);
 
             modelBuilder.Entity<AdminPermissionPage>()
@@ -5958,22 +6059,6 @@ namespace PMCSoft.Core.Entity
 
             modelBuilder.Entity<tblWorkDoneSubDetail>()
                 .Property(e => e.CreatedBy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<UserPermissionPage>()
-                .Property(e => e.ProjectId)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<UserPermissionPage>()
-                .Property(e => e.UserId)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<UserPermissionPage>()
-                .Property(e => e.Pagevalue)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<UserPermissionPage>()
-                .Property(e => e.Status)
                 .IsUnicode(false);
         }
     }
