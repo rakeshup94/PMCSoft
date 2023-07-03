@@ -1,74 +1,107 @@
-﻿
+﻿@model IEnumerable<PMCSoft.Core.Models.Navigation.NavModel>
 @{
     ViewBag.Title = "CreateMapping";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
-<div id="page-wrapper">
-    <!--BEGIN TITLE & BREADCRUMB PAGE-->
-    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb hidden-sm">
-        <div class="page-header pull-left">
-            <div class="page-title">
 
-            </div>
+<!--BEGIN TITLE & BREADCRUMB PAGE-->
+<div id="title-breadcrumb-option-demo" class="page-title-breadcrumb hidden-sm">
+    <div class="page-header pull-left">
+        <div class="page-title">
+            Map Navigation With Role
         </div>
-
-
     </div>
-    <!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT-->
-    <div class="page-content">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="portlet portlet-white">
-
-                 
 
 
-                    <div class="portlet-body">
+</div>
+<!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT-->
+<div class="page-content">
+    <div class="card">
+        <div class="card-body">
 
-                        @using (Html.BeginForm("CreateMapping", "Navigation", FormMethod.Post, new { id = "frmMenuMap", role = "form", @class = "", novalidate = "novalidate", enctype = "multipart/form-data" }))
-                        {
 
-                            @Html.AntiForgeryToken()
-                            <div class="row mbm">
-                                <div class="col-lg-6">
 
-                                    <div class="form-group">
-                                        <label class="control-label col-lg-2">User Type</label>
-                                        <div class="col-lg-10 UserType">
-                                            @Html.DropDownList("ddlUserType", new SelectList(ViewBag.UserType, "ItemId", "ItemName"), "- Please select a User Type -",new { @class = "form-control" })
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-check-circle"></i>&nbsp; Save Setting</button>
-                                </div>
+            <h4 class="block-heading">Style 1</h4>
+
+
+
+            <ul id="treView">
+                <li>
+                    <span class="box">Beverages</span>
+                    <ul class="nested">
+                        <li>Water</li>
+                        <li>Coffee</li>
+                        <li>
+                            <span class="box">Tea</span>
+                            <ul class="nested">
+                                <li>Black Tea</li>
+                                <li>White Tea</li>
+                                <li>
+                                    <span class="box">Green Tea</span>
+                                    <ul class="nested">
+                                        <li>Sencha</li>
+                                        <li>Gyokuro</li>
+                                        <li>Matcha</li>
+                                        <li>Pi Lo Chun</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            @*@using (Html.BeginForm("CreateMapping", "Navigation", FormMethod.Post, new { id = "frmMenuMap", role = "form", @class = "", novalidate = "novalidate", enctype = "multipart/form-data" }))
+            {
+
+                @Html.AntiForgeryToken()
+                <div class="row mbm">
+                    <div class="col-lg-6">
+
+                        <div class="mb-3">
+                            <label class="control-label col-lg-2">User Type</label>
+                            <div class="col-lg-10 UserType">
+                                @Html.DropDownList("ddlUserType", new SelectList(ViewBag.UserType, "ItemId", "ItemName"), "- Please select a User Type -", new { @class = "form-control" })
                             </div>
-
-                            <div class="row">
-                                <div class="col-lg-12" id="panelMenuList">
-
-                                </div>
-
-                            </div>
-
-
-                        }
-
-
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-check-circle"></i>&nbsp; Save Setting</button>
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="col-lg-12" id="panelMenuList">
+
+                    </div>
+
+                </div>
 
 
-            </div>
+            }*@
+
 
         </div>
         <!-- end of row-->
-
     </div>
 </div>
+    </div>
+
 
 
 
@@ -120,6 +153,25 @@
     <script src="~/Scripts/jquery-steps/js/jquery.withoutsteps.min.js"></script>
     <script src="~/JavaScript/partialwizard.js"></script>
     <script src="~/JavaScript/Navigation.js"></script>
+
+
+
+
+
+    <script>
+        var toggler = document.getElementsByClassName("box");
+        var i;
+
+        for (i = 0; i < toggler.length; i++) {
+            toggler[i].addEventListener("click", function () {
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("check-box");
+            });
+        }
+    </script>
+
+
+
 
 }
 

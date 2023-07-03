@@ -1,4 +1,5 @@
 ﻿
+using PMCSoft.Core.Common;
 using PMCSoft.Core.Entity;
 using PMCSoft.Core.Interfaces.Repository;
 using PMCSoft.Core.Interfaces.Service;
@@ -31,12 +32,6 @@ namespace PMCSoft.Infrastructure.Services
         }
 
         #region Rakesh
-
-
-     
-
-
-
         public int AddMenu(NavModel _model)
         {
             int menuId = -1000;
@@ -53,10 +48,14 @@ namespace PMCSoft.Infrastructure.Services
             nav.IsPublished = _model.IsPublished;
             nav.CreatedBy = _model.CreatedBy;
             nav.CreatedOn = _model.CreatedOn;
-
-
             this.NavRepository.Add(nav);
 
+            tblRoleMenu _roleMenu = new tblRoleMenu();
+            _roleMenu.MenuId = nav.MenuId;
+            _roleMenu.RoleId = (int)RoleType.SuperAdmin;
+            _roleMenu.CreatedBy = _model.CreatedBy;
+            _roleMenu.CreatedOn = _model.CreatedOn;
+            this.RoleMenuRepo.Add(_roleMenu);
             this.IU.SaveChanges();
             return nav.MenuId;
 
@@ -88,6 +87,7 @@ namespace PMCSoft.Infrastructure.Services
             return result;
 
         }
+        
         public IEnumerable<NavModel> GetAccessibleMenu(bool IsAction, bool IsPublished)
         {
             var result = this.NavRepository.GetAccessibleMenu(IsAction, IsPublished);
@@ -99,11 +99,13 @@ namespace PMCSoft.Infrastructure.Services
             var result = this.NavRepository.GetUserMenu(UserId, IsPublished);
             return result;
         }
+        
         public IEnumerable<NavModel> GetRoleMenu(int RoleId, bool IsPublished)
         {
             var result = this.NavRepository.GetRoleMenu(RoleId, IsPublished);
             return result;
         }
+        
         public NavModel GetMenuItem(int _MenuId)
         {
             var result = this.NavRepository.GetMenuItem(_MenuId);
@@ -129,6 +131,7 @@ namespace PMCSoft.Infrastructure.Services
             this.IU.SaveChanges();
             return addedRights.Count;
         }
+        
         #endregion
     }
 }

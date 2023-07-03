@@ -80,6 +80,26 @@ namespace PMCSoft.WebMVC.Controllers
         }
 
 
+
+        public ActionResult RoleMapping()
+        {
+            int cultId = User.CultureId;
+            IEnumerable<NavModel> result = this.navSrv.GetAllMenu().OrderByDescending(x => x.MenuId);
+            return View(result);
+        }
+
+
+
+
+        public ActionResult CreateMapping()
+        {
+
+            int cultId = User.CultureId;
+            IEnumerable<NavModel> result = this.navSrv.GetAllMenu().OrderByDescending(x => x.MenuId);
+            return RedirectToAction("CreateMapping", result);
+        }
+
+
         [HttpPost]
 
         public ActionResult CreateMapping(string[] MenuRight, int RoleId)
