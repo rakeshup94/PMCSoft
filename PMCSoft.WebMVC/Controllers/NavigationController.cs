@@ -12,12 +12,15 @@ using System.Web.SessionState;
 using PMCSoft.Core.Models.Navigation;
 using PMCSoft.WebMVC.Filters;
 using PMCSoft.Core.Models;
+using PMCSoft.WebMVC.Models;
 
 namespace PMCSoft.WebMVC.Controllers
 {
     public class NavigationController : BaseController
     {
         INavigationService navSrv;
+
+   
         public NavigationController(INavigationService _navSrv)
         {
             navSrv = _navSrv;
@@ -74,7 +77,7 @@ namespace PMCSoft.WebMVC.Controllers
 
         public PartialViewResult MenuList()
         {
-            int cultId = User.CultureId;
+
             IEnumerable<NavModel> result = this.navSrv.GetAllMenu().OrderByDescending(x => x.MenuId);
             return PartialView("~/Views/Navigation/_menuList.cshtml", result);
         }
@@ -83,8 +86,8 @@ namespace PMCSoft.WebMVC.Controllers
 
         public ActionResult RoleMapping()
         {
-            int cultId = User.CultureId;
-            IEnumerable<NavModel> result = this.navSrv.GetAllMenu().OrderByDescending(x => x.MenuId);
+
+            IEnumerable<NavModel> result = this.navSrv.GetMenuList(true).OrderByDescending(x => x.MenuId);
             return View(result);
         }
 
@@ -93,9 +96,7 @@ namespace PMCSoft.WebMVC.Controllers
 
         public ActionResult CreateMapping()
         {
-
-            int cultId = User.CultureId;
-            IEnumerable<NavModel> result = this.navSrv.GetAllMenu().OrderByDescending(x => x.MenuId);
+            IEnumerable<NavModel> result = this.navSrv.GetMenuList(true).OrderByDescending(x => x.MenuId);
             return RedirectToAction("CreateMapping", result);
         }
 

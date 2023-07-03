@@ -46,7 +46,7 @@ namespace PMCSoft.Web.Admin
                 lblP.Text = P.ToString();
                 PMC.BindGetDMR(GridView1);
                 PMC.BindGetStaffAttendance(GridView2);
-                PMC.GetRSSNotification(DataList1, Session["UserID"].ToString());
+                //PMC.GetRSSNotification(DataList1, Session["UserID"].ToString());
                 PMC.BindGetProject(GridView3);
                 PMC.BindGetAdminProject(GridView4);
                 PMC.BindGetTotalLaber(GvTotalLaber);

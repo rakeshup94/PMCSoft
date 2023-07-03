@@ -87,7 +87,14 @@ namespace PMCSoft.Infrastructure.Services
             return result;
 
         }
-        
+
+
+        public IEnumerable<NavModel> GetMenuList(bool IsPublished)
+        {
+            var result = this.NavRepository.GetMenuList(IsPublished);
+            return result;
+        }
+
         public IEnumerable<NavModel> GetAccessibleMenu(bool IsAction, bool IsPublished)
         {
             var result = this.NavRepository.GetAccessibleMenu(IsAction, IsPublished);
@@ -99,13 +106,13 @@ namespace PMCSoft.Infrastructure.Services
             var result = this.NavRepository.GetUserMenu(UserId, IsPublished);
             return result;
         }
-        
+
         public IEnumerable<NavModel> GetRoleMenu(int RoleId, bool IsPublished)
         {
             var result = this.NavRepository.GetRoleMenu(RoleId, IsPublished);
             return result;
         }
-        
+
         public NavModel GetMenuItem(int _MenuId)
         {
             var result = this.NavRepository.GetMenuItem(_MenuId);
@@ -131,7 +138,7 @@ namespace PMCSoft.Infrastructure.Services
             this.IU.SaveChanges();
             return addedRights.Count;
         }
-        
+
         #endregion
     }
 }

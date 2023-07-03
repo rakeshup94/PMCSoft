@@ -15,6 +15,7 @@ namespace PMCSoft.Core.Interfaces.Repository
 
         IEnumerable<NavModel> GetAllMenu();
         IEnumerable<NavModel> GetMenu(bool IsPublished);
+        IEnumerable<NavModel> GetMenuList(bool IsPublished);
         IEnumerable<NavModel> GetAccessibleMenu(bool IsAction, bool IsPublished);
         IEnumerable<NavModel> GetUserMenu(long UserId, bool IsPublished);
         IEnumerable<NavModel> GetRoleMenu(int RoleId, bool IsPublished);

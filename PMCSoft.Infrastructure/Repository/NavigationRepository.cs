@@ -50,6 +50,7 @@ namespace PMCSoft.Infrastructure.Repository
                             MenuName = nav.MenuName,
                             MenuIcon = nav.MenuIcon,
                             IsAction = nav.IsAction,
+                            OrderNo = nav.MenuOrderNo.HasValue ? nav.MenuOrderNo.Value : 0.0f
                         }).OrderBy(x => x.MenuId).ToList();
             return data;
         }
@@ -65,7 +66,27 @@ namespace PMCSoft.Infrastructure.Repository
                         }).OrderBy(x => x.MenuId).ToList();
             return data;
         }
+
+
+        public IEnumerable<NavModel> GetMenuList(bool IsPublished)
+        {
+            List<NavModel> allData = (from nav in Context.tblMenus.Where(x => x.IsPublished == IsPublished)
+                                      select new NavModel
+                                      {
+                                          MenuId = nav.MenuId,
+                                          ParentId = nav.ParentId.HasValue ? nav.ParentId.Value : 0,
+                                          MenuName = nav.MenuName,
+                                          MenuIcon = nav.MenuIcon,
+                                          IsAction = nav.IsAction,
+                                          OrderNo = nav.MenuOrderNo.HasValue ? nav.MenuOrderNo.Value : 0.0f
+                                      }).OrderBy(x => x.ParentId).ToList();
+            var result = this.BindHierarchy(allData, 0);
+
+            return result;
+
     
+        }
+
 
         public IEnumerable<NavModel> GetUserMenu(long UserId, bool IsPublished)
         {
@@ -108,18 +129,8 @@ Where x.UserId=@UserId and xx.IsPublished=@IsPublished";
 
             }
             var menuList = allData.Where(x => x.ParentId == 0);
-            List<NavModel> lstmenu = new List<NavModel>();
-            foreach (var item in menuList)
-            {
-                var allParent = FindAllParents(allData, item);
-                foreach (var pitem in allParent)
-                {
-                    lstmenu.Add(pitem);
-                }
-                lstmenu.Add(item);
-            }
-            var filteredMenu = lstmenu.GroupBy(x => x.MenuId).Select(y => y.First());
-            var result = this.BindHierarchy(filteredMenu, 0);
+  
+            var result = this.BindHierarchy(menuList, 0);
 
             return result;
         }
@@ -166,18 +177,8 @@ Where z.RoleId=@RoleId and x.IsPublished=@IsPublished";
 
             }
             var menuList = allData.Where(x => x.ParentId == 0);
-            List<NavModel> lstmenu = new List<NavModel>();
-            foreach (var item in menuList)
-            {
-                var allParent = FindAllParents(allData, item);
-                foreach (var pitem in allParent)
-                {
-                    lstmenu.Add(pitem);
-                }
-                lstmenu.Add(item);
-            }
-            var filteredMenu = lstmenu.GroupBy(x => x.MenuId).Select(y => y.First());
-            var result = this.BindHierarchy(filteredMenu, 0);
+         
+            var result = this.BindHierarchy(menuList, 0);
 
             return result;
         }
@@ -198,26 +199,10 @@ Where z.RoleId=@RoleId and x.IsPublished=@IsPublished";
             return data;
         }
 
-       
 
-        public IEnumerable<Dictionary<string, object>> ToEnumerable(IDataReader reader)
-        {
-            while (reader.Read())
-            {
-                Dictionary<string, object> result = new Dictionary<string, object>();
-                for (int column = 0; column < reader.FieldCount; column++)
-                    result.Add(reader.GetName(column), reader.GetValue(column));
-                yield return result;
-            }
-        }
 
-        private IEnumerable<NavModel> FindAllParents(IEnumerable<NavModel> all_data, NavModel child)
-        {
-            var parent = all_data.FirstOrDefault(x => x.MenuId == child.ParentId);
-            if (parent == null)
-                return Enumerable.Empty<NavModel>();
-            return new[] { parent }.Concat(FindAllParents(all_data, parent));
-        }
+
+    
         private IEnumerable<NavModel> BindHierarchy(IEnumerable<NavModel> MenuList, int? parentId)
         {
             var childMenus = MenuList.Where(o => o.ParentId == parentId).ToList();
