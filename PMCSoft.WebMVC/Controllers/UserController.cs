@@ -41,7 +41,7 @@ namespace PMCSoft.WebMVC.Controllers
             }
             return View(model);
         }
-        [HttpPost]
+                [HttpPost]
         public ActionResult CreateRole(RoleModel model)
         {
             var result = userSrv.SaveRole(model);
