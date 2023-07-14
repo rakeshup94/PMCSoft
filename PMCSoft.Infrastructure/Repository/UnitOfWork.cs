@@ -61,7 +61,7 @@ namespace PMCSoft.Infrastructure.Repository
 
         }
 
-    
+
 
         private INavigationRepository _NavRepository;
         public INavigationRepository NavRepository
@@ -76,7 +76,19 @@ namespace PMCSoft.Infrastructure.Repository
             }
 
         }
+        private IUserRepository _UserRepository;
+        public IUserRepository UserRepository
+        {
+            get
+            {
+                if (_UserRepository != null)
+                    return _UserRepository;
+                else
+                    return _UserRepository = new UserRepository(entities);
 
+            }
+
+        }
 
 
 

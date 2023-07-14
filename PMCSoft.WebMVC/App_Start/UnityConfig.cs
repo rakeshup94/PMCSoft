@@ -21,6 +21,7 @@ namespace PMCSoft.WebMVC
             // e.g. container.RegisterType<ITestService, TestService>();
             container.RegisterType<IAccountService, AccountService>();
             container.RegisterType<INavigationService, NavigationService>();
+            container.RegisterType<IUserService, UserService>();
 
             container.RegisterType<IUnitOfWork, UnitOfWork>();
             container.RegisterType<IDataContext, PMCSoftContext>();

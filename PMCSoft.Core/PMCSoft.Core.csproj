@@ -234,7 +234,10 @@
     <Compile Include="Entity\tblWorkDoneMaster.cs" />
     <Compile Include="Entity\tblWorkDoneSubDetail.cs" />
     <Compile Include="Entity\tblWorkType.cs" />
+    <Compile Include="Interfaces\Repository\IUserRepository.cs" />
     <Compile Include="Interfaces\Service\IErrorService.cs" />
+    <Compile Include="Interfaces\Service\IUserService.cs" />
+    <Compile Include="Models\Account\RoleModel.cs" />
     <Compile Include="Models\CommonModel.cs" />
     <Compile Include="Models\ErrorLogModel.cs" />
     <Compile Include="Models\Navigation\NavModel.cs" />

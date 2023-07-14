@@ -166,6 +166,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Filters\CustomErrorFilter.cs" />
     <Compile Include="Filters\PermissionFilter.cs" />
     <Compile Include="Global.asax.cs">
@@ -2350,6 +2351,9 @@
     <Content Include="Views\Navigation\Index.cshtml" />
     <Content Include="Views\Navigation\_mapMenuRights.cshtml" />
     <Content Include="Views\Navigation\RoleMapping.cshtml" />
+    <Content Include="Views\User\CreateRole.cshtml" />
+    <Content Include="Views\User\RoleList.cshtml" />
+    <Content Include="Views\User\Roles.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PMCSoft.Core\PMCSoft.Core.csproj">

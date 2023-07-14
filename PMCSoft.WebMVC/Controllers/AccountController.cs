@@ -25,7 +25,6 @@ namespace PMCSoft.WebMVC.Controllers
         {
             accSrv = _accSrv;
         }
-
         //public AccountController()
         //{
         //    this.accSrv = new AccountService(new UnitOfWork());

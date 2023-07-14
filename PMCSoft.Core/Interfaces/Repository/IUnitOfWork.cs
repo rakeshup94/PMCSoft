@@ -17,8 +17,8 @@ namespace PMCSoft.Core.Interfaces.Repository
         #region Rakesh
         IAccountRepository AccontRepo { get; }
         INavigationRepository NavRepository { get; }
+        IUserRepository UserRepository { get; }
 
-   
         #endregion
 
         void SaveChanges();

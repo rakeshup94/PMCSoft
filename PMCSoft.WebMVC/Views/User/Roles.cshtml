@@ -1,0 +1,56 @@
+﻿
+@model IEnumerable<PMCSoft.Core.Models.Account.RoleModel>
+@{
+    ViewBag.Title = "Roles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+    <div class="page-header pull-left">
+        <div class="page-title">Roles </div>
+    </div>
+    <ol class="breadcrumb page-breadcrumb">
+    </ol>
+    <div class="clearfix"></div>
+</div>
+<!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT-->
+<div class="page-content">
+    <div class="card">
+   
+        <div class="card-body">
+
+            <div id="no-more-tables">
+                <table class="table table-bordered table-striped table-condensed cf">
+                    <thead class="cf">
+                        <tr>
+                            <th>RoleId</th>
+                            <th>Role Name</th>
+
+                            <th>@Html.DisplayName("Action")</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td data-title="Id">
+                                    @item.RoleId
+                                </td>
+                                <td data-title="Role Name">
+                                    @*<i class="@item.MenuIcon"></i> &nbsp;*@ @item.RoleName
+                                </td>
+
+
+                                <td data-title="Action">
+                                    @Html.ActionLink("Edit", "CreateRole", new { roleId = item.RoleId }, new { @class = "btn btn-default btn-xs" })
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
