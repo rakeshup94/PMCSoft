@@ -20,7 +20,7 @@ namespace PMCSoft.WebMVC.Controllers
     {
         INavigationService navSrv;
 
-   
+
         public NavigationController(INavigationService _navSrv)
         {
             navSrv = _navSrv;
@@ -33,8 +33,7 @@ namespace PMCSoft.WebMVC.Controllers
         public ActionResult Create()
         {
             NavModel model = new NavModel();
-            model.MenuList = this.navSrv.GetMenu(true).Select(n => new SelectedList
-            { ItemId = n.MenuId, ItemName = n.MenuName });
+            model.MenuList = this.navSrv.GetNavSelectList(true);
             return View(model);
         }
 
@@ -85,6 +84,8 @@ namespace PMCSoft.WebMVC.Controllers
 
 
         public ActionResult RoleMapping()
+
+
         {
 
             IEnumerable<NavModel> result = this.navSrv.GetMenuList(true).OrderByDescending(x => x.MenuId);

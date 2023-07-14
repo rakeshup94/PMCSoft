@@ -2,10 +2,12 @@
 using PMCSoft.Core.Entity;
 using PMCSoft.Core.Interfaces.Common;
 using PMCSoft.Core.Interfaces.Repository;
+using PMCSoft.Core.Models;
 using PMCSoft.Core.Models.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Entity.Core.Metadata.Edm;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net.NetworkInformation;
@@ -25,6 +27,60 @@ namespace PMCSoft.Infrastructure.Repository
         {
             get { return base.entities as PMCSoftContext; }
         }
+        
+
+
+        public IEnumerable<SelectedList> GetNavSelectList(bool IsPublished)
+        {
+
+            IEnumerable<SelectedList> data = null;
+            using (SqlCommand command = (SqlCommand)Context.Database.Connection.CreateCommand())
+            {
+                var flag = new SqlParameter();
+                flag.ParameterName = "@flag";
+                flag.Direction = ParameterDirection.Input;
+                flag.SqlDbType = SqlDbType.Int;
+                flag.Value = 1;
+                command.Parameters.Add(flag);
+                var publish = new SqlParameter();
+                publish.ParameterName = "@IsPublished";
+                publish.Direction = ParameterDirection.Input;
+                publish.SqlDbType = SqlDbType.Bit;
+                publish.Value = IsPublished;
+                command.Parameters.Add(publish);
+                command.CommandText = "MenuProc";
+                command.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = command;
+                Context.Database.Connection.Open();
+                DataSet dataSet = new DataSet();
+                adapter.Fill(dataSet);
+                data = dataSet.Tables[0].AsEnumerable().Select(dataRow => new SelectedList
+                {
+                    ItemId = dataRow.Field<int>("MenuId"),
+                    ItemName = dataRow.Field<string>("LevelName"),
+                });
+                Context.Database.Connection.Close();
+
+            }
+            return data;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         public IEnumerable<NavModel> GetAllMenu()
         {
@@ -84,7 +140,7 @@ namespace PMCSoft.Infrastructure.Repository
 
             return result;
 
-    
+
         }
 
 
@@ -129,7 +185,7 @@ Where x.UserId=@UserId and xx.IsPublished=@IsPublished";
 
             }
             var menuList = allData.Where(x => x.ParentId == 0);
-  
+
             var result = this.BindHierarchy(menuList, 0);
 
             return result;
@@ -177,7 +233,7 @@ Where z.RoleId=@RoleId and x.IsPublished=@IsPublished";
 
             }
             var menuList = allData.Where(x => x.ParentId == 0);
-         
+
             var result = this.BindHierarchy(menuList, 0);
 
             return result;
@@ -202,7 +258,7 @@ Where z.RoleId=@RoleId and x.IsPublished=@IsPublished";
 
 
 
-    
+
         private IEnumerable<NavModel> BindHierarchy(IEnumerable<NavModel> MenuList, int? parentId)
         {
             var childMenus = MenuList.Where(o => o.ParentId == parentId).ToList();

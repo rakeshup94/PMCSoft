@@ -85,7 +85,6 @@ namespace PMCSoft.Infrastructure.Services
         {
             var result = this.NavRepository.GetMenu(IsPublished);
             return result;
-
         }
 
 
@@ -139,6 +138,22 @@ namespace PMCSoft.Infrastructure.Services
             return addedRights.Count;
         }
 
-        #endregion
-    }
+
+
+
+        public IEnumerable<SelectedList> GetNavSelectList(bool IsPublished)
+        {
+            var result = this.NavRepository.GetNavSelectList(IsPublished);
+            return result;
+        }
+
+
+
+
+
+
+
+
+            #endregion
+        }
 }

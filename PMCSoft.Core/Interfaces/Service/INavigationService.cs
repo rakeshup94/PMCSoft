@@ -1,5 +1,6 @@
 ﻿
 
+using PMCSoft.Core.Models;
 using PMCSoft.Core.Models.Navigation;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,7 @@ namespace PMCSoft.Core.Interfaces.Service
         int AddMenu(NavModel model);
         void UpdateMenu(NavModel model);
         int AddMenuMapping(string[] MenuRight, int RoleId);
+        IEnumerable<SelectedList> GetNavSelectList(bool IsPublished);
 
 
     }

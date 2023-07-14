@@ -1,6 +1,7 @@
 ﻿
 using PMCSoft.Core.Entity;
 using PMCSoft.Core.Interfaces.Repository;
+using PMCSoft.Core.Models;
 using PMCSoft.Core.Models.Navigation;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,7 @@ namespace PMCSoft.Core.Interfaces.Repository
         IEnumerable<NavModel> GetUserMenu(long UserId, bool IsPublished);
         IEnumerable<NavModel> GetRoleMenu(int RoleId, bool IsPublished);
         NavModel GetMenuItem(int MenuId);
+        IEnumerable<SelectedList> GetNavSelectList(bool IsPublished);
 
     }
 }
