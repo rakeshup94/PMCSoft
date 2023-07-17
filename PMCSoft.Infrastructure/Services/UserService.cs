@@ -21,11 +21,14 @@ namespace PMCSoft.Infrastructure.Services
 
         private IGenericRepository<tblRole> RoleRepo { get; set; }
 
+        private IGenericRepository<tblRoleMenu> RoleMenuRepo { get; set; }
+
         public UserService(IUnitOfWork _IU)
         {
             this.IU = _IU;
             this.UserRepo = IU.UserRepository;
             this.RoleRepo = IU.GenericRepository<tblRole>();
+            this.RoleMenuRepo = IU.GenericRepository<tblRoleMenu>();
 
         }
         public int SaveRole(RoleModel _model)
@@ -81,6 +84,20 @@ namespace PMCSoft.Infrastructure.Services
             var role = this.RoleRepo.Get(x => x.RoleId == _model.RoleId);
             role.RoleName = _model.RoleName;
             role.IsPublished = _model.IsPublished;
+            role.CreatedBy = _model.CreatedBy;
+            role.CreatedOn = _model.CreatedOn;
+            this.RoleRepo.Update(role);
+            this.IU.SaveChanges();
+            return role.RoleId;
+        }
+
+
+
+        public int SaveRoleMenu(RoleMenuModel _model)
+        {
+
+
+            var role = this.RoleMenuRepo.Get(x => x.RoleId == _model.RoleId);
             role.CreatedBy = _model.CreatedBy;
             role.CreatedOn = _model.CreatedOn;
             this.RoleRepo.Update(role);

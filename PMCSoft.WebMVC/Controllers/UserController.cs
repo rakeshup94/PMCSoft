@@ -1,4 +1,5 @@
 ﻿using PMCSoft.Core.Interfaces.Service;
+using PMCSoft.Core.Models;
 using PMCSoft.Core.Models.Account;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,15 @@ namespace PMCSoft.WebMVC.Controllers
     public class UserController : BaseController
     {
         IUserService userSrv;
-        public UserController(IUserService _userSrv)
+
+        INavigationService navSrv;
+
+
+
+        public UserController(IUserService _userSrv, INavigationService _navSrv)
         {
             userSrv = _userSrv;
+            navSrv = _navSrv;
         }
         [HttpGet]
         // GET: User
@@ -53,5 +60,30 @@ namespace PMCSoft.WebMVC.Controllers
             var result = userSrv.SaveRole(model);
             return RedirectToAction("Roles");
         }
+
+        [HttpGet]
+        public ActionResult MapRoleMenu()
+        {
+            RoleMenuModel model = new RoleMenuModel();
+            model.RoleList = userSrv.GetAllRole().Select(x => new SelectedList { ItemId = x.RoleId, ItemName = x.RoleName });
+            model.NavList = navSrv.GetUserMenu(User.UserId, true);
+            return View(model);
+        }
+
+
+        [HttpPost]
+        public ActionResult MapRoleMenu(RoleMenuModel model)
+        {
+            model.CreatedBy = User.UserId;
+            model.CreatedOn = DateTime.Now;
+            var result = userSrv.SaveRole(model);
+            return RedirectToAction("Roles");
+        }
+
+
+
+
+
+
     }
 }
