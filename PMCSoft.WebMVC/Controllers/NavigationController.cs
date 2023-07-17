@@ -46,7 +46,7 @@ namespace PMCSoft.WebMVC.Controllers
 
                 model.CreatedBy = User.UserId;
                 model.CreatedOn = DateTime.Now;
-                model.Status = 1;
+                model.Status = (byte)Status.Active;
                 model.CultureId = User.CultureId;
 
 

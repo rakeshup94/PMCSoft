@@ -34,12 +34,21 @@ namespace PMCSoft.Core.Common
     }
 
 
+    public enum Status
+    {
+        Deleted = 0,
+        Active = 1,
+        Suspended = 2,
+
+
+    }
+
     public enum RoleType
     {
-        SuperAdmin = 1,     
-        Admin =2,  
+        SuperAdmin = 1,
+        Admin = 2,
         User = 3,
-  
+
     }
 }
 

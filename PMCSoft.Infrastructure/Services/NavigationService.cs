@@ -76,9 +76,9 @@ namespace PMCSoft.Infrastructure.Services
             this.NavRepository.Update(nav);
             this.IU.SaveChanges();
         }
+        
         public IEnumerable<NavModel> GetAllMenu()
         {
-
             return this.NavRepository.GetAllMenu();
         }
         public IEnumerable<NavModel> GetMenu(bool IsPublished)
@@ -86,7 +86,6 @@ namespace PMCSoft.Infrastructure.Services
             var result = this.NavRepository.GetMenu(IsPublished);
             return result;
         }
-
 
         public IEnumerable<NavModel> GetMenuList(bool IsPublished)
         {

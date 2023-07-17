@@ -9,23 +9,32 @@
 
 
 
+
 <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
-    <div class="page-header pull-left">
-        <div class="page-title">Navigation Master</div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="page-header pull-left">
+                <div class="page-title">Create Navigation</div>
+            </div>
+        </div>
+        <div class="col-lg-6 text-right pts">
+
+            @Html.ActionLink("Navigation List", "Index")
+          
+        </div>
     </div>
-    <ol class="breadcrumb page-breadcrumb">
-    </ol>
+
     <div class="clearfix"></div>
 </div>
 <!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT-->
 <div class="page-content">
 
     <div class="card">
+        <div class="card-body">
+            @using (Html.BeginForm("Create", "Navigation", FormMethod.Post, new { id = "menufrm", role = "form", @class = "", novalidate = "novalidate", enctype = "multipart/form-data" }))
+            {
+                @Html.HiddenFor(m => m.MenuId, new { @class = "ignore" })
 
-        @using (Html.BeginForm("Create", "Navigation", FormMethod.Post, new { id = "menufrm", role = "form", @class = "", novalidate = "novalidate", enctype = "multipart/form-data" }))
-        {
-            @Html.HiddenFor(m => m.MenuId, new { @class = "ignore" })
-            <div class="card-body">
                 <div class="row">
 
                     <div class="col-lg-3">
@@ -87,16 +96,15 @@
                     </div>
                 </div>
 
-            </div>
-        }
-        @if (Model.MenuId == 0)
-        {
 
-            <div class="card-body">
-                @{Html.RenderAction("MenuList", "Navigation");}
-            </div>
+            }
 
-        }
+        </div>
+
+
+
+
+
 
     </div>
 
