@@ -2354,6 +2354,7 @@
     <Content Include="Views\User\CreateRole.cshtml" />
     <Content Include="Views\User\RoleList.cshtml" />
     <Content Include="Views\User\Roles.cshtml" />
+    <Content Include="Views\User\MapRoleMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PMCSoft.Core\PMCSoft.Core.csproj">

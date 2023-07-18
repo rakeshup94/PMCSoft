@@ -76,7 +76,7 @@ namespace PMCSoft.WebMVC.Controllers
         {
             model.CreatedBy = User.UserId;
             model.CreatedOn = DateTime.Now;
-            var result = userSrv.SaveRole(model);
+            //var result = userSrv.SaveRole(model);
             return RedirectToAction("Roles");
         }
 

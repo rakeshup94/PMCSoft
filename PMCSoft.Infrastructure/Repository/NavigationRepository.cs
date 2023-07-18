@@ -27,7 +27,7 @@ namespace PMCSoft.Infrastructure.Repository
         {
             get { return base.entities as PMCSoftContext; }
         }
-        
+
 
 
         public IEnumerable<SelectedList> GetNavSelectList(bool IsPublished)
@@ -162,9 +162,9 @@ namespace PMCSoft.Infrastructure.Repository
             {
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
-                command.CommandText = @"Select x.*,y.RoleId,z.MenuId,xx.MenuName from tblUser x inner join tblUserRoles y on x.UserId=y.UserId 
-inner join tblRoleMenu z on y.RoleId=z.RoleId inner join  tblMenu xx on z.MenuId=xx.MenuId
-Where x.UserId=@UserId and xx.IsPublished=@IsPublished";
+                command.CommandText = @"Select x.*,y.RoleId,z.UserId from  tblMenu x inner join tblRoleMenu y on x.MenuId=y.MenuId 
+inner join tblUserRoles z on y.RoleId=z.RoleId
+Where z.UserId=@UserId and x.IsPublished=@IsPublished";
                 command.CommandType = CommandType.Text;
                 command.Parameters.Add(status);
                 command.Parameters.Add(user);
@@ -173,13 +173,13 @@ Where x.UserId=@UserId and xx.IsPublished=@IsPublished";
                 adapter.Fill(dataSet);
                 allData = (dataSet.Tables[0].AsEnumerable().Select(dataRow => new NavModel
                 {
-
                     MenuId = dataRow.Field<int>("MenuId"),
                     MenuName = dataRow.Field<string>("MenuName") ?? string.Empty,
                     MenuIcon = dataRow.Field<string>("MenuIcon") ?? string.Empty,
-                    OrderNo = dataRow.Field<float>("MenuOrderNo"),
+                    NavigateURL= dataRow.Field<string>("NavigateURL") ?? string.Empty,
+                    OrderNo = dataRow.Field<double?>("MenuOrderNo") ?? 0,
                     IsAction = dataRow.Field<bool>("IsAction"),
-                    ParentId = dataRow.Field<int>("ParentId"),
+                    ParentId = dataRow.Field<int?>("ParentId") ?? 0,
 
                 })).ToList();
 

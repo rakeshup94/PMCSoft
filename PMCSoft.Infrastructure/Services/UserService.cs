@@ -100,7 +100,7 @@ namespace PMCSoft.Infrastructure.Services
             var role = this.RoleMenuRepo.Get(x => x.RoleId == _model.RoleId);
             role.CreatedBy = _model.CreatedBy;
             role.CreatedOn = _model.CreatedOn;
-            this.RoleRepo.Update(role);
+          //  this.RoleRepo.Update(role);
             this.IU.SaveChanges();
             return role.RoleId;
         }
