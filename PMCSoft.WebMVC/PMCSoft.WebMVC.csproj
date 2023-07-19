@@ -253,6 +253,8 @@
     <Content Include="Content\Javascripts\charts-highchart-pie.js" />
     <Content Include="Content\Javascripts\Dashboard.js" />
     <Content Include="Content\Javascripts\main.js" />
+    <Content Include="Content\Javascripts\Master.js" />
+    <Content Include="Content\Javascripts\Roles.js" />
     <Content Include="Content\Javascripts\table-action.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />

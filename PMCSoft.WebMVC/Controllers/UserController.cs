@@ -82,6 +82,28 @@ namespace PMCSoft.WebMVC.Controllers
 
 
 
+        public JsonResult GetRoleMenu(int RoleId)
+        {
+            try
+            {
+
+                return Json(userSrv.GetRoleMenu(RoleId, true));
+            }
+            catch (Exception ex)
+            {
+
+                return ThrowJsonError(ex);
+            }
+
+        }
+
+
+
+
+
+
+
+
 
 
 

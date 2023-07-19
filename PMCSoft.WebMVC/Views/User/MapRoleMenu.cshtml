@@ -16,7 +16,7 @@
 <div class="page-content">
     <div class="card">
         <div class="card-body">
-            @using (Html.BeginForm("CreateRole", "User", FormMethod.Post, new { id = "rolefrm", role = "form", @class = "", novalidate = "novalidate", enctype = "multipart/form-data" }))
+            @using (Html.BeginForm("MapRoleMenu", "User", FormMethod.Post, new { id = "rolefrm", role = "form", @class = "", novalidate = "novalidate", enctype = "multipart/form-data" }))
             {
                 @Html.AntiForgeryToken()
                 @Html.HiddenFor(m => m.RoleId, new { @class = "ignore" })
@@ -29,8 +29,6 @@
 
                                 @Html.DropDownListFor(m => m.RoleId, new SelectList(Model.RoleList, "ItemId", "ItemName"), "- Please select a Role -", new { @class = "form-control", tabindex = 2 })
                             </div>
-
-
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4 pt-3">
@@ -42,32 +40,21 @@
                         <ul>
                             @foreach (var item in Model.NavList)
                             {
+                                string chkId = "chk-Menu-" + item.MenuId;
                                 <li>
-                                    
                                     <div class="mb-3">
-
-
                                         <div class="form-check">
-                                            @Html.CheckBoxFor(c => item.IsChecked, new { @class = "form-check-input", @id = item.MenuId })
-                                            <label class="form-check-label" for="@item.MenuId">
+                                            @Html.CheckBoxFor(c => item.IsChecked, new { @class = "form-check-input", @id = @chkId })
+                                            <label class="form-check-label" for=@chkId>
                                                 @item.MenuName
                                             </label>
                                         </div>
-
-
-                        
-
                                     </div>
                                 </li>
                             }
-
                         </ul>
-
                     </div>
                 </div>
-
-
-
             }
 
             <div class="row">
@@ -80,3 +67,7 @@
 </div>
 
 
+@section scripts {
+    @Scripts.Render("~/Content/Javascripts/Roles.js")
+
+}
