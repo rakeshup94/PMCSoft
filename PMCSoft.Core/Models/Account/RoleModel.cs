@@ -23,11 +23,17 @@ namespace PMCSoft.Core.Models.Account
     {
         public int RoleId { get; set; }
         public IEnumerable<SelectedList> RoleList { get; set; }
-        public virtual IEnumerable<NavModel> NavList { get; set; }
+        public virtual IEnumerable<RoleMenu> NavList { get; set; }
 
     }
 
-
+    public class RoleMenu
+    {
+        public int MenuId { get; set; }
+        public string MenuName { get; set; }
+        public string MenuIcon { get; set; }
+        public bool IsChecked { get; set; }
+    }
 
 
 

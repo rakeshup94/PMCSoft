@@ -104,6 +104,11 @@ namespace PMCSoft.Infrastructure.Services
             this.IU.SaveChanges();
             return role.RoleId;
         }
+        public IEnumerable<RoleMenu> GetUserMenu(long UserId, bool IsPublished)
+        {
+            var result = this.UserRepo.GetUserMenu(UserId, IsPublished);
+            return result;
+        }
 
 
     }

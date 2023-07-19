@@ -16,6 +16,7 @@ namespace PMCSoft.Core.Interfaces.Service
         IEnumerable<RoleModel> GetRole(bool IsPublished);
 
         RoleModel GetRoleById(int roleId);
+        IEnumerable<RoleMenu> GetUserMenu(long UserId, bool IsPublished);
     }
 
 

@@ -43,9 +43,21 @@
                             @foreach (var item in Model.NavList)
                             {
                                 <li>
-                                    @Html.LabelFor(c => item.MenuName, new { @class = "control-label", @for = "inputName" })
+                                    
+                                    <div class="mb-3">
 
-                                    @Html.CheckBox(item.MenuName);
+
+                                        <div class="form-check">
+                                            @Html.CheckBoxFor(c => item.IsChecked, new { @class = "form-check-input", @id = item.MenuId })
+                                            <label class="form-check-label" for="@item.MenuId">
+                                                @item.MenuName
+                                            </label>
+                                        </div>
+
+
+                        
+
+                                    </div>
                                 </li>
                             }
 

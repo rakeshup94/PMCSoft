@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PMCSoft.Core.Models.Navigation;
 
 namespace PMCSoft.Core.Interfaces.Repository
 {
@@ -14,5 +15,6 @@ namespace PMCSoft.Core.Interfaces.Repository
 
         IEnumerable<RoleModel> GetAllRole();
         IEnumerable<RoleModel> GetRole(bool IsPublished);
+        IEnumerable<RoleMenu> GetUserMenu(long UserId, bool IsPublished);
     }
 }

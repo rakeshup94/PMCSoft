@@ -66,7 +66,7 @@ namespace PMCSoft.WebMVC.Controllers
         {
             RoleMenuModel model = new RoleMenuModel();
             model.RoleList = userSrv.GetAllRole().Select(x => new SelectedList { ItemId = x.RoleId, ItemName = x.RoleName });
-            model.NavList = navSrv.GetUserMenu(User.UserId, true);
+            model.NavList = userSrv.GetUserMenu(User.UserId, true);
             return View(model);
         }
 
