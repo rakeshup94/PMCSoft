@@ -100,7 +100,7 @@ namespace PMCSoft.Infrastructure.Services
             var role = this.RoleMenuRepo.Get(x => x.RoleId == _model.RoleId);
             role.CreatedBy = _model.CreatedBy;
             role.CreatedOn = _model.CreatedOn;
-          //  this.RoleRepo.Update(role);
+            //  this.RoleRepo.Update(role);
             this.IU.SaveChanges();
             return role.RoleId;
         }
@@ -109,6 +109,13 @@ namespace PMCSoft.Infrastructure.Services
             var result = this.UserRepo.GetUserMenu(UserId, IsPublished);
             return result;
         }
+
+        public IEnumerable<RoleMenu> GetRoleMenu(long RoleId, bool IsPublished)
+        {
+            var result = this.UserRepo.GetRoleMenu(RoleId, IsPublished);
+            return result;
+        }
+
 
 
     }
