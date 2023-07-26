@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PMCSoft.WebMVC;
+using System;
 using System.Collections;
 using System.Configuration;
 using System.Data;
@@ -11,12 +12,12 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 namespace PMCSoft.Web.RSS
-{ 
-public partial class UpdateRSS : System.Web.UI.UserControl
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class UpdateRSS : BaseUserControl
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
+        }
     }
-}
 }
