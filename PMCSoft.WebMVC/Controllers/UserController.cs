@@ -32,7 +32,7 @@ namespace PMCSoft.WebMVC.Controllers
         [HttpGet]
         public ActionResult Roles()
         {
-            var result = userSrv.GetAllRole();
+            var result = userSrv.GetAllRole(User.UserId, true);
             return View(result);
         }
         [HttpGet]
@@ -48,6 +48,7 @@ namespace PMCSoft.WebMVC.Controllers
                 model = new RoleModel();
 
             }
+            model.IsPublished = true;
             model.CreatedBy = User.UserId;
             model.CreatedOn = DateTime.Now;
             return View(model);
@@ -65,7 +66,7 @@ namespace PMCSoft.WebMVC.Controllers
         public ActionResult MapRoleMenu()
         {
             RoleMenuModel model = new RoleMenuModel();
-            model.RoleList = userSrv.GetAllRole().Select(x => new SelectedList { ItemId = x.RoleId, ItemName = x.RoleName });
+            model.RoleList = userSrv.GetAllRole(User.UserId, true).Select(x => new SelectedList { ItemId = x.RoleId, ItemName = x.RoleName });
             model.NavList = userSrv.GetUserMenu(User.UserId, true);
             return View(model);
         }

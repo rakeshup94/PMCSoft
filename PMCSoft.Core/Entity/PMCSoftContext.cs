@@ -1,10 +1,10 @@
-using System;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity;
-using System.Linq;
-
 namespace PMCSoft.Core.Entity
 {
+    using System;
+    using System.Data.Entity;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Linq;
+
     public partial class PMCSoftContext : DbContext
     {
         public PMCSoftContext()
@@ -39,6 +39,7 @@ namespace PMCSoft.Core.Entity
         public virtual DbSet<tblConsumble> tblConsumbles { get; set; }
         public virtual DbSet<tblDailyMorningReport> tblDailyMorningReports { get; set; }
         public virtual DbSet<tblDailyWorkProgramme> tblDailyWorkProgrammes { get; set; }
+        public virtual DbSet<tblDatabaseBackup> tblDatabaseBackups { get; set; }
         public virtual DbSet<tblDebitorsApproveList> tblDebitorsApproveLists { get; set; }
         public virtual DbSet<tblDebitorsList> tblDebitorsLists { get; set; }
         public virtual DbSet<tblDebtorPaymentType> tblDebtorPaymentTypes { get; set; }
@@ -673,10 +674,6 @@ namespace PMCSoft.Core.Entity
                 .IsUnicode(false);
 
             modelBuilder.Entity<tblClientMaster>()
-                .Property(e => e.Company)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<tblClientMaster>()
                 .Property(e => e.Initial)
                 .IsUnicode(false);
 
@@ -1010,6 +1007,10 @@ namespace PMCSoft.Core.Entity
 
             modelBuilder.Entity<tblDailyWorkProgramme>()
                 .Property(e => e.Productive)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<tblDatabaseBackup>()
+                .Property(e => e.DatabaseName)
                 .IsUnicode(false);
 
             modelBuilder.Entity<tblDebitorsApproveList>()
@@ -4694,16 +4695,6 @@ namespace PMCSoft.Core.Entity
             modelBuilder.Entity<tblRole>()
                 .Property(e => e.RoleName)
                 .IsUnicode(false);
-
-            modelBuilder.Entity<tblRole>()
-                .HasMany(e => e.tblRoleMenus)
-                .WithRequired(e => e.tblRole)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<tblRole>()
-                .HasMany(e => e.tblUserRoles)
-                .WithRequired(e => e.tblRole)
-                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<tblRSSFeed>()
                 .Property(e => e.Title)

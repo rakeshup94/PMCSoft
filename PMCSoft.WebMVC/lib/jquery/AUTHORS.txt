@@ -123,7 +123,7 @@ Oskari <admin@o-programs.com>
 Joao Henrique de Andrade Bruni <joaohbruni@yahoo.com.br>
 tsinha <tsinha@Anthonys-MacBook-Pro.local>
 Matt Farmer <matt@frmr.me>
-Trey Hunner <div class="row" eyhunner@gmail.com>
+Trey Hunner <treyhunner@gmail.com>
 Jason Moon <jmoon@socialcast.com>
 Jeffery To <jeffery.to@gmail.com>
 Kris Borchers <kris.borchers@gmail.com>
@@ -172,7 +172,7 @@ Zachary Adam Kaplan <razic@viralkitty.com>
 nanto_vi <nanto@moon.email.ne.jp>
 nanto <nanto@moon.email.ne.jp>
 Danil Somsikov <danilasomsikov@gmail.com>
-Ryunosuke SATO <div class="row" icknotes.rs@gmail.com>
+Ryunosuke SATO <tricknotes.rs@gmail.com>
 Jean Boussier <jean.boussier@gmail.com>
 Adam Coulombe <me@adam.co>
 Andrew Plummer <plummer.andrew@gmail.com>
@@ -285,7 +285,7 @@ Jha Naman <createnaman@gmail.com>
 William Robinet <william.robinet@conostix.com>
 Alexander Lisianoi <all3fox@gmail.com>
 Vitaliy Terziev <vitaliyterziev@gmail.com>
-Joe Trumbull <div class="row" umbull.j@gmail.com>
+Joe Trumbull <trumbull.j@gmail.com>
 Alexander K <xpyro@ya.ru>
 Damian Senn <jquery@topaxi.codes>
 Ralin Chimev <ralin.chimev@gmail.com>

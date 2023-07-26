@@ -72,7 +72,7 @@ export type CellIdxWithVisible = {
 declare interface DataTables<T> extends DataTablesStatic {
     /**
      * Create a new DataTable
-     * @param selector Selector to pick one or more `<div class="row" >` elements
+     * @param selector Selector to pick one or more `<table>` elements
      * @param opts Configuration settings
      */
     new <T=any>(
@@ -264,7 +264,7 @@ export interface Config {
     retrieve?: boolean;
 
     /**
-     * Data property name that DataTables will use to set <div class="row" > element DOM IDs. Since: 1.10.8
+     * Data property name that DataTables will use to set <tr> element DOM IDs. Since: 1.10.8
      */
     rowId?: string;
 

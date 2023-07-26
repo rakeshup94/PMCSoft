@@ -22,6 +22,9 @@ namespace PMCSoft.Core.Models.Account
     public class RoleMenuModel : AuditableEntity
     {
         public int RoleId { get; set; }
+
+
+        public IList<string> SelectedRights { get; set; }
         public IEnumerable<SelectedList> RoleList { get; set; }
         public virtual IEnumerable<RoleMenu> NavList { get; set; }
 

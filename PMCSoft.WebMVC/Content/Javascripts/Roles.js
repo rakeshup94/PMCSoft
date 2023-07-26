@@ -1,7 +1,20 @@
 ﻿$(function () {
+
+    $('#chkAll').on('change', function () {
+        $("#divMenuId input:checkbox").prop('checked', $(this).prop("checked"));
+    });
+
+
+
+
     $('#RoleId').on('change', function () {
         GetRoleMenu($(this).val());
     });
+
+
+
+
+
 });
 
 function GetRoleMenu(roleId) {

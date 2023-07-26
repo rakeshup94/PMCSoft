@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Roles";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    int index = 0;
 }
 <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
     <div class="page-header pull-left">
@@ -26,7 +27,7 @@
                 <table class="table table-bordered table-striped table-condensed cf">
                     <thead class="cf">
                         <tr>
-                            <th>RoleId</th>
+                            <th>S.No.</th>
                             <th>Role Name</th>
                             <th>@Html.DisplayName("Action")</th>
                         </tr>
@@ -35,8 +36,11 @@
                         @foreach (var item in Model)
                         {
                             <tr>
-                                <td data-title="Id">
-                                    @item.RoleId
+                                <td data-title="S.No.">
+                                    @{
+                                        
+                                        index += 1;
+                                    }@index
                                 </td>
                                 <td data-title="Role Name">
                                     @*<i class="@item.MenuIcon"></i> &nbsp;*@ @item.RoleName

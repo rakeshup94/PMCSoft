@@ -13,6 +13,7 @@ namespace PMCSoft.Core.Interfaces.Service
     {
         int SaveRole(RoleModel model);
         IEnumerable<RoleModel> GetAllRole();
+        IEnumerable<RoleModel> GetAllRole(long CreatedBy, bool IsPublished);
         IEnumerable<RoleModel> GetRole(bool IsPublished);
 
         RoleModel GetRoleById(int roleId);

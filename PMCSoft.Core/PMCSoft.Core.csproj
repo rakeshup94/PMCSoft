@@ -96,6 +96,7 @@
     <Compile Include="Entity\tblCountry.cs" />
     <Compile Include="Entity\tblDailyMorningReport.cs" />
     <Compile Include="Entity\tblDailyWorkProgramme.cs" />
+    <Compile Include="Entity\tblDatabaseBackup.cs" />
     <Compile Include="Entity\tblDebitorsApproveList.cs" />
     <Compile Include="Entity\tblDebitorsList.cs" />
     <Compile Include="Entity\tblDebtorPaymentType.cs" />

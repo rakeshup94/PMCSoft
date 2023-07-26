@@ -37,24 +37,19 @@ namespace PMCSoft.Infrastructure.Services
             if (_model.RoleId > 0)
             {
                 role = this.RoleRepo.Get(x => x.RoleId == _model.RoleId);
-
+                role.RoleName = _model.RoleName;
+                role.IsPublished = _model.IsPublished;
+                role.CreatedBy = _model.CreatedBy;
+                role.CreatedOn = _model.CreatedOn;
+                this.RoleRepo.Update(role);
             }
             else
             {
                 role = new tblRole();
-            }
-            role.RoleId = _model.RoleId;
-            role.RoleName = _model.RoleName;
-            role.IsPublished = _model.IsPublished;
-            role.CreatedBy = _model.CreatedBy;
-            role.CreatedOn = _model.CreatedOn;
-            if (_model.RoleId > 0)
-            {
-                this.RoleRepo.Update(role);
-
-            }
-            else
-            {
+                role.RoleName = _model.RoleName;
+                role.IsPublished = _model.IsPublished;
+                role.CreatedBy = _model.CreatedBy;
+                role.CreatedOn = _model.CreatedOn;
                 this.RoleRepo.Add(role);
             }
             this.IU.SaveChanges();
@@ -65,6 +60,13 @@ namespace PMCSoft.Infrastructure.Services
         {
             return this.UserRepo.GetAllRole();
         }
+        public IEnumerable<RoleModel> GetAllRole(long CreatedBy, bool IsPublished)
+        {
+            return this.UserRepo.GetAllRole(CreatedBy, IsPublished);
+        }
+
+
+
         public IEnumerable<RoleModel> GetRole(bool IsPublished)
         {
             var result = this.UserRepo.GetRole(IsPublished);

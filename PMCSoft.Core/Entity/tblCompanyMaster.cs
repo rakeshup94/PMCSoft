@@ -12,6 +12,8 @@ namespace PMCSoft.Core.Entity
         [Key]
         public int TransID { get; set; }
 
+        public int? ClientId { get; set; }
+
         [StringLength(50)]
         public string CompanyID { get; set; }
 
@@ -50,5 +52,7 @@ namespace PMCSoft.Core.Entity
         public string CreatedBy { get; set; }
 
         public DateTime? CreatedDate { get; set; }
+
+        public virtual tblClientMaster tblClientMaster { get; set; }
     }
 }

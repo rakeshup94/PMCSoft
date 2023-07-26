@@ -15,12 +15,12 @@
 <!--END TITLE & BREADCRUMB PAGE--><!--BEGIN CONTENT-->
 <div class="page-content">
     <div class="card">
-        <div class="card-body">
-            @using (Html.BeginForm("MapRoleMenu", "User", FormMethod.Post, new { id = "rolefrm", role = "form", @class = "", novalidate = "novalidate", enctype = "multipart/form-data" }))
-            {
-                @Html.AntiForgeryToken()
-                @Html.HiddenFor(m => m.RoleId, new { @class = "ignore" })
 
+        @using (Html.BeginForm("MapRoleMenu", "User", FormMethod.Post, new { id = "rolefrm", role = "form", @class = "", novalidate = "novalidate", enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+         
+            <div class="card-body">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="mb-3">
@@ -35,7 +35,21 @@
                         <button type="submit" class="btn btn-outline-primary btn-square">Save</button>
                     </div>
                 </div>
-                <div class="row">
+            </div>
+            <div class="card-header">
+
+                <div class="form-check">
+
+
+                    <input class="form-check-input" type="checkbox" id="chkAll">
+
+                </div>
+
+
+            </div>
+            <div class="card-body">
+
+                <div class="row" id="divMenuId">
                     <div class="col-xl-12 mb-3 li-colums-3">
                         <ul>
                             @foreach (var item in Model.NavList)
@@ -44,7 +58,7 @@
                                 <li>
                                     <div class="mb-3">
                                         <div class="form-check">
-                                            @Html.CheckBoxFor(c => item.IsChecked, new { @class = "form-check-input", @id = @chkId })
+                                            @Html.CheckBoxFor(c => item.IsChecked, new { @class = "form-check-input", Name = "SelectedRights", @id = @chkId, @value = item.MenuId })
                                             <label class="form-check-label" for=@chkId>
                                                 @item.MenuName
                                             </label>
@@ -55,8 +69,10 @@
                         </ul>
                     </div>
                 </div>
-            }
+            </div>
 
+        }
+        <div class="card-body">
             <div class="row">
                 <div class="col-lg-12">
                     @Html.ActionLink("Back to Roles List", "Roles")
@@ -65,6 +81,7 @@
         </div>
     </div>
 </div>
+
 
 
 @section scripts {

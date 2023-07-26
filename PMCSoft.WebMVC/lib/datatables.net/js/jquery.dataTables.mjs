@@ -3496,7 +3496,7 @@ function _fnDraw( oSettings, ajaxComplete )
 		}
 
 		anRows[ 0 ] = $( '<tr/>', { 'class': iStripes ? asStripeClasses[0] : '' } )
-			.append( $('<div class="col-lg-4"  />', {
+			.append( $('<td />', {
 				'valign':  'top',
 				'colSpan': _fnVisbleColumns( oSettings ),
 				'class':   oSettings.oClasses.sRowEmpty
@@ -5844,7 +5844,7 @@ function _fnGetWidestNode( settings, colIdx )
 
 	var data = settings.aoData[ idx ];
 	return ! data.nTr ? // Might not have been created when deferred rendering
-		$('<div class="col-lg-4" />').html( _fnGetCellData( settings, idx, colIdx, 'display' ) )[0] :
+		$('<td/>').html( _fnGetCellData( settings, idx, colIdx, 'display' ) )[0] :
 		data.anCells[ colIdx ];
 }
 
@@ -5863,7 +5863,7 @@ function _fnGetMaxLenString( settings, colIdx )
 	for ( var i=0, ien=settings.aoData.length ; i<ien ; i++ ) {
 		s = _fnGetCellData( settings, i, colIdx, 'display' )+'';
 		s = s.replace( __re_html_remove, '' );
-		s = s.replace( / /g, ' ' );
+		s = s.replace( /&nbsp;/g, ' ' );
 
 		if ( s.length > max ) {
 			max = s.length;
@@ -8368,7 +8368,7 @@ var __details_add = function ( ctx, row, data, klass )
 		}
 		else {
 			// Otherwise create a row with a wrapper
-			var created = $('<tr><div class="col-lg-4" ></div></div>').addClass( k );
+			var created = $('<tr><td></td></tr>').addClass( k );
 			$('td', created)
 				.addClass( k )
 				.html( r )
@@ -9394,7 +9394,7 @@ DataTable.versionCheck = DataTable.fnVersionCheck = function( version )
 
 
 /**
- * Check if a `<div class="row" >` node is a DataTable table already or not.
+ * Check if a `<table>` node is a DataTable table already or not.
  *
  *  @param {node|jquery|string} table Table node, jQuery object or jQuery
  *      selector for the table to test. Note that if more than more than one

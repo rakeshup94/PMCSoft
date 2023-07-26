@@ -1668,6 +1668,7 @@
     <Content Include="lib\font-awesome\css\font-awesome.css" />
     <Content Include="lib\font-awesome\css\font-awesome.min.css" />
     <Content Include="lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="lib\jquery-cookie\jquery.cookie.js" />
     <Content Include="lib\jquery\AUTHORS.txt" />
     <Content Include="lib\jquery\dist\jquery.js" />
     <Content Include="lib\jquery\dist\jquery.min.js" />
@@ -1899,6 +1900,7 @@
     <Content Include="lib\jquery\src\var\whitespace.min.js" />
     <Content Include="lib\jquery\src\wrap.js" />
     <Content Include="lib\jquery\src\wrap.min.js" />
+    <Content Include="lib\metisMenu\jquery.metisMenu.js" />
     <Content Include="lib\moment.js\locale\af.js" />
     <Content Include="lib\moment.js\locale\af.min.js" />
     <Content Include="lib\moment.js\locale\ar-dz.js" />

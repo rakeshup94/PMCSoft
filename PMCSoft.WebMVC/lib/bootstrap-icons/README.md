@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h3 align="center">Bootstrap Icons</div>
+<h3 align="center">Bootstrap Icons</h3>
 
 <p align="center">
   Official open source SVG icon library for Bootstrap.

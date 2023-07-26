@@ -21,7 +21,5 @@ namespace PMCSoft.Core.Entity
         public long CreatedBy { get; set; }
 
         public DateTime CreatedOn { get; set; }
-
-        public virtual tblRole tblRole { get; set; }
     }
 }

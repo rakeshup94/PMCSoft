@@ -15,6 +15,7 @@ namespace PMCSoft.Core.Interfaces.Repository
 
         IEnumerable<RoleModel> GetAllRole();
         IEnumerable<RoleModel> GetRole(bool IsPublished);
+        IEnumerable<RoleModel> GetAllRole(long CreatedBy, bool IsPublished);
         IEnumerable<RoleMenu> GetUserMenu(long UserId, bool IsPublished);
         IEnumerable<RoleMenu> GetRoleMenu(long RoleId, bool IsPublished);
     }

@@ -39,6 +39,30 @@ namespace PMCSoft.Infrastructure.Repository
             return data;
 
         }
+
+
+
+        public IEnumerable<RoleModel> GetAllRole(long CreatedBy, bool IsPublished)
+        {
+            var data = (from role in Context.tblRoles.Where(x => x.CreatedBy == CreatedBy && x.IsPublished == IsPublished)
+                        select new RoleModel
+                        {
+                            RoleId = role.RoleId,
+                            RoleName = role.RoleName,
+                        }).OrderBy(x => x.RoleId).ToList();
+            return data;
+
+        }
+
+
+
+
+
+
+
+
+
+
         public IEnumerable<RoleModel> GetRole(bool IsPublished)
         {
 

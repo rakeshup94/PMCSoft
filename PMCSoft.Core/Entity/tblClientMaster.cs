@@ -9,14 +9,17 @@ namespace PMCSoft.Core.Entity
     [Table("tblClientMaster")]
     public partial class tblClientMaster
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public tblClientMaster()
+        {
+            tblCompanyMasters = new HashSet<tblCompanyMaster>();
+        }
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ClientId { get; set; }
 
         public long UserId { get; set; }
-
-        [StringLength(50)]
-        public string Company { get; set; }
 
         [StringLength(10)]
         public string Initial { get; set; }
@@ -77,5 +80,8 @@ namespace PMCSoft.Core.Entity
         public long CreatedBy { get; set; }
 
         public DateTime CreatedOn { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tblCompanyMaster> tblCompanyMasters { get; set; }
     }
 }
