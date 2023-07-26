@@ -71,7 +71,7 @@ namespace PMCSoft.Web.Admin
             }
             catch (Exception ex)
             {
-                string scripts = "alert('Some error occurs.');";
+                string scripts = "alert('Some error occurs.'" + ex.Message + ");";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
