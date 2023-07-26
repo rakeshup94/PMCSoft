@@ -23,6 +23,7 @@
 
                         @if (sitem.SubMenu.Count() > 0)
                         {<a class='second-level-heading' href="@sitem.NavigateURL">
+                                <i class="@menuitem.MenuIcon"></i>
                                 <span class='submenu-title'>@sitem.MenuName</span>
                                 <span class='fa arrow  text-white'></span>
                             </a>
@@ -31,6 +32,7 @@
                         else
                         {
                             <a class='second-level-heading' href="@sitem.NavigateURL">
+                                <i class="@menuitem.MenuIcon"></i>
                                 <span class='submenu-title'>@sitem.MenuName</span>
 
                             </a>
@@ -42,8 +44,7 @@
         else
         {
             <a href="@menuitem.NavigateURL">
-                <i class="fa fa-sitemap fa-fw"></i>
-                <div class="icon-bg bg-dark"></div>
+                <i class="@menuitem.MenuIcon"></i>
                 <span class="menu-title">
                     @menuitem.MenuName
                 </span>
