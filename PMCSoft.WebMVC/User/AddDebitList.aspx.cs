@@ -22,7 +22,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.User
 {
-    public partial class AddDebitList : System.Web.UI.Page
+    public partial class AddDebitList : BasePage
     {
         BALPMC PMC = new BALPMC();
         string ListID = string.Empty, VenID = "";

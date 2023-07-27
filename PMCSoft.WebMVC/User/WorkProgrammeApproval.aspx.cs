@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.User
 {
-    public partial class WorkProgrammeApproval : System.Web.UI.Page
+    public partial class WorkProgrammeApproval : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

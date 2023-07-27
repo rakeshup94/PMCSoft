@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.PMCReports
 {
-    public partial class AddNewPlan : System.Web.UI.Page
+    public partial class AddNewPlan : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

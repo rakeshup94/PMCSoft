@@ -14,7 +14,7 @@ using PMCSoft.Infrastructure.Data;
 using System.Text;
 namespace PMCSoft.Web.AdminReports
 {
-    public partial class RACertifiedReport : System.Web.UI.Page
+    public partial class RACertifiedReport : BasePage
     {
         BALPMC PMC = new BALPMC();
         string AListID = string.Empty;

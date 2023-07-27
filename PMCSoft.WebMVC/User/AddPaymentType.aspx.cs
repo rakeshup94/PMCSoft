@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.User
 {
-    public partial class AddPaymentType : System.Web.UI.Page
+    public partial class AddPaymentType : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

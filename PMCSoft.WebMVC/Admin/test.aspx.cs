@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace PMCSoft.Web
+namespace PMCSoft.Web.Admin
 {
-    public partial class WebForm1 : BasePage
+    public partial class test : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

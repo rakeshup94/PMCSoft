@@ -18,7 +18,7 @@ using System.IO;
 
 namespace PMCSoft.Web.Report
 {
-    public partial class PrintRACertifiedReport : System.Web.UI.Page
+    public partial class PrintRACertifiedReport : BasePage
     {
         BALPMC PMC = new BALPMC();
         string AListID = string.Empty;

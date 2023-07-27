@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PMCSoft.Web
+namespace PMCSoft.Web.Admin
 {
 
 
-    public partial class WebForm1
+    public partial class test
     {
     }
 }

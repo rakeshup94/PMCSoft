@@ -16,7 +16,7 @@ using System.Text;
 
 namespace PMCSoft.Web.User
 {
-    public partial class AddWorkProgramme : System.Web.UI.Page
+    public partial class AddWorkProgramme : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

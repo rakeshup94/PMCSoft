@@ -13,7 +13,7 @@ using System.Xml.Linq;
 
 namespace PMCSoft.Web.PMCReports
 {
-    public partial class MonthlyWorkDoneActual : System.Web.UI.Page
+    public partial class MonthlyWorkDoneActual : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -14,7 +14,7 @@ using System.Xml.Linq;
 using PMCSoft.Infrastructure.Data;
 namespace PMCSoft.Web.Admin
 {
-    public partial class PageCreate : System.Web.UI.Page
+    public partial class PageCreate : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

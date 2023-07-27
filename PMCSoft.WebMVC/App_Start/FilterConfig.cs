@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace PMCSoft.Web
+namespace PMCSoft.WebMVC
 {
     public class FilterConfig
     {

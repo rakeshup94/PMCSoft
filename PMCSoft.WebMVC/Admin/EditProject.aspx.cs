@@ -15,7 +15,7 @@ using PMCSoft.Core.Common;
 
 namespace PMCSoft.Web.Admin
 {
-    public partial class EditProject : System.Web.UI.Page
+    public partial class EditProject : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

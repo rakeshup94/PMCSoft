@@ -14,7 +14,7 @@ using System.Xml.Linq;
 using PMCSoft.Infrastructure.Data;
 namespace PMCSoft.Web.PMCReports
 {
-    public partial class MonthlyWorkDone : System.Web.UI.Page
+    public partial class MonthlyWorkDone : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

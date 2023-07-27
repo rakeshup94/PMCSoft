@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.PMCReports
 {
-    public partial class FinancialComparisionOfPlan : System.Web.UI.Page
+    public partial class FinancialComparisionOfPlan : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

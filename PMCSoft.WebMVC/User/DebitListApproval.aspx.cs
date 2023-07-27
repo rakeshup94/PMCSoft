@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.User
 {
-    public partial class DebitListApproval : System.Web.UI.Page
+    public partial class DebitListApproval : BasePage
     {
         BALPMC PMC = new BALPMC();
         string AListID = string.Empty;

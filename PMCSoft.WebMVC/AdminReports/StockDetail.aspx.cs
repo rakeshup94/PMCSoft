@@ -14,7 +14,7 @@ using System.Xml.Linq;
 using PMCSoft.Infrastructure.Data;
 namespace PMCSoft.Web.AdminReports
 {
-    public partial class StockDetail : System.Web.UI.Page
+    public partial class StockDetail : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

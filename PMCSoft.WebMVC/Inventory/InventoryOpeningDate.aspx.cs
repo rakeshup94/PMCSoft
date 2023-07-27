@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 using System.Globalization;
 namespace PMCSoft.Web.Inventory
 {
-    public partial class InventoryOpeningDate : System.Web.UI.Page
+    public partial class InventoryOpeningDate : BasePage
     {
         BALPMC PMC = new BALPMC();
         string ItemID = "";

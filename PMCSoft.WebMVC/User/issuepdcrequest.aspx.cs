@@ -18,7 +18,7 @@ using System.Data.SqlClient;
 
 namespace PMCSoft.Web.User
 {
-    public partial class issuepdcrequest : System.Web.UI.Page
+    public partial class issuepdcrequest : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

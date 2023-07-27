@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.Inventory
 {
-    public partial class ViewOpeningStockDetail : System.Web.UI.Page
+    public partial class ViewOpeningStockDetail : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

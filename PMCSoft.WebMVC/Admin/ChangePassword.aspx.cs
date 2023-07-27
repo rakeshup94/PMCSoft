@@ -18,7 +18,7 @@ using System.Security.Cryptography;
 using PMCSoft.Infrastructure.Data;
 namespace PMCSoft.Web.Admin
 {
-    public partial class ChangePassword : System.Web.UI.Page
+    public partial class ChangePassword : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

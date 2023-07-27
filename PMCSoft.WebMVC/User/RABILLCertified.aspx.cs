@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 using System.Text;
 namespace PMCSoft.Web.User
 {
-    public partial class RABILLCertified : System.Web.UI.Page
+    public partial class RABILLCertified : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

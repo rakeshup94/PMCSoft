@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.Admin
 {
-    public partial class BOQItems : System.Web.UI.Page
+    public partial class BOQItems : BasePage
     {
         BALPMC PMC = new BALPMC();
         protected void Page_Load(object sender, EventArgs e)

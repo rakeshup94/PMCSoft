@@ -14,7 +14,7 @@ using System.Xml.Linq;
 using PMCSoft.Infrastructure.Data;
 namespace PMCSoft.Web.Admin
 {
-    public partial class TypeOfAdvanceRequisition : System.Web.UI.Page
+    public partial class TypeOfAdvanceRequisition : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

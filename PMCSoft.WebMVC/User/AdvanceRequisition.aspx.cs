@@ -14,7 +14,7 @@ using System.Xml.Linq;
 using PMCSoft.Infrastructure.Data;
 namespace PMCSoft.Web.User
 {
-    public partial class AdvanceRequisition : System.Web.UI.Page
+    public partial class AdvanceRequisition : BasePage
     {
         BALPMC PMC = new BALPMC();
         string AListID = string.Empty;

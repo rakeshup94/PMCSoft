@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace PMCSoft.Web.Controllers
+namespace PMCSoft.WebMVC.Controllers
 {
     public class HomeController : Controller
     {

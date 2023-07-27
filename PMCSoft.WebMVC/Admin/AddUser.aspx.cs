@@ -23,7 +23,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.Admin
 {
-    public partial class AddUser : System.Web.UI.Page
+    public partial class AddUser : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

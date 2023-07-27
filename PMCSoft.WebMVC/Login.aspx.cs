@@ -14,7 +14,7 @@ using System.Security.Policy;
 namespace PMCSoft.Web
 {
 
-    public partial class Login : System.Web.UI.Page
+    public partial class Login : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

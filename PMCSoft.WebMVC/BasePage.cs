@@ -1,4 +1,6 @@
-﻿using PMCSoft.Web.Models;
+﻿using PMCSoft.Infrastructure.Data;
+using PMCSoft.Web.Models;
+using PMCSoft.Web.Models;
 using System;
 using System.Web;
 
@@ -6,6 +8,11 @@ namespace PMCSoft.Web
 {
     public class BasePage : System.Web.UI.Page
     {
+        protected BALPMC PMC
+        {
+            get { return new BALPMC(); }
+        }
+
         protected virtual new CustomPrincipal User
         {
             get { return HttpContext.Current.User as CustomPrincipal; }

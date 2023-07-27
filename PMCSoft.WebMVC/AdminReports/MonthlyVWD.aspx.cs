@@ -14,7 +14,7 @@ using System.Xml.Linq;
 using PMCSoft.Infrastructure.Data;
 namespace PMCSoft.Web.AdminReports
 {
-    public partial class MonthlyVWD : System.Web.UI.Page
+    public partial class MonthlyVWD : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

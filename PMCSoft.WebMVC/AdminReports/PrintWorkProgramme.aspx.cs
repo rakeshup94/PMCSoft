@@ -14,7 +14,7 @@ using System.Xml.Linq;
 using PMCSoft.Infrastructure.Data;
 namespace PMCSoft.Web.AdminReports
 {
-    public partial class PrintWorkProgramme : System.Web.UI.Page
+    public partial class PrintWorkProgramme : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.Inventory
 {
-    public partial class EnterStockDetails : System.Web.UI.Page
+    public partial class EnterStockDetails : BasePage
     {
         BALPMC PMC = new BALPMC();
         string AListID = string.Empty;

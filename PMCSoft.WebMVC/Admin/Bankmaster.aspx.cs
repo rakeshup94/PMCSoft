@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.Admin
 {
-    public partial class Bankmaster : System.Web.UI.Page
+    public partial class Bankmaster : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

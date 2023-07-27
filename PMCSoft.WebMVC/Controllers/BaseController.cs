@@ -8,7 +8,7 @@ using System.Web.Mvc;
 using System.Configuration;
 using PMCSoft.Web.Models;
 
-namespace PMCSoft.Web.Controllers
+namespace PMCSoft.WebMVC.Controllers
 {
     [Authorize]
     public class BaseController : Controller

@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace PMCSoft.Web
+namespace PMCSoft.WebMVC
 {
     public class BundleConfig
     {

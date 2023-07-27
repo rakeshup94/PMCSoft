@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.AdminReports
 {
-    public partial class MaterialReciveProjectAndVendor : System.Web.UI.Page
+    public partial class MaterialReciveProjectAndVendor : BasePage
     {
         BALPMC PMC = new BALPMC();
         string AListID = string.Empty;

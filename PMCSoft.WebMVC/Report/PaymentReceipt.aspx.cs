@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.Report
 {
-    public partial class PaymentReceipt : System.Web.UI.Page
+    public partial class PaymentReceipt : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

@@ -15,7 +15,7 @@ using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.Report
 {
-    public partial class ViewAdvanceRequisition : System.Web.UI.Page
+    public partial class ViewAdvanceRequisition : BasePage
     {
         BALPMC PMC = new BALPMC();
         DataTable DT = new DataTable();

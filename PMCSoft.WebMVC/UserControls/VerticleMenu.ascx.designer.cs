@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PMCSoft.Web.UserControls
+namespace PMCSoft.WebMVC.UserControls
 {
 
 

@@ -8,7 +8,7 @@ using System.Web.Mvc;
 using Unity;
 using Unity.Mvc5;
 
-namespace PMCSoft.Web
+namespace PMCSoft.WebMVC
 {
     public static class UnityConfig
     {
