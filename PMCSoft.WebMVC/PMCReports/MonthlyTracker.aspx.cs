@@ -17,7 +17,7 @@ namespace PMCSoft.Web.PMCReports
 {
     public partial class MonthlyTracker : BasePage
     {
-        BALPMC PMC = new BALPMC();
+          ();
         DataTable DT = new DataTable();
         decimal PPlan = 0, PActual = 0, PVariance = 0, CPlan = 0, CActual = 0, CVariance = 0, NPlan = 0;
         protected void Page_Load(object sender, EventArgs e)

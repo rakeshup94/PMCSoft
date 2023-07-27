@@ -16,7 +16,7 @@ namespace PMCSoft.Web.PMCReports
 {
     public partial class MonthlyWorkDone : BasePage
     {
-        BALPMC PMC = new BALPMC();
+          ();
         DataTable DT = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {

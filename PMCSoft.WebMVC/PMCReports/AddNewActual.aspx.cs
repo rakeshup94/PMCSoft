@@ -17,7 +17,7 @@ namespace PMCSoft.Web.PMCReports
 {
     public partial class AddNewActual : BasePage
     {
-        BALPMC PMC = new BALPMC();
+          ();
         DataTable DT = new DataTable();
         string No = "", IncomeParticularsID = "", HirechargeParticularsId = "";
 

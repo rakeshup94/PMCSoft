@@ -17,7 +17,7 @@ namespace PMCSoft.Web.Report
 {
     public partial class ViewDebitorList : BasePage
     {
-        BALPMC PMC = new BALPMC();
+          ();
         protected void Page_Load(object sender, EventArgs e)
         {
             try

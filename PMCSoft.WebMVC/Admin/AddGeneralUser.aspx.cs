@@ -1,29 +1,14 @@
-﻿using System;
-using System.Collections;
-using System.Configuration;
+﻿using PMCSoft.Infrastructure.Data;
+using System;
 using System.Data;
-using System.Linq;
-using System.Web;
-using System.Web.Security;
 using System.Web.UI;
-using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Xml.Linq;
-using System.Text;
-using System.Collections.ObjectModel;
-using System.Text.RegularExpressions;
-using System.Security.Cryptography;
-using System.Net;
-using System.Net.Mail;
-using System.IO;
-using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.Admin
 {
     public partial class AddGeneralUser : BasePage
     {
-        BALPMC PMC = new BALPMC();
+       
         DataTable DT = new DataTable();
         string EmpID = "";
         string DeptID = "";

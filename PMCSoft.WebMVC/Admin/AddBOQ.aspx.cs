@@ -5,8 +5,7 @@ using PMCSoft.Infrastructure.Data;
 namespace PMCSoft.Web.Admin
 {
     public partial class AddBOQ : BasePage
-    {
-        
+    {        
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)

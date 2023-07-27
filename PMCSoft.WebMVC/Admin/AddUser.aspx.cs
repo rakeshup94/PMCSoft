@@ -25,7 +25,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class AddUser : BasePage
     {
-        BALPMC PMC = new BALPMC();
+          ();
         DataTable DT = new DataTable();
         string EmpID = "";
         string DesgID = "";

@@ -17,7 +17,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class BOQItems : BasePage
     {
-        BALPMC PMC = new BALPMC();
+          ();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)

@@ -24,7 +24,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class ViewStaff : BasePage
     {
-        BALPMC PMC = new BALPMC();
+          ();
         DataTable DT = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {

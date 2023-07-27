@@ -18,7 +18,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class Home : BasePage
     {
-        BALPMC PMC = new BALPMC();
+          ();
         DataTable DT = new DataTable();
         string P = "";
         protected void Page_Load(object sender, EventArgs e)

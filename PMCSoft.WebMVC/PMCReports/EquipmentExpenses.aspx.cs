@@ -17,7 +17,7 @@ namespace PMCSoft.Web.PMCReports
 {
     public partial class EquipmentExpenses : BasePage
     {
-        BALPMC PMC = new BALPMC();
+          ();
         DataTable DT = new DataTable();
         string ExpID = string.Empty;
         protected void Page_Load(object sender, EventArgs e)

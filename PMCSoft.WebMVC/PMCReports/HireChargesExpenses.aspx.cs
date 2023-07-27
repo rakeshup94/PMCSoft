@@ -18,7 +18,7 @@ namespace PMCSoft.Web.PMCReports
 {
     public partial class HireChargesExpenses : BasePage
     {
-        BALPMC PMC = new BALPMC();
+          ();
         DataTable DT = new DataTable();
         string ItemID = "";
         string ExpID = string.Empty;

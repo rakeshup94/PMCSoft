@@ -16,7 +16,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class TypeOfAdvanceRequisition : BasePage
     {
-        BALPMC PMC = new BALPMC();
+          ();
         DataTable DT = new DataTable();
         string ItemID = "";
         protected void Page_Load(object sender, EventArgs e)

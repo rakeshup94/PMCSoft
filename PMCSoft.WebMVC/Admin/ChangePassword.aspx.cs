@@ -20,7 +20,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class ChangePassword : BasePage
     {
-        BALPMC PMC = new BALPMC();
+          ();
         DataTable DT = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
