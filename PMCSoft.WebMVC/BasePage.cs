@@ -1,8 +1,8 @@
-﻿using PMCSoft.WebMVC.Models;
+﻿using PMCSoft.Web.Models;
 using System;
 using System.Web;
 
-namespace PMCSoft.WebMVC
+namespace PMCSoft.Web
 {
     public class BasePage : System.Web.UI.Page
     {
@@ -66,11 +66,6 @@ namespace PMCSoft.WebMVC
 
 
 
-        public void Application_Error(Object sender, EventArgs e)
-
-        {
-            // Implementation here
-        }
 
         public void ShowMessage(string message)
         {
@@ -85,22 +80,22 @@ namespace PMCSoft.WebMVC
             ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
         }
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
+        //protected void Page_Load(object sender, EventArgs e)
+        //{
 
-            try
-            {
-                Business obj = new Business();
-                obj.SomeMethod();
-            }
-            catch (Exception ex)
-            {
-                ShowMessage(ex.Message);
-            }
+        //    try
+        //    {
+        //        Business obj = new Business();
+        //        obj.SomeMethod();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        ShowMessage(ex.Message);
+        //    }
 
 
 
-        }
+        //}
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);

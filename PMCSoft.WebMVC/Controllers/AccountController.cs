@@ -3,8 +3,8 @@ using PMCSoft.Core.Interfaces.Service;
 using PMCSoft.Core.Models.Account;
 using PMCSoft.Infrastructure.Repository;
 using PMCSoft.Infrastructure.Services;
-using PMCSoft.WebMVC.Models;
-using PMCSoft.WebMVC.Models.Account;
+using PMCSoft.Web.Models;
+using PMCSoft.Web.Models.Account;
 using PMCSoft.Core.Common;
 using System;
 using System.Collections.Generic;
@@ -16,7 +16,7 @@ using System.Web.Mvc;
 using System.Web.Security;
 using System.Configuration;
 
-namespace PMCSoft.WebMVC.Controllers
+namespace PMCSoft.Web.Controllers
 {
     public class AccountController : Controller
     {

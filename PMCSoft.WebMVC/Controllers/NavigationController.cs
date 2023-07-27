@@ -10,11 +10,11 @@ using PMCSoft.Core.Common;
 using System.Web.Script.Serialization;
 using System.Web.SessionState;
 using PMCSoft.Core.Models.Navigation;
-using PMCSoft.WebMVC.Filters;
+using PMCSoft.Web.Filters;
 using PMCSoft.Core.Models;
-using PMCSoft.WebMVC.Models;
+using PMCSoft.Web.Models;
 
-namespace PMCSoft.WebMVC.Controllers
+namespace PMCSoft.Web.Controllers
 {
     public class NavigationController : BaseController
     {

@@ -4,7 +4,7 @@ using PMCSoft.Core.Interfaces.Service;
 using PMCSoft.Core.Models;
 using PMCSoft.Infrastructure.Repository;
 using PMCSoft.Infrastructure.Services;
-using PMCSoft.WebMVC.Models;
+using PMCSoft.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -17,7 +17,7 @@ using System.Web.Razor.Parser.SyntaxTree;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace PMCSoft.WebMVC.UserControls
+namespace PMCSoft.Web.UserControls
 {
 
     public partial class VerticleMenu : BaseUserControl

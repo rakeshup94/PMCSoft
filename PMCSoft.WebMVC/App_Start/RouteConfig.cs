@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace PMCSoft.WebMVC
+namespace PMCSoft.Web
 {
     public class RouteConfig
     {

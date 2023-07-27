@@ -1,7 +1,7 @@
 using System;
 
 
-namespace PMCSoft.WebMVC.Models
+namespace PMCSoft.Web.Models
 {
     public class ErrorViewModel
     {

@@ -37,7 +37,7 @@ namespace PMCSoft.Web
                 string _password = CreateMD5Hash(txtPassword.Text.Trim());
                 Hashtable ht = new Hashtable();
                 ht.Add("@flag", 1);
-                ht.Add("@Email", txtUserID.Text.Trim());
+                ht.Add("@UserName", txtUserID.Text.Trim());
                 ht.Add("@Password", _password);
                 DataTable result = PMCApp.Get(ht, "LoginProc");
                 var IsResult = Convert.ToInt32(result.Rows[0]["IsResult"]);

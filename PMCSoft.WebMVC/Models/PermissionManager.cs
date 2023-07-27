@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PMCSoft.WebMVC.Models
+namespace PMCSoft.Web.Models
 {
     public class PermissionManager
     {

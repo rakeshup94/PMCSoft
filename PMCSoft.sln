@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMCSoft.WebMVC", "PMCSoft.WebMVC\PMCSoft.WebMVC.csproj", "{C708B54B-A8AC-4CA6-8B2E-C3BC15BC0416}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMCSoft.Web", "PMCSoft.WebMVC\PMCSoft.Web.csproj", "{C708B54B-A8AC-4CA6-8B2E-C3BC15BC0416}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMCSoft.Core", "PMCSoft.Core\PMCSoft.Core.csproj", "{8DF68DFC-D51C-4392-B1C5-0481392B2CD7}"
 EndProject

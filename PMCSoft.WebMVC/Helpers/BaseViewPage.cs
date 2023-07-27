@@ -1,12 +1,12 @@
 ﻿
-using PMCSoft.WebMVC.Models;
+using PMCSoft.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace PMCSoft.WebMVC.Helpers
+namespace PMCSoft.Web.Helpers
 {
     public abstract class BaseViewPage : WebViewPage
     {

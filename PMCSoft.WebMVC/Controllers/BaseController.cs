@@ -6,9 +6,9 @@ using System.Web;
 using System.Web.Mvc;
 
 using System.Configuration;
-using PMCSoft.WebMVC.Models;
+using PMCSoft.Web.Models;
 
-namespace PMCSoft.WebMVC.Controllers
+namespace PMCSoft.Web.Controllers
 {
     [Authorize]
     public class BaseController : Controller

@@ -1,7 +1,7 @@
-﻿using PMCSoft.WebMVC.Models;
+﻿using PMCSoft.Web.Models;
 using System.Web;
 
-namespace PMCSoft.WebMVC
+namespace PMCSoft.Web
 {
     public class BaseMasterPage : System.Web.UI.MasterPage
     {

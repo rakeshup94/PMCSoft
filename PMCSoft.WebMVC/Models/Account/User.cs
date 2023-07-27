@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Xml.Linq;
 
-namespace PMCSoft.WebMVC.Models.Account
+namespace PMCSoft.Web.Models.Account
 {
     public class SignInModel
     {

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PMCSoft.WebMVC
+namespace PMCSoft.Web
 {
 
 

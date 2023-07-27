@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-namespace PMCSoft.WebMVC.Models
+namespace PMCSoft.Web.Models
 {
     public class ServiceResponse<T>
     {

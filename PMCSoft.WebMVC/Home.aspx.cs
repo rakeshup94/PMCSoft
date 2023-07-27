@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace PMCSoft.WebMVC
+namespace PMCSoft.Web
 {
     public partial class WebForm1 : BasePage
     {

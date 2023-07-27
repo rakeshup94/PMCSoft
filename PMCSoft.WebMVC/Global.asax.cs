@@ -1,5 +1,5 @@
 using Newtonsoft.Json;
-using PMCSoft.WebMVC.Models;
+using PMCSoft.Web.Models;
 using System.Web;
 using System;
 using System.Web.Mvc;
@@ -7,7 +7,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 
-namespace PMCSoft.WebMVC
+namespace PMCSoft.Web
 {
     public class MvcApplication : System.Web.HttpApplication
     {
@@ -27,7 +27,7 @@ namespace PMCSoft.WebMVC
 
 
 
-        protected void Application_PostAuthenticateRequest(Object sender, EventArgs e)
+        protected void Application_PostAuthenticateRequest(object sender, EventArgs e)
         {
 
             HttpCookie authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];

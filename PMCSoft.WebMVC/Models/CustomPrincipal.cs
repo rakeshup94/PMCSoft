@@ -3,7 +3,7 @@ using System.Linq;
 using System.Security.Principal;
 
 
-namespace PMCSoft.WebMVC.Models
+namespace PMCSoft.Web.Models
 {
     public class CustomPrincipal : IPrincipal
     {

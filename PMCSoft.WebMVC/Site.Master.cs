@@ -3,9 +3,9 @@
 
 using System;
 using System.Web.UI;
-using PMCSoft.WebMVC.Models;
+using PMCSoft.Web.Models;
 
-namespace PMCSoft.WebMVC
+namespace PMCSoft.Web
 {
     public partial class SiteMaster : BaseMasterPage
     {

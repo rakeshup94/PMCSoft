@@ -1,7 +1,7 @@
 ﻿
 using PMCSoft.Core.Interfaces.Service;
 using PMCSoft.Core.Models;
-using PMCSoft.WebMVC.Models;
+using PMCSoft.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,7 +10,7 @@ using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 
-namespace PMCSoft.WebMVC.Filters
+namespace PMCSoft.Web.Filters
 {
     public class CustomErrorFilter : HandleErrorAttribute
     {
