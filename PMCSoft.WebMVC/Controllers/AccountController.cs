@@ -16,7 +16,7 @@ using System.Web.Mvc;
 using System.Web.Security;
 using System.Configuration;
 
-namespace PMCSoft.WebMVC.Controllers
+namespace PMCSoft.Web.Controllers
 {
     public class AccountController : Controller
     {

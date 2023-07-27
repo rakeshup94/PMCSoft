@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace PMCSoft.WebMVC.Filters
+namespace PMCSoft.Web.Filters
 {
     public class PermissionFilter : ActionFilterAttribute
     {

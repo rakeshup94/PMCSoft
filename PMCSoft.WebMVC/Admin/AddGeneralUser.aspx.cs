@@ -256,7 +256,7 @@ namespace PMCSoft.Web.Admin
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
             }
         }
-    
+
         protected void LnkAddNewDept_Click(object sender, EventArgs e)
         {
             ModalPopupExtender1.Show();

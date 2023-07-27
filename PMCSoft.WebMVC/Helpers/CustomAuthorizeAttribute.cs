@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace PMCSoft.WebMVC.Helpers
+namespace PMCSoft.Web.Helpers
 {
     public class CustomAuthorizeAttribute : AuthorizeAttribute
     {

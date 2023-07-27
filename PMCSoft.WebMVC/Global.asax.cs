@@ -7,7 +7,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 
-namespace PMCSoft.WebMVC
+namespace PMCSoft.Web
 {
     public class MvcApplication : System.Web.HttpApplication
     {

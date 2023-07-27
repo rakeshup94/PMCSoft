@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace PMCSoft.WebMVC.Helpers
+namespace PMCSoft.Web.Helpers
 {
     public abstract class BaseViewPage : WebViewPage
     {

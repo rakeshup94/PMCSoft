@@ -17,7 +17,7 @@ using System.Web.Razor.Parser.SyntaxTree;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace PMCSoft.WebMVC.UserControls
+namespace PMCSoft.Web.UserControls
 {
 
     public partial class VerticleMenu : BaseUserControl
