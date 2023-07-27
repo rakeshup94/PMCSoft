@@ -16,7 +16,7 @@ namespace PMCSoft.Web.AdminReports
 {
     public partial class PrintWorkProgramme : BasePage
     {
-        BALPMC PMC = new BALPMC();
+         ();
         DataTable DT = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {

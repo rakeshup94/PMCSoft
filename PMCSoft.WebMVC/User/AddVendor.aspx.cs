@@ -24,7 +24,7 @@ namespace PMCSoft.Web.User
 {
     public partial class AddVendor : BasePage
     {
-        BALPMC PMC = new BALPMC();
+         ();
         DataTable DT = new DataTable();
         string VenID = "", TypeID = "";
         protected void Page_Load(object sender, EventArgs e)

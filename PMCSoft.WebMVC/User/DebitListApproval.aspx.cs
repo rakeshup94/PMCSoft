@@ -17,7 +17,7 @@ namespace PMCSoft.Web.User
 {
     public partial class DebitListApproval : BasePage
     {
-        BALPMC PMC = new BALPMC();
+         ();
         string AListID = string.Empty;
         protected void Page_Load(object sender, EventArgs e)
         {

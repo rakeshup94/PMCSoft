@@ -17,7 +17,7 @@ namespace PMCSoft.Web.User
 {
     public partial class AddPaymentType : BasePage
     {
-        BALPMC PMC = new BALPMC();
+         ();
         DataTable DT = new DataTable();
         string TypeID = "";
         protected void Page_Load(object sender, EventArgs e)

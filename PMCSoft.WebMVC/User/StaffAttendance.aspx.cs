@@ -17,7 +17,7 @@ namespace PMCSoft.Web.User
 {
     public partial class StaffAttendance : BasePage
     {
-        BALPMC PMC = new BALPMC();
+         ();
         DataTable DT = new DataTable();
         string AT = "";
         protected void Page_Load(object sender, EventArgs e)

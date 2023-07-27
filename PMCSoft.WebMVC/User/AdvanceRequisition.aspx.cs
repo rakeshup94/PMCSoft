@@ -16,7 +16,7 @@ namespace PMCSoft.Web.User
 {
     public partial class AdvanceRequisition : BasePage
     {
-        BALPMC PMC = new BALPMC();
+         ();
         string AListID = string.Empty;
 
         DataTable DT = new DataTable();

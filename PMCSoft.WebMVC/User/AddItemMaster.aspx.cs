@@ -17,7 +17,7 @@ namespace PMCSoft.Web.User
 {
     public partial class AddItemMaster : BasePage
     {
-        BALPMC PMC = new BALPMC();
+         ();
         DataTable DT = new DataTable();
         string ItemID = "";
         string GroupID = "";

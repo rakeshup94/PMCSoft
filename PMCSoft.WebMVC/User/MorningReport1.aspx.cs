@@ -17,7 +17,7 @@ namespace PMCSoft.Web.User
 {
     public partial class MorningReport : BasePage
     {
-        BALPMC PMC = new BALPMC();
+         ();
         DataTable DT = new DataTable();
         decimal S1 = 0, S2 = 0, S3 = 0, S4 = 0, TS1 = 0, TS2 = 0, TS3 = 0, TS4 = 0;
         string MRID = "";

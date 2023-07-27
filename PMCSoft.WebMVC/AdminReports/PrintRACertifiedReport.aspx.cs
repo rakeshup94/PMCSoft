@@ -19,7 +19,7 @@ namespace PMCSoft.Web.AdminReports
 {
     public partial class PrintRACertifiedReport : BasePage
     {
-        BALPMC PMC = new BALPMC();
+         ();
         string AListID = string.Empty;
 
         DataTable DT = new DataTable();

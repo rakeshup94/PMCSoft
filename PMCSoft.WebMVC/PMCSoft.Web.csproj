@@ -145,6 +145,111 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminReports\MaterialReciveByProject.aspx.cs">
+      <DependentUpon>MaterialReciveByProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\MaterialReciveByProject.aspx.designer.cs">
+      <DependentUpon>MaterialReciveByProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\MaterialReciveByProjectDate.aspx.cs">
+      <DependentUpon>MaterialReciveByProjectDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\MaterialReciveByProjectDate.aspx.designer.cs">
+      <DependentUpon>MaterialReciveByProjectDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\MaterialReciveProjectAndVendor.aspx.cs">
+      <DependentUpon>MaterialReciveProjectAndVendor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\MaterialReciveProjectAndVendor.aspx.designer.cs">
+      <DependentUpon>MaterialReciveProjectAndVendor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\MonthlyVWD.aspx.cs">
+      <DependentUpon>MonthlyVWD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\MonthlyVWD.aspx.designer.cs">
+      <DependentUpon>MonthlyVWD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\MorningReport.aspx.cs">
+      <DependentUpon>MorningReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\MorningReport.aspx.designer.cs">
+      <DependentUpon>MorningReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\PrintMorningReport.aspx.cs">
+      <DependentUpon>PrintMorningReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\PrintMorningReport.aspx.designer.cs">
+      <DependentUpon>PrintMorningReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\PrintRACertifiedReport.aspx.cs">
+      <DependentUpon>PrintRACertifiedReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\PrintRACertifiedReport.aspx.designer.cs">
+      <DependentUpon>PrintRACertifiedReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\PrintStaffAttendance.aspx.cs">
+      <DependentUpon>PrintStaffAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\PrintStaffAttendance.aspx.designer.cs">
+      <DependentUpon>PrintStaffAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\PrintWorkProgramme.aspx.cs">
+      <DependentUpon>PrintWorkProgramme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\PrintWorkProgramme.aspx.designer.cs">
+      <DependentUpon>PrintWorkProgramme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\RACertifiedReport.aspx.cs">
+      <DependentUpon>RACertifiedReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\RACertifiedReport.aspx.designer.cs">
+      <DependentUpon>RACertifiedReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\StaffAttendance.aspx.cs">
+      <DependentUpon>StaffAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\StaffAttendance.aspx.designer.cs">
+      <DependentUpon>StaffAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\StockDetail.aspx.cs">
+      <DependentUpon>StockDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\StockDetail.aspx.designer.cs">
+      <DependentUpon>StockDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\ViewDailyMorningReport.aspx.cs">
+      <DependentUpon>ViewDailyMorningReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\ViewDailyMorningReport.aspx.designer.cs">
+      <DependentUpon>ViewDailyMorningReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\ViewDailyStaffAttendance.aspx.cs">
+      <DependentUpon>ViewDailyStaffAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\ViewDailyStaffAttendance.aspx.designer.cs">
+      <DependentUpon>ViewDailyStaffAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports\WorkProgramme.aspx.cs">
+      <DependentUpon>WorkProgramme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReports\WorkProgramme.aspx.designer.cs">
+      <DependentUpon>WorkProgramme.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AddBOQ.aspx.cs">
       <DependentUpon>AddBOQ.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -639,8 +744,170 @@
     <Compile Include="UserControls\VerticleMenu.ascx.designer.cs">
       <DependentUpon>VerticleMenu.ascx</DependentUpon>
     </Compile>
+    <Compile Include="User\AddDebitList.aspx.cs">
+      <DependentUpon>AddDebitList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AddDebitList.aspx.designer.cs">
+      <DependentUpon>AddDebitList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\AddItemMaster.aspx.cs">
+      <DependentUpon>AddItemMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AddItemMaster.aspx.designer.cs">
+      <DependentUpon>AddItemMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\AddItemOfWork.aspx.cs">
+      <DependentUpon>AddItemOfWork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AddItemOfWork.aspx.designer.cs">
+      <DependentUpon>AddItemOfWork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\AddPaymentType.aspx.cs">
+      <DependentUpon>AddPaymentType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AddPaymentType.aspx.designer.cs">
+      <DependentUpon>AddPaymentType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\AddVendor.aspx.cs">
+      <DependentUpon>AddVendor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AddVendor.aspx.designer.cs">
+      <DependentUpon>AddVendor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\AddWorkProgramme1.aspx.cs">
+      <DependentUpon>AddWorkProgramme1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AddWorkProgramme1.aspx.designer.cs">
+      <DependentUpon>AddWorkProgramme1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\AdvanceRequisition.aspx.cs">
+      <DependentUpon>AdvanceRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AdvanceRequisition.aspx.designer.cs">
+      <DependentUpon>AdvanceRequisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\DebitListApproval.aspx.cs">
+      <DependentUpon>DebitListApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\DebitListApproval.aspx.designer.cs">
+      <DependentUpon>DebitListApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Home1.aspx.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Home1.aspx.designer.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\issuepdcrequest.aspx.cs">
+      <DependentUpon>issuepdcrequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\issuepdcrequest.aspx.designer.cs">
+      <DependentUpon>issuepdcrequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\MaterialReceive.aspx.cs">
+      <DependentUpon>MaterialReceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\MaterialReceive.aspx.designer.cs">
+      <DependentUpon>MaterialReceive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\MorningReport1.aspx.cs">
+      <DependentUpon>MorningReport1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\MorningReport1.aspx.designer.cs">
+      <DependentUpon>MorningReport1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\NewRABILL.aspx.cs">
+      <DependentUpon>NewRABILL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\NewRABILL.aspx.designer.cs">
+      <DependentUpon>NewRABILL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\PaymentReceipt.aspx.cs">
+      <DependentUpon>PaymentReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\PaymentReceipt.aspx.designer.cs">
+      <DependentUpon>PaymentReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ProjectDetail.aspx.cs">
+      <DependentUpon>ProjectDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ProjectDetail.aspx.designer.cs">
+      <DependentUpon>ProjectDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\RABILLCertified.aspx.cs">
+      <DependentUpon>RABILLCertified.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\RABILLCertified.aspx.designer.cs">
+      <DependentUpon>RABILLCertified.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\RABILLSubmitted.aspx.cs">
+      <DependentUpon>RABILLSubmitted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\RABILLSubmitted.aspx.designer.cs">
+      <DependentUpon>RABILLSubmitted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\StaffAttendance.aspx.cs">
+      <DependentUpon>StaffAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\StaffAttendance.aspx.designer.cs">
+      <DependentUpon>StaffAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ViewEditWorkProgramme1.aspx.cs">
+      <DependentUpon>ViewEditWorkProgramme1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ViewEditWorkProgramme1.aspx.designer.cs">
+      <DependentUpon>ViewEditWorkProgramme1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\WorkProgrammeApproval.aspx.cs">
+      <DependentUpon>WorkProgrammeApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\WorkProgrammeApproval.aspx.designer.cs">
+      <DependentUpon>WorkProgrammeApproval.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminReports\MaterialReciveByProject.aspx" />
+    <Content Include="AdminReports\MaterialReciveByProjectDate.aspx" />
+    <Content Include="AdminReports\MaterialReciveProjectAndVendor.aspx" />
+    <Content Include="AdminReports\MonthlyVWD.aspx" />
+    <Content Include="AdminReports\MorningReport.aspx" />
+    <Content Include="AdminReports\PrintMorningReport.aspx" />
+    <Content Include="AdminReports\PrintRACertifiedReport.aspx" />
+    <Content Include="AdminReports\PrintStaffAttendance.aspx" />
+    <Content Include="AdminReports\PrintWorkProgramme.aspx" />
+    <Content Include="AdminReports\RACertifiedReport.aspx" />
+    <Content Include="AdminReports\StaffAttendance.aspx" />
+    <Content Include="AdminReports\StockDetail.aspx" />
+    <Content Include="AdminReports\ViewDailyMorningReport.aspx" />
+    <Content Include="AdminReports\ViewDailyStaffAttendance.aspx" />
+    <Content Include="AdminReports\WorkProgramme.aspx" />
     <Content Include="Admin\AddBOQ.aspx" />
     <Content Include="Admin\aatest.aspx" />
     <Content Include="Admin\AddGeneralUser.aspx" />
@@ -2771,6 +3038,27 @@
     <Content Include="Site.Master" />
     <Content Include="Upload\aaa114201417846.txt" />
     <Content Include="Upload\aaa114201417855.txt" />
+    <Content Include="User\AddDebitList.aspx" />
+    <Content Include="User\AddItemMaster.aspx" />
+    <Content Include="User\AddItemOfWork.aspx" />
+    <Content Include="User\AddPaymentType.aspx" />
+    <Content Include="User\AddVendor.aspx" />
+    <Content Include="User\AddWorkProgramme1.aspx" />
+    <Content Include="User\AdvanceRequisition.aspx" />
+    <Content Include="User\ChangePassword.aspx" />
+    <Content Include="User\DebitListApproval.aspx" />
+    <Content Include="User\Home1.aspx" />
+    <Content Include="User\issuepdcrequest.aspx" />
+    <Content Include="User\MaterialReceive.aspx" />
+    <Content Include="User\MorningReport1.aspx" />
+    <Content Include="User\NewRABILL.aspx" />
+    <Content Include="User\PaymentReceipt.aspx" />
+    <Content Include="User\ProjectDetail.aspx" />
+    <Content Include="User\RABILLCertified.aspx" />
+    <Content Include="User\RABILLSubmitted.aspx" />
+    <Content Include="User\StaffAttendance.aspx" />
+    <Content Include="User\ViewEditWorkProgramme1.aspx" />
+    <Content Include="User\WorkProgrammeApproval.aspx" />
     <Content Include="Views\Navigation\CreateMapping.cshtml" />
     <Content Include="Views\Navigation\_menuList.cshtml" />
     <Content Include="Web.config" />
