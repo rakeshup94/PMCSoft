@@ -10,6 +10,7 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
+using PMCSoft.Core.Common;
 using PMCSoft.Infrastructure.Data;
 
 
@@ -17,7 +18,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class ViewUpdateProject : BasePage
     {
-          ();
+          
         DataTable DT = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -99,7 +100,7 @@ namespace PMCSoft.Web.Admin
         }
         public string EncryptQueryString(string strQueryString)
         {
-               ();
+             
             return  strQueryString.Encrypt();
         }
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)

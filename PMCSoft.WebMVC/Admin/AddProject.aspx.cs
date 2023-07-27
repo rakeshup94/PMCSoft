@@ -18,7 +18,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class AddProject : BasePage
     {
-          ();
+         
         DataTable DT = new DataTable();
         string ProjID = string.Empty;
         protected void Page_Load(object sender, EventArgs e)

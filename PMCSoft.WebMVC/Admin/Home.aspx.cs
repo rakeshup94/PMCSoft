@@ -18,7 +18,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class Home : BasePage
     {
-          ();
+          
         DataTable DT = new DataTable();
         string P = "";
         protected void Page_Load(object sender, EventArgs e)

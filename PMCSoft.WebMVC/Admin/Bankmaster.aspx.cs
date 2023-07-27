@@ -17,9 +17,9 @@ namespace PMCSoft.Web.Admin
 {
     public partial class Bankmaster : BasePage
     {
-          ();
+          
         DataTable DT = new DataTable();
-        // string TypeID = "";
+     
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)

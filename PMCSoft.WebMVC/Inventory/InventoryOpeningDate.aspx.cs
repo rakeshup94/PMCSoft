@@ -17,7 +17,7 @@ namespace PMCSoft.Web.Inventory
 {
     public partial class InventoryOpeningDate : BasePage
     {
-        BALPMC PMC = new BALPMC();
+        
         string ItemID = "";
         protected void Page_Load(object sender, EventArgs e)
         {

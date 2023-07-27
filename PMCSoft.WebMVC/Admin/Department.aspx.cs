@@ -17,7 +17,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class Department : BasePage
     {
-          ();
+         
         DataTable DT = new DataTable();
         string DeptID = "";
         protected void Page_Load(object sender, EventArgs e)

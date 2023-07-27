@@ -24,7 +24,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class ViewUser : BasePage
     {
-          ();
+          
         DataTable DT = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {

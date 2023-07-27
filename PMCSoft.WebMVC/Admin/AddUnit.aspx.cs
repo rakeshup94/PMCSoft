@@ -17,7 +17,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class AddUnit : BasePage
     {
-          ();
+          
         DataTable DT = new DataTable();
         string UnitID = "";
         protected void Page_Load(object sender, EventArgs e)

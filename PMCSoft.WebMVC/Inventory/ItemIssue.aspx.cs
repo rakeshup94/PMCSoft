@@ -16,7 +16,7 @@ namespace PMCSoft.Web.Inventory
 {
     public partial class ItemIssue : BasePage
     {
-        BALPMC PMC = new BALPMC();
+       
         string AListID = string.Empty;
 
         DataTable DT = new DataTable();

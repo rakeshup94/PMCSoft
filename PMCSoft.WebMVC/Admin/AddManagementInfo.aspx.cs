@@ -18,7 +18,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class AddManagementInfo : BasePage
     {
-          ();
+          
         DataTable DT = new DataTable();
         string DeptID = "";
         string DesgID = "";

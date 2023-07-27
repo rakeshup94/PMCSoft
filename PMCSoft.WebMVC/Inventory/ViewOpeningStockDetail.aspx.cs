@@ -17,7 +17,7 @@ namespace PMCSoft.Web.Inventory
 {
     public partial class ViewOpeningStockDetail : BasePage
     {
-        BALPMC PMC = new BALPMC();
+         
         DataTable DT = new DataTable();
         string ItemID = "";
         protected void Page_Load(object sender, EventArgs e)

@@ -16,7 +16,7 @@ namespace PMCSoft.Web
 
     public partial class Login : BasePage
     {
-          ();
+         
         DataTable DT = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {

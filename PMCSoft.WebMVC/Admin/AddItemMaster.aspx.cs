@@ -17,7 +17,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class AddItemMaster : BasePage
     {
-          ();
+          
         DataTable DT = new DataTable();
         string ItemID = "";
         string GroupID = "";

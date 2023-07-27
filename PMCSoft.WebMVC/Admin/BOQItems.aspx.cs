@@ -17,7 +17,7 @@ namespace PMCSoft.Web.Admin
 {
     public partial class BOQItems : BasePage
     {
-          ();
+         
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
