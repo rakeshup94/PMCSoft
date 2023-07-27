@@ -471,6 +471,34 @@
     </Compile>
     <Compile Include="Helpers\BaseViewPage.cs" />
     <Compile Include="Helpers\CustomAuthorizeAttribute.cs" />
+    <Compile Include="Inventory\EnterStockDetails.aspx.cs">
+      <DependentUpon>EnterStockDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\EnterStockDetails.aspx.designer.cs">
+      <DependentUpon>EnterStockDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\InventoryOpeningDate.aspx.cs">
+      <DependentUpon>InventoryOpeningDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\InventoryOpeningDate.aspx.designer.cs">
+      <DependentUpon>InventoryOpeningDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ItemIssue.aspx.cs">
+      <DependentUpon>ItemIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\ItemIssue.aspx.designer.cs">
+      <DependentUpon>ItemIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ViewOpeningStockDetail.aspx.cs">
+      <DependentUpon>ViewOpeningStockDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\ViewOpeningStockDetail.aspx.designer.cs">
+      <DependentUpon>ViewOpeningStockDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -576,6 +604,10 @@
     <Content Include="images\minimal-checkbox.png" />
     <Content Include="images\minimal-radiobutton.png" />
     <Content Include="images\profile.jpg" />
+    <Content Include="Inventory\EnterStockDetails.aspx" />
+    <Content Include="Inventory\InventoryOpeningDate.aspx" />
+    <Content Include="Inventory\ItemIssue.aspx" />
+    <Content Include="Inventory\ViewOpeningStockDetail.aspx" />
     <Content Include="lib\bootstrap-hover-dropdown\bootstrap-hover-dropdown.js" />
     <Content Include="lib\bootstrap-hover-dropdown\bootstrap-hover-dropdown.min.js" />
     <Content Include="lib\bootstrap-icons\bootstrap-icons.svg" />
