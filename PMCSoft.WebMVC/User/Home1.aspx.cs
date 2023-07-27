@@ -13,12 +13,13 @@ using System.Xml.Linq;
 using System.IO;
  
 using PMCSoft.Infrastructure.Data;
+using PMCSoft.Core.Common;
 
 namespace PMCSoft.Web.User
 {
     public partial class Home : BasePage
     {
-         ();
+         
         DataTable DT = new DataTable();
         string P = "";
         protected void Page_Load(object sender, EventArgs e)
@@ -147,12 +148,12 @@ namespace PMCSoft.Web.User
         }
         private string DecryptQueryString(string strQueryString)
         {
-               ();
+              
             return  strQueryString.Decrypt();
         }
         public string EncryptQueryString(string strQueryString)
         {
-               ();
+               
             return  strQueryString.Encrypt();
         }
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)

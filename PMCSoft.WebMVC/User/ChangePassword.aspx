@@ -27,8 +27,7 @@
                            
                                     <asp:TextBox CssClass="form-control" ID="txtOldPassword" runat="server" TextMode="Password"></asp:TextBox>
                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" FilterMode="InvalidChars"
-                                        InvalidChars="&lt;&gt;" TargetControlID="txtOldPassword">
-                                    </cc1:FilteredTextBoxExtender>
+                                        InvalidChars="&lt;&gt;" TargetControlID="txtOldPassword"></cc1:FilteredTextBoxExtender>
                                 </div>
                             </div>
 
@@ -38,8 +37,7 @@
                             
                                     <asp:TextBox CssClass="form-control" ID="txtNewPassword" runat="server" TextMode="Password"></asp:TextBox>
                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" FilterMode="InvalidChars"
-                                        InvalidChars="&lt;&gt;" TargetControlID="txtNewPassword">
-                                    </cc1:FilteredTextBoxExtender>
+                                        InvalidChars="&lt;&gt;" TargetControlID="txtNewPassword"></cc1:FilteredTextBoxExtender>
 
 
 
@@ -53,8 +51,7 @@
                         
                                     <asp:TextBox CssClass="form-control" ID="txtReType" runat="server" TextMode="Password"></asp:TextBox>
                                     <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" FilterMode="InvalidChars"
-                                        InvalidChars="&lt;&gt;" TargetControlID="txtReType">
-                                    </cc1:FilteredTextBoxExtender>
+                                        InvalidChars="&lt;&gt;" TargetControlID="txtReType"></cc1:FilteredTextBoxExtender>
                                 </div>
                             </div>
                         </div>

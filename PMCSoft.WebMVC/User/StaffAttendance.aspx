@@ -17,13 +17,10 @@
             <div class="page-content">
                 <div class="card">
                     <div class="card-body">
-
                         <div class="row">
-
                             <div class="col-lg-4">
                                 <div class="mb-3">
-                                    Project
-                         
+                                    Project                         
                                     <asp:DropDownList CssClass="form-select" ID="ddlProject1" runat="server" AutoPostBack="True"
                                         OnSelectedIndexChanged="ddlProject1_SelectedIndexChanged">
                                     </asp:DropDownList>
@@ -31,8 +28,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="mb-3">
-                                    Date
-                          
+                                    Date                          
                                     <asp:Label ID="lblDate1" class="form-control" runat="server"></asp:Label>
                                     <asp:HiddenField ID="HiddenField2" runat="server" />
                                 </div>
@@ -111,7 +107,7 @@
                     </div>
                 </div>
             </div>
-         
+
         </ContentTemplate>
     </asp:UpdatePanel>
 </asp:Content>

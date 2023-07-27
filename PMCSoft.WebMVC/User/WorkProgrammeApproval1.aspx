@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Inherits="PMCSoft.Web.User.WorkProgrammeApproval"
-    CodeBehind="WorkProgrammeApproval.aspx.cs" %>
+    CodeBehind="WorkProgrammeApproval1.aspx.cs" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">

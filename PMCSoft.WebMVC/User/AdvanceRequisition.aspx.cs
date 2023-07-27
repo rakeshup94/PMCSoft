@@ -16,7 +16,7 @@ namespace PMCSoft.Web.User
 {
     public partial class AdvanceRequisition : BasePage
     {
-         ();
+         
         string AListID = string.Empty;
 
         DataTable DT = new DataTable();

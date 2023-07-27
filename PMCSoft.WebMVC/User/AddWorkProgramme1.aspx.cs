@@ -18,7 +18,7 @@ namespace PMCSoft.Web.User
 {
     public partial class AddWorkProgramme : BasePage
     {
-         ();
+       
         DataTable DT = new DataTable();
         string No = "", WPID = "";
         protected void Page_Load(object sender, EventArgs e)

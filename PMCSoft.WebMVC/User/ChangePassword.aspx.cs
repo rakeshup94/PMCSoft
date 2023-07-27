@@ -14,39 +14,18 @@ using System.Text;
 using System.Collections.ObjectModel;
 using System.Text.RegularExpressions;
 using System.Security.Cryptography;
- 
+
 using PMCSoft.Infrastructure.Data;
 
 namespace PMCSoft.Web.User
 {
     public partial class ChangePassword : BasePage
     {
-         ();
+
         DataTable DT = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
-            {
-                if (!IsPostBack)
-                {
-                    if (Session["UserId"] == null || Session["UserName"] == null || Session["CompID"] == null || Session["AName"] == null || Session["UserEmail"] == null || Session["AID"] == null || Session["PRJID"] == null)
-                    {
-                        Session.Clear();
-                        Session.Abandon();
-                        Session.RemoveAll();
-                        Response.Redirect("~/Login.aspx?Value=" + "2");
-                    }
-                    else
-                    {
 
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                string scripts = "alert('Some error occurs.');";
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", scripts, true);
-            }
         }
         protected void btnSave_Click(object sender, EventArgs e)
         {

@@ -24,7 +24,7 @@ namespace PMCSoft.Web.User
 {
     public partial class AddDebitList : BasePage
     {
-         ();
+         
         string ListID = string.Empty, VenID = "";
         DataTable DT = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
