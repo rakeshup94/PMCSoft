@@ -667,19 +667,19 @@
     <Compile Include="User\StaffAttendance.aspx.designer.cs">
       <DependentUpon>StaffAttendance.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User\ViewEditWorkProgramme1.aspx.cs">
-      <DependentUpon>ViewEditWorkProgramme1.aspx</DependentUpon>
+    <Compile Include="User\ViewEditWorkProgramme.aspx.cs">
+      <DependentUpon>ViewEditWorkProgramme.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\ViewEditWorkProgramme1.aspx.designer.cs">
-      <DependentUpon>ViewEditWorkProgramme1.aspx</DependentUpon>
+    <Compile Include="User\ViewEditWorkProgramme.aspx.designer.cs">
+      <DependentUpon>ViewEditWorkProgramme.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User\WorkProgrammeApproval1.aspx.cs">
-      <DependentUpon>WorkProgrammeApproval1.aspx</DependentUpon>
+    <Compile Include="User\WorkProgrammeApproval.aspx.cs">
+      <DependentUpon>WorkProgrammeApproval.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\WorkProgrammeApproval1.aspx.designer.cs">
-      <DependentUpon>WorkProgrammeApproval1.aspx</DependentUpon>
+    <Compile Include="User\WorkProgrammeApproval.aspx.designer.cs">
+      <DependentUpon>WorkProgrammeApproval.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -2824,8 +2824,8 @@
     <Content Include="User\RABILLCertified.aspx" />
     <Content Include="User\RABILLSubmitted.aspx" />
     <Content Include="User\StaffAttendance.aspx" />
-    <Content Include="User\ViewEditWorkProgramme1.aspx" />
-    <Content Include="User\WorkProgrammeApproval1.aspx" />
+    <Content Include="User\ViewEditWorkProgramme.aspx" />
+    <Content Include="User\WorkProgrammeApproval.aspx" />
     <Content Include="Views\Navigation\CreateMapping.cshtml" />
     <Content Include="Views\Navigation\_menuList.cshtml" />
     <Content Include="Web.config" />

@@ -17,7 +17,7 @@
             </ItemTemplate>
                  <ItemStyle BackColor="#ECF5F8"     HorizontalAlign="Justify" BorderStyle="None"/>
                <%--  <AlternatingItemStyle BackColor="#e"    Height="165px"/>
-        --%>    <HeaderStyle BackColor="#ECF5F8" ForeColor="Black" Font-Bold="true" />
+        --%>    <HeaderStyle BackColor="#ECF5F8" ForeColor="Black"   />
         </asp:DataList>
         </div>
 </marquee>

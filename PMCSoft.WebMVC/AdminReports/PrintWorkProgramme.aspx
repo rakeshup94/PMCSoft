@@ -130,7 +130,7 @@
                                                 </HeaderTemplate>
                                                 <ItemTemplate>
                                                     <div class="row" >
-                                                        <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
+                                                        <div class="col-lg-4"   >
                                                             <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                             <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                             <asp:HiddenField ID="hdnItemID" runat="server" Value='<%#Bind("ItemID") %>' />
@@ -141,19 +141,19 @@
                                                         <div class="col-lg-4"  style="border: 1px solid black; text-align: left;">
                                                             <asp:Label ID="lblArea" runat="server" Text='<%#Bind("Area") %>'></asp:Label>
                                                         </div>
-                                                        <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
+                                                        <div class="col-lg-4"   >
                                                             <asp:Label ID="lblSK" runat="server" Width="50px" Text='<%#Bind("LabourSK") %>'>
                                                             </asp:Label>
                                                         </div>
-                                                        <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
+                                                        <div class="col-lg-4"   >
                                                             <asp:Label ID="lblSEMI" runat="server" Width="50px" Text='<%#Bind("LabourSEMI") %>'>
                                                             </asp:Label>
                                                         </div>
-                                                        <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
+                                                        <div class="col-lg-4"   >
                                                             <asp:Label ID="lblUNSK" runat="server" Width="50px" Text='<%#Bind("LabourUNSK") %>'>
                                                             </asp:Label>
                                                         </div>
-                                                        <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
+                                                        <div class="col-lg-4"   >
                                                             <asp:Label ID="lblOT" runat="server" Width="50px" Text='<%#Bind("LabourOT") %>'>
                                                             </asp:Label>
                                                         </div>
@@ -165,9 +165,9 @@
                                                 </ItemTemplate>
                                                 <FooterTemplate>
                                                     <div class="row" >
-                                                        <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8;">
+                                                        <div class="col-lg-4"   >
                                                         </div>
-                                                        <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8;">
+                                                        <div class="col-lg-4"   >
                                                         </div>
                                                         <div class="col-lg-4"  style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                             font-weight: bold;">

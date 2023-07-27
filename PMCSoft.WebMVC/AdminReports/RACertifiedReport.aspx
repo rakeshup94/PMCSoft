@@ -128,23 +128,23 @@
                                                         </HeaderTemplate>
                                                         <ItemTemplate>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
+                                                                <div class="col-lg-4"   >
                                                                     <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />
                                                                     <asp:Label ID="RaBillNo" runat="server" Text='<%#Bind("RaBillNo") %>'></asp:Label>
                                                                 </div>
-                                                                <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
+                                                                <div class="col-lg-4"   >
                                                                     <asp:Label ID="Billperiod" runat="server" Text='<%#Bind("Billperiod") %>'></asp:Label>
                                                                 </div>
-                                                                <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
+                                                                <div class="col-lg-4"   >
                                                                     <asp:Label ID="Billsubmitteddate" runat="server" Text='<%#Bind("Billsubmitteddate") %>'>
                                                                     </asp:Label>
                                                                 </div>
                                                                 
-                                                                <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
+                                                                <div class="col-lg-4"   >
                                                                     <asp:Label ID="BillCertificationDate" runat="server" Text='<%#Bind("BillCertificationDate") %>'>
                                                                     </asp:Label>
                                                                 </div>
-                                                                <div class="col-lg-4"  style="border: 1px solid black; text-align: center;">
+                                                                <div class="col-lg-4"   >
                                                                     <asp:Label ID="BillAmtRABill" runat="server"   Text='<%#Bind("BillAmtRABill") %>'>
                                                                     </asp:Label>
                                                                 </div>
@@ -244,9 +244,9 @@
                                                         </ItemTemplate>
                                                         <FooterTemplate>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8;">
+                                                                <div class="col-lg-4"   >
                                                                 </div>
-                                                                <div class="col-lg-4"  style="border: 1px solid black; background-color: #D8D8D8;">
+                                                                <div class="col-lg-4"   >
                                                                 </div>
                                                                 <div class="col-lg-4"  style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                     font-weight: bold;">

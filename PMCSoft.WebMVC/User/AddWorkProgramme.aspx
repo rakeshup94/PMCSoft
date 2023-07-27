@@ -122,8 +122,7 @@
                                             <ItemTemplate>
                                                 <tr>
                                                     <td>
-                                                        <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo")
-                    %>'></asp:Label>
+                                                        <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo")  %>'></asp:Label>
                                                     </td>
                                                     <td>
                                                         <asp:DropDownList CssClass="form-select"
