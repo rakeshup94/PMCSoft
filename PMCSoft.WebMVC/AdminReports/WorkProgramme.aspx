@@ -39,7 +39,7 @@
                                     <asp:Panel ID="Panel1" runat="server"    Visible="false">
                                         <div class="row"   >
                                             <div class="row" >
-                                                <div class="col-lg-4"  style="white-space: nowrap;">
+                                                <div class="col-lg-4"   >
                                                     WP Date:
                                                 </div>
                                                 <div class="col-lg-4" >
@@ -59,13 +59,13 @@
                                                 </div>
                                             </div>
                                             <div class="row" >
-                                                <div class="col-lg-4"  style="white-space: nowrap;">
+                                                <div class="col-lg-4"   >
                                                     No.:
                                                 </div>
                                                 <div class="col-lg-4" >
                                                     <asp:Label ID="lblNumber" runat="server"  ></asp:Label>
                                                 </div>
-                                                <div class="col-lg-4"  style="white-space: nowrap;">
+                                                <div class="col-lg-4"   >
                                                     ENG. In Charge:
                                                 </div>
                                                 <div class="col-lg-4" >

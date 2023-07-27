@@ -15,11 +15,13 @@ using PMCSoft.Infrastructure.Data;
 using System.Text;
 
 using System.IO;
+using PMCSoft.Core.Common;
+
 namespace PMCSoft.Web.AdminReports
 {
     public partial class PrintRACertifiedReport : BasePage
     {
-         ();
+       
         string AListID = string.Empty;
 
         DataTable DT = new DataTable();
@@ -65,12 +67,12 @@ namespace PMCSoft.Web.AdminReports
         }
         private string DecryptQueryString(string strQueryString)
         {
-               ();
+            
             return  strQueryString.Decrypt();
         }
         public string EncryptQueryString(string strQueryString)
         {
-               ();
+            
             return  strQueryString.Encrypt();
         }
 

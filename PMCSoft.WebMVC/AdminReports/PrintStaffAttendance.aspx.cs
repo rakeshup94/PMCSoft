@@ -1,22 +1,14 @@
-﻿using System;
-using System.Collections;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.HtmlControls;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Xml.Linq;
- 
+﻿using PMCSoft.Core.Common;
 using PMCSoft.Infrastructure.Data;
+using System;
+using System.Data;
+using System.Web;
+using System.Web.UI;
 namespace PMCSoft.Web.AdminReports
 {
     public partial class PrintStaffAttendance : BasePage
     {
-         ();
+         
         DataTable DT = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -76,12 +68,12 @@ namespace PMCSoft.Web.AdminReports
         //}
         private string DecryptQueryString(string strQueryString)
         {
-               ();
+              
             return  strQueryString.Decrypt();
         }
         public string EncryptQueryString(string strQueryString)
         {
-               ();
+            
             return  strQueryString.Encrypt();
         }
         public void GetValue(string PRJID, string Date)

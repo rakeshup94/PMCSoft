@@ -17,7 +17,6 @@ namespace PMCSoft.Web.AdminReports
 {
     public partial class MaterialReciveByProjectDate : BasePage
     {
-         ();
         string AListID = string.Empty;
 
         DataTable DT = new DataTable();

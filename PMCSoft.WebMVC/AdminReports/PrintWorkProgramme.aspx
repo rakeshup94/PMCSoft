@@ -82,7 +82,7 @@
                                         </div>
                                     </div>
                                     <div class="row" >
-                                        <div class="col-lg-4"  style="white-space: nowrap;">
+                                        <div class="col-lg-4"   >
                                         </div>
                                        
                                     </div>

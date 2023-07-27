@@ -12,11 +12,13 @@ using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using PMCSoft.Infrastructure.Data;
 using System.Text;
+using PMCSoft.Core.Common;
+
 namespace PMCSoft.Web.AdminReports
 {
     public partial class RACertifiedReport : BasePage
     {
-         ();
+         
         string AListID = string.Empty;
 
         DataTable DT = new DataTable();
@@ -404,12 +406,12 @@ namespace PMCSoft.Web.AdminReports
         }
         private string DecryptQueryString(string strQueryString)
         {
-               ();
+             
             return  strQueryString.Decrypt();
         }
         public string EncryptQueryString(string strQueryString)
         {
-               ();
+           
             return  strQueryString.Encrypt();
         }
     }

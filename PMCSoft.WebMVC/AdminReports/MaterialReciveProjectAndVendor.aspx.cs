@@ -17,7 +17,7 @@ namespace PMCSoft.Web.AdminReports
 {
     public partial class MaterialReciveProjectAndVendor : BasePage
     {
-         ();
+         
         string AListID = string.Empty;
 
         DataTable DT = new DataTable();
