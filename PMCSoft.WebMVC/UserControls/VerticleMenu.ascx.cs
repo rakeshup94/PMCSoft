@@ -31,56 +31,57 @@ namespace PMCSoft.Web.UserControls
         {
             if (!this.IsPostBack)
             {
-                var result = this.navSrv.GetUserMenu(User.UserId, true);
-                this.rptCategories.DataSource = result;
+                this.models = this.navSrv.GetUserMenu(User.UserId, true).ToList();
+                this.rptCategories.DataSource = this.models;
                 this.rptCategories.DataBind();
             }
         }
         protected void rptMenu_OnItemBound(object sender, RepeaterItemEventArgs e)
         {
+
             if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
             {
-                if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+                if (this.models != null)
                 {
-                    if (this.models != null)
+                    NavModel drv = e.Item.DataItem as NavModel;
+                    string parentId = drv.MenuId.ToString();
+                    string parentTitle = drv.MenuName.ToString();
+                    NavModel _menu = this.models.Where(x => x.MenuId == drv.MenuId).FirstOrDefault();
+                    if (_menu.SubMenu.Count() > 0)
                     {
-                        NavModel drv = e.Item.DataItem as NavModel;
-                        string parentId = drv.MenuId.ToString();
-                        string parentTitle = drv.MenuName.ToString();
-                        NavModel _menu = this.models.Where(x => x.MenuId == drv.MenuId).FirstOrDefault();
-                        if (_menu.MenuList.Count() > 0)
+                        StringBuilder sb = new StringBuilder();
+                        sb.Append("<ul id='" + parentId + "' class='nav nav-second-level'>");
+                        foreach (var item in _menu.SubMenu)
                         {
-                            StringBuilder sb = new StringBuilder();
-                            sb.Append("<ul id='" + parentId + "' class='nav nav-second-level'>");
-                            foreach (var item in _menu.SubMenu)
+                            string childId = item.MenuId.ToString();
+                            string childTitle = item.MenuName.ToString();
+                            IEnumerable<NavModel> childRow = item.SubMenu;
+                            item.NavigateURL = this.GetItemUrl(item.NavigateURL);
+                            sb.Append("<li>");
+                            if (childRow.Count() > 0)
                             {
-                                string childId = item.MenuId.ToString();
-                                string childTitle = item.MenuName.ToString();
-                                IEnumerable<NavModel> childRow = item.SubMenu;
-                                item.NavigateURL = this.GetItemUrl(item.NavigateURL);
-                                sb.Append("<li>");
-                                if (childRow.Count() > 0)
-                                {
-                                    sb.Append("<a class='second-level-heading' href='" + item.NavigateURL + "'>");
-                                    sb.Append("<span class='submenu-title'>" + item.MenuName.FirstCharToUpper() + "</span>");
-                                    sb.Append("<span class='fa arrow  text-white'></span></a>");
-                                    CreateChild(sb, childId, childTitle, childRow);
-                                    sb.Append("</li>");
-                                }
-                                else
-                                {
-                                    sb.Append("<a href='" + item.NavigateURL + "'>");
-                                    sb.Append("<span class='submenu-title'>" + item.MenuName.FirstCharToUpper() + "</span>");
-                                    sb.Append("</a>");
-                                    sb.Append("</li>");
-                                }
+                                sb.Append("<a class='second-level-heading' href='" + item.NavigateURL + "'>");
+                                sb.Append("<i class='" + item.MenuIcon + "'></i>");
+                                sb.Append("<span class='submenu-title'>" + item.MenuName.FirstCharToUpper() + "</span>");
+                                sb.Append("<span class='fa arrow  text-white'></span></a>");
+                                CreateChild(sb, childId, childTitle, childRow);
+                                sb.Append("</li>");
                             }
-                            sb.Append("</ul>");
-                            (e.Item.FindControl("ltrlSubMenu") as Literal).Text = sb.ToString();
+                            else
+                            {
+                                sb.Append("<a href='" + item.NavigateURL + "'>");
+                                sb.Append("<i class='" + item.MenuIcon + "'></i>");
+                                sb.Append("<span class='submenu-title'>" + item.MenuName.FirstCharToUpper() + "</span>");
+                                sb.Append("</a>");
+                                sb.Append("</li>");
+                            }
                         }
+                        sb.Append("</ul>");
+                        (e.Item.FindControl("ltrlSubMenu") as Literal).Text = sb.ToString();
                     }
                 }
             }
+
         }
 
         private StringBuilder CreateChild(StringBuilder sb, string parentId, string parentTitle, IEnumerable<NavModel> parentRows)
@@ -97,6 +98,7 @@ namespace PMCSoft.Web.UserControls
                     if (childRow.Count() > 0)
                     {
                         sb.Append("<li><a class='second-level-heading' href='" + item.NavigateURL + "'>");
+                        sb.Append("<i class='" + item.MenuIcon + "'></i>");
                         sb.Append("<span class='submenu-title'>" + item.MenuName.FirstCharToUpper() + "</span>");
                         sb.Append("<span class='fa arrow  text-white'></span></a>");
                         CreateChild(sb, childId, childTitle, childRow);
@@ -105,6 +107,7 @@ namespace PMCSoft.Web.UserControls
                     else
                     {
                         sb.Append("<li><a href='" + item.NavigateURL + "'>");
+                        sb.Append("<i class='" + item.MenuIcon + "'></i>");
                         sb.Append("<span class='submenu-title'>" + item.MenuName.FirstCharToUpper() + "</span>");
                         sb.Append("</a>");
                         sb.Append("</li>");
@@ -133,7 +136,7 @@ namespace PMCSoft.Web.UserControls
                 {
 
 
-                    return Page.ResolveUrl(input.Replace("../", "~/"));
+                    return Page.ResolveUrl("~/"+input);
 
 
                 }
