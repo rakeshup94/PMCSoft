@@ -280,6 +280,7 @@
                                     <div class="col-lg-12">
                                         <div class="table-responsive">
                                             <table class="table table-hover table-striped table-bordered table-advanced tablesorter mbn">
+                                               
                                                 <asp:Repeater ID="Repeater1" runat="server" OnItemDataBound="Repeater1_ItemDataBound">
                                                     <HeaderTemplate>
                                                         <thead>
@@ -310,7 +311,7 @@
                                                         <tbody>
                                                     </HeaderTemplate>
                                                     <ItemTemplate>
-                                                        <tr class="row">
+                                                        <tr>
                                                             <td>
                                                                 <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                                 <asp:HiddenField ID="hdnTransID" runat="server" Value='<%#Bind("TransID") %>' />

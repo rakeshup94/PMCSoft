@@ -1,7 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="PMCSoft.Web.AdminReports.PrintStaffAttendance"
     MasterPageFile="~/Site.Master" CodeBehind="PrintStaffAttendance.aspx.cs" %>
 
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
@@ -97,13 +96,3 @@
         </div>
     </div>
 </asp:Content>
-
-
-
-
-
-
-
-
-
-

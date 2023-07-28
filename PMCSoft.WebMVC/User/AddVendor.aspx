@@ -60,7 +60,7 @@
                                                 <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                                 <asp:HiddenField ID="HiddenField1" runat="server" Value='<%#Bind("VendorID") %>' />
                                             </ItemTemplate>
-                                            <ItemStyle Width="30px" HorizontalAlign="Center" />
+                                            <ItemStyle   HorizontalAlign="Center" />
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Party / Vendor Name">
                                             <ItemTemplate>

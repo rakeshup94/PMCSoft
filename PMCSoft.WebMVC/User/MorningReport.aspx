@@ -108,7 +108,7 @@
                                                             <th rowspan="2">Actual Labour
                                                             </th>
                                                         </tr>
-                                                        <tr class="row">
+                                                       <tr>
                                                             <th>SK
                                                             </th>
                                                             <th>SEMI

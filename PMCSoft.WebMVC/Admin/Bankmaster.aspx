@@ -237,7 +237,7 @@
                                                         <ItemStyle />
                                                     </asp:TemplateField>
                                                     <asp:CommandField ShowEditButton="True" CausesValidation="False">
-                                                        <HeaderStyle Width="30px" />
+                                                        <HeaderStyle   />
                                                     </asp:CommandField>
                                                 </Columns>
 

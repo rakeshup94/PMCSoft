@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RenderBody" runat="Server">
     <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
         <div class="page-header pull-left">
-            <div class="page-title">Add BOQ</div>
+            <div class="page-title">Morning Report</div>
         </div>
         <div class="clearfix"></div>
     </div>
