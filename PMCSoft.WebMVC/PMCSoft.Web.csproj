@@ -681,13 +681,6 @@
     <Compile Include="User\WorkProgrammeApproval.aspx.designer.cs">
       <DependentUpon>WorkProgrammeApproval.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminReports\MaterialReciveByProject.aspx" />
@@ -2849,7 +2842,6 @@
     <Content Include="Upload\SDLC2912014171738.docx" />
     <Content Include="Upload\SITAAPPPPT12912014182252.pptx" />
     <Content Include="Upload\vcd_55_user_guide2912014182313.pdf" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />
