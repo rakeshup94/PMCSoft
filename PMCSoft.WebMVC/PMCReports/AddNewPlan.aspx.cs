@@ -17,7 +17,7 @@ namespace PMCSoft.Web.PMCReports
 {
     public partial class AddNewPlan : BasePage
     {
-          ();
+          
         DataTable DT = new DataTable();
         string No = "", IncomeParticularsID = "", HirechargeParticularsId = "";
 

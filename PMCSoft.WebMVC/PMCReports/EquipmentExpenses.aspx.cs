@@ -17,7 +17,7 @@ namespace PMCSoft.Web.PMCReports
 {
     public partial class EquipmentExpenses : BasePage
     {
-          ();
+          
         DataTable DT = new DataTable();
         string ExpID = string.Empty;
         protected void Page_Load(object sender, EventArgs e)

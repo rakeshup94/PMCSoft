@@ -199,12 +199,12 @@ namespace PMCSoft.Web.Report
         private string DecryptQueryString(string strQueryString)
         {
 
-            return strQueryString.Decrypt("r0b1nr0y");
+            return strQueryString.Decrypt();
         }
         public string EncryptQueryString(string strQueryString)
         {
 
-            return strQueryString.Encrypt("r0b1nr0y");
+            return strQueryString.Encrypt();
         }
     }
 }

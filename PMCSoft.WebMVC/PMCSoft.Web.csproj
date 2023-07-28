@@ -512,7 +512,238 @@
     <Compile Include="Models\PermissionManager.cs" />
     <Compile Include="Models\ServiceResponse.cs" />
     <Compile Include="Models\SessionManager.cs" />
+    <Compile Include="PMCReports\AddNewActual.aspx.cs">
+      <DependentUpon>AddNewActual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMCReports\AddNewActual.aspx.designer.cs">
+      <DependentUpon>AddNewActual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PMCReports\AddNewPlan.aspx.cs">
+      <DependentUpon>AddNewPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMCReports\AddNewPlan.aspx.designer.cs">
+      <DependentUpon>AddNewPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PMCReports\EquipmentExpenses.aspx.cs">
+      <DependentUpon>EquipmentExpenses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMCReports\EquipmentExpenses.aspx.designer.cs">
+      <DependentUpon>EquipmentExpenses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PMCReports\FinancialComparisionOfPlan.aspx.cs">
+      <DependentUpon>FinancialComparisionOfPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMCReports\FinancialComparisionOfPlan.aspx.designer.cs">
+      <DependentUpon>FinancialComparisionOfPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PMCReports\HireChargesExpenses.aspx.cs">
+      <DependentUpon>HireChargesExpenses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMCReports\HireChargesExpenses.aspx.designer.cs">
+      <DependentUpon>HireChargesExpenses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PMCReports\MonthlyTracker.aspx.cs">
+      <DependentUpon>MonthlyTracker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMCReports\MonthlyTracker.aspx.designer.cs">
+      <DependentUpon>MonthlyTracker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PMCReports\MonthlyVWD.aspx.cs">
+      <DependentUpon>MonthlyVWD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMCReports\MonthlyVWD.aspx.designer.cs">
+      <DependentUpon>MonthlyVWD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PMCReports\MonthlyWorkDone.aspx.cs">
+      <DependentUpon>MonthlyWorkDone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMCReports\MonthlyWorkDone.aspx.designer.cs">
+      <DependentUpon>MonthlyWorkDone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PMCReports\MonthlyWorkDoneActual.aspx.cs">
+      <DependentUpon>MonthlyWorkDoneActual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMCReports\MonthlyWorkDoneActual.aspx.designer.cs">
+      <DependentUpon>MonthlyWorkDoneActual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PMCReports\MonthlyWorkDoneReport.aspx.cs">
+      <DependentUpon>MonthlyWorkDoneReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMCReports\MonthlyWorkDoneReport.aspx.designer.cs">
+      <DependentUpon>MonthlyWorkDoneReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PMCReports\Planepage.aspx.cs">
+      <DependentUpon>Planepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMCReports\Planepage.aspx.designer.cs">
+      <DependentUpon>Planepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PMCReports\PrintMonthTracker.aspx.cs">
+      <DependentUpon>PrintMonthTracker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMCReports\PrintMonthTracker.aspx.designer.cs">
+      <DependentUpon>PrintMonthTracker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PMCReports\PrintMonthyWorkDoneReport.aspx.cs">
+      <DependentUpon>PrintMonthyWorkDoneReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMCReports\PrintMonthyWorkDoneReport.aspx.designer.cs">
+      <DependentUpon>PrintMonthyWorkDoneReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\MaterialReciveByPONo.aspx.cs">
+      <DependentUpon>MaterialReciveByPONo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\MaterialReciveByPONo.aspx.designer.cs">
+      <DependentUpon>MaterialReciveByPONo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MaterialReciveByProject.aspx.cs">
+      <DependentUpon>MaterialReciveByProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\MaterialReciveByProject.aspx.designer.cs">
+      <DependentUpon>MaterialReciveByProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MaterialReciveByProjectDate.aspx.cs">
+      <DependentUpon>MaterialReciveByProjectDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\MaterialReciveByProjectDate.aspx.designer.cs">
+      <DependentUpon>MaterialReciveByProjectDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MaterialReciveProjectAndVendor.aspx.cs">
+      <DependentUpon>MaterialReciveProjectAndVendor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\MaterialReciveProjectAndVendor.aspx.designer.cs">
+      <DependentUpon>MaterialReciveProjectAndVendor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MonthlyVWD.aspx.cs">
+      <DependentUpon>MonthlyVWD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\MonthlyVWD.aspx.designer.cs">
+      <DependentUpon>MonthlyVWD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MorningReport.aspx.cs">
+      <DependentUpon>MorningReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\MorningReport.aspx.designer.cs">
+      <DependentUpon>MorningReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PaymentReceipt.aspx.cs">
+      <DependentUpon>PaymentReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\PaymentReceipt.aspx.designer.cs">
+      <DependentUpon>PaymentReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PDCRequisition.aspx.cs">
+      <DependentUpon>PDCRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\PDCRequisition.aspx.designer.cs">
+      <DependentUpon>PDCRequisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PrintMorningReport.aspx.cs">
+      <DependentUpon>PrintMorningReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\PrintMorningReport.aspx.designer.cs">
+      <DependentUpon>PrintMorningReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PrintRACertifiedReport.aspx.cs">
+      <DependentUpon>PrintRACertifiedReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\PrintRACertifiedReport.aspx.designer.cs">
+      <DependentUpon>PrintRACertifiedReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PrintStaffAttendance.aspx.cs">
+      <DependentUpon>PrintStaffAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\PrintStaffAttendance.aspx.designer.cs">
+      <DependentUpon>PrintStaffAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PrintWorkProgramme.aspx.cs">
+      <DependentUpon>PrintWorkProgramme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\PrintWorkProgramme.aspx.designer.cs">
+      <DependentUpon>PrintWorkProgramme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RACertifiedReport.aspx.cs">
+      <DependentUpon>RACertifiedReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RACertifiedReport.aspx.designer.cs">
+      <DependentUpon>RACertifiedReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\StaffAttendance.aspx.cs">
+      <DependentUpon>StaffAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\StaffAttendance.aspx.designer.cs">
+      <DependentUpon>StaffAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\StockDetail.aspx.cs">
+      <DependentUpon>StockDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\StockDetail.aspx.designer.cs">
+      <DependentUpon>StockDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ViewAdvanceRequisition.aspx.cs">
+      <DependentUpon>ViewAdvanceRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ViewAdvanceRequisition.aspx.designer.cs">
+      <DependentUpon>ViewAdvanceRequisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ViewDailyMorningReport.aspx.cs">
+      <DependentUpon>ViewDailyMorningReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ViewDailyMorningReport.aspx.designer.cs">
+      <DependentUpon>ViewDailyMorningReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ViewDailyStaffAttendance.aspx.cs">
+      <DependentUpon>ViewDailyStaffAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ViewDailyStaffAttendance.aspx.designer.cs">
+      <DependentUpon>ViewDailyStaffAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ViewDebitorList.aspx.cs">
+      <DependentUpon>ViewDebitorList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ViewDebitorList.aspx.designer.cs">
+      <DependentUpon>ViewDebitorList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\WorkProgramme.aspx.cs">
+      <DependentUpon>WorkProgramme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\WorkProgramme.aspx.designer.cs">
+      <DependentUpon>WorkProgramme.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RSS\UpdateRSS.ascx.cs">
       <DependentUpon>UpdateRSS.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2655,6 +2886,39 @@
     <Content Include="lib\moment.js\moment.js" />
     <Content Include="lib\moment.js\moment.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="PMCReports\AddNewActual.aspx" />
+    <Content Include="PMCReports\AddNewPlan.aspx" />
+    <Content Include="PMCReports\EquipmentExpenses.aspx" />
+    <Content Include="PMCReports\FinancialComparisionOfPlan.aspx" />
+    <Content Include="PMCReports\HireChargesExpenses.aspx" />
+    <Content Include="PMCReports\MonthlyTracker.aspx" />
+    <Content Include="PMCReports\MonthlyVWD.aspx" />
+    <Content Include="PMCReports\MonthlyWorkDone.aspx" />
+    <Content Include="PMCReports\MonthlyWorkDoneActual.aspx" />
+    <Content Include="PMCReports\MonthlyWorkDoneReport.aspx" />
+    <Content Include="PMCReports\Planepage.aspx" />
+    <Content Include="PMCReports\PrintMonthTracker.aspx" />
+    <Content Include="PMCReports\PrintMonthyWorkDoneReport.aspx" />
+    <Content Include="Report\MaterialReciveByPONo.aspx" />
+    <Content Include="Report\MaterialReciveByProject.aspx" />
+    <Content Include="Report\MaterialReciveByProjectDate.aspx" />
+    <Content Include="Report\MaterialReciveProjectAndVendor.aspx" />
+    <Content Include="Report\MonthlyVWD.aspx" />
+    <Content Include="Report\MorningReport.aspx" />
+    <Content Include="Report\PaymentReceipt.aspx" />
+    <Content Include="Report\PDCRequisition.aspx" />
+    <Content Include="Report\PrintMorningReport.aspx" />
+    <Content Include="Report\PrintRACertifiedReport.aspx" />
+    <Content Include="Report\PrintStaffAttendance.aspx" />
+    <Content Include="Report\PrintWorkProgramme.aspx" />
+    <Content Include="Report\RACertifiedReport.aspx" />
+    <Content Include="Report\StaffAttendance.aspx" />
+    <Content Include="Report\StockDetail.aspx" />
+    <Content Include="Report\ViewAdvanceRequisition.aspx" />
+    <Content Include="Report\ViewDailyMorningReport.aspx" />
+    <Content Include="Report\ViewDailyStaffAttendance.aspx" />
+    <Content Include="Report\ViewDebitorList.aspx" />
+    <Content Include="Report\WorkProgramme.aspx" />
     <Content Include="RSS\UpdateRSS.ascx" />
     <Content Include="libman.json" />
     <Content Include="lib\jquery\bower.json" />

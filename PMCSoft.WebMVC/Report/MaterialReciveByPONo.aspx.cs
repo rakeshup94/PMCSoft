@@ -16,7 +16,7 @@ namespace PMCSoft.Web.Report
 {
     public partial class MaterialReciveByPONo : BasePage
     {
-          ();
+     
         string AListID = string.Empty;
 
         DataTable DT = new DataTable();

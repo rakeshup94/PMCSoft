@@ -17,7 +17,7 @@ namespace PMCSoft.Web.Report
 {
     public partial class ViewDebitorList : BasePage
     {
-          ();
+          
         protected void Page_Load(object sender, EventArgs e)
         {
             try

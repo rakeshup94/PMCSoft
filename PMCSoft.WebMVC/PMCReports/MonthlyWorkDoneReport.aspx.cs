@@ -10,13 +10,13 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
- 
+using PMCSoft.Core.Common;
 using PMCSoft.Infrastructure.Data;
 namespace PMCSoft.Web.PMCReports
 {
     public partial class MonthlyWorkDoneReport : BasePage
     {
-          ();
+         
         DataTable DT = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -188,12 +188,12 @@ namespace PMCSoft.Web.PMCReports
         }
         private string DecryptQueryString(string strQueryString)
         {
-               ();
+              
             return  strQueryString.Decrypt();
         }
         public string EncryptQueryString(string strQueryString)
         {
-               ();
+            
             return  strQueryString.Encrypt();
         }
 
