@@ -2,6 +2,7 @@
 using PMCSoft.Web.Models;
 using System;
 using System.Web;
+using System.Web.UI.WebControls;
 
 namespace PMCSoft.Web
 {
@@ -18,6 +19,19 @@ namespace PMCSoft.Web
             get { return HttpContext.Current.User as CustomPrincipal; }
         }
 
+        protected override void OnInit(EventArgs e)
+        {
+            base.OnInit(e);
+            this.Error += CatchError;
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!HttpContext.Current.Request.IsAuthenticated)
+            {
+                Response.Redirect("~/Account/SignIn");
+            }
+        }
 
 
         //// on your base page
@@ -104,11 +118,7 @@ namespace PMCSoft.Web
 
 
         //}
-        protected override void OnInit(EventArgs e)
-        {
-            base.OnInit(e);
-            this.Error += CatchError;
-        }
+        
 
         void CatchError(object sender, EventArgs e)
         {

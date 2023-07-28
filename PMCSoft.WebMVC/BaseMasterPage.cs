@@ -1,4 +1,5 @@
 ﻿using PMCSoft.Web.Models;
+using System;
 using System.Web;
 
 namespace PMCSoft.Web
@@ -9,5 +10,17 @@ namespace PMCSoft.Web
         {
             get { return HttpContext.Current.User as CustomPrincipal; }
         }
+
+        protected override void OnInit(EventArgs e)
+        {
+            base.OnInit(e);
+            if (!HttpContext.Current.Request.IsAuthenticated)
+            {
+                Response.Redirect("~/Account/SignIn");
+            }
+        }
+
+
+
     }
 }
