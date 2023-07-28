@@ -471,6 +471,7 @@
     </Compile>
     <Compile Include="Helpers\BaseViewPage.cs" />
     <Compile Include="Helpers\CustomAuthorizeAttribute.cs" />
+    <Compile Include="Helpers\MVCHelper.cs" />
     <Compile Include="Inventory\EnterStockDetails.aspx.cs">
       <DependentUpon>EnterStockDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -499,17 +500,11 @@
     <Compile Include="Inventory\ViewOpeningStockDetail.aspx.designer.cs">
       <DependentUpon>ViewOpeningStockDetail.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Models\Account\User.cs" />
     <Compile Include="Models\CustomPrincipal.cs" />
     <Compile Include="Models\ErrorViewModel.cs" />
     <Compile Include="Models\PermissionManager.cs" />
+    <Compile Include="Models\RenderActionViewModel.cs" />
     <Compile Include="Models\ServiceResponse.cs" />
     <Compile Include="Models\SessionManager.cs" />
     <Compile Include="PMCReports\AddNewActual.aspx.cs">
@@ -2885,7 +2880,6 @@
     <Content Include="lib\moment.js\moment-with-locales.min.js" />
     <Content Include="lib\moment.js\moment.js" />
     <Content Include="lib\moment.js\moment.min.js" />
-    <Content Include="Login.aspx" />
     <Content Include="PMCReports\AddNewActual.aspx" />
     <Content Include="PMCReports\AddNewPlan.aspx" />
     <Content Include="PMCReports\EquipmentExpenses.aspx" />
@@ -3110,7 +3104,6 @@
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -3122,6 +3115,8 @@
     <Content Include="Views\User\RoleList.cshtml" />
     <Content Include="Views\User\Roles.cshtml" />
     <Content Include="Views\User\MapRoleMenu.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Dummy\PartialRender.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PMCSoft.Core\PMCSoft.Core.csproj">

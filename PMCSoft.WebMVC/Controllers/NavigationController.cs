@@ -20,7 +20,10 @@ namespace PMCSoft.Web.Controllers
     {
         INavigationService navSrv;
 
-
+        public NavigationController()
+        {
+           
+        }
         public NavigationController(INavigationService _navSrv)
         {
             navSrv = _navSrv;

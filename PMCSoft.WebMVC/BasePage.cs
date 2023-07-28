@@ -1,11 +1,11 @@
 ﻿using PMCSoft.Infrastructure.Data;
 using PMCSoft.Web.Models;
-using PMCSoft.Web.Models;
 using System;
 using System.Web;
 
 namespace PMCSoft.Web
 {
+
     public class BasePage : System.Web.UI.Page
     {
         protected BALPMC PMC
@@ -68,6 +68,7 @@ namespace PMCSoft.Web
 
         public void Page_Error(Object sender, EventArgs e)
         {
+           // Request.IsAuthenticated = true;
             // Implementation here
         }
 
@@ -113,9 +114,11 @@ namespace PMCSoft.Web
         {
             // Handle exception here..
             Exception Err = Server.GetLastError();
-            Server.ClearError();
+
+            throw Err;
+            //Server.ClearError();
             // pass exception to the page via url paramters 
-            Response.Redirect(Request.Url.ToString() + "?Ex =" + Err.Message);
+            //Response.Redirect(Request.Url.ToString() + "?Ex =" + Err.Message);
 
         }
 

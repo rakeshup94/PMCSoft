@@ -24,13 +24,13 @@ namespace PMCSoft.Web
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
         /// <summary>
-        /// ScriptManager1 control.
+        /// VerticleMenu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        protected global::PMCSoft.Web.UserControls.VerticleMenu VerticleMenu;
 
         /// <summary>
         /// RenderBody control.
@@ -42,13 +42,13 @@ namespace PMCSoft.Web
         protected global::System.Web.UI.WebControls.ContentPlaceHolder RenderBody;
 
         /// <summary>
-        /// Footer control.
+        /// CPH_Footer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Footer;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder CPH_Footer;
 
         /// <summary>
         /// scriptSection control.
