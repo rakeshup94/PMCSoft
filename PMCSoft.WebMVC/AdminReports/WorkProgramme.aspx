@@ -135,23 +135,23 @@
                                                                     <asp:Label ID="lblArea" runat="server" Text='<%#Bind("Area") %>'></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="lblSK" runat="server" Width="50px" Text='<%#Bind("LabourSK") %>'>
+                                                                    <asp:Label ID="lblSK" runat="server"   Text='<%#Bind("LabourSK") %>'>
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="lblSEMI" runat="server" Width="50px" Text='<%#Bind("LabourSEMI") %>'>
+                                                                    <asp:Label ID="lblSEMI" runat="server"   Text='<%#Bind("LabourSEMI") %>'>
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="lblUNSK" runat="server" Width="50px" Text='<%#Bind("LabourUNSK") %>'>
+                                                                    <asp:Label ID="lblUNSK" runat="server"   Text='<%#Bind("LabourUNSK") %>'>
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="lblOT" runat="server" Width="50px" Text='<%#Bind("LabourOT") %>'>
+                                                                    <asp:Label ID="lblOT" runat="server"   Text='<%#Bind("LabourOT") %>'>
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"  style="border: 1px solid black; text-align: center; width: 50px;">
-                                                                    <asp:Label ID="lblTotal" runat="server" Width="50px">
+                                                                    <asp:Label ID="lblTotal" runat="server"  >
                                                                     </asp:Label>
                                                                 </div>
                                                             </div>
