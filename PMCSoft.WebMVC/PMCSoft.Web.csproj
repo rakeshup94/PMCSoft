@@ -2880,6 +2880,7 @@
     <Content Include="lib\moment.js\moment-with-locales.min.js" />
     <Content Include="lib\moment.js\moment.js" />
     <Content Include="lib\moment.js\moment.min.js" />
+    <Content Include="Notes.txt" />
     <Content Include="PMCReports\AddNewActual.aspx" />
     <Content Include="PMCReports\AddNewPlan.aspx" />
     <Content Include="PMCReports\EquipmentExpenses.aspx" />
