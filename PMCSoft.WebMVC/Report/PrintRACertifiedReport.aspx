@@ -185,12 +185,12 @@
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align:  center;">
-                                                        <asp:Label ID="MobilizationAdvanceDeducted"   runat="server" Width="30px"
+                                                        <asp:Label ID="MobilizationAdvanceDeducted"   runat="server"  
                                                             Text='<%#Bind("MobilizationAdvanceDeducted") %>'>
                                                         </asp:Label>
                                                     </div>
                                                     <div class="col-lg-4"  style="border: 1px solid black; text-align: left;">
-                                                        <asp:Label ID="SecuredAdvanceAdjusted"   runat="server" Width="30px"
+                                                        <asp:Label ID="SecuredAdvanceAdjusted"   runat="server"  
                                                             Text='<%#Bind("SecuredAdvanceAdjusted") %>'>
                                                         </asp:Label>
                                                     </div>

@@ -159,7 +159,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtIPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtIPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -167,7 +167,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtIActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtIActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -175,7 +175,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtIVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtIVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -274,7 +274,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtEPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtEPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -282,7 +282,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtEActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtEActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -290,7 +290,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtEVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtEVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -386,7 +386,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtCPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtCPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -394,7 +394,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtCActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtCActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -402,7 +402,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtCVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtCVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -466,7 +466,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtEAPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtEAPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -474,7 +474,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtEAActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtEAActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -482,7 +482,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtEAVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtEAVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -541,7 +541,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtEBPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtEBPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -549,7 +549,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtEBActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtEBActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -557,7 +557,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtEBVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtEBVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -614,7 +614,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtPPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtPPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -626,7 +626,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtVariance" runat="server" Width="50px" Text='<%#Bind("Variance") %>'
+                                                                    <asp:Label ID="txtVariance" runat="server"  Text='<%#Bind("Variance") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -683,7 +683,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtCAPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtCAPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -691,7 +691,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtCAActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtCAActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -699,7 +699,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtCAVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtCAVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -751,7 +751,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtCBPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtCBPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -759,7 +759,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtCBActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtCBActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -767,7 +767,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtCBVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtCBVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -817,7 +817,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtPPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtPPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -829,7 +829,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtVariance" runat="server" Width="50px" Text='<%#Bind("Variance") %>'
+                                                                    <asp:Label ID="txtVariance" runat="server"  Text='<%#Bind("Variance") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -886,7 +886,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtDAPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtDAPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -894,7 +894,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtDAActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtDAActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -902,7 +902,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtDAVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtDAVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -954,7 +954,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtPPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtPPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -962,7 +962,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -970,7 +970,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -1020,7 +1020,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtPPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtPPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1028,7 +1028,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1036,7 +1036,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -1092,7 +1092,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtHAPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtHAPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1100,7 +1100,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtHAActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtHAActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1108,7 +1108,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtHAVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtHAVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -1160,7 +1160,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtPPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtPPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1168,7 +1168,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1176,7 +1176,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -1226,7 +1226,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtPPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtPPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1234,7 +1234,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1242,7 +1242,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -1295,7 +1295,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtIDAPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtIDAPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1303,7 +1303,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtIDAActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtIDAActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1311,7 +1311,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtIDAVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtIDAVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -1392,7 +1392,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtPPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtPPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1400,7 +1400,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1408,7 +1408,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>
@@ -1483,7 +1483,7 @@
                                                                     </asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtPPlan1" runat="server" Width="50px" Text='<%#Bind("PlanParcentage") %>'
+                                                                    <asp:Label ID="txtPPlan1" runat="server"  Text='<%#Bind("PlanParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1491,7 +1491,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtActual1" runat="server" Width="50px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtActual1" runat="server"  Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -1499,7 +1499,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtVariance1" runat="server" Width="50px" Text='<%#Bind("VarianceParcentage") %>'
+                                                                    <asp:Label ID="txtVariance1" runat="server"  Text='<%#Bind("VarianceParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                             </div>

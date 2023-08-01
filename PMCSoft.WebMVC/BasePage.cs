@@ -104,23 +104,23 @@ namespace PMCSoft.Web
 
 
         //}
-        protected override void OnInit(EventArgs e)
-        {
-            base.OnInit(e);
-            this.Error += CatchError;
-        }
+        //protected override void OnInit(EventArgs e)
+        //{
+        //    base.OnInit(e);
+        //    this.Error += CatchError;
+        //}
 
-        void CatchError(object sender, EventArgs e)
-        {
-            // Handle exception here..
-            Exception Err = Server.GetLastError();
+        //void CatchError(object sender, EventArgs e)
+        //{
+        //    // Handle exception here..
+        //    Exception Err = Server.GetLastError();
 
-            throw Err;
-            //Server.ClearError();
-            // pass exception to the page via url paramters 
-            //Response.Redirect(Request.Url.ToString() + "?Ex =" + Err.Message);
+        //    throw Err;
+        //    //Server.ClearError();
+        //    // pass exception to the page via url paramters 
+        //    //Response.Redirect(Request.Url.ToString() + "?Ex =" + Err.Message);
 
-        }
+        //}
 
         // use that query string to display messgae..
     }

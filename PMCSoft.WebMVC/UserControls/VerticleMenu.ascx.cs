@@ -31,9 +31,9 @@ namespace PMCSoft.Web.UserControls
         {
             if (!this.IsPostBack)
             {
-                var result = this.navSrv.GetUserMenu(User.UserId, true);
-                this.rptCategories.DataSource = result;
-                this.rptCategories.DataBind();
+                //var result = this.navSrv.GetUserMenu(User.UserId, true);
+                //this.rptCategories.DataSource = result;
+                //this.rptCategories.DataBind();
             }
         }
         protected void rptMenu_OnItemBound(object sender, RepeaterItemEventArgs e)
