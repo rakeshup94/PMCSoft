@@ -325,23 +325,23 @@
                                                                 <asp:Label ID="lblArea" runat="server" Text='<%#Bind("Area") %>'></asp:Label>
                                                             </td>
                                                             <td>
-                                                                <asp:Label ID="lblSK" runat="server" Width="50px" Text='<%#Bind("LabourSK") %>'>
+                                                                <asp:Label ID="lblSK" runat="server"  Text='<%#Bind("LabourSK") %>'>
                                                                 </asp:Label>
                                                             </td>
                                                             <td>
-                                                                <asp:Label ID="lblSEMI" runat="server" Width="50px" Text='<%#Bind("LabourSEMI") %>'>
+                                                                <asp:Label ID="lblSEMI" runat="server"  Text='<%#Bind("LabourSEMI") %>'>
                                                                 </asp:Label>
                                                             </td>
                                                             <td>
-                                                                <asp:Label ID="lblUNSK" runat="server" Width="50px" Text='<%#Bind("LabourUNSK") %>'>
+                                                                <asp:Label ID="lblUNSK" runat="server"  Text='<%#Bind("LabourUNSK") %>'>
                                                                 </asp:Label>
                                                             </td>
                                                             <td>
-                                                                <asp:Label ID="lblOT" runat="server" Width="50px" Text='<%#Bind("LabourOT") %>'>
+                                                                <asp:Label ID="lblOT" runat="server"  Text='<%#Bind("LabourOT") %>'>
                                                                 </asp:Label>
                                                             </td>
                                                             <td>
-                                                                <asp:Label ID="lblTotal" runat="server" Width="50px" Text="">
+                                                                <asp:Label ID="lblTotal" runat="server"  Text="">
                                                                 </asp:Label>
                                                             </td>
                                                         </tr>
