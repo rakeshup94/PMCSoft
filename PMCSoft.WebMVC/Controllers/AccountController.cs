@@ -15,6 +15,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using System.Configuration;
+using Newtonsoft.Json.Linq;
 
 namespace PMCSoft.Web.Controllers
 {
@@ -95,17 +96,23 @@ namespace PMCSoft.Web.Controllers
                     HttpCookie faCookie = new HttpCookie(FormsAuthentication.FormsCookieName, encTicket);
                     Response.Cookies.Add(faCookie);
 
+                    Session["UserId"] = user.EmpNo;
+                    Session["UserName"] = user.EmpName;
+                    Session["CompID"] = user.CompanyId;
+                    Session["AName"] = user.UserType;
+                    Session["UserEmail"] = user.Email;
+                    Session["AID"] = user.UserId;
+                    Session["PRJID"] = user.ProjectNo;
+                    Session["LoginId"] = user.LoginId;
+
                     var returnUrl = user.UserTypeId == 1 ? "~/Admin/Home.aspx" : "~/User/Home.aspx";
                     return RedirectPermanent(returnUrl);
-
                 }
                 else
                 {
                     ModelState.AddModelError(string.Empty, _result.Message);
                     return RedirectToAction("SignIn");
                 }
-
-
             }
             return RedirectToAction("SignIn");
         }

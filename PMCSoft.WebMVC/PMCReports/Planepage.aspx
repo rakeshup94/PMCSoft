@@ -11,7 +11,7 @@
                     <div class="card-body">
                         <div class="card-header">
                             MONTHLY PLAN</div>
-                             <div class="row"  style="width: 1240px;">
+                             <div class="row"   >
                                        
                                         <div class="row" >
                                             <div class="col-lg-4" >
@@ -61,16 +61,16 @@
                                         </div>
                               
                                       </div>
-                        <div class="row"  style="width: 1240px;">
+                        <div class="row"   >
                             
                             <div class="row" >
                                 <div class="col-lg-4" >
-                                    <div class="row"  style="width: 1220px;">
+                                    <div class="row"   >
                                         <div class="row" >
                                             <div class="col-lg-4" >
                                                 <asp:Repeater ID="RptIncome1" runat="server" >
                                                     <HeaderTemplate>
-                                                        <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  rowspan="3" style="width: 200px; text-align: center; border: 1px solid black;
                                                                     background-color: #D8D8D8; font-weight: bold;">
@@ -176,7 +176,7 @@
                                                 </asp:Repeater>
                                            <asp:Repeater ID="RptExpenditure1" runat="server">
                                                     <HeaderTemplate>
-                                                        <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  style="border: 1px solid black; width: 210px; font-weight: bold;">
                                                                     EXPENDITURE
@@ -231,7 +231,7 @@
                                                 </asp:Repeater>
                                                       <asp:Repeater ID="RptConsumbles1" runat="server">
                                                     <HeaderTemplate>
-                                                        <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  style="border: 1px solid black; width: 210px; font-weight: bold;">
                                                                     CONSUMBLES
@@ -280,7 +280,7 @@
                                                 </asp:Repeater>
                                                    <asp:Repeater ID="RptDirectExpenses1" runat="server">
                                                     <HeaderTemplate>
-                                                        <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  style="border: 1px solid black; width: 210px; font-weight: bold;">
                                                                    DIRECT EXPENSES
@@ -329,7 +329,7 @@
                                                 </asp:Repeater>
                                                 <asp:Repeater ID="RptHirecharges1" runat="server">
                                                     <HeaderTemplate>
-                                                        <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  style="border: 1px solid black; width: 210px; font-weight: bold;">
                                                                     HIRE CHARGES (Item-Wise)
@@ -378,7 +378,7 @@
                                                 </asp:Repeater>
                                                  <asp:Repeater ID="RptIndirectExpenses1" runat="server">
                                                     <HeaderTemplate>
-                                                        <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  style="border: 1px solid black; width: 210px; font-weight: bold;">
                                                                     INDIRECT EXPENSES

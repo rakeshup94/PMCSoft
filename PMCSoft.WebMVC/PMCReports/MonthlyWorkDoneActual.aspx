@@ -61,12 +61,12 @@
                                         </div>
                                         <div class="row" >
                                             <div class="col-lg-4" >
-                                                <div class="row"  style="width: 1220px;">
+                                                <div class="row"   >
                                                     <div class="row" >
                                                         <div class="col-lg-4" >
                                                             <asp:Repeater ID="Repeater1" runat="server" >
                                                                 <HeaderTemplate>
-                                                                    <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                                    <div class="row"   >
                                                                         <div class="row" >
                                                                             <div class="col-lg-4"  rowspan="4" style="width: 40px; text-align: center; border: 1px solid black;
                                                                                 background-color: #D8D8D8; font-weight: bold;">
@@ -157,26 +157,26 @@
                                                                                 Height="15"></asp:Label>
                                                                         </div>
                                                                         <div class="col-lg-4"   >
-                                                                            <asp:Label ID="txtUnit" runat="server" Width="60px" Text=""></asp:Label>
+                                                                            <asp:Label ID="txtUnit" runat="server"   Text=""></asp:Label>
                                                                         </div>
                                                                         <div class="col-lg-4"   >
-                                                                            <asp:Label ID="txtRate" runat="server" Width="60px" Text=""></asp:Label>
+                                                                            <asp:Label ID="txtRate" runat="server"   Text=""></asp:Label>
                                                                         </div>
                                                                         <div class="col-lg-4"   >
-                                                                            <asp:Label ID="txtAwardedValue" runat="server" Width="60px" Text=""></asp:Label>
+                                                                            <asp:Label ID="txtAwardedValue" runat="server"   Text=""></asp:Label>
                                                                         </div>
                                                                         <div class="col-lg-4"   >
-                                                                            <asp:Label ID="txtQty" runat="server" Width="60px" Text=""></asp:Label>
+                                                                            <asp:Label ID="txtQty" runat="server"   Text=""></asp:Label>
                                                                         </div>
                                                                         <div class="col-lg-4"   >
-                                                                            <asp:Label ID="txtAmt" runat="server" Width="60px" Text=""></asp:Label>
+                                                                            <asp:Label ID="txtAmt" runat="server"   Text=""></asp:Label>
                                                                         </div>
                                                                           <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtCPlan" runat="server" Width="60px" Text='<%#Bind("CPlan") %>'
+                                                                <asp:TextBox CssClass="form-control" ID="txtCPlan" runat="server"   Text='<%#Bind("CPlan") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtCPlan1" runat="server" Width="60px" Text='<%#Bind("CPlan1") %>'
+                                                                <asp:TextBox CssClass="form-control" ID="txtCPlan1" runat="server"   Text='<%#Bind("CPlan1") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
                                                                     </div>
@@ -193,19 +193,19 @@
                                                                                             <asp:Button CssClass="btn btn-primary btn-square" ID="Button" runat="server" Text="+" CommandArgument='<%# Eval("TransId") %>' />
                                                                                         </div>
                                                                                         <div class="col-lg-4"   >
-                                                                                            <asp:Label ID="txtUnit" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                            <asp:Label ID="txtUnit" runat="server"   Text=""></asp:Label>
                                                                                         </div>
                                                                                         <div class="col-lg-4"   >
-                                                                                            <asp:Label ID="txtRate" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                            <asp:Label ID="txtRate" runat="server"   Text=""></asp:Label>
                                                                                         </div>
                                                                                         <div class="col-lg-4"   >
-                                                                                            <asp:Label ID="txtAwardedValue" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                            <asp:Label ID="txtAwardedValue" runat="server"   Text=""></asp:Label>
                                                                                         </div>
                                                                                         <div class="col-lg-4"   >
-                                                                                            <asp:Label ID="txtQty" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                            <asp:Label ID="txtQty" runat="server"   Text=""></asp:Label>
                                                                                         </div>
                                                                                         <div class="col-lg-4"   >
-                                                                                            <asp:Label ID="txtAmt" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                            <asp:Label ID="txtAmt" runat="server"   Text=""></asp:Label>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="row" >
@@ -307,7 +307,7 @@
                     <div id="Div4">
                         <div class="card-header">
                             MONTHLY WORK DONE</div>
-                        <div class="row"  style="width: 1240px;">
+                        <div class="row"   >
                             <div class="row" >
                             <div class="col-lg-4" >
                              <div class="row"   >
@@ -350,13 +350,13 @@
                               </div>
                               <div class="row" >
                                 <div class="col-lg-4" >
-                                    <div class="row"  style="width: 1220px;">
+                                    <div class="row"   >
                                         <div class="row" >
                                             <div class="col-lg-4" >
                                             
                                                 <asp:Repeater ID="RptMonthlyWorkDoneActualMaster" runat="server" >
                                                     <HeaderTemplate>
-                                                        <div class="row"  style="width: 1220px; border: 1px solid black; border-collapse: collapse;">
+                                                        <div class="row"   >
                                                             <div class="row" >
                                                                 <div class="col-lg-4"  rowspan="4" style="width: 40px; text-align: center; border: 1px solid black;
                                                                     background-color: #D8D8D8; font-weight: bold;">
@@ -454,36 +454,36 @@
                                                                 Value='<%#Bind("ParticularID") %>' />
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtPPlan" runat="server" Width="60px" Text='<%#Bind("PPlan") %>'
+                                                                <asp:TextBox CssClass="form-control" ID="txtPPlan" runat="server"   Text='<%#Bind("PPlan") %>'
                                                                     Enabled="false" ReadOnly="true">
                                                                 </asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtPPlan1" runat="server" Width="60px" Text='<%#Bind("PPlan1") %>'
+                                                                <asp:TextBox CssClass="form-control" ID="txtPPlan1" runat="server"   Text='<%#Bind("PPlan1") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtActual" runat="server" Width="60px" Text='<%#Bind("PActual") %>'
+                                                                <asp:TextBox CssClass="form-control" ID="txtActual" runat="server"   Text='<%#Bind("PActual") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtActual1" runat="server" Width="60px" Text='<%#Bind("PActual1") %>'
+                                                                <asp:TextBox CssClass="form-control" ID="txtActual1" runat="server"   Text='<%#Bind("PActual1") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtVariance" runat="server" Width="60px" Text='<%#Bind("PVariance") %>'
+                                                                <asp:TextBox CssClass="form-control" ID="txtVariance" runat="server"   Text='<%#Bind("PVariance") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtVariance1" runat="server" Width="60px" Text='<%#Bind("PVariance1") %>'
+                                                                <asp:TextBox CssClass="form-control" ID="txtVariance1" runat="server"   Text='<%#Bind("PVariance1") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtCPlan" runat="server" Width="60px" Text='<%#Bind("CPlan") %>'
+                                                                <asp:TextBox CssClass="form-control" ID="txtCPlan" runat="server"   Text='<%#Bind("CPlan") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:TextBox CssClass="form-control" ID="txtCPlan1" runat="server" Width="60px" Text='<%#Bind("CPlan1") %>'
+                                                                <asp:TextBox CssClass="form-control" ID="txtCPlan1" runat="server"   Text='<%#Bind("CPlan1") %>'
                                                                     Enabled="false" ReadOnly="true"></asp:TextBox>
                                                             </div>
                                                            

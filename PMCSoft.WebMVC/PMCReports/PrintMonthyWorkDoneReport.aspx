@@ -25,7 +25,7 @@
                     </div>
                   </div>
                       
-                                    <div class="row"  style="width: 1220px;">
+                                    <div class="row"   >
                                         <div class="row" >
                                             <div class="col-lg-4" >
                                                 <asp:Repeater ID="Repeater1" runat="server" OnItemDataBound="Repeater1_ItemDataBound">
@@ -191,46 +191,46 @@
                                                                     Height="15"></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="txtUnit" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="txtUnit" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="txtRate" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="txtRate" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="txtAwardedValue" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="txtAwardedValue" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="txtQty" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="txtQty" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="txtAmt" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="txtAmt" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label2" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="Label2" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label3" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="Label3" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label4" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="Label4" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label5" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="Label5" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label6" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="Label6" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label7" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="Label7" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label8" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="Label8" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label9" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="Label9" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label10" runat="server" Width="60px" Text=""></asp:Label>
+                                                                <asp:Label ID="Label10" runat="server"   Text=""></asp:Label>
                                                             </div>
                                                         </div>
                                                         <div class="row" >
@@ -245,46 +245,46 @@
                                                                                 <asp:Label ID="lblWDDName" runat="server" Text='<%#Bind("WDDName") %>'></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="txtUnit" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="txtUnit" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="txtRate" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="txtRate" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="txtAwardedValue" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="txtAwardedValue" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="txtQty" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="txtQty" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="txtAmt" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="txtAmt" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="Label11" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="Label11" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="Label12" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="Label12" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="Label13" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="Label13" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="Label14" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="Label14" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="Label15" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="Label15" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="Label16" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="Label16" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="Label17" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="Label17" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="Label18" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="Label18" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                             <div class="col-lg-4"   >
-                                                                                <asp:Label ID="Label19" runat="server" Width="60px" Text=""></asp:Label>
+                                                                                <asp:Label ID="Label19" runat="server"   Text=""></asp:Label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row" >
@@ -299,46 +299,46 @@
                                                                                                 <asp:Label ID="lblWDDName" runat="server" Text='<%#Bind("WDSubParticularsName") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="txtUnit" runat="server" Width="60px" Text='<%#Bind("preUnit") %>'></asp:Label>
+                                                                                                <asp:Label ID="txtUnit" runat="server"   Text='<%#Bind("preUnit") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="txtRate" runat="server" Width="60px" Text='<%#Bind("preRate") %>'></asp:Label>
+                                                                                                <asp:Label ID="txtRate" runat="server"   Text='<%#Bind("preRate") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="txtAwardedValue" runat="server" Width="60px" Text='<%#Bind("preAwardedValue") %>'></asp:Label>
+                                                                                                <asp:Label ID="txtAwardedValue" runat="server"   Text='<%#Bind("preAwardedValue") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="txtQty" runat="server" Width="60px" Text='<%#Bind("prePlanQty") %>'></asp:Label>
+                                                                                                <asp:Label ID="txtQty" runat="server"   Text='<%#Bind("prePlanQty") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="txtAmt" runat="server" Width="60px" Text='<%#Bind("prePlanAmt") %>'></asp:Label>
+                                                                                                <asp:Label ID="txtAmt" runat="server"   Text='<%#Bind("prePlanAmt") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="Label11" runat="server" Width="60px" Text='<%#Bind("CurrPlanQty") %>'></asp:Label>
+                                                                                                <asp:Label ID="Label11" runat="server"   Text='<%#Bind("CurrPlanQty") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="Label12" runat="server" Width="60px" Text='<%#Bind("CurrPlanAmt") %>'></asp:Label>
+                                                                                                <asp:Label ID="Label12" runat="server"   Text='<%#Bind("CurrPlanAmt") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="Label13" runat="server" Width="60px" Text='<%#Bind("preActualQty") %>'></asp:Label>
+                                                                                                <asp:Label ID="Label13" runat="server"   Text='<%#Bind("preActualQty") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="Label14" runat="server" Width="60px" Text='<%#Bind("preActualAmt") %>'></asp:Label>
+                                                                                                <asp:Label ID="Label14" runat="server"   Text='<%#Bind("preActualAmt") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="Label15" runat="server" Width="60px" Text='<%#Bind("CurrActualQty") %>'></asp:Label>
+                                                                                                <asp:Label ID="Label15" runat="server"   Text='<%#Bind("CurrActualQty") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="Label16" runat="server" Width="60px" Text='<%#Bind("CurrActualAmt") %>'></asp:Label>
+                                                                                                <asp:Label ID="Label16" runat="server"   Text='<%#Bind("CurrActualAmt") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="Label17" runat="server" Width="60px" Text='<%#Bind("variationAmt") %>'></asp:Label>
+                                                                                                <asp:Label ID="Label17" runat="server"   Text='<%#Bind("variationAmt") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="Label18" runat="server" Width="60px" Text='<%#Bind("currentMonth") %>'></asp:Label>
+                                                                                                <asp:Label ID="Label18" runat="server"   Text='<%#Bind("currentMonth") %>'></asp:Label>
                                                                                             </div>
                                                                                             <div class="col-lg-4"   >
-                                                                                                <asp:Label ID="Label19" runat="server" Width="60px" Text='<%#Bind("BalanceAmt") %>'></asp:Label>
+                                                                                                <asp:Label ID="Label19" runat="server"   Text='<%#Bind("BalanceAmt") %>'></asp:Label>
                                                                                             </div>
                                                                                         </div>
                                                                                     </ItemTemplate>

@@ -13,7 +13,7 @@
                             Staff Attendance</div>
                         <div class="row"   >
                             <div class="row" >
-                                <div class="col-lg-4"  style="text-align: right;">
+                                <div class="col-lg-4"   >
                                     <asp:Button CssClass="btn btn-primary btn-square" ID="btnPrint" runat="server" OnClick="btnPrint_Click" Text="Print Preview" />
                                 </div>
                             </div>

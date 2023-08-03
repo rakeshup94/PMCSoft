@@ -491,10 +491,10 @@
                                                 Bill Period
                                   
                                             <asp:Label ID="lblbillperiod" runat="server"
-                                                Width="60px" onkeyup="valid(this)" onblur="valid(this)"></asp:Label>
+                                                  onkeyup="valid(this)" onblur="valid(this)"></asp:Label>
                                                 To
                                                                     <asp:Label ID="lblbillperiodTo"
-                                                                        runat="server" Width="60px" onkeyup="valid(this)"
+                                                                        runat="server"   onkeyup="valid(this)"
                                                                         onblur="valid(this)"></asp:Label>
                                             </div>
                                         </div>

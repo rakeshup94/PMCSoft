@@ -13,7 +13,7 @@
                             Matrial Recive Vendor Wise</div>
                         <div class="row"  style="width: 1090px;">
                             <%--<tr>
-                                <div class="col-lg-4"  colspan="9" style="text-align: center; font-size: 15px; font-family: Cambria;">
+                                <div class="col-lg-4"  colspan="9"  >
                                     Ahluwalia Contracts (India) Ltd.
                                 </div>
                             </div>--%>

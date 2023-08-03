@@ -160,14 +160,14 @@
                                                     <HeaderTemplate>
                                                         <div class="row"  style="width: 1100px; border: 1px solid black; border-collapse: collapse;">
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  style="border: 1px solid black; width: 435px; font-weight: bold;">
+                                                                <div class="col-lg-4"   >
                                                                     EXPENDITURE
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                 </div>
                                                             </div>
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  style="border: 1px solid black; width: 20px; font-weight: bold;">
+                                                                <div class="col-lg-4"   >
                                                                     PURCHASE/CONSUMPTION
                                                                 </div>
                                                                 <div class="col-lg-4"     style="border: 1px solid black;">
@@ -209,7 +209,7 @@
                                                     <HeaderTemplate>
                                                         <div class="row"  style="width: 1100px; border: 1px solid black; border-collapse: collapse;">
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  style="border: 1px solid black; width: 435px; font-weight: bold;">
+                                                                <div class="col-lg-4"   >
                                                                     CONSUMBLES
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -251,7 +251,7 @@
                                                     <HeaderTemplate>
                                                         <div class="row"  style="width: 1100px; border: 1px solid black; border-collapse: collapse;">
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  style="border: 1px solid black; width: 435px; font-weight: bold;">
+                                                                <div class="col-lg-4"   >
                                                                     DIRECT EXPENSES
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -295,7 +295,7 @@
                                                     <HeaderTemplate>
                                                         <div class="row"  style="width: 1100px; border: 1px solid black; border-collapse: collapse;">
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  style="border: 1px solid black; width: 435px; font-weight: bold;">
+                                                                <div class="col-lg-4"   >
                                                                     HIRE CHARGES (Item-Wise)
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -339,7 +339,7 @@
                                                     <HeaderTemplate>
                                                         <div class="row"  style="width: 1100px; border: 1px solid black; border-collapse: collapse;">
                                                             <div class="row" >
-                                                                <div class="col-lg-4"  style="border: 1px solid black; width: 435px; font-weight: bold;">
+                                                                <div class="col-lg-4"   >
                                                              
                                                                     INDIRECT EXPENSES                                                
                                                                 </div>

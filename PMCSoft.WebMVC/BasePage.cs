@@ -22,16 +22,16 @@ namespace PMCSoft.Web
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
-            this.Error += CatchError;
-        }
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
             if (!HttpContext.Current.Request.IsAuthenticated)
             {
                 Response.Redirect("~/Account/SignIn");
             }
+
+
+            this.Error += CatchError;
         }
+
 
 
         //// on your base page
@@ -82,7 +82,7 @@ namespace PMCSoft.Web
 
         public void Page_Error(Object sender, EventArgs e)
         {
-           // Request.IsAuthenticated = true;
+            // Request.IsAuthenticated = true;
             // Implementation here
         }
 
@@ -118,7 +118,7 @@ namespace PMCSoft.Web
 
 
         //}
-        
+
 
         void CatchError(object sender, EventArgs e)
         {

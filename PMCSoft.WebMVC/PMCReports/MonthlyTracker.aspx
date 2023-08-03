@@ -15,7 +15,7 @@
                         <div class="row" >
                        
                             <div class="row" >
-                                <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
+                                <div class="col-lg-4"   >
                                     <div class="row"   >
                                         <div class="row" >
                                             <div class="col-lg-4" >
@@ -78,7 +78,7 @@
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
+                                <div class="col-lg-4"   >
                                     Monthly Tracker / Comparision of Plan / Actual
                                 </div>
                             </div>
@@ -622,7 +622,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtActual1" runat="server" Width="60px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtActual1" runat="server"   Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
@@ -825,7 +825,7 @@
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="txtActual1" runat="server" Width="60px" Text='<%#Bind("ActualParcentage") %>'
+                                                                    <asp:Label ID="txtActual1" runat="server"   Text='<%#Bind("ActualParcentage") %>'
                                                                         Enabled="false" ReadOnly="true"></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >

@@ -19,7 +19,7 @@ namespace PMCSoft.Web
             base.OnInit(e);
             if (!HttpContext.Current.Request.IsAuthenticated)
             {
-                //Response.Redirect("~/Account/SignIn");
+                Response.Redirect("~/Account/SignIn");
             }
         }
 

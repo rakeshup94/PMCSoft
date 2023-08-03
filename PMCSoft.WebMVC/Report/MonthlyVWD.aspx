@@ -16,14 +16,14 @@
                            
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
+                                <div class="col-lg-4"   >
                                     Project   <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"
                                         OnSelectedIndexChanged="ddlProject_SelectedIndexChanged"  >
                                     </asp:DropDownList>
                                 </div>
                             </div>
                             <div class="row" >
-                                <div class="col-lg-4"  style="text-align: center; font-size: 15px; font-family: Cambria;">
+                                <div class="col-lg-4"   >
                                     Status of Work Done / Plan As On   <asp:TextBox CssClass="form-control" ID="txtDate" runat="server"
                                           ReadOnly="true" Enabled="false"></asp:TextBox>
                                 </div>

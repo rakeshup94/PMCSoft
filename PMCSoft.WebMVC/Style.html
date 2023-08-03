@@ -33,7 +33,15 @@
     </div>
 </div>
 
+<div class="col-lg-4 offset-sm-4">
+    <div class="mb-3">
+        Project
 
+        <asp:DropDownList CssClass="form-select" ID="ddlProject" runat="server" AutoPostBack="true"
+                          OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
+        </asp:DropDownList>
+    </div>
+</div>
 
 <div class="mb-3">
 
@@ -326,3 +334,56 @@
         </div>
     </div>
 </div>
+<div class="table-responsive">
+    <table class="table table-hover table-striped table-bordered table-advanced tablesorter mbn">
+
+        <thead>
+            <tr>
+                <th>
+                    Particulars
+                </th>
+                <th>
+                    Previous Month
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    Plan
+                </th>
+                <th>
+                    Actual
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    A
+                </th>
+                <th>
+                    %
+                </th>
+                <th>
+                    B
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    INCOME
+                </th>
+                <th colspan="14"></th>
+            </tr>
+        </thead><tbody>
+
+            <tr>
+                <td>
+                    Particulars
+                </td>
+                <td>
+                    Previous Month
+                </td>
+            </tr>
+
+
+        </tbody><tfoot></tfoot>
+    </table>
