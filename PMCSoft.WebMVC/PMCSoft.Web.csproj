@@ -598,7 +598,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Report\MaterialReciveByPONo.aspx.cs">
       <DependentUpon>MaterialReciveByPONo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Report\MaterialReciveByPONo.aspx.designer.cs">
       <DependentUpon>MaterialReciveByPONo.aspx</DependentUpon>

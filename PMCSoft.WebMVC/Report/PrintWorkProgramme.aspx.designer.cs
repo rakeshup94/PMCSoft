@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-
 namespace PMCSoft.Web.Report
 {
+
+
     public partial class PrintWorkProgramme
     {
 
@@ -30,7 +30,7 @@ namespace PMCSoft.Web.Report
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImgImage;
+        protected global::System.Web.UI.WebControls.LinkButton ImgImage;
 
         /// <summary>
         /// lblProjectName control.
