@@ -46,14 +46,14 @@
                                             <ItemTemplate>
                                                 <asp:Label ID="lblSNo" runat="server" Text='<%#Bind("SNo") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                             
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="DESCRIPTION">
                                             <ItemTemplate>
                                                 <asp:TextBox CssClass="form-control" ID="txtDESCRIPTION" TextMode="MultiLine" runat="server"
                                                     onkeyup="valid(this)" onblur="valid(this)"></asp:TextBox>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                             
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="MODEL">
                                             <ItemTemplate>
@@ -61,7 +61,7 @@
                                                     onkeyup="valid(this)"
                                                     onblur="valid(this)"></asp:TextBox>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                             
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="VENDOR`S NAME">
                                             <ItemTemplate>
@@ -69,7 +69,7 @@
                                                     <asp:ListItem Text="Select Vendor"></asp:ListItem>
                                                 </asp:DropDownList>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                             
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Date of Installation">
                                             <ItemTemplate>
@@ -78,7 +78,7 @@
                                                 <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDateofInstallation"
                                                     CssClass="cal_Theme1"></cc1:CalendarExtender>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                             
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="QTY.">
                                             <ItemTemplate>
@@ -88,7 +88,7 @@
                                                 <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtQTY"
                                                     FilterType="Custom, Numbers" ValidChars="."></cc1:FilteredTextBoxExtender>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                             
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="AMOUNT">
                                             <ItemTemplate>
@@ -96,7 +96,7 @@
                                                 <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtAMOUNT"
                                                     FilterType="Custom, Numbers" ValidChars="."></cc1:FilteredTextBoxExtender>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                             
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Nature / Purpose of work for which the equipment is  on Hire">
                                             <ItemTemplate>
@@ -110,15 +110,15 @@
                                                     Text="Add More" OnClick="btnAddMore_Click" />
                                             </FooterTemplate>
 
-                                            <ItemStyle VerticalAlign="Top" />
+                                        
                                         </asp:TemplateField>
                                     </Columns>
 
                                 </asp:GridView>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-4">
+                        <div class="row mtm">
+                            <div class="col-lg-12">
                                 <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" Text="Submit"
                                     OnClick="btnSubmit_Click" />
                                 <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel"
@@ -126,9 +126,9 @@
                             </div>
                         </div>
                     </div>
-                    </div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            </div>
                     </div>
                 </div>
             </div>

@@ -329,16 +329,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mtm">
                             <div class="col-lg-12">
                                 <asp:Button CssClass="btn btn-primary btn-square" ID="btnCalculate" runat="server"
                                     Text="Calculate" />
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mtm">
                             <div class="col-lg-12">
-                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" runat="server" />
-                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" />
+                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnSubmit" Text="Save" runat="server" />
+                                <asp:Button CssClass="btn btn-primary btn-square" ID="btnCancel" runat="server" Text="Cancel" />
                             </div>
                         </div>
 
@@ -351,7 +351,7 @@
 
 
                     </div>
-            </div>
+                </div>
             </div>
 
 

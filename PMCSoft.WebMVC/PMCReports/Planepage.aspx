@@ -35,7 +35,7 @@
                                            <div class="col-lg-4" >Month</div>
                                            <div class="col-lg-4" >
                                       <asp:DropDownList CssClass="form-select" ID="ddlMonth1" runat="server" AutoPostBack="true" 
-                                        Style="width: auto;">
+                                         >
                                         <asp:ListItem Text="January" Value="01"></asp:ListItem>
                                         <asp:ListItem Text="February" Value="02"></asp:ListItem>
                                         <asp:ListItem Text="March" Value="03"></asp:ListItem>
@@ -50,7 +50,7 @@
                                         <asp:ListItem Text="December" Value="12"></asp:ListItem>
                                     </asp:DropDownList>
                                            <asp:DropDownList CssClass="form-select" ID="ddlSDaysYear1" runat="server" AutoPostBack="true" 
-                                        Style="width: auto;">
+                                         >
                                     </asp:DropDownList>
                                           </div>
                                           <div class="col-lg-4" >

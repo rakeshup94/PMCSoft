@@ -33,7 +33,7 @@
                                                             Month
                                                         </div>
                                                         <div class="col-lg-4" >
-                                                            <asp:DropDownList CssClass="form-select" ID="ddlMonth" runat="server" AutoPostBack="True" Style="width: auto;">
+                                                            <asp:DropDownList CssClass="form-select" ID="ddlMonth" runat="server" AutoPostBack="True"  >
                                                                 <asp:ListItem Text="January" Value="01"></asp:ListItem>
                                                                 <asp:ListItem Text="February" Value="02"></asp:ListItem>
                                                                 <asp:ListItem Text="March" Value="03"></asp:ListItem>
@@ -130,7 +130,7 @@
                                                                         </div>
                                                                         <div class="col-lg-4"   >
                                                                             <asp:Label ID="lblIncome" runat="server" Text='<%#Bind("WDName") %>' Font-Bold="true"
-                                                                                Height="15"></asp:Label>
+                                                                                 ></asp:Label>
                                                                         </div>
                                                                         <div class="col-lg-4"   >
                                                                             <asp:Label ID="txtUnit" runat="server"   Text=""></asp:Label>
@@ -291,7 +291,7 @@
                                                             Month
                                                         </div>
                                                         <div class="col-lg-4" >
-                                                            <asp:DropDownList CssClass="form-select" ID="ddlMonthA" runat="server" AutoPostBack="True" Style="width: auto;">
+                                                            <asp:DropDownList CssClass="form-select" ID="ddlMonthA" runat="server" AutoPostBack="True"  >
                                                                 <asp:ListItem Text="January" Value="01"></asp:ListItem>
                                                                 <asp:ListItem Text="February" Value="02"></asp:ListItem>
                                                                 <asp:ListItem Text="March" Value="03"></asp:ListItem>
@@ -408,7 +408,7 @@
                                                                         </div>
                                                                         <div class="col-lg-4"   >
                                                                             <asp:Label ID="lblActual" runat="server" Text='<%#Bind("WDMParticularName") %>' Font-Bold="true"
-                                                                                Height="15"></asp:Label>
+                                                                                 ></asp:Label>
                                                                         </div>
                                                                         <div class="col-lg-4"   >
                                                                             <asp:Label ID="txtUnit" runat="server"   Text=""></asp:Label>
@@ -442,7 +442,7 @@
                                                                                         </div>
                                                                                         <div class="col-lg-4"   >
                                                                                             <asp:Label ID="lblActual" runat="server" Text='<%#Bind("WDDName") %>' Font-Bold="true"
-                                                                                                Height="15"></asp:Label>
+                                                                                                 ></asp:Label>
                                                                                         </div>
                                                                                         <div class="col-lg-4"   >
                                                                                             <asp:Label ID="txtUnit" runat="server"   Text=""></asp:Label>
@@ -476,7 +476,7 @@
                                                                                                         </div>
                                                                                                         <div class="col-lg-4"   >
                                                                                                             <asp:Label ID="lblActual" runat="server" Text='<%#Bind("WDSubParticularsName") %>'
-                                                                                                                Font-Bold="true" Height="15"></asp:Label>
+                                                                                                                Font-Bold="true"  ></asp:Label>
                                                                                                         </div>
                                                                                                         <div class="col-lg-4"   >
                                                                                                             <asp:Label ID="txtUnit" runat="server"   Text='<%#Bind("Unit") %>'></asp:Label>

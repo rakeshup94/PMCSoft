@@ -28,7 +28,7 @@
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  rowspan="3" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                         font-weight: bold;">
-                                                                        <asp:Label ID="Label5" runat="server" Text=" Particulars" Width="200" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label5" runat="server" Text=" Particulars" Width="200"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"  colspan="6" style="text-align: center; border: 1px solid black; background-color: #D8D8D8;
                                                                         font-weight: bold;">
@@ -77,7 +77,7 @@
                                                                 </div>
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Lbl1" runat="server" Text="INCOME" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Lbl1" runat="server" Text="INCOME"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -118,7 +118,7 @@
                                                         <FooterTemplate>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="Label1" runat="server" Text="Total Income" Height="15"></asp:Label>
+                                                                    <asp:Label ID="Label1" runat="server" Text="Total Income"  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="lblSumincomeValueA" runat="server" Text=""></asp:Label>
@@ -195,7 +195,7 @@
                                                                 </div>
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Lbl11" runat="server" Text="" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Lbl11" runat="server" Text=""  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -307,7 +307,7 @@
                                                                 </div>
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Lbl1" runat="server" Text="" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Lbl1" runat="server" Text=""  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -375,14 +375,14 @@
                                                             <div class="row"  style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label1" runat="server" Text="EXPENDITURE" Width="200" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label1" runat="server" Text="EXPENDITURE" Width="200"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
                                                                 </div>
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label2" runat="server" Text="PURCHASE/CONSUMPTION" Width="2" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label2" runat="server" Text="PURCHASE/CONSUMPTION" Width="2"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -425,7 +425,7 @@
                                                         <FooterTemplate>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                     <asp:Label ID="Label5" runat="server" Text="" Width="200" Height="15"></asp:Label>
+                                                                     <asp:Label ID="Label5" runat="server" Text="" Width="200"  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
@@ -453,14 +453,14 @@
                                                             <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
                                                                 </div>
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label4" runat="server" Text="" Width="10" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label4" runat="server" Text="" Width="10"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -500,7 +500,7 @@
                                                         <FooterTemplate>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                  <asp:Label ID="Label1" runat="server" Text="" Height="15"></asp:Label>
+                                                                  <asp:Label ID="Label1" runat="server" Text=""  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
@@ -526,14 +526,14 @@
                                                             <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
                                                                 </div>
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label4" runat="server" Text="" Width="10" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label4" runat="server" Text="" Width="10"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -573,7 +573,7 @@
                                                         <FooterTemplate>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                  <asp:Label ID="Label1" runat="server" Text=" " Height="15"></asp:Label>
+                                                                  <asp:Label ID="Label1" runat="server" Text=" "  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
@@ -601,7 +601,7 @@
                                                             <div class="row"  style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label1" runat="server" Text="CONSUMBLES" Width="7" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label1" runat="server" Text="CONSUMBLES" Width="7"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -642,7 +642,7 @@
                                                         <FooterTemplate>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                   <asp:Label ID="Label1" runat="server" Text=" " Height="15"></asp:Label>
+                                                                   <asp:Label ID="Label1" runat="server" Text=" "  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
@@ -670,7 +670,7 @@
                                                             <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -710,7 +710,7 @@
                                                         <FooterTemplate>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                 <asp:Label ID="Label1" runat="server" Text=" " Height="15"></asp:Label>
+                                                                 <asp:Label ID="Label1" runat="server" Text=" "  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
@@ -736,7 +736,7 @@
                                                             <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -776,7 +776,7 @@
                                                         <FooterTemplate>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="Label1" runat="server" Text=" " Height="15"></asp:Label>
+                                                                    <asp:Label ID="Label1" runat="server" Text=" "  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
@@ -804,7 +804,7 @@
                                                             <div class="row"  style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label1" runat="server" Text="DIRECTEXPENSES" Width="20" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label1" runat="server" Text="DIRECTEXPENSES" Width="20"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -845,7 +845,7 @@
                                                         <FooterTemplate>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                     <asp:Label ID="Label1" runat="server" Text=" " Height="15"></asp:Label>
+                                                                     <asp:Label ID="Label1" runat="server" Text=" "  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
@@ -873,7 +873,7 @@
                                                             <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label3" runat="server" Text=""  Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label3" runat="server" Text=""   ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -913,7 +913,7 @@
                                                         <FooterTemplate>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="Label1" runat="server" Text=" " Height="15"></asp:Label>
+                                                                    <asp:Label ID="Label1" runat="server" Text=" "  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
@@ -939,7 +939,7 @@
                                                             <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label3" runat="server" Text="" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label3" runat="server" Text=""  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -980,7 +980,7 @@
                                                             <div class="row" >
                                                                 
                                                                  <div class="col-lg-4"   >
-                                                                    <asp:Label ID="Label1" runat="server" Text=" " Height="15"></asp:Label>
+                                                                    <asp:Label ID="Label1" runat="server" Text=" "  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
@@ -1010,7 +1010,7 @@
                                                             <div class="row"  style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label1" runat="server" Text="HIRECHARGES" Width="2" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label1" runat="server" Text="HIRECHARGES" Width="2"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -1051,7 +1051,7 @@
                                                         <FooterTemplate>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                     <asp:Label ID="Label1" runat="server" Text=" " Height="15"></asp:Label>
+                                                                     <asp:Label ID="Label1" runat="server" Text=" "  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
@@ -1079,7 +1079,7 @@
                                                             <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -1119,7 +1119,7 @@
                                                         <FooterTemplate>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="Label1" runat="server" Text=" " Height="15"></asp:Label>
+                                                                    <asp:Label ID="Label1" runat="server" Text=" "  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
@@ -1145,7 +1145,7 @@
                                                             <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -1185,7 +1185,7 @@
                                                         <FooterTemplate>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="Label1" runat="server" Text=" " Height="15"></asp:Label>
+                                                                    <asp:Label ID="Label1" runat="server" Text=" "  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="lblPPlanTotal" runat="server"></asp:Label>
@@ -1213,7 +1213,7 @@
                                                             <div class="row"  style="margin-left: -2px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label1" runat="server" Text="INDIRECTEXPENSES" Width="2" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label1" runat="server" Text="INDIRECTEXPENSES" Width="2"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -1254,7 +1254,7 @@
                                                         <FooterTemplate>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                    <asp:Label ID="LabelIDPP" runat="server" Text="TOTAL EXPENSES" Height="15"></asp:Label>
+                                                                    <asp:Label ID="LabelIDPP" runat="server" Text="TOTAL EXPENSES"  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
                                                                     <asp:Label ID="LabelIDVA" runat="server"></asp:Label>
@@ -1279,25 +1279,25 @@
                                                              <div class="row" >
                                                                 <div class="col-lg-4"   >
                                                                 
-                                                                     <asp:Label ID="Label11" runat="server" Width="200" Text="PROFIT/LOSS (A-B)" Height="15"></asp:Label>
+                                                                     <asp:Label ID="Label11" runat="server" Width="200" Text="PROFIT/LOSS (A-B)"  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                     <asp:Label ID="Label1" runat="server" Width="100" Text=""></asp:Label>
+                                                                     <asp:Label ID="Label1" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label2" runat="server" Width="50" Text=""></asp:Label>
+                                                                <asp:Label ID="Label2" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                   <asp:Label ID="Label3" runat="server" Width="100" Text=""></asp:Label>
+                                                                   <asp:Label ID="Label3" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label4" runat="server" Width="50" Text=""></asp:Label>
+                                                                <asp:Label ID="Label4" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                   <asp:Label ID="Label5" runat="server" Width="100" Text=""></asp:Label>
+                                                                   <asp:Label ID="Label5" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label6" runat="server" Width="50" Text=""></asp:Label>
+                                                                <asp:Label ID="Label6" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                  
                                                             </div>
@@ -1311,7 +1311,7 @@
                                                             <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -1372,22 +1372,22 @@
                                                             </div>
                                                             <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                     <asp:Label ID="Label1" runat="server" Width="100" Text="" Height="15"></asp:Label>
+                                                                     <asp:Label ID="Label1" runat="server"   Text=""  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                     <asp:Label ID="Label2" runat="server" Width="50" Text=""></asp:Label>
+                                                                     <asp:Label ID="Label2" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label3" runat="server" Width="100" Text=""></asp:Label>
+                                                                <asp:Label ID="Label3" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                   <asp:Label ID="Label4" runat="server" Width="50" Text=""></asp:Label>
+                                                                   <asp:Label ID="Label4" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label5" runat="server" Width="100" Text=""></asp:Label>
+                                                                <asp:Label ID="Label5" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                   <asp:Label ID="Label6" runat="server" Width="50" Text=""></asp:Label>
+                                                                   <asp:Label ID="Label6" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 
                                                                  
@@ -1402,7 +1402,7 @@
                                                             <div class="row"  style="margin-left: -5px; border: 1px solid black; border-collapse: collapse;">
                                                                 <div class="row" >
                                                                     <div class="col-lg-4"  style="border: 1px solid black; font-weight: bold;">
-                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10" Height="15"></asp:Label>
+                                                                        <asp:Label ID="Label3" runat="server" Text="" Width="10"  ></asp:Label>
                                                                     </div>
                                                                     <div class="col-lg-4"   >
                                                                     </div>
@@ -1463,22 +1463,22 @@
                                                             </div>
                                                                  <div class="row" >
                                                                 <div class="col-lg-4"   >
-                                                                     <asp:Label ID="Label1" runat="server" Width="100" Text="" Height="15"></asp:Label>
+                                                                     <asp:Label ID="Label1" runat="server"   Text=""  ></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                     <asp:Label ID="Label2" runat="server" Width="50" Text=""></asp:Label>
+                                                                     <asp:Label ID="Label2" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label3" runat="server" Width="100" Text=""></asp:Label>
+                                                                <asp:Label ID="Label3" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                   <asp:Label ID="Label4" runat="server" Width="50" Text=""></asp:Label>
+                                                                   <asp:Label ID="Label4" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                <asp:Label ID="Label5" runat="server" Width="100" Text=""></asp:Label>
+                                                                <asp:Label ID="Label5" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 <div class="col-lg-4"   >
-                                                                   <asp:Label ID="Label6" runat="server" Width="50" Text=""></asp:Label>
+                                                                   <asp:Label ID="Label6" runat="server"   Text=""></asp:Label>
                                                                 </div>
                                                                 
                                                                  

@@ -188,7 +188,7 @@
                                                             </div>
                                                             <div class="col-lg-4"   >
                                                                 <asp:Label ID="lblActual" runat="server" Text='<%#Bind("WDMParticularName") %>' Font-Bold="true"
-                                                                    Height="15"></asp:Label>
+                                                                     ></asp:Label>
                                                             </div>
                                                             <div class="col-lg-4"   >
                                                                 <asp:Label ID="txtUnit" runat="server"   Text=""></asp:Label>
