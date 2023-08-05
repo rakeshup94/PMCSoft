@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-
 namespace PMCSoft.Web.Report
 {
+
+
     public partial class MaterialReciveByProjectDate
     {
 

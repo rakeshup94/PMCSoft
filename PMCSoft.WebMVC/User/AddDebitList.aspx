@@ -357,13 +357,13 @@
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblAmount" runat="server" Text='<%#Bind("Amount") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Right" />
+                                                             
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Payment Type">
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblPaymentType" runat="server" Text='<%#Bind("PaymentType") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Left" />
+                                                             
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Remarks">
                                                             <ItemTemplate>
@@ -375,13 +375,13 @@
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblSuggestAmount" runat="server" Text='<%#Bind("SuggestAmount") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Right" />
+                                                             
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="Bal. Amount">
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblBalanceAmount" runat="server" Text='<%#Bind("BalanceAmount") %>'></asp:Label>
                                                             </ItemTemplate>
-                                                            <ItemStyle HorizontalAlign="Right" />
+                                                             
                                                         </asp:TemplateField>
                                                     </Columns>
 

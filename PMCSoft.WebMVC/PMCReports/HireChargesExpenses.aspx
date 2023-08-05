@@ -37,7 +37,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-lg-12">   <div class="table-responsive">
                                 <asp:GridView CssClass="table table-hover table-striped table-bordered table-advanced tablesorter mbn"
                                     ID="GvHireChargesExpenses" runat="server" AutoGenerateColumns="false"
                                     ShowFooter="true" OnRowDataBound="GvHireChargesExpenses_RowDataBound">
@@ -115,7 +115,7 @@
                                     </Columns>
 
                                 </asp:GridView>
-                            </div>
+                            </div>  </div>
                         </div>
                         <div class="row mtm">
                             <div class="col-lg-12">

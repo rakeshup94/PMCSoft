@@ -77,7 +77,7 @@
                                                     AutoPostBack="true">
                                                 </asp:DropDownList>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Item Name">
                                             <ItemTemplate>
@@ -86,7 +86,7 @@
                                                     OnSelectedIndexChanged="ddlItemName_SelectedIndexChanged">
                                                 </asp:DropDownList>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Unit">
                                             <ItemTemplate>
@@ -95,25 +95,25 @@
                                                     AutoPostBack="true">
                                                 </asp:DropDownList>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Item Make">
                                             <ItemTemplate>
                                                 <asp:Label ID="TxtItemMake" runat="server"></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Part No">
                                             <ItemTemplate>
                                                 <asp:Label ID="TxtpartNo" runat="server"></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Available Quantity">
                                             <ItemTemplate>
                                                 <asp:Label ID="txtAbQuantity" runat="server"></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Issue Quantity">
                                             <ItemTemplate>
@@ -123,7 +123,7 @@
                                                     runat="server" TargetControlID="txtIssueQty"
                                                     FilterType="Custom, Numbers" ValidChars="."></cc1:FilteredTextBoxExtender>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Description">
                                             <ItemTemplate>

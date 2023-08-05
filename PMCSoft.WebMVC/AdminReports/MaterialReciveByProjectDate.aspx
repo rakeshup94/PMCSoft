@@ -78,25 +78,25 @@
                                             <ItemTemplate>
                                                 <asp:Label ID="lblGateentoryno" runat="server" Text='<%#Bind("Gate_Entry_No") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Po No" Visible="false">
                                             <ItemTemplate>
                                                 <asp:Label ID="lblpono" runat="server" Text='<%#Bind("PO_No") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Po date" Visible="false">
                                             <ItemTemplate>
                                                 <asp:Label ID="LblPodate" runat="server" Text='<%#Bind("Podate") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Project" Visible="false">
                                             <ItemTemplate>
                                                 <asp:Label ID="Lblprojectname" runat="server" Text='<%#Bind("ProjectName") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Vendor">
                                             <ItemTemplate>
@@ -108,25 +108,25 @@
                                             <ItemTemplate>
                                                 <asp:Label ID="lbladdress" runat="server" Text='<%#Bind("Address") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Bill/Challan No">
                                             <ItemTemplate>
                                                 <asp:Label ID="LblBillChallanNo" runat="server" Text='<%#Bind("Bill_Challan_No") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Date">
                                             <ItemTemplate>
                                                 <asp:Label ID="lblBillChallanDate" runat="server" Text='<%#Bind("Bill_Challan_Date") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Item Code" Visible="false">
                                             <ItemTemplate>
                                                 <asp:Label ID="lblitemcode" runat="server" Text='<%#Bind("GroupName") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Item Name">
                                             <ItemTemplate>
@@ -138,7 +138,7 @@
                                             <ItemTemplate>
                                                 <asp:Label ID="lblunit" runat="server" Text='<%#Bind("UnitName") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Quantity">
                                             <ItemTemplate>
@@ -156,13 +156,13 @@
                                             <ItemTemplate>
                                                 <asp:Label ID="LblrecivedBy" runat="server" Text='<%#Bind("recivedby") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Date">
                                             <ItemTemplate>
                                                 <asp:Label ID="lblreciveddate" runat="server" Text='<%#Bind("Received_Date") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                     </Columns>
 

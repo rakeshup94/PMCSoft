@@ -84,7 +84,7 @@
                                                     runat="server" Text="+" CausesValidation="false"
                                                     CommandName="AdvanceRequisitionAddNew" />
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Amount">
                                             <ItemTemplate>

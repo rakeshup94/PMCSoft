@@ -216,7 +216,7 @@
                                                         <EditItemTemplate>
                                                             <asp:TextBox CssClass="form-control" ID="txtBranchAddress" runat="server" Text='<%#Bind("Address") %>'></asp:TextBox>
                                                         </EditItemTemplate>
-                                                        <ItemStyle HorizontalAlign="Left" />
+                                                         
                                                     </asp:TemplateField>
                                                     <asp:TemplateField HeaderText="Country">
                                                         <ItemTemplate>
