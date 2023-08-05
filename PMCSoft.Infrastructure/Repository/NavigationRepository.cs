@@ -184,9 +184,9 @@ Where z.UserId=@UserId and x.IsPublished=@IsPublished";
                 })).ToList();
 
             }
-            var menuList = allData.Where(x => x.ParentId == 0);
+            //var menuList = allData.Where(x => x.ParentId == 0);
 
-            var result = this.BindHierarchy(menuList, 0);
+            var result = this.BindHierarchy(allData, 0);
 
             return result;
         }
@@ -232,10 +232,7 @@ Where z.RoleId=@RoleId and x.IsPublished=@IsPublished";
                 })).ToList();
 
             }
-            var menuList = allData.Where(x => x.ParentId == 0);
-
-            var result = this.BindHierarchy(menuList, 0);
-
+            var result = this.BindHierarchy(allData, 0);
             return result;
         }
 
@@ -254,9 +251,6 @@ Where z.RoleId=@RoleId and x.IsPublished=@IsPublished";
                         }).FirstOrDefault();
             return data;
         }
-
-
-
 
 
         private IEnumerable<NavModel> BindHierarchy(IEnumerable<NavModel> MenuList, int? parentId)

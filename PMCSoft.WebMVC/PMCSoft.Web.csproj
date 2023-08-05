@@ -960,6 +960,8 @@
     <Content Include="Content\Javascripts\main.js" />
     <Content Include="Content\Javascripts\Master.js" />
     <Content Include="Content\Javascripts\Roles.js" />
+    <Content Include="Content\Javascripts\src\jquery-migrate-1.2.1.min.js" />
+    <Content Include="Content\Javascripts\src\jquery.menu.js" />
     <Content Include="Content\Javascripts\table-action.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
