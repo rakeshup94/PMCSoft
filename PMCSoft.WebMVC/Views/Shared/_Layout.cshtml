@@ -8,16 +8,21 @@
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="">
 
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!--Loading bootstrap css-->
     <link type="text/css" rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,700,300">
 
-    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/lib/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 
-
+    <!--Loading style-->
+    <link type="text/css" rel="stylesheet" href="~/Content/css/style.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/css/style-responsive.css">
 
     @if (IsSectionDefined("styles"))
     {
@@ -25,9 +30,7 @@
     }
 
 
-    <!--Loading style-->
-    <link type="text/css" rel="stylesheet" href="~/Content/css/style.css">
-    <link type="text/css" rel="stylesheet" href="~/Content/css/style-responsive.css">
+
 
 </head>
 <body>
@@ -104,33 +107,19 @@
     <!--END PAGE WRAPPER-->
 
     <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="~/lib/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
     <script src="~/lib/metisMenu/jquery.metisMenu.js"></script>
     <script src="~/lib/jquery-cookie/jquery.cookie.js"></script>
-
+    <script src="~/Content/Javascripts/src/jquery-migrate-1.2.1.min.js"></script>
+    <script src="~/Content/Javascripts/src/jquery.menu.js"></script>
     <script src="~/Content/Javascripts/Master.js"></script>
-
     <script src="~/Content/Javascripts/main.js"></script>
+
+
     @if (IsSectionDefined("scripts"))
     {
         @RenderSection("scripts", required: false)
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>

@@ -1,55 +1,49 @@
 ﻿@model IEnumerable<PMCSoft.Core.Models.Navigation.NavModel>
 @foreach (var menuitem in Model)
 {
-    <li>
+<li>
 
 
 
-        @if (menuitem.MenuList != null)
-        {
-            <a href="@menuitem.NavigateURL">
-                <i class="fa fa-sitemap fa-fw"></i>
-                <div class="icon-bg bg-dark"></div>
-                <span class="menu-title">
-                    @menuitem.MenuName
-                </span>
-                <span class="fa arrow"></span>
-            </a>
-            <ul class="nav nav-second-level">
-                @foreach (var sitem in menuitem.SubMenu)
-                {
-                    <li>
+
+    <a href="~/@menuitem.NavigateURL">
+        <i class="@menuitem.MenuIcon"><div class="icon-bg bg-dark"></div></i>
+        <span class="menu-title">
+            @menuitem.MenuName.ToUpper()
 
 
-                        @if (sitem.SubMenu.Count() > 0)
-                        {<a class='second-level-heading' href="@sitem.NavigateURL">
-                                <i class="@menuitem.MenuIcon"></i>
-                                <span class='submenu-title'>@sitem.MenuName</span>
-                                <span class='fa arrow  text-white'></span>
-                            </a>
-                            Html.RenderPartial("_subMenuItems", menuitem.SubMenu);
-                        }
-                        else
-                        {
-                            <a class='second-level-heading' href="@sitem.NavigateURL">
-                                <i class="@menuitem.MenuIcon"></i>
-                                <span class='submenu-title'>@sitem.MenuName</span>
+            @if (!menuitem.IsAction)
+            {
+                <i class='fa arrow'></i>
+            }
+        </span>
+    </a>
+    @if (menuitem.SubMenu.Count() > 0)
+    {
+        <ul class="nav nav-second-level">
+            @foreach (var sitem in menuitem.SubMenu)
+            {
+                <li>
+                    @if (sitem.SubMenu.Count() > 0)
+                    {<a class='second-level-heading' href="@sitem.NavigateURL">
+                            <i class="@menuitem.MenuIcon"></i>
+                            <span class='submenu-title'>@sitem.MenuName</span>
+                            <span class='fa arrow  text-white'></span>
+                        </a>
+                        Html.RenderPartial("_subMenuItems", menuitem.SubMenu);
+                    }
+                    else
+                    {
+                        <a class='second-level-heading' href="@sitem.NavigateURL">
+                            <i class="@menuitem.MenuIcon"></i>
+                            <span class='submenu-title'>@sitem.MenuName</span>
 
-                            </a>
-                        }
-                    </li>
-                }
-            </ul>
-        }
-        else
-        {
-            <a href="@menuitem.NavigateURL">
-                <i class="@menuitem.MenuIcon"></i>
-                <span class="menu-title">
-                    @menuitem.MenuName
-                </span>
+                        </a>
+                    }
+                </li>
+            }
+        </ul>
+    }
 
-            </a>
-        }
-    </li>
+</li>
 }
