@@ -24,14 +24,31 @@
         <ItemTemplate>
             <li>
                 <a href="<%# this.GetItemUrl(Eval("NavigateURL") as string)%>">
-
-                    <i class="<%# Eval("MenuIcon").ToString() %>"></i>
-
+                    
+             
+                    
+                    <i class="<%# Eval("MenuIcon") %>"><div class="icon-bg bg-dark"></div></i>
+                    
                     <span class="menu-title">
-                        <%# FirstCharToUpper( Eval("MenuName").ToString()) %>
-                    </span><span class="fa arrow"></span>
+                    <%# 
+                        
+                        (Convert.ToBoolean(Eval("IsAction")) ? Eval("MenuName").ToString().ToUpper() : Eval("MenuName").ToString().ToUpper() +"<i class='fa arrow'></i>")
 
 
+
+
+                            
+                        
+                        
+                        
+                        
+                        
+                    %>
+                    </span>
+
+
+
+                   
                 </a>
                 <asp:Literal ID="ltrlSubMenu" runat="server"></asp:Literal>
             </li>

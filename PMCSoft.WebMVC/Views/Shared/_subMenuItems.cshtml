@@ -7,18 +7,18 @@
     {
         <li>
 
-            @if (menuitem.MenuList.Count() > 0)
-            {<a class='second-level-heading' href="@menuitem.NavigateURL">
-    <i class="@menuitem.MenuIcon"></i>
-    <span class='submenu-title'>@menuitem.MenuName</span>
-    <span class='fa arrow  text-white'></span>
-</a>
-                Html.RenderPartial("_subMenuItems", menuitem.MenuList);
+            @if (menuitem.SubMenu.Count() > 0)
+            {<a class='second-level-heading' href="#">
+                    <i class="@menuitem.MenuIcon"></i>
+                    <span class='submenu-title'>@menuitem.MenuName</span>
+                    <span class='fa arrow  text-white'></span>
+                </a>
+                Html.RenderPartial("_subMenuItems", menuitem.SubMenu);
 
             }
             else
             {
-                <a class='second-level-heading' href="@menuitem.NavigateURL">
+                <a class='second-level-heading' href="~/@menuitem.NavigateURL">
                     <i class="@menuitem.MenuIcon"></i>
                     <span class='submenu-title'>@menuitem.MenuName</span>
 

@@ -52,7 +52,7 @@ namespace PMCSoft.Web.Controllers
                 model.CreatedOn = DateTime.Now;
                 model.Status = (byte)Status.Active;
                 model.CultureId = User.CultureId;
-
+                model.IsPublished = true;
 
                 if (model.MenuId == 0)
                 {

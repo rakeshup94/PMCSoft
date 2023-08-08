@@ -62,7 +62,7 @@ namespace PMCSoft.Web.UserControls
                             {
                                 sb.Append("<a class='second-level-heading' href='" + item.NavigateURL + "'>");
                                 sb.Append("<i class='" + item.MenuIcon + "'></i>");
-                                sb.Append("<span class='submenu-title'>" + item.MenuName.FirstCharToUpper() + "</span>");
+                                sb.Append("<span class='submenu-title'>" + item.MenuName.ToUpper() + "</span>");
                                 sb.Append("<span class='fa arrow  text-white'></span></a>");
                                 CreateChild(sb, childId, childTitle, childRow);
                                 sb.Append("</li>");
@@ -71,7 +71,7 @@ namespace PMCSoft.Web.UserControls
                             {
                                 sb.Append("<a href='" + item.NavigateURL + "'>");
                                 sb.Append("<i class='" + item.MenuIcon + "'></i>");
-                                sb.Append("<span class='submenu-title'>" + item.MenuName.FirstCharToUpper() + "</span>");
+                                sb.Append("<span class='submenu-title'>" + item.MenuName.ToUpper() + "</span>");
                                 sb.Append("</a>");
                                 sb.Append("</li>");
                             }
@@ -99,7 +99,7 @@ namespace PMCSoft.Web.UserControls
                     {
                         sb.Append("<li><a class='second-level-heading' href='" + item.NavigateURL + "'>");
                         sb.Append("<i class='" + item.MenuIcon + "'></i>");
-                        sb.Append("<span class='submenu-title'>" + item.MenuName.FirstCharToUpper() + "</span>");
+                        sb.Append("<span class='submenu-title'>" + item.MenuName.ToUpper() + "</span>");
                         sb.Append("<span class='fa arrow  text-white'></span></a>");
                         CreateChild(sb, childId, childTitle, childRow);
                         sb.Append("</li>");
@@ -108,7 +108,7 @@ namespace PMCSoft.Web.UserControls
                     {
                         sb.Append("<li><a href='" + item.NavigateURL + "'>");
                         sb.Append("<i class='" + item.MenuIcon + "'></i>");
-                        sb.Append("<span class='submenu-title'>" + item.MenuName.FirstCharToUpper() + "</span>");
+                        sb.Append("<span class='submenu-title'>" + item.MenuName.ToUpper() + "</span>");
                         sb.Append("</a>");
                         sb.Append("</li>");
                     }
@@ -124,7 +124,7 @@ namespace PMCSoft.Web.UserControls
             {
                 case null: throw new ArgumentNullException(nameof(input));
                 case "": throw new ArgumentException($"{nameof(input)} cannot be empty", nameof(input));
-                default: return input[0].ToString().ToUpper() + input.Substring(1).ToLower();
+                default: return input[0].ToString().ToUpper() + input.Substring(1).ToLower() ;
             }
         }
 

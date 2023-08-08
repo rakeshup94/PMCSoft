@@ -62,19 +62,19 @@
                                             <ItemTemplate>
                                                 <asp:Label ID="lblUnitName" runat="server" Text='<%#Bind("UnitName") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Item Make">
                                             <ItemTemplate>
                                                 <asp:Label ID="lblMake" runat="server" Text='<%#Bind("Make") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Part No">
                                             <ItemTemplate>
                                                 <asp:Label ID="lblPartNo" runat="server" Text='<%#Bind("PartNo") %>'></asp:Label>
                                             </ItemTemplate>
-                                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" />
+                                           
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Quantity">
                                             <ItemTemplate>

@@ -101,7 +101,7 @@ namespace PMCSoft.Infrastructure.Services
 
         public IEnumerable<NavModel> GetUserMenu(long UserId, bool IsPublished)
         {
-            var result = this.NavRepository.GetUserMenu(UserId, IsPublished);
+            var result = this.NavRepository.GetUserMenu(UserId, IsPublished).OrderBy(x=>x.OrderNo);
             return result;
         }
 
