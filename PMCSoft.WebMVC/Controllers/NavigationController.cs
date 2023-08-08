@@ -36,6 +36,7 @@ namespace PMCSoft.Web.Controllers
         public ActionResult Create()
         {
             NavModel model = new NavModel();
+            model.IsAction= true;
             model.MenuList = this.navSrv.GetNavSelectList(true);
             return View(model);
         }
