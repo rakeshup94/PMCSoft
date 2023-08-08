@@ -3121,6 +3121,7 @@
     <Content Include="Views\User\MapRoleMenu.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Dummy\PartialRender.cshtml" />
+    <Content Include="Views\User\_roleList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PMCSoft.Core\PMCSoft.Core.csproj">

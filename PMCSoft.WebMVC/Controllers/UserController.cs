@@ -13,11 +13,7 @@ namespace PMCSoft.Web.Controllers
     public class UserController : BaseController
     {
         IUserService userSrv;
-
         INavigationService navSrv;
-
-
-
         public UserController(IUserService _userSrv, INavigationService _navSrv)
         {
             userSrv = _userSrv;
@@ -34,6 +30,12 @@ namespace PMCSoft.Web.Controllers
         {
             var result = userSrv.GetAllRole(User.UserId, true);
             return View(result);
+        }
+        [HttpGet]
+        public PartialViewResult RoleList()
+        {
+            var result = userSrv.GetAllRole(User.UserId, true);
+            return PartialView("_roleList", result);
         }
         [HttpGet]
         public ActionResult CreateRole(int? roleId)

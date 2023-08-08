@@ -1,0 +1,43 @@
+﻿@model IEnumerable<PMCSoft.Core.Models.Account.RoleModel>
+@{
+    ViewBag.Title = "Role List";
+    Layout = null;
+    int index = 0;
+}
+
+
+<div id="no-more-tables">
+    <table class="table table-bordered table-striped table-condensed cf">
+        <thead class="cf">
+            <tr>
+                <th>S.No.</th>
+                <th>Role Name</th>
+                <th>@Html.DisplayName("Action")</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td data-title="S.No.">
+                        @{
+
+                            index += 1;
+                        }@index
+                    </td>
+                    <td data-title="Role Name">
+                        @item.RoleName
+                    </td>
+                    <td data-title="Action">
+                        @Html.ActionLink("Edit", "CreateRole", new { roleId = item.RoleId }, new { @class = "btn btn-default btn-xs" })
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
