@@ -22,7 +22,7 @@ namespace PMCSoft.Web.Controllers
 
         public NavigationController()
         {
-           
+
         }
         public NavigationController(INavigationService _navSrv)
         {
@@ -36,7 +36,7 @@ namespace PMCSoft.Web.Controllers
         public ActionResult Create()
         {
             NavModel model = new NavModel();
-            model.IsAction= true;
+            model.IsAction = true;
             model.MenuList = this.navSrv.GetNavSelectList(true);
             return View(model);
         }
@@ -80,8 +80,7 @@ namespace PMCSoft.Web.Controllers
 
         public PartialViewResult MenuList()
         {
-
-            IEnumerable<NavModel> result = this.navSrv.GetAllMenu().OrderByDescending(x => x.MenuId);
+            IEnumerable<NavModel> result = this.navSrv.GetAllMenu().OrderBy(x => x.MenuId);
             return PartialView("~/Views/Navigation/_menuList.cshtml", result);
         }
 
@@ -121,117 +120,7 @@ namespace PMCSoft.Web.Controllers
         }
 
 
-        //public PartialViewResult userNavigation()
-        //{
-        //    IEnumerable<NavModel> model;
-        //    int typeId = Convert.ToInt32(User.roles[0]);
-        //    if (Session["Navigation"] == null)
-        //    {
-        //        model = Inav.GetMenu(User.CultureId, User.UserId, typeId).OrderByDescending(x => x.OrderNo).Reverse();
-        //        Session["Navigation"] = model;
-        //    }
-        //    else
-        //    {
-        //        model = (IEnumerable<NavModel>)Session["Navigation"];
-        //    }
-        //    UserEntity UserType = (UserEntity)typeId;
-        //    if (UserType == UserEntity.Branch || UserType == UserEntity.BranchUser)
-        //    {
-        //        long ScopeId = Convert.ToInt64(User.roles[1]);
-
-        //        bool flag = Iusr.CheckSequence(ScopeId);
-
-        //        if (!flag)
-        //        {
-        //            TempData["SequenceMsg"] = "You need to initialize  Document Sequence Number to Make Booking.";
-        //        }
-        //    }
-        //    return PartialView(model);
-        //}
-
-        //private List<NavModel> RecursiveRemove(List<NavModel> model)
-        //{
-        //    foreach (var item in model)
-        //    {
-        //        if (item.SubMenu.Count <= 0 && item.IsRight == false)
-        //        {
-        //            model.Remove(item);
-
-        //        }
-        //        else if (item.SubMenu.Count > 0)
-        //        {
-        //            RecursiveRemove(item.SubMenu.ToList());
-
-        //        }
-        //    }
-        //    return model;
-        //}
-
-
-
-
-
-
-
-
-
-        //public PartialViewResult _LeftMenu()
-        //{
-
-        //    ViewBag.ShowMaster = false;
-        //    if (User.UserId == 1)
-        //    {
-        //        ViewBag.ShowMaster = true;
-        //    }
-        //    int serviceId = 12;
-        //    ViewBag.ShowUser = true;
-
-        //    List<UserType> lstUserType = this.IusrType.GetUserBasedUserTypes(User.UserId, serviceId, User.CultureId, Convert.ToInt32(User.roles[0])).OrderByDescending(x => x.OrderNo).ToList();
-        //    ViewBag.UserType = lstUserType;
-        //    if (lstUserType.Count == 0)
-        //    {
-        //        ViewBag.ShowUser = false;
-        //    }
-        //    IEnumerable<ServiceModel> lst = Iusr.GetMenuList(User.UserId, User.CultureId, Convert.ToInt32(User.roles[0])).AsEnumerable();
-
-        //    int typeId = Convert.ToInt32(User.roles[0]);
-        //    UserEntity UserType = (UserEntity)typeId;
-
-        //    if (UserType == UserEntity.Branch || UserType == UserEntity.BranchUser)
-        //    {
-        //        long ScopeId = Convert.ToInt64(User.roles[1]);
-
-        //        bool flag = Iusr.CheckSequence(ScopeId);
-
-        //        if (!flag)
-        //        {
-        //            TempData["SequenceMsg"] = "You need to initialize  Document Sequence Number to Make Booking.";
-        //        }
-        //    }
-
-
-        //    return PartialView("~/Views/Shared/_LeftMenu.cshtml", lst);
-        //}
-
-
-
-
-
-
-        //public ActionResult CreateMapping()
-        //{
-        //    var result = this.Isrv.BindUserType(User.CultureId);
-        //    ViewBag.UserType = result;
-        //    return View();
-        //}
-        //[SkipPermission]
-        //[HttpPost]
-        //public PartialViewResult MappingMenuRights(int userType)
-        //{
-
-        //    IEnumerable<ServiceModel> result = Inav.GetMenuRights(userType, User.CultureId);
-        //    return PartialView("~/Views/Navigation/_mapMenuRights.cshtml", result);
-        //}
+        
 
 
 

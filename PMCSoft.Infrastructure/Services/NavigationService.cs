@@ -45,6 +45,11 @@ namespace PMCSoft.Infrastructure.Services
             nav.MenuDesc = _model.Description;
             nav.MenuOrderNo = _model.OrderNo;
             nav.MenuStatus = _model.Status;
+
+            nav.NavigateURL = _model.NavigateURL;
+
+
+
             nav.IsPublished = _model.IsPublished;
             nav.CreatedBy = _model.CreatedBy;
             nav.CreatedOn = _model.CreatedOn;
@@ -67,6 +72,7 @@ namespace PMCSoft.Infrastructure.Services
             nav.IsAction = _model.IsAction;
             nav.MenuIcon = _model.MenuIcon;
             nav.MenuName = _model.MenuName;
+            nav.NavigateURL = _model.NavigateURL;
             nav.MenuDesc = _model.Description;
             nav.MenuOrderNo = _model.OrderNo;
             nav.MenuStatus = _model.Status;
@@ -76,7 +82,7 @@ namespace PMCSoft.Infrastructure.Services
             this.NavRepository.Update(nav);
             this.IU.SaveChanges();
         }
-        
+
         public IEnumerable<NavModel> GetAllMenu()
         {
             return this.NavRepository.GetAllMenu();
@@ -101,7 +107,7 @@ namespace PMCSoft.Infrastructure.Services
 
         public IEnumerable<NavModel> GetUserMenu(long UserId, bool IsPublished)
         {
-            var result = this.NavRepository.GetUserMenu(UserId, IsPublished).OrderBy(x=>x.OrderNo);
+            var result = this.NavRepository.GetUserMenu(UserId, IsPublished).OrderBy(x => x.OrderNo);
             return result;
         }
 
@@ -153,6 +159,6 @@ namespace PMCSoft.Infrastructure.Services
 
 
 
-            #endregion
-        }
+        #endregion
+    }
 }

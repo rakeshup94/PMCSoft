@@ -66,22 +66,6 @@ namespace PMCSoft.Infrastructure.Repository
             return data;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         public IEnumerable<NavModel> GetAllMenu()
         {
             var data = (from nav in Context.tblMenus
@@ -92,6 +76,7 @@ namespace PMCSoft.Infrastructure.Repository
                             MenuName = nav.MenuName,
                             MenuIcon = nav.MenuIcon,
                             IsAction = nav.IsAction,
+                            NavigateURL = nav.NavigateURL != null ? nav.NavigateURL : "#",
                             OrderNo = nav.MenuOrderNo.HasValue ? nav.MenuOrderNo.Value : 0.0f
                         }).OrderBy(x => x.ParentId).ToList();
             return data;
@@ -106,6 +91,7 @@ namespace PMCSoft.Infrastructure.Repository
                             MenuName = nav.MenuName,
                             MenuIcon = nav.MenuIcon,
                             IsAction = nav.IsAction,
+                            NavigateURL = nav.NavigateURL != null ? nav.NavigateURL : "#",
                             OrderNo = nav.MenuOrderNo.HasValue ? nav.MenuOrderNo.Value : 0.0f
                         }).OrderBy(x => x.MenuId).ToList();
             return data;
@@ -130,10 +116,11 @@ namespace PMCSoft.Infrastructure.Repository
                                       select new NavModel
                                       {
                                           MenuId = nav.MenuId,
-                                          ParentId = nav.ParentId.HasValue ? nav.ParentId.Value : 0,
                                           MenuName = nav.MenuName,
                                           MenuIcon = nav.MenuIcon,
+                                          ParentId = nav.ParentId.HasValue ? nav.ParentId.Value : 0,
                                           IsAction = nav.IsAction,
+                                          NavigateURL = nav.NavigateURL != null ? nav.NavigateURL : "#",
                                           OrderNo = nav.MenuOrderNo.HasValue ? nav.MenuOrderNo.Value : 0.0f
                                       }).OrderBy(x => x.ParentId).ToList();
             var result = this.BindHierarchy(allData, 0);
@@ -176,7 +163,7 @@ Where z.UserId=@UserId and x.IsPublished=@IsPublished";
                     MenuId = dataRow.Field<int>("MenuId"),
                     MenuName = dataRow.Field<string>("MenuName") ?? string.Empty,
                     MenuIcon = dataRow.Field<string>("MenuIcon") ?? string.Empty,
-                    NavigateURL= dataRow.Field<string>("NavigateURL") ?? string.Empty,
+                    NavigateURL = dataRow.Field<string>("NavigateURL") ?? string.Empty,
                     OrderNo = dataRow.Field<double?>("MenuOrderNo") ?? 0,
                     IsAction = dataRow.Field<bool>("IsAction"),
                     ParentId = dataRow.Field<int?>("ParentId") ?? 0,
@@ -245,6 +232,7 @@ Where z.RoleId=@RoleId and x.IsPublished=@IsPublished";
                             ParentId = nav.ParentId,
                             MenuName = nav.MenuName,
                             MenuIcon = nav.MenuIcon,
+                            NavigateURL = nav.NavigateURL != null ? nav.NavigateURL : "#",
                             Description = nav.MenuDesc,
                             IsAction = nav.IsAction,
                             OrderNo = nav.MenuOrderNo.HasValue ? nav.MenuOrderNo.Value : 0.0f
