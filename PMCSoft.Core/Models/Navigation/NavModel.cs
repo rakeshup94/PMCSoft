@@ -8,6 +8,7 @@ namespace PMCSoft.Core.Models.Navigation
     {
         [Display(Name = "S.No.")]
         public int MenuId { get; set; }
+        [Display(Name = "Root")]
         public int? ParentId { get; set; }
 
         [Display(Name = "Name")]
