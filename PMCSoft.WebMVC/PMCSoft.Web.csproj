@@ -470,6 +470,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\BaseViewPage.cs" />
+    <Compile Include="Helpers\CommonHelper.cs" />
     <Compile Include="Helpers\CustomAuthorizeAttribute.cs" />
     <Compile Include="Helpers\MVCHelper.cs" />
     <Compile Include="Inventory\EnterStockDetails.aspx.cs">

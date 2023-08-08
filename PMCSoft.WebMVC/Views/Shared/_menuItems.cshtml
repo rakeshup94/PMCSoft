@@ -1,4 +1,6 @@
-﻿@model IEnumerable<PMCSoft.Core.Models.Navigation.NavModel>
+﻿@using PMCSoft.Web.Helpers
+
+@model IEnumerable<PMCSoft.Core.Models.Navigation.NavModel>
 @foreach (var menuitem in Model)
 {
 <li>
@@ -6,7 +8,7 @@
 
 
 
-    <a href="@menuitem.NavigateURL">
+    <a href="@menuitem.NavigateURL.GetNavPath()">
         <i class="@menuitem.MenuIcon"><div class="icon-bg bg-dark"></div></i>
         <span class="menu-title">
             @menuitem.MenuName.ToUpper()
@@ -25,7 +27,7 @@
             {
                 <li>
                     @if (sitem.SubMenu.Count() > 0)
-                    {<a class='second-level-heading' href="@sitem.NavigateURL">
+                    {<a class='second-level-heading' href="@sitem.NavigateURL.GetNavPath()">
                             <i class="@menuitem.MenuIcon"></i>
                             <span class='submenu-title'>@sitem.MenuName</span>
                             <span class='fa arrow  text-white'></span>
@@ -34,7 +36,7 @@
                     }
                     else
                     {
-                        <a class='second-level-heading' href="@sitem.NavigateURL">
+                        <a class='second-level-heading' href="@sitem.NavigateURL.GetNavPath()">
                             <i class="@menuitem.MenuIcon"></i>
                             <span class='submenu-title'>@sitem.MenuName</span>
 

@@ -1,4 +1,6 @@
-﻿@model IEnumerable<PMCSoft.Core.Models.Navigation.NavModel>
+﻿@using PMCSoft.Web.Helpers
+
+@model IEnumerable<PMCSoft.Core.Models.Navigation.NavModel>
 @{
     string rootId = "menu-" + Model.FirstOrDefault().ParentId;
 }
@@ -18,7 +20,7 @@
             }
             else
             {
-                <a class='second-level-heading' href="@menuitem.NavigateURL">
+                <a class='second-level-heading' href="@menuitem.NavigateURL.GetNavPath()">
                     <i class="@menuitem.MenuIcon"></i>
                     <span class='submenu-title'>@menuitem.MenuName</span>
 

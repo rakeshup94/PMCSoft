@@ -70,6 +70,11 @@ namespace PMCSoft.Web.Controllers
 
         public ActionResult EditMenu(int MenuId)
         {
+
+
+
+            
+
             NavModel model = this.navSrv.GetMenuItem(MenuId);
             model.MenuList = this.navSrv.GetMenu(true).Select(n => new SelectedList
             { ItemId = n.MenuId, ItemName = n.MenuName });
