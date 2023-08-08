@@ -854,6 +854,7 @@
     </Compile>
     <Compile Include="User\NewRABILL.aspx.cs">
       <DependentUpon>NewRABILL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User\NewRABILL.aspx.designer.cs">
       <DependentUpon>NewRABILL.aspx</DependentUpon>
